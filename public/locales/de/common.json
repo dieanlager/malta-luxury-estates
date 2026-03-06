@@ -1,0 +1,52 @@
+{
+    "nav": {
+        "properties": "Immobilien",
+        "insights": "Einblicke",
+        "market": "Markt",
+        "about": "Über uns",
+        "list_property": "Objekt inserieren"
+    },
+    "hero": {
+        "badge": "Maltas Nr. 1 Marktplatz für Premium-Immobilien",
+        "title_part1": "Luxusimmobilien",
+        "title_part2": "auf Malta",
+        "subtitle": "Kuratiert von Maltas führenden Agenturen für internationale Käufer, vermögende Privatpersonen und Residenzsuchende.",
+        "stats": {
+            "properties": "Luxusimmobilien",
+            "locations": "Standorte",
+            "avg_price": "Durchschn. Preis"
+        }
+    },
+    "sections": {
+        "featured": {
+            "badge": "Exklusives Portfolio",
+            "title": "Kuratierte Auswahl",
+            "subtitle": "Handverlesene Premium-Immobilien auf den maltesischen Inseln, geprüft auf Qualität und Investitionspotenzial.",
+            "view_all": "Alle ansehen"
+        },
+        "map": {
+            "badge": "Geografische Erkundung",
+            "title": "Entdecken Sie das Archipel",
+            "subtitle": "Von den historischen Straßen Vallettas bis zu den ruhigen Bauernhäusern auf Gozo – finden Sie Ihren perfekten Standort auf der Karte."
+        }
+    },
+    "footer": {
+        "description": "Maltas führendes unabhängiges Portal für Luxusimmobilien. Wir verbinden anspruchsvolle Käufer mit den exklusivsten Immobilienportfolios der Inseln.",
+        "quick_links": "Schnelllinks",
+        "premier_destinations": "Top-Ziele",
+        "legal": "Rechtliches",
+        "newsletter": {
+            "title": "Marktanalysen",
+            "subtitle": "Erhalten Sie exklusive Off-Market-Angebote und vierteljährliche Marktberichte direkt in Ihren Posteingang.",
+            "placeholder": "Geschäftliche E-Mail",
+            "button": "Abonnieren"
+        }
+    },
+    "common": {
+        "beds": "{{count}} SZ",
+        "baths": "{{count}} Bäder",
+        "sqm": "{{count}}m²",
+        "view_details": "Details ansehen",
+        "contact_agent": "Makler kontaktieren"
+    }
+}

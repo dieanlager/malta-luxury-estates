@@ -1,0 +1,52 @@
+{
+    "nav": {
+        "properties": "Nieruchomości",
+        "insights": "Wiedza",
+        "market": "Rynek",
+        "about": "O nas",
+        "list_property": "Wystaw Ofertę"
+    },
+    "hero": {
+        "badge": "Portal nr 1 z luksusowymi nieruchomościami na Malcie",
+        "title_part1": "Luksusowe",
+        "title_part2": "Nieruchomości",
+        "subtitle": "Wyselekcjonowane oferty od wiodących agencji na Malcie dla inwestorów międzynarodowych oraz osób szukających rezydencji.",
+        "stats": {
+            "properties": "Luksusowych Ofert",
+            "locations": "Lokalizacji",
+            "avg_price": "Średni Przedział"
+        }
+    },
+    "sections": {
+        "featured": {
+            "badge": "Portfel Ekskluzywny",
+            "title": "Wyselekcjonowana Oferta",
+            "subtitle": "Ręcznie dobrane nieruchomości premium na maltańskich wyspach, zweryfikowane pod kątem jakości i potencjału inwestycyjnego.",
+            "view_all": "Zobacz Wszystkie"
+        },
+        "map": {
+            "badge": "Eksploracja Geograficzna",
+            "title": "Odkryj Archipelag",
+            "subtitle": "Od historycznych uliczek Valletty po spokojne domy na Gozo – znajdź swoją idealną lokalizację na mapie."
+        }
+    },
+    "footer": {
+        "description": "Wiodący niezależny portal luksusowych nieruchomości na Malcie. Łączymy wymagających nabywców z najbardziej ekskluzywnymi ofertami na wyspach.",
+        "quick_links": "Szybkie Linki",
+        "premier_destinations": "Kluczowe Lokalizacje",
+        "legal": "Informacje Prawne",
+        "newsletter": {
+            "title": "Raporty Rynkowe",
+            "subtitle": "Otrzymuj ekskluzywne oferty off-market i kwartalne raporty rynkowe prosto na swoją skrzynkę.",
+            "placeholder": "Email Służbowy",
+            "button": "Subskrybuj"
+        }
+    },
+    "common": {
+        "beds": "{{count}} Pokoje",
+        "baths": "{{count}} Łazienki",
+        "sqm": "{{count}}m²",
+        "view_details": "Szczegóły",
+        "contact_agent": "Kontakt z Agentem"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "nav": {
+        "properties": "Propriétés",
+        "insights": "Analyses",
+        "market": "Marché",
+        "about": "À Propos",
+        "list_property": "Inscrire un Bien"
+    },
+    "hero": {
+        "badge": "Le n°1 de l'immobilier de luxe à Malte",
+        "title_part1": "Immobilier de Luxe",
+        "title_part2": "à Malte",
+        "subtitle": "Une sélection exclusive des meilleures agences de Malte pour les acheteurs internationaux et investisseurs fortunés.",
+        "stats": {
+            "properties": "Biens de Luxe",
+            "locations": "Emplacements",
+            "avg_price": "Prix Moyen"
+        }
+    },
+    "sections": {
+        "featured": {
+            "badge": "Portfolio Exclusif",
+            "title": "Sélection Premium",
+            "subtitle": "Propriétés haut de gamme à travers les îles maltaises, sélectionnées pour leur qualité et leur potentiel d'investissement.",
+            "view_all": "Voir Tout"
+        },
+        "map": {
+            "badge": "Exploration Géographique",
+            "title": "Explorez l'Archipel",
+            "subtitle": "Des rues historiques de La Valette aux fermes sereines de Gozo, trouvez votre emplacement idéal sur la carte."
+        }
+    },
+    "footer": {
+        "description": "Le premier portail indépendant d'immobilier de luxe à Malte. Nous mettons en relation les acheteurs exigeants avec les portefeuilles immobiliers les plus exclusifs des îles.",
+        "quick_links": "Liens Rapides",
+        "premier_destinations": "Destinations Phares",
+        "legal": "Mentions Légales",
+        "newsletter": {
+            "title": "Intelligence Marché",
+            "subtitle": "Recevez des annonces exclusives hors marché et des rapports trimestriels directement dans votre boîte mail.",
+            "placeholder": "Email Professionnel",
+            "button": "S'abonner"
+        }
+    },
+    "common": {
+        "beds": "{{count}} Ch.",
+        "baths": "{{count}} SdB",
+        "sqm": "{{count}}m²",
+        "view_details": "Voir Détails",
+        "contact_agent": "Contacter l'Agent"
+    }
+}

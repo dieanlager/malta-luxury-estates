@@ -1,0 +1,58 @@
+{
+    "nav": {
+        "properties": "Properties",
+        "insights": "Insights",
+        "market": "Market",
+        "about": "About",
+        "list_property": "List Property"
+    },
+    "hero": {
+        "badge": "Malta's #1 Premium Real Estate Marketplace",
+        "title_part1": "Luxury Real Estate",
+        "title_part2": "in Malta",
+        "subtitle": "Curated listings from Malta's leading agencies for international buyers, HNWIs, and residency seekers.",
+        "stats": {
+            "properties": "Luxury Property",
+            "locations": "Locations",
+            "avg_price": "Avg. Price Range"
+        }
+    },
+    "sections": {
+        "featured": {
+            "badge": "Exclusive Portfolio",
+            "title": "Curated Selection",
+            "subtitle": "Hand-picked premium properties across the Maltese islands, vetted for quality and investment potential.",
+            "view_all": "View All"
+        },
+        "map": {
+            "badge": "Geographic Exploration",
+            "title": "Explore the Archipelago",
+            "subtitle": "From the historic streets of Valletta to the serene farmhouses of Gozo, find your perfect location on the map."
+        }
+    },
+    "footer": {
+        "description": "Malta's premier independent luxury real estate portal. We connect discerning buyers with the islands' most exclusive property portfolios.",
+        "quick_links": "Quick Links",
+        "premier_destinations": "Premier Destinations",
+        "legal": "Legal",
+        "newsletter": {
+            "title": "Market Intelligence",
+            "subtitle": "Get exclusive off-market listings and quarterly market reports directly to your inbox.",
+            "placeholder": "Professional Email",
+            "button": "Subscribe",
+            "success_title": "Subscription Confirmed",
+            "success_message": "Welcome to the inner circle. Expect excellence in your inbox."
+        }
+    },
+    "common": {
+        "beds": "{{count}} Beds",
+        "baths": "{{count}} Baths",
+        "sqm": "{{count}}m²",
+        "view_details": "View Details",
+        "contact_agent": "Contact Agent",
+        "properties": "Properties",
+        "listings": "Listings",
+        "join_list": "Join Malta Intelligence List",
+        "privacy_guaranteed": "Privacy Guaranteed. Opt-out anytime."
+    }
+}

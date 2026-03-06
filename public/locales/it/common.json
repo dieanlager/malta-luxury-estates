@@ -1,0 +1,58 @@
+{
+    "nav": {
+        "properties": "Proprietà",
+        "insights": "Approfondimenti",
+        "market": "Mercato",
+        "about": "Chi Siamo",
+        "list_property": "Pubblica Immobile"
+    },
+    "hero": {
+        "badge": "Il portale #1 per immobili di lusso a Malta",
+        "title_part1": "Immobili di Lusso",
+        "title_part2": "a Malta",
+        "subtitle": "Una selezione curata dalle migliori agenzie maltesi per acquirenti internazionali, VIP e investitori.",
+        "stats": {
+            "properties": "Immobili di Lusso",
+            "locations": "Località",
+            "avg_price": "Prezzo Medio"
+        }
+    },
+    "sections": {
+        "featured": {
+            "badge": "Portafoglio Esclusivo",
+            "title": "Selezione Curata",
+            "subtitle": "Immobili di prestigio nelle isole maltesi, selezionati per qualità e potenziale di investimento.",
+            "view_all": "Vedi Tutti"
+        },
+        "map": {
+            "badge": "Esplorazione Geografica",
+            "title": "Esplora l'Arcipelago",
+            "subtitle": "Dalle storiche strade di Valletta alle serene case di campagna di Gozo, trova la tua posizione ideale sulla mappa."
+        }
+    },
+    "footer": {
+        "description": "Il principale portale indipendente per immobili di lusso a Malta. Colleghiamo acquirenti esigenti con i portafogli immobiliari più esclusivi delle isole.",
+        "quick_links": "Link Rapidi",
+        "premier_destinations": "Destinazioni Principali",
+        "legal": "Legale",
+        "newsletter": {
+            "title": "Market Intelligence",
+            "subtitle": "Ricevi annunci esclusivi fuori mercato e rapporti trimestrali direttamente nella tua casella di posta.",
+            "placeholder": "Email Professionale",
+            "button": "Iscriviti",
+            "success_title": "Iscrizione Confermata",
+            "success_message": "Benvenuto nella cerchia ristretta. Riceverai presto aggiornamenti esclusivi."
+        }
+    },
+    "common": {
+        "beds": "{{count}} Camere",
+        "baths": "{{count}} Bagni",
+        "sqm": "{{count}}m²",
+        "view_details": "Dettagli",
+        "contact_agent": "Contatta Agente",
+        "properties": "Proprietà",
+        "listings": "Annunci",
+        "join_list": "Unisciti alla Lista Intelligence",
+        "privacy_guaranteed": "Privacy Garantita. Cancellazione in ogni momento."
+    }
+}

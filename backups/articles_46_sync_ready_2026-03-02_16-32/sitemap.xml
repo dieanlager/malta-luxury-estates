@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
+  <url><loc>https://maltaluxuryestates.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/all</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://maltaluxuryestates.com/favorites</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- City Pages (PSEO Pillars) -->
+  <url><loc>https://maltaluxuryestates.com/properties/sliema</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/st-julians</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/valletta</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/mdina</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/mellieha</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/victoria</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/swieqi</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/attard</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/madliena</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/san-pawl-il-bahar</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/naxxar</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/marsascala</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/three-cities</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/xlendi</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/gharghur</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+
+  <!-- pSEO Matrix: City x Type Portholes -->
+  <url><loc>https://maltaluxuryestates.com/properties/sliema/apartments</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/sliema/villas</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/sliema/penthouses</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/st-julians/apartments</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/st-julians/penthouses</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/valletta/apartments</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/valletta/palazzos</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/victoria/farmhouses</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/mellieha/villas</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+
+  <!-- pSEO Matrix: High Intent Long-Tail -->
+  <url><loc>https://maltaluxuryestates.com/properties/sliema/sea-view</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/st-julians/sea-view</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/mellieha/with-pool</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/properties/madliena/villas</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+
+  <!-- Articles (Insights) -->
+  <url><loc>https://maltaluxuryestates.com/insights/buying-property-in-malta-as-a-foreigner-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/malta-real-estate-investment-guide-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/property-taxes-malta-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/special-designated-areas-malta-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/rental-yields-malta-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/step-by-step-buying-process-malta</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/selling-property-malta-complete-guide-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/rental-law-malta-landlords-tenants-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/short-let-vs-long-let-malta-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/malta-permanent-residency-mprp-property-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/property-inheritance-malta-succession-tax</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/moving-to-malta-complete-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/rental-income-tax-malta-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/getting-mortgage-malta-foreigner-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/property-tax-optimization-malta-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/investing-gozo-vs-malta-financial-comparison</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/malta-permanent-residency-mprp-financial-benefits</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/buying-property-malta-cryptocurrency-guide-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/international-schools-malta-expat-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/most-exclusive-neighborhoods-malta-villas-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/restoring-historic-palazzo-malta-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/yachting-lifestyle-malta-marinas-property</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/healthcare-in-malta-guide-for-expats-2026</loc><changefreq>monthly</changefreq><priority Booth="0.8">0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/sliema-real-estate-market-deep-dive-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/valletta-investing-in-malta-baroque-capital-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/marsaxlokk-south-malta-emerging-real-estate-values</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/st-julians-portomaso-luxury-living-nightlife-investment-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/mdina-rabat-noble-heartland-property-guide-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/ground-rent-cens-redemption-malta-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/moving-to-malta-with-pets-buying-renting-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/commercial-vs-residential-investment-malta-2026</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/renovating-house-of-character-malta-costs-pitfalls</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/retirement-in-malta-for-british-eu-citizens-2026</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/buying-off-plan-property-malta-risks-rewards</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/digital-nomad-residence-permit-malta-housing-guide-2026</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/energy-efficiency-epc-malta-solar-incentives-2026</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/condominium-fees-management-malta-guide-2026</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/property-inheritance-malta-succession-tax-2026</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/student-accommodation-malta-guide-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/sda-projects-complete-list-malta-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/cost-of-living-malta-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://maltaluxuryestates.com/insights/malta-property-market-forecast-2026-2030</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

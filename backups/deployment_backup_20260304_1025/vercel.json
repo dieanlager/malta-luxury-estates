@@ -1,0 +1,82 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "framework": "vite",
+    "regions": [
+        "fra1"
+    ],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                },
+                {
+                    "key": "X-Frame-Options",
+                    "value": "DENY"
+                },
+                {
+                    "key": "X-XSS-Protection",
+                    "value": "1; mode=block"
+                },
+                {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                },
+                {
+                    "key": "Strict-Transport-Security",
+                    "value": "max-age=63072000; includeSubDomains; preload"
+                }
+            ]
+        },
+        {
+            "source": "/assets/(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=31536000, immutable"
+                }
+            ]
+        },
+        {
+            "source": "/(sitemap.xml|robots.txt)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=3600, s-maxage=3600"
+                }
+            ]
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/agency",
+            "destination": "/agency/portal",
+            "permanent": false
+        },
+        {
+            "source": "/guides/:path*",
+            "destination": "/insights/:path*",
+            "permanent": true
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "/api/$1"
+        },
+        {
+            "source": "/((?!api/).*)",
+            "destination": "/index.html"
+        }
+    ],
+    "functions": {
+        "api/**/*.ts": {
+            "maxDuration": 30,
+            "memory": 256
+        }
+    }
+}
