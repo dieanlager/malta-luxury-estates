@@ -27,22 +27,11 @@ const filterSlugs = [
   'sea-view', 'with-pool', 'new-build', 'furnished'
 ];
 
-const articleSlugs = [
-  'buying-property-in-malta-as-a-foreigner-2026',
-  'malta-real-estate-investment-guide-2026',
-  'property-taxes-malta-2026',
-  'special-designated-areas-malta-guide',
-  'rental-yields-malta-2026',
-  'malta-permanent-residency-mprp-property-guide',
-  'property-inheritance-malta',
-  'step-by-step-buying-process-malta',
-  'selling-property-malta-complete-guide',
-  'rental-law-malta-landlords-tenants-2026',
-  'short-let-vs-long-let-malta-2026',
-  'moving-to-malta-complete-guide'
-];
+const articleSlugs = fs.readdirSync(path.join(process.cwd(), 'src/content/articles/en'))
+  .filter(f => f.endsWith('.md'))
+  .map(f => f.replace('.md', ''));
 
-const propertyIds = Array.from({ length: 30 }, (_, i) => (i + 1).toString());
+const propertyIds = Array.from({ length: 100 }, (_, i) => (i + 1).toString());
 
 const languages = ['', '/it', '/de', '/fr', '/pl'];
 const hreflangs = ['en', 'it', 'de', 'fr', 'pl'];

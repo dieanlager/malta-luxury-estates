@@ -196,8 +196,8 @@ async function translateArticle(
         await fs.writeFile(outFile, output, 'utf-8');
 
         return 'translated';
-    } catch (err) {
-        console.error(`  ✗ Error: ${filename}`, err);
+    } catch (err: any) {
+        console.error(`  ✗ Error: ${filename}`, err.stack || err.message || err);
         return 'error';
     }
 }
