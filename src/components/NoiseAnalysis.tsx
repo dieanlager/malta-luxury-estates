@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Volume2, VolumeX, Info, Car, Music, Hammer, Plane, X, ShieldCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Property, NoiseAssessment } from '../types';
 
 interface NoiseAnalysisProps {
@@ -173,6 +174,7 @@ export const NoiseAnalysisButton: React.FC<{
     property: Property;
     variant?: 'card' | 'page';
 }> = ({ property, variant = 'card' }) => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const score = property.noiseLevel?.score || 75;
 
@@ -210,7 +212,7 @@ export const NoiseAnalysisButton: React.FC<{
                 ) : (
                     <Volume2 size={14} className="text-gold group-hover:scale-110 transition-transform" />
                 )}
-                <span className="text-[10px] font-bold uppercase tracking-widest">Quiet Score: {score}</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest">{t('common.quiet_score')}: {score}</span>
             </button>
 
             <NoiseAnalysisModal

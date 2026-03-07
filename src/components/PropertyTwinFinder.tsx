@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, ArrowRight, X, Zap, Heart, CheckCircle2, Building2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Property } from '../types';
 import { PROPERTIES } from '../constants';
 import { PropertyCard } from './PropertyCard';
@@ -167,6 +168,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
 };
 
 export const PropertyTwinButton: React.FC<{ property: Property }> = ({ property }) => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -181,7 +183,7 @@ export const PropertyTwinButton: React.FC<{ property: Property }> = ({ property 
             >
                 <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <Sparkles size={16} className="text-gold group-hover:rotate-12 transition-transform" />
-                <span className="text-xs font-bold uppercase tracking-widest relative">Find AI Twin</span>
+                <span className="text-xs font-bold uppercase tracking-widest relative">{t('common.find_twin')}</span>
             </button>
 
             <PropertyTwinFinder

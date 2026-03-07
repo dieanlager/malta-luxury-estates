@@ -1,18 +1,48 @@
 {
     "home": {
-        "title": "Malta Luxury Real Estate – Luxusimmobilien zum Kauf",
+        "title": "Malta Luxury Real Estate – Premium-Immobilien zum Verkauf",
         "description": "Entdecken Sie die exklusivsten Immobilien auf Malta und Gozo. Kuratierte Luxusimmobilien-Angebote für internationale Käufer und Investoren."
     },
     "properties": {
-        "title": "Luxusimmobilien zum Kauf auf Malta | Alle Angebote",
+        "title": "Luxusimmobilien zum Verkauf auf Malta | Alle Angebote ansehen",
         "description": "Durchsuchen Sie unsere Kollektion von High-End-Apartments, Villen und Palazzi auf den maltesischen Inseln."
     },
     "insights": {
         "title": "Malta Immobilien-Einblicke & Investment-Hub",
-        "description": "Expertenberatung, Marktberichte und Leitfäden für den Kauf und die Investition in maltesische Luxusimmobilien."
+        "description": "Expertenrat, Marktberichte und Leitfäden für den Kauf und die Investition in maltesische Luxusimmobilien.",
+        "title_buying": "Immobilienkauf auf Malta als Ausländer",
+        "title_sda": "Leitfaden für Special Designated Areas (SDA)",
+        "title_yields": "Mietrenditen auf Malta 2026",
+        "title_taxes": "Grundsteuern auf Malta 2026"
     },
     "about": {
         "title": "Über Malta Luxury Real Estate – Unsere Mission",
         "description": "Das führende unabhängige Portal, das internationale vermögende Privatpersonen mit dem Premium-Immobilienmarkt Maltas verbindet."
+    },
+    "market": {
+        "title": "Immobilienmarkt-Puls Malta | Echtzeit-Daten 2026",
+        "description": "Überwachen Sie Echtzeit-Immobilienpreistrends, Live-Angebote und Marktaktivität in ganz Malta und Gozo. Datenbasierte Einblicke für Luxus-Investoren."
+    },
+    "tools": {
+        "oracle": {
+            "title": "KI-Immobilienpreis-Orakel | Kostenlose Bewertung Malta & Gozo",
+            "description": "Erhalten Sie eine sofortige, KI-gestützte Immobilienbewertung. Unser Orakel analysiert Markttrends und Standortdaten für hochpräzise Schätzungen."
+        },
+        "valuation": {
+            "title": "Immobilienbewertung",
+            "description": "Experten-Bewertungsdienste für Luxusimmobilien auf Malta und Gozo."
+        }
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "subtitle": "Datenschutz & DSGVO-Konformität"
+    },
+    "terms": {
+        "title": "Nutzungsbedingungen",
+        "subtitle": "Nutzervereinbarung & Plattformregeln"
+    },
+    "cookies": {
+        "title": "Cookie-Richtlinie",
+        "subtitle": "Unsere Verwendung von Tracking-Technologien"
     }
 }

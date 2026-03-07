@@ -154,14 +154,40 @@ const LanguageSelector = () => {
     const pathParts = currentPath.split('/').filter(Boolean);
     const supportedLngs = ['it', 'de', 'fr', 'pl'];
 
-    // Remove existing lang prefix if any
+    // Detect if current path has a lang prefix
+    let originalInternalPath = '';
     if (supportedLngs.includes(pathParts[0])) {
-      pathParts.shift();
+      // It's a localized path, we need to map slugs back to English internal keys to rebuild
+      const currentLng = pathParts[0];
+      const translatedSlugs = pathParts.slice(1);
+
+      // Reverse mapping (this is simplified, ideally we'd have a manifest)
+      const slugMap: Record<string, string> = {
+        'nieruchomosci': 'properties', 'immobiliare': 'properties', 'immobilien': 'properties', 'proprietes': 'properties',
+        'wiedza': 'insights', 'approfondimenti': 'insights', 'einblicke': 'insights', 'conseils': 'insights',
+        'o-nas': 'about', 'chi-siamo': 'about', 'ueber-uns': 'about', 'a-propos': 'about',
+        'rynek': 'market', 'mercato': 'market', 'markt': 'market', 'marche': 'market',
+        'na-zywo': 'live', 'in-diretta': 'live', 'live-ticker': 'live', 'en-direct': 'live',
+        'narzedzia': 'tools', 'strumenti': 'tools', 'outils': 'tools',
+        'wycena-nieruchomosci': 'valuation', 'valutazione-immobiliare': 'valuation', 'immobilienbewertung': 'valuation', 'estimation-immobiliere': 'valuation',
+        'quiz-nieruchomosci': 'quiz', 'quiz-immobiliare': 'quiz', 'immobilien-quiz': 'quiz', 'quiz-immobilier': 'quiz'
+      };
+
+      const internalParts = translatedSlugs.map(s => slugMap[s] || s);
+      originalInternalPath = '/' + internalParts.join('/');
+    } else {
+      originalInternalPath = currentPath;
     }
 
+    // Now rebuild with NEW language and its slugs
+    // We can use i18n.getFixedT to get translations for the target language before switching
+    const targetT = i18n.getFixedT(langCode, 'common');
+    const internalParts = originalInternalPath.split('/').filter(Boolean);
+    const newTranslatedParts = internalParts.map(p => targetT(`slugs.${p}`, { defaultValue: p }));
+
     const newPath = langCode === 'en'
-      ? `/${pathParts.join('/')}`
-      : `/${langCode}/${pathParts.join('/')}`;
+      ? `/${internalParts.join('/')}`
+      : `/${langCode}/${newTranslatedParts.join('/')}`;
 
     setIsOpen(false);
     navigate(newPath);
@@ -215,9 +241,16 @@ const Navbar = () => {
   const { count: favCount } = useFavorites();
 
   const getLocalizedPath = (path: string) => {
-    const lng = i18n.language === 'en' ? '' : `/${i18n.language}`;
-    const cleanPath = path.startsWith('/') ? path : `/${path}`;
-    return `${lng}${cleanPath === '/' ? '' : cleanPath}`;
+    if (i18n.language === 'en') return path;
+
+    const parts = path.split('/').filter(Boolean);
+    const translatedParts = parts.map(part => {
+      // Handle nested paths like market/live
+      const translated = t(`slugs.${part}`, { defaultValue: part });
+      return translated;
+    });
+
+    return `/${i18n.language}/${translatedParts.join('/')}`;
   };
 
   useEffect(() => {
@@ -293,17 +326,17 @@ const Navbar = () => {
               </button>
             </div>
             <div className="flex flex-col gap-8 mt-12">
-              <Link to="/properties/all" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
-                Properties
+              <Link to={getLocalizedPath('/properties/all')} onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
+                {t('nav.properties')}
               </Link>
-              <Link to="/insights" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
-                Insights
+              <Link to={getLocalizedPath('/insights')} onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
+                {t('nav.insights')}
               </Link>
-              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
-                About
+              <Link to={getLocalizedPath('/about')} onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
+                {t('nav.about')}
               </Link>
-              <Link to="/market/live" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors flex items-center gap-4">
-                Market Pulse <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+              <Link to={getLocalizedPath('/market/live')} onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors flex items-center gap-4">
+                {t('nav.market_pulse')} <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
               </Link>
             </div>
           </motion.div>
@@ -341,7 +374,8 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
   usePageMeta({
     title: t('seo:home.title'),
     description: t('seo:home.description'),
-    canonicalPath: i18n.language === 'en' ? '/' : `/${i18n.language}/`,
+    canonicalPath: '/',
+    currentLang: i18n.language,
   });
 
   return (
@@ -453,8 +487,8 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
       <section className="py-32 bg-luxury-black">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-serif mb-4 uppercase tracking-widest">{t('market_snapshot.title', 'Real-Time Market Intelligence')}</h2>
-            <p className="text-white/40 text-sm">{t('market_snapshot.subtitle', 'Our programmatic engine aggregates data from Across the Maltese Islands to provide you with accurate investment benchmarks.')}</p>
+            <h2 className="text-3xl font-serif mb-4 uppercase tracking-widest">{t('sections.market_snapshot.title')}</h2>
+            <p className="text-white/40 text-sm">{t('sections.market_snapshot.subtitle')}</p>
           </div>
           <MarketSnapshot
             location={{
@@ -484,8 +518,8 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
       <section className="py-32 bg-luxury-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-serif mb-4">{t('locations_grid.title', 'Explore by Location')}</h2>
-            <p className="text-white/40">{t('locations_grid.subtitle', "Discover the unique character of Malta's most prestigious areas.")}</p>
+            <h2 className="text-4xl font-serif mb-4">{t('sections.locations_grid.title')}</h2>
+            <p className="text-white/40">{t('sections.locations_grid.subtitle')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {popularLocations.map((loc, i) => (
@@ -515,8 +549,8 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
       {/* Partners Section */}
       <section id="agencies" className="py-32 bg-white/5 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <span className="text-gold uppercase tracking-widest text-xs font-bold mb-6 block">{t('partners.badge', 'Industry Leaders')}</span>
-          <h2 className="text-3xl md:text-4xl font-serif mb-16">{t('partners.title', "Trusted by Malta's Leading Agencies")}</h2>
+          <span className="text-gold uppercase tracking-widest text-xs font-bold mb-6 block">{t('sections.partners.badge')}</span>
+          <h2 className="text-3xl md:text-4xl font-serif mb-16">{t('sections.partners.title')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
             {AGENCIES.map((agency) => (
               <div key={agency.id} className="flex flex-col items-center gap-4 group cursor-pointer">
@@ -536,19 +570,14 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
           <div className="glass-card rounded-[3rem] p-12 md:p-20 flex flex-col lg:flex-row items-center gap-16">
             <div className="flex-1">
               <div className="inline-block px-4 py-1 bg-gold/10 border border-gold/20 rounded-full mb-6">
-                <span className="text-gold text-[10px] font-bold uppercase tracking-widest">For Agencies & Developers</span>
+                <span className="text-gold text-[10px] font-bold uppercase tracking-widest">{t('sections.agencies.badge')}</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">Reach the World's Most <br /> <span className="text-gold">Exclusive Buyers</span></h2>
+              <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">{t('sections.agencies.title_part1')} <br /> <span className="text-gold">{t('sections.agencies.title_part2')}</span></h2>
               <p className="text-white/50 text-lg mb-10 leading-relaxed">
-                Join our curated luxury marketplace and showcase your portfolio to high-net-worth individuals, international investors, and residency seekers.
+                {t('sections.agencies.subtitle')}
               </p>
               <ul className="space-y-4 mb-12">
-                {[
-                  'Automated XML/JSON Feed Integrations',
-                  'High-Intent International Audience',
-                  'Detailed Performance Analytics',
-                  'Concierge-Style Support'
-                ].map((feature, i) => (
+                {Object.values(t('sections.agencies.features', { returnObjects: true }) as Record<string, string>).map((feature, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm font-medium">
                     <ShieldCheck className="text-gold" size={18} />
                     <span>{feature}</span>
@@ -556,10 +585,10 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                 ))}
               </ul>
               <button
-                aria-label="Become a founding partner"
+                aria-label={t('sections.agencies.cta')}
                 className="gold-gradient text-luxury-black px-10 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-xl"
               >
-                Become a Founding Partner
+                {t('sections.agencies.cta')}
               </button>
             </div>
             <div className="flex-1 relative">
@@ -673,40 +702,72 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
       <Route path="/:lng" element={<LanguageWrapper><HomePage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
 
       {/* Property Routes */}
-      <Route path="/properties/all" element={<PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
-      <Route path="/:lng/properties/all" element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
+      {['properties', 'nieruchomosci', 'immobiliare', 'immobilien', 'proprietes'].map(p => (
+        <React.Fragment key={p}>
+          <Route path={`/${p}/all`} element={<PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
+          <Route path={`/:lng/${p}/all`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/wszystkie`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/tutti`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/alle`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/toutes`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
 
-      <Route path="/properties/:citySlug" element={<CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
-      <Route path="/:lng/properties/:citySlug" element={<LanguageWrapper><CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
+          <Route path={`/${p}/:citySlug`} element={<CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
+          <Route path={`/:lng/${p}/:citySlug`} element={<LanguageWrapper><CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
 
-      <Route path="/properties/:citySlug/:filterSlug" element={<FilteredPropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
-      <Route path="/:lng/properties/:citySlug/:filterSlug" element={<LanguageWrapper><FilteredPropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
-
-      <Route path="/properties/:id" element={<PropertyDetailPage onContact={handleContact} />} />
-      <Route path="/:lng/properties/:id" element={<LanguageWrapper><PropertyDetailPage onContact={handleContact} /></LanguageWrapper>} />
+          <Route path={`/${p}/:id`} element={<PropertyDetailPage onContact={handleContact} />} />
+          <Route path={`/:lng/${p}/:id`} element={<LanguageWrapper><PropertyDetailPage onContact={handleContact} /></LanguageWrapper>} />
+        </React.Fragment>
+      ))}
 
       {/* Insight Routes */}
-      <Route path="/insights" element={<InsightsHub />} />
-      <Route path="/:lng/insights" element={<LanguageWrapper><InsightsHub /></LanguageWrapper>} />
-
-      <Route path="/insights/:slug" element={<ArticlePage />} />
-      <Route path="/:lng/insights/:slug" element={<LanguageWrapper><ArticlePage /></LanguageWrapper>} />
-
-      <Route path="/insights/gozo-bridge-effect" element={<GozoBridgeTrackerPage />} />
-      <Route path="/:lng/insights/gozo-bridge-effect" element={<LanguageWrapper><GozoBridgeTrackerPage /></LanguageWrapper>} />
+      {['insights', 'wiedza', 'approfondimenti', 'einblicke', 'conseils'].map(p => (
+        <React.Fragment key={p}>
+          <Route path={`/${p}`} element={<InsightsHub />} />
+          <Route path={`/:lng/${p}`} element={<LanguageWrapper><InsightsHub /></LanguageWrapper>} />
+          <Route path={`/${p}/:slug`} element={<ArticlePage />} />
+          <Route path={`/:lng/${p}/:slug`} element={<LanguageWrapper><ArticlePage /></LanguageWrapper>} />
+        </React.Fragment>
+      ))}
 
       {/* Market & Tools */}
-      <Route path="/market/live" element={<MarketLive />} />
-      <Route path="/:lng/market/live" element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
+      {['market', 'rynek', 'mercato', 'markt', 'marche'].map(p => (
+        <React.Fragment key={p}>
+          <Route path={`/${p}/live`} element={<MarketLive />} />
+          <Route path={`/:lng/${p}/live`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/na-zywo`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/in-diretta`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/live-ticker`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/en-direct`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
+        </React.Fragment>
+      ))}
 
-      <Route path="/tools/property-valuation" element={<PropertyPriceOracle />} />
-      <Route path="/:lng/tools/property-valuation" element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
+      {['about', 'o-nas', 'chi-siamo', 'ueber-uns', 'a-propos'].map(p => (
+        <React.Fragment key={p}>
+          <Route path={`/${p}`} element={<AboutPage />} />
+          <Route path={`/:lng/${p}`} element={<LanguageWrapper><AboutPage /></LanguageWrapper>} />
+        </React.Fragment>
+      ))}
 
-      <Route path="/tools/property-quiz" element={<MaltaPropertyQuiz />} />
-      <Route path="/:lng/tools/property-quiz" element={<LanguageWrapper><MaltaPropertyQuiz /></LanguageWrapper>} />
+      {['tools', 'narzedzia', 'strumenti', 'outils'].map(p => (
+        <React.Fragment key={p}>
+          <Route path={`/:lng/${p}/valuation`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/wycena-nieruchomosci`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/valutazione-immobiliare`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/immobilienbewertung`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/estimation-immobiliere`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
 
+          <Route path={`/:lng/${p}/quiz`} element={<LanguageWrapper><MaltaPropertyQuiz /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/quiz-nieruchomosci`} element={<LanguageWrapper><MaltaPropertyQuiz /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/quiz-immobiliare`} element={<LanguageWrapper><MaltaPropertyQuiz /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/immobilien-quiz`} element={<LanguageWrapper><MaltaPropertyQuiz /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/quiz-immobilier`} element={<LanguageWrapper><MaltaPropertyQuiz /></LanguageWrapper>} />
+        </React.Fragment>
+      ))}
+
+      {/* Base English Routes as fallback */}
+      <Route path="/insights" element={<InsightsHub />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/:lng/about" element={<LanguageWrapper><AboutPage /></LanguageWrapper>} />
+      <Route path="/market/live" element={<MarketLive />} />
 
       {/* Legal & Auth */}
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -802,9 +863,10 @@ const Footer = () => {
   const { i18n, t } = useTranslation();
 
   const getLocalizedPath = (path: string) => {
-    const lng = i18n.language === 'en' ? '' : `/${i18n.language}`;
-    const cleanPath = path.startsWith('/') ? path : `/${path}`;
-    return `${lng}${cleanPath === '/' ? '' : cleanPath}`;
+    if (i18n.language === 'en') return path;
+    const parts = path.split('/').filter(Boolean);
+    const translatedParts = parts.map(part => t(`slugs.${part}`, { defaultValue: part }));
+    return `/${i18n.language}/${translatedParts.join('/')}`;
   };
 
   return (
@@ -848,30 +910,30 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg mb-8">{t('footer.quick_links')}</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><Link to={getLocalizedPath('/market/live')} className="hover:text-gold transition-colors flex items-center gap-2">Live Pulse <span className="w-1 h-1 rounded-full bg-red-500" /></Link></li>
-              <li><Link to={getLocalizedPath('/tools/property-quiz')} className="hover:text-gold transition-colors font-bold text-white">Property Quiz 🎯</Link></li>
-              <li><Link to={getLocalizedPath('/tools/property-valuation')} className="hover:text-gold transition-colors">Price Oracle (AI)</Link></li>
-              <li><Link to={getLocalizedPath('/agency/portal')} className="text-gold hover:text-white transition-colors flex items-center gap-2">Portal For Agencies <ArrowUpRight size={14} /></Link></li>
+              <li><Link to={getLocalizedPath('/market/live')} className="hover:text-gold transition-colors flex items-center gap-2">{t('nav.market_pulse')} <span className="w-1 h-1 rounded-full bg-red-500" /></Link></li>
+              <li><Link to={getLocalizedPath('/tools/quiz')} className="hover:text-gold transition-colors font-bold text-white">{t('footer.quiz')}</Link></li>
+              <li><Link to={getLocalizedPath('/tools/valuation')} className="hover:text-gold transition-colors">{t('seo:tools.valuation.title')}</Link></li>
+              <li><Link to={getLocalizedPath('/agency/portal')} className="text-gold hover:text-white transition-colors flex items-center gap-2">{t('footer.portal_for_agencies')} <ArrowUpRight size={14} /></Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-serif text-lg mb-8">{t('footer.legal')}</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><Link to={getLocalizedPath('/about')} className="hover:text-gold transition-colors">About Us</Link></li>
-              <li><Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">Privacy Policy</Link></li>
-              <li><Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">Terms of Service</Link></li>
-              <li><Link to={getLocalizedPath('/cookie-policy')} className="hover:text-gold transition-colors">Cookie Policy</Link></li>
+              <li><Link to={getLocalizedPath('/about')} className="hover:text-gold transition-colors">{t('nav.about')}</Link></li>
+              <li><Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">{t('seo:privacy.title')}</Link></li>
+              <li><Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">{t('seo:terms.title')}</Link></li>
+              <li><Link to={getLocalizedPath('/cookie-policy')} className="hover:text-gold transition-colors">{t('seo:cookies.title')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-8">Knowledge Hub</h4>
+            <h4 className="font-serif text-lg mb-8">{t('footer.knowledge_hub')}</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><Link to={getLocalizedPath('/insights/buying-property-in-malta-as-a-foreigner-2026')} className="hover:text-gold transition-colors">Buying Guide</Link></li>
-              <li><Link to={getLocalizedPath('/insights/special-designated-areas-malta-guide')} className="hover:text-gold transition-colors">SDA Guide</Link></li>
-              <li><Link to={getLocalizedPath('/insights/rental-yields-malta-2026')} className="hover:text-gold transition-colors">Rental Yields</Link></li>
-              <li><Link to={getLocalizedPath('/insights/property-taxes-malta-2026')} className="hover:text-gold transition-colors">Property Taxes</Link></li>
+              <li><Link to={getLocalizedPath('/insights/buying-property-in-malta-as-a-foreigner-2026')} className="hover:text-gold transition-colors">{t('seo:insights.title_buying')}</Link></li>
+              <li><Link to={getLocalizedPath('/insights/special-designated-areas-malta-guide')} className="hover:text-gold transition-colors">{t('seo:insights.title_sda')}</Link></li>
+              <li><Link to={getLocalizedPath('/insights/rental-yields-malta-2026')} className="hover:text-gold transition-colors">{t('seo:insights.title_yields')}</Link></li>
+              <li><Link to={getLocalizedPath('/insights/property-taxes-malta-2026')} className="hover:text-gold transition-colors">{t('seo:insights.title_taxes')}</Link></li>
             </ul>
           </div>
 

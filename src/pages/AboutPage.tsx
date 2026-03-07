@@ -11,44 +11,47 @@ export const AboutPage = () => {
     const { t, i18n } = useTranslation();
 
     const getLocalizedPath = (path: string) => {
-        const lng = i18n.language === 'en' ? '' : `/${i18n.language}`;
-        const cleanPath = path.startsWith('/') ? path : `/${path}`;
-        return `${lng}${cleanPath === '/' ? '' : cleanPath}`;
+        if (i18n.language === 'en') return path;
+        const parts = path.split('/').filter(Boolean);
+        const translatedParts = parts.map(part => t(`slugs.${part}`, { defaultValue: part }));
+        return `/${i18n.language}/${translatedParts.join('/')}`;
     };
 
     usePageMeta({
         title: t('seo:about.title'),
         description: t('seo:about.description'),
-        canonicalPath: i18n.language === 'en' ? '/about' : `/${i18n.language}/about`
+        canonicalPath: '/about',
+        currentLang: i18n.language,
+        i18n,
     });
 
     const stats = [
-        { label: 'Properties Pulled', value: '450+' },
-        { label: 'Partner Agencies', value: '15' },
-        { label: 'Expert Guides', value: '50+' },
-        { label: 'Client Satisfaction', value: '100%' }
+        { label: t('about.stats.properties'), value: '450+' },
+        { label: t('about.stats.agencies'), value: '15' },
+        { label: t('about.stats.guides'), value: '50+' },
+        { label: t('about.stats.satisfaction'), value: '100%' }
     ];
 
     const values = [
         {
             icon: <Shield className="text-gold" size={24} />,
-            title: 'Integrity First',
-            description: 'We curate only the most reputable agencies and properties, ensuring a transparent and secure acquisition process for international HNWIs.'
+            title: t('about.values.value1.title'),
+            description: t('about.values.value1.desc')
         },
         {
             icon: <Award className="text-gold" size={24} />,
-            title: 'Unrivaled Expertise',
-            description: 'Our deep understanding of Maltese property law, tax optimization (MPRP/SDA), and market trends provides an unfair advantage to our clients.'
+            title: t('about.values.value2.title'),
+            description: t('about.values.value2.desc')
         },
         {
             icon: <Users className="text-gold" size={24} />,
-            title: 'Discreet Service',
-            description: 'Luxury real estate is about privacy. Our platform and partners operate with the highest level of confidentiality and professionalism.'
+            title: t('about.values.value3.title'),
+            description: t('about.values.value3.desc')
         },
         {
             icon: <Globe className="text-gold" size={24} />,
-            title: 'Global Perspective',
-            description: 'Tailored for the international buyer, our insights bridge the gap between Mediterranean charm and global investment standards.'
+            title: t('about.values.value4.title'),
+            description: t('about.values.value4.desc')
         }
     ];
 
@@ -62,13 +65,13 @@ export const AboutPage = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <p className="text-gold font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Establishing Excellence</p>
+                        <p className="text-gold font-bold uppercase tracking-[0.3em] text-[10px] mb-4">{t('about.badge')}</p>
                         <h1 className="text-5xl md:text-7xl font-serif text-white leading-tight mb-8">
-                            The Finest Addresses <br />
-                            <span className="text-gold italic font-light">Across the Islands.</span>
+                            {t('about.title_part1')} <br />
+                            <span className="text-gold italic font-light">{t('about.title_part2')}</span>
                         </h1>
                         <p className="text-white/60 text-lg leading-relaxed mb-10 max-w-xl">
-                            Malta Luxury Real Estate was founded on a simple premise: to simplify the acquisition of the Maltese islands' most exceptional properties. We are not just a marketplace; we are the bridge between discerning international investors and the islands' most reputable real estate specialists.
+                            {t('about.description')}
                         </p>
                         <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-10">
                             {stats.map((stat, i) => (
@@ -96,7 +99,7 @@ export const AboutPage = () => {
                         {/* Floating Trust Badge */}
                         <div className="absolute -bottom-8 -left-8 bg-gold-gradient p-8 rounded-3xl shadow-2xl max-w-[240px] hidden md:block">
                             <Landmark className="text-luxury-black mb-4" size={32} />
-                            <p className="text-luxury-black font-serif text-xl leading-snug">Authorized Luxury Property Network</p>
+                            <p className="text-luxury-black font-serif text-xl leading-snug">{t('about.cta.trust_badge')}</p>
                         </div>
                     </motion.div>
                 </div>
@@ -106,8 +109,8 @@ export const AboutPage = () => {
             <section className="bg-white/[0.02] py-24 lg:py-32 border-y border-white/5">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-20">
-                        <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">Our Foundational <span className="text-gold italic">Principles</span></h2>
-                        <p className="text-white/40 leading-relaxed">Everything we do is guided by a commitment to quality and a deep respect for the architectural heritage of Malta and Gozo.</p>
+                        <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">{t('about.values.title')}</h2>
+                        <p className="text-white/40 leading-relaxed">{t('about.values.subtitle')}</p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
                         {values.map((v, i) => (
@@ -141,32 +144,32 @@ export const AboutPage = () => {
                         <div className="space-y-8">
                             <div className="flex items-center gap-4">
                                 <div className="h-0.5 w-12 bg-gold" />
-                                <p className="text-gold font-bold uppercase tracking-widest text-xs">Director's Note</p>
+                                <p className="text-gold font-bold uppercase tracking-widest text-xs">{t('about.director.tag')}</p>
                             </div>
                             <p className="text-2xl md:text-4xl font-serif text-white italic leading-snug">
-                                "We don't just list properties; we represent a way of life that respects the history of these islands while embracing the future of global investment."
+                                "{t('about.director.quote')}"
                             </p>
                             <div className="flex items-center gap-6 pt-4">
                                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-gold/30">
                                     <ImgWithPlaceholder src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&fm=webp" alt="Director" />
                                 </div>
                                 <div>
-                                    <p className="text-white font-bold tracking-wide">Alexander Vanhaut</p>
-                                    <p className="text-gold/60 text-xs uppercase tracking-widest">Managing Director</p>
+                                    <p className="text-white font-bold tracking-wide">{t('about.director.name')}</p>
+                                    <p className="text-gold/60 text-xs uppercase tracking-widest">{t('about.director.role')}</p>
                                 </div>
                             </div>
                         </div>
                         <div className="space-y-6">
-                            <h3 className="text-2xl font-serif text-white">The Quality Standard (E-E-A-T)</h3>
+                            <h3 className="text-2xl font-serif text-white">{t('about.eeat.title')}</h3>
                             <p className="text-white/50 leading-relaxed">
-                                As a verified member of the Maltese real estate ecosystem, we provide more than just listings. Our intelligence suite—including ROI calculators and tax guides—is built on primary research and 20+ years of local market data.
+                                {t('about.eeat.desc')}
                             </p>
                             <ul className="space-y-3">
                                 {[
-                                    'Verified Agency Partnerships',
-                                    'Quarterly Market Intelligence Reports',
-                                    'Compliant with 2026 Real Estate Regulations',
-                                    'Expert Advisory on SDAs and Residency'
+                                    t('about.eeat.points.0'),
+                                    t('about.eeat.points.1'),
+                                    t('about.eeat.points.2'),
+                                    t('about.eeat.points.3')
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-sm text-white/70">
                                         <CheckCircle2 size={16} className="text-emerald-500" />
@@ -181,7 +184,7 @@ export const AboutPage = () => {
 
             {/* CTA Section */}
             <section className="py-24 text-center max-w-3xl mx-auto px-6">
-                <h2 className="text-3xl font-serif text-white mb-8">Ready to discover your <span className="text-gold italic">unrivaled residence?</span></h2>
+                <h2 className="text-3xl font-serif text-white mb-8">{t('about.cta.title')}</h2>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                     <Link to={getLocalizedPath('/properties/all')} className="gold-gradient text-luxury-black px-10 py-4 rounded-full font-bold uppercase tracking-widest text-[11px] shadow-2xl hover:scale-105 transition-transform">
                         {t('about.view_collections', 'View Collections')}

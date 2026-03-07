@@ -9,6 +9,8 @@ import { Breadcrumb } from '../components/Breadcrumb';
 import { generateArticleSchema } from '../lib/seo/schemas';
 import { usePageMeta } from '../lib/seo/meta';
 import { injectInternalLinks } from '../lib/seo/internal-linking';
+import { useTranslation } from 'react-i18next';
+import { resolveArticleLang } from '../lib/markdown';
 import { SchemaScript } from '../components/SchemaScript';
 import { MortgageCalculator } from '../components/calculators/MortgageCalculator';
 
@@ -36,13 +38,8 @@ const ReadingProgress = () => {
   );
 };
 
-// ─── FIX #2: ReactMarkdown komponenty ─────────────────────────────────────────
-// Problem: ReactMarkdown renderuje bare <p>, <h2>, <table> etc.
-// Tailwind Typography (.prose) miało własne definicje dla tych elementów
-// i wygrywało z naszym CSS ze względu na specificity i kolejność.
-// Rozwiązanie: mapujemy każdy element jawnie przez components prop
-// + wrapper .article-prose zamiast .prose (FIX #1)
-const MarkdownComponents: React.ComponentProps<typeof ReactMarkdown>['components'] = {
+// ─── FIX #2: ReactMarkdown components ─────────────────────────────────────────
+const getMarkdownComponents = (t: any): React.ComponentProps<typeof ReactMarkdown>['components'] => ({
   // ── Paragraphs
   p: ({ children }) => <p>{children}</p>,
 
@@ -65,7 +62,7 @@ const MarkdownComponents: React.ComponentProps<typeof ReactMarkdown>['components
   // ── HR
   hr: () => <hr />,
 
-  // ── Tables – owijamy w .table-wrapper dla scroll mobile + premium styles
+  // ── Tables
   table: ({ children }) => (
     <div className="table-wrapper">
       <table>{children}</table>
@@ -79,7 +76,6 @@ const MarkdownComponents: React.ComponentProps<typeof ReactMarkdown>['components
 
   // ── Blockquote → Callout lub Pull Quote
   blockquote: ({ children }) => {
-    // Wyciągamy surowy tekst żeby sprawdzić czy to callout
     const firstChild = React.Children.toArray(children)[0] as any;
     let rawText = '';
 
@@ -90,15 +86,14 @@ const MarkdownComponents: React.ComponentProps<typeof ReactMarkdown>['components
     }
 
     if (typeof rawText === 'string' && rawText.startsWith('[!')) {
-      // Callout
       let type: 'tip' | 'warning' | 'info' | 'success' = 'tip';
-      let label = 'Key Point';
+      let label = t('article.callouts.key_point');
 
-      if (rawText.includes('IMPORTANT')) { type = 'warning'; label = 'Important'; }
-      else if (rawText.includes('WARNING')) { type = 'warning'; label = 'Caution'; }
-      else if (rawText.includes('NOTE')) { type = 'info'; label = 'Note'; }
-      else if (rawText.includes('TIP')) { type = 'tip'; label = 'Expert Tip'; }
-      else if (rawText.includes('SUCCESS')) { type = 'success'; label = 'Confirmed'; }
+      if (rawText.includes('IMPORTANT')) { type = 'warning'; label = t('article.callouts.important'); }
+      else if (rawText.includes('WARNING')) { type = 'warning'; label = t('article.callouts.caution'); }
+      else if (rawText.includes('NOTE')) { type = 'info'; label = t('article.callouts.note'); }
+      else if (rawText.includes('TIP')) { type = 'tip'; label = t('article.callouts.expert_tip'); }
+      else if (rawText.includes('SUCCESS')) { type = 'success'; label = t('article.callouts.confirmed'); }
 
       const clean = (txt: string) =>
         txt.replace(/\[!(IMPORTANT|WARNING|TIP|NOTE|SUCCESS)\]\s*/i, '');
@@ -123,12 +118,10 @@ const MarkdownComponents: React.ComponentProps<typeof ReactMarkdown>['components
         </div>
       );
     }
-
-    // Pull Quote (zwykły cytat)
     return <blockquote className="pull-quote">{children}</blockquote>;
   },
 
-  // ── Code Blocks — used for embedding tools
+  // ── Code Blocks
   code: ({ node, inline, className, children, ...props }: any) => {
     const match = /language-(\w+)/.exec(className || '');
     if (!inline && match && match[1] === 'calculator') {
@@ -144,7 +137,7 @@ const MarkdownComponents: React.ComponentProps<typeof ReactMarkdown>['components
       </code>
     );
   },
-};
+});
 
 // ─── FAQ Item ─────────────────────────────────────────────────────────────────
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => (
@@ -164,18 +157,23 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export const ArticlePage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { t, i18n } = useTranslation();
+  const lang = resolveArticleLang(i18n.language);
   const [article, setArticle] = useState<Article | null>(null);
   const [relatedArticles, setRelatedArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // Memoized components for ReactMarkdown
+  const MarkdownComponents = React.useMemo(() => getMarkdownComponents(t), [t]);
 
   useEffect(() => {
     const fetchData = async () => {
       if (!slug) return;
       setLoading(true);
-      const data = await getArticleBySlug(slug);
+      const data = await getArticleBySlug(slug, lang);
       if (data) {
         setArticle(data);
-        const allRelated = await getArticlesByCategory(data.category);
+        const allRelated = await getArticlesByCategory(data.category, lang);
         setRelatedArticles(allRelated.filter(a => a.slug !== slug).slice(0, 3));
       } else {
         setArticle(null);
@@ -184,12 +182,13 @@ export const ArticlePage = () => {
     };
     fetchData();
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [slug, lang]);
 
   usePageMeta({
     title: article ? `${article.title} | Malta Luxury Real Estate` : 'Insights | Malta Luxury Real Estate',
     description: article?.metaDescription || article?.excerpt || '',
     canonicalPath: article ? `/insights/${article.slug}` : '/insights',
+    currentLang: i18n.language,
     ogType: 'article',
     ogImage: article?.image,
   });
@@ -210,10 +209,10 @@ export const ArticlePage = () => {
   if (!article) {
     return (
       <div className="min-h-screen bg-luxury-black flex flex-col items-center justify-center p-6 text-center">
-        <h1 className="font-serif text-4xl text-white mb-6">Article Not Found</h1>
+        <h1 className="font-serif text-4xl text-white mb-6">{t('article.not_found')}</h1>
         <Link to="/insights"
           className="gold-gradient text-luxury-black px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest">
-          Back to Insights
+          {t('article.back_to_hub')}
         </Link>
       </div>
     );
@@ -240,8 +239,8 @@ export const ArticlePage = () => {
             <div className="w-full max-w-5xl mx-auto px-6 pb-14">
               <div className="mb-5">
                 <Breadcrumb items={[
-                  { label: 'Home', href: '/' },
-                  { label: 'Insights', href: '/insights' },
+                  { label: t('common.home'), href: '/' },
+                  { label: t('nav.insights'), href: '/insights' },
                   { label: article.title },
                 ]} />
               </div>
@@ -273,7 +272,7 @@ export const ArticlePage = () => {
             {/* Quick Summary box */}
             {article.excerpt && (
               <div className="article-summary-box">
-                <span className="article-summary-box__label">Quick Summary</span>
+                <span className="article-summary-box__label">{t('article.quick_summary')}</span>
                 <p>{article.excerpt}</p>
               </div>
             )}
@@ -299,7 +298,7 @@ export const ArticlePage = () => {
             {/* FAQ z danych artykułu (jeśli istnieją) */}
             {(article as any).faqs && (article as any).faqs.length > 0 && (
               <section className="faq-section">
-                <div className="faq-section__label">Frequently Asked Questions</div>
+                <div className="faq-section__label">{t('article.faq_title')}</div>
                 {(article as any).faqs.map((faq: { question: string; answer: string }, i: number) => (
                   <FAQItem key={i} question={faq.question} answer={faq.answer} />
                 ))}
@@ -312,19 +311,17 @@ export const ArticlePage = () => {
                 onClick={() => (navigator as any).share?.({ title: article.title, url: window.location.href })}
                 className="flex items-center gap-2 text-white/30 hover:text-gold transition-colors
                            text-[10px] uppercase tracking-[0.15em] font-semibold">
-                <Share2 size={15} /> Share
+                <Share2 size={15} /> {t('article.share')}
               </button>
               <button className="flex items-center gap-2 text-white/30 hover:text-gold transition-colors
                                  text-[10px] uppercase tracking-[0.15em] font-semibold">
-                <Bookmark size={15} /> Save
+                <Bookmark size={15} /> {t('article.save')}
               </button>
             </div>
 
             {/* Disclaimer */}
             <p className="article-disclaimer">
-              Last updated: {article.date}. Information provided on Malta Luxury Real Estate is for
-              general guidance only and does not constitute legal, financial, or tax advice.
-              Always consult a licensed professional for advice specific to your circumstances.
+              {t('article.last_updated')}: {article.date}. {t('article.disclaimer')}
             </p>
           </article>
 
@@ -334,7 +331,7 @@ export const ArticlePage = () => {
 
               <div>
                 <h3 className="text-[10px] uppercase tracking-[0.18em] font-bold text-gold/50 mb-8">
-                  Related Guides
+                  {t('article.related_guides')}
                 </h3>
                 <div className="space-y-8">
                   {relatedArticles.map(rel => (
@@ -362,19 +359,19 @@ export const ArticlePage = () => {
               </div>
 
               <div className="bg-white/[0.025] border border-white/[0.07] p-8 rounded-2xl">
-                <h3 className="font-serif text-lg mb-2 text-white">Malta Intelligence</h3>
+                <h3 className="font-serif text-lg mb-2 text-white">{t('article.sidebar_newsletter_title')}</h3>
                 <p className="text-[11px] text-white/30 mb-6 leading-relaxed">
-                  Exclusive market updates and investment insights, monthly.
+                  {t('article.sidebar_newsletter_desc')}
                 </p>
                 <div className="space-y-3">
-                  <input type="email" placeholder="Your email"
+                  <input type="email" placeholder={t('article.sidebar_newsletter_placeholder')}
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3
                                text-sm text-white placeholder-white/20 outline-none
                                focus:border-gold/50 transition-colors" />
                   <button className="w-full gold-gradient text-luxury-black py-3 rounded-lg
                                      text-[10px] font-bold uppercase tracking-widest
                                      hover:brightness-110 transition-all">
-                    Join Insider List
+                    {t('article.sidebar_newsletter_button')}
                   </button>
                 </div>
               </div>

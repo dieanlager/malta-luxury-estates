@@ -1,18 +1,48 @@
 {
     "home": {
-        "title": "Malta Luxury Real Estate – Immobilier de Luxe à Vendre",
-        "description": "Découvrez les propriétés les plus exclusives à Malte et Gozo. Annonces immobilières de luxe sélectionnées pour les acheteurs et investisseurs internationaux."
+        "title": "Malta Luxury Real Estate – Immobilier de Prestige à Vendre",
+        "description": "Découvrez les propriétés les plus exclusives à Malte et Gozo. Annonces immobilières de luxe pour acheteurs et investisseurs internationaux."
     },
     "properties": {
-        "title": "Immobilier de Luxe à Vendre à Malte | Toutes les Annonces",
-        "description": "Parcourez notre collection d'appartements haut de gamme, de villas et de palais à travers les îles maltaises."
+        "title": "Immobilier de Luxe à Vendre à Malte | Voir Toutes les Annonces",
+        "description": "Parcourez notre collection d'appartements, villas et palais haut de gamme à travers l'archipel maltais."
     },
     "insights": {
-        "title": "Analyses Immobilières Malte – Hub d'Investissement",
-        "description": "Conseils d'experts, rapports de marché et guides pour l'achat et l'investissement dans l'immobilier de luxe maltais."
+        "title": "Conseils Immobiliers Malte & Hub d'Investissement",
+        "description": "Conseils d'experts, rapports de marché et guides pour acheter et investir dans l'immobilier de luxe à Malte.",
+        "title_buying": "Acheter un Bien à Malte en tant qu'Étranger",
+        "title_sda": "Guide des Special Designated Areas (SDA)",
+        "title_yields": "Rendements Locatifs à Malte 2026",
+        "title_taxes": "Taxes Immobilières à Malte 2026"
     },
     "about": {
         "title": "À Propos de Malta Luxury Real Estate – Notre Mission",
-        "description": "Le premier portail indépendant reliant les acheteurs internationaux fortunés au marché immobilier premium de Malte."
+        "description": "Le premier portail indépendant reliant les investisseurs internationaux au marché immobilier de prestige de Malte."
+    },
+    "market": {
+        "title": "Le Pouls du Marché Immobilier Malte | Données en Direct 2026",
+        "description": "Suivez les tendances de prix, les annonces en direct et l'activité du marché à Malte et Gozo. Analyses basées sur les données pour investisseurs."
+    },
+    "tools": {
+        "oracle": {
+            "title": "Oracle des Prix par IA | Estimation Gratuite Malte & Gozo",
+            "description": "Obtenez une estimation immobilière instantanée par IA. Notre Oracle analyse les tendances du marché et les données locales pour des estimations précises."
+        },
+        "valuation": {
+            "title": "Estimation Immobilière",
+            "description": "Services d'expertise en évaluation immobilière pour le luxe à Malte et Gozo."
+        }
+    },
+    "privacy": {
+        "title": "Politique de Confidentialité",
+        "subtitle": "Protection des Données & Conformité RGPD"
+    },
+    "terms": {
+        "title": "Conditions d'Utilisation",
+        "subtitle": "Accord Utilisateur & Règles de la Plateforme"
+    },
+    "cookies": {
+        "title": "Politique relative aux Cookies",
+        "subtitle": "Notre Utilisation des Technologies de Suivi"
     }
 }

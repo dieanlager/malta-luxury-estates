@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { TrendingUp, Euro, PieChart, Percent, Activity } from 'lucide-react';
+import { TrendingUp, Euro, PieChart, Activity } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { calculateROI, ROIResult } from '../../lib/calculators/property-math';
 
 export const ROICalculator = () => {
+    const { t, i18n } = useTranslation();
     const [purchasePrice, setPurchasePrice] = useState(500000);
     const [buyingCostsPercent, setBuyingCostsPercent] = useState(6.5);
     const [monthlyRent, setMonthlyRent] = useState(2500);
@@ -23,6 +25,9 @@ export const ROICalculator = () => {
         setResult(res);
     }, [purchasePrice, buyingCostsPercent, monthlyRent, monthlyExp, managementFee]);
 
+    const locale = i18n.language === 'en' ? 'en-EU' : i18n.language;
+    const fmtItems = (n: number) => Math.round(n).toLocaleString(locale);
+
     return (
         <div className="glass-card rounded-[2.5rem] border border-emerald-500/20 overflow-hidden bg-emerald-500/5 backdrop-blur-3xl">
             <div className="p-8 border-b border-white/10 bg-white/5">
@@ -31,8 +36,8 @@ export const ROICalculator = () => {
                         <TrendingUp className="text-emerald-400" size={24} />
                     </div>
                     <div>
-                        <h3 className="text-2xl font-serif text-white">Yield & ROI Intelligence</h3>
-                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">For Real Estate Investors</p>
+                        <h3 className="text-2xl font-serif text-white">{t('roi.title')}</h3>
+                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{t('roi.subtitle')}</p>
                     </div>
                 </div>
             </div>
@@ -42,8 +47,8 @@ export const ROICalculator = () => {
                 <div className="space-y-10">
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Total Investment</label>
-                            <span className="text-emerald-400 font-serif text-xl">€{purchasePrice.toLocaleString()}</span>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('roi.total_investment')}</label>
+                            <span className="text-emerald-400 font-serif text-xl">€{fmtItems(purchasePrice)}</span>
                         </div>
                         <input
                             type="range"
@@ -58,7 +63,7 @@ export const ROICalculator = () => {
 
                     <div className="grid grid-cols-2 gap-8">
                         <div>
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">Target Monthly Rent</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">{t('roi.monthly_rent')}</label>
                             <div className="relative">
                                 <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
                                 <input
@@ -70,7 +75,7 @@ export const ROICalculator = () => {
                             </div>
                         </div>
                         <div>
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">Monthly Expenses</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">{t('roi.monthly_expenses')}</label>
                             <div className="relative">
                                 <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
                                 <input
@@ -84,7 +89,7 @@ export const ROICalculator = () => {
                     </div>
 
                     <div>
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">Management Fee (incl. VAT)</label>
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">{t('roi.management_fee')}</label>
                         <div className="flex gap-4">
                             {[0, 5, 8, 10, 15].map(v => (
                                 <button
@@ -103,12 +108,12 @@ export const ROICalculator = () => {
                 <div className="relative">
                     <div className="grid grid-cols-2 gap-4 mb-8">
                         <div className="bg-white/5 p-6 rounded-3xl border border-white/10 border-b-emerald-500/50">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">Net Yearly Profit</div>
-                            <div className="text-3xl font-serif text-emerald-400">€{result?.netYearlyRent.toLocaleString()}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('roi.net_yearly_profit')}</div>
+                            <div className="text-3xl font-serif text-emerald-400">€{fmtItems(result?.netYearlyRent ?? 0)}</div>
                         </div>
                         <div className="bg-white/5 p-6 rounded-3xl border border-white/10 border-b-blue-500/50">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">Rental Tax (15%)</div>
-                            <div className="text-3xl font-serif text-blue-400 text-right">€{result?.rentalTax.toLocaleString()}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('roi.rental_tax')}</div>
+                            <div className="text-3xl font-serif text-blue-400 text-right">€{fmtItems(result?.rentalTax ?? 0)}</div>
                         </div>
                     </div>
 
@@ -117,21 +122,21 @@ export const ROICalculator = () => {
                             <div className="flex items-center gap-3">
                                 <Activity className="text-emerald-400" size={24} />
                                 <div>
-                                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/30">Net Yield</div>
-                                    <div className="text-sm text-emerald-400/60 font-serif">Reality Check</div>
+                                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('roi.net_yield')}</div>
+                                    <div className="text-sm text-emerald-400/60 font-serif">{t('roi.reality_check')}</div>
                                 </div>
                             </div>
                             <div className="text-4xl font-serif text-emerald-400">{result?.netYield.toFixed(2)}%</div>
                         </div>
 
                         <div className="flex justify-between items-center p-4 px-6 border border-white/5 rounded-2xl">
-                            <span className="text-xs text-white/40">Gross Initial Yield</span>
+                            <span className="text-xs text-white/40">{t('roi.gross_yield')}</span>
                             <span className="text-lg font-serif">{result?.grossYield.toFixed(2)}%</span>
                         </div>
 
                         <div className="flex justify-between items-center p-4 px-6 border border-white/5 rounded-2xl">
-                            <span className="text-xs text-white/40">Estimated Capital Repayment</span>
-                            <span className="text-lg font-serif">~ {result?.paybackPeriodYears.toFixed(1)} Years</span>
+                            <span className="text-xs text-white/40">{t('roi.capital_repayment')}</span>
+                            <span className="text-lg font-serif">{t('roi.years', { count: Number(result?.paybackPeriodYears.toFixed(1)) })}</span>
                         </div>
                     </div>
 
@@ -139,10 +144,9 @@ export const ROICalculator = () => {
                         <div className="flex gap-4">
                             <PieChart className="text-emerald-400 shrink-0" size={20} />
                             <div>
-                                <h4 className="text-sm font-serif mb-1">Investor Insight</h4>
+                                <h4 className="text-sm font-serif mb-1">{t('roi.investor_insight.title')}</h4>
                                 <p className="text-[11px] text-white/50 leading-relaxed">
-                                    The net yield accounts for 15% flat rental tax, management fees, and maintenance.
-                                    Malta's long-term capital appreciation (avg 5%) is NOT included in this figure.
+                                    {t('roi.investor_insight.description')}
                                 </p>
                             </div>
                         </div>

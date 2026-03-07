@@ -1,18 +1,48 @@
 {
     "home": {
-        "title": "Malta Luxury Real Estate – Immobili di Lusso in Vendita",
-        "description": "Scopri le proprietà più esclusive a Malta e Gozo. Annunci immobiliari di lusso selezionati per acquirenti e investitori internazionali."
+        "title": "Malta Luxury Real Estate – Immobili di Prestigio in Vendita",
+        "description": "Scopri le proprietà più esclusive a Malta e Gozo. Annunci di immobili di lusso curati per acquirenti e investitori internazionali."
     },
     "properties": {
-        "title": "Immobili di Lusso in Vendita a Malta | Vedi Tutti gli Annunci",
-        "description": "Sfoglia la nostra collezione di appartamenti di lusso, ville e palazzi nelle isole maltesi."
+        "title": "Immobili di Lusso in Vendita a Malta | Visualizza Tutti gli Annunci",
+        "description": "Sfoglia la nostra collezione di appartamenti, ville e palazzi di alto livello nelle isole maltesi."
     },
     "insights": {
-        "title": "Approfondimenti Immobiliari Malta – Hub Investimenti",
-        "description": "Consulenza esperta, rapporti di mercato e guide per l'acquisto e l'investimento in immobili di lusso a Malta."
+        "title": "Approfondimenti Immobiliari Malta & Hub Investimenti",
+        "description": "Consulenza esperta, rapporti di mercato e guide per l'acquisto e l'investimento in immobili di lusso a Malta.",
+        "title_buying": "Acquistare Casa a Malta come Straniero",
+        "title_sda": "Guida alle Special Designated Areas (SDA)",
+        "title_yields": "Rendimenti da Locazione a Malta 2026",
+        "title_taxes": "Tasse Immobiliari a Malta 2026"
     },
     "about": {
-        "title": "Chi Siamo – Malta Luxury Real Estate",
-        "description": "Il portale indipendente leader che collega investitori internazionali di alto livello con il mercato immobiliare premium di Malta."
+        "title": "Su Malta Luxury Real Estate – La Nostra Missione",
+        "description": "Il principale portale indipendente che collega investitori internazionali di alto profilo con il mercato immobiliare premium di Malta."
+    },
+    "market": {
+        "title": "Andamento Mercato Immobiliare Malta | Dati in Tempo Reale 2026",
+        "description": "Monitora le tendenze dei prezzi, gli annunci in diretta e l'attività del mercato a Malta e Gozo. Approfondimenti basati sui dati per investitori di lusso."
+    },
+    "tools": {
+        "oracle": {
+            "title": "AI Property Price Oracle | Valutazione Gratuita Malta & Gozo",
+            "description": "Ottieni una valutazione immediata alimentata dall'intelligenza artificiale. Il nostro Oracolo analizza le tendenze del mercato e i dati sulla posizione per stime ad alta precisione."
+        },
+        "valuation": {
+            "title": "Valutazione Immobiliare",
+            "description": "Servizi esperti di valutazione immobiliare per immobili di lusso a Malta e Gozo."
+        }
+    },
+    "privacy": {
+        "title": "Informativa sulla Privacy",
+        "subtitle": "Protezione dei Dati e Conformità GDPR"
+    },
+    "terms": {
+        "title": "Termini di Servizio",
+        "subtitle": "Accordo Utente e Regole della Piattaforma"
+    },
+    "cookies": {
+        "title": "Politica sui Cookie",
+        "subtitle": "Il Nostro Utilizzo delle Tecnologie di Tracciamento"
     }
 }

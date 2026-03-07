@@ -1,18 +1,17 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const BASE_URL = 'https://maltaluxuryrealestate.com';
+const BASE_URL = 'https://www.maltaluxuryrealestate.com';
 
 const staticPages = [
-  '',
+  '/',
   '/about',
   '/insights',
   '/properties/all',
   '/market/live',
+  '/tools/valuation',
+  '/tools/quiz',
   '/insights/gozo-bridge-effect',
-  '/tools/property-valuation',
-  '/tools/property-quiz',
 ];
 
 const citySlugs = [
@@ -27,33 +26,57 @@ const filterSlugs = [
   'sea-view', 'with-pool', 'new-build', 'furnished'
 ];
 
-const articleSlugs = fs.readdirSync(path.join(process.cwd(), 'src/content/articles/en'))
-  .filter(f => f.endsWith('.md'))
-  .map(f => f.replace('.md', ''));
-
-const propertyIds = Array.from({ length: 100 }, (_, i) => (i + 1).toString());
-
-const languages = ['', '/it', '/de', '/fr', '/pl'];
+// Languages
+const languages = ['', 'it', 'de', 'fr', 'pl'];
 const hreflangs = ['en', 'it', 'de', 'fr', 'pl'];
 
+const slugTranslations: Record<string, Record<string, string>> = {
+  pl: { properties: 'nieruchomosci', all: 'wszystkie', insights: 'wiedza', about: 'o-nas', market: 'rynek', live: 'na-zywo', tools: 'narzedzia', valuation: 'wycena-nieruchomosci', quiz: 'quiz-nieruchomosci' },
+  fr: { properties: 'proprietes', all: 'toutes', insights: 'conseils', about: 'a-propos', market: 'marche', live: 'en-direct', tools: 'outils', valuation: 'estimation-immobiliere', quiz: 'quiz-immobilier' },
+  it: { properties: 'immobiliare', all: 'tutti', insights: 'approfondimenti', about: 'chi-siamo', market: 'mercato', live: 'in-diretta', tools: 'strumenti', valuation: 'valutazione-immobiliare', quiz: 'quiz-immobiliare' },
+  de: { properties: 'immobilien', all: 'alle', insights: 'einblicke', about: 'ueber-uns', market: 'markt', live: 'live-ticker', tools: 'tools', valuation: 'immobilienbewertung', quiz: 'immobilien-quiz' }
+};
+
 function generateSitemap() {
+  const articleDir = path.join(process.cwd(), 'src/content/articles/en');
+  const articleSlugs = fs.readdirSync(articleDir)
+    .filter(f => f.endsWith('.md'))
+    .map(f => f.replace('.md', ''));
+
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 
-  const addUrl = (path, priority = '0.5', changefreq = 'weekly') => {
-    languages.forEach((langPrefix, index) => {
-      const fullPath = `${langPrefix}${path === '/' ? '' : path}`;
-      xml += '  <url>\n';
-      xml += `    <loc>${BASE_URL}${fullPath}</loc>\n`;
+  const getLocalizedUrl = (originalPath: string, lang: string) => {
+    const langPrefix = lang ? `/${lang}` : '';
+    if (!lang) return `${BASE_URL}${originalPath === '/' ? '' : originalPath}`;
 
-      // Add alternate links for each language
+    const parts = originalPath.split('/').filter(Boolean);
+    const localizedParts = parts.map(part => {
+      return slugTranslations[lang]?.[part] || part;
+    });
+
+    const localizedPath = localizedParts.length > 0 ? `/${localizedParts.join('/')}` : '';
+    return `${BASE_URL}${langPrefix}${localizedPath === '/' ? '' : localizedPath}`;
+  };
+
+  const addUrl = (path: string, priority = '0.5', changefreq = 'weekly') => {
+    // path is something like "/insights/my-article" or "/"
+
+    languages.forEach((lang, langIdx) => {
+      const fullUrl = getLocalizedUrl(path, lang);
+
+      xml += '  <url>\n';
+      xml += `    <loc>${fullUrl}</loc>\n`;
+
+      // Hreflang alternates
       hreflangs.forEach((hl, i) => {
-        const altPrefix = languages[i];
-        const altPath = `${altPrefix}${path === '/' ? '' : path}`;
-        xml += `    <xhtml:link rel="alternate" hreflang="${hl}" href="${BASE_URL}${altPath}"/>\n`;
+        const altLang = languages[i] || ''; // handle '' for en
+        const altUrl = getLocalizedUrl(path, altLang);
+        xml += `    <xhtml:link rel="alternate" hreflang="${hl}" href="${altUrl}"/>\n`;
       });
-      // x-default should point to English
-      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}${path}"/>\n`;
+
+      // x-default (English)
+      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${getLocalizedUrl(path, '')}"/>\n`;
 
       xml += `    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n`;
       xml += `    <changefreq>${changefreq}</changefreq>\n`;
@@ -62,23 +85,33 @@ function generateSitemap() {
     });
   };
 
-  staticPages.forEach(p => addUrl(p === '' ? '/' : p, p === '' ? '1.0' : '0.8', 'daily'));
+  // 1. Static Pages
+  staticPages.forEach(p => addUrl(p, p === '/' ? '1.0' : '0.8', 'daily'));
+
+  // 2. Articles
   articleSlugs.forEach(slug => addUrl(`/insights/${slug}`, '0.9', 'monthly'));
 
+  // 3. City & Filter Pages
   citySlugs.forEach(slug => {
     addUrl(`/properties/${slug}`, '0.7', 'weekly');
-    filterSlugs.forEach(filter => {
-      addUrl(`/properties/${slug}/${filter}`, '0.6', 'weekly');
+    filterSlugs.forEach(f => {
+      addUrl(`/properties/${slug}/${f}`, '0.6', 'weekly');
     });
   });
 
-  propertyIds.forEach(id => addUrl(`/properties/${id}`, '0.8', 'daily'));
+  // 4. Property Detail Pages (Sample range or dynamic if we had a DB)
+  // For now we'll do 1-100 as in the previous script
+  for (let i = 1; i <= 100; i++) {
+    addUrl(`/properties/${i}`, '0.8', 'daily');
+  }
 
   xml += '</urlset>';
 
-  const outputPath = path.join(process.cwd(), 'public', 'sitemap.xml');
-  fs.writeFileSync(outputPath, xml);
-  console.log(`Sitemap generated successfully at ${outputPath}`);
+  const dir = path.join(process.cwd(), 'public');
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+
+  fs.writeFileSync(path.join(dir, 'sitemap.xml'), xml);
+  console.log(`Sitemap generated with ${xml.split('<url>').length - 1} entries.`);
 }
 
 generateSitemap();

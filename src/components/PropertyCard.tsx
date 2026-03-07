@@ -11,6 +11,8 @@ import { NoiseAnalysisButton } from './NoiseAnalysis';
 import { Link } from 'react-router-dom';
 import { ImgWithPlaceholder } from './ImgWithPlaceholder';
 
+import { useTranslation } from 'react-i18next';
+
 interface PropertyCardProps {
   property: Property;
   isFavorite?: boolean;
@@ -24,6 +26,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onToggleFavorite,
   onContact,
 }) => {
+  const { t } = useTranslation();
   const formatPrice = (value: number) => {
     if (value >= 1000000) return `€${(value / 1000000).toFixed(1)}M`;
     return `€${value.toLocaleString()}`;
@@ -73,11 +76,11 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           />
           <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
             <span className="px-3 py-1 bg-luxury-black/80 backdrop-blur-md text-[9px] font-bold uppercase tracking-widest rounded-full border border-white/10 text-gold">
-              {property.propertyType}
+              {t(`oracle.pTypes.${property.propertyType}`, { defaultValue: property.propertyType })}
             </span>
             {property.isSeafront && (
               <span className="px-3 py-1 bg-gold text-luxury-black text-[9px] font-bold uppercase tracking-widest rounded-full">
-                Seafront
+                {t('badges.seafront')}
               </span>
             )}
           </div>
@@ -108,7 +111,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               className="flex-1 py-2.5 bg-gold/90 backdrop-blur-md text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-gold transition-colors shadow-lg"
             >
               <Phone size={12} />
-              Enquire
+              {t('common.enquire')}
             </button>
           )}
           <InvestmentPassportButton property={property} variant="card" />
@@ -123,7 +126,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
 
             <div className="flex items-center gap-1 text-white/60 text-xs mt-2 font-medium">
               <MapPin size={12} className="text-gold" />
-              <span>{property.locationName}</span>
+              <span>{property.locationName.split(',').map(part => t(`locations.${part.trim().replace("'", "").replace(" ", "_")}`, { defaultValue: part.trim() })).join(', ')}</span>
             </div>
           </Link>
 
@@ -131,10 +134,10 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             <div className="flex justify-between items-center mb-6">
               <span className="text-gold font-bold text-lg">
                 {formatPrice(property.price)}
-                {property.type === 'rent' && <span className="text-[10px] text-white/40 ml-1">/ month</span>}
+                {property.type === 'rent' && <span className="text-[10px] text-white/40 ml-1">{t('common.per_month')}</span>}
               </span>
               <span className="text-[10px] uppercase tracking-widest font-bold text-white/30">
-                For {property.type}
+                {t('common.for')} {property.type === 'rent' ? t('market.forRent') : t('market.forSale')}
               </span>
             </div>
 
@@ -150,7 +153,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Bed size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">Beds</span>
+                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.beds_label')}</span>
                   <span className="text-xs font-bold">{property.beds}</span>
                 </div>
               </div>
@@ -159,7 +162,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Bath size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">Baths</span>
+                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.baths_label')}</span>
                   <span className="text-xs font-bold">{property.baths}</span>
                 </div>
               </div>
@@ -168,7 +171,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Maximize size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">Area</span>
+                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.area_label')}</span>
                   <span className="text-xs font-bold">{property.sqm}m²</span>
                 </div>
               </div>

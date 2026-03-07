@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 import { Calculator, Info, Euro, Percent, FileText } from 'lucide-react';
 import { calculateBuyingCosts, BuyingResult } from '../lib/calculators/property-math';
 
 export const BuyingCostsCalculator = () => {
+  const { t, i18n } = useTranslation();
   const [price, setPrice] = useState<number>(500000);
   const [isFirstBuy, setIsFirstBuy] = useState(false);
   const [isPrimaryResidence, setIsPrimaryResidence] = useState(true);
@@ -32,8 +34,8 @@ export const BuyingCostsCalculator = () => {
             <Calculator className="text-gold" size={24} />
           </div>
           <div>
-            <h3 className="text-2xl font-serif text-white">Purchase Cost Intelligence</h3>
-            <p className="text-white/40 text-xs uppercase tracking-widest font-bold">Buyer Analytics 2026</p>
+            <h3 className="text-2xl font-serif text-white">{t('buying_costs.title')}</h3>
+            <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{t('buying_costs.subtitle')}</p>
           </div>
         </div>
       </div>
@@ -43,8 +45,8 @@ export const BuyingCostsCalculator = () => {
         <div className="space-y-10">
           <div>
             <div className="flex justify-between items-center mb-4">
-              <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Acquisition Price</label>
-              <span className="text-gold font-serif text-xl">€{price.toLocaleString()}</span>
+              <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('buying_costs.labels.acquisition_price')}</label>
+              <span className="text-gold font-serif text-xl">€{price.toLocaleString(i18n.language)}</span>
             </div>
             <input
               type="range"
@@ -69,8 +71,8 @@ export const BuyingCostsCalculator = () => {
               }}
               className={`p-5 rounded-2xl border transition-all text-left ${isFirstBuy ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
             >
-              <div className="text-[10px] font-bold uppercase tracking-widest mb-1">First Time Buyer</div>
-              <div className="text-xs">{isFirstBuy ? '0% Stamp (up to €200k)' : 'Standard Rate'}</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{t('buying_costs.labels.first_time_buyer')}</div>
+              <div className="text-xs">{isFirstBuy ? t('buying_costs.labels.first_time_desc') : t('buying_costs.labels.standard_rate')}</div>
             </button>
 
             <button
@@ -83,8 +85,8 @@ export const BuyingCostsCalculator = () => {
               }}
               className={`p-5 rounded-2xl border transition-all text-left ${isUCA ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
             >
-              <div className="text-[10px] font-bold uppercase tracking-widest mb-1">UCA / Village Core</div>
-              <div className="text-xs">{isUCA ? '0% Stamp (up to 750k)' : 'Heritage Grant Possible'}</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{t('buying_costs.labels.uca_village_core')}</div>
+              <div className="text-xs">{isUCA ? t('buying_costs.labels.uca_desc') : t('buying_costs.labels.heritage_grant')}</div>
             </button>
           </div>
 
@@ -96,7 +98,7 @@ export const BuyingCostsCalculator = () => {
               }}
               className={`p-4 rounded-xl border text-center transition-all ${isGozo ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
             >
-              <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">Gozo Scheme</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">{t('buying_costs.labels.gozo_scheme')}</div>
               <div className="text-lg font-serif">2%</div>
             </button>
 
@@ -105,7 +107,7 @@ export const BuyingCostsCalculator = () => {
               className={`p-4 rounded-xl border text-center transition-all ${isPrimaryResidence && !isFirstBuy ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
               disabled={isFirstBuy}
             >
-              <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">Primary Home</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">{t('buying_costs.labels.primary_home')}</div>
               <div className="text-lg font-serif">3.5%</div>
             </button>
 
@@ -113,7 +115,7 @@ export const BuyingCostsCalculator = () => {
               onClick={() => setNeedsAIP(!needsAIP)}
               className={`p-4 rounded-xl border text-center transition-all ${needsAIP ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
             >
-              <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">AIP Required</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">{t('buying_costs.labels.aip_required')}</div>
               <div className="text-lg font-serif">€233</div>
             </button>
           </div>
@@ -122,25 +124,25 @@ export const BuyingCostsCalculator = () => {
         {/* RESULTS */}
         <div className="bg-luxury-black/40 rounded-3xl p-8 border border-white/10 relative overflow-hidden flex flex-col justify-between">
           <div className="space-y-6">
-            <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-8">Cost Breakdown</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-8">{t('buying_costs.labels.cost_breakdown')}</h4>
 
             <div className="flex justify-between items-center">
               <span className="text-sm text-white/60 flex items-center gap-2">
-                <Percent size={14} className="text-gold/40" /> Net Stamp Duty
+                <Percent size={14} className="text-gold/40" /> {t('buying_costs.labels.net_stamp_duty')}
               </span>
-              <span className="text-lg font-serif text-gold">€{result?.stampDuty.toLocaleString()}</span>
+              <span className="text-lg font-serif text-gold">€{result?.stampDuty.toLocaleString(i18n.language)}</span>
             </div>
 
             <div className="flex justify-between items-center">
               <span className="text-sm text-white/60 flex items-center gap-2">
-                <FileText size={14} className="text-gold/40" /> Notary & Searches (+VAT)
+                <FileText size={14} className="text-gold/40" /> {t('buying_costs.labels.notary_searches')}
               </span>
-              <span className="text-lg font-serif text-white">€{result?.notaryFees.toLocaleString()}</span>
+              <span className="text-lg font-serif text-white">€{result?.notaryFees.toLocaleString(i18n.language)}</span>
             </div>
 
             {needsAIP && (
               <div className="flex justify-between items-center">
-                <span className="text-sm text-white/60">AIP Permit Administration</span>
+                <span className="text-sm text-white/60">{t('buying_costs.labels.aip_permit')}</span>
                 <span className="text-lg font-serif">€233</span>
               </div>
             )}
@@ -149,16 +151,16 @@ export const BuyingCostsCalculator = () => {
           <div className="pt-8 mt-12 border-t border-white/10">
             <div className="flex justify-between items-end mb-8">
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-gold">Total Extra Costs</div>
-                <div className="text-xs text-white/20 uppercase tracking-widest font-bold">Approx {result?.costPercentage.toFixed(2)}% of price</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-gold">{t('buying_costs.labels.total_extra_costs')}</div>
+                <div className="text-xs text-white/20 uppercase tracking-widest font-bold">{t('buying_costs.labels.approx_price', { percent: result?.costPercentage.toFixed(2) })}</div>
               </div>
-              <div className="text-4xl font-serif text-gold">€{result?.totalAcquisitionCosts.toLocaleString()}</div>
+              <div className="text-4xl font-serif text-gold">€{result?.totalAcquisitionCosts.toLocaleString(i18n.language)}</div>
             </div>
 
             <div className="p-6 bg-gold text-luxury-black rounded-3xl flex items-center justify-between">
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest opacity-60">Total Capital Investment</div>
-                <div className="text-2xl font-serif font-bold">€{result?.totalInvestment.toLocaleString()}</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest opacity-60">{t('buying_costs.labels.total_capital_investment')}</div>
+                <div className="text-2xl font-serif font-bold">€{result?.totalInvestment.toLocaleString(i18n.language)}</div>
               </div>
               <div className="w-12 h-12 bg-luxury-black/10 rounded-full flex items-center justify-center">
                 <Euro size={24} />

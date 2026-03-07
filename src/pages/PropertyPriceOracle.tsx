@@ -8,6 +8,7 @@ import {
 import { LOCATION_STATS } from '../lib/data';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { usePageMeta } from '../lib/seo/meta';
+import { useTranslation } from 'react-i18next';
 
 // ─── Constants & Logic ───────────────────────────────────────────────────────
 const PROPERTY_TYPE_MULTIPLIER: Record<string, number> = {
@@ -27,10 +28,12 @@ const VIEW_MULTIPLIER: Record<number, number> = {
 };
 
 export const PropertyPriceOracle: React.FC = () => {
+    const { t, i18n } = useTranslation();
     usePageMeta({
-        title: 'AI Property Price Oracle | Free Valuation Malta & Gozo',
-        description: 'Get an instant, AI-powered property valuation. Our Oracle analyzes market trends, location data, and property specs to provide high-precision estimates.',
-        canonicalPath: '/tools/property-valuation'
+        title: t('seo:tools.oracle.title', 'AI Property Price Oracle | Free Valuation Malta & Gozo'),
+        description: t('seo:tools.oracle.description', 'Get an instant, AI-powered property valuation. Our Oracle analyzes market trends, location data, and property specs to provide high-precision estimates.'),
+        canonicalPath: '/tools/property-valuation',
+        currentLang: i18n.language,
     });
 
     const [step, setStep] = useState(1);
@@ -99,9 +102,9 @@ export const PropertyPriceOracle: React.FC = () => {
                 {/* Breadcrumb */}
                 <div className="mb-8">
                     <Breadcrumb items={[
-                        { label: 'Home', href: '/' },
-                        { label: 'Tools', href: '/#tools' },
-                        { label: 'AI Price Oracle' }
+                        { label: t('common.home'), href: '/' },
+                        { label: t('common.tools'), href: '/#tools' },
+                        { label: t('oracle.title') }
                     ]} />
                 </div>
 
@@ -109,15 +112,14 @@ export const PropertyPriceOracle: React.FC = () => {
                 <div className="max-w-3xl mb-16 text-center mx-auto">
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <div className="w-12 h-px bg-gold" />
-                        <span className="text-gold uppercase tracking-widest text-xs font-bold">Neural Valuation Engine</span>
+                        <span className="text-gold uppercase tracking-widest text-xs font-bold">{t('oracle.engine_name')}</span>
                         <div className="w-12 h-px bg-gold" />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-serif mb-6 leading-tight">
-                        Malta Property <span className="text-gold-gradient italic">Price Oracle</span>
+                        {t('oracle.title_part1')} <span className="text-gold-gradient italic">{t('oracle.title_part2')}</span>
                     </h1>
                     <p className="text-white/40 text-lg leading-relaxed">
-                        State-of-the-art AI valuation based on real transaction data,
-                        market inventory, and architectural premiums.
+                        {t('oracle.description')}
                     </p>
                 </div>
 
@@ -136,8 +138,8 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 <MapPin size={18} />
                                             </div>
                                             <div>
-                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 1 ? 'text-gold' : 'text-white/20'}`}>Step 01</div>
-                                                <div className={`text-sm font-serif ${step >= 1 ? 'text-white' : 'text-white/20'}`}>Location & Type</div>
+                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 1 ? 'text-gold' : 'text-white/20'}`}>{t('oracle.step')} 01</div>
+                                                <div className={`text-sm font-serif ${step >= 1 ? 'text-white' : 'text-white/20'}`}>{t('common.location')} & {t('common.type')}</div>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-4 group">
@@ -145,8 +147,8 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 <Maximize size={18} />
                                             </div>
                                             <div>
-                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 2 ? 'text-gold' : 'text-white/20'}`}>Step 02</div>
-                                                <div className={`text-sm font-serif ${step >= 2 ? 'text-white' : 'text-white/20'}`}>Specifications</div>
+                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 2 ? 'text-gold' : 'text-white/20'}`}>{t('oracle.step')} 02</div>
+                                                <div className={`text-sm font-serif ${step >= 2 ? 'text-white' : 'text-white/20'}`}>{t('oracle.attributes_title')}</div>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-4 group">
@@ -154,8 +156,8 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 <Sparkles size={18} />
                                             </div>
                                             <div>
-                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 3 ? 'text-gold' : 'text-white/20'}`}>Step 03</div>
-                                                <div className={`text-sm font-serif ${step >= 3 ? 'text-white' : 'text-white/20'}`}>AI Result</div>
+                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 3 ? 'text-gold' : 'text-white/20'}`}>{t('oracle.step')} 03</div>
+                                                <div className={`text-sm font-serif ${step >= 3 ? 'text-white' : 'text-white/20'}`}>{t('oracle.analysis_complete')}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -163,10 +165,10 @@ export const PropertyPriceOracle: React.FC = () => {
                                     <div className="p-6 bg-white/3 border border-white/5 rounded-2xl">
                                         <div className="flex items-center gap-2 text-emerald-400 mb-2">
                                             <ShieldCheck size={14} />
-                                            <span className="text-[10px] font-bold uppercase tracking-widest">Data Integrity</span>
+                                            <span className="text-[10px] font-bold uppercase tracking-widest">{t('oracle.features.registry_title')}</span>
                                         </div>
                                         <p className="text-[11px] text-white/30 leading-relaxed">
-                                            Our algorithms process over 14,000 active listings and historical PPR data to ensure ±5% accuracy in core zones.
+                                            {t('oracle.features.registry_desc')}
                                         </p>
                                     </div>
                                 </div>
@@ -200,9 +202,9 @@ export const PropertyPriceOracle: React.FC = () => {
                                                         transition={{ duration: 1.5, repeat: Infinity }}
                                                         className="text-2xl font-serif text-white uppercase tracking-widest"
                                                     >
-                                                        Calculating Market Index...
+                                                        {t('oracle.loading_title')}
                                                     </motion.h3>
-                                                    <div className="text-white/20 text-sm">Evaluating architectonic premiums and location heat.</div>
+                                                    <div className="text-white/20 text-sm">{t('oracle.loading_subtitle')}</div>
                                                 </div>
                                             </motion.div>
                                         ) : null}
@@ -210,29 +212,37 @@ export const PropertyPriceOracle: React.FC = () => {
                                         {/* STEP 1: Location & Type */}
                                         {step === 1 && (
                                             <motion.div key="step1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
-                                                <h3 className="text-3xl font-serif text-white mb-10">Where is the property?</h3>
+                                                <h3 className="text-3xl font-serif text-white mb-10">{t('oracle.where_title')}</h3>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                                                     <div className="space-y-4">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Location</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.location')}</label>
                                                         <select
                                                             value={specs.locationId}
                                                             onChange={(e) => setSpecs({ ...specs, locationId: parseInt(e.target.value) })}
                                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:border-gold outline-none h-14"
                                                         >
-                                                            {Object.values(LOCATION_STATS).map(l => (
-                                                                <option key={l.locationId} value={l.locationId} className="bg-luxury-black">{l.locationId === 1 ? 'Sliema' : l.locationId === 2 ? 'St. Julian\'s' : l.locationId === 3 ? 'Valletta' : l.locationId === 10 ? 'Victoria (Gozo)' : `Area #${l.locationId}`}</option>
-                                                            ))}
+                                                            {Object.values(LOCATION_STATS).map(l => {
+                                                                const locKey = l.locationId === 1 ? 'Sliema' :
+                                                                    l.locationId === 2 ? 'St_Julians' :
+                                                                        l.locationId === 3 ? 'Valletta' :
+                                                                            l.locationId === 10 ? 'Victoria' : null;
+                                                                return (
+                                                                    <option key={l.locationId} value={l.locationId} className="bg-luxury-black">
+                                                                        {locKey ? t(`locations.${locKey}`) : `${t('states.area', 'Area')} #${l.locationId}`}
+                                                                    </option>
+                                                                );
+                                                            })}
                                                         </select>
                                                     </div>
                                                     <div className="space-y-4">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Property Type</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.property_type')}</label>
                                                         <select
                                                             value={specs.type}
                                                             onChange={(e) => setSpecs({ ...specs, type: e.target.value })}
                                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white focus:border-gold outline-none h-14"
                                                         >
-                                                            {['Apartment', 'Penthouse', 'Villa', 'Palazzo', 'House of Character', 'Maisonette'].map(t => (
-                                                                <option key={t} value={t} className="bg-luxury-black">{t}</option>
+                                                            {['Apartment', 'Penthouse', 'Villa', 'Palazzo', 'House of Character', 'Maisonette'].map(pt => (
+                                                                <option key={pt} value={pt} className="bg-luxury-black">{t(`oracle.pTypes.${pt}`)}</option>
                                                             ))}
                                                         </select>
                                                     </div>
@@ -241,7 +251,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     onClick={() => setStep(2)}
                                                     className="px-12 py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-105 transition-all flex items-center gap-3"
                                                 >
-                                                    Continue Specs <ArrowRight size={16} />
+                                                    {t('oracle.continue')} <ArrowRight size={16} />
                                                 </button>
                                             </motion.div>
                                         )}
@@ -249,12 +259,12 @@ export const PropertyPriceOracle: React.FC = () => {
                                         {/* STEP 2: Specs */}
                                         {step === 2 && (
                                             <motion.div key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
-                                                <h3 className="text-3xl font-serif text-white mb-10">Physical Attributes</h3>
+                                                <h3 className="text-3xl font-serif text-white mb-10">{t('oracle.attributes_title')}</h3>
 
                                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                                                     <div className="space-y-4">
                                                         <div className="flex justify-between items-center">
-                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Total Area</label>
+                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.total_area')}</label>
                                                             <span className="text-white font-serif">{specs.sqm} m²</span>
                                                         </div>
                                                         <input
@@ -266,8 +276,8 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     </div>
                                                     <div className="space-y-4">
                                                         <div className="flex justify-between items-center">
-                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Beds / Baths</label>
-                                                            <span className="text-white font-serif">{specs.beds}bd · {specs.baths}bt</span>
+                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.beds_baths')}</label>
+                                                            <span className="text-white font-serif">{specs.beds}{t('common.beds_short')} · {specs.baths}{t('common.baths_short')}</span>
                                                         </div>
                                                         <div className="flex gap-2">
                                                             {[1, 2, 3, 4, 5].map(n => (
@@ -282,7 +292,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                         </div>
                                                     </div>
                                                     <div className="space-y-4">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Finish Level</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.finish_level')}</label>
                                                         <div className="grid grid-cols-3 gap-2 h-10">
                                                             {['Shell', 'Finished', 'Furnished'].map(f => (
                                                                 <button
@@ -290,7 +300,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                                     onClick={() => setSpecs({ ...specs, finish: f })}
                                                                     className={`rounded-lg border text-[9px] uppercase font-bold tracking-widest transition-all ${specs.finish === f ? 'bg-white/10 border-gold text-gold' : 'border-white/10 text-white/30'}`}
                                                                 >
-                                                                    {f}
+                                                                    {t(`oracle.fLevels.${f}`)}
                                                                 </button>
                                                             ))}
                                                         </div>
@@ -299,7 +309,7 @@ export const PropertyPriceOracle: React.FC = () => {
 
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 pt-8 border-t border-white/5">
                                                     <div className="space-y-6">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Premium Signals</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.premium_signals')}</label>
                                                         <div className="flex gap-4">
                                                             <label className="flex items-center gap-3 cursor-pointer group">
                                                                 <input
@@ -311,7 +321,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${specs.isSeafront ? 'bg-blue-500/20 border-blue-500 text-blue-400' : 'border-white/10 text-white/20'}`}>
                                                                     <Waves size={18} />
                                                                 </div>
-                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.isSeafront ? 'text-white' : 'text-white/20'}`}>Seafront</span>
+                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.isSeafront ? 'text-white' : 'text-white/20'}`}>{t('badges.seafront')}</span>
                                                             </label>
                                                             <label className="flex items-center gap-3 cursor-pointer group">
                                                                 <input
@@ -323,12 +333,12 @@ export const PropertyPriceOracle: React.FC = () => {
                                                                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${specs.hasPool ? 'bg-gold/20 border-gold text-gold' : 'border-white/10 text-white/20'}`}>
                                                                     <Sun size={18} />
                                                                 </div>
-                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.hasPool ? 'text-white' : 'text-white/20'}`}>Pool</span>
+                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.hasPool ? 'text-white' : 'text-white/20'}`}>{t('badges.pool')}</span>
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div className="space-y-6">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">View Quality</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.view_quality')}</label>
                                                         <div className="grid grid-cols-4 gap-2">
                                                             {[0, 1, 2, 3].map(v => (
                                                                 <button
@@ -346,12 +356,12 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 </div>
 
                                                 <div className="flex gap-4">
-                                                    <button onClick={() => setStep(1)} className="px-10 py-5 rounded-2xl border border-white/10 text-white/40 text-xs font-bold uppercase tracking-widest">Back</button>
+                                                    <button onClick={() => setStep(1)} className="px-10 py-5 rounded-2xl border border-white/10 text-white/40 text-xs font-bold uppercase tracking-widest">{t('oracle.back')}</button>
                                                     <button
                                                         onClick={handleValuation}
                                                         className="flex-1 py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-[1.02] transition-all flex items-center justify-center gap-3 shadow-xl shadow-gold/20"
                                                     >
-                                                        Generate AI Valuation <Sparkles size={16} />
+                                                        {t('oracle.generate')} <Sparkles size={16} />
                                                     </button>
                                                 </div>
                                             </motion.div>
@@ -362,7 +372,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                             <motion.div key="step3" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
                                                 <div className="flex items-center gap-3 mb-6">
                                                     <Scan className="text-gold" size={24} />
-                                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">Valuation Analysis Complete</label>
+                                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">{t('oracle.analysis_complete')}</label>
                                                 </div>
 
                                                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
@@ -370,14 +380,14 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     <div className="md:col-span-12 p-10 bg-white/3 border border-white/5 rounded-[2.5rem] relative overflow-hidden group">
                                                         <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 blur-[80px] -mr-32 -mt-32" />
                                                         <div className="relative z-10 text-center">
-                                                            <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 mb-6">Estimated Market Value</div>
+                                                            <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 mb-6">{t('oracle.estimated_value_market')}</div>
                                                             <div className="flex items-center justify-center gap-6 mb-8">
                                                                 <div className="text-4xl md:text-6xl font-serif text-white">€{valuation.rangeLow.toLocaleString()}</div>
                                                                 <div className="w-12 h-px bg-white/20" />
                                                                 <div className="text-4xl md:text-6xl font-serif text-white">€{valuation.rangeHigh.toLocaleString()}</div>
                                                             </div>
                                                             <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-bold tracking-widest text-[10px] uppercase">
-                                                                <ShieldCheck size={14} /> Confidence Score: 92%
+                                                                <ShieldCheck size={14} /> {t('oracle.confidence')}: 92%
                                                             </div>
                                                         </div>
                                                     </div>
@@ -386,19 +396,19 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     <div className="md:col-span-6 p-8 bg-black/40 border border-white/5 rounded-3xl">
                                                         <div className="flex items-center gap-3 mb-6">
                                                             <BarChart3 size={18} className="text-gold" />
-                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">Rental Potential</span>
+                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">{t('oracle.rental_potential')}</span>
                                                         </div>
-                                                        <div className="text-3xl font-serif text-white mb-2">€{Math.round(valuation.possibleRent).toLocaleString()}<span className="text-sm text-white/30 ml-2">/ mth</span></div>
-                                                        <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">Projected 4.5% Gross Yield</p>
+                                                        <div className="text-3xl font-serif text-white mb-2">€{Math.round(valuation.possibleRent).toLocaleString()}<span className="text-sm text-white/30 ml-2">/ {t('common.month_short')}</span></div>
+                                                        <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">{t('oracle.projected_yield')}</p>
                                                     </div>
 
                                                     <div className="md:col-span-6 p-8 bg-black/40 border border-white/5 rounded-3xl">
                                                         <div className="flex items-center gap-3 mb-6">
                                                             <Layers size={18} className="text-gold" />
-                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">Market Heat</span>
+                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">{t('oracle.market_heat_title')}</span>
                                                         </div>
-                                                        <div className="text-3xl font-serif text-white mb-2">€{Math.round(valuation.basePricePerSqm).toLocaleString()}<span className="text-sm text-white/30 ml-2">per m²</span></div>
-                                                        <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">+4.2% Growth for {specs.type}s</p>
+                                                        <div className="text-3xl font-serif text-white mb-2">€{Math.round(valuation.basePricePerSqm).toLocaleString()}<span className="text-sm text-white/30 ml-2">{t('oracle.per_sqm')}</span></div>
+                                                        <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">{t('oracle.growth_forecast')} {specs.type}s</p>
                                                     </div>
                                                 </div>
 
@@ -408,19 +418,21 @@ export const PropertyPriceOracle: React.FC = () => {
                                                             <TrendingUp size={24} />
                                                         </div>
                                                         <div>
-                                                            <div className="text-sm font-bold text-white uppercase tracking-widest mb-1">Hold vs Sell Insight</div>
+                                                            <div className="text-sm font-bold text-white uppercase tracking-widest mb-1">{t('oracle.insight_title')}</div>
                                                             <p className="text-xs text-white/50 leading-relaxed max-w-sm">
-                                                                Market heat index in {specs.locationId === 1 ? 'Sliema' : 'this area'} is steady. We recommend <strong>HOLDING</strong> until Q4 2026 to capitalize on projected capital gains.
+                                                                {t('oracle.insight_body', {
+                                                                    location: specs.locationId === 1 ? t('locations.Sliema') : t('oracle.this_area')
+                                                                })}
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <button className="px-10 py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-105 transition-all whitespace-nowrap">
-                                                        Get Detailed Report (PDF)
+                                                        {t('oracle.get_report')}
                                                     </button>
                                                 </div>
 
                                                 <div className="mt-12 flex justify-center">
-                                                    <button onClick={() => setStep(1)} className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-gold transition-colors">Start New Valuation</button>
+                                                    <button onClick={() => setStep(1)} className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-gold transition-colors">{t('oracle.start_new')}</button>
                                                 </div>
                                             </motion.div>
                                         )}
@@ -437,27 +449,27 @@ export const PropertyPriceOracle: React.FC = () => {
                             <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 mb-6">
                                 <ShieldCheck size={24} />
                             </div>
-                            <h4 className="text-xl font-serif text-white mb-4">Official Register Synced</h4>
+                            <h4 className="text-xl font-serif text-white mb-4">{t('oracle.features.registry_title')}</h4>
                             <p className="text-sm text-white/40 leading-relaxed">
-                                Direct API connection to current market registry ensures your valuation isn't just a guess, but a data-backed reflection of real transactional behavior.
+                                {t('oracle.features.registry_desc')}
                             </p>
                         </div>
                         <div className="glass-card p-10 rounded-[2.5rem] border border-white/5 bg-gold/5 border-gold/10">
                             <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center text-gold mb-6">
                                 <MapPin size={24} />
                             </div>
-                            <h4 className="text-xl font-serif text-white mb-4">Location Precision</h4>
+                            <h4 className="text-xl font-serif text-white mb-4">{t('oracle.features.precision_title')}</h4>
                             <p className="text-sm text-white/40 leading-relaxed">
-                                From the luxury hubs of Sliema and St. Julian's to the historic streets of Gozo, we weight valuations based on highly specific micro-location demand.
+                                {t('oracle.features.precision_desc')}
                             </p>
                         </div>
                         <div className="glass-card p-10 rounded-[2.5rem] border border-white/5">
                             <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 mb-6">
                                 <Scan size={24} />
                             </div>
-                            <h4 className="text-xl font-serif text-white mb-4">UCA & SDA Logic</h4>
+                            <h4 className="text-xl font-serif text-white mb-4">{t('oracle.features.logic_title')}</h4>
                             <p className="text-sm text-white/40 leading-relaxed">
-                                The Oracle automatically accounts for Urban Conservation Area tax exemptions and Special Designated Area premiums for foreign investors.
+                                {t('oracle.features.logic_desc')}
                             </p>
                         </div>
                     </div>

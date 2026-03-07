@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Leaf, Info, TrendingUp, Landmark, Zap, ShieldCheck, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Property, EPCRating } from '../types';
 
 interface EPCCalculatorProps {
@@ -165,6 +166,7 @@ export const EPCButton: React.FC<{
     property: Property;
     variant?: 'card' | 'page';
 }> = ({ property, variant = 'card' }) => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const rating = property.epcRating || 'D';
 
@@ -195,7 +197,7 @@ export const EPCButton: React.FC<{
             >
                 <div className={`absolute left-0 top-0 bottom-0 w-1 ${EPC_COLORS[rating]}`} />
                 <Leaf size={14} className="text-emerald-400 group-hover:scale-110 transition-transform" />
-                <span className="text-[10px] font-bold uppercase tracking-widest">Efficiency Audit: {rating}</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest">{t('common.efficiency_audit')}: {rating}</span>
             </button>
 
             <EPCCalculator

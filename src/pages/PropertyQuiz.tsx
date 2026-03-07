@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { usePageMeta } from '../lib/seo/meta';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // ─── Quiz Configuration ─────────────────────────────────────────────────────
 
@@ -111,10 +112,12 @@ const RESULTS_MAP: Record<string, { title: string, area: string, type: string, d
 };
 
 export const MaltaPropertyQuiz: React.FC = () => {
+    const { t, i18n } = useTranslation();
     usePageMeta({
-        title: 'Quiz: What Property Type Suits Your Malta Lifestyle? | Malta Luxury Real Estate',
-        description: 'Take our 1-minute interactive lifestyle quiz to discover your perfect Malta location and property type. From historic palazzos to modern seafront penthouses.',
-        canonicalPath: '/tools/property-quiz'
+        title: t('seo:tools.quiz.title', 'Quiz: What Property Type Suits Your Malta Lifestyle? | Malta Luxury Real Estate'),
+        description: t('seo:tools.quiz.description', 'Take our 1-minute interactive lifestyle quiz to discover your perfect Malta location and property type.'),
+        canonicalPath: '/tools/property-quiz',
+        currentLang: i18n.language,
     });
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -140,12 +143,12 @@ export const MaltaPropertyQuiz: React.FC = () => {
         }
     };
 
-    const getResult = () => {
+    const getResultKey = () => {
         const s = scores;
-        if ((s.gozo || 0) > 15) return RESULTS_MAP.gozo_farmhouse;
-        if ((s.valletta || 0) > 15 || (s.mdina || 0) > 15) return RESULTS_MAP.valletta_mdina;
-        if ((s.madliena || 0) > 10 || (s.villa || 0) > 10) return RESULTS_MAP.madliena_villa;
-        return RESULTS_MAP.sliema_stjulians;
+        if ((s.gozo || 0) > 15) return 'gozo_farmhouse';
+        if ((s.valletta || 0) > 15 || (s.mdina || 0) > 15) return 'valletta_mdina';
+        if ((s.madliena || 0) > 10 || (s.villa || 0) > 10) return 'madliena_villa';
+        return 'sliema_stjulians';
     };
 
     const resetQuiz = () => {
@@ -154,7 +157,14 @@ export const MaltaPropertyQuiz: React.FC = () => {
         setIsFinished(false);
     };
 
-    const result = isFinished ? getResult() : null;
+    const resultKey = isFinished ? getResultKey() : null;
+    const resultContent = resultKey ? {
+        ...RESULTS_MAP[resultKey],
+        title: t(`common:quiz_content.results.${resultKey}.title`),
+        area: t(`common:quiz_content.results.${resultKey}.area`),
+        type: t(`common:quiz_content.results.${resultKey}.type`),
+        description: t(`common:quiz_content.results.${resultKey}.description`),
+    } : null;
 
     return (
         <main className="min-h-screen bg-luxury-black pt-32 pb-20">
@@ -162,10 +172,10 @@ export const MaltaPropertyQuiz: React.FC = () => {
                 {!isFinished && !analyzing && (
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gold/10 border border-gold/20 text-gold text-[10px] font-bold uppercase tracking-widest mb-6">
-                            <Sparkles size={14} /> Interactive Experience
+                            <Sparkles size={14} /> {t('quiz.interactive')}
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">What <span className="text-gold italic">Malta Property</span> Are You?</h1>
-                        <p className="text-white/40">Find your perfect match in 60 seconds.</p>
+                        <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">{t('quiz.title_part1')} <span className="text-gold italic">{t('quiz.title_part2')}</span> {t('quiz.title_part3')}</h1>
+                        <p className="text-white/40">{t('quiz.subtitle')}</p>
                         <div className="mt-12 max-w-xs mx-auto h-1 bg-white/5 rounded-full overflow-hidden">
                             <motion.div
                                 className="h-full bg-gold"
@@ -191,10 +201,10 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                         transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
                                     />
                                 </div>
-                                <h3 className="text-2xl font-serif text-white mb-2 tracking-widest uppercase">Matching your DNA...</h3>
-                                <p className="text-white/20 text-sm">Our AI is scanning the island for your perfect match.</p>
+                                <h3 className="text-2xl font-serif text-white mb-2 tracking-widest uppercase">{t('quiz.analyzing')}</h3>
+                                <p className="text-white/20 text-sm">{t('quiz.analyzing_subtitle')}</p>
                             </motion.div>
-                        ) : isFinished && result ? (
+                        ) : isFinished && resultKey && resultContent ? (
                             <motion.div
                                 key="result"
                                 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
@@ -202,33 +212,33 @@ export const MaltaPropertyQuiz: React.FC = () => {
                             >
                                 <div className="grid grid-cols-1 md:grid-cols-2">
                                     <div className="h-64 md:h-auto overflow-hidden">
-                                        <img src={result.image} alt={result.title} className="w-full h-full object-cover" />
+                                        <img src={resultContent.image} alt={resultContent.title} className="w-full h-full object-cover" />
                                     </div>
                                     <div className="p-10 md:p-16">
                                         <div className="flex items-center gap-2 text-gold mb-6">
                                             <Trophy size={20} />
-                                            <span className="text-[10px] font-bold uppercase tracking-widest">Your Perfect Match</span>
+                                            <span className="text-[10px] font-bold uppercase tracking-widest">{t('quiz.result_badge')}</span>
                                         </div>
-                                        <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">{result.title}</h2>
+                                        <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">{resultContent.title}</h2>
                                         <div className="flex flex-col gap-4 mb-8">
                                             <div className="flex items-center gap-3 text-white/60">
                                                 <MapPin size={16} className="text-gold" />
-                                                <span className="text-sm font-medium">{result.area}</span>
+                                                <span className="text-sm font-medium">{resultContent.area}</span>
                                             </div>
                                             <div className="flex items-center gap-3 text-white/60">
                                                 <Home size={16} className="text-gold" />
-                                                <span className="text-sm font-medium">{result.type}</span>
+                                                <span className="text-sm font-medium">{resultContent.type}</span>
                                             </div>
                                         </div>
                                         <p className="text-white/40 leading-relaxed mb-10 text-sm italic">
-                                            "{result.description}"
+                                            "{resultContent.description}"
                                         </p>
                                         <div className="flex flex-col gap-4">
-                                            <Link to={result.slug} className="w-full py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-105 transition-all text-center">
-                                                Explore My Neighborhood
+                                            <Link to={resultContent.slug} className="w-full py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-105 transition-all text-center">
+                                                {t('quiz.explore')}
                                             </Link>
                                             <button onClick={resetQuiz} className="flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-white transition-colors py-4">
-                                                <RefreshCcw size={12} /> Take Quiz Again
+                                                <RefreshCcw size={12} /> {t('quiz.take_again')}
                                             </button>
                                         </div>
                                     </div>
@@ -238,10 +248,10 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                         <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/40">
                                             <Share2 size={18} />
                                         </div>
-                                        <p className="text-xs text-white/50">Share your 'Property DNA' with your partner or friends.</p>
+                                        <p className="text-xs text-white/50">{t('quiz.share_desc')}</p>
                                     </div>
                                     <button className="px-8 py-3 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white hover:bg-white/10 transition-all flex items-center gap-2">
-                                        Copy Result Link
+                                        {t('quiz.copy_link')}
                                     </button>
                                 </div>
                             </motion.div>
@@ -254,8 +264,8 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                 className="space-y-12"
                             >
                                 <div className="text-center">
-                                    <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em] mb-4 block">Question 0{currentQuestion + 1} / 05</span>
-                                    <h3 className="text-3xl md:text-5xl font-serif text-white">{QUESTIONS[currentQuestion].text}</h3>
+                                    <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em] mb-4 block">{t('quiz.question_counter', { current: currentQuestion + 1, total: QUESTIONS.length })}</span>
+                                    <h3 className="text-3xl md:text-5xl font-serif text-white">{t(`quiz_content.questions.${currentQuestion}.text`)}</h3>
                                 </div>
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -269,7 +279,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                                 <option.icon size={20} />
                                             </div>
                                             <span className="text-lg text-white/70 group-hover:text-white transition-colors pt-2 leading-relaxed">
-                                                {option.text}
+                                                {t(`quiz_content.questions.${currentQuestion}.options.${option.id}`)}
                                             </span>
                                         </button>
                                     ))}
@@ -283,18 +293,18 @@ export const MaltaPropertyQuiz: React.FC = () => {
                     <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="p-8 rounded-[2rem] border border-white/5 bg-white/2">
                             <div className="text-gold mb-4"><CheckCircle2 size={24} /></div>
-                            <h4 className="text-white font-serif mb-2">Private & Fun</h4>
-                            <p className="text-xs text-white/30 leading-relaxed">No registration needed. Just lifestyle questions to help you visualize your life in Malta.</p>
+                            <h4 className="text-white font-serif mb-2">{t('quiz.bottom.fun_title')}</h4>
+                            <p className="text-xs text-white/30 leading-relaxed">{t('quiz.bottom.fun_desc')}</p>
                         </div>
                         <div className="p-8 rounded-[2rem] border border-white/5 bg-white/2">
                             <div className="text-gold mb-4"><TrendingUp size={24} /></div>
-                            <h4 className="text-white font-serif mb-2">Market Driven</h4>
-                            <p className="text-xs text-white/30 leading-relaxed">Results are synced with real market inventory and area statistics for 2026.</p>
+                            <h4 className="text-white font-serif mb-2">{t('quiz.bottom.market_title')}</h4>
+                            <p className="text-xs text-white/30 leading-relaxed">{t('quiz.bottom.market_desc')}</p>
                         </div>
                         <div className="p-8 rounded-[2rem] border border-white/5 bg-white/2">
                             <div className="text-gold mb-4"><MapPin size={24} /></div>
-                            <h4 className="text-white font-serif mb-2">Area Insights</h4>
-                            <p className="text-xs text-white/30 leading-relaxed">Get deep-dive recommendations for specific neighborhoods based on your vibe.</p>
+                            <h4 className="text-white font-serif mb-2">{t('quiz.bottom.area_title')}</h4>
+                            <p className="text-xs text-white/30 leading-relaxed">{t('quiz.bottom.area_desc')}</p>
                         </div>
                     </div>
                 )}

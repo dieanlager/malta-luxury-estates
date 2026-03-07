@@ -12,6 +12,7 @@ import { usePageMeta } from '../lib/seo/meta';
 import { injectInternalLinks } from '../lib/seo/internal-linking';
 import ReactMarkdown from 'react-markdown';
 import { SchemaScript } from '../components/SchemaScript';
+import { useTranslation } from 'react-i18next';
 
 interface CityPageProps {
   favorites: string[];
@@ -24,6 +25,7 @@ export const CityPage: React.FC<CityPageProps> = ({
   onToggleFavorite,
   onContact,
 }) => {
+  const { t, i18n } = useTranslation();
   const { citySlug } = useParams<{ citySlug: string }>();
   const [location, setLocation] = useState<Location | null>(null);
   const [stats, setStats] = useState<LocationStats | null>(null);
@@ -66,6 +68,7 @@ export const CityPage: React.FC<CityPageProps> = ({
       ? `Discover curated properties in ${location.nameEn}, ${islandLabel} – seafront apartments, penthouses and villas from top local agencies. Explore prices and investment opportunities in ${location.nameEn}.`
       : 'Discover luxury property across the Maltese islands.',
     canonicalPath: location ? `/properties/${location.slug}` : '/properties/all',
+    currentLang: i18n.language,
   });
 
   if (loading) {

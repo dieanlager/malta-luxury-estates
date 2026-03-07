@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 import {
     ShieldCheck, Banknote, User, Briefcase,
     AlertCircle, CheckCircle2, ChevronRight,
@@ -28,6 +29,7 @@ const DSR_LIMIT = 0.35; // Debt Service Ratio limit 35%
 const STRESS_RATE = 0.0575; // 5.75% for stress testing capacity
 
 export const MortgagePreQualifier: React.FC = () => {
+    const { t, i18n } = useTranslation();
     const [step, setStep] = useState<Step>('status');
     const [data, setData] = useState<FunnelData>({
         residency: 'resident',
@@ -109,8 +111,8 @@ export const MortgagePreQualifier: React.FC = () => {
         <button
             onClick={onClick}
             className={`flex flex-col items-center gap-4 p-6 rounded-2xl border transition-all ${active
-                    ? 'bg-gold/10 border-gold shadow-lg shadow-gold/5'
-                    : 'bg-white/3 border-white/5 hover:bg-white/5 hover:border-white/10'
+                ? 'bg-gold/10 border-gold shadow-lg shadow-gold/5'
+                : 'bg-white/3 border-white/5 hover:bg-white/5 hover:border-white/10'
                 }`}
         >
             <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${active ? 'bg-gold text-luxury-black' : 'bg-white/5 text-white/40'}`}>
@@ -132,13 +134,13 @@ export const MortgagePreQualifier: React.FC = () => {
                     <div>
                         <div className="flex items-center gap-2 text-gold mb-6">
                             <Landmark size={20} />
-                            <span className="text-[10px] font-bold uppercase tracking-[0.2em]">Bank Pulse Engine</span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{t('pre_qualifier.subtitle')}</span>
                         </div>
                         <h2 className="text-2xl font-serif text-white mb-4">
-                            Mortgage <span className="text-gold italic">Pre-Qualifier</span>
+                            {t('pre_qualifier.title')}
                         </h2>
                         <p className="text-sm text-white/40 leading-relaxed mb-10">
-                            Get an instant borrowing estimate based on current Malta bank loan-to-value (LTV) and debt-ratio policies.
+                            {t('pre_qualifier.intro')}
                         </p>
 
                         <AnimatePresence mode="wait">
@@ -148,10 +150,10 @@ export const MortgagePreQualifier: React.FC = () => {
                                 animate={{ opacity: 1, x: 0 }}
                                 className="p-6 bg-gold/5 border border-gold/20 rounded-2xl"
                             >
-                                <div className="text-[9px] font-bold uppercase tracking-widest text-gold mb-2">Estimated Cap</div>
-                                <div className="text-3xl font-serif text-white mb-2">€{results.maxLoan.toLocaleString()}</div>
+                                <div className="text-[9px] font-bold uppercase tracking-widest text-gold mb-2">{t('pre_qualifier.estimated_cap')}</div>
+                                <div className="text-3xl font-serif text-white mb-2">€{results.maxLoan.toLocaleString(i18n.language)}</div>
                                 <div className="text-[10px] text-white/30 leading-relaxed">
-                                    Maximum potential loan over {results.loanDuration} years.
+                                    {t('pre_qualifier.max_potential_loan', { years: results.loanDuration })}
                                 </div>
                             </motion.div>
                         </AnimatePresence>
@@ -160,11 +162,11 @@ export const MortgagePreQualifier: React.FC = () => {
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 text-[10px] text-white/20 uppercase tracking-widest">
                             <ShieldCheck size={12} className="text-emerald-500" />
-                            Direct Bank Criteria
+                            {t('pre_qualifier.bank_criteria')}
                         </div>
                         <div className="flex items-center gap-2 text-[10px] text-white/20 uppercase tracking-widest">
                             <ShieldCheck size={12} className="text-emerald-500" />
-                            2026 Stress Test applied
+                            {t('pre_qualifier.stress_test')}
                         </div>
                     </div>
                 </div>
@@ -183,41 +185,41 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">01 · Residency & Intent</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">What is your residency status?</h3>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.status')}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.residency')}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                                         <OptionCard
                                             active={data.residency === 'resident'}
-                                            label="Malta Resident"
+                                            label={t('pre_qualifier.options.resident')}
                                             icon={User}
                                             onClick={() => updateData({ residency: 'resident' })}
-                                            desc="Living in Malta, 90% LTV typical"
+                                            desc={t('pre_qualifier.options.resident_desc')}
                                         />
                                         <OptionCard
                                             active={data.residency === 'non-resident'}
-                                            label="Non-Resident"
+                                            label={t('pre_qualifier.options.non_resident')}
                                             icon={Globe}
                                             onClick={() => updateData({ residency: 'non-resident' })}
-                                            desc="Living abroad, 75% LTV typical"
+                                            desc={t('pre_qualifier.options.non_resident_desc')}
                                         />
                                     </div>
-                                    <h3 className="text-xl font-serif text-white mb-8">Type of Buyer?</h3>
+                                    <h3 className="text-xl font-serif text-white mb-8">{t('pre_qualifier.questions.buyer_type')}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                         <OptionCard
                                             active={data.buyerType === 'first'}
-                                            label="1st Time"
+                                            label={t('pre_qualifier.options.first_time')}
                                             icon={Home}
                                             onClick={() => updateData({ buyerType: 'first' })}
                                         />
                                         <OptionCard
                                             active={data.buyerType === 'second'}
-                                            label="2nd Time"
+                                            label={t('pre_qualifier.options.second_time')}
                                             icon={Building2}
                                             onClick={() => updateData({ buyerType: 'second' })}
                                         />
                                         <OptionCard
                                             active={data.buyerType === 'buy-to-let'}
-                                            label="BTL / Investor"
+                                            label={t('pre_qualifier.options.investor')}
                                             icon={TrendingUp}
                                             onClick={() => updateData({ buyerType: 'buy-to-let' })}
                                         />
@@ -233,32 +235,32 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">02 · Professional Profile</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">Employment & Age</h3>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.employment')}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.employment')}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
                                         <OptionCard
                                             active={data.employment === 'full-time'}
-                                            label="Full-Time"
+                                            label={t('pre_qualifier.options.full_time')}
                                             icon={Briefcase}
                                             onClick={() => updateData({ employment: 'full-time' })}
                                         />
                                         <OptionCard
                                             active={data.employment === 'self-employed'}
-                                            label="Self-Employed"
+                                            label={t('pre_qualifier.options.self_employed')}
                                             icon={Calculator}
                                             onClick={() => updateData({ employment: 'self-employed' })}
                                         />
                                         <OptionCard
                                             active={data.employment === 'other'}
-                                            label="Other"
+                                            label={t('pre_qualifier.options.other_employment')}
                                             icon={User}
                                             onClick={() => updateData({ employment: 'other' })}
                                         />
                                     </div>
                                     <div className="max-w-xs">
                                         <div className="flex justify-between items-center mb-4">
-                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Your Age</label>
-                                            <span className="text-lg font-serif text-white">{data.age} yrs</span>
+                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.questions.age')}</label>
+                                            <span className="text-lg font-serif text-white">{t('pre_qualifier.years', { count: data.age })}</span>
                                         </div>
                                         <input
                                             type="range"
@@ -280,14 +282,14 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">03 · Financial Capacity</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">Income & Liquidity</h3>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.income')}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.income')}</h3>
 
                                     <div className="space-y-12 max-w-md">
                                         <div>
                                             <div className="flex justify-between items-center mb-4">
-                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Net Monthly Income (Joint)</label>
-                                                <span className="text-xl font-serif text-white">€{data.monthlyIncome.toLocaleString()}</span>
+                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.labels.monthly_income')}</label>
+                                                <span className="text-xl font-serif text-white">€{data.monthlyIncome.toLocaleString(i18n.language)}</span>
                                             </div>
                                             <input
                                                 type="range"
@@ -301,8 +303,8 @@ export const MortgagePreQualifier: React.FC = () => {
                                         </div>
                                         <div>
                                             <div className="flex justify-between items-center mb-4">
-                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Available Savings / Deposit</label>
-                                                <span className="text-xl font-serif text-white">€{data.savings.toLocaleString()}</span>
+                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.labels.savings')}</label>
+                                                <span className="text-xl font-serif text-white">€{data.savings.toLocaleString(i18n.language)}</span>
                                             </div>
                                             <input
                                                 type="range"
@@ -327,33 +329,33 @@ export const MortgagePreQualifier: React.FC = () => {
                                 >
                                     <div className="flex items-center gap-3 mb-6">
                                         <CheckCircle2 className="text-emerald-400" size={24} />
-                                        <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-400">Pre-Qualification Complete</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-400">{t('pre_qualifier.results.complete')}</label>
                                     </div>
-                                    <h3 className="text-3xl font-serif text-white mb-10">Initial Assessment Result</h3>
+                                    <h3 className="text-3xl font-serif text-white mb-10">{t('pre_qualifier.results.assessment')}</h3>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                                         <div className="p-8 bg-white/3 border border-white/5 rounded-3xl">
-                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/30 mb-4">Max Property Value</div>
-                                            <div className="text-4xl font-serif text-white mb-2">€{results.maxPropertyPrice.toLocaleString()}</div>
-                                            <div className="text-[10px] text-white/40">Includes your €{data.savings.toLocaleString()} deposit.</div>
+                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/30 mb-4">{t('pre_qualifier.results.max_value')}</div>
+                                            <div className="text-4xl font-serif text-white mb-2">€{results.maxPropertyPrice.toLocaleString(i18n.language)}</div>
+                                            <div className="text-[10px] text-white/40">{t('pre_qualifier.results.includes_deposit', { amount: `€${data.savings.toLocaleString(i18n.language)}` })}</div>
                                         </div>
                                         <div className="p-8 bg-gold/5 border border-gold/20 rounded-3xl">
-                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-4">Recommended Loan</div>
-                                            <div className="text-4xl font-serif text-gold mb-2">€{results.maxLoan.toLocaleString()}</div>
-                                            <div className="text-[10px] text-gold/40">At estimated {results.loanDuration} year term.</div>
+                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-4">{t('pre_qualifier.results.recommended_loan')}</div>
+                                            <div className="text-4xl font-serif text-gold mb-2">€{results.maxLoan.toLocaleString(i18n.language)}</div>
+                                            <div className="text-[10px] text-gold/40">{t('pre_qualifier.results.loan_term', { years: results.loanDuration })}</div>
                                         </div>
                                     </div>
 
                                     <div className="flex flex-col md:flex-row gap-4">
                                         <button className="flex-1 py-5 rounded-2xl bg-gold text-luxury-black text-xs font-bold uppercase tracking-widest hover:scale-[1.02] transition-transform flex items-center justify-center gap-2 group">
-                                            Get Official Bank Quotation
+                                            {t('pre_qualifier.results.official_quotation')}
                                             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                                         </button>
                                         <button
                                             onClick={() => setStep('status')}
                                             className="px-10 py-5 rounded-2xl border border-white/10 text-white/40 text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors"
                                         >
-                                            Recalculate
+                                            {t('pre_qualifier.results.recalculate')}
                                         </button>
                                     </div>
                                 </motion.div>
@@ -367,14 +369,14 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">04 · Obligations</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">Existing Monthly Debts</h3>
-                                    <p className="text-white/40 text-sm mb-12">Total monthly payments for other loans, credit cards, or child support.</p>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.debts')}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.debts')}</h3>
+                                    <p className="text-white/40 text-sm mb-12">{t('pre_qualifier.labels.debt_desc')}</p>
 
                                     <div className="max-w-md">
                                         <div className="flex justify-between items-center mb-4">
-                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Monthly Debt Service</label>
-                                            <span className="text-xl font-serif text-white">€{data.monthlyDebts.toLocaleString()}</span>
+                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.labels.monthly_debts')}</label>
+                                            <span className="text-xl font-serif text-white">€{data.monthlyDebts.toLocaleString(i18n.language)}</span>
                                         </div>
                                         <input
                                             type="range"
@@ -388,7 +390,7 @@ export const MortgagePreQualifier: React.FC = () => {
                                         <div className="mt-12 p-5 rounded-2xl bg-amber-500/5 border border-amber-500/20 flex gap-3">
                                             <AlertCircle className="text-amber-400 shrink-0" size={16} />
                                             <p className="text-[11px] text-amber-200/50 leading-relaxed uppercase tracking-wider font-bold">
-                                                Central Bank stress-test: We apply +2% to current rates to strictly assess your repayment capacity.
+                                                {t('pre_qualifier.labels.stress_test_warning')}
                                             </p>
                                         </div>
                                     </div>
@@ -413,7 +415,7 @@ export const MortgagePreQualifier: React.FC = () => {
                                 className="flex-1 py-4 bg-gold text-luxury-black rounded-xl text-xs font-bold uppercase tracking-widest
                            flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-gold/20 transition-all"
                             >
-                                Next Step
+                                {t('pre_qualifier.next_step')}
                                 <ChevronRight size={16} />
                             </button>
                         </div>

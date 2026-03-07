@@ -1,15 +1,27 @@
 {
+    "slugs": {
+        "properties": "nieruchomosci",
+        "all": "wszystkie",
+        "insights": "wiedza",
+        "about": "o-nas",
+        "market": "rynek",
+        "live": "na-zywo",
+        "tools": "narzedzia",
+        "valuation": "wycena-nieruchomosci",
+        "quiz": "quiz-nieruchomosci"
+    },
     "nav": {
         "properties": "Nieruchomości",
         "insights": "Wiedza",
         "market": "Rynek",
         "about": "O nas",
-        "list_property": "Wystaw Ofertę"
+        "list_property": "Wystaw Ofertę",
+        "market_pulse": "Tętno Rynku"
     },
     "hero": {
         "badge": "Portal nr 1 z luksusowymi nieruchomościami na Malcie",
         "title_part1": "Luksusowe",
-        "title_part2": "Nieruchomości",
+        "title_part2": "Nieruchomości na Malcie",
         "subtitle": "Wyselekcjonowane oferty od wiodących agencji na Malcie dla inwestorów międzynarodowych oraz osób szukających rezydencji.",
         "stats": {
             "properties": "Luksusowych Ofert",
@@ -28,6 +40,31 @@
             "badge": "Eksploracja Geograficzna",
             "title": "Odkryj Archipelag",
             "subtitle": "Od historycznych uliczek Valletty po spokojne domy na Gozo – znajdź swoją idealną lokalizację na mapie."
+        },
+        "partners": {
+            "badge": "Liderzy Branży",
+            "title": "Zaufali nam najlepsi na Malcie"
+        },
+        "agencies": {
+            "badge": "Dla Agencji i Deweloperów",
+            "title_part1": "Dotrzyj do najbardziej",
+            "title_part2": "Ekskluzywnych Nabywców",
+            "subtitle": "Dołącz do naszego elitarnego rynku i zaprezentuj swoje portfolio inwestorom międzynarodowym oraz osobom szukającym rezydencji.",
+            "features": {
+                "feeds": "Automatyczna integracja XML/JSON",
+                "audience": "Międzynarodowa grupa docelowa premium",
+                "analytics": "Szczegółowa analityka wydajności",
+                "support": "Wsparcie techniczne Concierge"
+            },
+            "cta": "Zostań Partnerem Założycielem"
+        },
+        "market_snapshot": {
+            "title": "Analiza Rynku w Czasie Rzeczywistym",
+            "subtitle": "Nasza platforma agreguje dane z całego archipelagu maltańskiego, aby dostarczać precyzyjne wskaźniki inwestycyjne."
+        },
+        "locations_grid": {
+            "title": "Odkryj Lokalizacje",
+            "subtitle": "Poznaj unikalny charakter najbardziej prestiżowych dzielnic Malty."
         }
     },
     "footer": {
@@ -35,18 +72,698 @@
         "quick_links": "Szybkie Linki",
         "premier_destinations": "Kluczowe Lokalizacje",
         "legal": "Informacje Prawne",
+        "knowledge_hub": "Centrum Wiedzy",
+        "portal_for_agencies": "Portal Agencji",
+        "quiz": "Quiz Nieruchomości 🎯",
         "newsletter": {
             "title": "Raporty Rynkowe",
             "subtitle": "Otrzymuj ekskluzywne oferty off-market i kwartalne raporty rynkowe prosto na swoją skrzynkę.",
             "placeholder": "Email Służbowy",
-            "button": "Subskrybuj"
+            "button": "Subskrybuj",
+            "success_title": "Subskrypcja potwierdzona",
+            "success_message": "Witaj w kręgu wtajemniczonych. Spodziewaj się najlepszych analiz na swojej skrzynce."
         }
     },
     "common": {
         "beds": "{{count}} Pokoje",
         "baths": "{{count}} Łazienki",
         "sqm": "{{count}}m²",
+        "beds_label": "Pokoje",
+        "baths_label": "Łazienki",
+        "area_label": "Powierzchnia",
+        "for": "Dla",
+        "enquire": "Zapytaj",
+        "per_month": "/ mies.",
+        "beds_short": "pok.",
+        "baths_short": "łaz.",
+        "wow": "t/t",
         "view_details": "Szczegóły",
-        "contact_agent": "Kontakt z Agentem"
+        "contact_agent": "Kontakt z Agentem",
+        "properties": "Nieruchomości",
+        "listings": "Oferty",
+        "join_list": "Dołącz do Malta Intelligence List",
+        "privacy_guaranteed": "Gwarancja prywatności. Możesz zrezygnować w każdej chwili.",
+        "ago": "temu",
+        "today": "dzisiaj",
+        "stable": "stabilny",
+        "month_short": "msc",
+        "location": "Lokalizacja",
+        "type": "Typ",
+        "home": "Home",
+        "tools": "Narzędzia",
+        "live_feed": "Relacja na Żywo",
+        "listings_count": "{{count}} ogłoszeń",
+        "price_history": "Historia Cen",
+        "efficiency_audit": "Audit Energetyczny",
+        "quiet_score": "Wskaźnik Ciszy",
+        "find_twin": "Znajdź Bliźniaka"
+    },
+    "locations": {
+        "Sliema": "Sliema",
+        "Valletta": "Valletta",
+        "St_Julians": "St. Julian's",
+        "Mellieha": "Mellieħa",
+        "Gzira": "Gżira",
+        "Swieqi": "Swieqi",
+        "Mdina": "Mdina",
+        "Victoria": "Victoria",
+        "Attard": "Attard",
+        "Madliena": "Madliena",
+        "St_Pauls_Bay": "Zatoka św. Pawła",
+        "Three_Cities": "Trzy Miasta",
+        "Xlendi": "Xlendi",
+        "Naxxar": "Naxxar",
+        "Marsascala": "Marsascala",
+        "Gharghur": "Għargħur",
+        "Malta": "Malta",
+        "Gozo": "Gozo"
+    },
+    "market_types": {
+        "2_bed_apartment": "Apartament 2-pokojowy",
+        "1_bed_apartment": "Apartament 1-pokojowy",
+        "penthouse": "Penthouse",
+        "3_bed_villa": "Willa z 3 sypialniami",
+        "studio_apartment": "Kawalerka",
+        "2_bed_maisonette": "Maisonette 2-pokojowy"
+    },
+    "search": {
+        "location": "Lokalizacja",
+        "placeholder": "Gdzie chciałbyś zamieszkać?",
+        "property_type": "Typ Nieruchomości",
+        "all_types": "Wszystkie Typy",
+        "search_button": "Szukaj",
+        "try_suggest": "Spróbuj",
+        "filters": {
+            "seafront": "Przy Morzu",
+            "with_pool": "Z Basenem",
+            "historic": "Zabytkowe",
+            "modern": "Nowoczesne",
+            "high_efficiency": "Energooszczędne"
+        },
+        "types": {
+            "villa": "Willa",
+            "apartment": "Apartament",
+            "penthouse": "Penthouse",
+            "palazzo": "Palazzo",
+            "house_of_character": "Dom z Charakterem",
+            "maisonette": "Maisonette",
+            "farmhouse": "Gozitan Farmhouse"
+        }
+    },
+    "mortgage": {
+        "title": "Kalkulator Hipoteczny",
+        "subtitle": "Malta 2026 · Rezydent i Nierezydent",
+        "non_resident": "Nierezydent",
+        "tax_resident": "Rezydent Podatkowy",
+        "max_ltv": "Max {{ltv}}% LTV",
+        "property_price": "Cena Nieruchomości",
+        "deposit": "Wkład Własny",
+        "interest_rate": "Oprocentowanie (Zmienne)",
+        "loan_term": "Okres Kredytowania",
+        "years": "{{count}} Lat",
+        "years_short": "{{count}}l",
+        "monthly_repayment": "Rata Miesięczna",
+        "breakdown": "Kapitał + Odsetki · Bez Ubezpieczenia",
+        "loan_amount": "Kwota Kredytu",
+        "total_interest": "Suma Odsetek",
+        "total_repayment": "Całkowity Koszt",
+        "ltv_ratio": "Wskaźnik LTV",
+        "ltv_max_info": "Max {{ltv}}% dla {{type}}",
+        "residents": "rezydentów",
+        "non_residents": "nierezydentów",
+        "bank_rates": "Oprocentowanie Banków 2026",
+        "ltv_warning": "⚠️ Twój wkład własny jest poniżej minimum {{min}}% dla {{type}}. Maltańskie banki ograniczają kredytowanie do {{max}}% LTV.",
+        "bank_notes": {
+            "variable_resident": "Zmienne, rezydent",
+            "variable_non_resident": "Zmienne, nierezydent",
+            "fixed_5y": "Stałe 5 lat",
+            "non_resident_btl": "Nierezydent BTL"
+        }
+    },
+    "roi": {
+        "title": "Rentowność i Zysk (ROI)",
+        "subtitle": "Dla Inwestorów Nieruchomości",
+        "total_investment": "Całkowita Inwestycja",
+        "monthly_rent": "Docelowy Czynsz Miesięczny",
+        "monthly_expenses": "Miesięczne Koszty",
+        "management_fee": "Opłata za Zarządzanie (z VAT)",
+        "net_yearly_profit": "Zysk Roczny Netto",
+        "rental_tax": "Podatek od Wynajmu (15%)",
+        "net_yield": "Rentowność Netto",
+        "reality_check": "Sprawdzenie Realiów",
+        "gross_yield": "Rentowność Brutto",
+        "capital_repayment": "Szacowany Zwrot Kapitału",
+        "years": "~ {{count}} Lat",
+        "investor_insight": {
+            "title": "Wskazówka dla Inwestora",
+            "description": "Rentowność netto uwzględnia 15% zryczałtowanego podatku od wynajmu, opłaty za zarządzanie i utrzymanie. Długoterminowy wzrost wartości kapitału na Malcie (średnio 5%) NIE jest wliczony w tę liczbę."
+        }
+    },
+    "buy_vs_rent": {
+        "title": "Kalkulator: Kupno vs Wynajem",
+        "subtitle": "Malta 2026 · Finansowy Test Rzeczywistości",
+        "intro": "Pytanie, które zadaje każdy inwestor — i które większość portali omija szerokim łukiem. Modelujemy oba scenariusze co do grosza w wybranym horyzoncie czasowym.",
+        "buying_scenario": "Scenariusz: Kupno",
+        "renting_scenario": "Scenariusz: Wynajem",
+        "market_assumptions": "Założenia Rynkowe",
+        "property_price": "Cena Nieruchomości",
+        "deposit": "Wkład Własny",
+        "mortgage_rate": "Oprocentowanie Kredytu (%)",
+        "mortgage_term": "Okres Kredytowania",
+        "monthly_rent": "Miesięczny Czynsz",
+        "investment_return": "Zwrot z Inwestycji (%)",
+        "time_horizon": "Horyzont Czasowy",
+        "property_appreciation": "Roczny Wzrost Wartości (%)",
+        "advanced_assumptions": "Założenia Zaawansowane",
+        "maintenance_costs": "Roczne Koszty Utrzymania (%)",
+        "stamp_duty_info": "Podatek Stamp Duty (Malta): szacowany na 5% (stawka standardowa)",
+        "notary_fees_info": "Opłaty notarialne i AIP: szacowane na ok. 1.1% ceny zakupu",
+        "upfront_costs_deduction": "Koszty te są odejmowane od puli wkładu i uwzględniane w porównaniu.",
+        "buying_wins": "Kupno się opłaca",
+        "renting_wins": "Wynajem się opłaca",
+        "buying_better_off": "Kupno sprawia, że jesteś o {{amount}} bogatszy po {{years}} latach w porównaniu do wynajmu i inwestowania zaoszczędzonego kapitału.",
+        "renting_better_off": "Wynajem i inwestowanie zaoszczędzonego kapitału sprawia, że jesteś o {{amount}} bogatszy po {{years}} latach.",
+        "outperform_info": "Kupno zacznie przeważać nad wynajmem po {{year}} roku",
+        "key_driver": "Wzrost wartości nieruchomości na poziomie {{rate}}%/rok jest kluczowym czynnikiem",
+        "net_worth_at": "Majątek Netto w Roku {{year}}",
+        "property_value": "Wartość Nieruchomości",
+        "monthly_mortgage": "Miesięczna Rata",
+        "upfront_costs": "Koszty Początkowe",
+        "net_worth": "Majątek Netto",
+        "investment_portfolio": "Portfel Inwestycyjny",
+        "total_rent_paid": "Suma Zapłaconego Czynszu",
+        "net_worth_over": "Majątek Netto w ciągu {{years}} Lat",
+        "key_assumptions_title": "Użyte Kluczowe Założenia",
+        "years": "{{count}}l",
+        "years_full": "{{count}} lat",
+        "show_advanced": "Pokaż Zaawansowane",
+        "hide_advanced": "Ukryj Zaawansowane",
+        "disclaimer": "Model ten upraszcza kwestie podatkowe i zakłada stałe stopy wzrostu. Dla rezydentów podatkowych na Malcie obowiązuje 15% podatek od dochodów z najmu, jeśli nieruchomość zostanie później wynajęta. Skonsultuj się z licencjonowanym doradcą przed podjęciem decyzji inwestycyjnych.",
+        "buy_path": "Ścieżka Kupna",
+        "rent_path": "Ścieżka Najmu",
+        "malta_stamp_duty": "Podatek Stamp Duty"
+    },
+    "insights": {
+        "hub": {
+            "subtitle": "Ekspercka Wiedza",
+            "title_part1": "Nieruchomości Malta",
+            "title_part2": "Centrum Wiedzy",
+            "description": "Twój ostateczny przewodnik po maltańskim rynku nieruchomości. Od ram prawnych i optymalizacji podatkowej po regionalne analizy inwestycyjne - dostarczamy wiedzę, której potrzebujesz, aby podejmować świadome decyzje.",
+            "read_full_guide": "Przeczytaj Pełny Przewodnik"
+        },
+        "categories": {
+            "buying": "Kupno",
+            "investing": "Inwestycje",
+            "legal": "Prawo",
+            "finance": "Finanse",
+            "areas": "Obszary",
+            "explore_guide": "Eksploruj"
+        },
+        "newsletter": {
+            "title": "Bądź na Bieżąco z Rynkiem",
+            "description": "Zapisz się na nasz miesięczny raport Market Intelligence, aby otrzymywać ekskluzywne dane, oferty off-market i aktualizacje regulacyjne.",
+            "placeholder": "Wpisz swój e-mail",
+            "subscribe_button": "Zapisz się Teraz"
+        }
+    },
+    "article": {
+        "not_found": "Artykuł nie został znaleziony",
+        "back_to_hub": "Wróć do Centrum Wiedzy",
+        "quick_summary": "Szybkie Podsumowanie",
+        "faq_title": "Często Zadawane Pytania",
+        "share": "Udostępnij",
+        "save": "Zapisz",
+        "last_updated": "Ostatnia aktualizacja",
+        "disclaimer": "Informacje podane na stronie Malta Luxury Real Estate mają charakter wyłącznie ogólny i nie stanowią porady prawnej, finansowej ani podatkowej. Zawsze skonsultuj się z licencjonowanym specjalistą w celu uzyskania porady dostosowanej do Twojej sytuacji.",
+        "related_guides": "Powiązane Przewodniki",
+        "sidebar_newsletter_title": "Malta Intelligence",
+        "sidebar_newsletter_desc": "Ekskluzywne aktualizacje rynkowe i analizy inwestycyjne, co miesiąc.",
+        "sidebar_newsletter_placeholder": "Twój e-mail",
+        "sidebar_newsletter_button": "Dołącz do Inziderów",
+        "callouts": {
+            "key_point": "Kluczowy punkt",
+            "important": "Ważne",
+            "caution": "Uwaga",
+            "note": "Notatka",
+            "expert_tip": "Porada eksperta",
+            "confirmed": "Potwierdzone"
+        }
+    },
+    "pre_qualifier": {
+        "title": "Wstępna Zdolność Kredytowa",
+        "subtitle": "System Analityczny Banku",
+        "intro": "Uzyskaj natychmiastowe oszacowanie zdolności kredytowej oparte na aktualnych politykach maltańskich banków (LTV) i wskaźnikach długu do dochodu.",
+        "estimated_cap": "Szacowany Limit",
+        "max_potential_loan": "Maksymalny przewidywany kredyt na okres {{years}} lat.",
+        "bank_criteria": "Kryteria Bankowe",
+        "stress_test": "Zastosowano Stress Test 2026",
+        "steps": {
+            "status": "01 · Rezydencja i Cel",
+            "employment": "02 · Profil Zawodowy",
+            "income": "03 · Zdolność Finansowa",
+            "debts": "04 · Zobowiązania",
+            "result": "Wynik"
+        },
+        "questions": {
+            "residency": "Jaki jest Twój status rezydencji?",
+            "buyer_type": "Typ kupującego?",
+            "employment": "Zatrudnienie i Wiek",
+            "income": "Dochody i Oszczędności",
+            "debts": "Istniejące Zobowiązania",
+            "age": "Twój Wiek"
+        },
+        "options": {
+            "resident": "Rezydent Malty",
+            "resident_desc": "Mieszkasz na Malcie, typowo 90% LTV",
+            "non_resident": "Nierezydent",
+            "non_resident_desc": "Mieszkasz za granicą, typowo 75% LTV",
+            "first_time": "1. Zakup",
+            "second_time": "Kolejny Zakup",
+            "investor": "BTL / Inwestor",
+            "full_time": "Pełny Etat",
+            "self_employed": "Samozatrudnienie",
+            "other_employment": "Inne"
+        },
+        "labels": {
+            "monthly_income": "Dochód Miesięczny Netto (Razem)",
+            "savings": "Dostępne Oszczędności / Wkład",
+            "monthly_debts": "Miesięczne Zobowiązania",
+            "debt_desc": "Suma miesięcznych rat kredytów, kart kredytowych lub alimentów.",
+            "stress_test_warning": "Stress-test Banku Centralnego: Doliczamy +2% do obecnych stóp, aby rygorystycznie ocenić Twoją zdolność do spłaty."
+        },
+        "results": {
+            "complete": "Weryfikacja Zakończona",
+            "assessment": "Wynik Wstępnej Oceny",
+            "max_value": "Max. Wartość Nieruchomości",
+            "includes_deposit": "Uwzględnia Twój wkład własny {{amount}}.",
+            "recommended_loan": "Sugerowany Kredyt",
+            "loan_term": "Przy szacowanym okresie {{years}} lat.",
+            "official_quotation": "Uzyskaj Ofertę z Banku",
+            "recalculate": "Oblicz Ponownie"
+        },
+        "next_step": "Następny Krok",
+        "years": "{{count}} lat"
+    },
+    "sales_tax": {
+        "title": "Podatek od sprzedaży (FWT)",
+        "subtitle": "Dla sprzedających i właścicieli",
+        "labels": {
+            "selling_price": "Cena sprzedaży",
+            "acquisition_type": "Typ nabycia",
+            "sole_residence": "Główne miejsce zamieszkania (3l+)",
+            "tax_exempt": "Zwolnione z podatku (0%)",
+            "taxable": "Opodatkowane (FWT)",
+            "agent_fee": "Prowizja agencji",
+            "commission": "{{percent}}% Prowizji",
+            "financial_summary": "Podsumowanie finansowe",
+            "fwt": "Zryczałtowany podatek dochodowy (FWT)",
+            "agency_commission": "Prowizja agencji (+VAT)",
+            "notary_epc": "Koszty notarialne i EPC (szac.)",
+            "net_proceeds": "Przychód netto",
+            "after_taxes": "Po uwzględnieniu podatków i opłat"
+        },
+        "options": {
+            "standard": "Standard",
+            "pre2004": "Przed 2004",
+            "aip": "AIP (Obcokrajowcy)"
+        },
+        "disclaimer": "Maltański podatek FWT (Final Withholding Tax) jest zazwyczaj obliczany od pełnej ceny sprzedaży, a NIE od zysku. Sprzedaż po ponad 2 latach posiadania może wiązać się z różnymi stawkami w zależności od specyficznych lokalnych regulacji budżetowych."
+    },
+    "interactive_tools": {
+        "title_part1": "Interaktywne",
+        "title_part2": "Narzędzia Rynkowe",
+        "subtitle": "Inteligencja Finansowa",
+        "intro": "Precyzyjne modelowanie finansowe dla maltańskiego rynku nieruchomości. Nasze narzędzia wykorzystują najnowsze przepisy podatkowe z 2026 r. i zastrzeżone dane rynkowe.",
+        "tabs": {
+            "buying": "Koszty Zakupu",
+            "prequalifier": "Zdolność",
+            "mortgage": "Kredyt",
+            "buyvsrent": "Kupno vs Najem",
+            "roi": "ROI Inwestycji",
+            "selling": "Podatek Sprzedaży"
+        },
+        "info": {
+            "tax_update_title": "Aktualizacja Podatkowa 2026",
+            "tax_update_desc": "Nasze narzędzia odzwierciedlają najnowsze środki budżetowe, w tym zwolnienia UCA i program pierwszej rezydencji na Gozo.",
+            "read_tax_guide": "Czytaj Przewodnik Podatkowy",
+            "roi_benchmarks_title": "Benchmarki ROI",
+            "roi_benchmarks_desc": "Sliema i St. Julian's zapewniają obecnie rentowność netto na poziomie 4,2% - 5,8% dla luksusowych nieruchomości na wynajem.",
+            "yield_reports": "Raporty Rentowności",
+            "oracle_title": "Wyrocznia Cen AI",
+            "oracle_desc": "Uzyskaj natychmiastową wycenę dowolnej maltańskiej nieruchomości opartą na AI, korzystając z naszego neuronowego indeksu rynkowego.",
+            "try_oracle": "Wypróbuj Wyrocznię AI"
+        }
+    },
+    "buying_costs": {
+        "title": "Analityka Kosztów Zakupu",
+        "subtitle": "Analiza Kupującego 2026",
+        "labels": {
+            "acquisition_price": "Cena nabycia",
+            "first_time_buyer": "Pierwszy Zakup",
+            "first_time_desc": "0% podatku (do €200k)",
+            "standard_rate": "Stawka Standardowa",
+            "uca_village_core": "Strefa UCA",
+            "uca_desc": "0% podatku (do 750k)",
+            "heritage_grant": "Możliwa dotacja Heritage",
+            "gozo_scheme": "Program Gozo",
+            "primary_home": "Główny Dom",
+            "aip_required": "Wymagane AIP",
+            "cost_breakdown": "Podział Kosztów",
+            "net_stamp_duty": "Podatek (Stamp Duty) Netto",
+            "notary_searches": "Notariusz i kwerendy (+VAT)",
+            "aip_permit": "Opłata administracyjna AIP",
+            "total_extra_costs": "Łączne Koszty Dodatkowe",
+            "approx_price": "Ok. {{percent}}% ceny",
+            "total_capital_investment": "Całkowity Kapitał Inwestycji"
+        }
+    },
+    "market": {
+        "title": "Rynek Nieruchomości Malta – Live",
+        "activeListings": "Aktywne Ogłoszenia",
+        "medianPrice": "Mediana Cen",
+        "priceChange": "Zmiana Ceny",
+        "lastUpdated": "Ostatnia aktualizacja",
+        "forSale": "Na Sprzedaż",
+        "forRent": "Na Wynajem",
+        "areaPriceHeat": "Mapa Ciepła Cen Lokalnych",
+        "areaPriceHeatSubtitle": "Dane o cenie za m² na żywo według miejscowości",
+        "disclaimer": "Dane pochodzą z Malta Property Price Register (PPR), liczby aktywnych ogłoszeń na głównych portalach oraz danych o wynajmie krótkoterminowym Malta Tourism Authority. Statystyki są aktualizowane codziennie o godzinie 06:00 CET. W celu uzyskania dostępu do danych instytucjonalnych prosimy o kontakt pod adresem data@maltaluxuryrealestate.com.",
+        "analystNoteTitle": "Notatka Analityka",
+        "analystNoteBody": "Maltański rynek mieszkaniowy kontynuuje odporną trajektorię wzrostową. Popyt ze strony międzynarodowych nabywców HNW pozostaje silny.",
+        "risingInventoryTitle": "Obserwacja: Wzrost Podaży",
+        "risingInventoryBody": "Przy rosnącej podaży ofert, kupujący odzyskali o 4,2% większą siłę negocjacyjną w porównaniu z IV kwartałem ubiegłego roku.",
+        "gozoOpportunityTitle": "Okno Możliwości na Gozo",
+        "gozoOpportunityBody": "Nieruchomości na Gozo zyskują na wartości w tempie 8,3% rocznie — dwukrotnie szybciej niż średnia na Malcie — co jest napędzane ogłoszeniem budowy mostu-tunelu. Nieruchomości kupione przed 2027 rokiem będą beneficjentami ukończenia infrastruktury w 2028 roku.",
+        "globalSentimentTitle": "Sentyment Globalny",
+        "globalSentimentBody": "Zainteresowanie osób zamożnych z Europy Północnej pozostaje głównym czynnikiem napędzającym nieruchomości SDA powyżej 1,5 mln €.",
+        "ticker": {
+            "malta_avg": "Średnia Malta €/m²",
+            "gozo_avg": "Średnia Gozo €/m²",
+            "sliema_median": "Mediana Sliema",
+            "valletta_median": "Mediana Valletta",
+            "sda_premium": "Premia SDA",
+            "vs_non_sda": "vs nie-SDA",
+            "days_on_market": "Śr. dni na rynku",
+            "days_count": "{{count}} dni",
+            "new_listings_7d": "Nowe ogłoszenia (7d)",
+            "price_drops_7d": "Obniżki cen (7d)",
+            "gross_yield": "Dochód brutto Malta",
+            "short_let_yield": "Dochód wynajem krótki",
+            "eur_rate": "Stopa EUR (EBC)",
+            "gdp_growth": "Wzrost PKB Malty"
+        },
+        "price_drops": "Obniżki Cen",
+        "just_listed": "Nowe Oferty",
+        "last_48h": "Ostatnie 48 godzin",
+        "last_7d_5pct": "Ostatnie 7 dni — obniżki 5%+",
+        "this_week_count": "{{count}} w tym tygodniu",
+        "hot_this_week": "Popularne w tym tygodniu",
+        "most_enquired": "Najczęściej pytane nieruchomości",
+        "views_today": "{{count}} wyświetleń dzisiaj",
+        "refresh_data": "Odśwież Dane",
+        "refreshing": "Odświeżanie...",
+        "gozo_bridge_tracker": "Monitor Efektu Mostu Gozo",
+        "gozo_bridge_subtitle": "Indeks cen vs wpływ ogłoszenia tunelu",
+        "announced": "Ogłoszono",
+        "index_label": "Indeks: {{value}}",
+        "current_avg": "Obecna średnia €/m²",
+        "projection_2031": "Prognoza 2031",
+        "bridge_prediction": "Jeśli most zostanie ukończony do 2028 r., nasz model przewiduje, że ceny na Gozo osiągną parytet z północną Maltą do 2031 r. (+38% względem obecnej średniej).",
+        "since_date": "od {{date}}"
+    },
+    "months": {
+        "jan": "Sty",
+        "feb": "Lut",
+        "mar": "Mar",
+        "apr": "Kwi",
+        "may": "Maj",
+        "jun": "Cze",
+        "jul": "Lip",
+        "aug": "Sie",
+        "sep": "Wrz",
+        "oct": "Paź",
+        "nov": "Lis",
+        "dec": "Gru"
+    },
+    "oracle": {
+        "title": "Oracle Cenowy",
+        "subtitle": "Wyceń Swoją Nieruchomość",
+        "description": "Najnowocześniejsza wycena AI oparta na realnych danych transakcyjnych, zasobach rynkowych i premiach architektonicznych.",
+        "estimateBtn": "Sprawdź Wartość",
+        "disclaimer": "Wycena na podstawie aktywnych ogłoszeń",
+        "engine_name": "Silnik Wyceny Neuronowej",
+        "title_part1": "Maltański",
+        "title_part2": "Oracle Cenowy",
+        "step": "Krok",
+        "loading_title": "Obliczanie Indeksu Rynkowego...",
+        "loading_subtitle": "Ocena premii architektonicznych i temperatury lokalizacji.",
+        "where_title": "Gdzie znajduje się nieruchomość?",
+        "location": "Lokalizacja",
+        "property_type": "Typ nieruchomości",
+        "continue": "Kontynuuj Specyfikację",
+        "attributes_title": "Atrybuty Fizyczne",
+        "total_area": "Powierzchnia Całkowita",
+        "beds_baths": "Pokoje / Łazienki",
+        "finish_level": "Standard Wykończenia",
+        "premium_signals": "Sygnały Premium",
+        "view_quality": "Jakość Widoku",
+        "back": "Wstecz",
+        "generate": "Generuj Wycenę AI",
+        "analysis_complete": "Analiza Wyceny Zakończona",
+        "estimated_value_market": "Szacowana Wartość Rynkowa",
+        "confidence": "Wskaźnik Pewności",
+        "rental_potential": "Potencjał Najmu",
+        "projected_yield": "Przewidywana Rentowność Brutto 4.5%",
+        "market_heat_title": "Temperatura Rynku",
+        "per_sqm": "za m²",
+        "growth_forecast": "+4.2% Wzrostu dla",
+        "insight_title": "Analiza: Trzymaj vs Sprzedaj",
+        "insight_body": "Indeks rynkowy w {{location}} jest stabilny. Zalecamy **ZATRZYMANIE** do IV kwartału 2026, aby skorzystać z przewidywanych zysków kapitałowych.",
+        "get_report": "Pobierz Raport PDF",
+        "start_new": "Rozpocznij Nową Wycenę",
+        "this_area": "tej okolicy",
+        "features": {
+            "registry_title": "Zsynchronizowano z Rejestrem",
+            "registry_desc": "Bezpośrednie połączenie API z aktualnym rejestrem rynkowym gwarantuje, że wycena nie jest zgadywaniem, lecz odzwierciedleniem realnych transakcji.",
+            "precision_title": "Precyzja Lokalizacji",
+            "precision_desc": "Od luksusowych centrów Sliemy po historyczne uliczki Gozo, ważymy wyceny na podstawie specyficznego popytu w mikrolokalizacjach.",
+            "logic_title": "Logika UCA i SDA",
+            "logic_desc": "Oracle automatycznie uwzględnia zwolnienia podatkowe w strefach UCA i premie SDA dla inwestorów zagranicznych."
+        },
+        "pTypes": {
+            "Apartment": "Apartament",
+            "Penthouse": "Penthouse",
+            "Villa": "Willa",
+            "Palazzo": "Pałac",
+            "House of Character": "House of Character",
+            "Maisonette": "Maisonette",
+            "Farmhouse": "Wiejska Rezydencja",
+            "Studio Apartment": "Kawalerka"
+        },
+        "fLevels": {
+            "Shell": "Stan Deweloperski",
+            "Finished": "Wykończone",
+            "Furnished": "Umeblowane"
+        }
+    },
+    "badges": {
+        "seaView": "Widok na Morze",
+        "newBuild": "Nowa Inwestycja",
+        "luxury": "Luksusowe",
+        "furnished": "Umeblowane",
+        "pool": "Z Basenem",
+        "seafront": "Pierwsza Linia Brzegowa",
+        "live": "NA ŻYWO",
+        "new": "Nowość",
+        "hot": "Gorące"
+    },
+    "states": {
+        "loading": "Ładowanie nieruchomości...",
+        "noResults": "Nie znaleziono nieruchomości",
+        "error": "Coś poszło nie tak"
+    },
+    "quiz": {
+        "interactive": "Interaktywne Doświadczenie",
+        "title_part1": "Jaką",
+        "title_part2": "Nieruchomością na Malcie",
+        "title_part3": "Jesteś?",
+        "subtitle": "Znajdź swoje idealne dopasowanie w 60 sekund.",
+        "question_counter": "Pytanie {{current}} / {{total}}",
+        "analyzing": "Dopasowywanie Twojego DNA...",
+        "analyzing_subtitle": "Nasza sztuczna inteligencja przeszukuje wyspę w poszukiwaniu Twojego ideału.",
+        "result_badge": "Twoje Idealne Dopasowanie",
+        "explore": "Poznaj moją okolicę",
+        "take_again": "Rozwiąż quiz ponownie",
+        "share_desc": "Podziel się swoim 'Property DNA' z partnerem lub przyjaciółmi.",
+        "copy_link": "Skopiuj link do wyniku",
+        "bottom": {
+            "fun_title": "Prywatnie i z Zabawą",
+            "fun_desc": "Brak konieczności rejestracji. Po prostu pytania o styl życia, które pomogą Ci zwizualizować życie na Malcie.",
+            "market_title": "Oparte na Rynku",
+            "market_desc": "Wyniki są zsynchronizowane z rzeczywistym stanem rynku i statystykami obszarów na rok 2026.",
+            "area_title": "Wgląd w Obszar",
+            "area_desc": "Otrzymuj szczegółowe rekomendacje dla konkretnych dzielnic na podstawie Twojego klimatu."
+        }
+    },
+    "quiz_content": {
+        "questions": [
+            {
+                "text": "Jak wyobrażasz sobie swój idealny poranek?",
+                "options": {
+                    "a": "Kawa na balkonie z widokiem na morze i port",
+                    "b": "Spacer cichymi, historycznymi uliczkami z wapienia",
+                    "c": "Kąpiel w prywatnym basenie z widokiem na wzgórza Gozo",
+                    "d": "Pobudka w nowoczesnym penthousie typu smart-home"
+                }
+            },
+            {
+                "text": "Jaki jest Twój idealny piątkowy wieczór?",
+                "options": {
+                    "a": "Wykwintna kolacja i kluby towarzyskie w tętniącym życiem centrum",
+                    "b": "Spokojne wino w 400-letnim lokalnym domu wiejskim (farmhouse) na Gozo",
+                    "c": "Otwarcie galerii sztuki, a następnie butikowy klub jazzowy",
+                    "d": "Grill o zachodzie słońca na ogromnym tarasie"
+                }
+            },
+            {
+                "text": "Wybierz swój 'Malta Vibe':",
+                "options": {
+                    "a": "Kosmopolityczny i pełen energii",
+                    "b": "Historyczny i majestatyczny",
+                    "c": "Spokojny i śródziemnomorski",
+                    "d": "Ekskluzywny i strzeżony"
+                }
+            },
+            {
+                "text": "Co definiuje dla Ciebie 'Luksus'?",
+                "options": {
+                    "a": "Całodobowa recepcja i ultra-nowoczesne udogodnienia",
+                    "b": "Prywatność, przestrzeń i dojrzały ogród",
+                    "c": "Wyjątkowe dziedzictwo architektoniczne i dusza",
+                    "d": "Zapierające dech w piersiach, niezakłócone widoki na morze"
+                }
+            },
+            {
+                "text": "Twoim priorytetem inwestycyjnym jest...",
+                "options": {
+                    "a": "Maksymalna stopa zwrotu z wynajmu i płynność",
+                    "b": "Długoterminowe zyski kapitałowe w rozwijających się obszarach",
+                    "c": "Druga rezydencja / prestiżowe trofeum lifestylowe",
+                    "d": "Zrównoważony dom z certyfikatem ekologicznym"
+                }
+            }
+        ],
+        "results": {
+            "sliema_stjulians": {
+                "title": "Kosmopolityczna Elita",
+                "area": "Sliema i St. Julian's",
+                "type": "Penthouse z widokiem na morze",
+                "description": "Uwielbiasz być tam, gdzie coś się dzieje. Wysoka energia, luksusowe udogodnienia i lśniące Morze Śródziemne na wyciągnięcie ręki. Twój styl życia wymaga wygody, stylu i najlepszych lokali na wyspie."
+            },
+            "valletta_mdina": {
+                "title": "Kolekcjoner Dziedzictwa",
+                "area": "Valletta i Mdina",
+                "type": "Odrestaurowane Palazzo",
+                "description": "Historia to dla Ciebie nie tylko kategoria; to styl życia. Doceniasz duszę 400-letnich wapiennych ścian, butikową kulturę i majestatyczną ciszę Cichego Miasta."
+            },
+            "gozo_farmhouse": {
+                "title": "Śródziemnomorska Dusza",
+                "area": "Wyspa Gozo",
+                "type": "Historyczny Farmhouse",
+                "description": "Szukasz spokoju, autentyczności i przestrzeni. Gozo to Twój azyl. Cenisz potencjał projektu tunelu/mostu, ale priorytetem jest dla Ciebie powolne, piękne tempo życia wioskowego i pofałdowane wzgórza."
+            },
+            "madliena_villa": {
+                "title": "Poszukiwacz Prywatności",
+                "area": "Madliena i High Ridge",
+                "type": "Willa wolnostojąca z basenem",
+                "description": "Prywatność to ostateczny luksus. Chcesz przestrzeni, dojrzałych ogrodów i bezpieczeństwa. Preferujesz spokojny prestiż najbardziej ekskluzywnych dzielnic mieszkalnych Malty."
+            }
+        }
+    },
+    "about": {
+        "badge": "Standard Doskonałości",
+        "title_part1": "Najlepsze Adresy",
+        "title_part2": "Na Wyspach.",
+        "description": "Malta Luxury Real Estate powstało z prostej potrzeby: uproszczenia procesu nabywania najbardziej wyjątkowych nieruchomości na maltańskich wyspach. Nie jesteśmy tylko rynkiem ofert; jesteśmy pomostem między wymagającymi inwestorami międzynarodowymi a najbardziej renomowanymi specjalistami od nieruchomości.",
+        "view_collections": "Zobacz Kolekcje",
+        "read_insights": "Czytaj Artykuły",
+        "stats": {
+            "properties": "Wyselekcjonowane Oferty",
+            "agencies": "Agencje Partnerskie",
+            "guides": "Przewodniki Ekspertów",
+            "satisfaction": "Satysfakcja Klienta"
+        },
+        "values": {
+            "title": "Nasze Zasady",
+            "subtitle": "Wszystko, co robimy, jest podyktowane dbałością o jakość i głębokim szacunkiem dla dziedzictwa architektonicznego Malty i Gozo.",
+            "value1": {
+                "title": "Uczciwość przede wszystkim",
+                "desc": "Wybieramy tylko najbardziej renomowane agencje i nieruchomości, zapewniając przejrzysty i bezpieczny proces zakupu dla międzynarodowych inwestorów."
+            },
+            "value2": {
+                "title": "Bezkonkurencyjna wiedza",
+                "desc": "Nasze głębokie zrozumienie maltańskiego prawa nieruchomościowego, optymalizacji podatkowej (MPRP/SDA) i trendów rynkowych daje naszym klientom przewagę."
+            },
+            "value3": {
+                "title": "Dyskrecja i profesjonalizm",
+                "desc": "Luksusowe nieruchomości to prywatność. Nasza platforma i partnerzy działają z najwyższym poziomem poufności i profesjonalizmu."
+            },
+            "value4": {
+                "title": "Globalna perspektywa",
+                "desc": "Dostosowane do nabywcy międzynarodowego, nasze analizy łączą śródziemnomorski urok z globalnymi standardami inwestycyjnymi."
+            }
+        },
+        "director": {
+            "tag": "Od Dyrektora",
+            "quote": "Nie tylko wystawiamy nieruchomości; reprezentujemy styl życia, który szanuje historię wysp, jednocześnie patrząc w przyszłość globalnych inwestycji.",
+            "name": "Alexander Vanhaut",
+            "role": "Dyrektor Zarządzający"
+        },
+        "eeat": {
+            "title": "Standard Jakości (E-E-A-T)",
+            "desc": "Jako zweryfikowany członek maltańskiego ekosystemu nieruchomości, zapewniamy więcej niż tylko ogłoszenia. Nasz zestaw narzędzi – w tym kalkulatory ROI i przewodniki podatkowe – opiera się na badaniach własnych i ponad 20-letnim doświadczeniu na rynku lokalnym.",
+            "points": [
+                "Zweryfikowane partnerstwa z agencjami",
+                "Kwartalne raporty rynkowe",
+                "Zgodność z przepisami rynkowymi 2026",
+                "Doradztwo w zakresie SDA i rezydencji"
+            ]
+        },
+        "cta": {
+            "title": "Gotowy na odkrycie swojej wyjątkowej rezydencji?",
+            "trust_badge": "Autoryzowana Sieć Nieruchomości Luksusowych"
+        }
+    },
+    "properties": {
+        "all_listings": "Nieruchomości",
+        "exclusive_title": "Ekskluzywne Oferty",
+        "search_results": "Wyniki wyszukiwania dla \"{{query}}\"",
+        "showing_count": "Pokazujemy {{count}} ofert premium pasujących do Twoich kryteriów.",
+        "filters_button": "Filtry",
+        "hide_filters": "Ukryj Filtry",
+        "filter_panel": {
+            "property_type": "Typ nieruchomości",
+            "features": "Udogodnienia",
+            "energy_rating": "Klasa energetyczna (EPC 2026)",
+            "rating_label": "Klasa {{grade}}"
+        },
+        "no_results": {
+            "title": "Nie znaleziono pasujących ofert",
+            "desc": "Nie mogliśmy znaleźć ofert pasujących do Twojego wyszukiwania. Spróbuj zmienić filtry lub sprawdź nasze najpopularniejsze lokalizacje.",
+            "explore": "Odkryj {{location}}"
+        },
+        "breadcrumb": {
+            "search": "Wyniki: \"{{query}}\""
+        },
+        "filtered": {
+            "results_count": "{{count}} Nieruchomości",
+            "also_explore": "Zobacz także:",
+            "view_all_in": "Zobacz wszystkie oferty w {{location}}",
+            "market_overview": "{{filter}} w {{location}} – Przegląd Rynku",
+            "market_growth": "Wzrost Rynku",
+            "rental_demand": "Popyt na Wynajem",
+            "growth_desc": "Średnie wartości nieruchomości w {{location}} wzrosły o 6.2% w ciągu ostatnich 12 miesięcy.",
+            "demand_desc": "Wysoki popyt na luksusowy wynajem zapewnia stabilne zyski dla właścicieli w tym regionie."
+        }
     }
 }

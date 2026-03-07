@@ -1,6 +1,11 @@
 import type { Location, LocationStats, Property, Article } from '../types';
 import { PROPERTIES, ARTICLES } from '../constants';
 import { supabase, isSupabaseConfigured } from './supabase';
+import {
+  loadAllArticles,
+  loadArticle,
+  resolveArticleLang,
+} from './markdown';
 
 // ============================================================
 // DUAL-MODE DATA LAYER
@@ -277,14 +282,17 @@ export const getFilteredProperties = async (
 
 // --- Articles ---
 
-export const getArticles = async (): Promise<Article[]> => {
+export const getArticles = async (lang = 'en'): Promise<Article[]> => {
+  const activeLang = resolveArticleLang(lang);
+
   if (isSupabaseConfigured && supabase) {
     const { data, error } = await supabase
       .from('articles')
       .select('*')
       .eq('published', true)
+      .eq('lang', activeLang)
       .order('created_at', { ascending: false });
-    if (data && !error) {
+    if (data && !error && data.length > 0) {
       return (data as any[]).map((row: any) => ({
         slug: row.slug,
         title: row.title,
@@ -297,16 +305,21 @@ export const getArticles = async (): Promise<Article[]> => {
       }));
     }
   }
-  return ARTICLES;
+
+  // Fallback to Markdown files
+  return loadAllArticles(activeLang);
 };
 
-export const getArticleBySlug = async (slug: string): Promise<Article | undefined> => {
+export const getArticleBySlug = async (slug: string, lang = 'en'): Promise<Article | undefined> => {
+  const activeLang = resolveArticleLang(lang);
+
   if (isSupabaseConfigured && supabase) {
     const { data, error } = await supabase
       .from('articles')
       .select('*')
       .eq('slug', slug)
       .eq('published', true)
+      .eq('lang', activeLang)
       .single();
     if (data && !error) {
       const row = data as any;
@@ -322,11 +335,13 @@ export const getArticleBySlug = async (slug: string): Promise<Article | undefine
       };
     }
   }
-  return ARTICLES.find(a => a.slug === slug);
+
+  const article = await loadArticle(slug, activeLang);
+  return article ?? undefined;
 };
 
-export const getArticlesByCategory = async (category: Article['category']): Promise<Article[]> => {
-  const all = await getArticles();
+export const getArticlesByCategory = async (category: Article['category'], lang = 'en'): Promise<Article[]> => {
+  const all = await getArticles(lang);
   return all.filter(a => a.category === category);
 };
 

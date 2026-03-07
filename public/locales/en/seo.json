@@ -9,10 +9,40 @@
     },
     "insights": {
         "title": "Malta Real Estate Insights & Investment Hub",
-        "description": "Expert advice, market reports, and guides for buying and investing in Maltese luxury property."
+        "description": "Expert advice, market reports, and guides for buying and investing in Maltese luxury property.",
+        "title_buying": "Buying Property in Malta as a Foreigner",
+        "title_sda": "Special Designated Areas (SDA) Guide",
+        "title_yields": "Rental Yields in Malta 2026",
+        "title_taxes": "Property Taxes in Malta 2026"
     },
     "about": {
         "title": "About Malta Luxury Real Estate – Our Mission",
         "description": "The leading independent portal connecting international high-net-worth individuals with Malta's premium property market."
+    },
+    "market": {
+        "title": "Malta Property Market Pulse | Real-Time Data 2026",
+        "description": "Monitor real-time property price trends, live listings, and market heat across Malta and Gozo. Data-driven insights for luxury investors."
+    },
+    "tools": {
+        "oracle": {
+            "title": "AI Property Price Oracle | Free Valuation Malta & Gozo",
+            "description": "Get an instant, AI-powered property valuation. Our Oracle analyzes market trends, location data, and property specs to provide high-precision estimates."
+        },
+        "valuation": {
+            "title": "Property Valuation",
+            "description": "Expert property valuation services for luxury real estate on Malta and Gozo."
+        }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "subtitle": "Data Protection & GDPR Compliance"
+    },
+    "terms": {
+        "title": "Terms of Service",
+        "subtitle": "User Agreement & Platform Rules"
+    },
+    "cookies": {
+        "title": "Cookie Policy",
+        "subtitle": "Our Use of Tracking Technologies"
     }
 }

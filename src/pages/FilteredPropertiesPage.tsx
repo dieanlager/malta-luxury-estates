@@ -9,6 +9,7 @@ import { Breadcrumb } from '../components/Breadcrumb';
 import { generateFilterFAQSchema, localBusinessSchema } from '../lib/seo/schemas';
 import { usePageMeta, getCanonicalPath } from '../lib/seo/meta';
 import { SchemaScript } from '../components/SchemaScript';
+import { useTranslation } from 'react-i18next';
 
 interface FilteredPropertiesPageProps {
   favorites: string[];
@@ -21,6 +22,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
   onToggleFavorite,
   onContact,
 }) => {
+  const { t, i18n } = useTranslation();
   const { citySlug, filterSlug } = useParams<{ citySlug: string; filterSlug: string }>();
   const [location, setLocation] = useState<Location | null>(null);
   const [properties, setProperties] = useState<Property[]>([]);
@@ -64,6 +66,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
       ? `Browse curated ${filterLabel.toLowerCase()} for sale in ${location.nameEn}, ${islandLabel}. Verified listings from leading agencies with seafront and exclusive options. ${properties.length > 0 ? `${properties.length} listings available.` : ''}`
       : `Browse curated ${filterLabel.toLowerCase()} for sale across the Maltese islands. Verified listings from Malta's leading luxury real estate agencies.`,
     canonicalPath: location ? getCanonicalPath(location.slug, filterSlug) : '/properties/all',
+    currentLang: i18n.language,
   });
 
   if (loading) {

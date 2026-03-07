@@ -7,22 +7,42 @@ import Anthropic from '@anthropic-ai/sdk';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 dotenv.config({ path: '.env.local' });
 
 // ── Config ────────────────────────────────────────────────────
 // These will be loaded via --env-file=.env.local
 const DEEPL_API_KEY = process.env.DEEPL_API_KEY;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+const GOOGLE_API_KEYS = (process.env.GOOGLE_API_KEY || '').split(',').map(k => k.trim()).filter(Boolean);
 
 if (!DEEPL_API_KEY) {
-    console.error('❌ Error: DEEPL_API_KEY is missing in environment.');
+    console.warn('⚠️ Warning: DEEPL_API_KEY is missing. DeepL will be skipped.');
 }
 if (!ANTHROPIC_API_KEY) {
     console.warn('⚠️ Warning: ANTHROPIC_API_KEY is missing. Claude review will be skipped.');
 }
+if (GOOGLE_API_KEYS.length === 0) {
+    console.warn('⚠️ Warning: GOOGLE_API_KEY is missing. Gemini will be skipped.');
+}
 
 const DEEPL = DEEPL_API_KEY ? new deepl.Translator(DEEPL_API_KEY) : null;
 const CLAUDE = ANTHROPIC_API_KEY ? new Anthropic({ apiKey: ANTHROPIC_API_KEY }) : null;
+
+let currentGeminiKeyIndex = 0;
+function getGeminiInstance() {
+    if (GOOGLE_API_KEYS.length === 0) return null;
+    return new GoogleGenerativeAI(GOOGLE_API_KEYS[currentGeminiKeyIndex]);
+}
+
+function rotateGeminiKey() {
+    if (GOOGLE_API_KEYS.length > 1) {
+        currentGeminiKeyIndex = (currentGeminiKeyIndex + 1) % GOOGLE_API_KEYS.length;
+        console.log(`\n🔄 Rotating Gemini API Key to #${currentGeminiKeyIndex + 1}...`);
+        return true;
+    }
+    return false;
+}
 
 const ARTICLES_SRC = path.join(process.cwd(), 'src/content/articles/en');
 const ARTICLES_OUT = path.join(process.cwd(), 'src/content/articles');
@@ -102,6 +122,47 @@ async function translateMarkdown(text: string, lang: Lang): Promise<string> {
     return result.text;
 }
 
+// ── Gemini – Translation fallback ─────────────────────────────
+async function translateWithGemini(text: string, lang: Lang): Promise<string> {
+    const config = LANG_CONFIG[lang];
+    const prompt = `Translate this Markdown text into ${config.name}.
+Keep all Markdown formatting (##, **, [], etc.) exactly as-is.
+Keep property terms (AIP, MPRP, UCA, PPR) and place names (Sliema, Valletta, Gozo) in English if appropriate for luxury context.
+Return ONLY the translated text.
+
+Text to translate:
+${text}`;
+
+    let attempts = 0;
+    const maxAttempts = 5;
+
+    while (attempts < maxAttempts) {
+        const gemini = getGeminiInstance();
+        if (!gemini) return text;
+        const model = gemini.getGenerativeModel({ model: 'gemini-1.5-flash' });
+
+        try {
+            const result = await model.generateContent(prompt);
+            return result.response.text();
+        } catch (err: any) {
+            attempts++;
+            if (err.message.includes('429')) {
+                if (rotateGeminiKey()) {
+                    console.log(`\n  ⚠️ Gemini rate limit (429). Rotated key. Retrying immediately (Attempt ${attempts}/${maxAttempts})...`);
+                    continue;
+                } else {
+                    console.log(`\n  ⚠️ Gemini rate limit (429). Only one key available. Retrying in 60s (Attempt ${attempts}/${maxAttempts})...`);
+                    await new Promise(r => setTimeout(r, 60000));
+                    continue;
+                }
+            }
+            console.error('  ✗ Gemini Translation Error:', err.message);
+            return text;
+        }
+    }
+    return text;
+}
+
 // ── Claude – review tonu i naturalności ──────────────────────
 async function claudeReview(
     translated: string,
@@ -169,24 +230,57 @@ async function translateArticle(
         const translatedFM = { ...frontmatter };
 
         if (DEEPL) {
+            try {
+                for (const key of translatableKeys) {
+                    if (frontmatter[key]) {
+                        const result = await DEEPL.translateText(
+                            frontmatter[key],
+                            null,
+                            LANG_CONFIG[lang].deepl,
+                            { formality: (lang === 'pl') ? undefined : 'more' }
+                        );
+                        translatedFM[key] = result.text;
+                    }
+                }
+            } catch (err: any) {
+                if (err.message.includes('Quota exceeded') || err.message.includes('limit reached')) {
+                    console.log(`\n  ⚠️ DeepL limit reached. Falling back to Gemini for frontmatter...`);
+                    for (const key of translatableKeys) {
+                        if (frontmatter[key]) {
+                            translatedFM[key] = await translateWithGemini(frontmatter[key], lang);
+                        }
+                    }
+                } else {
+                    throw err;
+                }
+            }
+        } else if (GOOGLE_API_KEYS.length > 0) {
             for (const key of translatableKeys) {
                 if (frontmatter[key]) {
-                    const result = await DEEPL.translateText(
-                        frontmatter[key],
-                        null,
-                        LANG_CONFIG[lang].deepl,
-                        { formality: (lang === 'pl') ? undefined : 'more' }
-                    );
-                    translatedFM[key] = result.text;
+                    translatedFM[key] = await translateWithGemini(frontmatter[key], lang);
                 }
             }
         }
 
-        // 2. DeepL na body artykułu
-        const deeplBody = await translateMarkdown(body, lang);
+        // 2. Body translation (DeepL with Gemini fallback)
+        let translatedBody = body;
+        if (DEEPL) {
+            try {
+                translatedBody = await translateMarkdown(body, lang);
+            } catch (err: any) {
+                if (err.message.includes('Quota exceeded') || err.message.includes('limit reached')) {
+                    console.log(`\n  ⚠️ DeepL limit reached. Falling back to Gemini for body...`);
+                    translatedBody = await translateWithGemini(body, lang);
+                } else {
+                    throw err;
+                }
+            }
+        } else if (GOOGLE_API_KEYS.length > 0) {
+            translatedBody = await translateWithGemini(body, lang);
+        }
 
         // 3. Claude review (tone + quality check)
-        const finalBody = await claudeReview(deeplBody, lang, frontmatter.title || filename);
+        const finalBody = await claudeReview(translatedBody, lang, frontmatter.title || filename);
 
         // 4. Złóż z powrotem
         const output = `---\n${buildFrontmatter(translatedFM)}\nlang: ${lang}\ntranslatedFrom: en\ntranslatedAt: ${new Date().toISOString().split('T')[0]}\n---\n\n${finalBody}`;
@@ -282,7 +376,7 @@ async function run() {
 
             if (status === 'translated') {
                 // Sleep to avoid rate limits
-                await new Promise(r => setTimeout(r, 1000));
+                await new Promise(r => setTimeout(r, 3000)); // 3 seconds for Gemini/DeepL cooldown
             }
         }
 

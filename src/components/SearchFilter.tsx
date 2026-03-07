@@ -2,28 +2,30 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, MapPin, Home, ChevronDown, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { LOCATIONS } from '../lib/data';
 import { Location } from '../types';
 
 export const SearchFilter: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [query, setQuery] = useState('');
-  const [selectedType, setSelectedType] = useState('All Types');
+  const [selectedType, setSelectedType] = useState('all_types');
   const [isLocationOpen, setIsLocationOpen] = useState(false);
   const [isTypeOpen, setIsTypeOpen] = useState(false);
   const [suggestions, setSuggestions] = useState<Location[]>([]);
 
-  const propertyTypes = ['All Types', 'Villa', 'Apartment', 'Penthouse', 'Palazzo', 'House of Character', 'Maisonette'];
+  const propertyTypes = ['all_types', 'villa', 'apartment', 'penthouse', 'palazzo', 'house_of_character', 'maisonette'];
 
   const logEvent = (name: string, params: any) => {
     console.log(`[Analytics] ${name}:`, params);
-    // Here you would typically send to Segment, Mixpanel, or custom API
   };
 
   useEffect(() => {
     if (query.length > 1) {
       const filtered = LOCATIONS.filter(loc =>
-        loc.nameEn.toLowerCase().includes(query.toLowerCase())
+        loc.nameEn.toLowerCase().includes(query.toLowerCase()) ||
+        (loc.nameMt && loc.nameMt.toLowerCase().includes(query.toLowerCase()))
       );
       setSuggestions(filtered);
       setIsLocationOpen(true);
@@ -34,7 +36,6 @@ export const SearchFilter: React.FC = () => {
   }, [query]);
 
   const handleSearch = () => {
-    // If we have a direct match or first suggestion, go to that city page
     const match = LOCATIONS.find(loc => loc.nameEn.toLowerCase() === query.toLowerCase()) || suggestions[0];
 
     logEvent('search_submit', {
@@ -44,11 +45,9 @@ export const SearchFilter: React.FC = () => {
     });
 
     if (match) {
-      const typeParam = selectedType !== 'All Types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : '';
+      const typeParam = selectedType !== 'all_types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : '';
       navigate(`/properties/${match.slug}${typeParam}`);
     } else {
-      // Fallback: Redirect to a general properties page or show a "not found" state
-      // For now, let's go to a general search result page (which we can build as a fallback)
       navigate(`/properties/all?q=${encodeURIComponent(query)}`);
     }
   };
@@ -57,11 +56,11 @@ export const SearchFilter: React.FC = () => {
     logEvent('quick_filter_click', { tag });
 
     let filterParams = '';
-    if (tag === 'Seafront') filterParams = '?feature=seafront';
-    if (tag === 'With Pool') filterParams = '?feature=pool';
-    if (tag === 'Historic') filterParams = '?type=palazzo,house-of-character';
-    if (tag === 'Modern') filterParams = '?style=modern';
-    if (tag === 'High Efficiency') filterParams = '?epc=A,B';
+    if (tag === 'seafront') filterParams = '?feature=seafront';
+    if (tag === 'with_pool') filterParams = '?feature=pool';
+    if (tag === 'historic') filterParams = '?type=palazzo,house-of-character';
+    if (tag === 'modern') filterParams = '?style=modern';
+    if (tag === 'high_efficiency') filterParams = '?epc=A,B';
 
     navigate(`/properties/all${filterParams}`);
   };
@@ -79,14 +78,14 @@ export const SearchFilter: React.FC = () => {
           <div className="flex items-center px-6 py-4 gap-4 border-b lg:border-b-0 lg:border-r border-white/10 group">
             <MapPin className="text-gold group-focus-within:scale-110 transition-transform" size={22} />
             <div className="flex-1">
-              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">Location</label>
+              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">{t('search.location')}</label>
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onFocus={() => query.length > 1 && setIsLocationOpen(true)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                placeholder="Where would you like to live?"
+                placeholder={t('search.placeholder')}
                 aria-label="Search by location in Malta"
                 className="bg-transparent border-none outline-none text-white placeholder:text-white/20 w-full text-sm font-medium"
               />
@@ -114,8 +113,7 @@ export const SearchFilter: React.FC = () => {
                       logEvent('autocomplete_select', { slug: loc.slug });
                       setQuery(loc.nameEn);
                       setIsLocationOpen(false);
-                      // Immediate navigation on selection
-                      navigate(`/properties/${loc.slug}${selectedType !== 'All Types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : ''}`);
+                      navigate(`/properties/${loc.slug}${selectedType !== 'all_types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : ''}`);
                     }}
                     className="w-full flex items-center gap-4 px-6 py-4 hover:bg-white/5 text-left transition-colors border-b border-white/5 last:border-0"
                   >
@@ -141,9 +139,9 @@ export const SearchFilter: React.FC = () => {
           >
             <Home className="text-gold group-hover:scale-110 transition-transform" size={22} />
             <div className="flex-1">
-              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">Property Type</label>
+              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">{t('search.property_type')}</label>
               <div className="text-sm font-medium text-white flex items-center justify-between">
-                {selectedType}
+                {selectedType === 'all_types' ? t('search.all_types') : t(`search.types.${selectedType}`)}
                 <ChevronDown size={16} className={`transition-transform duration-300 ${isTypeOpen ? 'rotate-180' : ''}`} />
               </div>
             </div>
@@ -167,7 +165,7 @@ export const SearchFilter: React.FC = () => {
                     className={`w-full px-4 py-3 rounded-xl text-left text-sm transition-all ${selectedType === type ? 'bg-gold text-luxury-black font-bold' : 'text-white/60 hover:bg-white/5 hover:text-white'
                       }`}
                   >
-                    {type}
+                    {type === 'all_types' ? t('search.all_types') : t(`search.types.${type}`)}
                   </button>
                 ))}
               </motion.div>
@@ -183,7 +181,7 @@ export const SearchFilter: React.FC = () => {
             className="w-full h-full gold-gradient text-luxury-black px-8 py-4 lg:py-0 rounded-2xl font-bold text-sm hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg flex items-center justify-center gap-3 group"
           >
             <Search size={18} className="group-hover:rotate-12 transition-transform" />
-            <span>Search</span>
+            <span>{t('search.search_button')}</span>
           </button>
         </div>
       </motion.div>
@@ -191,18 +189,24 @@ export const SearchFilter: React.FC = () => {
       {/* Quick Filters / Tags */}
       <div className="mt-6 flex flex-col items-center gap-4">
         <div className="flex flex-wrap justify-center gap-3">
-          {['Seafront', 'With Pool', 'Historic', 'Modern', 'High Efficiency'].map((tag) => (
+          {[
+            { id: 'seafront', label: t('search.filters.seafront') },
+            { id: 'with_pool', label: t('search.filters.with_pool') },
+            { id: 'historic', label: t('search.filters.historic') },
+            { id: 'modern', label: t('search.filters.modern') },
+            { id: 'high_efficiency', label: t('search.filters.high_efficiency') }
+          ].map((filter) => (
             <button
-              key={tag}
-              onClick={() => handleQuickFilter(tag)}
+              key={filter.id}
+              onClick={() => handleQuickFilter(filter.id)}
               className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white/40 hover:border-gold/50 hover:text-gold transition-all"
             >
-              {tag}
+              {filter.label}
             </button>
           ))}
         </div>
         <p className="text-[10px] text-white/20 uppercase tracking-[0.2em] font-medium">
-          Try <span className="text-white/40">"Sliema"</span>, <span className="text-white/40">"St. Julian's"</span>, or <span className="text-white/40">"Valletta"</span>
+          {t('search.try_suggest')} <span className="text-white/40">"Sliema"</span>, <span className="text-white/40">"St. Julian's"</span>, or <span className="text-white/40">"Valletta"</span>
         </p>
       </div>
     </div>

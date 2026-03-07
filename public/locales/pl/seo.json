@@ -9,10 +9,40 @@
     },
     "insights": {
         "title": "Wiedza i Inwestycje – Rynek Nieruchomości na Malcie",
-        "description": "Eksperckie porady, raporty rynkowe i przewodniki po inwestowaniu w luksusowe nieruchomości na Malcie."
+        "description": "Eksperckie porady, raporty rynkowe i przewodniki po inwestowaniu w luksusowe nieruchomości na Malcie.",
+        "title_buying": "Zakup Nieruchomości na Malcie przez Obcokrajowca",
+        "title_sda": "Przewodnik po Special Designated Areas (SDA)",
+        "title_yields": "Rentowność Najmu na Malcie 2026",
+        "title_taxes": "Podatki od Nieruchomości na Malcie 2026"
     },
     "about": {
         "title": "O Malta Luxury Real Estate – Nasza Misja",
         "description": "Wiodący niezależny portal łączący międzynarodowych inwestorów premium z maltańskim rynkiem nieruchomości."
+    },
+    "market": {
+        "title": "Rynek Nieruchomości Malta | Dane w Czasie Rzeczywistym 2026",
+        "description": "Monitoruj trendy cenowe, aktualne ogłoszenia i aktywność rynku na Malcie i Gozo. Analizy oparte na danych dla inwestorów luksusowych."
+    },
+    "tools": {
+        "oracle": {
+            "title": "AI Oracle Cenowy | Bezpłatna Wycena Nieruchomości Malta",
+            "description": "Otrzymaj natychmiastową wycenę nieruchomości opartą na AI. Nasz Oracle analizuje dane rynkowe, zapewniając wysoką precyzję szacunków."
+        },
+        "valuation": {
+            "title": "Wycena Nieruchomości",
+            "description": "Profesjonalne usługi wyceny nieruchomości luksusowych na Malcie i Gozo."
+        }
+    },
+    "privacy": {
+        "title": "Polityka Prywatności",
+        "subtitle": "Ochrona Danych i Zgodność z RODO"
+    },
+    "terms": {
+        "title": "Regulamin Serwisu",
+        "subtitle": "Umowa Użytkownika i Zasady Platformy"
+    },
+    "cookies": {
+        "title": "Polityka Cookies",
+        "subtitle": "Zasady Wykorzystywania Technologii Śledzących"
     }
 }

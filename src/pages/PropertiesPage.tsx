@@ -37,7 +37,8 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
   usePageMeta({
     title: t('seo:properties.title'),
     description: t('seo:properties.description'),
-    canonicalPath: i18n.language === 'en' ? '/properties/all' : `/${i18n.language}/properties/all`,
+    canonicalPath: '/properties/all',
+    currentLang: i18n.language,
   });
 
   const [filteredProperties, setFilteredProperties] = useState<Property[]>([]);
@@ -118,8 +119,8 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
         {/* Breadcrumb */}
         <div className="mb-8">
           <Breadcrumb items={[
-            { label: 'Home', href: '/' },
-            { label: query ? `Search: "${query}"` : 'All Properties' },
+            { label: t('common.home'), href: '/' },
+            { label: query ? t('properties.search_results', { query }) : t('properties.all_listings') },
           ]} />
         </div>
 
@@ -127,10 +128,10 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
           <div>
             <h1 className="text-4xl font-serif mb-2">
-              {query ? `Search results for "${query}"` : 'Exclusive Properties'}
+              {query ? t('properties.search_results', { query }) : t('properties.exclusive_title')}
             </h1>
             <p className="text-white/40 text-sm">
-              Showing {filteredProperties.length} premium listings matching your criteria.
+              {t('properties.showing_count', { count: filteredProperties.length })}
             </p>
           </div>
 
@@ -142,7 +143,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
               }`}
           >
             <SlidersHorizontal size={16} />
-            {isFilterOpen ? 'Hide Filters' : 'Filters'}
+            {isFilterOpen ? t('properties.hide_filters') : t('properties.filters_button')}
           </button>
         </div>
 
@@ -157,7 +158,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
             >
               <div className="p-8 bg-white/5 rounded-3xl border border-white/10 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">Property Type</label>
+                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.property_type')}</label>
                   <div className="flex flex-wrap gap-2">
                     {['Villa', 'Apartment', 'Penthouse', 'Palazzo', 'House of Character', 'Maisonette'].map(t => (
                       <button
@@ -174,7 +175,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">Features</label>
+                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.features')}</label>
                   <div className="flex flex-wrap gap-2">
                     {['Seafront', 'Pool', 'Garden', 'Garage', 'Furnished'].map(f => (
                       <button
@@ -191,7 +192,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">Energy Rating (EPC 2026)</label>
+                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.energy_rating')}</label>
                   <div className="flex flex-wrap gap-2">
                     {['A', 'B', 'C', 'D'].map(e => (
                       <button
@@ -202,7 +203,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
                           : 'bg-white/5 border-white/10 hover:border-emerald-500/50'
                           }`}
                       >
-                        Rating {e}
+                        {t('properties.filter_panel.rating_label', { grade: e })}
                       </button>
                     ))}
                   </div>
@@ -236,19 +237,19 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
             <div className="w-20 h-20 rounded-full bg-white/5 flex items-center justify-center mx-auto mb-8">
               <Search size={32} className="text-white/20" />
             </div>
-            <h2 className="text-2xl font-serif mb-4">No matching properties found</h2>
+            <h2 className="text-2xl font-serif mb-4">{t('properties.no_results.title')}</h2>
             <p className="text-white/40 max-w-md mx-auto mb-12">
-              We couldn't find any listings matching your search. Try adjusting your filters or exploring our most popular locations.
+              {t('properties.no_results.desc')}
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <Link to="/properties/sliema" className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
-                Explore Sliema
+                {t('properties.no_results.explore', { location: 'Sliema' })}
               </Link>
               <Link to="/properties/valletta" className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
-                Explore Valletta
+                {t('properties.no_results.explore', { location: 'Valletta' })}
               </Link>
               <Link to="/properties/st-julians" className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
-                Explore St. Julian's
+                {t('properties.no_results.explore', { location: "St. Julian's" })}
               </Link>
             </div>
           </div>

@@ -16,8 +16,10 @@ import { NoiseAnalysisButton } from '../components/NoiseAnalysis';
 import { DynamicMap } from '../components/DynamicMap';
 import { ROICalculator } from '../components/ROICalculator';
 import { ImgWithPlaceholder } from '../components/ImgWithPlaceholder';
+import { useTranslation } from 'react-i18next';
 
 export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, title: string) => void }) => {
+    const { t, i18n } = useTranslation();
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
     const [property, setProperty] = useState<Property | null>(null);
@@ -41,7 +43,8 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
     usePageMeta({
         title: property ? `${property.title} | Luxury Estate Malta` : 'Property Details',
         description: property?.description?.substring(0, 160) || 'View luxury property details in Malta.',
-        canonicalPath: `/properties/${id}`
+        canonicalPath: `/properties/${id}`,
+        currentLang: i18n.language,
     });
 
     if (loading) {
