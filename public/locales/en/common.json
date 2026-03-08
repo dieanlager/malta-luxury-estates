@@ -106,6 +106,10 @@
         "live_feed": "Live Feed",
         "listings_count": "{{count}} listings",
         "read_guide": "Read Guide",
+        "scan_to_connect": "Scan to Connect",
+        "official_support": "Official WeChat Support",
+        "estate_in": "Real Estate in {{location}}",
+        "design_by": "Design by",
         "efficiency_audit": "EPC Audit",
         "quiet_score": "Quiet Score",
         "find_twin": "Find Twin"

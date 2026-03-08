@@ -12,5 +12,18 @@
     "status": "Status",
     "available": "Verfügbar",
     "property_id": "Objekt-ID",
-    "property_type": "Objekttyp"
+    "property_type": "Objekttyp",
+    "not_found_title": "Objekt nicht gefunden",
+    "not_found_text": "Die Immobilie, nach der Sie suchen, wurde möglicherweise verkauft oder entfernt.",
+    "view_all_listings": "Alle Angebote ansehen",
+    "for_sale": "Zum Verkauf",
+    "for_rent": "Zur Miete",
+    "seafront": "Meerfront",
+    "sqm": "m²",
+    "exclusive_area_title": "Exklusive Gegend",
+    "exclusive_area_text": "In einem gefragten Premiumviertel mit nachgewiesenem Werterhalt.",
+    "growth_title": "Wertsteigerung",
+    "growth_text": "Regionale Preissteigerung über dem nationalen Durchschnitt im Jahr 2026.",
+    "lifestyle_hub_title": "Lifestyle-Zentrum",
+    "lifestyle_hub_text": "Nähe zu Yachthäfen, erstklassigen Restaurants und Hauptstränden."
 }

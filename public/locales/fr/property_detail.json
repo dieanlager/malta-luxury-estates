@@ -12,5 +12,18 @@
     "status": "Statut",
     "available": "Disponible",
     "property_id": "ID de la propriété",
-    "property_type": "Type de propriété"
+    "property_type": "Type de propriété",
+    "not_found_title": "Propriété non trouvée",
+    "not_found_text": "L'appartement ou la villa que vous recherchez a peut-être été vendu(e) ou retiré(e).",
+    "view_all_listings": "Voir toutes les offres",
+    "for_sale": "À Vendre",
+    "for_rent": "À Louer",
+    "seafront": "Front de Mer",
+    "sqm": "m²",
+    "exclusive_area_title": "Quartier Exclusif",
+    "exclusive_area_text": "Situé dans un district premium à forte demande et valeur garantie.",
+    "growth_title": "Croissance de Valeur",
+    "growth_text": "Croissance du capital régional supérieure à la moyenne nationale en 2026.",
+    "lifestyle_hub_title": "Centre Lifestyle",
+    "lifestyle_hub_text": "Proximité de marinas, restaurants de luxe et plages principales."
 }

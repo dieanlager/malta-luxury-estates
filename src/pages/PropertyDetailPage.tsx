@@ -58,10 +58,10 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
     if (!property) {
         return (
             <div className="min-h-screen bg-luxury-black pt-40 px-6 text-center">
-                <h2 className="text-3xl font-serif mb-4">Property Not Found</h2>
-                <p className="text-white/40 mb-8">The estate you are looking for might have been sold or removed.</p>
+                <h2 className="text-3xl font-serif mb-4">{t('not_found_title')}</h2>
+                <p className="text-white/40 mb-8">{t('not_found_text')}</p>
                 <Link to="/properties/all" className="gold-gradient text-luxury-black px-8 py-3 rounded-full font-bold">
-                    View All Listings
+                    {t('view_all_listings')}
                 </Link>
             </div>
         );
@@ -78,7 +78,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     onClick={() => navigate(-1)}
                     className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors text-xs font-bold uppercase tracking-widest"
                 >
-                    <ArrowLeft size={16} /> {t('back_to_search', 'Back to Search')}
+                    <ArrowLeft size={16} /> {t('back_to_search')}
                 </button>
                 <div className="flex gap-4">
                     <button
@@ -149,11 +149,11 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
                     <div className="absolute top-8 left-8 flex gap-3">
                         <span className="px-4 py-2 bg-gold text-luxury-black text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg">
-                            {t('market.for')} {property.type === 'rent' ? t('market.forRent') : t('market.forSale')}
+                            {property.type === 'rent' ? t('for_rent') : t('for_sale')}
                         </span>
                         {property.isSeafront && (
                             <span className="px-4 py-2 bg-blue-500/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest rounded-full border border-white/10">
-                                {t('badges.seafront')}
+                                {t('seafront')}
                             </span>
                         )}
                     </div>
@@ -179,24 +179,24 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                         {/* Quick Stats */}
                         <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/10">
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common.beds_label')}</span>
+                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common:beds_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bed className="text-gold" size={20} />
                                     <span className="text-xl font-bold">{property.beds}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1 border-x border-white/5 px-6">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common.baths_label')}</span>
+                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common:baths_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bath className="text-gold" size={20} />
                                     <span className="text-xl font-bold">{property.baths}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common.area_label')}</span>
+                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common:area_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Maximize className="text-gold" size={20} />
-                                    <span className="text-xl font-bold">{property.sqm} <span className="text-sm font-normal text-white/40">sqm</span></span>
+                                    <span className="text-xl font-bold">{property.sqm} <span className="text-sm font-normal text-white/40">{t('sqm')}</span></span>
                                 </div>
                             </div>
                         </div>
@@ -256,18 +256,18 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <Award className="text-blue-400 mb-4" size={24} />
-                            <h4 className="font-serif mb-2">Exclusive Area</h4>
-                            <p className="text-xs text-white/40 leading-relaxed">Located in a high-demand premium district with proven value retention.</p>
+                            <h4 className="font-serif mb-2">{t('exclusive_area_title')}</h4>
+                            <p className="text-xs text-white/40 leading-relaxed">{t('exclusive_area_text')}</p>
                         </div>
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <TrendingUp className="text-emerald-400 mb-4" size={24} />
-                            <h4 className="font-serif mb-2">+4.2% Growth</h4>
-                            <p className="text-xs text-white/40 leading-relaxed">Regional capital growth outperforming the national average in 2026.</p>
+                            <h4 className="font-serif mb-2">{t('growth_title')}</h4>
+                            <p className="text-xs text-white/40 leading-relaxed">{t('growth_text')}</p>
                         </div>
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <Waves className="text-cyan-400 mb-4" size={24} />
-                            <h4 className="font-serif mb-2">Lifestyle Hub</h4>
-                            <p className="text-xs text-white/40 leading-relaxed">Proximity to yacht marinas, high-end dining, and primary beaches.</p>
+                            <h4 className="font-serif mb-2">{t('lifestyle_hub_title')}</h4>
+                            <p className="text-xs text-white/40 leading-relaxed">{t('lifestyle_hub_text')}</p>
                         </div>
                     </div>
                 </div>

@@ -12,5 +12,18 @@
     "status": "Status",
     "available": "Dostępna",
     "property_id": "ID Nieruchomości",
-    "property_type": "Typ Nieruchomości"
+    "property_type": "Typ Nieruchomości",
+    "not_found_title": "Nie odnaleziono nieruchomości",
+    "not_found_text": "Poszukiwana nieruchomość mogła zostać sprzedana lub usunięta z oferty.",
+    "view_all_listings": "Zobacz wszystkie oferty",
+    "for_sale": "Na Sprzedaż",
+    "for_rent": "Do Wynajęcia",
+    "seafront": "Przy Morzu",
+    "sqm": "m²",
+    "exclusive_area_title": "Ekskluzywna Okolica",
+    "exclusive_area_text": "Lokalizacja w pożądanej dzielnicy premium z udokumentowanym wzrostem wartości.",
+    "growth_title": "Wzrost Wartości",
+    "growth_text": "Wzrost cen w tym regionie przewyższa średnią krajową w 2026 roku.",
+    "lifestyle_hub_title": "Serce Resortu",
+    "lifestyle_hub_text": "Bliskość luksusowych marin, prestiżowych restauracji i głównych plaż."
 }

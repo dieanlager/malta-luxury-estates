@@ -12,5 +12,18 @@
     "status": "Stato",
     "available": "Disponibile",
     "property_id": "ID Proprietà",
-    "property_type": "Tipo di Proprietà"
+    "property_type": "Tipo di Proprietà",
+    "not_found_title": "Proprietà non trovata",
+    "not_found_text": "La proprietà che stai cercando potrebbe essere stata venduta o rimossa.",
+    "view_all_listings": "Vedi tutti gli annunci",
+    "for_sale": "In Vendita",
+    "for_rent": "In Affitto",
+    "seafront": "Fronte Mare",
+    "sqm": "m²",
+    "exclusive_area_title": "Zona Esclusiva",
+    "exclusive_area_text": "Situato in un distretto premium ad alta richiesta e valore garantito.",
+    "growth_title": "Crescita di Valore",
+    "growth_text": "Crescita del capitale regionale superiore alla media nazionale nel 2026.",
+    "lifestyle_hub_title": "Centro Lifestyle",
+    "lifestyle_hub_text": "Vicinanza a porti turistici, ristoranti di lusso e spiagge principali."
 }

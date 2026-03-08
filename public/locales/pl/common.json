@@ -121,7 +121,11 @@
         "efficiency_audit": "Audit EPC",
         "quiet_score": "Indeks Ciszy",
         "find_twin": "Znajdź Twin",
-        "read_guide": "Czytaj Przewodnik"
+        "read_guide": "Czytaj Przewodnik",
+        "scan_to_connect": "Zeskanuj aby połączyć",
+        "official_support": "Oficjalne wsparcie WeChat",
+        "estate_in": "Nieruchomości w {{location}}",
+        "design_by": "Projekt i Realizacja"
     },
     "interactive": {
         "epc": {

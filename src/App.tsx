@@ -157,18 +157,26 @@ const LanguageSelector = () => {
   const currentLang = languages.find(l => l.code === (i18n.language || 'en'));
 
   const handleLanguageChange = (langCode: string) => {
-    const currentPath = location.pathname;
-    const pathParts = currentPath.split('/').filter(Boolean);
+    setIsOpen(false);
+
+    // If we're on root path, just switch language and redirect to standard root
+    if (location.pathname === '/' || location.pathname === `/${i18n.language}`) {
+      i18n.changeLanguage(langCode);
+      const rootPath = langCode === 'en' ? '/' : `/${langCode}`;
+      navigate(rootPath);
+      return;
+    }
+
+    const pathParts = location.pathname.split('/').filter(Boolean);
     const supportedLngs = ['it', 'de', 'fr', 'pl'];
 
-    // Detect if current path has a lang prefix
-    let originalInternalPath = '';
+    // Map current path to English core path
+    let internalParts = [...pathParts];
     if (supportedLngs.includes(pathParts[0])) {
-      // Map slugs back to English internal keys
       const currentLng = pathParts[0];
       const translatedSlugs = pathParts.slice(1);
 
-      const slugMap: Record<string, string> = {
+      const slugReverseMap: Record<string, string> = {
         'nieruchomosci': 'properties', 'immobiliare': 'properties', 'immobilien': 'properties', 'proprietes': 'properties',
         'wiedza': 'insights', 'approfondimenti': 'insights', 'einblicke': 'insights', 'conseils': 'insights',
         'o-nas': 'about', 'chi-siamo': 'about', 'ueber-uns': 'about', 'a-propos': 'about',
@@ -179,37 +187,32 @@ const LanguageSelector = () => {
         'quiz-nieruchomosci': 'quiz', 'quiz-immobiliare': 'quiz', 'immobilien-quiz': 'quiz', 'quiz-immobilier': 'quiz'
       };
 
-      const internalParts = translatedSlugs.map(s => {
-        // Try mapping via static slugMap
-        if (slugMap[s]) return slugMap[s];
-
-        // Try mapping via article localized slugs
+      internalParts = translatedSlugs.map(s => {
+        if (slugReverseMap[s]) return slugReverseMap[s];
         const langMap = (articleSlugs as any)[currentLng] || {};
         const enSlug = Object.keys(langMap).find(key => langMap[key] === s);
-        if (enSlug) return enSlug;
-
-        return s;
+        return enSlug || s;
       });
-      originalInternalPath = '/' + internalParts.join('/');
-    } else {
-      originalInternalPath = currentPath;
     }
 
-    // Now rebuild with NEW language and its slugs
-    // We can use i18n.getFixedT to get translations for the target language before switching
+    // Switch lang and navigate to new path
+    i18n.changeLanguage(langCode);
+
     const targetT = i18n.getFixedT(langCode, 'common');
-    const internalParts = originalInternalPath.split('/').filter(Boolean);
     const newTranslatedParts = internalParts.map(p => targetT(`slugs.${p}`, { defaultValue: p }));
 
-    const isArticle = internalParts.includes('insights');
-    const newPath = langCode === 'en'
-      ? `/${internalParts.join('/')}`
-      : isArticle && internalParts.length > 1
-        ? getLocalizedArticleLink(internalParts[internalParts.length - 1], langCode)
-        : `/${langCode}/${newTranslatedParts.join('/')}`;
+    const isArticle = internalParts.includes('insights') && internalParts.length > 1;
+    let finalPath = '';
 
-    setIsOpen(false);
-    navigate(newPath);
+    if (langCode === 'en') {
+      finalPath = '/' + internalParts.join('/');
+    } else if (isArticle) {
+      finalPath = getLocalizedArticleLink(internalParts[internalParts.length - 1], langCode);
+    } else {
+      finalPath = `/${langCode}/${newTranslatedParts.join('/')}`;
+    }
+
+    navigate(finalPath);
   };
 
   return (
@@ -821,6 +824,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
 };
 
 const WeChatButton = () => {
+  const { t } = useTranslation();
   const [showQR, setShowQR] = useState(false);
 
   return (
@@ -836,8 +840,8 @@ const WeChatButton = () => {
             <div className="w-32 h-32 bg-gray-100 flex items-center justify-center rounded-lg mb-2">
               <MessageSquare className="text-luxury-black/20" size={48} />
             </div>
-            <p className="text-[9px] text-center font-bold uppercase tracking-widest text-luxury-black">Scan to Connect</p>
-            <p className="text-[8px] text-center text-luxury-black/40">Official WeChat Support</p>
+            <p className="text-[9px] text-center font-bold uppercase tracking-widest text-luxury-black">{t('common:scan_to_connect')}</p>
+            <p className="text-[8px] text-center text-luxury-black/40">{t('common:official_support')}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -845,7 +849,7 @@ const WeChatButton = () => {
         onMouseEnter={() => setShowQR(true)}
         onMouseLeave={() => setShowQR(false)}
         className="w-14 h-14 bg-[#07C160] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform pointer-events-auto"
-        aria-label="Contact us on WeChat"
+        aria-label={t('common:official_support')}
       >
         <MessageSquare size={24} />
       </button>
@@ -929,7 +933,7 @@ const Footer = () => {
                 className="group block"
               >
                 <h4 className="text-white group-hover:text-gold transition-colors font-serif text-lg mb-1">{city.nameEn}</h4>
-                <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold block">Real Estate in {city.nameEn}</span>
+                <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold block">{t('common:estate_in', { location: city.nameEn })}</span>
                 <div className="h-0.5 w-0 group-hover:w-12 bg-gold mt-4 transition-all duration-300" />
               </Link>
             ))}
@@ -989,11 +993,11 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
-          <p>© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> Design by <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
+          <p>© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> {t('common:design_by')} <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
           <div className="flex gap-8 mt-4 md:mt-0">
-            <Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">Privacy Policy</Link>
-            <Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">Terms of Service</Link>
-            <Link to={getLocalizedPath('/cookie-policy')} className="hover:text-gold transition-colors">Cookie Policy</Link>
+            <Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">{t('seo:privacy.title')}</Link>
+            <Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">{t('seo:terms.title')}</Link>
+            <Link to={getLocalizedPath('/cookie-policy')} className="hover:text-gold transition-colors">{t('seo:cookies.title')}</Link>
           </div>
         </div>
       </div>
