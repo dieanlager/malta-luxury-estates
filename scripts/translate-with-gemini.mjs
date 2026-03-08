@@ -7,12 +7,10 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 
-const GEMINI_KEYS = [
-    'AIzaSyBvP0jc_gpugX4F1hHf9A77CFz0uSuNVrs',
-    'AIzaSyBEl_w2fPlAHDyeIVYGFcjl7OiQ24MDMqs',
-    'AIzaSyCMH5wjx0p_LNmGMHyRJi8GSrfR3i7xMVo',
-    'AIzaSyALwIKc4xdFyONujZCbowrpBaD07jJ_900'
-];
+const GEMINI_KEYS = (process.env.GOOGLE_API_KEYS || process.env.GOOGLE_API_KEY || '').split(',').filter(Boolean);
+if (GEMINI_KEYS.length === 0) {
+    console.warn('⚠ No Google API keys found in GOOGLE_API_KEYS or GOOGLE_API_KEY env vars.');
+}
 let keyIndex = 0;
 
 const BASE_DIR = path.join(process.cwd(), 'src/content/articles');

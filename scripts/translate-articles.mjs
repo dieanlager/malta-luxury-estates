@@ -12,7 +12,8 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 
-const DEEPL_API_KEY = '8559bb1f-d325-4a55-a73e-8c493de24c33';
+const DEEPL_API_KEY = process.env.DEEPL_AUTH_KEY;
+if (!DEEPL_API_KEY) console.warn('⚠ No DEEPL_AUTH_KEY found in env vars.');
 const BASE_DIR = path.join(process.cwd(), 'src/content/articles');
 
 const LANG_MAP = {

@@ -15,11 +15,10 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 
-const DEEPL_KEY = 'd8015cad-b25b-4c91-9331-07d8fc8f9fb7';
-const GEMINI_KEYS = [
-    'AIzaSyBvP0jc_gpugX4F1hHf9A77CFz0uSuNVrs',
-    'AIzaSyBEl_w2fPlAHDyeIVYGFcjl7OiQ24MDMqs',
-];
+const DEEPL_KEY = process.env.DEEPL_AUTH_KEY;
+const GEMINI_KEYS = (process.env.GOOGLE_API_KEYS || process.env.GOOGLE_API_KEY || '').split(',').filter(Boolean);
+if (!DEEPL_KEY) console.warn('⚠ No DEEPL_AUTH_KEY found in env vars.');
+if (GEMINI_KEYS.length === 0) console.warn('⚠ No Google API keys found in env vars.');
 let geminiKeyIdx = 0;
 
 const BASE_DIR = path.join(process.cwd(), 'src/content/articles');

@@ -5,10 +5,8 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 
-const GEMINI_KEYS = [
-    'AIzaSyBvP0jc_gpugX4F1hHf9A77CFz0uSuNVrs',
-    'AIzaSyBEl_w2fPlAHDyeIVYGFcjl7OiQ24MDMqs',
-];
+const GEMINI_KEYS = (process.env.GOOGLE_API_KEYS || process.env.GOOGLE_API_KEY || '').split(',').filter(Boolean);
+if (GEMINI_KEYS.length === 0) console.warn('⚠ No Google API keys found in env vars.');
 let keyIndex = 0;
 const BASE_DIR = path.join(process.cwd(), 'src/content/articles');
 
@@ -20,7 +18,8 @@ const LANG = {
 
 // ── Gemini API ──────────────────────────────────────────────────
 async function gemini(prompt, attempt = 0) {
-    const key = GEMINI_KEYS[keyIndex % 2];
+    if (GEMINI_KEYS.length === 0) throw new Error('No API keys configured');
+    const key = GEMINI_KEYS[keyIndex % GEMINI_KEYS.length];
     const body = JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
         generationConfig: { temperature: 0.1, maxOutputTokens: 8192 }
@@ -37,9 +36,9 @@ async function gemini(prompt, attempt = 0) {
             r.on('end', () => {
                 const j = JSON.parse(d);
                 if (j.error) {
-                    if ((j.error.code === 429 || j.error.status === 'RESOURCE_EXHAUSTED') && attempt < 4) {
+                    if ((j.error.code === 429 || j.error.status === 'RESOURCE_EXHAUSTED') && attempt < GEMINI_KEYS.length * 2) {
                         keyIndex++;
-                        console.log(`      🔑 Rate limit, key ${(keyIndex % 2) + 1}...`);
+                        console.log(`      🔑 Rate limit, key ${(keyIndex % GEMINI_KEYS.length) + 1}...`);
                         return setTimeout(() => gemini(prompt, attempt + 1).then(res).catch(rej), 5000);
                     }
                     return rej(new Error(`Gemini[${j.error.code}]: ${j.error.message}`));
