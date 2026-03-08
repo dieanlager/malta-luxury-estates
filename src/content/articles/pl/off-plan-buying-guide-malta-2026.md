@@ -1,224 +1,223 @@
 ---
-title: "Buying Off-Plan Property in Malta 2026 – Complete Buyer's Guide"
+title: "Zakup nieruchomości poza planem na Malcie 2026 - Kompletny przewodnik dla kupujących"
 category: "Buying"
-excerpt: "Everything you need to know about buying off-plan (new build) property in Malta – developer due diligence, payment structures, MEPA completion certificates, snagging, warranties, and how to avoid the most common off-plan pitfalls."
-metaDescription: "Pros and cons of buying off-plan property in Malta for 2026. Learn about developer due diligence, 10/90 payment structures, snagging lists, and 10-year structural warranties."
+excerpt: "Wszystko, co musisz wiedzieć o zakupie nieruchomości poza planem (nowo wybudowanej) na Malcie - należyta staranność dewelopera, struktury płatności, certyfikaty ukończenia MEPA, braki, gwarancje i jak uniknąć najczęstszych pułapek poza planem."
+metaDescription: "Plusy i minusy zakupu nieruchomości poza planem na Malcie w 2026 roku. Dowiedz się o należytej staranności dewelopera, strukturach płatności 10/90, listach usterek i 10-letnich gwarancjach strukturalnych."
 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "17 min read"
+readTime: "17 min czytania"
 author: "Malta Luxury Real Estate"
 slug: "off-plan-buying-guide-malta-2026"
+localizedSlug: "zakup-nieruchomosci-poza-planem-na-malcie-2026"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Buying Off-Plan Property in Malta 2026 – Complete Buyer's Guide
+# Zakup nieruchomości poza planem na Malcie 2026 - kompletny przewodnik dla kupujących
 
-Malta's construction boom shows no signs of slowing. Dozens of new residential developments launch each year – from boutique 6-unit blocks in Sliema to large-scale SDA projects in St Julian's and Gżira. Buying off-plan (before construction is completed) is one of the most popular ways to enter the Maltese market, offering lower entry prices, modern specifications, and substantial capital appreciation potential. But it also carries risks that resale purchases do not. This guide covers everything.
+Boom budowlany na Malcie nie wykazuje oznak spowolnienia. Każdego roku uruchamiane są dziesiątki nowych inwestycji mieszkaniowych - od butikowych bloków z 6 lokalami w Sliemie po duże projekty SDA w St Julian's i Gżira. Zakup poza planem (przed ukończeniem budowy) jest jednym z najpopularniejszych sposobów wejścia na rynek maltański, oferując niższe ceny wejścia, nowoczesne specyfikacje i znaczny potencjał wzrostu wartości kapitału. Wiąże się to jednak z ryzykiem, którego nie ma w przypadku zakupu z odsprzedażą. Niniejszy przewodnik obejmuje wszystko.
 
-## Why Buy Off-Plan in Malta?
+## Dlaczego warto kupować poza planem na Malcie?
 
-### The Advantages
+### Zalety
 
-**Price advantage:** Off-plan prices are typically 10–20% below the finished market value. Developers offer launch pricing to fund construction. Early buyers get the best prices, best unit positions, and first choice of upgrades.
+**Przewaga cenowa:** Ceny poza planem są zazwyczaj o 10-20% niższe od gotowej wartości rynkowej. Deweloperzy oferują ceny początkowe, aby sfinansować budowę. Wcześni nabywcy otrzymują najlepsze ceny, najlepsze pozycje jednostek i pierwszy wybór ulepszeń.
 
-**Capital appreciation:** Between reservation and handover (typically 18–36 months), the property can appreciate significantly. In high-demand areas like Sliema and St Julian's, it is common to see 15–25% appreciation during the construction period.
+**Wzrost wartości kapitału:** Pomiędzy rezerwacją a przekazaniem (zazwyczaj 18-36 miesięcy), nieruchomość może znacznie zyskać na wartości. W obszarach o wysokim popycie, takich jak Sliema i St Julian's, często obserwuje się 15-25% wzrost wartości w okresie budowy.
 
-**Modern specifications:** New builds come with modern insulation, energy-efficient systems, contemporary kitchens and bathrooms, and are designed to current building regulations. Older Maltese properties often require significant renovation to reach similar standards.
+**Nowoczesne specyfikacje:** Nowe budynki są wyposażone w nowoczesną izolację, energooszczędne systemy, nowoczesne kuchnie i łazienki oraz są zaprojektowane zgodnie z obowiązującymi przepisami budowlanymi. Starsze maltańskie nieruchomości często wymagają znacznej renowacji, aby osiągnąć podobne standardy.
 
-**Customisation:** Early buyers can often choose finishes – flooring, kitchen cabinets, bathroom tiles, appliance packages. Some developers allow layout modifications (at additional cost) if purchased early enough.
+**Dostosowanie:** Wcześni nabywcy często mogą wybrać wykończenia - podłogi, szafki kuchenne, płytki łazienkowe, pakiety urządzeń. Niektórzy deweloperzy zezwalają na modyfikacje układu (za dodatkową opłatą) w przypadku odpowiednio wczesnego zakupu.
 
-**Lower maintenance:** New builds require minimal maintenance in the first 5–10 years. No damp issues, no outdated wiring, no failing boilers – significantly reducing ongoing costs compared to older stock.
+**Niższe koszty utrzymania:** Nowe budynki wymagają minimalnej konserwacji przez pierwsze 5-10 lat. Brak problemów z wilgocią, przestarzałym okablowaniem, awaryjnymi kotłami - znacznie zmniejsza bieżące koszty w porównaniu ze starszymi budynkami.
 
-### The Risks
+### Ryzyko
 
-**Developer risk:** The developer may face financial difficulties, construction delays, or bankruptcy. If the developer goes under mid-construction, recovering your deposit can be extremely difficult.
+**Ryzyko dewelopera:** Deweloper może napotkać trudności finansowe, opóźnienia w budowie lub bankructwo. Jeśli deweloper zbankrutuje w połowie budowy, odzyskanie wpłaconego depozytu może być niezwykle trudne.
 
-**Delay risk:** Construction delays are endemic in Malta. A project quoted at 24 months may take 36–48 months. Meanwhile, your capital is tied up and you cannot generate rental income.
+**Ryzyko opóźnień:** Opóźnienia w budowie są endemiczne na Malcie. Projekt, którego czas realizacji określono na 24 miesiące, może trwać 36-48 miesięcy. W międzyczasie Twój kapitał jest związany i nie możesz generować dochodu z wynajmu.
 
-**Quality risk:** What you see in the CGI renders and showroom may not match what you receive. Finishing quality varies enormously between developers.
+**Ryzyko jakości:** To, co widzisz na renderach CGI i w salonie wystawowym, może nie odpowiadać temu, co otrzymasz. Jakość wykończenia jest bardzo różna w zależności od dewelopera.
 
-**Market risk:** Property values can decline during the construction period (though this has been rare in Malta's recent history).
+**Ryzyko rynkowe:** Wartość nieruchomości może spaść w okresie budowy (choć w najnowszej historii Malty zdarzało się to rzadko).
 
-**Legal risk:** Some off-plan contracts are heavily weighted in the developer's favour. Without legal review, you may unwittingly accept unfavourable terms on delays, defects, and specification changes.
+**Ryzyko prawne:** Niektóre umowy off-plan są mocno obciążone na korzyść dewelopera. Bez kontroli prawnej można nieświadomie zaakceptować niekorzystne warunki dotyczące opóźnień, wad i zmian specyfikacji.
 
-## How Off-Plan Purchases Work in Malta
+## Jak działają zakupy poza planem na Malcie
 
-### The Typical Process
+### Typowy proces
 
-1. **Reservation** – You pay a reservation deposit (€5,000–€20,000) to take the unit off the market. This is usually refundable if you withdraw before signing the konvenju.
+1. **Rezerwacja** - Wpłacasz depozyt rezerwacyjny (5 000-20 000 EUR), aby zdjąć jednostkę z rynku. Zazwyczaj podlega ona zwrotowi w przypadku wycofania się przed podpisaniem umowy.
 
-2. **Review plans and specifications** – The developer provides floor plans, specification sheets, CGI renders, and a draft konvenju. You review with your perit (architect) and notary.
+2. **Przegląd planów i specyfikacji** - Deweloper dostarcza plany pięter, arkusze specyfikacji, rendery CGI i projekt konvenju. Przeglądasz je ze swoim perit (architektem) i notariuszem.
 
-3. **Konvenju (Promise of Sale)** – You sign the preliminary agreement before a notary and pay 10% of the purchase price. The reservation deposit is deducted from this.
+3. **Konvenju (przyrzeczenie sprzedaży)** - Podpisujesz umowę przedwstępną przed notariuszem i wpłacasz 10% ceny zakupu. Od tej kwoty odliczany jest depozyt rezerwacyjny.
 
-4. **Stage payments** – Depending on the contract, you may pay additional instalments during construction (see payment structures below).
+4. **Płatności etapowe** - W zależności od umowy, możesz płacić dodatkowe raty w trakcie budowy (patrz struktury płatności poniżej).
 
-5. **Construction period** – Typically 18–36 months. You should visit the site periodically to monitor progress.
+5. **Okres budowy** - zazwyczaj 18-36 miesięcy. Należy okresowo odwiedzać miejsce budowy w celu monitorowania postępów.
 
-6. **Snagging inspection** – Before handover, you and your perit inspect the property and create a snagging list of defects to be remedied by the developer.
+6. **Inspekcja usterek** - Przed przekazaniem nieruchomości inwestor i jego partner dokonują inspekcji nieruchomości i tworzą listę usterek do usunięcia przez dewelopera.
 
-7. **Final deed (Kuntratt)** – You sign the final deed, pay the remaining balance, and receive the keys.
+7. **Ostateczny akt notarialny (Kuntratt)** - Podpisujesz ostateczny akt notarialny, wpłacasz pozostałą kwotę i otrzymujesz klucze.
 
-### Payment Structures
+### Struktury płatności
 
-Maltese off-plan payment structures vary by developer. The three most common:
+Maltańskie struktury płatności poza planem różnią się w zależności od dewelopera. Trzy najbardziej powszechne:
 
-| Structure | How It Works | Risk Level |
+| Struktura | Jak to działa | Poziom ryzyka |
 |-----------|-------------|------------|
-| **10/90** | 10% at konvenju, 90% at final deed | Low risk for buyer – most capital stays in your hands until completion |
-| **10/30/30/30** | 10% at konvenju, 30% at foundation, 30% at shell, 30% at completion | Medium risk – significant funds committed before completion |
-| **10/40/50** | 10% at konvenju, 40% at shell stage, 50% at completion | Medium risk |
+| **10/90** | 10% przy konvenju, 90% przy akcie notarialnym | Niskie ryzyko dla kupującego - większość kapitału pozostaje w Twoich rękach aż do ukończenia |
+| 10% przy konvenju, 30% przy fundamencie, 30% przy stanie surowym, 30% przy ukończeniu | Średnie ryzyko - znaczne środki zaangażowane przed ukończeniem |
+| **10/40/50** | 10% w konvenju, 40% na etapie stanu surowego, 50% na ukończeniu | Średnie ryzyko |
 
-> **Best for buyers:** The 10/90 structure gives you maximum protection. You only pay the full amount when the property is ready. Developers offering this structure are typically well-financed and confident in their delivery timeline.
+** Najlepsza dla kupujących:** Struktura 10/90 zapewnia maksymalną ochronę. Płacisz pełną kwotę tylko wtedy, gdy nieruchomość jest gotowa. Deweloperzy oferujący tę strukturę są zazwyczaj dobrze finansowani i pewni swojego harmonogramu realizacji.
 
-> **Warning:** Avoid developers who demand more than 50% of the price before completion without providing a **bank guarantee** on your payments. If they go bankrupt, you could lose your money.
+> Ostrzeżenie:** Unikaj deweloperów, którzy żądają więcej niż 50% ceny przed ukończeniem inwestycji bez zapewnienia **gwarancji bankowej** na swoje płatności. Jeśli zbankrutują, możesz stracić swoje pieniądze.
 
-## Developer Due Diligence: The Critical Checks
+## Due Diligence dewelopera: Krytyczne kontrole
 
-### 1. Track Record
+### 1. Historia
 
-**Check the developer's completed projects.** Visit in person. Talk to residents. Look at:
-- Quality of common areas (lobbies, corridors, parking)
-- Finishing quality (tiles, paintwork, fixtures)
-- Maintenance of completed buildings (are they well-kept or deteriorating?)
-- Are there unresolved snagging issues years after handover?
+**Sprawdź ukończone projekty dewelopera. Odwiedź go osobiście. Porozmawiaj z mieszkańcami. Sprawdź:
+- Jakość części wspólnych (lobby, korytarze, parking)
+- Jakość wykończenia (płytki, farby, armatura)
+- Utrzymanie ukończonych budynków (czy są zadbane, czy niszczeją?)
+- Czy istnieją nierozwiązane kwestie po latach od przekazania?
 
-**Questions to ask:**
-- How many projects have they completed?
-- Have they delivered on time? (Ask for specifics, not generalities)
-- Are there any ongoing legal disputes with buyers?
+**Pytania, które należy zadać:**
+- Ile projektów zostało ukończonych?
+- Czy dostarczono je na czas? (Pytaj o konkrety, nie o ogólniki)
+- Czy toczą się jakieś spory prawne z nabywcami?
 
-### 2. Financial Stability
+### 2. Stabilność finansowa
 
-**A developer's financial health is your biggest risk factor.** Check:
-- Company registration with the Malta Business Registry (MBR)
-- Filed financial statements (publicly available at MBR for Maltese companies)
-- Whether they have bank financing or are relying entirely on buyer deposits to fund construction
-- Any pending court cases or insolvency proceedings
+**Kondycja finansowa dewelopera jest największym czynnikiem ryzyka:
+- Rejestracja spółki w Maltańskim Rejestrze Spółek (MBR)
+- Złożone sprawozdania finansowe (publicznie dostępne w MBR dla spółek maltańskich)
+- Czy firma posiada finansowanie bankowe, czy też w całości polega na depozytach kupujących w celu sfinansowania budowy
+- Wszelkie toczące się sprawy sądowe lub postępowania upadłościowe
 
-### 3. Planning Permits
+### 3. Pozwolenia na budowę
 
-**Confirm that full planning permission (PA) has been granted** before you sign anything. Some developers market units before PA approval is obtained. This is legal but risky – if the PA refuses or modifies permission, your unit may not be built as promised.
+**Przed podpisaniem umowy należy upewnić się, że zostało wydane pełne pozwolenie na budowę (PA). Niektórzy deweloperzy wprowadzają do obrotu lokale przed uzyskaniem zgody PA. Jest to zgodne z prawem, ale ryzykowne - jeśli PA odmówi lub zmieni pozwolenie, Twój lokal może nie zostać wybudowany zgodnie z obietnicą.
 
-What to verify:
-- PA application number and approval date
-- Whether all conditions of the permit have been satisfied
-- Whether a valid commencement notice has been filed (construction can only start after this)
+Co należy sprawdzić:
+- Numer wniosku PA i data zatwierdzenia
+- Czy wszystkie warunki pozwolenia zostały spełnione
+- Czy złożono ważne zawiadomienie o rozpoczęciu budowy (budowa może rozpocząć się dopiero po jego złożeniu)
 
-### 4. MEPA/PA Compliance Certificate
+### 4. Certyfikat zgodności MEPA/PA
 
-When the building is complete, the developer must obtain a **Compliance Certificate** from the PA (formerly called the MEPA Completion Certificate). Without this:
-- You should not sign the final deed
-- The building is not legally certified as habitable
-- You may face problems with insurance, mortgages, and future resale
+Po zakończeniu budowy deweloper musi uzyskać **Compliance Certificate** od PA (dawniej nazywany MEPA Completion Certificate). Bez tego:
+- Nie należy podpisywać ostatecznego aktu notarialnego
+- Budynek nie jest prawnie certyfikowany jako nadający się do zamieszkania
+- Mogą wystąpić problemy z ubezpieczeniem, kredytem hipotecznym i przyszłą odsprzedażą
 
-> **Never accept a handover without a Compliance Certificate.** This is non-negotiable.
+**Nigdy nie akceptuj przekazania bez certyfikatu zgodności**.
 
-### 5. Specifications and Materials
+### 5. Specyfikacje i materiały
 
-The konvenju should include a detailed **specification sheet** listing:
-- Floor finishes (marble, porcelain, timber – specific brand and grade)
-- Sanitary ware brand and model
-- Kitchen units brand and specifications
-- Electrical fittings
-- Air conditioning specifications
-- Windows and doors (aluminium, PVC, timber)
-- Common area finishes
-- Lift specifications (if applicable)
-- Car park allocation
+Konvenju powinno zawierać szczegółowy **arkusz specyfikacji** zawierający:
+- Wykończenia podłóg (marmur, porcelana, drewno - konkretna marka i gatunek)
+- Marka i model urządzeń sanitarnych
+- Marka i specyfikacja urządzeń kuchennych
+- Osprzęt elektryczny
+- Specyfikacje klimatyzacji
+- Okna i drzwi (aluminium, PCV, drewno)
+- Wykończenie części wspólnych
+- Specyfikacje wind (jeśli dotyczy)
+- Przydział miejsc parkingowych
 
-**Why this matters:** Without a detailed specification, the developer can substitute cheaper materials and you have no contractual basis to object. "High-quality finishes" is meaningless without specific brands and grades.
+**Dlaczego ma to znaczenie:** Bez szczegółowej specyfikacji deweloper może zastąpić tańsze materiały, a ty nie masz podstawy umownej do sprzeciwu. "Wysokiej jakości wykończenia" nie mają znaczenia bez konkretnych marek i gatunków.
 
-## The Snagging Process
+## Proces usuwania usterek
 
-### What Is Snagging?
+### Co to jest Snagging?
 
-Snagging is the pre-handover inspection where you (ideally with your perit) identify defects that the developer must fix before you accept the property. This is your contractual right – never skip it.
+Snagging to inspekcja przed przekazaniem nieruchomości, podczas której (najlepiej wraz z najemcą) identyfikujesz usterki, które deweloper musi naprawić przed odbiorem nieruchomości. Jest to Twoje prawo wynikające z umowy - nigdy go nie pomijaj.
 
-### Common Snagging Issues in Malta
+### Najczęstsze usterki na Malcie
 
-| Category | Common Defects |
+| Kategoria | Typowe usterki |
 |----------|---------------|
-| **Walls and ceilings** | Uneven plastering, paint bubbling, hairline cracks, damp patches |
-| **Floors** | Uneven tiles, lippage (tile edges not flush), grout cracks, hollow tiles |
-| **Windows/Doors** | Misaligned frames, poor sealing, scratched glass, faulty mechanisms |
-| **Kitchen** | Cabinet doors misaligned, worktop chips, plumbing leaks, incorrect appliances |
-| **Bathroom** | Silicone gaps, grouting issues, poor drainage, shower screen leaks |
-| **Electrical** | Incorrect socket placement, switches not level, dimmer issues |
-| **External** | Render cracks, balcony drainage, railing finish quality |
+| Ściany i sufity** Nierówne tynki, pęcherzyki farby, pęknięcia włoskowate, zacieki
+**Podłogi** | Nierówne płytki, nierówne krawędzie płytek, pęknięcia fug, puste płytki |
+| Okna/Drzwi** | Niewspółosiowe ramy, słabe uszczelnienie, porysowane szkło, wadliwe mechanizmy |
+**Kuchnia** | Nieprawidłowo ustawione drzwiczki szafek, odpryski blatu, przecieki hydrauliczne, nieprawidłowe urządzenia |
+**Łazienka** | Szczeliny silikonowe, problemy z fugowaniem, słaby drenaż, przecieki sitka prysznicowego |
+**Elektryczne** | Nieprawidłowe rozmieszczenie gniazdek, niewypoziomowane przełączniki, problemy ze ściemniaczami |
+**Zewnętrzne** | Pęknięcia tynku, drenaż balkonu, jakość wykończenia balustrady |
 
-### How to Snag Effectively
+### Jak skutecznie usuwać usterki
 
-1. **Engage your perit** – professional snagging costs €300–€800 and is worth every cent
-2. **Visit in daylight** – defects are harder to spot under artificial light
-3. **Bring a checklist** – systematically check every room, every surface, every fitting
-4. **Photograph everything** – create a photographic record of every defect
-5. **Submit written snagging list** to the developer with photos and a deadline for remediation
-6. **Re-inspect** after the developer claims to have fixed the issues
+1. **Zaangażuj swoją osobę** - profesjonalne usuwanie pęknięć kosztuje 300-800 euro i jest warte każdego centa
+2. **Wizyta przy świetle dziennym** - defekty są trudniejsze do wykrycia przy sztucznym oświetleniu
+3. **Przynieś listę kontrolną** - systematycznie sprawdzaj każde pomieszczenie, każdą powierzchnię, każdy element wyposażenia
+4. **Sfotografuj wszystko** - stwórz dokumentację fotograficzną każdej usterki
+5. **Przesłać pisemną listę usterek** do dewelopera wraz ze zdjęciami i terminem ich usunięcia
+6. **Ponowna inspekcja** po tym, jak deweloper stwierdzi, że usunął usterki
 
-### Developer's Warranty
+### Gwarancja dewelopera
 
-Under Maltese law, the developer has a **decennial liability** (10-year structural warranty) for major structural defects. This covers foundations, load-bearing walls, and roof structures. Cosmetic defects are typically covered for 1–2 years after handover (as specified in the contract).
+Zgodnie z prawem maltańskim, deweloper ponosi **dekadencyjną odpowiedzialność** (10-letnia gwarancja konstrukcyjna) za poważne wady konstrukcyjne. Obejmuje ona fundamenty, ściany nośne i konstrukcje dachowe. Wady kosmetyczne są zazwyczaj objęte gwarancją przez 1-2 lata po przekazaniu (zgodnie z umową).
 
-## SDA Off-Plan Projects
+## Projekty SDA poza planem
 
-Special Designated Areas (SDAs) represent the premium segment of Malta's off-plan market. SDA developments are designed for international buyers and offer:
+Specjalnie wyznaczone obszary (SDA) reprezentują segment premium maltańskiego rynku off-plan. Projekty SDA są przeznaczone dla międzynarodowych nabywców i oferują:
 
-- **No AIP restriction** – any nationality can buy without an Acquisition of Immovable Property (AIP) permit
-- **Premium specifications** – typically higher-end finishes, amenities (pools, gyms, concierge), and architectural quality
-- **Higher price point** – but also stronger resale values and rental yields
-- **Integrated management** – professional building management from day one
+- **Bez ograniczeń AIP** - każda narodowość może dokonać zakupu bez pozwolenia na nabycie nieruchomości (AIP)
+- **Specyfikacje premium** - zazwyczaj wyższej klasy wykończenia, udogodnienia (baseny, siłownie, concierge) i jakość architektoniczna
+- **Wyższa cena** - ale także wyższa wartość odsprzedaży i rentowność najmu
+- **Zintegrowane zarządzanie** - profesjonalne zarządzanie budynkiem od pierwszego dnia
 
-**Major SDA developments in Malta (2026):**
+**Główne inwestycje SDA na Malcie (2026):**
 
-| Development | Location | Developer | Price Range (2-bed) |
+| Inwestycja | Lokalizacja | Deweloper | Przedział cenowy (2-osobowe) |
 |------------|----------|-----------|---------------------|
-| Portomaso | St Julian's | Tumas Group | €550,000–€1,200,000 |
-| Tigné Point | Sliema | MIDI plc | €500,000–€1,500,000 |
-| Fort Cambridge | Sliema | MIDI plc | €400,000–€900,000 |
-| SmartCity Malta | Kalkara | SmartCity | €250,000–€450,000 |
-| Pendergardens | St Julian's | Pender Development | €300,000–€600,000 |
-| Mercury Towers | St Julian's | Mercury Projects | €450,000–€1,800,000 |
-| Manoel Island | Gzira | MIDI plc | €400,000–€1,200,000 |
+| Portomaso | St Julian's | Tumas Group | €550,000-€1,200,000 |
+| Tigné Point | Sliema | MIDI plc | €500,000-€1,500,000 |
+| Fort Cambridge | Sliema | MIDI plc | €400,000-€900,000 |
+| SmartCity Malta | Kalkara | SmartCity | €250,000-€450,000 |
+| Pendergardens | St Julian's | Pender Development | €300,000-€600,000 |
+| Mercury Towers | St Julian's | Mercury Projects | €450,000-€1,800,000 |
+| Manoel Island | Gzira | MIDI plc | €400,000-€1,200,000 |
 
-## Tax Advantages of Buying Off-Plan
+## Zalety podatkowe zakupu poza planem
 
-### Stamp Duty Reduction for First-Time Buyers
+### Obniżka opłaty skarbowej dla kupujących po raz pierwszy
 
-First-time buyers in Malta benefit from a **reduced stamp duty rate of 3.5%** on the first €200,000 of the purchase price (instead of the standard 5%). On a €400,000 off-plan apartment:
-- First €200,000: 3.5% = €7,000
-- Remaining €200,000: 5% = €10,000
-- **Total: €17,000** (vs €20,000 at standard rate)
-- **Saving: €3,000**
+Osoby kupujące mieszkanie po raz pierwszy na Malcie korzystają z **obniżonej stawki opłaty skarbowej w wysokości 3,5%** od pierwszych 200 000 EUR ceny zakupu (zamiast standardowych 5%). W przypadku mieszkania o wartości €400,000 poza planem:
+- Pierwsze €200,000: 3.5% = €7,000
+- Pozostałe €200,000: 5% = €10,000
+- **Łącznie: €17,000** (vs €20,000 przy standardowej stawce)
+- **Oszczędność: €3,000**
 
-### No Capital Gains on Primary Residence
+### Brak zysków kapitałowych na głównej rezydencji
 
-If you live in the property as your primary residence for 3+ years and have owned it for 5+ years, the eventual sale may qualify for reduced or zero property transfer tax.
+Jeśli mieszkasz w nieruchomości jako głównym miejscu zamieszkania przez ponad 3 lata i jesteś jej właścicielem przez ponad 5 lat, ewentualna sprzedaż może kwalifikować się do obniżonego lub zerowego podatku od przeniesienia własności nieruchomości.
 
-## Frequently Asked Questions
+## Często zadawane pytania
 
-### Is buying off-plan safe in Malta?
-Generally yes, if you do proper due diligence on the developer, use a notary to review the contract, and insist on protective clauses (finance clause, penalty for delays, specification sheet). The risk increases with less-established developers and projects where PA permission has not been granted.
+### Czy kupowanie nieruchomości poza planem jest bezpieczne na Malcie?
+Zasadniczo tak, jeśli wykonasz należytą staranność w stosunku do dewelopera, skorzystasz z notariusza w celu sprawdzenia umowy i będziesz nalegać na klauzule ochronne (klauzula finansowa, kara za opóźnienia, arkusz specyfikacji). Ryzyko wzrasta w przypadku deweloperów o mniej ugruntowanej pozycji i projektów, w przypadku których nie wydano pozwolenia PA.
 
-### What happens if the developer delays completion?
-Your konvenju should include a penalty clause for delays (e.g., 0.5–1% of the price per month of delay beyond the agreed completion date). If no penalty clause exists, your leverage is limited. In extreme cases (12+ months delay), you may be able to rescind the contract and recover your deposit through legal action.
+### Co się stanie, jeśli deweloper opóźni ukończenie projektu?
+Umowa powinna zawierać klauzulę o karze za opóźnienia (np. 0,5-1% ceny za każdy miesiąc opóźnienia w stosunku do uzgodnionej daty ukończenia). Jeśli nie ma klauzuli o karze, twoja dźwignia jest ograniczona. W skrajnych przypadkach (ponad 12-miesięczne opóźnienie) możesz odstąpić od umowy i odzyskać depozyt w drodze postępowania sądowego.
 
-### Can I sell my off-plan unit before completion?
-Yes – this is called an **assignment of rights**. You assign your konvenju to a new buyer. The new buyer steps into your shoes and completes the purchase. You may need the developer's consent, and a fee may apply. Any profit is subject to property transfer tax.
+### Czy mogę sprzedać moją jednostkę poza planem przed ukończeniem?
+Tak - nazywa się to **cesją praw**. Przenosisz swoje konvenju na nowego nabywcę. Nowy nabywca wchodzi w twoje buty i finalizuje zakup. Może być wymagana zgoda dewelopera oraz opłata. Wszelkie zyski podlegają podatkowi od przeniesienia własności.
 
-### Do I need a mortgage pre-approval before buying off-plan?
-It is strongly recommended if you are financing the purchase. Banks will consider pre-approving a mortgage for an off-plan property based on the plans and specifications, but the formal valuation will only happen when the property is near completion.
+### Czy potrzebuję wstępnej zgody na kredyt hipoteczny przed zakupem poza planem?
+Jest to zdecydowanie zalecane w przypadku finansowania zakupu. Banki rozważą wstępne zatwierdzenie kredytu hipotecznego na nieruchomość poza planem w oparciu o plany i specyfikacje, ale formalna wycena nastąpi dopiero wtedy, gdy nieruchomość będzie bliska ukończenia.
 
-### What if the finished property does not match the specifications?
-If the developer has substituted materials or deviated from the agreed specifications without your written consent, you have a contractual claim. Document the discrepancies, submit a written complaint, and escalate to legal action if the developer does not remedy the issues.
+### Co zrobić, jeśli ukończona nieruchomość nie odpowiada specyfikacji?
+Jeśli deweloper zastąpił materiały lub odstąpił od uzgodnionych specyfikacji bez Twojej pisemnej zgody, przysługuje Ci roszczenie umowne. Należy udokumentować rozbieżności, złożyć pisemną skargę i podjąć kroki prawne, jeśli deweloper nie usunie nieprawidłowości.
 
-## Related Guides
+## Powiązane przewodniki
 
-- [Step-by-Step Buying Process Malta](/insights/step-by-step-buying-process-malta)
-- [SDA Properties – No AIP Required](/insights/special-designated-areas-malta-guide)
-- [Mortgage Malta Foreigners Guide](/insights/mortgage-malta-foreigners-guide-2026)
-- [Best Areas for Property Investment in Malta](/insights/best-areas-investment-malta-2026)
+- [Proces zakupu krok po kroku na Malcie](/insights/step-by-step-buying-process-malta)
+- [SDA Properties - No AIP Required](/insights/special-designated-areas-malta-guide)
+- [Przewodnik po kredytach hipotecznych dla obcokrajowców na Malcie](/insights/mortgage-malta-foreigners-guide-2026)
+- [Najlepsze obszary do inwestowania w nieruchomości na Malcie](/insights/best-areas-investment-malta-2026)
 
-*Last updated: March 2026. Off-plan availability, specifications, and pricing are subject to change. Always verify current project status and conduct independent due diligence before committing to an off-plan purchase.*
+*Ostatnia aktualizacja: Marzec 2026 r. Dostępność poza planem, specyfikacje i ceny mogą ulec zmianie. Przed dokonaniem zakupu poza planem należy zawsze zweryfikować aktualny status projektu i przeprowadzić niezależną analizę due diligence*

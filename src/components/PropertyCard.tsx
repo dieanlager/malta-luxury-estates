@@ -1,23 +1,21 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { MapPin, Bed, Bath, Maximize, ArrowUpRight, Phone } from 'lucide-react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'motion/react';
+import { Bed, Bath, Maximize, Heart, ExternalLink, MapPin, Sparkles, Leaf, Volume2 } from 'lucide-react';
 import { Property } from '../types';
-import { FavoriteButton } from './FavoriteButton';
-import { InvestmentPassportButton } from './InvestmentPassport';
-import { PriceHistoryButton } from './PriceHistory';
-import { PropertyTwinButton } from './PropertyTwinFinder';
+import { formatPrice } from '../lib/seo/schemas';
+import { generatePropertySchema } from '../lib/seo/schemas';
+import { SchemaScript } from './SchemaScript';
+import { useTranslation } from 'react-i18next';
 import { EPCButton } from './EPCCalculator';
 import { NoiseAnalysisButton } from './NoiseAnalysis';
-import { Link } from 'react-router-dom';
-import { ImgWithPlaceholder } from './ImgWithPlaceholder';
-
-import { useTranslation } from 'react-i18next';
+import { PropertyTwinButton } from './PropertyTwinFinder';
 
 interface PropertyCardProps {
   property: Property;
   isFavorite?: boolean;
   onToggleFavorite?: (id: string) => void;
-  onContact?: (propertyId: string, propertyTitle: string) => void;
+  onContact?: (id: string, title: string) => void;
 }
 
 export const PropertyCard: React.FC<PropertyCardProps> = ({
@@ -26,108 +24,86 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onToggleFavorite,
   onContact,
 }) => {
-  const { t } = useTranslation();
-  const formatPrice = (value: number) => {
-    if (value >= 1000000) return `€${(value / 1000000).toFixed(1)}M`;
-    return `€${value.toLocaleString()}`;
-  };
+  const { t, i18n } = useTranslation();
+  const [isHovered, setIsHovered] = useState(false);
 
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "RealEstateListing",
-    "name": property.title,
-    "description": property.description,
-    "image": property.images[0],
-    "offers": {
-      "@type": "Offer",
-      "price": property.price,
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": property.locationName.split(',')[0],
-      "addressCountry": "MT"
-    },
-    "floorSize": {
-      "@type": "QuantitativeValue",
-      "value": property.sqm,
-      "unitCode": "MTK"
-    }
+  const schema = generatePropertySchema(property);
+
+  const getLocalizedLink = () => {
+    if (i18n.language === 'en') return `/properties/${property.id}`;
+    const prefix = t('slugs.properties', 'properties');
+    return `/${i18n.language}/${prefix}/${property.id}`;
   };
 
   return (
-    <>
-      <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-      </script>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        whileHover={{ y: -10 }}
-        className="group relative bg-white/5 rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:border-gold/30 shadow-xl flex flex-col h-full"
-      >
-        <Link to={`/properties/${property.id}`} className="block relative aspect-[4/3] overflow-hidden">
-          <ImgWithPlaceholder
+    <motion.div
+      className="group bg-white/[0.03] border border-white/10 rounded-3xl overflow-hidden hover:border-gold/30 transition-all duration-500 shadow-xl flex flex-col h-full"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <SchemaScript data={schema} />
+
+      {/* Image Container */}
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <Link to={getLocalizedLink()} className="block h-full">
+          <motion.img
             src={property.images[0]}
             alt={property.title}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10">
-            <span className="px-3 py-1 bg-luxury-black/80 backdrop-blur-md text-[9px] font-bold uppercase tracking-widest rounded-full border border-white/10 text-gold">
-              {t(`oracle.pTypes.${property.propertyType}`, { defaultValue: property.propertyType })}
-            </span>
-            {property.isSeafront && (
-              <span className="px-3 py-1 bg-gold text-luxury-black text-[9px] font-bold uppercase tracking-widest rounded-full">
-                {t('badges.seafront')}
-              </span>
-            )}
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-transparent to-transparent opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent opacity-60" />
         </Link>
 
-        <div className="absolute top-4 right-4 z-20 flex flex-col gap-2">
-          <PriceHistoryButton property={property} />
-          {onToggleFavorite && (
-            <FavoriteButton
-              propertyId={property.id}
-              isFavorite={isFavorite}
-              onToggle={onToggleFavorite}
-              size="sm"
-            />
+        {/* Badges */}
+        <div className="absolute top-4 left-4 flex flex-wrap gap-2">
+          {property.isSeafront && (
+            <span className="bg-gold text-luxury-black px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest shadow-lg">
+              {t('badges.seafront')}
+            </span>
+          )}
+          {property.propertyType === 'Penthouse' && (
+            <span className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest">
+              {t('search.types.penthouse')}
+            </span>
           )}
         </div>
 
-        {/* Quick Contact + PDF on hover */}
-        <div className="absolute top-[40%] left-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 flex gap-2 z-20">
-          {onContact && (
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                onContact(property.id, property.title);
-              }}
-              className="flex-1 py-2.5 bg-gold/90 backdrop-blur-md text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-gold transition-colors shadow-lg"
-            >
-              <Phone size={12} />
-              {t('common.enquire')}
-            </button>
-          )}
-          <InvestmentPassportButton property={property} variant="card" />
+        {/* Action Buttons */}
+        <div className="absolute top-4 right-4 flex flex-col gap-2">
+          <button
+            onClick={() => onToggleFavorite?.(property.id)}
+            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${isFavorite
+              ? 'bg-gold text-luxury-black'
+              : 'bg-luxury-black/40 backdrop-blur-md text-white hover:bg-gold hover:text-luxury-black border border-white/10'
+              }`}
+          >
+            <Heart size={18} fill={isFavorite ? 'currentColor' : 'none'} />
+          </button>
         </div>
 
-        <div className="p-6 flex flex-col flex-1">
-          <Link to={`/properties/${property.id}`} className="group/title block mb-3">
-            <div className="flex justify-between items-start">
-              <h3 className="text-xl font-serif group-hover/title:text-gold transition-colors leading-tight line-clamp-2">{property.title}</h3>
-              <ArrowUpRight className="text-gold/40 group-hover/title:text-gold transition-colors shrink-0" size={20} />
+        {/* Agency Tag */}
+        {property.agency && (
+          <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-luxury-black/40 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
+            <div className="w-5 h-5 rounded-md bg-white/10 flex items-center justify-center p-1 overflow-hidden">
+              <img src={property.agency.logo} alt={property.agency.name} className="w-full h-full object-contain" />
             </div>
+            <span className="text-[9px] font-bold text-white/80 uppercase tracking-tighter">{property.agency.name}</span>
+          </div>
+        )}
+      </div>
 
-            <div className="flex items-center gap-1 text-white/60 text-xs mt-2 font-medium">
-              <MapPin size={12} className="text-gold" />
-              <span>{property.locationName.split(',').map(part => t(`locations.${part.trim().replace("'", "").replace(" ", "_")}`, { defaultValue: part.trim() })).join(', ')}</span>
-            </div>
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-1">
+        <div className="flex-1">
+          <div className="flex items-center gap-2 text-gold/60 mb-2">
+            <MapPin size={12} />
+            <span className="text-[10px] uppercase font-bold tracking-widest">{property.locationName}</span>
+          </div>
+
+          <Link to={getLocalizedLink()}>
+            <h3 className="text-xl font-serif text-white mb-4 group-hover:text-gold transition-colors line-clamp-2 min-h-[3.5rem]">
+              {property.title}
+            </h3>
           </Link>
 
           <div className="mt-auto">
@@ -141,19 +117,19 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               </span>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-2 mb-6">
               <PropertyTwinButton property={property} />
               <EPCButton property={property} />
               <NoiseAnalysisButton property={property} />
             </div>
 
-            <div className="grid grid-cols-3 gap-2 border-t border-white/10 pt-6 mt-6">
+            <div className="grid grid-cols-3 gap-2 border-t border-white/10 pt-6">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
                   <Bed size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.beds_label')}</span>
+                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.beds_short')}</span>
                   <span className="text-xs font-bold">{property.beds}</span>
                 </div>
               </div>
@@ -162,7 +138,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Bath size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.baths_label')}</span>
+                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.baths_short')}</span>
                   <span className="text-xs font-bold">{property.baths}</span>
                 </div>
               </div>
@@ -171,14 +147,22 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Maximize size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.area_label')}</span>
-                  <span className="text-xs font-bold">{property.sqm}m²</span>
+                  <span className="text-[10px] text-white/40 uppercase font-bold">m²</span>
+                  <span className="text-xs font-bold">{property.sqm}</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </motion.div>
-    </>
+
+        <button
+          onClick={() => onContact?.(property.id, property.title)}
+          className="w-full mt-8 py-4 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-luxury-black hover:border-gold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+        >
+          {t('common.enquire')}
+          <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+        </button>
+      </div>
+    </motion.div>
   );
 };

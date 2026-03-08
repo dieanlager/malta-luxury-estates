@@ -1,0 +1,6 @@
+﻿Testing api.deepl.com...
+Status: 456
+Response: {"message":"Quota exceeded"}
+Testing api-free.deepl.com...
+Status: 403
+Response: {"message":"Wrong endpoint. Use https://api.deepl.com. You can find more info in our docs: https://developers.deepl.com/docs/getting-started/auth"}

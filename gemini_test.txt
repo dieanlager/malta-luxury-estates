@@ -1,0 +1,24 @@
+﻿Testing model: gemini-1.5-flash with key: AIzaSyBEl_...
+Status: 404
+Response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available model
+Testing model: gemini-1.5-flash-latest with key: AIzaSyBEl_...
+Status: 404
+Response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of availabl
+Testing model: gemini-pro with key: AIzaSyBEl_...
+Status: 404
+Response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and 
+Testing model: gemini-1.5-pro with key: AIzaSyBEl_...
+Status: 404
+Response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models 

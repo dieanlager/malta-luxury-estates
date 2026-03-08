@@ -14,7 +14,7 @@ i18n
         interpolation: {
             escapeValue: false,
         },
-        ns: ['common', 'seo'],
+        ns: ['common', 'seo', 'property_detail'],
         defaultNS: 'common',
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',

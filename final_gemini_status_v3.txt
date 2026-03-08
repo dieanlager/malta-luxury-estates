@@ -1,0 +1,12 @@
+﻿Testing key AIzaSyBvP0...
+Status: 429
+Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on t
+Testing key AIzaSyBEl_...
+Status: 429
+Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on t

@@ -1,254 +1,253 @@
 ---
-title: "Malta Rental Law 2026: Complete Guide for Landlords & Tenants"
+title: "Maltańskie prawo najmu 2026: Kompletny przewodnik dla wynajmujących i najemców"
 category: "Legal"
-excerpt: "Your complete reference to Malta's rental regulations in 2026, covering the Housing Authority rules, mandatory registration, deposit protection, eviction procedures, and the rights of both landlords and tenants."
-metaDescription: "The definitive guide to Malta rental law in 2026. Understand Housing Authority registration, rent increase caps, deposit protection, and eviction rules."
+excerpt: "Kompletny przewodnik po maltańskich przepisach dotyczących wynajmu w 2026 r., obejmujący zasady Urzędu Mieszkalnictwa, obowiązkową rejestrację, ochronę depozytów, procedury eksmisji oraz prawa zarówno wynajmujących, jak i najemców."
+metaDescription: "Ostateczny przewodnik po maltańskim prawie najmu w 2026 roku. Dowiedz się więcej o rejestracji w urzędzie mieszkaniowym, limitach podwyżek czynszu, ochronie depozytów i zasadach eksmisji."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "16 min read"
+readTime: "16 min czytania"
 author: "Malta Luxury Real Estate"
 slug: "rental-law-malta-landlords-tenants-2026"
+localizedSlug: "maltanskie-prawo-najmu-2026-kompletny-przewodnik-dla"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Malta Rental Law 2026: Complete Guide for Landlords & Tenants
+# Maltańskie prawo najmu 2026: Kompletny przewodnik dla wynajmujących i najemców
 
-Malta's rental market has undergone significant regulatory changes since 2020. Whether you're a landlord renting out an investment property or a tenant looking for a home, understanding the current rules is essential to protect your rights and avoid penalties.
+Maltański rynek wynajmu przeszedł znaczące zmiany regulacyjne od 2020 roku. Niezależnie od tego, czy jesteś właścicielem wynajmującym nieruchomość inwestycyjną, czy najemcą szukającym domu, zrozumienie aktualnych zasad jest niezbędne, aby chronić swoje prawa i uniknąć kar.
 
-## Overview: Malta's Rental Framework
+## Przegląd: Ramy wynajmu na Malcie
 
-Malta's private rental sector is governed by the **Private Residential Leases Act (Chapter 604)**, enacted in January 2020 and updated periodically since. The law introduced:
+Prywatny sektor wynajmu na Malcie jest regulowany przez **Private Residential Leases Act (Rozdział 604)**, uchwalony w styczniu 2020 r. i od tego czasu okresowo aktualizowany. Ustawa wprowadziła:
 
-- **Mandatory registration** of all rental contracts with the Housing Authority
-- **Minimum lease duration** of one year
-- **Deposit protection** rules
-- **Rent increase caps** tied to the HICP inflation index
-- **Clear eviction procedures**
+- **obowiązkową rejestrację** wszystkich umów najmu w Urzędzie Mieszkalnictwa (Housing Authority)
+- **minimalny okres najmu** wynoszący jeden rok
+- **zasady ochrony depozytu**
+- **limity wzrostu czynszu** powiązane z indeksem inflacji HICP
+- **Przejrzyste procedury eksmisji**
 
-> **Important:** These rules apply to **private residential leases** only. Short-term holiday lets (under 6 months) regulated by the MTA, and commercial leases, follow different rules.
+> Ważne:** Zasady te mają zastosowanie wyłącznie do **prywatnego najmu mieszkaniowego**. Krótkoterminowy najem wakacyjny (poniżej 6 miesięcy) regulowany przez MTA oraz najem komercyjny podlegają innym zasadom.
 
-## Mandatory Contract Registration
+## Obowiązkowa rejestracja umowy
 
-### The Rule
+### Zasada
 
-**Every private residential lease in Malta must be registered** with the Housing Authority within **10 working days** of signing.
+**Każda prywatna umowa najmu mieszkania na Malcie musi zostać zarejestrowana** w Urzędzie Mieszkaniowym w ciągu **10 dni roboczych** od jej podpisania.
 
-Both landlord and tenant can register, but the **landlord is primarily responsible** for ensuring registration occurs.
+Zarówno wynajmujący, jak i najemca mogą się zarejestrować, ale to wynajmujący jest przede wszystkim odpowiedzialny** za zapewnienie rejestracji.
 
-### How to Register
+### Jak się zarejestrować
 
-1. Visit the [Housing Authority portal](https://housingauthority.gov.mt)
-2. Complete the online registration form
-3. Upload a copy of the signed lease agreement
-4. Pay the registration fee (€5 per registration)
-5. Receive confirmation and registration number
+1. Odwiedź portal [Housing Authority portal] (https://housingauthority.gov.mt)
+2. Wypełnij formularz rejestracyjny online
+3. Prześlij kopię podpisanej umowy najmu
+4. Uiścić opłatę rejestracyjną (5 € za rejestrację)
+5. Otrzymać potwierdzenie i numer rejestracyjny
 
-### Penalties for Non-Registration
+### Kary za brak rejestracji
 
-| Offence | Penalty |
+| Wykroczenie | Kara |
 |---------|---------|
-| Failure to register within 10 days | €2,500 fine (per contract) |
-| Deliberate non-registration | Up to €10,000 fine |
-| Operating without a written contract | Contract deemed to exist on default terms favouring the tenant |
+| Niezarejestrowanie się w ciągu 10 dni | Grzywna w wysokości €2,500 (za umowę) |
+| Umyślne niezarejestrowanie się | Do €10,000 grzywny |
+| Prowadzenie działalności bez pisemnej umowy | Umowa uznana za istniejącą na domyślnych warunkach faworyzujących najemcę |
 
-> **Warning for Landlords:** Renting without registration is the single biggest compliance risk. The Housing Authority actively enforces this – fines are real and substantial.
+**Ostrzeżenie dla wynajmujących:** Wynajem bez rejestracji jest największym ryzykiem związanym z przestrzeganiem przepisów. Urząd Mieszkalnictwa aktywnie egzekwuje te przepisy - grzywny są realne i znaczne.
 
-## Lease Duration and Terms
+## Czas trwania najmu i warunki
 
-### Minimum Duration
+### Minimalny czas trwania
 
-- **Minimum lease term: 1 year** (for contracts signed after 1 January 2020)
-- No maximum term – parties can agree to any duration above 1 year
-- **Renewal:** The lease automatically renews unless terminated with proper notice
+- **Minimalny okres najmu: 1 rok** (dla umów podpisanych po 1 stycznia 2020 r.)
+- Brak maksymalnego okresu - strony mogą uzgodnić dowolny okres powyżej 1 roku
+- **Odnowienie:** Umowa najmu ulega automatycznemu odnowieniu, chyba że zostanie rozwiązana z zachowaniem odpowiedniego okresu wypowiedzenia
 
-### Notice Periods
+### Okresy wypowiedzenia
 
-| Who Terminates | Minimum Notice | When |
+| Kto wypowiada | Minimalny okres wypowiedzenia | Kiedy |
 |---------------|----------------|------|
-| Tenant (year 1) | Cannot terminate before 6 months | Unless lease allows earlier exit |
-| Tenant (after year 1) | 3 months written notice | At any time |
-| Landlord (year 1) | Cannot terminate | Except for specific reasons |
-| Landlord (after year 1) | 3 months written notice | At end of contract term |
-| Either party (breach) | As specified in lease | After written warning |
+| Najemca (rok 1) | Nie może wypowiedzieć przed upływem 6 miesięcy | Chyba że umowa najmu zezwala na wcześniejsze wyjście |
+| Najemca (po 1. roku) | 3-miesięczne pisemne wypowiedzenie | W dowolnym momencie |
+| Wynajmujący (rok 1) | Nie może wypowiedzieć | Z wyjątkiem szczególnych powodów |
+| Wynajmujący (po 1 roku) | 3-miesięczne pisemne wypowiedzenie | Na koniec okresu umowy |
+| Każda ze stron (naruszenie) | Jak określono w umowie najmu | Po pisemnym ostrzeżeniu |
 
-### Fixed-Term vs Indefinite
+### Umowa na czas określony a umowa na czas nieokreślony
 
-- **Fixed-term leases** (e.g., 2 years) automatically revert to indefinite at the end of the term unless renewed or terminated with notice
-- **Indefinite leases** continue until terminated by either party with proper notice
+- **Leasing na czas określony** (np. 2 lata) automatycznie zmienia się w bezterminowy na koniec okresu, chyba że zostanie przedłużony lub rozwiązany z zachowaniem okresu wypowiedzenia
+- **Umowa na czas nieokreślony** trwa do momentu jej rozwiązania przez którąkolwiek ze stron z zachowaniem odpowiedniego okresu wypowiedzenia
 
-## Rent and Increases
+## Czynsz i podwyżki
 
-### Setting the Initial Rent
+### Ustalanie czynszu inicjalnego
 
-There is **no rent control** on initial rents in Malta. The landlord can set any price they wish when first renting a property. Market forces determine the rate.
+Na Malcie nie ma **żadnej kontroli czynszu**. Właściciel może ustalić dowolną cenę przy pierwszym wynajmie nieruchomości. Siły rynkowe określają stawkę.
 
-### Rent Increases During Tenancy
+### Podwyżki czynszu w trakcie najmu
 
-Once a lease is in effect, rent increases are capped:
+Gdy umowa najmu wejdzie w życie, podwyżki czynszu są ograniczone:
 
-- **During the first year:** No increase allowed
-- **After year 1:** Maximum annual increase is **the lower of 5% or the HICP inflation rate** (whichever is lower)
-- **Exceptions:** Landlord and tenant can agree to specific increases in the original contract, provided these are clearly stated
+- **Przez pierwszy rok:** Brak dozwolonych podwyżek
+- **Po pierwszym roku:** Maksymalny roczny wzrost wynosi 5% lub stopę inflacji HICP** (w zależności od tego, która z tych wartości jest niższa)
+- **Wyjątki:** Wynajmujący i najemca mogą uzgodnić konkretne podwyżki w pierwotnej umowie, pod warunkiem, że są one wyraźnie określone
 
-### When Can Rent Be Increased Beyond the Cap?
+### Kiedy czynsz może zostać podwyższony ponad limit?
 
-A landlord can increase rent above the cap only if:
-1. The landlord has carried out **significant improvements** (not routine maintenance) that cost at least 50% of the annual rent
-2. Both parties agree in writing
-3. The increase is proportional to the improvement
+Wynajmujący może podnieść czynsz powyżej limitu tylko wtedy, gdy:
+1. Właściciel przeprowadził **znaczące ulepszenia** (nie rutynowe prace konserwacyjne), które kosztują co najmniej 50% rocznego czynszu
+2. Obie strony wyrażą na to zgodę na piśmie
+3. Podwyżka jest proporcjonalna do ulepszeń
 
-## Security Deposit
+## Depozyt zabezpieczający
 
-### Rules
+### Zasady
 
-- **Maximum deposit:** One month's rent
-- **Must be returned** within 1 month of lease termination, minus any legitimate deductions
-- **Legitimate deductions:** Damage beyond normal wear and tear, unpaid rent, unpaid utility bills
-- **Cannot be used as last month's rent** by the tenant
+- **Maksymalna wysokość kaucji:** Jednomiesięczny czynsz
+- **Musi zostać zwrócona** w ciągu 1 miesiąca od zakończenia najmu, pomniejszona o wszelkie uzasadnione potrącenia
+- **Uzasadnione potrącenia:** Uszkodzenia wykraczające poza normalne zużycie, niezapłacony czynsz, niezapłacone rachunki za media
+- **Nie może być wykorzystana przez najemcę jako czynsz za ostatni miesiąc**
 
-### Deposit Disputes
+### Spory dotyczące depozytu
 
-If there is a disagreement about deposit deductions:
-1. Either party can file a complaint with the **Rent Regulation Board**
-2. The Board will inspect and make a binding decision
-3. Processing time: 2-4 months typically
+W przypadku sporu dotyczącego potrąceń z kaucji:
+1. Każda ze stron może złożyć skargę do **Rent Regulation Board**
+2. Komisja przeprowadzi kontrolę i podejmie wiążącą decyzję
+3. Czas rozpatrywania: zazwyczaj 2-4 miesiące
 
-> **Best Practice for Landlords:** Conduct a detailed check-in and check-out inventory with photos. This is your evidence if deposit deductions are challenged.
+**Dobra praktyka dla wynajmujących: **Przeprowadź szczegółową inwentaryzację zameldowania i wymeldowania wraz ze zdjęciami. Jest to dowód w przypadku zakwestionowania potrąceń depozytu.
 
-## Landlord Obligations
+## Obowiązki wynajmującego
 
-As a landlord in Malta, you must:
+Jako wynajmujący na Malcie musisz:
 
-### Property Condition
-- Deliver the property in a **habitable condition** – functioning plumbing, electrical, heating, and structural integrity
-- Maintain all **structural elements** – roof, walls, external doors and windows
-- Repair any damage NOT caused by the tenant within a **reasonable timeframe**
-- Provide a **functioning boiler/water heater** (if included in the original let)
+### Stan nieruchomości
+- Dostarczyć nieruchomość w **stanie nadającym się do zamieszkania** - działająca instalacja wodno-kanalizacyjna, elektryczna, ogrzewanie i integralność strukturalna
+- Utrzymywać wszystkie **elementy konstrukcyjne** - dach, ściany, drzwi zewnętrzne i okna
+- Naprawa wszelkich uszkodzeń NIE spowodowanych przez najemcę w **rozsądnych ramach czasowych**
+- Zapewnienie **działającego bojlera/podgrzewacza wody** (jeśli został uwzględniony w pierwotnej umowie najmu)
 
-### Administrative
-- **Register the lease** with the Housing Authority within 10 days
-- Provide a **written lease agreement** (standard template available from Housing Authority)
-- Issue **receipts for all rent payments** if the tenant requests them
-- Declare **rental income** on your tax return (15% flat rate option available)
+### Administracja
+- **Zarejestrowanie umowy najmu** w urzędzie mieszkaniowym w ciągu 10 dni
+- Dostarczenie **pisemnej umowy najmu** (standardowy szablon dostępny w Urzędzie Mieszkaniowym)
+- Wystawienie **pokwitowań wszystkich płatności czynszu**, jeśli najemca o nie poprosi
+- Zadeklarować **dochód z wynajmu** w zeznaniu podatkowym (dostępna opcja 15% stawki ryczałtowej)
 
-### What You CAN'T Do
-- Enter the property without 24 hours' written notice (except emergencies)
-- Change locks while the tenant is in residence
-- Withhold essential services (water, electricity) to pressure a tenant
-- Evict without following legal procedures
+### Czego NIE MOŻNA robić
+- Wchodzić na teren nieruchomości bez 24-godzinnego pisemnego powiadomienia (z wyjątkiem sytuacji awaryjnych)
+- Zmieniać zamków, gdy najemca jest w mieszkaniu
+- Wstrzymywać podstawowych usług (woda, elektryczność) w celu wywarcia presji na najemcy
+- Eksmitować bez przestrzegania procedur prawnych
 
-## Tenant Obligations
+## Obowiązki najemcy
 
-As a tenant in Malta, you must:
+Jako najemca na Malcie musisz:
 
-- **Pay rent on time** as specified in the lease
-- **Maintain the property** in reasonable condition ("as a good father of a family" – Maltese legal standard)
-- **Report damage** or maintenance issues promptly
-- **Not sublet** without the landlord's written permission
-- **Not make structural changes** without permission
-- **Return the property** in the same condition (allowing for normal wear and tear)
+- **płacić czynsz na czas** zgodnie z umową najmu
+- **Utrzymywać nieruchomość** w rozsądnym stanie ("jak dobry ojciec rodziny" - maltański standard prawny)
+- **bezzwłocznie zgłaszać uszkodzenia** lub kwestie związane z konserwacją
+- **nie podnajmować** bez pisemnej zgody wynajmującego
+- **Nie dokonywać zmian strukturalnych** bez pozwolenia
+- **zwrócić nieruchomość** w takim samym stanie (uwzględniając normalne zużycie)
 
-## Eviction Procedures
+## Procedury eksmisji
 
-### Legal Grounds for Eviction
+### Podstawy prawne eksmisji
 
-A landlord can only evict a tenant for specific reasons:
+Wynajmujący może eksmitować najemcę tylko z określonych powodów:
 
-1. **Non-payment of rent** – after written demand and 15-day grace period
-2. **Breach of lease terms** – after written warning
-3. **Property needed for personal use** – landlord or immediate family (restrictive conditions apply)
-4. **Major works required** – structural repairs that require vacant possession
-5. **Illegal activity** – proven illegal use of the premises
+1. **Nieopłacenie czynszu** - po pisemnym wezwaniu i 15-dniowym okresie karencji
+2. **Naruszenie warunków najmu** - po pisemnym ostrzeżeniu
+3. **Mienie potrzebne do użytku osobistego** - właściciel lub najbliższa rodzina (obowiązują restrykcyjne warunki)
+4. **Wymagane poważne prace** - naprawy strukturalne wymagające opróżnienia lokalu
+5. **Nielegalna działalność** - udowodnione nielegalne użytkowanie lokalu
 
-### The Eviction Process
+### Proces eksmisji
 
-1. **Written notice** specifying the reason and giving adequate notice period
-2. If tenant refuses to leave → **file with the Rent Regulation Board**
-3. Board hears both parties (typically within 2-3 months)
-4. If ruling is in landlord's favour → **court enforcement order**
-5. Court bailiff executes eviction (can take additional 2-4 months)
+1. **Pisemne zawiadomienie** określające powód i podające odpowiedni okres wypowiedzenia
+2. Jeśli najemca odmawia opuszczenia lokalu → **złożenie do Komisji ds. regulacji czynszów**
+3. Komisja wysłuchuje obu stron (zazwyczaj w ciągu 2-3 miesięcy)
+4. Jeśli orzeczenie jest na korzyść wynajmującego → **sądowy nakaz egzekucji**
+5. Komornik sądowy wykonuje eksmisję (może to zająć dodatkowe 2-4 miesiące)
 
-**Total process: 4-8 months** from initial notice to enforcement.
+**Całkowity proces: 4-8 miesięcy** od pierwszego zawiadomienia do egzekucji.
 
-> **Critical Warning:** Self-help eviction (changing locks, removing belongings, cutting utilities) is **illegal** in Malta and can result in criminal prosecution of the landlord.
+> Krytyczne ostrzeżenie:** Samodzielna eksmisja (zmiana zamków, usunięcie rzeczy, odcięcie mediów) jest **nielegalna** na Malcie i może skutkować wszczęciem postępowania karnego przeciwko wynajmującemu.
 
-## Tax on Rental Income
+## Podatek od dochodu z wynajmu
 
-### The 15% Flat Rate Option
+### Opcja 15% zryczałtowanej stawki
 
-Malta offers a simple and attractive rental income tax regime:
+Malta oferuje prosty i atrakcyjny system opodatkowania dochodów z wynajmu:
 
-| Tax Option | Rate | Best For |
+| Opcja podatkowa | Stawka | Najlepsza dla |
 |-----------|------|----------|
-| **15% Final Withholding Tax** | 15% on gross rent | Most landlords – simple and final |
-| **Standard Income Tax** | Progressive rates (0-35%) | Low earners with high deductible expenses |
+**15% końcowy podatek u źródła** | 15% od czynszu brutto | Większość wynajmujących - prosty i końcowy |
+| Standardowy podatek dochodowy** | Stawki progresywne (0-35%) | Osoby o niskich dochodach z wysokimi kosztami uzyskania przychodu |
 
-Under the 15% FWT:
-- Applied to **gross rental income** (no deductions for expenses)
-- It is a **final tax** – no further liability on this income
-- Very simple to calculate and pay
-- Declared on the annual personal tax return
+W ramach 15% FWT:
+- Stosowany do **brutto dochodu z wynajmu** (bez odliczeń wydatków)
+- Jest to **podatek końcowy** - brak dalszych zobowiązań od tego dochodu
+- Bardzo prosty do obliczenia i zapłaty
+- Deklarowany w rocznym zeznaniu podatkowym
 
-Under standard income tax:
-- You can deduct **qualifying expenses** (maintenance, insurance, interest on mortgage, management fees)
-- Net income is added to your other income and taxed at your marginal rate
-- Better only if total income is low and deductible expenses are high
+W ramach standardowego podatku dochodowego:
+- Możesz odliczyć **kwalifikujące się wydatki** (utrzymanie, ubezpieczenie, odsetki od kredytu hipotecznego, opłaty za zarządzanie)
+- Dochód netto jest dodawany do innych dochodów i opodatkowany według stawki krańcowej
+- Lepsze tylko wtedy, gdy całkowity dochód jest niski, a wydatki podlegające odliczeniu są wysokie
 
-### VAT on Rent
+### VAT od wynajmu
 
-- **Residential long-term lets: VAT exempt** – no VAT is charged
-- **Short-term lets (under 6 months): 7% VAT** applies if registered with MTA
-- **Commercial property lets: 18% VAT** standard rate
+- **Wynajem długoterminowy: Zwolnione z VAT** - podatek VAT nie jest naliczany
+- **Wynajem krótkoterminowy (poniżej 6 miesięcy): 7% VAT** ma zastosowanie, jeśli jest zarejestrowany w MTA
+- **Wynajem nieruchomości komercyjnych: 18% VAT** stawka podstawowa
 
-## Short-Term Lets (Holiday Lets)
+## Wynajem krótkoterminowy (wakacyjny)
 
-If you want to rent your property on Airbnb, Booking.com, or similar platforms:
+Jeśli chcesz wynająć swoją nieruchomość na Airbnb, Booking.com lub podobnych platformach:
 
-### MTA (Malta Tourism Authority) Requirements
+### Wymagania MTA (Malta Tourism Authority)
 
-1. **Must obtain an MTA licence** before advertising
-2. Property must meet minimum standards (safety, cleanliness, facilities)
-3. **Categories:** Standard, Comfort, First Class (1 to 5 star equivalent)
-4. **Licence cost:** €100-€250 annually depending on category
-5. **Must display licence number** on all listings and advertisements
+1. **Przed zamieszczeniem ogłoszenia należy uzyskać licencję MTA**
+2. Nieruchomość musi spełniać minimalne standardy (bezpieczeństwo, czystość, udogodnienia)
+3. **Kategorie:** Standard, Komfort, Pierwsza Klasa (odpowiednik od 1 do 5 gwiazdek)
+4. **Koszt licencji:** 100-250 € rocznie w zależności od kategorii
+5. **Numer licencji** musi być widoczny na wszystkich ofertach i ogłoszeniach
 
-### Short-Let Tax Treatment
+### Opodatkowanie najmu krótkoterminowego
 
-- 15% FWT on gross rental income (same as long-let), OR
-- 7% reduced VAT rate applies to accommodation charges
-- Must register for VAT if turnover exceeds €30,000
+- 15% FWT od dochodu brutto z wynajmu (tak samo jak w przypadku wynajmu długoterminowego), LUB
+- 7% obniżona stawka VAT ma zastosowanie do opłat za zakwaterowanie
+- Musi zarejestrować się jako płatnik VAT, jeśli obrót przekracza 30 000 EUR
 
-### Where Are Short-Lets Most Profitable?
+### Gdzie wynajem krótkoterminowy jest najbardziej opłacalny?
 
-Top areas for Airbnb/holiday lets in Malta (2026 data):
+Najlepsze obszary dla Airbnb/wynajmu wakacyjnego na Malcie (dane z 2026 r.):
 
-| Area | Avg. Nightly Rate | Avg. Occupancy | Est. Annual Revenue (2-bed) |
+| Obszar | Średnia stawka za noc Stawka za noc | Śred. Obłożenie | Szac. Roczny przychód (2-osobowe) |
 |------|-------------------|----------------|----------------------------|
 | Sliema | €95-140 | 75% | €26,000-38,000 |
 | St. Julian's | €110-160 | 70% | €28,000-41,000 |
 | Valletta | €100-150 | 65% | €24,000-36,000 |
 | Mellieħa | €80-120 | 55% | €16,000-24,000 |
-| St. Paul's Bay | €60-90 | 60% | €13,000-20,000 |
+| Paul's Bay | €60-90 | 60% | €13,000-20,000 |
 
-## Frequently Asked Questions
+## Często zadawane pytania
 
-### Is it mandatory to register rental contracts in Malta?
-Yes. Since January 2020, all private residential lease agreements must be registered with the Housing Authority within 10 working days of signing. Failure to register can result in fines of up to €10,000.
+### Czy rejestracja umów najmu na Malcie jest obowiązkowa?
+Tak. Od stycznia 2020 r. wszystkie prywatne umowy najmu mieszkań muszą zostać zarejestrowane w Urzędzie Mieszkaniowym w ciągu 10 dni roboczych od ich podpisania. Brak rejestracji może skutkować grzywną w wysokości do 10 000 euro.
 
-### What is the minimum lease duration in Malta?
-The minimum lease duration for private residential agreements signed after 1 January 2020 is one year. There is no maximum duration – parties can agree to any term above one year.
+### Jaki jest minimalny okres najmu na Malcie?
+Minimalny okres najmu dla prywatnych umów mieszkaniowych podpisanych po 1 stycznia 2020 r. wynosi jeden rok. Nie ma maksymalnego czasu trwania - strony mogą uzgodnić dowolny okres powyżej jednego roku.
 
-### How much can a landlord increase rent in Malta?
-After the first year, annual rent increases are capped at the lower of 5% or the HICP inflation rate. During the first year, no increase is permitted at all.
+### O ile wynajmujący może podnieść czynsz na Malcie?
+Po pierwszym roku roczne podwyżki czynszu są ograniczone do niższej z następujących wartości: 5% lub stopa inflacji HICP. W ciągu pierwszego roku nie jest dozwolona żadna podwyżka.
 
-### What tax do landlords pay on rental income in Malta?
-Most landlords opt for the 15% Final Withholding Tax on gross rental income. This is a simple, final tax with no further liability. Alternatively, landlords can choose to declare rental income under standard progressive rates (0-35%) and deduct qualifying expenses.
+### Jaki podatek płacą wynajmujący od dochodu z wynajmu na Malcie?
+Większość wynajmujących decyduje się na 15% ostateczny podatek u źródła od dochodu brutto z wynajmu. Jest to prosty, ostateczny podatek bez dalszych zobowiązań. Alternatywnie, wynajmujący mogą zadeklarować dochód z wynajmu według standardowych stawek progresywnych (0-35%) i odliczyć kwalifikujące się wydatki.
 
-### Can a landlord evict a tenant in Malta?
-A landlord can only evict a tenant for specific legal reasons (non-payment, breach of terms, personal use, major works, or illegal activity). Self-help eviction (changing locks, cutting utilities) is illegal. The formal eviction process through the Rent Regulation Board and courts typically takes 4-8 months.
+### Czy wynajmujący może eksmitować najemcę na Malcie?
+Wynajmujący może eksmitować najemcę tylko z określonych powodów prawnych (brak płatności, naruszenie warunków, użytek osobisty, poważne prace lub nielegalna działalność). Samodzielna eksmisja (zmiana zamków, odcięcie mediów) jest nielegalna. Formalny proces eksmisji za pośrednictwem Rady Regulacji Czynszów i sądów trwa zazwyczaj 4-8 miesięcy.
 
-## Need Help Finding Your Next Rental Investment?
+## Potrzebujesz pomocy w znalezieniu kolejnej inwestycji na wynajem?
 
-Browse high-yield rental properties across Malta's top rental markets, complete with estimated yield data and location analytics.
+Przeglądaj wysokodochodowe nieruchomości na wynajem na najlepszych rynkach wynajmu na Malcie, wraz z szacunkowymi danymi dotyczącymi rentowności i analizami lokalizacji.

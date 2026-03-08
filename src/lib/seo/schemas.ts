@@ -1,6 +1,6 @@
 import type { Location, LocationStats } from '../../types';
 
-function formatPrice(price: number | null): string {
+export function formatPrice(price: number | null): string {
     if (!price) return 'N/A';
     return new Intl.NumberFormat('en-GB', {
         notation: 'compact',
@@ -250,3 +250,18 @@ export function howToSchema(params: {
     }
 }
 
+
+export function generatePropertySchema(property: any) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'RealEstateListing',
+        name: property.title,
+        description: property.description,
+        url: `https://maltaluxuryrealestate.com/properties/${property.id}`,
+        image: property.images[0],
+        offeredBy: {
+            '@type': 'RealEstateAgent',
+            name: property.agency?.name || 'Malta Luxury Real Estate',
+        },
+    };
+}

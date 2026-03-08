@@ -7,14 +7,13 @@ import { PropertyCard } from '../components/PropertyCard';
 import { Property } from '../types';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { usePageMeta } from '../lib/seo/meta';
+import { useTranslation } from 'react-i18next';
 
 interface PropertiesPageProps {
   favorites: string[];
   onToggleFavorite: (id: string) => void;
   onContact: (propertyId: string, propertyTitle: string) => void;
 }
-
-import { useTranslation } from 'react-i18next';
 
 export const PropertiesPage: React.FC<PropertiesPageProps> = ({
   favorites,
@@ -87,13 +86,16 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
     if (activeFeatureFilters.includes('Pool')) {
       results = results.filter(p => p.features.some(f => f.toLowerCase().includes('pool')));
     }
+    if (activeFeatureFilters.includes('Furnished')) {
+      results = results.filter(p => p.features.some(f => f.toLowerCase().includes('furnished')));
+    }
     if (activeEPCFilters.length > 0) {
       results = results.filter(p => p.epcRating && activeEPCFilters.includes(p.epcRating));
     }
 
     setFilteredProperties(results);
     window.scrollTo(0, 0);
-  }, [query, typeFilter, featureFilter, activeTypeFilters, activeFeatureFilters]);
+  }, [query, typeFilter, featureFilter, epcFilter, activeTypeFilters, activeFeatureFilters, activeEPCFilters]);
 
   const toggleTypeFilter = (type: string) => {
     setActiveTypeFilters(prev =>
@@ -113,13 +115,28 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
     );
   };
 
+  const propertyTypes = [
+    { key: 'villa', label: 'Villa' },
+    { key: 'apartment', label: 'Apartment' },
+    { key: 'penthouse', label: 'Penthouse' },
+    { key: 'palazzo', label: 'Palazzo' },
+    { key: 'house_of_character', label: 'House of Character' },
+    { key: 'maisonette', label: 'Maisonette' }
+  ];
+
+  const features = [
+    { key: 'seafront', label: 'Seafront' },
+    { key: 'with_pool', label: 'Pool' },
+    { key: 'furnished', label: 'Furnished' }
+  ];
+
   return (
     <main className="min-h-screen bg-luxury-black pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Breadcrumb */}
         <div className="mb-8">
           <Breadcrumb items={[
-            { label: t('common.home'), href: '/' },
+            { label: t('common.home'), href: i18n.language === 'en' ? '/' : `/${i18n.language}` },
             { label: query ? t('properties.search_results', { query }) : t('properties.all_listings') },
           ]} />
         </div>
@@ -156,20 +173,20 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
               exit={{ height: 0, opacity: 0 }}
               className="overflow-hidden mb-12"
             >
-              <div className="p-8 bg-white/5 rounded-3xl border border-white/10 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="p-8 bg-white/5 rounded-3xl border border-white/10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div>
                   <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.property_type')}</label>
                   <div className="flex flex-wrap gap-2">
-                    {['Villa', 'Apartment', 'Penthouse', 'Palazzo', 'House of Character', 'Maisonette'].map(t => (
+                    {propertyTypes.map(pt => (
                       <button
-                        key={t}
-                        onClick={() => toggleTypeFilter(t)}
-                        className={`px-4 py-2 rounded-lg text-xs transition-all ${activeTypeFilters.includes(t)
+                        key={pt.key}
+                        onClick={() => toggleTypeFilter(pt.label)}
+                        className={`px-4 py-2 rounded-lg text-xs transition-all ${activeTypeFilters.includes(pt.label)
                           ? 'bg-gold text-luxury-black font-bold border border-gold'
                           : 'bg-white/5 border border-white/10 hover:border-gold'
                           }`}
                       >
-                        {t}
+                        {t(`search.types.${pt.key}`, pt.label)}
                       </button>
                     ))}
                   </div>
@@ -177,16 +194,16 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
                 <div>
                   <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.features')}</label>
                   <div className="flex flex-wrap gap-2">
-                    {['Seafront', 'Pool', 'Garden', 'Garage', 'Furnished'].map(f => (
+                    {features.map(f => (
                       <button
-                        key={f}
-                        onClick={() => toggleFeatureFilter(f)}
-                        className={`px-4 py-2 rounded-lg text-xs transition-all ${activeFeatureFilters.includes(f)
+                        key={f.key}
+                        onClick={() => toggleFeatureFilter(f.label)}
+                        className={`px-4 py-2 rounded-lg text-xs transition-all ${activeFeatureFilters.includes(f.label)
                           ? 'bg-gold text-luxury-black font-bold border border-gold'
                           : 'bg-white/5 border border-white/10 hover:border-gold'
                           }`}
                       >
-                        {f}
+                        {t(`search.filters.${f.key}`, f.label)}
                       </button>
                     ))}
                   </div>
@@ -200,7 +217,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
                         onClick={() => toggleEPCFilter(e)}
                         className={`px-4 py-2 rounded-lg text-xs transition-all ${activeEPCFilters.includes(e)
                           ? 'bg-emerald-500 text-luxury-black font-bold border border-emerald-500'
-                          : 'bg-white/5 border-white/10 hover:border-emerald-500/50'
+                          : 'bg-white/5 border border-white/10 hover:border-emerald-500/50'
                           }`}
                       >
                         {t('properties.filter_panel.rating_label', { grade: e })}
@@ -242,13 +259,13 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
               {t('properties.no_results.desc')}
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
-              <Link to="/properties/sliema" className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
+              <Link to={getLocalizedPath('/properties/sliema')} className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
                 {t('properties.no_results.explore', { location: 'Sliema' })}
               </Link>
-              <Link to="/properties/valletta" className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
+              <Link to={getLocalizedPath('/properties/valletta')} className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
                 {t('properties.no_results.explore', { location: 'Valletta' })}
               </Link>
-              <Link to="/properties/st-julians" className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
+              <Link to={getLocalizedPath('/properties/st-julians')} className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest hover:border-gold transition-all">
                 {t('properties.no_results.explore', { location: "St. Julian's" })}
               </Link>
             </div>
@@ -258,4 +275,3 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
     </main>
   );
 };
-

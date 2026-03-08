@@ -1,243 +1,242 @@
 ---
-title: "Malta Permanent Residency by Investment 2026 – The Complete MPRP Guide"
+title: "Stała rezydencja na Malcie dzięki inwestycjom 2026 - Kompletny przewodnik po MPRP"
 category: "Residency"
-excerpt: "The Malta Permanent Residency Programme (MPRP) grants non-EU nationals permanent residency in exchange for a qualifying property investment (€375,000+), government contribution, and proof of €500,000 in assets. Processing takes 4–6 months."
-metaDescription: "Master the Malta Permanent Residency Programme (MPRP) 2026. Learn about the €375,000 property investment, government contributions, and how to get permanent EU residency."
+excerpt: "Program stałego pobytu na Malcie (MPRP) przyznaje obywatelom spoza UE stały pobyt w zamian za kwalifikującą się inwestycję w nieruchomość (375 000 EUR +), wkład rządowy i dowód 500 000 EUR w aktywach. Przetwarzanie trwa 4-6 miesięcy."
+metaDescription: "Opanuj program stałego pobytu na Malcie (MPRP) 2026. Dowiedz się o inwestycji w nieruchomość w wysokości 375 000 EUR, składkach rządowych i sposobach uzyskania stałego pobytu w UE."
 image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "19 min read"
+readTime: "19 min czytania"
 author: "Malta Luxury Real Estate"
 slug: "malta-permanent-residency-mprp-property-guide"
+localizedSlug: "staa-rezydencja-na-malcie-dzieki-inwestycjom-2026"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Malta Permanent Residency by Investment 2026 – The Complete MPRP Guide
+# Malta Permanent Residency by Investment 2026 - Kompletny przewodnik po MPRP
 
-The Malta Permanent Residency Programme (MPRP) grants non-EU nationals permanent residency in Malta in exchange for a qualifying property investment (purchase €375,000+ or rent €14,000+/year), a government contribution (€28,000–€58,000), a €2,000 NGO donation, and proof of €500,000 in assets. Processing takes 4–6 months. Residency is permanent and can include spouses, dependent children, and dependent parents.
+Program stałego pobytu na Malcie (MPRP) przyznaje obywatelom spoza UE stały pobyt na Malcie w zamian za kwalifikującą się inwestycję w nieruchomość (zakup ponad 375 000 EUR lub wynajem ponad 14 000 EUR rocznie), wkład rządowy (28 000-58 000 EUR), darowiznę organizacji pozarządowej w wysokości 2 000 EUR i dowód posiadania aktywów w wysokości 500 000 EUR. Przetwarzanie trwa 4-6 miesięcy. Rezydencja jest stała i może obejmować małżonków, dzieci pozostające na utrzymaniu i rodziców pozostających na utrzymaniu.
 
-## What Is the Malta Permanent Residency Programme?
+## Czym jest program stałego pobytu na Malcie?
 
-The Malta Permanent Residency Programme (MPRP) is Malta's primary residency-by-investment pathway for non-EU, non-EEA, and non-Swiss nationals. It replaced the earlier Malta Residence and Visa Programme (MRVP) in 2021 and offers a direct route to permanent residency – not a temporary permit that requires renewal.
+Program Stałego Pobytu na Malcie (MPRP) to główna ścieżka pobytu na Malcie dla obywateli spoza UE, spoza EOG i spoza Szwajcarii. Zastąpił on wcześniejszy program stałego pobytu i wiz na Malcie (MRVP) w 2021 r. i oferuje bezpośrednią drogę do stałego pobytu - a nie tymczasowe zezwolenie, które wymaga odnowienia.
 
-**What MPRP grants:**
-- Permanent residency status in Malta (and by extension, the right to live, work, and study in Malta)
-- Visa-free access to all 26 Schengen Area countries for short stays (90 days in any 180)
-- The right to include immediate family members in one application
-- No requirement to reside in Malta for a minimum number of days per year (though presence is required for the initial application)
+**Co zapewnia MPRP:**
+- Status stałego pobytu na Malcie (a co za tym idzie, prawo do życia, pracy i nauki na Malcie)
+- Bezwizowy dostęp do wszystkich 26 krajów strefy Schengen na krótkie pobyty (90 dni w ciągu 180 dni)
+- Prawo do uwzględnienia członków najbliższej rodziny w jednym wniosku
+- Brak wymogu przebywania na Malcie przez minimalną liczbę dni w roku (choć obecność jest wymagana przy pierwszym wniosku)
 
-**What MPRP does not grant:**
-- Maltese citizenship (a separate, more onerous programme – MEIN – covers this)
-- The right to work or live in other EU member states (Malta residency ≠ EU-wide freedom of movement for third-country nationals)
-- Automatic path to citizenship (there is no direct pathway from MPRP to citizenship)
+**Czego MPRP nie przyznaje:**
+- Obywatelstwo maltańskie (obejmuje to oddzielny, bardziej uciążliwy program - MEIN)
+- Prawa do pracy lub zamieszkania w innych państwach członkowskich UE (rezydencja na Malcie ≠ swoboda przemieszczania się w całej UE dla obywateli państw trzecich)
+- Automatyczna ścieżka do obywatelstwa (nie ma bezpośredniej ścieżki od MPRP do obywatelstwa)
 
-## Who Qualifies?
+## Kto się kwalifikuje?
 
-**Eligible applicants:** Non-EU, non-EEA, non-Swiss nationals. EU citizens do not need MPRP – they have the right to reside in Malta under EU free movement rules.
+**Kwalifikujący się wnioskodawcy:** Obywatele spoza UE, spoza EOG, spoza Szwajcarii. Obywatele UE nie potrzebują MPRP - mają prawo przebywać na Malcie zgodnie z przepisami UE dotyczącymi swobodnego przemieszczania się.
 
-**Most common nationalities applying:** British (post-Brexit), Russian, Chinese, American, Ukrainian, Middle Eastern, and South/Southeast Asian nationals.
+**Najczęściej występujące narodowości:** Brytyjczycy (po Brexicie), Rosjanie, Chińczycy, Amerykanie, Ukraińcy, obywatele Bliskiego Wschodu i Azji Południowo-Wschodniej.
 
-**Minimum eligibility requirements:**
-- Age: 18+
-- Clean criminal record (all countries where you have resided for 10+ years)
-- No pending criminal proceedings
-- Genuine assets of at least €500,000 (of which at least €150,000 must be financial assets – cash, shares, bonds)
-- Adequate health insurance covering Malta (minimum €30,000 annual cover per family member)
-- Not a national of a sanctioned country (list maintained by Residency Malta Agency)
+**Minimalne wymagania kwalifikacyjne:**
+- Wiek: 18+
+- Niekaralność (wszystkie kraje, w których przebywałeś przez ponad 10 lat)
+- Brak toczących się postępowań karnych
+- Prawdziwe aktywa w wysokości co najmniej 500 000 EUR (z czego co najmniej 150 000 EUR muszą stanowić aktywa finansowe - gotówka, akcje, obligacje)
+- Odpowiednie ubezpieczenie zdrowotne obejmujące Maltę (minimum 30 000 EUR rocznego ubezpieczenia na członka rodziny)
+- Nie jest obywatelem kraju objętego sankcjami (lista prowadzona przez Residency Malta Agency)
 
-## The MPRP Requirements in Full
+## Pełne wymagania MPRP
 
-The programme has four financial components. All must be met simultaneously.
+Program składa się z czterech elementów finansowych. Wszystkie muszą być spełnione jednocześnie.
 
-### 1. Property Investment (Choose One)
+### 1. Inwestycja w nieruchomości (wybierz jeden)
 
-| Option | Requirement | Notes |
+| Opcja | Wymaganie | Uwagi |
 |--------|-------------|-------|
-| **Purchase** | Minimum €375,000 (Malta) or €320,000 (Gozo / South Malta) | Must be held for minimum 5 years |
-| **Rent** | Minimum €14,000/year (Malta) or €11,200/year (Gozo / South Malta) | Lease must be minimum 5 years |
+| **Zakup** | Minimum €375,000 (Malta) lub €320,000 (Gozo / Południowa Malta) | Musi być utrzymywany przez minimum 5 lat |
+| **Wynajem** | Minimum €14,000/rok (Malta) lub €11,200/rok (Gozo / Południowa Malta) | Najem musi trwać minimum 5 lat |
 
-The property must be your qualifying property for the programme – you cannot use it as a pure investment rental during the 5-year holding period. After 5 years, you may sell or change the property as long as you maintain another qualifying property or rental.
+Nieruchomość musi być nieruchomością kwalifikującą się do programu - nie można jej używać jako czystego wynajmu inwestycyjnego w ciągu 5-letniego okresu posiadania. Po 5 latach możesz sprzedać lub zmienić nieruchomość, o ile utrzymujesz inną kwalifikującą się nieruchomość lub wynajem.
 
-> **For property investors:** The rent option at €14,000/year (€1,167/month) is significantly below typical Sliema/St Julian's market rents for a decent apartment. You are effectively renting at a slight discount to market while qualifying for the programme. Many applicants use the rent route initially, then purchase later when more settled.
+**Dla inwestorów w nieruchomości:** Opcja wynajmu za 14.000 €/rok (1.167 €/miesiąc) jest znacznie poniżej typowych czynszów rynkowych w Sliema/St Julian's za przyzwoite mieszkanie. Skutecznie wynajmujesz z niewielką zniżką w stosunku do rynku, jednocześnie kwalifikując się do programu. Wielu wnioskodawców początkowo korzysta z wynajmu, a następnie kupuje mieszkanie, gdy już się ustabilizuje.
 
-### 2. Government Contribution
+### 2. Wkład rządowy
 
-| Family composition | Contribution |
+| Skład rodziny | Wkład |
 |-------------------|-------------|
-| Main applicant only | €28,000 |
-| Main applicant + spouse | €28,000 (no additional for spouse) |
-| Each dependent child (under 18, or under 26 if in full-time education) | +€7,500 |
-| Each dependent parent / grandparent (over 55) | +€7,500 |
+| Tylko główny wnioskodawca | €28,000 |
+| Główny wnioskodawca + współmałżonek | €28,000 (bez dodatku dla współmałżonka) |
+| Każde dziecko pozostające na utrzymaniu (poniżej 18 roku życia lub poniżej 26 roku życia, jeśli uczy się w pełnym wymiarze godzin) | +7 500 EUR |
+| Każdy rodzic / dziadek pozostający na utrzymaniu (powyżej 55 lat) | +7 500 EUR |
 
-**Example:** A family of four (two adults, two children) pays €28,000 + €7,500 + €7,500 = **€43,000** in government contribution.
+**Przykład:** Czteroosobowa rodzina (dwoje dorosłych, dwoje dzieci) płaci €28,000 + €7,500 + €7,500 = **€43,000** składki rządowej.
 
-The contribution is non-refundable and paid to the Residency Malta Agency upon approval.
+Składka jest bezzwrotna i wpłacana do Residency Malta Agency po zatwierdzeniu.
 
-### 3. NGO Donation
+### 3. Darowizna organizacji pozarządowej
 
-€2,000 donated to a registered Maltese NGO (approved list provided by Residency Malta Agency). This is a one-time, non-refundable payment made at the time of application.
+2000 € przekazane zarejestrowanej maltańskiej organizacji pozarządowej (zatwierdzona lista dostarczona przez Residency Malta Agency). Jest to jednorazowa, bezzwrotna płatność dokonywana w momencie składania wniosku.
 
-### 4. Proof of Assets
+### 4. Dowód majątku
 
-You must demonstrate assets of **at least €500,000 total**, of which:
-- Minimum €150,000 must be financial assets (cash, securities, bonds, deposits)
-- The remaining €350,000 can be any combination of assets: property (including the qualifying Malta property), business interests, vehicles, art, etc.
+Musisz wykazać aktywa o łącznej wartości **co najmniej 500 000 EUR**, z czego:
+- Minimum €150,000 muszą stanowić aktywa finansowe (gotówka, papiery wartościowe, obligacje, depozyty)
+- Pozostałe 350 000 EUR może stanowić dowolna kombinacja aktywów: nieruchomości (w tym kwalifikująca się nieruchomość na Malcie), interesy biznesowe, pojazdy, dzieła sztuki itp.
 
-Assets must be evidenced at the time of application and maintained throughout the 5-year holding period. Residency Malta Agency conducts ongoing monitoring.
+Aktywa muszą być udokumentowane w momencie składania wniosku i utrzymywane przez 5-letni okres posiadania. Agencja Residency Malta prowadzi bieżące monitorowanie.
 
-## Step-by-Step Application Process
+## Proces składania wniosku krok po kroku
 
-### Step 1 – Appoint a Licensed Agent (Mandatory)
+### Krok 1 - Wyznaczenie licencjonowanego agenta (obowiązkowe)
 
-All MPRP applications must be submitted through a Residency Malta Agency-licensed agent. You cannot apply directly. Licensed agents are listed on the Residency Malta Agency website.
+Wszystkie wnioski MPRP muszą być składane za pośrednictwem licencjonowanego agenta Residency Malta Agency. Nie można złożyć wniosku bezpośrednio. Licencjonowani agenci są wymienieni na stronie internetowej Residency Malta Agency.
 
-**Typical agent fees:** €5,000–€10,000 for a standard family application. Choose an agent with a strong MPRP track record – this is a significant financial commitment and the agent's preparation quality directly affects approval likelihood.
+**Typowe opłaty agenta:** €5,000-€10,000 za standardowy wniosek rodzinny. Wybierz agenta z dużym doświadczeniem w zakresie MPRP - jest to znaczące zobowiązanie finansowe, a jakość przygotowania agenta bezpośrednio wpływa na prawdopodobieństwo zatwierdzenia.
 
-### Step 2 – Due Diligence and Background Check
+### Krok 2 - Należyta staranność i sprawdzenie przeszłości
 
-Residency Malta Agency conducts a thorough background check (referred to as the "due diligence" phase) before your application is processed. This includes:
-- Criminal record checks in all countries of residence (10+ years)
-- Source of funds investigation
-- PEP (Politically Exposed Person) screening
-- Reputational checks
+Agencja Residency Malta przeprowadza dokładne sprawdzenie przeszłości (zwane fazą "należytej staranności") przed rozpatrzeniem wniosku. Obejmuje to:
+- Sprawdzenie rejestru karnego we wszystkich krajach zamieszkania (ponad 10 lat)
+- Badanie źródła pochodzenia funduszy
+- Weryfikację PEP (osób zajmujących eksponowane stanowiska polityczne)
+- Sprawdzanie reputacji
 
-You must provide full disclosure. Any misrepresentation results in automatic rejection and potential blacklisting.
+Musisz podać pełne informacje. Wszelkie nieprawdziwe informacje skutkują automatycznym odrzuceniem i potencjalnym umieszczeniem na czarnej liście.
 
-**Timeline:** 2–4 months for standard due diligence. Complex cases or high-risk nationalities may take longer.
+**Ramy czasowe:** 2-4 miesiące w przypadku standardowej analizy due diligence. Złożone przypadki lub narodowości wysokiego ryzyka mogą potrwać dłużej.
 
-### Step 3 – Submit Application
+### Krok 3 - Złożenie wniosku
 
-Your licensed agent submits the full application pack to Residency Malta Agency. Required documents include:
-- Certified copies of passports for all applicants
-- Criminal record certificates (apostilled, translated if necessary)
-- Evidence of qualifying property (purchase deed or rental agreement)
-- Bank statements and asset evidence (last 3 months minimum)
-- Health insurance certificates
-- NGO donation receipt
-- Government contribution payment proof
+Twój licencjonowany agent przesyła pełny pakiet aplikacji do Residency Malta Agency. Wymagane dokumenty obejmują:
+- Poświadczone kopie paszportów dla wszystkich wnioskodawców
+- Zaświadczenia z rejestru karnego (apostille, w razie potrzeby przetłumaczone)
+- Dowód posiadania kwalifikującej się nieruchomości (akt zakupu lub umowa najmu)
+- Wyciągi bankowe i dowody aktywów (minimum z ostatnich 3 miesięcy)
+- Zaświadczenia o ubezpieczeniu zdrowotnym
+- Potwierdzenie darowizny od organizacji pozarządowej
+- Dowód wpłaty składki rządowej
 
-### Step 4 – Approval in Principle
+### Krok 4 - Zatwierdzenie co do zasady
 
-Residency Malta Agency issues an Approval in Principle letter, typically within 1–3 months of full application submission.
+Agencja Residency Malta wydaje pismo Approval in Principle, zazwyczaj w ciągu 1-3 miesięcy od pełnego złożenia wniosku.
 
-### Step 5 – Complete Financial Obligations
+### Krok 5 - Wypełnienie zobowiązań finansowych
 
-Within 8 months of approval in principle:
-- Complete the qualifying property purchase or sign the 5-year rental agreement
-- Pay the government contribution
-- Pay the €2,000 NGO donation
+W ciągu 8 miesięcy od zatwierdzenia co do zasady:
+- Dokonaj zakupu kwalifikującej się nieruchomości lub podpisz 5-letnią umowę najmu
+- Wpłacenie wkładu rządowego
+- Wpłata darowizny w wysokości 2 000 EUR na rzecz organizacji pozarządowej
 
-### Step 6 – Biometric Enrolment and Residency Card
+### Krok 6 - Rejestracja biometryczna i karta pobytu
 
-You and all family members must visit Malta for biometric enrolment (fingerprinting, photograph). The Residency Malta Agency issues the Malta Permanent Residency Card (credit card format) to each approved family member.
+Ty i wszyscy członkowie rodziny musicie odwiedzić Maltę w celu rejestracji biometrycznej (pobranie odcisków palców, zdjęcie). Agencja Residency Malta wydaje kartę stałego pobytu na Malcie (w formacie karty kredytowej) każdemu zatwierdzonemu członkowi rodziny.
 
-**Total timeline: 4–6 months** from submission to card, assuming straightforward due diligence.
+**Całkowity czas: 4-6 miesięcy** od złożenia wniosku do wydania karty, przy założeniu, że dochowano należytej staranności.
 
-## Costs: Full Financial Summary
+## Koszty: Pełne podsumowanie finansowe
 
-For a typical family of two adults (main applicant + spouse):
+Dla typowej rodziny składającej się z dwóch osób dorosłych (główny wnioskodawca + współmałżonek):
 
-| Cost | Amount |
+| Koszt | Kwota |
 |------|--------|
-| Property purchase (minimum, Malta) | €375,000 |
-| Government contribution | €28,000 |
-| NGO donation | €2,000 |
-| Licensed agent fee | €6,000–€10,000 |
-| Legal / notary fees (property purchase) | ~€6,000 |
-| Stamp duty (property purchase 5%) | €18,750 |
-| Due diligence fees | €5,000–€8,000 |
-| Health insurance (2 adults × €1,500/year) | €3,000/year |
-| **Total at investment (purchase route)** | **~€439,000–€450,000** |
+| Zakup nieruchomości (minimum, Malta) | €375,000 |
+| Wkład rządowy | €28,000 |
+| Darowizna organizacji pozarządowej | €2,000 |
+| Opłata licencjonowanego agenta | €6,000-€10,000 |
+| Opłaty prawne / notarialne (zakup nieruchomości) | ~ €6,000 |
+| Opłata skarbowa (zakup nieruchomości 5%) | €18,750 |
+| Opłaty za badanie due diligence | €5,000-€8,000 |
+| Ubezpieczenie zdrowotne (2 osoby dorosłe × €1,500/rok) | €3,000/rok |
+| **Łączna kwota inwestycji (trasa zakupu)** | **~439.000-€450.000** |
 
-Or on the **rental route** for the same family:
+Lub w przypadku **wynajmu** dla tej samej rodziny:
 
-| Cost | Amount |
+|Koszt |Kwota |
 |------|--------|
-| Rent (5 years × €14,000) | €70,000 |
-| Government contribution | €28,000 |
-| NGO donation | €2,000 |
-| Licensed agent fee | €6,000–€10,000 |
-| Due diligence fees | €5,000–€8,000 |
-| Health insurance | €3,000/year |
-| **Total over 5 years (rent route)** | **~€118,000–€123,000** |
+| Czynsz (5 lat × €14,000) | €70,000 |
+| Wkład rządowy | €28,000 |
+| Darowizna organizacji pozarządowej | €2,000 |
+| Opłata licencjonowanego agenta | €6,000-€10,000 |
+| Opłaty za należytą staranność | €5,000-€8,000 |
+| Ubezpieczenie zdrowotne | €3,000/rok |
+| **Łącznie przez 5 lat (trasa czynszu)** | **~118,000-€123,000** |
 
-The rent route has a far lower upfront cost. The purchase route ties up capital in property but gives you an asset that can appreciate and be used or let after 5 years.
+Opcja wynajmu wiąże się ze znacznie niższymi kosztami początkowymi. Trasa zakupu wiąże kapitał w nieruchomości, ale daje aktywa, które mogą zyskać na wartości i być używane lub wynajmowane po 5 latach.
 
-## MPRP vs Other EU Residency Programmes
+## MPRP a inne programy rezydencyjne w UE
 
-| Programme | Country | Property min | Total cost (approx) | Processing |
+| Program | Kraj | Nieruchomość min | Całkowity koszt (w przybliżeniu) | Przetwarzanie |
 |-----------|---------|-------------|---------------------|------------|
-| **MPRP** | **Malta** | **€375,000** | **€440k–€460k (buy)** | **4–6 months** |
-| Golden Visa | Portugal | €500,000 | €550k–€600k | 12–24 months |
-| Golden Visa | Greece | €250,000 | €280k–€320k | 6–12 months |
-| Golden Visa | Spain | €500,000 | €560k–€620k | 6–12 months |
-| Investor Visa | Cyprus | N/A | Varies | 2–3 months |
+**MPRP** | **Malta** | **375,000€** | **440k- 460k€ (kupno)** | **4-6 miesięcy** |
+| Złota Wiza | Portugalia | €500,000 | €550k-€600k | 12-24 miesięcy |
+| Złota Wiza | Grecja | €250,000 | €280k-€320k | 6-12 miesięcy |
+| Złota Wiza | Hiszpania | €500,000 | €560k-€620k | 6-12 miesięcy |
+| Wiza inwestorska | Cypr | Nie dotyczy | Różne | 2-3 miesiące |
 
-**Malta's advantages over competitors:**
-- English is an official language (significantly easier integration)
-- EU membership and Schengen access
-- No minimum stay requirement (unlike some programmes)
-- Robust legal system, political stability
-- Excellent private healthcare and international schools
+**Przewagi Malty nad konkurencją:**
+- Angielski jest językiem urzędowym (znacznie łatwiejsza integracja)
+- Członkostwo w UE i dostęp do strefy Schengen
+- Brak wymogu minimalnego pobytu (w przeciwieństwie do niektórych programów)
+- Solidny system prawny, stabilność polityczna
+- Doskonała prywatna opieka zdrowotna i międzynarodowe szkoły
 
-**Malta's disadvantages vs competitors:**
-- Greece is cheaper at €250,000 minimum (though Malta's market is more liquid and internationally recognised)
-- Portugal's D7 passive income visa offers residency without property purchase, though at the cost of higher minimum stay requirements
+**Wady Malty na tle konkurencji:**
+- Grecja jest tańsza przy minimum 250 000 EUR (choć rynek Malty jest bardziej płynny i uznany na arenie międzynarodowej)
+- Portugalska wiza D7 zapewniająca pasywny dochód umożliwia pobyt bez konieczności zakupu nieruchomości, choć wiąże się to z wyższymi wymogami dotyczącymi minimalnego pobytu
 
-## Tax Implications for MPRP Holders
+## Skutki podatkowe dla posiadaczy MPRP
 
-Holding Maltese permanent residency does **not** automatically make you a Maltese tax resident. Tax residency in Malta is determined separately, based on:
-- Being ordinarily resident in Malta (main home in Malta)
-- Spending 183+ days in Malta in a calendar year
+Posiadanie stałego pobytu na Malcie nie **automatycznie** czyni cię maltańskim rezydentem podatkowym. Rezydencja podatkowa na Malcie jest określana oddzielnie, na podstawie
+- Zwykłe miejsce zamieszkania na Malcie (główny dom na Malcie)
+- Spędzenie ponad 183 dni na Malcie w roku kalendarzowym
 
-**If you are not tax resident in Malta:** Maltese law does not tax non-domiciled residents on foreign-source income that is not remitted to Malta. This is the basis of the "non-dom" regime and can be highly advantageous for wealthy individuals.
+**Jeśli nie jesteś rezydentem podatkowym na Malcie:** Prawo maltańskie nie opodatkowuje dochodów z zagranicznych źródeł, które nie są przekazywane na Maltę. Jest to podstawa systemu "non-dom" i może być bardzo korzystna dla zamożnych osób.
 
-**If you do become tax resident:** Malta's Global Residence Programme (GRP) and Malta Retirement Programme (MRP) offer flat-rate tax schemes for qualifying individuals.
+**Jeśli zostaniesz rezydentem podatkowym:** Maltański Globalny Program Rezydencji (GRP) i Maltański Program Emerytalny (MRP) oferują zryczałtowane systemy podatkowe dla kwalifikujących się osób.
 
-We strongly recommend engaging a Maltese tax adviser before applying for MPRP if you have complex international income or asset structures.
+Zdecydowanie zalecamy zaangażowanie maltańskiego doradcy podatkowego przed złożeniem wniosku o MPRP, jeśli masz złożone międzynarodowe struktury dochodów lub aktywów.
 
-## Properties That Qualify for MPRP
+## Nieruchomości kwalifikujące się do MPRP
 
-Any residential property in Malta (or Gozo) can qualify for MPRP, provided it meets the minimum value threshold. However, programme applicants most commonly purchase in:
+Każda nieruchomość mieszkalna na Malcie (lub Gozo) może kwalifikować się do MPRP, pod warunkiem, że spełnia minimalny próg wartości. Jednak wnioskodawcy programu najczęściej dokonują zakupu w:
 
-**Most popular MPRP purchase locations:**
-- Sliema and St Julian's (most liquid, strong resale)
-- Valletta (prestigious address, appreciation potential)
-- SDA developments (Portomaso, Tigné Point) – no AIP restriction and confirmed quality
-- Mellieħa (lifestyle, villa options above €375k)
-- Gozo (lower threshold at €320k opens more options)
+**Najpopularniejsze lokalizacje zakupu MPRP:**
+- Sliema i St Julian's (najbardziej płynne, silna odsprzedaż)
+- Valletta (prestiżowy adres, potencjał wzrostu wartości)
+- Osiedla SDA (Portomaso, Tigné Point) - brak ograniczeń AIP i potwierdzona jakość
+- Mellieħa (styl życia, opcje willi powyżej 375 tys. euro)
+- Gozo (niższy próg przy 320 tys. euro otwiera więcej opcji)
 
-**Practical tip:** If you plan to live in the property, prioritise your lifestyle preferences. If it is a pure programme investment, prioritise liquidity and resale value – Sliema and St Julian's will always be the easiest to exit.
+**Praktyczna wskazówka:** Jeśli planujesz mieszkać w nieruchomości, nadaj priorytet swoim preferencjom dotyczącym stylu życia. Jeśli jest to inwestycja czysto programowa, priorytetem jest płynność i wartość odsprzedaży - Sliema i St Julian's zawsze będą najłatwiejsze do wyjścia.
 
-## Frequently Asked Questions
+## Często zadawane pytania
 
-### Can I include my parents in an MPRP application?
-Yes. Dependent parents and grandparents of the main applicant (or spouse) who are over 55 can be included. Each adds €7,500 to the government contribution. They must be financially dependent on the main applicant.
+### Czy mogę włączyć moich rodziców do wniosku MPRP?
+Tak. Rodzice i dziadkowie pozostający na utrzymaniu głównego wnioskodawcy (lub współmałżonka), którzy ukończyli 55 lat, mogą zostać uwzględnieni. Każdy z nich dodaje 7 500 € do składki rządowej. Muszą oni być zależni finansowo od głównego wnioskodawcy.
 
-### Do I need to live in Malta to maintain MPRP status?
-No minimum stay is required. You can maintain MPRP status without residing in Malta, as long as you maintain the qualifying property or rental and comply with annual reporting requirements to the Residency Malta Agency.
+### Czy muszę mieszkać na Malcie, aby utrzymać status MPRP?
+Nie jest wymagany minimalny pobyt. Możesz utrzymać status MPRP bez zamieszkiwania na Malcie, o ile utrzymujesz kwalifikującą się nieruchomość lub wynajem i spełniasz roczne wymagania dotyczące raportowania do Residency Malta Agency.
 
-### Can MPRP lead to Maltese citizenship?
-MPRP does not provide a direct pathway to citizenship. Malta citizenship can be pursued separately through the Malta Exceptional Investor Naturalisation (MEIN) programme (minimum 1–3 year residency required, very high investment threshold) or through ordinary naturalisation (5+ years lawful residence). These are entirely separate processes.
+### Czy MPRP może prowadzić do obywatelstwa maltańskiego?
+MPRP nie zapewnia bezpośredniej ścieżki do obywatelstwa. O obywatelstwo maltańskie można ubiegać się oddzielnie w ramach programu naturalizacji wyjątkowych inwestorów maltańskich (MEIN) (wymagany minimalny okres pobytu 1-3 lata, bardzo wysoki próg inwestycji) lub poprzez zwykłą naturalizację (ponad 5 lat legalnego pobytu). Są to całkowicie odrębne procesy.
 
-### What happens after the 5-year property holding period?
-After 5 years, you may sell the property. However, you must maintain qualifying residency in Malta (through continued property ownership or rental of a qualifying value) to retain your permanent residency status. If you liquidate your qualifying property and do not replace it, your residency status may be reviewed.
+### Co dzieje się po 5-letnim okresie posiadania nieruchomości?
+Po 5 latach można sprzedać nieruchomość. Musisz jednak utrzymać kwalifikujący się pobyt na Malcie (poprzez dalsze posiadanie lub wynajem nieruchomości o kwalifikującej się wartości), aby zachować status stałego pobytu. Jeśli zlikwidujesz kwalifikującą się nieruchomość i jej nie wymienisz, Twój status rezydenta może zostać poddany przeglądowi.
 
-### Is Malta MPRP affected by EU sanctions or geopolitical changes?
-Residency Malta Agency maintains a list of excluded nationalities based on EU and Maltese government guidance. This list is updated periodically. Applications from sanctioned or high-risk nationals may be refused regardless of financial qualification. Always check the current eligibility list with a licensed agent.
+### Czy na Malta MPRP mają wpływ sankcje UE lub zmiany geopolityczne?
+Agencja Residency Malta prowadzi listę wykluczonych narodowości w oparciu o wytyczne UE i rządu maltańskiego. Lista ta jest okresowo aktualizowana. Wnioski obywateli objętych sankcjami lub obywateli wysokiego ryzyka mogą zostać odrzucone niezależnie od kwalifikacji finansowych. Zawsze sprawdzaj aktualną listę kwalifikowalności u licencjonowanego agenta.
 
-### What is the difference between MPRP and the old MRVP?
-The MRVP (Malta Residence and Visa Programme) was closed to new applications in 2021 when MPRP launched. MPRP has higher minimum investment thresholds and stricter due diligence but offers true permanent residency rather than a renewable permit.
+### Jaka jest różnica między MPRP a starym MRVP?
+MRVP (Malta Residence and Visa Programme) został zamknięty dla nowych wniosków w 2021 r., kiedy uruchomiono MPRP. MPRP ma wyższe minimalne progi inwestycyjne i bardziej rygorystyczne zasady należytej staranności, ale oferuje prawdziwy pobyt stały, a nie odnawialne zezwolenie.
 
-## Ready to Explore MPRP-Qualifying Properties?
+## Gotowy do zapoznania się z nieruchomościami kwalifikującymi się do MPRP?
 
-Malta Luxury Real Estate curates properties that meet and exceed the MPRP minimum thresholds, with full agency support and connections to licensed MPRP agents.
+Malta Luxury Real Estate wybiera nieruchomości, które spełniają i przekraczają minimalne progi MPRP, z pełnym wsparciem agencji i połączeniami z licencjonowanymi agentami MPRP.
 
-- [Properties for Sale in Sliema (from €375,000)](/properties/sliema/for-sale)
-- [Properties for Sale in Valletta](/properties/valletta/for-sale)
-- [SDA Properties – No AIP Required](/properties/malta/sda)
-- [Gozo Properties (from €320,000)](/properties/gozo/for-sale)
-- [Contact our team for MPRP guidance](/contact)
+- [Nieruchomości na sprzedaż w Sliema (od €375,000)](/properties/sliema/for-sale)
+- [Nieruchomości na sprzedaż w Valletcie](/properties/valletta/for-sale)
+- [Nieruchomości SDA - nie wymaga AIP](/properties/malta/sda)
+- [Nieruchomości na Gozo (od 320 000 EUR)](/properties/gozo/for-sale)
+- [Skontaktuj się z naszym zespołem, aby uzyskać wskazówki dotyczące MPRP](/contact)
 
-*Last updated: March 2026. MPRP requirements, thresholds, and procedures are set by the Residency Malta Agency and subject to change. Always verify current requirements with a licensed MPRP agent before commencing an application.*
+*Ostatnia aktualizacja: Marzec 2026 r. Wymagania, progi i procedury MPRP są ustalane przez Maltańską Agencję Rezydencji i mogą ulec zmianie. Przed rozpoczęciem składania wniosku należy zawsze zweryfikować aktualne wymagania z licencjonowanym agentem MPRP

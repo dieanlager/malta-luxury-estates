@@ -8,9 +8,9 @@ date: "March 2026"
 readTime: "9 min read"
 author: "Malta Luxury Real Estate"
 slug: "buying-process-malta-2026"
+localizedSlug: "immobilienkauf-prozess-malta-2026"
 lang: de
-translatedFrom: en
-translatedAt: 2026-03-06
+readTime: "9 Min. Lesezeit"
 ---
 
 Der Immobilienkauf auf Malta ist unkompliziert, basiert jedoch auf britischen und römischen Rechtssystemen. Egal, ob Sie ein maltesischer Erstkäufer, ein umziehender EU-Bürger oder ein digitaler Nomade sind – der Prozess folgt denselben drei rechtlichen Schritten.

@@ -1,56 +1,55 @@
 ---
-title: "Restoring a Historic Palazzo in Malta: Challenges and Rewards"
+title: "Renowacja zabytkowego pałacu na Malcie: Wyzwania i nagrody"
 category: "Legal"
-excerpt: "Owning a piece of history is a dream for many. We guide you through the process of restoring a Maltese palazzo, including permits and incentives."
-metaDescription: "Complete guide to restoring historic Palazzos in Malta. Learn about Grade 1 protection, Planning Authority permits, and 2026 tax incentives."
+excerpt: "Posiadanie kawałka historii jest marzeniem wielu osób. Przeprowadzimy Cię przez proces renowacji maltańskiego pałacu, w tym przez proces uzyskiwania pozwoleń i zachęt."
+metaDescription: "Kompletny przewodnik po renowacji zabytkowych pałaców na Malcie. Dowiedz się więcej o ochronie klasy 1, zezwoleniach urzędu planowania przestrzennego i zachętach podatkowych na rok 2026."
 image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "16 min read"
+readTime: "16 min czytania"
 author: "Malta Luxury Real Estate Heritage Team"
 slug: "restoring-historic-palazzo-malta-guide"
+localizedSlug: "renowacja-zabytkowego-paacu-na-malcie-wyzwania-i"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Restoring a Historic Palazzo in Malta: Challenges and Rewards
+# Przywrócenie historycznego pałacu na Malcie: Wyzwania i nagrody
 
-Malta is one of the few places in the world where you can still buy a 17th or 18th-century "Palazzo"—a grand noble residence—for the price of a luxury apartment in London or New York. However, buying one is just the start. The restoration is a labor of love that requires patience, a great architect, and a deep respect for heritage.
+Malta jest jednym z niewielu miejsc na świecie, gdzie nadal można kupić XVII- lub XVIII-wieczny "Palazzo" - wielką rezydencję szlachecką - za cenę luksusowego apartamentu w Londynie lub Nowym Jorku. Jednak zakup to dopiero początek. Renowacja to dzieło miłości, które wymaga cierpliwości, świetnego architekta i głębokiego szacunku dla dziedzictwa.
 
-## 1. What Defines a Palazzo?
-In Malta, a *Palazzo* isn't just a big house. Key features include:
-*   **High Ceilings:** Often 4 to 6 meters high.
-*   **Central Courtyard:** The heart of the home, providing light and ventilation.
-*   **Sala Nobile:** The majestic first-floor drawing room with ornate carvings.
-*   **Stone Features:** Globigerina limestone walls, often with hand-carved balconies.
-
----
-
-## 2. Navigating the Planning Authority (PA) and SCH
-Historic buildings in Malta are "Scheduled." There are three levels:
-*   **Grade 1:** National importance. Total preservation required. Very difficult to change layout.
-*   **Grade 2:** High importance. Internal changes possible, façade must remain untouched. Most Palazzos fall here.
-*   **Grade 3:** Relative importance. More flexible for modern extensions.
-
-You will need an architect who specializes in **Conservation and Restoration**. They will work with the **Superintendence of Cultural Heritage (SCH)** to ensure your plans don't damage the building's soul.
+## 1. Co definiuje pałac?
+Na Malcie *Palazzo* to nie tylko duży dom. Kluczowe cechy obejmują:
+*   **Wysokie sufity:** często od 4 do 6 metrów wysokości.
+*   **Centralny dziedziniec:** Serce domu, zapewniające światło i wentylację.
+*   **Sala Nobile:** Majestatyczny salon na pierwszym piętrze z ozdobnymi rzeźbieniami.
+*   **Kamienne elementy:** Ściany z wapienia Globigerina, często z ręcznie rzeźbionymi balkonami.
 
 ---
 
-## 3. The Restoration Process: Key Steps
-1.  **Structural Stabilization:** Checking the "Xlokk" (damp) and ensuring the foundations are sound.
-2.  **Stone Cleaning:** Using specialized chemical-free methods to restore the golden glow of the limestone.
-3.  **Modern Integration:** The hardest part—hiding air conditioning, plumbing, and high-speed internet inside 200-year-old stone walls.
-4.  **Traditional Crafts:** Hiring *bocciari* (stone masons) and *mastri* (carpenters) who still use traditional Maltese techniques.
+## 2. Poruszanie się po Urzędzie Planowania (PA) i SCH
+Historyczne budynki na Malcie są "wpisane do rejestru" Istnieją trzy poziomy:
+*   **Stopień 1:** Znaczenie krajowe. Wymagana całkowita konserwacja. Bardzo trudno zmienić układ.
+*   **Stopień 2:** Duże znaczenie. Możliwe zmiany wewnętrzne, fasada musi pozostać nietknięta. Większość pałaców zalicza się do tej kategorii.
+*   **Stopień 3:** Względne znaczenie. Większa elastyczność w przypadku nowoczesnych rozszerzeń.
+
+Potrzebny będzie architekt specjalizujący się w **konserwacji i restauracji**. Będą oni współpracować z **Nadzorem Dziedzictwa Kulturowego (SCH)**, aby upewnić się, że twoje plany nie zniszczą duszy budynku.
 
 ---
 
-## 4. 2026 Financial Incentives
-The government currently offers the **"Irrestawra Darek"** scheme, which provides grants and tax refunds for:
-*   Façade restoration in Urban Conservation Areas (UCAs).
-*   Zero Stamp Duty on the first €750,000 of the purchase price.
-*   Exemption from VAT on restoration services.
+## 3. Proces renowacji: Kluczowe kroki
+1.  **Stabilizacja strukturalna:** Sprawdzenie "Xlokk" (wilgoci) i upewnienie się, że fundamenty są zdrowe.
+2.  **Czyszczenie kamienia:** Użycie specjalistycznych metod wolnych od chemikaliów w celu przywrócenia złotego blasku wapienia.
+3.  **Nowoczesna integracja:** Najtrudniejsza część - ukrycie klimatyzacji, instalacji wodno-kanalizacyjnej i szybkiego Internetu w 200-letnich kamiennych ścianach.
+4.  **Tradycyjne rzemiosło:** Zatrudnianie *bocciari* (kamieniarzy) i *mastri* (stolarzy), którzy wciąż używają tradycyjnych maltańskich technik.
 
-## Why Do It?
-A restored Palazzo in Valletta or Mdina is more than just a home; it’s a trophy asset. As land becomes scarcer, these unique historic gems are appreciating at rates far higher than modern construction.
+---
 
-**Are you ready to become a custodian of Maltese history? [View our Heritage Portfolio](mailto:info@maltaluxuryrealestate.com).**
+## 4. 2026 Zachęty finansowe
+Rząd oferuje obecnie program **"Irrestawra Darek "**, który zapewnia dotacje i zwroty podatków na:
+*   Renowację elewacji w miejskich strefach ochrony konserwatorskiej (UCA).
+*   Zerowa opłata skarbowa od pierwszych €750,000 ceny zakupu.
+*   Zwolnienie z podatku VAT na usługi renowacyjne.
+
+## Dlaczego warto to zrobić?
+Odrestaurowany Palazzo w Valletcie lub Mdinie to coś więcej niż tylko dom; to trofeum. Ponieważ grunty stają się coraz rzadsze, te unikalne historyczne klejnoty zyskują na wartości w tempie znacznie wyższym niż nowoczesne budownictwo.
+
+**Czy jesteś gotowy, aby stać się kustoszem maltańskiej historii? [Zobacz nasze portfolio dziedzictwa](mailto:info@maltaluxuryrealestate.com).**

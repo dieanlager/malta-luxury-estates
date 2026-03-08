@@ -53,6 +53,10 @@
         "locations_grid": {
             "title": "Explore by Location",
             "subtitle": "Discover the unique character of Malta's most prestigious areas."
+        },
+        "insights": {
+            "title": "Strategic Investment Insights",
+            "subtitle": "Expert guidance for international investors and residency seekers."
         }
     },
     "footer": {
@@ -100,7 +104,59 @@
         "home": "Home",
         "tools": "Tools",
         "live_feed": "Live Feed",
-        "listings_count": "{{count}} listings"
+        "listings_count": "{{count}} listings",
+        "read_guide": "Read Guide",
+        "efficiency_audit": "EPC Audit",
+        "quiet_score": "Quiet Score",
+        "find_twin": "Find Twin"
+    },
+    "interactive": {
+        "epc": {
+            "title": "Green Efficiency Intelligence",
+            "subtitle": "2026 EU Energy Standards Audit",
+            "current_rating": "Current Rating",
+            "bank_premium": "Bank Premium",
+            "bank_note": "Available via green bank schemes (BOV/HSBC Green Loans)",
+            "upgrade_cost": "Upgrade Cost",
+            "annual_savings": "Annual Savings",
+            "payback_period": "Payback Period",
+            "resale_premium_title": "Resale Premium",
+            "resale_premium_desc": "Projected value increase for A/B rating in 2026/27",
+            "disclaimer": "Calculations based on 2026 energy prices and standard solar/thermal insulation retrofit costs in the Maltese islands.",
+            "elite": "Elite Efficiency",
+            "years": "{{count}} Years"
+        },
+        "noise": {
+            "title": "Smart Sound Assessment",
+            "subtitle": "Malta Environmental Noise Audit v2.0",
+            "score_label": "Quiet Score",
+            "exceptional": "Exceptional tranquility. Ideal for remote work and deep rest.",
+            "standard": "Standard urban soundscape. Managed traffic and moderate activity.",
+            "high": "High-activity zone. Vibrant nightlife or key transport arterial.",
+            "traffic": "Traffic",
+            "nightlife": "Nightlife",
+            "construction": "Construction",
+            "aviation": "Aviation",
+            "intensity": "Intensity",
+            "surroundings": "Surroundings",
+            "risk": "Risk",
+            "flight_path": "Within Flight Path",
+            "outside_flight_path": "Outside Flight Path",
+            "verified_desc": "Verified via 2026 satellite acoustic mapping & local council noise ordinance data.",
+            "disclaimer": "Quiet scores are normalized across the Maltese islands."
+        },
+        "twin": {
+            "title": "AI Property Twin Finder",
+            "subtitle": "Our neural engine analyzes lifestyle patterns, architectural DNA, and neighborhood vibes to find properties that perfectly match your selection.",
+            "analyzing": "Analyzing Layout DNA...",
+            "analyzing_subtitle": "Deconstructing features and neighborhood indices",
+            "match_confidence": "Match Confidence",
+            "why_title": "Why this Twin?",
+            "why_desc": "Matches your interest in {{type}} in {{location}}. Shared features such as {{f1}} and {{f2}}.",
+            "explore_button": "Explore This Twin",
+            "footer_note": "Neural engine calibrated to Malta Market Index 2026",
+            "close": "Close"
+        }
     },
     "locations": {
         "Sliema": "Sliema",

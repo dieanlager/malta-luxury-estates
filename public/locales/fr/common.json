@@ -111,7 +111,11 @@
         "home": "Home",
         "tools": "Outils",
         "live_feed": "Flux en Direct",
-        "listings_count": "{{count}} annonces"
+        "listings_count": "{{count}} annonces",
+        "read_guide": "Lire le Guide",
+        "efficiency_audit": "Audit EPC",
+        "quiet_score": "Score de Tranquillité",
+        "find_twin": "Trouver un Jumeau"
     },
     "locations": {
         "Sliema": "Sliema",
@@ -759,6 +763,50 @@
             "rental_demand": "Demande Locative",
             "growth_desc": "La valeur moyenne des propriétés à {{location}} a augmenté de 6,2 % au cours des 12 derniers mois.",
             "demand_desc": "La forte demande de locations de luxe garantit des rendements constants pour les propriétaires dans cette région."
+        }
+    },
+    "interactive": {
+        "epc": {
+            "title": "Intelligence d'Efficacité Énergétique",
+            "subtitle": "Audit des Standards Énergétiques UE 2026",
+            "audit_standard": "Audit des Standards Énergétiques UE 2026",
+            "current_rating": "Évaluation Actuelle",
+            "bank_bonus": "Prime Bancaire",
+            "loan_scheme": "Disponible via les programmes de prêt vert",
+            "upgrade_cost": "Coût de mise à niveau",
+            "yearly_savings": "Économies annuelles",
+            "payback_period": "Période d'amortissement",
+            "resale_premium": "Prime à la revente",
+            "value_increase": "Augmentation de valeur projetée",
+            "energy_calc_note": "Calculs basés sur les prix de l'énergie 2026",
+            "elite_efficiency": "Efficacité Élite"
+        },
+        "noise": {
+            "title": "Évaluation Sonore Intelligente",
+            "subtitle": "Audit du Bruit Environnemental de Malte v2.0",
+            "tranquility_score": "Score de Tranquillité",
+            "tranquility_elite": "Tranquillité exceptionnelle",
+            "tranquility_standard": "Paysage sonore urbain standard",
+            "tranquility_active": "Zone à haute activité",
+            "traffic": "Trafic",
+            "nightlife": "Vie nocturne",
+            "construction": "Chantiers",
+            "aviation": "Aviation",
+            "intensity": "Intensité",
+            "surroundings": "Environs",
+            "risk": "Risque",
+            "flight_path": "Couloir aérien",
+            "off_path": "Hors couloir aérien",
+            "verified_sat": "Vérifié par cartographie acoustique satellite 2026"
+        },
+        "twin": {
+            "title": "Recherche de Jumeau Immobilier par IA",
+            "subtitle": "Notre moteur neural analyse les modes de vie pour trouver votre propriété parallèle parfaite.",
+            "layout_dna": "Analyse de l'ADN de l'aménagement...",
+            "match_confidence": "Confiance du Match",
+            "why_twin": "Pourquoi ce jumeau ?",
+            "match_reason": "Correspond à votre intérêt pour {{type}} à {{location}}. Partage des caractéristiques comme {{f1}} et {{f2}}.",
+            "explore_twin": "Explorer ce jumeau"
         }
     }
 }

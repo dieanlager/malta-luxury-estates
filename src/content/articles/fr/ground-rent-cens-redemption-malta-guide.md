@@ -1,50 +1,49 @@
 ---
-title: "How to Redeem Ground Rent (Ċens) in Malta: A 2026 Guide"
+title: "Comment racheter le loyer foncier (Ċens) à Malte : Guide 2026"
 category: "Legal"
-excerpt: "Confused by perpetual vs temporary ground rent? Learn how to calculate the redemption price and become the full owner of your Maltese property."
-metaDescription: "Complete 2026 guide to redeeming ground rent (Ċens) in Malta. Learn about the 20x formula, perpetual vs temporary ċens, and legal procedures."
+excerpt: "Le loyer foncier perpétuel et le loyer foncier temporaire vous laissent perplexe ? Apprenez à calculer le prix de rachat et devenez pleinement propriétaire de votre bien immobilier à Malte."
+metaDescription: "Guide complet 2026 sur le rachat de la rente foncière (Ċens) à Malte. En savoir plus sur la formule 20x, les ċens perpétuels et temporaires, et les procédures légales."
 image: "https://images.unsplash.com/photo-1589232390691-562095ce0970?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "13 min read"
+readTime: "13 min de lecture"
 author: "Malta Luxury Real Estate Legal Desk"
 slug: "ground-rent-cens-redemption-malta-guide"
+localizedSlug: "comment-racheter-le-loyer-foncier-cens-a"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# How to Redeem Ground Rent (Ċens) in Malta: A 2026 Guide
+# Comment racheter le loyer foncier (Ċens) à Malte : Guide 2026
 
-If you are browsing property listings in Malta, you will often see terms like **"Freehold"** vs. **"Ground Rent"** (known locally as *Ċens*). For many international buyers, ground rent is a confusing relic of the past, but understanding it—and knowing how to redeem it—can save you thousands of euros.
+Si vous parcourez les annonces immobilières à Malte, vous verrez souvent des termes comme **"Freehold "** vs **"Ground Rent "** (connu localement sous le nom de *Ċens*). Pour de nombreux acheteurs internationaux, le loyer foncier est une relique du passé qui prête à confusion, mais le comprendre et savoir comment l'encaisser peut vous faire économiser des milliers d'euros.
 
-## 1. What is Ground Rent (Ċens)?
-Ground rent is an annual fee paid by the property owner to a "superior" owner (the *Dominus*). This could be the government, the Church, or a private family.
-*   **Perpetual Ground Rent:** Lasts forever. You pay a small fee every year.
-*   **Temporary Ground Rent:** Lasts for a fixed term (e.g., 99 years). When the term ends, the property technically reverts to the original owner.
-
----
-
-## 2. The 20x Formula: How to Redeem
-The good news is that under Maltese law, most **perpetual** ground rents can be "redeemed." This means you pay a lump sum to cancel the yearly fee forever, making the property **Freehold**.
-*   **The Calculation:** Simply multiply the annual ground rent by **20**.
-*   **Example:** If your annual ċens is €50, you can redeem it for €1,000 (€50 x 20).
-
-> **Note:** There is usually an additional fee for the Notary to register the redemption deed at the Public Registry.
+## 1. Qu'est-ce que la rente foncière (Ċens) ?
+Le loyer foncier est une redevance annuelle payée par le propriétaire d'un bien immobilier à un propriétaire "supérieur" (le *Dominus*). Il peut s'agir du gouvernement, de l'Église ou d'une famille privée.
+*   **La rente foncière perpétuelle : elle est éternelle. Vous payez une petite redevance chaque année.
+*   **Loyer temporaire:**La durée est déterminée (par exemple, 99 ans). À l'issue de cette période, la propriété revient techniquement au propriétaire d'origine.
 
 ---
 
-## 3. Temporary Ground Rent: The Complexity
-Redeeming **temporary** ground rent is more complex. You cannot simply use the 20x formula. You must wait for a government "Scheme" to open or negotiate directly with the owner to convert it to perpetual or freehold.
-*   **Risk:** If you buy a property with only 10 years of temporary ground rent left, you could lose the property or be forced to pay a massive fee to renew it. **Always check the remaining term.**
+## 2. La formule 20x : Comment racheter
+La bonne nouvelle, c'est qu'en vertu de la loi maltaise, la plupart des loyers fonciers **perpétuels** peuvent être "rachetés" Cela signifie que vous payez une somme forfaitaire pour annuler la redevance annuelle pour toujours, ce qui rend la propriété **libre**.
+*   **Le calcul:** Il suffit de multiplier le loyer foncier annuel par **20**.
+*   **Exemple:** Si votre loyer annuel est de 50 €, vous pouvez le racheter pour 1 000 € (50 € x 20).
+
+**Note:** Il y a généralement des frais supplémentaires pour que le notaire enregistre l'acte de rachat au registre public.
 
 ---
 
-## 4. Why Should You Redeem?
-1.  **Bank Mortgages:** Banks in Malta are hesitant to give mortgages on properties with high or temporary ground rent.
-2.  **Market Value:** Freehold properties are easier to sell and command a 5-10% higher price than those with ċens.
-3.  **Peace of Mind:** You eliminate the risk of a "recognition fee" (Laudemium) being charged every time the property changes hands.
+## 3. Loyer foncier temporaire : la complexité
+Le rachat d'un loyer foncier **temporaire** est plus complexe. Vous ne pouvez pas simplement utiliser la formule 20x. Vous devez attendre l'ouverture d'un "programme" gouvernemental ou négocier directement avec le propriétaire pour le convertir en propriété perpétuelle ou en pleine propriété.
+*   **Si vous achetez un bien immobilier auquel il ne reste que 10 ans de loyer temporaire, vous risquez de le perdre ou d'être contraint de payer des frais considérables pour le renouveler. **Vérifiez toujours la durée restante
 
-## Summary
-Never ignore the *Ċens* column in a contract. If it's perpetual and small, redeem it immediately after your purchase. If it's temporary, consult a lawyer before signing the *konvenju*.
+---
 
-**Confused by a contract? [Get a free legal review from our partners](mailto:legal@maltaluxuryrealestate.com).**
+## 4. Pourquoi racheter ?
+1.  **Les banques maltaises hésitent à accorder des prêts hypothécaires sur des propriétés dont le loyer est élevé ou temporaire.
+2.  **Valeur marchande:** Les propriétés en pleine propriété sont plus faciles à vendre et leur prix est de 5 à 10% plus élevé que celui des propriétés avec un loyer foncier.
+3.  **Tranquillité d'esprit:** Vous éliminez le risque qu'un "droit de reconnaissance" (Laudemium) vous soit facturé à chaque fois que le bien change de mains.
+
+## Résumé
+N'ignorez jamais la colonne *Ċens* d'un contrat. S'il s'agit d'un contrat perpétuel et de faible montant, rachetez-le immédiatement après l'achat. S'il est temporaire, consultez un avocat avant de signer le *konvenju*.
+
+**Un contrat vous laisse perplexe ? [Obtenez un avis juridique gratuit de nos partenaires] (mailto:legal@maltaluxuryrealestate.com).**

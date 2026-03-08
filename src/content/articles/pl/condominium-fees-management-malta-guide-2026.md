@@ -1,46 +1,45 @@
 ---
-title: "Condominium Fees & Management in Malta: A 2026 Guide"
+title: "Opłaty i zarządzanie kondominium na Malcie: Przewodnik 2026"
 category: "Legal"
-excerpt: "Who pays for the elevator? How are common area costs split? We explain the Condominium Act and your rights as a property owner."
-metaDescription: "Manage your condo costs in Malta. Guide to the Condominium Act, administrator duties, common area fees, and dispute resolution for 2026."
+excerpt: "Kto płaci za windę? Jak dzielone są koszty części wspólnych? Wyjaśniamy ustawę o kondominium i Twoje prawa jako właściciela nieruchomości."
+metaDescription: "Zarządzanie kosztami mieszkania na Malcie. Przewodnik po ustawie o kondominium, obowiązkach administratora, opłatach za część wspólną i rozstrzyganiu sporów w 2026 r."
 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "10 min read"
+readTime: "10 min czytania"
 author: "Malta Luxury Real Estate Property Management"
 slug: "condominium-fees-management-malta-guide-2026"
+localizedSlug: "opaty-i-zarzadzanie-kondominium-na-malcie-przewodnik"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Condominium Fees & Management in Malta: A 2026 Guide
+# Opłaty i zarządzanie kondominium na Malcie: Przewodnik 2026
 
-When you buy an apartment in a block, you are also buying into a "Condominium." This means you share the ownership (and the costs) of the common areas—the entrance, the stairs, the elevator, and the roof.
+Kupując mieszkanie w bloku, kupujesz również "kondominium" Oznacza to, że dzielisz własność (i koszty) części wspólnych - wejścia, schodów, windy i dachu.
 
-## 1. The Condominium Act
-Under Maltese law, every block with more than 3 units must have an **Administrator**.
-*   **Role:** They collect fees, pay the electricity for the hallway, manage elevator maintenance, and ensure the block is clean.
-*   **Meetings:** An Annual General Meeting (AGM) must be held where owners vote on the budget.
-
----
-
-## 2. Typical Fees in 2026
-Fees are usually calculated based on the "shares" (percentage of the building) your apartment owns. 
-*   **Standard Block (no pool):** €300 - €600 per year.
-*   **Luxury Block (with pool/gym/security):** €1,500 - €3,500 per year.
-*   **Special Designated Areas (SDA):** Can be higher, but include 5-star maintenance and 24/7 security.
+## 1. Ustawa o kondominium
+Zgodnie z prawem maltańskim, każdy blok z więcej niż 3 jednostkami musi mieć **Administratora**.
+*   **Rola:** Zbiera on opłaty, płaci za prąd w korytarzu, zarządza konserwacją windy i dba o czystość bloku.
+*   **Spotkania:** Musi odbyć się doroczne walne zgromadzenie (AGM), na którym właściciele głosują nad budżetem.
 
 ---
 
-## 3. What Happens if You Don't Pay?
-The Administrator has the legal right to register a "caution" (charge) against your property. This means you **cannot sell the apartment** until the debt is cleared.
+## 2. Typowe opłaty w 2026 r
+Opłaty są zwykle obliczane na podstawie "udziałów" (procentu budynku) posiadanego mieszkania.
+*   **Blok standardowy (bez basenu):** 300-600 euro rocznie.
+*   **Luksusowy blok (z basenem/siłownią/ochroną):** €1,500 - €3,500 rocznie.
+*   **Specjalnie wyznaczone obszary (SDA):** Mogą być wyższe, ale obejmują 5-gwiazdkową konserwację i całodobową ochronę.
 
-## 4. Troubleshooting: Common Disputes
-1.  **The Noisy Neighbor:** Condominium rules usually have "Silent Hours" (e.g., 10 PM - 7 AM).
-2.  **Roof Access:** Unless specified in your deed, the roof is common area.
-3.  **Renovations:** You must inform the administrator before doing any work that affects the common areas or the building’s façade.
+---
 
-## Summary
-A well-managed condominium protects your property's value. Before you buy, always ask to see the last two years of "Condo Accounts" to ensure there are no hidden debts or major upcoming repairs (like elevator replacement).
+## 3. Co się stanie, jeśli nie zapłacisz?
+Administrator ma prawo do zarejestrowania "ostrzeżenia" (obciążenia) wobec nieruchomości. Oznacza to, że **nie możesz sprzedać mieszkania**, dopóki dług nie zostanie spłacony.
 
-**Need a property management contact? [We manage over 200 blocks across Malta](mailto:management@maltaluxuryrealestate.com).**
+## 4. Rozwiązywanie problemów: Najczęstsze spory
+1.  **Hałaśliwy sąsiad:** Zasady dotyczące mieszkań własnościowych zazwyczaj przewidują "ciche godziny" (np. od 22:00 do 7:00 rano).
+2.  **Dostęp do dachu:** O ile nie określono inaczej w akcie notarialnym, dach jest częścią wspólną.
+3.  **Remonty:** Przed wykonaniem jakichkolwiek prac mających wpływ na części wspólne lub fasadę budynku należy poinformować o tym administratora.
+
+## Podsumowanie
+Dobrze zarządzane kondominium chroni wartość nieruchomości. Przed zakupem zawsze należy poprosić o wgląd do "Condo Accounts" z ostatnich dwóch lat, aby upewnić się, że nie ma żadnych ukrytych długów lub poważnych nadchodzących napraw (takich jak wymiana windy).
+
+**Potrzebujesz kontaktu w sprawie zarządzania nieruchomością? [Zarządzamy ponad 200 blokami na całej Malcie](mailto:management@maltaluxuryrealestate.com).**

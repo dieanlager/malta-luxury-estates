@@ -1,50 +1,49 @@
 ---
-title: "Ein Leitfaden zur Rückzahlung von Grundrente (Ċens) in Malta: Ein Leitfaden für das Jahr 2026"
+title: "Wie man Erbpacht (Ċens) in Malta einlöst: Ein Leitfaden für 2026"
 category: "Legal"
-excerpt: "Sind Sie verwirrt durch die Begriffe „ewige“ und „befristete“ Grundrente? Erfahren Sie, wie Sie den Rückkaufpreis berechnen und vollständiger Eigentümer Ihrer Immobilie in Malta werden können."
-metaDescription: "Umfassender Leitfaden für 2026 zur Rückzahlung von Grundrente (Ċens) in Malta. Erfahren Sie mehr über die 20x-Formel, unbefristete vs. befristete ċens und rechtliche Verfahren."
+excerpt: "Verwirrt durch unbefristete oder befristete Erbpacht? Erfahren Sie, wie Sie den Ablösungspreis berechnen und Eigentümer Ihrer maltesischen Immobilie werden können."
+metaDescription: "Vollständiger Leitfaden 2026 zur Ablösung von Erbbauzinsen (Ċens) in Malta. Erfahren Sie mehr über die 20-fache Formel, unbefristete vs. befristete ċens und rechtliche Verfahren."
 image: "https://images.unsplash.com/photo-1589232390691-562095ce0970?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "13 min read"
+readTime: "13 Min. Lesezeit"
 author: "Malta Luxury Real Estate Legal Desk"
 slug: "ground-rent-cens-redemption-malta-guide"
+localizedSlug: "wie-man-erbpacht-cens-in-malta-einlost"
 lang: de
-translatedFrom: en
-translatedAt: 2026-03-06
 ---
 
-Wie man in Malta Grundrente (Ċens) zurückkauft: Ein Leitfaden für 2026
+# Wie man Erbpacht (Ċens) in Malta einlöst: Ein Leitfaden für 2026
 
-Wenn Sie Immobilienanzeigen in Malta durchsuchen, werden Sie häufig Begriffe wie „Freehold” (Eigentum) und „Ground Rent” (Grundrente, lokal bekannt als Ċens) finden. Für viele internationale Käufer ist die Grundrente ein verwirrendes Relikt aus der Vergangenheit, aber wenn Sie sie verstehen und wissen, wie Sie sie zurückzahlen können, können Sie Tausende von Euro sparen.
+Wenn Sie Immobilienangebote in Malta durchstöbern, werden Sie oft Begriffe wie **"Freehold "** vs. **"Ground Rent "** (lokal als *Ċens* bekannt) sehen. Für viele internationale Käufer ist die Erbpacht ein verwirrendes Relikt der Vergangenheit, aber wenn Sie sie verstehen und wissen, wie Sie sie einlösen können, können Sie Tausende von Euro sparen.
 
-## 1. Was ist eine Grundrente (Ċens)?
-Die Grundrente ist eine jährliche Gebühr, die der Eigentümer der Immobilie an einen „übergeordneten” Eigentümer (den *Dominus*) zahlt. Dies kann die Regierung, die Kirche oder eine private Familie sein.
-*   **Ewige Grundrente:** Gilt auf unbegrenzte Zeit. Sie zahlen jedes Jahr eine geringe Gebühr.
-*   **Befristete Grundrente:** Gilt für eine festgelegte Laufzeit (z. B. 99 Jahre). Nach Ablauf der Laufzeit fällt die Immobilie technisch gesehen an den ursprünglichen Eigentümer zurück.
-
----
-
-## 2. Die 20x-Formel: Wie man sie zurückkauft
-Die gute Nachricht ist, dass nach maltesischem Recht die meisten **unbefristeten** Grundrenten „zurückgezahlt” werden können. Das bedeutet, dass Sie eine Pauschalsumme zahlen, um die jährliche Gebühr für immer zu streichen, wodurch die Immobilie in **Eigentum** übergeht.
-*   **Die Berechnung:** Multiplizieren Sie einfach die jährliche Grundrente mit **20**.
-*   **Beispiel:** Wenn Ihre jährliche ċens 50 € beträgt, können Sie sie für 1.000 € (50 € x 20) zurückkaufen.
-
-&gt; **Hinweis:** In der Regel fällt eine zusätzliche Gebühr für den Notar an, der die Rückkaufurkunde im öffentlichen Register einträgt.
+## 1. Was ist ein Erbbauzins (Ċens)?
+Der Erbbauzins ist eine jährliche Gebühr, die der Grundstückseigentümer an einen "höheren" Eigentümer (den *Dominus*) zahlt. Dies kann der Staat, die Kirche oder eine private Familie sein.
+*   **Ewige Erbpacht:** Sie gilt für immer. Sie zahlen jedes Jahr eine kleine Gebühr.
+*   **Befristete Erbpacht:** Sie gilt für einen bestimmten Zeitraum (z. B. 99 Jahre). Nach Ablauf der Frist fällt das Grundstück technisch gesehen an den ursprünglichen Eigentümer zurück.
 
 ---
 
-## 3. Befristete Grundrente: Die Komplexität
-Der Rückkauf einer **befristeten** Grundrente ist komplexer. Sie können nicht einfach die 20-fache Formel anwenden. Sie müssen auf die Einführung eines staatlichen „Programms” warten oder direkt mit dem Eigentümer verhandeln, um sie in eine unbefristete Grundrente oder Eigentumsgrundrente umzuwandeln.
-*   **Risiko:** Wenn Sie eine Immobilie kaufen, deren befristete Grundrente nur noch 10 Jahre läuft, könnten Sie die Immobilie verlieren oder gezwungen sein, eine hohe Gebühr für die Verlängerung zu zahlen. **Überprüfen Sie immer die verbleibende Laufzeit.**
+## 2. Die 20-fache Formel: Wie man ablöst
+Die gute Nachricht ist, dass nach maltesischem Recht die meisten **immerwährenden** Erbbauzinsen "abgelöst" werden können Das bedeutet, dass Sie einen Pauschalbetrag zahlen, um die jährliche Gebühr für immer zu streichen und die Immobilie in **Freies Eigentum** zu verwandeln.
+*   **Die Berechnung:** Multiplizieren Sie einfach den jährlichen Erbbauzins mit **20**.
+*   **Beispiel:** Wenn Ihr jährlicher ċens 50 € beträgt, können Sie ihn für 1.000 € ablösen (50 € x 20).
+
+**Hinweis:** Für die Eintragung der Ablösungsurkunde in das öffentliche Register beim Notar wird in der Regel eine zusätzliche Gebühr erhoben.
 
 ---
 
-## 4. Warum sollten Sie zurückkaufen?
-1.  **Bankhypotheken:** Banken in Malta zögern, Hypotheken auf Immobilien mit hoher oder befristeter Grundrente zu vergeben.
-2. **Marktwert:** Eigentumsimmobilien sind leichter zu verkaufen und erzielen einen um 5-10 % höheren Preis als Immobilien mit ċens.
-3. **Seelenfrieden:** Sie eliminieren das Risiko, dass bei jedem Eigentümerwechsel eine „Anerkennungsgebühr” (Laudemium) anfällt.
+## 3. Befristete Erbpacht: Die Komplexität
+Die Einlösung **temporärer** Erbbauzinsen ist komplexer. Sie können nicht einfach die 20-fache Formel anwenden. Sie müssen abwarten, bis ein staatliches "Programm" eröffnet wird, oder direkt mit dem Eigentümer verhandeln, um es in ein unbefristetes oder freies Eigentum umzuwandeln.
+*   **Risiko:** Wenn Sie eine Immobilie kaufen, für die nur noch 10 Jahre Erbpacht gelten, könnten Sie die Immobilie verlieren oder gezwungen sein, eine hohe Gebühr für die Verlängerung zu zahlen. **Überprüfen Sie immer die Restlaufzeit
+
+---
+
+## 4. Warum sollten Sie einlösen?
+1.  **Bankhypotheken:** Die Banken in Malta zögern, Hypotheken auf Immobilien mit hohen oder vorübergehenden Erbbauzinsen zu vergeben.
+2.  **Marktwert:** Freehold-Immobilien sind leichter zu verkaufen und erzielen einen um 5-10 % höheren Preis als Immobilien mit Erbpacht.
+3.  **Seelenfrieden:** Sie vermeiden das Risiko einer "Anerkennungsgebühr" (Laudemium), die jedes Mal erhoben wird, wenn die Immobilie den Besitzer wechselt.
 
 ## Zusammenfassung
-Ignorieren Sie niemals die Spalte „Ċens” in einem Vertrag. Wenn es sich um eine unbefristete und geringe Gebühr handelt, lösen Sie sie sofort nach dem Kauf ein. Wenn es sich um eine befristete Gebühr handelt, konsultieren Sie einen Anwalt, bevor Sie den Vertrag unterzeichnen.
+Ignorieren Sie niemals die Spalte *Ċens* in einem Vertrag. Wenn er unbefristet und klein ist, lösen Sie ihn sofort nach dem Kauf ein. Wenn es sich um einen befristeten Vertrag handelt, konsultieren Sie einen Anwalt, bevor Sie den *konvenju* unterschreiben.
 
-Sind Sie verwirrt wegen eines Vertrags? [Lassen Sie ihn kostenlos von unseren Partnern prüfen](mailto:legal@maltaluxuryrealestate.com).
+**Verunsichert durch einen Vertrag? [Holen Sie sich ein kostenloses Rechtsgutachten von unseren Partnern](mailto:legal@maltaluxuryrealestate.com).**

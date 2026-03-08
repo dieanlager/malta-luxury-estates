@@ -111,7 +111,11 @@
         "home": "Home",
         "tools": "Strumenti",
         "live_feed": "Feed in Diretta",
-        "listings_count": "{{count}} annunci"
+        "listings_count": "{{count}} annunci",
+        "read_guide": "Leggi la Guida",
+        "efficiency_audit": "Audit EPC",
+        "quiet_score": "Punteggio di Tranquillità",
+        "find_twin": "Trova Gemello"
     },
     "locations": {
         "Sliema": "Sliema",
@@ -418,7 +422,7 @@
             "first_time_desc": "0% di imposta di bollo (fino a €200k)",
             "standard_rate": "Tariffa Standard",
             "uca_village_core": "UCA / Nucleo Abitativo",
-            "uca_desc": "0% di imposta di bollo (fino a 750k)",
+            "uca_desc": "0% di imposta di bollo (fino 750k)",
             "heritage_grant": "Possibile agevolazione storica",
             "gozo_scheme": "Programma Gozo",
             "primary_home": "Prima Casa",
@@ -642,7 +646,7 @@
                 "text": "La tua priorità di investimento è...",
                 "options": {
                     "a": "Massimo rendimento locativo e liquidità",
-                    "b": "Plusvalenze a lungo termine in aree emergenti",
+                    "b": "Plusvalenze a longo termine in aree emergenti",
                     "c": "Una seconda residenza / trofeo di stile di vita",
                     "d": "Una casa sostenibile, certificata green"
                 }
@@ -759,6 +763,50 @@
             "rental_demand": "Domanda di Affitto",
             "growth_desc": "I valori medi degli immobili a {{location}} sono aumentati del 6,2% negli ultimi 12 mesi.",
             "demand_desc": "L'elevata domanda di affitti di lusso garantisce rendimenti costanti per i proprietari in questa regione."
+        }
+    },
+    "interactive": {
+        "epc": {
+            "title": "Verde",
+            "subtitle": "Efficienza",
+            "audit_standard": "Audit Standard UE 2026",
+            "current_rating": "Rating Attuale",
+            "bank_bonus": "Premio Bancario",
+            "loan_scheme": "Disponibile tramite schemi di prestito green",
+            "upgrade_cost": "Costo di aggiornamento",
+            "yearly_savings": "Risparmio annuale",
+            "payback_period": "Periodo di ammortamento",
+            "resale_premium": "Premio di rivendita",
+            "value_increase": "Aumento di valore proiettato",
+            "energy_calc_note": "Calcoli basati sui prezzi dell'energia 2026",
+            "elite_efficiency": "Efficienza Elite"
+        },
+        "noise": {
+            "title": "Valutazione Intelligente del Suono",
+            "subtitle": "Audit del Rumore Ambientale di Malta v2.0",
+            "tranquility_score": "Punteggio Tranquillità",
+            "tranquility_elite": "Tranquillità eccezionale",
+            "tranquility_standard": "Paesaggio sonoro urbano standard",
+            "tranquility_active": "Zona ad alta attività",
+            "traffic": "Traffico",
+            "nightlife": "Vita notturna",
+            "construction": "Costruzioni",
+            "aviation": "Aviazione",
+            "intensity": "Intensità",
+            "surroundings": "Dintorni",
+            "risk": "Rischio",
+            "flight_path": "Percorso di volo",
+            "off_path": "Fuori dal percorso di volo",
+            "verified_sat": "Verificato tramite mappatura acustica satellitare 2026"
+        },
+        "twin": {
+            "title": "Ricerca Gemello Immobiliare AI",
+            "subtitle": "Il nostro motore neurale analizza i modelli di stile di vita per trovare la tua proprietà parallela perfetta.",
+            "layout_dna": "Analisi del DNA del layout...",
+            "match_confidence": "Fiducia nel Match",
+            "why_twin": "Perché questo gemello?",
+            "match_reason": "Supporta il tuo interesse per {{type}} a {{location}}. Esempi di caratteristiche comuni come {{f1}} e {{f2}}.",
+            "explore_twin": "Esplora questo gemello"
         }
     }
 }

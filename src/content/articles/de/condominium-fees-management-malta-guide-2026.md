@@ -1,45 +1,45 @@
 ---
-title: "Condominium Fees & Management in Malta: A 2026 Guide"
+title: "Gebühren und Verwaltung von Eigentumswohnungen in Malta: Ein Leitfaden für 2026"
 category: "Legal"
-excerpt: "Who pays for the elevator? How are common area costs split? We explain the Condominium Act and your rights as a property owner."
-metaDescription: "Manage your condo costs in Malta. Guide to the Condominium Act, administrator duties, common area fees, and dispute resolution for 2026."
+excerpt: "Wer zahlt für den Aufzug? Wie werden die Kosten der Gemeinschaftsflächen aufgeteilt? Wir erläutern Ihnen das Wohnungseigentumsgesetz und Ihre Rechte als Wohnungseigentümer."
+metaDescription: "Verwalten Sie die Kosten Ihrer Eigentumswohnung in Malta. Leitfaden zum Condominium Act, Verwalterpflichten, Gebühren für Gemeinschaftsflächen und Streitbeilegung für 2026."
 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "10 min read"
+readTime: "10 Min. Lesezeit"
 author: "Malta Luxury Real Estate Property Management"
 slug: "condominium-fees-management-malta-guide-2026"
+localizedSlug: "gebuhren-und-verwaltung-von-eigentumswohnungen-in-malta"
 lang: de
-translatedFrom: en
-translatedAt: 2026-03-06
----
-# Condominium Fees & Management in Malta: A 2026 Guide
-
-When you buy an apartment in a block, you are also buying into a "Condominium." This means you share the ownership (and the costs) of the common areas—the entrance, the stairs, the elevator, and the roof.
-
-## 1. The Condominium Act
-Under Maltese law, every block with more than 3 units must have an **Administrator**.
-*   **Role:** They collect fees, pay the electricity for the hallway, manage elevator maintenance, and ensure the block is clean.
-*   **Meetings:** An Annual General Meeting (AGM) must be held where owners vote on the budget.
-
 ---
 
-## 2. Typical Fees in 2026
-Fees are usually calculated based on the "shares" (percentage of the building) your apartment owns. 
-*   **Standard Block (no pool):** €300 - €600 per year.
-*   **Luxury Block (with pool/gym/security):** €1,500 - €3,500 per year.
-*   **Special Designated Areas (SDA):** Can be higher, but include 5-star maintenance and 24/7 security.
+# Condominium Fees & Management in Malta: Ein Leitfaden für 2026
+
+Wenn Sie eine Wohnung in einem Wohnblock kaufen, erwerben Sie auch ein "Condominium" Das bedeutet, dass Sie sich das Eigentum (und die Kosten) an den Gemeinschaftsflächen teilen - dem Eingang, der Treppe, dem Aufzug und dem Dach.
+
+## 1. Das Wohnungseigentumsgesetz
+Nach maltesischem Recht muss jeder Block mit mehr als 3 Einheiten einen **Verwalter** haben.
+*   **Aufgabe:** Er zieht die Gebühren ein, bezahlt den Strom für den Hausflur, kümmert sich um die Wartung des Aufzugs und sorgt für die Sauberkeit des Blocks.
+*   **Versammlungen:** Es muss eine Jahreshauptversammlung abgehalten werden, bei der die Eigentümer über den Haushalt abstimmen.
 
 ---
 
-## 3. What Happens if You Don't Pay?
-The Administrator has the legal right to register a "caution" (charge) against your property. This means you **cannot sell the apartment** until the debt is cleared.
+## 2. Typische Gebühren im Jahr 2026
+Die Gebühren werden in der Regel auf der Grundlage der "Anteile" (Prozentsatz des Gebäudes) berechnet, die Ihre Wohnung besitzt.
+*   **Standard-Block (ohne Pool):** €300 - €600 pro Jahr.
+*   **Luxusblock (mit Pool/Fitnessraum/Sicherheit):** 1.500 € - 3.500 € pro Jahr.
+*   **Special Designated Areas (SDA):** Können höher sein, beinhalten aber 5-Sterne-Wartung und 24/7-Sicherheit.
 
-## 4. Troubleshooting: Common Disputes
-1.  **The Noisy Neighbor:** Condominium rules usually have "Silent Hours" (e.g., 10 PM - 7 AM).
-2.  **Roof Access:** Unless specified in your deed, the roof is common area.
-3.  **Renovations:** You must inform the administrator before doing any work that affects the common areas or the building’s façade.
+---
 
-## Summary
-A well-managed condominium protects your property's value. Before you buy, always ask to see the last two years of "Condo Accounts" to ensure there are no hidden debts or major upcoming repairs (like elevator replacement).
+## 3. Was passiert, wenn Sie nicht zahlen?
+Der Verwalter hat das gesetzliche Recht, eine "Verwarnung" (Gebühr) gegen Ihr Eigentum einzutragen. Das bedeutet, dass Sie die Wohnung **nicht verkaufen können**, bis die Schulden beglichen sind.
 
-**Need a property management contact? [We manage over 200 blocks across Malta](mailto:management@maltaluxuryrealestate.com).**
+## 4. Fehlersuche: Häufige Streitigkeiten
+1.  **Der laute Nachbar:** In der Wohnungseigentumsordnung sind in der Regel "stille Stunden" festgelegt (z. B. 22 Uhr bis 7 Uhr morgens).
+2.  **Zugang zum Dach:** Das Dach ist Gemeinschaftsfläche, es sei denn, dies ist in Ihrer Urkunde festgelegt.
+3.  **Renovierungen:** Sie müssen den Verwalter informieren, bevor Sie Arbeiten durchführen, die die Gemeinschaftsflächen oder die Fassade des Gebäudes betreffen.
+
+## Zusammenfassung
+Eine gut verwaltete Eigentumswohnung schützt den Wert Ihrer Immobilie. Verlangen Sie vor dem Kauf immer Einsicht in die "Condo Accounts" der letzten zwei Jahre, um sicherzustellen, dass keine versteckten Schulden oder größere anstehende Reparaturen (wie die Erneuerung des Aufzugs) vorliegen.
+
+**Benötigen Sie einen Kontakt zur Hausverwaltung? [Wir verwalten über 200 Wohnblöcke auf Malta (mailto:management@maltaluxuryrealestate.com)

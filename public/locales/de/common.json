@@ -42,7 +42,7 @@
         },
         "partners": {
             "badge": "Branchenführer",
-            "title": "Vertrauensvolle Partnerschaft mit Maltas Top-Agenturen"
+            "title": "Vertrauensvolle Partnership mit Maltas Top-Agenturen"
         },
         "agencies": {
             "badge": "Für Agenturen & Entwickler",
@@ -111,7 +111,11 @@
         "home": "Home",
         "tools": "Tools",
         "live_feed": "Live-Feed",
-        "listings_count": "{{count}} Inserate"
+        "listings_count": "{{count}} Inserate",
+        "read_guide": "Leitfaden lesen",
+        "efficiency_audit": "EPC-Audit",
+        "quiet_score": "Ruhewert",
+        "find_twin": "Zwilling finden"
     },
     "locations": {
         "Sliema": "Sliema",
@@ -343,7 +347,7 @@
             "monthly_income": "Netto-Monatseinkommen (Gemeinsam)",
             "savings": "Verfügbare Ersparnisse / Anzahlung",
             "monthly_debts": "Monatlicher Schuldendienst",
-            "debt_desc": "Monatliche Gesamtzahlungen für andere Kredite, Kreditkarten oder Unterhalt.",
+            "debt_desc": "Monatliche Gesamtzahlungen for andere Kredite, Kreditkarten oder Unterhalt.",
             "stress_test_warning": "Belastungstest der Zentralbank: Wir wenden +2% auf die aktuellen Sätze an, um Ihre Rückzahlungsfähigkeit strikt zu prüfen."
         },
         "results": {
@@ -405,7 +409,7 @@
             "roi_benchmarks_desc": "Sliema und St. Julian's liefern derzeit Nettorenditen von 4,2 % bis 5,8 % für Luxusmietimmobilien.",
             "yield_reports": "Renditeberichte",
             "oracle_title": "KI-Preis-Orakel",
-            "oracle_desc": "Erhalten Sie eine sofortige, KI-gestützte Bewertung for jede maltesische Immobilie mit unserem neuralen Marktindex.",
+            "oracle_desc": "Erhalten Sie eine sofortige, KI-gestützte Bewertung für jede maltesische Immobilie mit unserem neuralen Marktindex.",
             "try_oracle": "KI-Orakel ausprobieren"
         }
     },
@@ -464,7 +468,7 @@
             "price_drops_7d": "Preissenkungen (7t)",
             "gross_yield": "Bruttorendite Malta",
             "short_let_yield": "Kurzzeitmietrendite",
-            "eur_rate": "EUR-Satz (EZB)",
+            "eur_rate": "Tasso EUR (BCE)",
             "gdp_growth": "BIP-Wachstum Malta"
         },
         "price_drops": "Preissenkungen",
@@ -759,6 +763,50 @@
             "rental_demand": "Mietnachfrage",
             "growth_desc": "Die durchschnittlichen Immobilienwerte in {{location}} sind in den letzten 12 Monaten um 6,2 % gestiegen.",
             "demand_desc": "Die hohe Nachfrage nach Luxusmietobjekten sorgt für konstante Renditen für Immobilieneigentümer in dieser Region."
+        }
+    },
+    "interactive": {
+        "epc": {
+            "title": "Energieeffizienz-Intelligenz",
+            "subtitle": "EU-Energiestandard-Audit 2026",
+            "audit_standard": "EU-Energiestandard-Audit 2026",
+            "current_rating": "Aktuelle Bewertung",
+            "bank_bonus": "Bankenbonus",
+            "loan_scheme": "Verfügbar über Green-Loan-Systeme",
+            "upgrade_cost": "Upgrade-Kosten",
+            "yearly_savings": "Jährliche Einsparungen",
+            "payback_period": "Amortisationszeit",
+            "resale_premium": "Wiederverkaufsvorteil",
+            "value_increase": "Prognostizierte Wertsteigerung",
+            "energy_calc_note": "Berechnungen basierend auf Energiepreisen 2026",
+            "elite_efficiency": "Elite-Effizienz"
+        },
+        "noise": {
+            "title": "Intelligente Schallbewertung",
+            "subtitle": "Umgebungsgeräusch-Audit Malta v2.0",
+            "tranquility_score": "Ruhewert",
+            "tranquility_elite": "Außergewöhnliche Ruhe",
+            "tranquility_standard": "Standard-Stadtgeräuschkulisse",
+            "tranquility_active": "Hochaktive Zone",
+            "traffic": "Verkehr",
+            "nightlife": "Nachtleben",
+            "construction": "Bauarbeiten",
+            "aviation": "Aviazione",
+            "intensity": "Intensität",
+            "surroundings": "Umgebung",
+            "risk": "Rischio",
+            "flight_path": "Flugschneise",
+            "off_path": "Außerhalb der Flugschneise",
+            "verified_sat": "Verifiziert über Satelliten-Akustik-Mapping 2026"
+        },
+        "twin": {
+            "title": "KI-Immobilien-Zwillingsfinderd",
+            "subtitle": "Unsere neuronale Engine analysiert Lebensstil-Muster, um Ihre perfekte parallele Immobilie zu finden.",
+            "layout_dna": "Analisi del DNA del layout...",
+            "match_confidence": "Übereinstimmungsvertrauen",
+            "why_twin": "Warum dieser Zwilling?",
+            "match_reason": "Passend zu Ihrem Interesse an {{type}} in {{location}}. Gemeinsame Merkmale wie {{f1}} e {{f2}}.",
+            "explore_twin": "Diesen Zwilling erkunden"
         }
     }
 }

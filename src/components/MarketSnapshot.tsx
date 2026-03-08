@@ -1,6 +1,7 @@
 import React from 'react';
 import { Location, LocationStats } from '../types';
 import { TrendingUp, Home, Calendar } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   location: Location;
@@ -24,14 +25,20 @@ export const MarketSnapshot: React.FC<Props> = ({
   stats,
   listingType = 'both'
 }) => {
+  const { t, i18n } = useTranslation();
+
+  const locationName = i18n.language === 'en'
+    ? location.nameEn
+    : (t(`locations.${location.nameEn.replace(/\s+/g, '_').replace("'", "")}`) || location.nameEn);
+
   if (!stats) {
     return (
       <section className="glass-card rounded-[2rem] p-8 border border-white/10">
         <h2 className="text-2xl font-serif mb-2">
-          Market Snapshot – {location.nameEn}
+          {t('sections.market_snapshot.title')} – {locationName}
         </h2>
         <p className="text-sm text-white/40">
-          Market data for this location will appear here as soon as more listings are aggregated.
+          {t('states.noResults')}
         </p>
       </section>
     );
@@ -45,17 +52,17 @@ export const MarketSnapshot: React.FC<Props> = ({
       <div className="absolute top-0 right-0 p-8 opacity-5">
         <TrendingUp size={120} />
       </div>
-      
+
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-1">
           <TrendingUp className="text-gold" size={20} />
           <h2 className="text-2xl font-serif">
-            Market Snapshot – {location.nameEn}
+            {t('sections.market_snapshot.title')} – {locationName}
           </h2>
         </div>
         <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-white/30 mb-8 font-bold">
           <Calendar size={12} />
-          <span>Updated {new Date(stats.lastCalculatedAt).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}</span>
+          <span>{t('common.live_feed')} · {new Date(stats.lastCalculatedAt).toLocaleDateString(i18n.language, { month: 'long', year: 'numeric' })}</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -63,23 +70,23 @@ export const MarketSnapshot: React.FC<Props> = ({
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold/60">
                 <Home size={14} />
-                <span>For Sale</span>
+                <span>{t('market.forSale')}</span>
               </div>
               <div className="flex items-baseline gap-3">
                 <span className="text-4xl font-serif text-white">
                   {formatPrice(stats.medianPriceSale)}
                 </span>
                 <span className="text-xs text-white/40 uppercase tracking-wider">
-                  Median Asking
+                  {t('search.filters.price_range')}
                 </span>
               </div>
               <div className="flex gap-6 pt-2">
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">Listings</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.listings')}</span>
                   <span className="text-sm font-bold">{stats.listingsSaleCount}</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">Avg. Price</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('footer.stats_avg_price')}</span>
                   <span className="text-sm font-bold">{formatPrice(stats.avgPriceSale)}</span>
                 </div>
               </div>
@@ -90,23 +97,23 @@ export const MarketSnapshot: React.FC<Props> = ({
             <div className="space-y-4 border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0 md:pl-12">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold/60">
                 <Calendar size={14} />
-                <span>For Rent</span>
+                <span>{t('market.forRent')}</span>
               </div>
               <div className="flex items-baseline gap-3">
                 <span className="text-4xl font-serif text-white">
                   {formatPrice(stats.medianPriceRent)}
                 </span>
                 <span className="text-xs text-white/40 uppercase tracking-wider">
-                  Median Monthly
+                  {t('common.per_month')}
                 </span>
               </div>
               <div className="flex gap-6 pt-2">
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">Listings</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.listings')}</span>
                   <span className="text-sm font-bold">{stats.listingsRentCount}</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">Avg. Rent</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('footer.stats_avg_price')}</span>
                   <span className="text-sm font-bold">{formatPrice(stats.avgPriceRent)}</span>
                 </div>
               </div>

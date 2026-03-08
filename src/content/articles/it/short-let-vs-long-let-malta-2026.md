@@ -1,246 +1,245 @@
 ---
-title: "Short-Let vs Long-Let in Malta: Which Makes More Money in 2026?"
+title: "Affitto Breve vs Affitto Lungo a Malta: Cosa Rende di Più nel 2026?"
 category: "Investing"
-excerpt: "A data-driven comparison of short-term holiday lets vs long-term rentals in Malta, covering MTA regulations, tax treatment, yield analysis by location, and real case studies for 2026."
-metaDescription: "Short-let vs long-let in Malta: Which investment strategy wins in 2026? A data-driven comparison of yields, regulations, and management costs."
+excerpt: "Un confronto basato sui dati tra affitti turistici brevi e affitti a lungo termine a Malta, che copre le normative MTA, il trattamento fiscale, l'analisi del rendimento per località e casi studio reali per il 2026."
+metaDescription: "Affitto breve vs affitto lungo a Malta: Quale strategia di investimento vince nel 2026? Un confronto basato sui dati di rendimenti, normative e costi di gestione."
 image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "14 min read"
+readTime: "14 min di lettura"
 author: "Malta Luxury Real Estate"
 slug: "short-let-vs-long-let-malta-2026"
+localizedSlug: "affitto-breve-vs-lungo-malta-2026"
 lang: it
-translatedFrom: en
-translatedAt: 2026-03-06
 ---
 
-# Short-Let vs Long-Let in Malta: Which Makes More Money in 2026?
+# Breve Affitto vs Lungo Affitto a Malta: Cosa Rende di Più nel 2026?
 
-It's the question every Malta property investor asks: should I do Airbnb or find a long-term tenant? The answer depends on your property, location, budget for management, and appetite for risk. This guide provides a data-driven comparison to help you decide.
+È la domanda che ogni investitore immobiliare di Malta si pone: dovrei fare Airbnb o trovare un inquilino a lungo termine? La risposta dipende dalla vostra proprietà, dalla posizione, dal budget per la gestione e dalla propensione al rischio. Questa guida fornisce un confronto basato sui dati per aiutarvi a decidere.
 
-## The Malta Rental Market at a Glance
+## Il Mercato degli Affitti di Malta in Sintesi
 
-Malta's rental market is driven by three forces:
+Il mercato degli affitti di Malta è guidato da tre forze:
 
-1. **Expatriates** – Malta hosts 80,000+ foreign workers, mostly in iGaming, financial services, and tech. They need long-term housing.
-2. **Tourism** – 2.8 million tourists visited Malta in 2025, and numbers continue to grow. They need short-term accommodation.
-3. **Students** – Over 40,000 international students study English in Malta annually. They need 2-12 month lets.
+1. **Espatriati** – Malta ospita oltre 80.000 lavoratori stranieri, principalmente nei settori iGaming, servizi finanziari e tecnologia. Hanno bisogno di alloggi a lungo termine.
+2. **Turismo** – 2,8 milioni di turisti hanno visitato Malta nel 2025, e i numeri continuano a crescere. Hanno bisogno di alloggi a breve termine.
+3. **Studenti** – Oltre 40.000 studenti internazionali studiano inglese a Malta ogni anno. Hanno bisogno di affitti di 2-12 mesi.
 
-This creates a multi-layered demand structure that benefits property owners – but the optimal strategy varies significantly by location and property type.
+Questo crea una struttura di domanda a più livelli che avvantaggia i proprietari di immobili – ma la strategia ottimale varia significativamente in base alla posizione e al tipo di proprietà.
 
-## Short-Let in Malta – Complete Guide
+## Breve Affitto a Malta – Guida Completa
 
-### What Counts as a "Short-Let"?
+### Cosa Conta Come "Breve Affitto"?
 
-In Malta, a **short-let** is any residential let of **less than 6 months**. This includes:
-- Holiday lets via Airbnb, Booking.com, VRBO
-- Furnished holiday apartments
-- Seasonal lets to tourists and visitors
+A Malta, un **breve affitto** è qualsiasi locazione residenziale di **meno di 6 mesi**. Questo include:
+- Affitti per vacanze tramite Airbnb, Booking.com, VRBO
+- Appartamenti ammobiliati per vacanze
+- Affitti stagionali a turisti e visitatori
 
-Any let of 6 months or longer is classified as a **long-let** (private residential lease).
+Qualsiasi affitto di 6 mesi o più è classificato come **lungo affitto** (contratto di locazione residenziale privato).
 
-### MTA Licence: How to Get It
+### Licenza MTA: Come Ottenerla
 
-The Malta Tourism Authority (MTA) requires a licence for all short-let accommodation:
+La Malta Tourism Authority (MTA) richiede una licenza per tutte le strutture ricettive a breve termine:
 
-**Application Process:**
-1. Submit application online at [MTA portal](https://mta.com.mt)
-2. Property inspection by MTA officer (scheduled within 2-4 weeks)
-3. Must meet minimum standards for:
-   - Fire safety (extinguisher, smoke detector, fire blanket)
-   - Hygiene and cleanliness
-   - Furnishing and amenities
-   - Guest information and emergency contacts
-4. Licence issued within 4-6 weeks
-5. Annual renewal required
+**Processo di Domanda:**
+1. Inviare la domanda online al [portale MTA](https://mta.com.mt)
+2. Ispezione della proprietà da parte di un funzionario MTA (programmata entro 2-4 settimane)
+3. Deve soddisfare gli standard minimi per:
+   - Sicurezza antincendio (estintore, rilevatore di fumo, coperta antincendio)
+   - Igiene e pulizia
+   - Arredamento e servizi
+   - Informazioni per gli ospiti e contatti di emergenza
+4. Licenza rilasciata entro 4-6 settimane
+5. Rinnovo annuale richiesto
 
-**Costs:**
-| Item | Cost |
+**Costi:**
+| Articolo | Costo |
 |------|------|
-| Application fee | €100-€150 |
-| Annual licence fee | €100-€250 (depends on category) |
-| Fire safety equipment | €50-€150 (one-off) |
-| Insurance (MTA-compliant) | €200-€500/year |
+| Tassa di domanda | €100-€150 |
+| Tassa di licenza annuale | €100-€250 (dipende dalla categoria) |
+| Attrezzatura antincendio | €50-€150 (una tantum) |
+| Assicurazione (conforme MTA) | €200-€500/anno |
 
-**Categories:** Properties are rated based on amenities and condition:
-- **Standard** (1-2 star) – Basic furnished apartment
-- **Comfort** (3 star) – Well-furnished with modern amenities
-- **First Class** (4-5 star) – High-end finishes and premium furnishing
+**Categorie:** Le proprietà sono classificate in base ai servizi e alle condizioni:
+- **Standard** (1-2 stelle) – Appartamento ammobiliato di base
+- **Comfort** (3 stelle) – Ben arredato con servizi moderni
+- **Prima Classe** (4-5 stelle) – Finiture di lusso e arredamento premium
 
-### Rules and Restrictions
+### Regole e Restrizioni
 
-- Must display MTA licence number on **all listings** (Airbnb, Booking, etc.)
-- Must provide **guest registration** information to MTA
-- Must comply with **building noise** and community regulations
-- Satellite dishes and signage may require **planning permission**
-- Some **condominium rules** may prohibit or restrict short-lets
+- È necessario visualizzare il numero di licenza MTA su **tutti gli annunci** (Airbnb, Booking, ecc.)
+- È necessario fornire le informazioni di **registrazione degli ospiti** all'MTA
+- È necessario rispettare le **norme sul rumore** degli edifici e le normative comunitarie
+- Le antenne paraboliche e la segnaletica possono richiedere il **permesso di pianificazione**
+- Alcune **regole condominiali** possono vietare o limitare i brevi affitti
 
-### Typical Short-Let Returns by Location
+### Rendimenti Tipici del Breve Affitto per Posizione
 
-Based on our 2026 market data:
+Sulla base dei nostri dati di mercato del 2026:
 
-| Location | Avg. Nightly Rate | Avg. Occupancy | Est. Gross Revenue (2-bed) | Est. Net Yield |
+| Posizione | Tariffa Notturna Media | Occupazione Media | Entrate Lorde Stimate (2 camere) | Rendimento Netto Stimato |
 |----------|-------------------|----------------|---------------------------|----------------|
-| St. Julian's | €115-160 | 72% | €30,000-42,000/yr | 5.5-7.5% |
-| Sliema | €95-140 | 75% | €26,000-38,000/yr | 5.0-7.0% |
-| Valletta | €100-155 | 65% | €24,000-36,000/yr | 4.5-6.5% |
-| Mellieħa | €80-120 | 55% | €16,000-24,000/yr | 5.0-7.5% |
-| St. Paul's Bay | €60-90 | 65% | €14,000-21,000/yr | 5.5-8.0% |
-| Gozo | €70-110 | 45% | €11,500-18,000/yr | 4.5-7.0% |
+| St. Julian's | €115-160 | 72% | €30.000-42.000/anno | 5.5-7.5% |
+| Sliema | €95-140 | 75% | €26.000-38.000/anno | 5.0-7.0% |
+| Valletta | €100-155 | 65% | €24.000-36.000/anno | 4.5-6.5% |
+| Mellieħa | €80-120 | 55% | €16.000-24.000/anno | 5.0-7.5% |
+| St. Paul's Bay | €60-90 | 65% | €14.000-21.000/anno | 5.5-8.0% |
+| Gozo | €70-110 | 45% | €11.500-18.000/anno | 4.5-7.0% |
 
-> **Key insight:** St. Paul's Bay has the highest **net** yield because property prices are lowest, even though absolute revenue is smaller. Sliema and St. Julian's generate the most revenue but require higher property investment.
+> **Intuizione chiave:** St. Paul's Bay ha il più alto rendimento **netto** perché i prezzi delle proprietà sono più bassi, anche se le entrate assolute sono inferiori. Sliema e St. Julian's generano le maggiori entrate ma richiedono maggiori investimenti immobiliari.
 
-### Short-Let Management Costs
+### Costi di Gestione del Breve Affitto
 
-| Expense | Cost (Annual) | Notes |
+| Spesa | Costo (Annuale) | Note |
 |---------|--------------|-------|
-| Cleaning (per turnover) | €40-€80 | 2-3x per week in high season |
-| Linen & laundry | €15-€25/changeover | Or €50-€80/month subscription |
-| Listing management | DIY or 15-25% of revenue | If using a property manager |
-| Maintenance reserve | 5-10% of revenue | Repairs, replacements, touch-ups |
-| Utilities | €100-€200/month | Electricity is expensive in Malta |
-| Insurance (MTA-compliant) | €200-€500/year | Higher than standard home insurance |
-| **Total management cost** | **25-35% of gross revenue** | |
+| Pulizia (per cambio) | €40-€80 | 2-3 volte a settimana in alta stagione |
+| Biancheria e lavanderia | €15-€25/cambio | Oppure abbonamento di €50-€80/mese |
+| Gestione annunci | Fai da te o 15-25% delle entrate | Se si utilizza un gestore immobiliare |
+| Fondo di riserva per manutenzione | 5-10% delle entrate | Riparazioni, sostituzioni, ritocchi |
+| Utenze | €100-€200/mese | L'elettricità è costosa a Malta |
+| Assicurazione (conforme MTA) | €200-€500/anno | Più alta dell'assicurazione domestica standard |
+| **Costo totale di gestione** | **25-35% delle entrate lorde** | |
 
-## Long-Let in Malta – Complete Guide
+## Lungo Affitto a Malta – Guida Completa
 
-### Housing Authority Registration
+### Registrazione presso l'Autorità per l'Edilizia Abitativa
 
-All private residential leases of 6 months or longer **must be registered** with the Housing Authority within 10 working days of signing.
+Tutti i contratti di locazione residenziale privata di 6 mesi o più **devono essere registrati** presso l'Autorità per l'Edilizia Abitativa entro 10 giorni lavorativi dalla firma.
 
-**Registration Process:**
-1. Sign a lease agreement (use standard Housing Authority template)
-2. Register online at the Housing Authority portal
-3. Upload signed lease copy
-4. Pay €5 registration fee
-5. Both landlord and tenant receive confirmation
+**Processo di Registrazione:**
+1. Firmare un contratto di locazione (utilizzare il modello standard dell'Autorità per l'Edilizia Abitativa)
+2. Registrarsi online al portale dell'Autorità per l'Edilizia Abitativa
+3. Caricare la copia del contratto firmato
+4. Pagare la tassa di registrazione di €5
+5. Sia il proprietario che l'inquilino ricevono la conferma
 
-### Typical Long-Let Returns by Location
+### Rendimenti Tipici del Lungo Affitto per Posizione
 
-| Location | Avg. Monthly Rent (2-bed) | Avg. Property Value | Gross Yield |
+| Posizione | Affitto Mensile Medio (2 camere) | Valore Proprietà Medio | Rendimento Lordo |
 |----------|--------------------------|---------------------|-------------|
-| St. Julian's | €1,800-€2,400 | €550,000-€750,000 | 3.5-4.5% |
-| Sliema | €1,500-€2,200 | €450,000-€650,000 | 3.8-4.5% |
-| Swieqi | €1,200-€1,600 | €300,000-€450,000 | 4.0-5.0% |
-| St. Paul's Bay | €800-€1,100 | €180,000-€280,000 | 4.5-5.5% |
-| Gżira | €1,100-€1,500 | €280,000-€400,000 | 4.5-5.5% |
-| Three Cities | €900-€1,300 | €250,000-€380,000 | 4.0-5.0% |
+| St. Julian's | €1.800-€2.400 | €550.000-€750.000 | 3.5-4.5% |
+| Sliema | €1.500-€2.200 | €450.000-€650.000 | 3.8-4.5% |
+| Swieqi | €1.200-€1.600 | €300.000-€450.000 | 4.0-5.0% |
+| St. Paul's Bay | €800-€1.100 | €180.000-€280.000 | 4.5-5.5% |
+| Gżira | €1.100-€1.500 | €280.000-€400.000 | 4.5-5.5% |
+| Three Cities | €900-€1.300 | €250.000-€380.000 | 4.0-5.0% |
 
-### Long-Let Advantages
+### Vantaggi del Lungo Affitto
 
-1. **Consistent income** – No seasonal gaps
-2. **Lower management effort** – No turnover, cleaning, or check-in/out
-3. **Lower costs** – No MTA licence, no listing fees, lower insurance
-4. **Better tenants** – Professionals and families who care for the property
-5. **Simpler tax** – 15% FWT on gross rent, no VAT complexity
+1. **Reddito Coerente** – Nessuna lacuna stagionale
+2. **Sforzo di Gestione Inferiore** – Nessun turnover, pulizia o check-in/out
+3. **Costi Inferiori** – Nessuna licenza MTA, nessuna commissione di inserzione, assicurazione inferiore
+4. **Inquilini Migliori** – Professionisti e famiglie che si prendono cura della proprietà
+5. **Tassazione Più Semplice** – 15% FWT sull'affitto lordo, nessuna complessità IVA
 
-## Head-to-Head Comparison
+## Confronto Testa a Testa
 
-| Factor | Short-Let | Long-Let |
+| Fattore | Affitto Breve | Affitto Lungo |
 |--------|-----------|----------|
-| **Gross Revenue** | Higher (by 30-60%) | Lower but consistent |
-| **Net Yield** | 5-8% | 3.5-5.5% |
-| **Vacancy Risk** | Seasonal (low season Dec-Feb) | Tenant changeover (1-2 months) |
-| **Management Effort** | High (daily/weekly) | Low (monthly) |
-| **Management Cost** | 25-35% of revenue | 0-10% of revenue |
-| **Regulatory Burden** | MTA licence + guest registration | Housing Authority registration |
-| **Wear & Tear** | Higher (more turnovers) | Lower (stable occupant) |
-| **Flexibility** | Can use property yourself | Locked in for lease duration |
-| **Ideal Property** | Coastal/tourist area, furnished | Urban, near offices/schools |
-| **Ideal Owner** | Active investor or has property manager | Passive investor |
+| **Ricavo Lordo** | Superiore (del 30-60%) | Inferiore ma coerente |
+| **Rendimento Netto** | 5-8% | 3.5-5.5% |
+| **Rischio di Vacanza** | Stagionale (bassa stagione Dic-Feb) | Turnover dell'inquilino (1-2 mesi) |
+| **Sforzo di Gestione** | Elevato (giornaliero/settimanale) | Basso (mensile) |
+| **Costo di Gestione** | 25-35% del ricavo | 0-10% del ricavo |
+| **Onere Normativo** | Licenza MTA + registrazione ospiti | Registrazione presso l'Autorità per l'Edilizia Abitativa |
+| **Usura** | Superiore (più turnover) | Inferiore (occupante stabile) |
+| **Flessibilità** | Possibilità di usare la proprietà personalmente | Vincolato alla durata del contratto di locazione |
+| **Proprietà Ideale** | Zona costiera/turistica, arredata | Urbana, vicino a uffici/scuole |
+| **Proprietario Ideale** | Investitore attivo o con gestore immobiliare | Investitore passivo |
 
-## Tax Treatment Comparison
+## Confronto Trattamento Fiscale
 
-| Tax Element | Short-Let | Long-Let |
+| Elemento Fiscale | Affitto Breve | Affitto Lungo |
 |-------------|-----------|----------|
-| Income Tax | 15% FWT on gross rent | 15% FWT on gross rent |
-| VAT | 7% on accommodation | Exempt (no VAT) |
-| VAT registration | Required if turnover > €30k | Not needed |
-| Deductions (under standard rate) | Higher expenses to deduct | Fewer expenses |
-| Withholding tax (non-resident) | 15% | 15% |
+| Imposta sul Reddito | 15% FWT sull'affitto lordo | 15% FWT sull'affitto lordo |
+| IVA | 7% sull'alloggio | Esente (nessuna IVA) |
+| Registrazione IVA | Obbligatoria se il fatturato > €30k | Non necessaria |
+| Deduzioni (a aliquota standard) | Spese maggiori da dedurre | Spese minori |
+| Ritenuta d'acconto (non residente) | 15% | 15% |
 
-> **Bottom Line:** Tax treatment is nearly identical. The 7% VAT on short-lets is an additional cost, but for properties generating under €30,000/year, VAT registration is optional.
+> **In Sintesi:** Il trattamento fiscale è quasi identico. L'IVA del 7% sugli affitti brevi è un costo aggiuntivo, ma per le proprietà che generano meno di €30.000 all'anno, la registrazione IVA è facoltativa.
 
-## Real Case Studies
+## Casi di Studio Reali
 
-### Case Study 1: 2-Bed Apartment in Sliema (Purchase price: €380,000)
+### Caso di Studio 1: Appartamento con 2 Camere da Letto a Sliema (Prezzo di acquisto: €380.000)
 
-**Short-Let Strategy:**
-- Listed on Airbnb at €110/night average
-- Achieved 72% occupancy (262 nights/year)
-- Gross revenue: €28,820
-- Management & costs: -€8,650 (30%)
-- Net revenue: **€20,170**
-- **Net yield: 5.3%**
+**Strategia di Affitto Breve:**
+- Inserito su Airbnb a una media di €110/notte
+- Occupazione raggiunta del 72% (262 notti/anno)
+- Ricavo lordo: €28.820
+- Gestione e costi: -€8.650 (30%)
+- Ricavo netto: **€20.170**
+- **Rendimento netto: 5.3%**
 
-**Long-Let Strategy:**
-- Rented to an iGaming professional at €1,600/month
-- 11 months occupancy (1 month vacancy between tenants)
-- Gross revenue: €17,600
-- Management costs: -€500 (maintenance only)
-- Net revenue: **€17,100**
-- **Net yield: 4.5%**
+**Strategia di Affitto Lungo:**
+- Affittato a un professionista dell'iGaming a €1.600/mese
+- Occupazione di 11 mesi (1 mese di vacanza tra gli inquilini)
+- Ricavo lordo: €17.600
+- Costi di gestione: -€500 (solo manutenzione)
+- Ricavo netto: **€17.100**
+- **Rendimento netto: 4.5%**
 
-**Verdict: Short-let wins by €3,070/year** – but requires significantly more effort or 20-25% property management fees.
+**Verdetto: L'affitto breve vince per €3.070/anno** – ma richiede uno sforzo significativamente maggiore o commissioni di gestione immobiliare del 20-25%.
 
-### Case Study 2: 1-Bed Apartment in St. Paul's Bay (Purchase price: €165,000)
+### Caso di Studio 2: Appartamento con 1 Camera da Letto a St. Paul's Bay (Prezzo di acquisto: €165.000)
 
-**Short-Let Strategy:**
-- Listed at €65/night average
-- Achieved 60% occupancy (219 nights/year)
-- Gross revenue: €14,235
-- Management & costs: -€4,270 (30%)
-- Net revenue: **€9,965**
-- **Net yield: 6.0%**
+**Strategia di Affitto Breve:**
+- Inserito a una media di €65/notte
+- Occupazione raggiunta del 60% (219 notti/anno)
+- Ricavo lordo: €14.235
+- Gestione e costi: -€4.270 (30%)
+- Ricavo netto: **€9.965**
+- **Rendimento netto: 6.0%**
 
-**Long-Let Strategy:**
-- Rented to a nurse at €900/month
-- Full year occupancy
-- Gross revenue: €10,800
-- Management costs: -€300
-- Net revenue: **€10,500**
-- **Net yield: 6.4%**
+**Strategia di Affitto Lungo:**
+- Affittato a un infermiere a €900/mese
+- Occupazione per l'intero anno
+- Ricavo lordo: €10.800
+- Costi di gestione: -€300
+- Ricavo netto: **€10.500**
+- **Rendimento netto: 6.4%**
 
-**Verdict: Long-let wins by €535/year** – and with zero management hassle. In affordable areas, long-let often wins because nightly rates are too low to overcome management costs.
+**Verdetto: L'affitto lungo vince per €535/anno** – e con zero problemi di gestione. Nelle aree convenienti, l'affitto lungo vince spesso perché le tariffe giornaliere sono troppo basse per compensare i costi di gestione.
 
-## Which Strategy Is Right for You?
+## Quale Strategia è Giusta per Te?
 
-### Choose Short-Let if:
-- Your property is in a **tourist/coastal area** (Sliema, St. Julian's, Valletta, Mellieħa)
-- Property value is **above €300,000** (higher nightly rates absorb management costs)
-- You want to **use the property yourself** part of the year
-- You're hands-on or willing to pay for property management
-- The property has **distinctive features** (sea view, terrace, character) that command premium nightly rates
+### Scegli l'Affitto Breve se:
+- La tua proprietà si trova in una **zona turistica/costiera** (Sliema, St. Julian's, Valletta, Mellieħa)
+- Il valore della proprietà è **superiore a €300.000** (le tariffe giornaliere più elevate assorbono i costi di gestione)
+- Vuoi **usare la proprietà tu stesso** per parte dell'anno
+- Sei pratico o disposto a pagare per la gestione immobiliare
+- La proprietà ha **caratteristiche distintive** (vista mare, terrazza, carattere) che giustificano tariffe giornaliere premium
 
-### Choose Long-Let if:
-- Your property is in a **residential/suburban area** (Swieqi, Attard, Naxxar, Birkirkara)
-- Property value is **under €300,000** (nightly rates don't justify management costs)
-- You want **passive income** with minimal involvement
-- You prefer **predictable cash flow** over maximum returns
-- You don't want to deal with MTA licensing and regulations
+### Scegli l'Affitto Lungo se:
+- La tua proprietà si trova in una **zona residenziale/suburbana** (Swieqi, Attard, Naxxar, Birkirkara)
+- Il valore della proprietà è **inferiore a €300.000** (le tariffe giornaliere non giustificano i costi di gestione)
+- Vuoi un **reddito passivo** con un coinvolgimento minimo
+- Preferisci un **flusso di cassa prevedibile** rispetto ai rendimenti massimi
+- Non vuoi occuparti delle licenze MTA e delle normative
 
-### Consider a Hybrid Approach:
-Many Malta investors use a **seasonal hybrid**:
-- **Short-let** during peak season (May-October): higher rates, tourism demand
-- **Long-let** during off-season (November-April): guaranteed income, avoid void periods
-- Requires a **flexible lease arrangement** and MTA licence
+### Considera un Approccio Ibrido:
+Molti investitori di Malta utilizzano un **ibrido stagionale**:
+- **Affitto breve** durante l'alta stagione (Maggio-Ottobre): tariffe più alte, domanda turistica
+- **Affitto lungo** durante la bassa stagione (Novembre-Aprile): reddito garantito, evita periodi di vuoto
+- Richiede un **accordo di locazione flessibile** e una licenza MTA
 
-## Frequently Asked Questions
+## Domande Frequenti
 
-### Do I need a licence to rent my property short-term in Malta?
-Yes. The Malta Tourism Authority (MTA) requires a licence for all short-term accommodation (under 6 months). The licence costs €100-€250 annually and requires your property to meet minimum safety and quality standards.
+### Ho bisogno di una licenza per affittare la mia proprietà a breve termine a Malta?
+Sì. La Malta Tourism Authority (MTA) richiede una licenza per tutte le strutture ricettive a breve termine (inferiori a 6 mesi). La licenza costa €100-€250 all'anno e richiede che la tua proprietà soddisfi standard minimi di sicurezza e qualità.
 
-### What tax do I pay on Airbnb rental income in Malta?
-Most owners opt for the 15% Final Withholding Tax on gross rental income. Additionally, short-lets attracting guests for accommodation purposes may be subject to 7% VAT. VAT registration is mandatory if your annual turnover exceeds €30,000.
+### Che tasse pago sul reddito da affitto Airbnb a Malta?
+La maggior parte dei proprietari opta per la Ritenuta Fiscale Finale del 15% sul reddito da locazione lordo. Inoltre, gli affitti brevi che attirano ospiti per scopi di alloggio possono essere soggetti all'IVA del 7%. La registrazione IVA è obbligatoria se il tuo fatturato annuo supera i €30.000.
 
-### Is long-term rental more profitable than Airbnb in Malta?
-It depends on location and property value. In premium areas (Sliema, St. Julian's), short-lets typically generate 30-60% more gross revenue but cost 25-35% more to manage. In affordable areas (St. Paul's Bay, Marsascala), long-lets often achieve similar or better net yields with far less effort.
+### L'affitto a lungo termine è più redditizio di Airbnb a Malta?
+Dipende dalla posizione e dal valore della proprietà. Nelle aree premium (Sliema, St. Julian's), gli affitti brevi generano tipicamente il 30-60% in più di ricavi lordi, ma costano il 25-35% in più da gestire. Nelle aree convenienti (St. Paul's Bay, Marsascala), gli affitti lunghi spesso ottengono rendimenti netti simili o migliori con molta meno fatica.
 
-### What is the average rental yield in Malta?
-Gross rental yields in Malta range from 3.5% to 8%, depending on location, property type, and rental strategy. Short-lets in premium areas achieve 5-8%, while long-lets typically yield 3.5-5.5%.
+### Qual è il rendimento medio degli affitti a Malta?
+I rendimenti lordi degli affitti a Malta vanno dal 3,5% all'8%, a seconda della posizione, del tipo di proprietà e della strategia di affitto. Gli affitti brevi nelle aree premium ottengono il 5-8%, mentre gli affitti lunghi tipicamente rendono il 3,5-5,5%.
 
-### Can I switch between short-let and long-let in Malta?
-Yes, but you need to manage the regulatory requirements. An MTA licence is needed for short-lets but not long-lets. A Housing Authority registration is needed for long-lets (6+ months) but not short-lets. Many investors use a seasonal hybrid approach.
+### Posso passare tra affitto a breve e affitto a lungo termine a Malta?
+Sì, ma è necessario gestire i requisiti normativi. È necessaria una licenza MTA per gli affitti a breve termine, ma non per quelli a lungo termine. È necessaria una registrazione presso l'Autorità per l'Edilizia Abitativa per gli affitti a lungo termine (6+ mesi), ma non per quelli a breve termine. Molti investitori utilizzano un approccio ibrido stagionale.
 
-## Ready to Find Your Next Investment Property?
+## Pronto a Trovare la Tua Prossima Proprietà di Investimento?
 
-Browse rental investment opportunities across Malta's top-yielding locations, with estimated rental income data and yield projections.
+Sfoglia le opportunità di investimento in affitto nelle località con il rendimento più elevato di Malta, con dati stimati sul reddito da locazione e proiezioni di rendimento.

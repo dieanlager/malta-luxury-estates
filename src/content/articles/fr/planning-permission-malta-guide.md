@@ -1,232 +1,231 @@
 ---
-title: "Planning Permission in Malta 2026 – Complete Guide to PA Permits, ODZ, and Building Regulations"
+title: "Planning Permission in Malta 2026 - Complete Guide to PA Permits, ODZ, and Building Regulations (en anglais)"
 category: "Legal"
-excerpt: "Everything you need to know about the Planning Authority (PA) process in Malta – from minor internal works to full development applications, ODZ restrictions, enforcement, and how planning status affects property value."
-metaDescription: "Planning a renovation or building in Malta? Our 2026 guide covers Planning Authority (PA) permits, DN notifications, regularisation (RG) for unpermitted works, and ODZ rules."
+excerpt: "Tout ce que vous devez savoir sur le processus de l'autorité de planification (PA) à Malte - des travaux internes mineurs aux demandes de développement complètes, les restrictions ODZ, l'application, et comment le statut de la planification affecte la valeur de la propriété."
+metaDescription: "Vous envisagez de rénover ou de construire à Malte ? Notre guide 2026 couvre les permis de l'autorité de planification (PA), les notifications DN, la régularisation (RG) pour les travaux non autorisés, et les règles ODZ."
 image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "18 min read"
+readTime: "18 min de lecture"
 author: "Malta Luxury Real Estate"
 slug: "planning-permission-malta-guide"
+localizedSlug: "planning-permission-in-malta-2026-complete-guide"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Planning Permission in Malta 2026 – Complete Guide to PA Permits, ODZ, and Building Regulations
+# Planning Permission in Malta 2026 - Complete Guide to PA Permits, ODZ, and Building Regulations (en anglais seulement)
 
-Planning permission in Malta is governed by the Planning Authority (PA), formerly known as MEPA. Whether you are buying a property with unpermitted additions, renovating a townhouse, building a pool, or developing a new apartment block, understanding the PA process is essential. Unpermitted works are the single most common source of property transaction delays and disputes in Malta.
+Les permis de construire à Malte sont régis par l'Autorité de planification (PA), anciennement connue sous le nom de MEPA. Que vous achetiez une propriété avec des ajouts non autorisés, que vous rénoviez une maison de ville, que vous construisiez une piscine ou que vous développiez un nouvel immeuble d'appartements, il est essentiel de comprendre le processus de l'AP. Les travaux non autorisés sont la source la plus fréquente de retards et de litiges dans les transactions immobilières à Malte.
 
-## Why Planning Permission Matters for Property Buyers and Investors
+## L'importance du permis de construire pour les acheteurs de biens immobiliers et les investisseurs
 
-Before investing a single euro in Maltese property, you need to understand one fundamental truth: **planning status directly affects property value**. A property with fully approved permits commands a premium. A property with unpermitted additions carries risk – and potentially a large bill to regularise or demolish.
+Avant d'investir un seul euro dans une propriété maltaise, vous devez comprendre une vérité fondamentale : **le statut de l'urbanisme affecte directement la valeur de la propriété**. Un bien immobilier dont les permis ont été approuvés en bonne et due forme se vend plus cher. Une propriété avec des ajouts non autorisés comporte des risques - et potentiellement une facture importante pour la régulariser ou la démolir.
 
-**What can go wrong without proper permits:**
-- The buyer's notary discovers unpermitted additions during due diligence → transaction collapses
-- The Planning Authority issues an enforcement notice → forced demolition at your expense
-- You cannot get a bank mortgage on a property with serious planning irregularities
-- Neighbours file complaints → PA investigation → fines and legal proceedings
-- You try to sell later → the next buyer's notary discovers the same problems → reduced price or no sale
+**Ce qui peut mal se passer en l'absence de permis adéquat:**
+- Le notaire de l'acheteur découvre des ajouts non autorisés au cours de l'audit préalable → la transaction échoue
+- L'autorité chargée de l'aménagement du territoire émet un avis d'exécution → démolition forcée à vos frais
+- Vous ne pouvez pas obtenir d'hypothèque bancaire sur un bien immobilier présentant de graves irrégularités en matière d'urbanisme
+- Les voisins déposent des plaintes → enquête de l'autorité d'aménagement → amendes et poursuites judiciaires
+- Vous essayez de vendre plus tard → le notaire de l'acheteur suivant découvre les mêmes problèmes → prix réduit ou pas de vente
 
-> **Bottom line:** Never buy a property in Malta without confirming that all structures, extensions, and alterations are covered by valid planning permits. Your notary and architect (perit) should verify this before you sign the konvenju.
+> N'achetez jamais un bien immobilier à Malte sans avoir vérifié que toutes les structures, extensions et modifications sont couvertes par des permis de construire valides. Votre notaire et votre architecte (perit) doivent s'en assurer avant que vous ne signiez le konvenju.
 
-## The Planning Authority (PA): How It Works
+## L'autorité de planification (PA) : Comment ça marche
 
 ### Structure
 
-The Planning Authority is Malta's sole planning regulator. It processes applications, sets policy through Local Plans and the Strategic Plan for the Environment and Development (SPED), and enforces planning control.
+L'Autorité de planification est la seule autorité de régulation de Malte en matière d'urbanisme. Elle traite les demandes, définit la politique à travers les plans locaux et le plan stratégique pour l'environnement et le développement (SPED), et fait respecter le contrôle de l'urbanisme.
 
-**Key departments you'll interact with:**
-- **Development Management** – processes applications, issues permits
-- **Enforcement** – investigates complaints, issues enforcement notices
-- **Heritage Planning** – deals with scheduled (listed) buildings
-- **Environment and Resources** – environmental impact assessments, ODZ applications
+**Principaux services avec lesquels vous interagirez:**
+- **Gestion du développement** - traite les demandes, délivre les permis
+- **Application de la législation** - enquête sur les plaintes, émission d'avis d'application de la législation
+- **Planification du patrimoine : s'occupe des bâtiments classés
+- **Environnement et ressources** - études d'impact sur l'environnement, applications ODZ
 
-### Types of Planning Permission
+### Types de permis de construire
 
-| Application Type | What It Covers | Processing Time | Fee Range |
+| Type de demande - Ce qu'elle couvre - Délai de traitement - Fourchette de prix
 |-----------------|----------------|-----------------|-----------|
-| **DN (Development Notification)** | Minor internal works, like-for-like replacement of fixtures, minor repairs | 5–15 working days | €75–€250 |
-| **PA (Full Development Permission)** | New builds, major alterations, extensions, change of use | 3–12 months | €500–€5,000+ |
-| **RG (Regularisation)** | Sanctioning of unpermitted existing works | 3–18 months | Premium fees (2–3x standard) |
-| **Outline Permission** | Establishes principle of development (no detailed plans) | 2–6 months | €250–€1,000 |
+**DN (Development Notification)** | Travaux internes mineurs, remplacement à l'identique des installations, réparations mineures | 5-15 jours ouvrables | 75-€250
+**PA (Full Development Permission)** | Nouvelles constructions, modifications importantes, extensions, changement d'utilisation | 3-12 mois | €500-€5,000+ |
+**RG (Régularisation)** | Sanction de travaux existants non autorisés | 3-18 mois | Frais supplémentaires (2-3x la norme) |
+**Autorisation générale** | Établit le principe de l'aménagement (pas de plans détaillés) | 2-6 mois | 250-€1,000 |
 
-### The DN Process (Minor Works)
+### La procédure DN (travaux mineurs)
 
-A Development Notification (DN) is the simplified process for small-scale works that do not materially change the building. Typical DN works include:
+Une notification de développement (DN) est la procédure simplifiée pour les travaux de petite envergure qui ne modifient pas matériellement le bâtiment. Les travaux typiques d'une DN sont les suivants :
 
-- Internal demolition of non-structural walls
-- Replacement of windows (like-for-like)
-- Installation of air conditioning units (within guidelines)
-- Minor internal layout changes
-- Solar panel installation (within size limits)
-- Replacement of flooring, sanitaryware, kitchen units
+- Démolition intérieure de murs non structurels
+- Remplacement des fenêtres (à l'identique)
+- Installation d'unités de climatisation (dans les limites des directives)
+- Modifications mineures de l'agencement intérieur
+- Installation de panneaux solaires (dans les limites des dimensions)
+- Remplacement des revêtements de sol, des sanitaires et des éléments de cuisine
 
-**DN timeline:** Submit online through the PA portal (pa.org.mt) → PA issues acknowledgment → Work can commence after 15 working days if no objections or queries.
+**Délai : ** Soumettre en ligne sur le portail de l'Autorité palestinienne (pa.org.mt) → L'Autorité palestinienne délivre un accusé de réception → Les travaux peuvent commencer après 15 jours ouvrables s'il n'y a pas d'objections ou de questions.
 
-**Important:** A DN is not a free pass. If the PA determines that your works exceed DN scope, they may require a full PA application – and you may face enforcement action for works already done.
+**Important : un DN n'est pas un laissez-passer. Si l'autorité compétente détermine que vos travaux dépassent la portée de la DN, elle peut exiger une demande complète d'autorisation de construire - et vous pouvez faire l'objet de mesures d'exécution pour les travaux déjà effectués.
 
-### The Full PA Application
+### La demande complète d'autorisation de construire
 
-For anything beyond minor works, you need a full planning application. This covers:
+Pour tout ce qui dépasse les travaux mineurs, vous devez déposer une demande d'autorisation complète. Cette demande couvre :
 
-- Building extensions (additional rooms, floors, penthouses)
-- Swimming pools
-- New buildings
-- Change of use (residential to commercial, or vice versa)
-- Demolition and rebuild
-- Significant facade changes
-- Any works on scheduled (listed) buildings
+- Les extensions de bâtiments (pièces supplémentaires, étages, penthouses)
+- Les piscines
+- Les nouveaux bâtiments
+- Changement d'usage (résidentiel à commercial, ou vice versa)
+- Démolition et reconstruction
+- Modifications importantes de la façade
+- Tous travaux sur des bâtiments classés
 
-**The process, step by step:**
+**Le processus, étape par étape:**
 
-1. **Engage a perit (architect/civil engineer)** – mandatory for all PA applications. The perit prepares drawings, submits the application, and represents you before the PA.
+1. **Engager un perit (architecte/ingénieur civil)** - obligatoire pour toutes les demandes de PA. Le perit prépare les dessins, soumet la demande et vous représente devant l'autorité compétente.
 
-2. **Pre-application consultation** (optional but recommended for complex cases) – meet with PA case officer to discuss feasibility before spending money on detailed drawings.
+2. **Consultation préalable à la demande** (facultative mais recommandée pour les cas complexes) - rencontrer l'agent chargé du dossier pour discuter de la faisabilité avant de dépenser de l'argent pour des dessins détaillés.
 
-3. **Submit application** – online through the PA's eApps portal. Required documents: site plan, floor plans (existing and proposed), elevations, sections, method statement, and supporting documentation.
+3. **Dépôt de la demande** - en ligne sur le portail eApps de l'Autorité palestinienne. Documents requis : plan du site, plans des étages (existants et proposés), élévations, coupes, déclaration de méthode et documentation à l'appui.
 
-4. **Public consultation period** – neighbours and interested parties can view the application and file objections. The PA publishes applications on its website and notifies neighbours by letter.
+4. **Période de consultation publique** - les voisins et les parties intéressées peuvent consulter la demande et formuler des objections. L'Autorité palestinienne publie les demandes sur son site web et informe les voisins par lettre.
 
-5. **Case officer assessment** – the PA case officer evaluates the application against Local Plan policies, SPED, and relevant guidelines.
+5. **Évaluation par le chargé de dossier** - le chargé de dossier de l'Autorité palestinienne évalue la demande en fonction des politiques du plan local, du SPED et des lignes directrices pertinentes.
 
-6. **Commission hearing** (for larger applications) – the Planning Commission hears the application and may ask questions of the applicant, perit, and any objectors.
+6. **Audience de la commission** (pour les demandes plus importantes) - la commission d'urbanisme entend la demande et peut poser des questions au demandeur, à la commission et à tout opposant.
 
-7. **Decision** – approval (possibly with conditions), refusal, or request for amended plans.
+7. **Décision** - approbation (éventuellement assortie de conditions), refus ou demande de modification des plans.
 
-**Timeline:** Simple residential extensions may be approved in 3–4 months. Complex or contested applications can take 6–12+ months. The PA has a statutory obligation to decide within 8 weeks (DN) or 13 weeks (full application), but these deadlines are rarely met in practice.
+**Délai:** Les extensions résidentielles simples peuvent être approuvées dans un délai de 3 à 4 mois. Les demandes complexes ou contestées peuvent prendre de 6 à 12 mois. L'autorité publique a l'obligation statutaire de prendre une décision dans un délai de 8 semaines (DN) ou de 13 semaines (demande complète), mais ces délais sont rarement respectés dans la pratique.
 
-### Fees
+### Frais
 
-PA application fees depend on the type and scale of development:
+Les frais de dossier de l'AP dépendent du type et de l'ampleur du projet :
 
-| Development Type | Approximate Fee |
+| Les frais de dossier dépendent du type et de l'ampleur de l'aménagement
 |-----------------|-----------------|
-| Internal alterations (DN) | €75–€250 |
-| Residential extension (extra room) | €500–€1,200 |
-| Swimming pool | €800–€1,500 |
-| New dwelling (single unit) | €1,500–€3,000 |
-| Multi-unit development | €3,000–€15,000+ |
-| Change of use | €500–€2,000 |
-| Regularisation (RG) | 2–3x standard fees |
+| Modification intérieure (DN) | 75 € - 250 € | Extension résidentielle (pièce supplémentaire)
+| Extension résidentielle (pièce supplémentaire) | 500-€1,200 |
+| Piscine | 800-€1,500 |
+| Nouveau logement (unité unique) | 1.500-€3.000 |
+| 3 000 € - 15 000 € + | Changement d'usage
+| Changement d'usage | 500-€2,000 |
+| Régularisation (RG) | 2 à 3 fois les frais standard |
 
-Perit fees are separate and negotiated directly with your architect. Budget €2,000–€8,000 for a standard residential application depending on complexity, plus €1,500–€5,000 for site supervision during construction.
+Les honoraires de Perit sont distincts et négociés directement avec votre architecte. Prévoyez un budget de 2 000 à 8 000 euros pour une demande résidentielle standard, en fonction de sa complexité, plus 1 500 à 5 000 euros pour la supervision du chantier pendant la construction.
 
-## ODZ: Outside Development Zone
+## ODZ : Outside Development Zone (zone de développement extérieur)
 
-### What Is ODZ?
+### Qu'est-ce que l'ODZ ?
 
-Malta's territory is divided into land inside the **Development Zone (DZ)** – where building is generally permitted subject to planning approval – and land **Outside the Development Zone (ODZ)** – rural and agricultural land where building is severely restricted.
+Le territoire de Malte est divisé en deux parties : les terres situées à l'intérieur de la **Zone de développement (DZ)** - où la construction est généralement autorisée sous réserve de l'obtention d'un permis de construire - et les terres situées **Hors de la zone de développement (ODZ)** - des terres rurales et agricoles où la construction est fortement limitée.
 
-ODZ boundaries are defined in the Local Plans and are visible on the PA's GeoServer mapping system (freely accessible online).
+Les limites de l'ODZ sont définies dans les plans locaux et sont visibles sur le système de cartographie GeoServer de l'Autorité palestinienne (accessible gratuitement en ligne).
 
-### What Can You Build in ODZ?
+### Qu'est-ce qu'on peut construire dans une ODZ ?
 
-In general, very little. ODZ policy is intentionally restrictive to protect Malta's limited countryside:
+En général, très peu. La politique de l'ODZ est intentionnellement restrictive afin de protéger les paysages limités de Malte :
 
-| Activity | Permitted in ODZ? | Notes |
+| Activité autorisée dans la zone de développement urbain ? | Activité autorisée dans la zone de développement urbain (ODZ)
 |----------|-------------------|-------|
-| New residential dwelling | **No** (with rare exceptions) | Only replacement of existing lawful dwellings |
-| Agricultural buildings | **Yes** (with conditions) | Must be genuinely agricultural, strict design standards |
-| Swimming pools | **Rarely** | Only if associated with an existing lawful dwelling |
-| Extensions to existing dwellings | **Very limited** | Minor additions only, strict size limits |
-| Farmhouses (restoration) | **Yes** (with conditions) | Major opportunity for investors – see below |
-| Wind turbines / solar farms | **Case by case** | Subject to environmental assessment |
-| Demolition and rebuild | **No** (generally) | Unless no increase in footprint and volume |
+| Nouvelle habitation résidentielle | **Non** (avec de rares exceptions) | Seulement le remplacement d'habitations légales existantes
+| Bâtiments agricoles | **Oui** (avec conditions) | Doit être réellement agricole, normes de conception strictes |
+| Piscines - **Rares** | Uniquement si elles sont associées à une habitation légale existante
+| Les extensions d'habitations existantes **très limitées** | ajouts mineurs seulement, limites de taille strictes |
+| Les fermes (restauration) | **Oui** (sous conditions) | Opportunité majeure pour les investisseurs - voir ci-dessous
+| Éoliennes / parcs solaires **Au cas par cas** | Sous réserve d'une évaluation environnementale **Au cas par cas** | Sous réserve d'une évaluation environnementale
+| Démolition et reconstruction **Non** (en général) | A moins qu'il n'y ait pas d'augmentation de l'empreinte au sol et du volume
 
-### ODZ Farmhouses: The Investment Opportunity
+### Les fermes ODZ : L'opportunité d'investissement
 
-The restoration and conversion of existing ODZ farmhouses is one of Malta's most attractive niche property investments, particularly in Gozo. The PA generally supports the restoration of genuinely historic farmhouses, provided:
+La restauration et la conversion des fermes ODZ existantes est l'un des investissements immobiliers de niche les plus attractifs de Malte, en particulier à Gozo. L'AP soutient généralement la restauration de fermes véritablement historiques, à condition que.. :
 
-- The building has a lawful pre-1967 origin (evidenced by aerial photography or historical records)
-- The restoration respects the original footprint, volume, and architectural character
-- Traditional materials and techniques are used (stone, timber, not concrete and aluminium)
-- The property is used as a dwelling (not commercial use, with some exceptions for agritourism)
+- Le bâtiment a une origine légale antérieure à 1967 (prouvée par des photographies aériennes ou des documents historiques)
+- La restauration respecte l'empreinte au sol, le volume et le caractère architectural d'origine
+- Les matériaux et techniques traditionnels soient utilisés (pierre, bois, pas de béton ni d'aluminium)
+- Le bien est utilisé comme habitation (pas d'utilisation commerciale, avec quelques exceptions pour l'agritourisme)
 
-**Why investors love ODZ farmhouses:**
-- Unique character that commands premium prices and rental rates
-- Limited supply (you cannot build new farmhouses)
-- Gozo farmhouses attract wealthy tourists and long-term expats seeking authenticity
-- Planning restrictions keep competition low – no new developments nearby
+**Pourquoi les investisseurs aiment les fermes ODZ:**
+- Caractère unique qui permet d'obtenir des prix et des taux de location élevés
+- L'offre est limitée (il n'est pas possible de construire de nouvelles fermes)
+- Les fermes de Gozo attirent les touristes fortunés et les expatriés de longue date à la recherche d'authenticité
+- Les restrictions en matière d'urbanisme limitent la concurrence - pas de nouveaux développements à proximité
 
-> **Warning:** Buying an ODZ property without confirmed planning status is extremely risky. Some ODZ structures are entirely unpermitted and face demolition orders. Always have your perit verify the property's legal status with the PA before committing.
+> Avertissement : l'achat d'une propriété ODZ sans statut de planification confirmé est extrêmement risqué. Certaines structures de l'ODZ ne sont absolument pas autorisées et font l'objet d'un ordre de démolition. Demandez toujours à votre perit de vérifier le statut légal de la propriété auprès de l'Autorité palestinienne avant de vous engager.
 
-## Unpermitted Works: The Biggest Risk in Maltese Property
+## Travaux non autorisés : Le plus grand risque de l'immobilier maltais
 
-### How Common Are They?
+### Quelle est leur fréquence ?
 
-Very common. Some industry estimates suggest that **30–50% of Maltese properties** have some form of unpermitted addition or alteration. This ranges from minor (an enclosed balcony without a DN) to major (entire additional floors built without PA approval).
+Très fréquents. Certaines estimations du secteur suggèrent que **30-50% des propriétés maltaises** ont une forme ou une autre d'ajout ou de modification non autorisée. Il peut s'agir d'ajouts mineurs (un balcon fermé sans DN) ou d'ajouts importants (des étages supplémentaires entiers construits sans l'approbation de l'autorité compétente).
 
-### The Regularisation (RG) Process
+### Le processus de régularisation (RG)
 
-If you own a property with unpermitted works, you can apply to the PA for **regularisation** – essentially, retrospective planning permission. Introduced through various sanctioning schemes over the years, the RG process allows owners to legalise existing structures.
+Si vous êtes propriétaire d'un bien immobilier comportant des travaux non autorisés, vous pouvez demander à l'autorité compétente une **régularisation**, c'est-à-dire un permis de construire rétrospectif. Introduite par le biais de divers programmes de sanction au fil des ans, la procédure de régularisation permet aux propriétaires de légaliser les structures existantes.
 
-**Key points:**
-- **Not guaranteed** – the PA can refuse regularisation if the works are unacceptable
-- **Higher fees** – RG applications cost 2–3x the standard PA fees
-- **Fines** – a regularisation penalty is payable on top of application fees
-- **Must meet current policy** – works that conflict with current planning policy may not be sanctionable
-- **Time-consuming** – 3–18 months, depending on complexity and PA backlog
+**Points clés:**
+- **Pas de garantie** - l'AP peut refuser la régularisation si les travaux sont inacceptables
+- **Frais plus élevés** - les demandes de régularisation coûtent 2 à 3 fois plus cher que les frais standard de l'Autorité palestinienne
+- **Amendes** - une pénalité de régularisation doit être payée en plus des frais de dossier
+- **Les travaux qui sont en contradiction avec la politique d'urbanisme actuelle peuvent ne pas être sanctionnés
+- **Temps nécessaire** - 3 à 18 mois, en fonction de la complexité et de l'arriéré de la demande d'autorisation
 
-### Impact on Property Value
+### Impact sur la valeur de la propriété
 
-| Planning Status | Impact on Value |
+| Impact sur la valeur de la propriété
 |----------------|-----------------|
-| Fully permitted (all works have valid PA/DN) | Full market value |
-| Minor unpermitted works (e.g., enclosed balcony) | 5–10% discount, easy to regularise |
-| Significant unpermitted works (extra room, floor) | 15–25% discount, costly to regularise |
-| Major unpermitted works (entire structure at risk) | 30–50% discount, may be unsellable |
-| Active enforcement notice | Severely discounted, difficult to finance |
+| La valeur de l'immeuble est de 5 à 10 % de réduction, facile à régulariser
+| Travaux mineurs non autorisés (par exemple, balcon fermé) | 5-10% de réduction, facile à régulariser
+| Travaux importants non autorisés (pièce supplémentaire, étage) | 15-25% de réduction, régularisation coûteuse
+| Travaux importants non autorisés (toute la structure est menacée) | 30-50% de réduction, peut être invendable |
+| Travaux non autorisés importants (toute la structure est menacée) | 30-50% de réduction, risque d'invendabilité
 
-## Scheduled Buildings (Heritage Properties)
+## Bâtiments classés (biens patrimoniaux)
 
-Malta has a large number of **scheduled** (listed) buildings – buildings of historical, architectural, or cultural significance that are protected from demolition or unsympathetic alteration.
+Malte compte un grand nombre de **bâtiments classés** (répertoriés) - des bâtiments d'importance historique, architecturale ou culturelle qui sont protégés contre la démolition ou les modifications inopportunes.
 
-**Scheduling grades:**
-- **Grade 1:** Highest protection. No external alterations permitted. Internal works extremely restricted.
-- **Grade 2:** High protection. Limited external and internal alterations, subject to Heritage Planning approval.
-- **Grade 3:** Moderate protection. More flexibility, but character must be preserved.
+**Niveaux d'inscription:**
+- **Grade 1:** Protection la plus élevée. Aucune modification extérieure n'est autorisée. Les travaux intérieurs sont extrêmement limités.
+- **Niveau 2:** Haute protection. Modifications extérieures et intérieures limitées, sous réserve de l'approbation du plan du patrimoine.
+- **Niveau 3:** Protection modérée. Plus de flexibilité, mais le caractère doit être préservé.
 
-**What this means for buyers:**
-- Scheduled buildings often require Heritage Planning approval in addition to standard PA permission
-- Renovation costs are typically higher (traditional materials, specialist craftsmen)
-- Insurance and maintenance costs may be higher
-- BUT: character properties in Valletta, Mdina, and the Three Cities command premium prices precisely because of their protected status and unique character
+**Ce que cela signifie pour les acheteurs:**
+- Les bâtiments classés nécessitent souvent une autorisation de planification du patrimoine en plus de l'autorisation habituelle
+- Les coûts de rénovation sont généralement plus élevés (matériaux traditionnels, artisans spécialisés)
+- Les coûts d'assurance et d'entretien peuvent être plus élevés
+- MAIS : les propriétés de caractère à La Valette, à Mdina et dans les Trois Cités atteignent des prix élevés précisément en raison de leur statut protégé et de leur caractère unique
 
-## Common Questions from Property Buyers
+## Questions courantes des acheteurs de biens immobiliers
 
-### I want to add a pool to my property. Do I need planning permission?
-Yes. Swimming pools require a full PA application. The PA assesses pool applications based on size, location, proximity to neighbours, noise impact, and whether the property is in a built-up area or ODZ. In ODZ, pool applications are very difficult to approve.
+### Je souhaite ajouter une piscine à ma propriété. Ai-je besoin d'un permis de construire ?
+Oui, les piscines doivent faire l'objet d'une demande de permis de construire complète. Le PA évalue les demandes de piscine en fonction de la taille, de l'emplacement, de la proximité des voisins, de l'impact sonore et du fait que la propriété se trouve dans une zone bâtie ou dans une zone de développement urbain (ODZ). Dans les zones de développement urbain, il est très difficile d'obtenir un permis de construire pour une piscine.
 
-### The property I want to buy has an enclosed balcony. Is this a problem?
-Enclosed balconies are one of the most common unpermitted works in Malta. If the enclosure was done without a DN or PA, it is technically illegal. However, many are easily regularised through an RG application. Your perit can advise on the cost and likelihood of successful regularisation.
+### Le bien que je souhaite acheter possède un balcon fermé. Est-ce un problème ?
+Les balcons fermés sont l'un des travaux non autorisés les plus courants à Malte. Si la clôture a été réalisée sans DN ou PA, elle est techniquement illégale. Cependant, de nombreux balcons sont facilement régularisés par une demande de permis de construire. Votre perit peut vous conseiller sur le coût et la probabilité d'une régularisation réussie.
 
-### How do I check if a property has valid planning permits?
-Your notary and perit will check this during the due diligence period (between konvenju and final deed). You can also search the PA's online database (pa.org.mt → Case Search) using the property address or the deed reference number.
+### Comment vérifier si un bien immobilier dispose de permis d'urbanisme valides ?
+Votre notaire et votre perit vérifieront ce point au cours de la période de diligence raisonnable (entre le konvenju et l'acte final). Vous pouvez également effectuer une recherche dans la base de données en ligne de l'AP (pa.org.mt → Case Search) en utilisant l'adresse du bien ou le numéro de référence de l'acte.
 
-### Can I convert a garage into a living space?
-Possibly, but it requires a full PA application for change of use. The PA will assess whether the conversion is compatible with the building's structure, the neighbourhood, and parking standards. Garage conversions in urban areas are commonly approved; in areas with parking shortages, they may be refused.
+### Puis-je transformer un garage en espace de vie ?
+C'est possible, mais cela nécessite une demande complète de changement d'usage auprès de l'autorité compétente. L'autorité compétente évaluera si la conversion est compatible avec la structure du bâtiment, le quartier et les normes de stationnement. Dans les zones urbaines, les conversions de garage sont généralement approuvées ; dans les zones où le nombre de places de stationnement est insuffisant, elles peuvent être refusées.
 
-### What happens if I carry out works without planning permission?
-The PA can issue an enforcement notice requiring you to stop work, undo the work, and pay a fine. Ignoring an enforcement notice is a criminal offence. Third parties (neighbours) can also file private complaints, triggering a PA investigation.
+### Que se passe-t-il si j'effectue des travaux sans permis de construire ?
+L'autorité compétente peut émettre un avis d'exécution exigeant que vous arrêtiez les travaux, que vous les annuliez et que vous payiez une amende. Le fait d'ignorer un avis d'exécution constitue une infraction pénale. Des tiers (voisins) peuvent également déposer des plaintes privées, ce qui déclenche une enquête de l'AP.
 
-### How much does a perit cost in Malta?
-Perit fees vary widely. For a standard residential PA application: €2,000–€5,000 for drawings and submission. For a full project (application + site supervision + certification): €5,000–€15,000+ depending on project size. Always agree fees upfront in writing.
+### Combien coûte un perit à Malte ?
+Les frais de perit varient considérablement. Pour une demande d'autorisation de construire résidentielle standard : 2 000 à 5 000 euros pour les dessins et la soumission. Pour un projet complet (demande + supervision du site + certification) : 5 000 à 15 000 euros, selon la taille du projet. Il faut toujours convenir des honoraires par écrit et à l'avance.
 
-## Key Takeaways for Investors
+## Principaux enseignements pour les investisseurs
 
-1. **Always verify planning status before buying** – no exceptions
-2. **Budget for regularisation** if buying a property with known unpermitted works
-3. **ODZ farmhouses can be excellent investments** – but verify the building's lawful origin
-4. **Scheduled buildings are premium assets** – but renovation costs are higher
-5. **The PA process takes time** – factor 3–12 months into any renovation or development timeline
-6. **A good perit is your most important professional** – choose one with PA experience and a track record of approvals
+1. **Toujours vérifier l'état de la planification avant d'acheter** - pas d'exception
+2. **Prévoyez un budget de régularisation** si vous achetez un bien dont les travaux ne sont pas autorisés
+3. **Les fermes O.D.Z. peuvent être d'excellents investissements** - mais vérifiez l'origine légale du bâtiment
+4. **Les bâtiments classés sont des actifs de premier ordre** - mais les coûts de rénovation sont plus élevés
+5. **Le processus d'autorisation préalable prend du temps** - prévoyez un délai de 3 à 12 mois pour les travaux de rénovation ou de développement
+6. **Un bon perit est votre professionnel le plus important** - choisissez-en un qui a de l'expérience en matière d'AP et qui a obtenu de nombreuses approbations
 
-## Related Guides
+## Guides connexes
 
-- [Buying Property in Malta as a Foreigner](/insights/buying-property-in-malta-as-a-foreigner-2026)
-- [Property Inheritance in Malta](/insights/property-inheritance-malta)
-- [Best Areas for Property Investment in Malta](/insights/best-areas-investment-malta-2026)
-- [Step-by-Step Buying Process Malta](/insights/step-by-step-buying-process-malta)
+- [Acheter une propriété à Malte en tant qu'étranger](/insights/buying-property-in-malta-as-a-foreigner-2026)
+- [Héritage immobilier à Malte](/insights/property-inheritance-malta)
+- [Meilleures régions pour l'investissement immobilier à Malte](/insights/best-areas-investment-malta-2026)
+- [Processus d'achat étape par étape à Malte](/Instructions/Processus d'achat étape par étape à Malte)
 
-*Last updated: March 2026. Planning regulations and PA procedures are subject to change. Always consult a licensed architect (perit) for advice specific to your property and proposed works.*
+*Dernière mise à jour : Mars 2026. Les règles d'urbanisme et les procédures d'autorisation préalable sont susceptibles d'être modifiées. Consultez toujours un architecte agréé (perit) pour obtenir des conseils spécifiques à votre propriété et aux travaux proposés.*

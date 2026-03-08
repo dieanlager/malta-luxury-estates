@@ -25,6 +25,8 @@ import {
 } from 'lucide-react';
 import { PROPERTIES, AGENCIES, ARTICLES } from './constants';
 import { Property } from './types';
+import { resolveArticleLang, getLocalizedArticleLink } from './lib/markdown';
+import articleSlugs from './lib/article-slugs.json';
 import { usePageMeta } from './lib/seo/meta';
 import { DynamicMap } from './components/DynamicMap';
 import { MarketSnapshot } from './components/MarketSnapshot';
@@ -120,15 +122,20 @@ const LanguageWrapper = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const supportedLngs = ['en', 'it', 'de', 'fr', 'pl'];
-    if (lng && supportedLngs.includes(lng)) {
-      if (i18n.language !== lng) {
-        i18n.changeLanguage(lng);
+    const pathParts = location.pathname.split('/').filter(Boolean);
+    const pathLng = pathParts[0];
+
+    if (pathLng && supportedLngs.includes(pathLng)) {
+      if (i18n.language !== pathLng) {
+        i18n.changeLanguage(pathLng);
       }
-    } else if (!lng && i18n.language !== 'en') {
-      // Default to English if no prefix
-      i18n.changeLanguage('en');
+    } else if (location.pathname === '/' || !supportedLngs.includes(pathLng)) {
+      // Force English on root or if no valid lang prefix is present
+      if (i18n.language !== 'en') {
+        i18n.changeLanguage('en');
+      }
     }
-  }, [lng, i18n]);
+  }, [location.pathname, i18n]);
 
   return <>{children}</>;
 };
@@ -157,11 +164,10 @@ const LanguageSelector = () => {
     // Detect if current path has a lang prefix
     let originalInternalPath = '';
     if (supportedLngs.includes(pathParts[0])) {
-      // It's a localized path, we need to map slugs back to English internal keys to rebuild
+      // Map slugs back to English internal keys
       const currentLng = pathParts[0];
       const translatedSlugs = pathParts.slice(1);
 
-      // Reverse mapping (this is simplified, ideally we'd have a manifest)
       const slugMap: Record<string, string> = {
         'nieruchomosci': 'properties', 'immobiliare': 'properties', 'immobilien': 'properties', 'proprietes': 'properties',
         'wiedza': 'insights', 'approfondimenti': 'insights', 'einblicke': 'insights', 'conseils': 'insights',
@@ -173,7 +179,17 @@ const LanguageSelector = () => {
         'quiz-nieruchomosci': 'quiz', 'quiz-immobiliare': 'quiz', 'immobilien-quiz': 'quiz', 'quiz-immobilier': 'quiz'
       };
 
-      const internalParts = translatedSlugs.map(s => slugMap[s] || s);
+      const internalParts = translatedSlugs.map(s => {
+        // Try mapping via static slugMap
+        if (slugMap[s]) return slugMap[s];
+
+        // Try mapping via article localized slugs
+        const langMap = (articleSlugs as any)[currentLng] || {};
+        const enSlug = Object.keys(langMap).find(key => langMap[key] === s);
+        if (enSlug) return enSlug;
+
+        return s;
+      });
       originalInternalPath = '/' + internalParts.join('/');
     } else {
       originalInternalPath = currentPath;
@@ -185,9 +201,12 @@ const LanguageSelector = () => {
     const internalParts = originalInternalPath.split('/').filter(Boolean);
     const newTranslatedParts = internalParts.map(p => targetT(`slugs.${p}`, { defaultValue: p }));
 
+    const isArticle = internalParts.includes('insights');
     const newPath = langCode === 'en'
       ? `/${internalParts.join('/')}`
-      : `/${langCode}/${newTranslatedParts.join('/')}`;
+      : isArticle && internalParts.length > 1
+        ? getLocalizedArticleLink(internalParts[internalParts.length - 1], langCode)
+        : `/${langCode}/${newTranslatedParts.join('/')}`;
 
     setIsOpen(false);
     navigate(newPath);
@@ -245,7 +264,11 @@ const Navbar = () => {
 
     const parts = path.split('/').filter(Boolean);
     const translatedParts = parts.map(part => {
-      // Handle nested paths like market/live
+      // For property detail or specific city, keep slug but translate prefix
+      if (parts[0] === 'properties' && part !== 'properties' && part !== 'all') {
+        return part;
+      }
+
       const translated = t(`slugs.${part}`, { defaultValue: part });
       return translated;
     });
@@ -366,9 +389,20 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
   ];
 
   const getLocalizedPath = (path: string) => {
-    const lng = i18n.language === 'en' ? '' : `/${i18n.language}`;
-    const cleanPath = path.startsWith('/') ? path : `/${path}`;
-    return `${lng}${cleanPath === '/' ? '' : cleanPath}`;
+    if (i18n.language === 'en') return path;
+
+    const parts = path.split('/').filter(Boolean);
+    const translatedParts = parts.map(part => {
+      // Specific logic for properties link in the grid
+      if (parts[0] === 'properties' && part !== 'properties' && part !== 'all') {
+        return part;
+      }
+
+      const translated = t(`slugs.${part}`, { defaultValue: part });
+      return translated;
+    });
+
+    return `/${i18n.language}/${translatedParts.join('/')}`;
   };
 
   usePageMeta({
@@ -627,15 +661,15 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
           <div className="inline-block px-4 py-1 bg-white/5 border border-white/10 rounded-full mb-6">
             <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Expert Knowledge</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif mb-4">Investment Insights</h2>
-          <p className="text-white/50 max-w-2xl mx-auto">Strategic advice for international investors, residency seekers, and high-net-worth individuals looking at the Maltese market.</p>
+          <h2 className="text-4xl md:text-5xl font-serif mb-4">{t('sections.insights.title', 'Investment Insights')}</h2>
+          <p className="text-white/50 max-w-2xl mx-auto">{t('sections.insights.subtitle', 'Strategic advice for international investors, residency seekers, and high-net-worth individuals looking at the Maltese market.')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {ARTICLES.slice(0, 3).map((article) => (
             <Link
               key={article.slug}
-              to={`/insights/${article.slug}`}
+              to={getLocalizedArticleLink(article.slug, i18n.language)}
               className="group block"
             >
               <motion.div
@@ -659,7 +693,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                 <h3 className="text-xl font-serif mb-3 group-hover:text-gold transition-colors leading-tight">{article.title}</h3>
                 <p className="text-white/40 text-sm leading-relaxed mb-4">{article.excerpt}</p>
                 <div className="flex items-center gap-2 text-gold text-xs uppercase tracking-widest font-bold">
-                  Read Guide <ChevronRight size={14} />
+                  {t('article.read_guide', 'Read Guide')} <ChevronRight size={14} />
                 </div>
               </motion.div>
             </Link>
@@ -864,8 +898,18 @@ const Footer = () => {
 
   const getLocalizedPath = (path: string) => {
     if (i18n.language === 'en') return path;
+
     const parts = path.split('/').filter(Boolean);
-    const translatedParts = parts.map(part => t(`slugs.${part}`, { defaultValue: part }));
+    const translatedParts = parts.map(part => {
+      // For property detail or specific city, keep slug but translate prefix
+      if (parts[0] === 'properties' && part !== 'properties' && part !== 'all') {
+        return part;
+      }
+
+      const translated = t(`slugs.${part}`, { defaultValue: part });
+      return translated;
+    });
+
     return `/${i18n.language}/${translatedParts.join('/')}`;
   };
 
@@ -930,10 +974,10 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg mb-8">{t('footer.knowledge_hub')}</h4>
             <ul className="space-y-4 text-sm text-white/40">
-              <li><Link to={getLocalizedPath('/insights/buying-property-in-malta-as-a-foreigner-2026')} className="hover:text-gold transition-colors">{t('seo:insights.title_buying')}</Link></li>
-              <li><Link to={getLocalizedPath('/insights/special-designated-areas-malta-guide')} className="hover:text-gold transition-colors">{t('seo:insights.title_sda')}</Link></li>
-              <li><Link to={getLocalizedPath('/insights/rental-yields-malta-2026')} className="hover:text-gold transition-colors">{t('seo:insights.title_yields')}</Link></li>
-              <li><Link to={getLocalizedPath('/insights/property-taxes-malta-2026')} className="hover:text-gold transition-colors">{t('seo:insights.title_taxes')}</Link></li>
+              <li><Link to={getLocalizedArticleLink('buying-property-in-malta-as-a-foreigner-2026', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_buying')}</Link></li>
+              <li><Link to={getLocalizedArticleLink('special-designated-areas-malta-guide', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_sda')}</Link></li>
+              <li><Link to={getLocalizedArticleLink('rental-yields-malta-2026', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_yields')}</Link></li>
+              <li><Link to={getLocalizedArticleLink('property-taxes-malta-2026', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_taxes')}</Link></li>
             </ul>
           </div>
 

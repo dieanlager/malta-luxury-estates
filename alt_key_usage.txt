@@ -1,0 +1,6 @@
+﻿Checking api.deepl.com...
+Status: 200
+Response: {"team_document_count":0,"document_count":0,"team_document_limit":20,"document_limit":20}
+Checking api-free.deepl.com...
+Status: 403
+Response: {"message":"Wrong endpoint. Use https://api.deepl.com. You can find more info in our docs: https://developers.deepl.com/docs/getting-started/auth"}

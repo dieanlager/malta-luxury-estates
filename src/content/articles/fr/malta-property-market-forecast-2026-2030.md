@@ -1,265 +1,264 @@
 ---
-title: "Malta Property Market Forecast 2026–2030 – Expert Analysis and Price Predictions"
+title: "Prévisions du marché immobilier de Malte 2026-2030 - Analyse d'experts et prévisions de prix"
 category: "Investing"
-excerpt: "A data-driven analysis of Malta's property market trajectory, with price predictions by area, rental yield forecasts, and the key drivers that will shape Malta real estate over the next five years."
-metaDescription: "Expert 2026-2030 Malta property market forecast. Analyze price predictions for Sliema, Gzira, and Gozo, rental yield trends, and the impact of the Gozo tunnel."
+excerpt: "Une analyse fondée sur des données de la trajectoire du marché immobilier de Malte, avec des prévisions de prix par zone, des prévisions de rendement locatif et les principaux facteurs qui façonneront l'immobilier maltais au cours des cinq prochaines années."
+metaDescription: "Prévisions du marché immobilier maltais pour la période 2026-2030. Analyse des prévisions de prix pour Sliema, Gzira et Gozo, des tendances de rendement locatif et de l'impact du tunnel de Gozo."
 image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "18 min read"
+readTime: "18 min de lecture"
 author: "Malta Luxury Real Estate"
 slug: "malta-property-market-forecast-2026-2030"
+localizedSlug: "previsions-du-marche-immobilier-de-malte-2026"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Malta Property Market Forecast 2026–2030 – Expert Analysis and Price Predictions
+# Malta Property Market Forecast 2026-2030 - Expert Analysis and Price Predictions (en anglais)
 
-Malta's property market has delivered consistent capital appreciation for over a decade. Between 2015 and 2025, average residential property prices increased by approximately 65–80%, with prime areas (Sliema, St Julian's, Valletta) exceeding 90%. The question every investor asks: will this continue? This analysis examines the structural drivers, risks, and likely price trajectories for 2026–2030.
+Le marché immobilier maltais a permis une appréciation constante du capital depuis plus d'une décennie. Entre 2015 et 2025, les prix moyens de l'immobilier résidentiel ont augmenté d'environ 65-80%, avec des zones de premier choix (Sliema, St Julian's, La Valette) dépassant 90%. La question que se posent tous les investisseurs est la suivante : cela va-t-il continuer ? Cette analyse examine les facteurs structurels, les risques et les trajectoires de prix probables pour 2026-2030.
 
-## Market Performance: 2015–2025 in Numbers
+## Performance du marché : 2015-2025 en chiffres
 
-| Metric | 2015 | 2020 | 2025 | 10-Year Change |
+| Métrique | 2015 | 2020 | 2025 | Variation sur 10 ans |
 |--------|------|------|------|---------------|
-| Average apartment price (per sqm) | €2,100 | €3,200 | €3,800 | +81% |
-| Average apartment price (Sliema) | €2,800/sqm | €4,200/sqm | €5,500/sqm | +96% |
-| Average apartment price (Gozo) | €1,200/sqm | €1,800/sqm | €2,500/sqm | +108% |
-| Average monthly rent (2-bed, Sliema) | €900 | €1,350 | €2,000 | +122% |
-| Transaction volume (annual) | ~12,000 | ~9,500 | ~14,000 | +17% |
-| Population | ~430,000 | ~516,000 | ~560,000 | +30% |
-| GDP per capita (PPP) | €28,000 | €35,000 | €44,000 | +57% |
+| Prix moyen des appartements (par m²) - 2 100 € - 3 200 € - 3 800 € - + 81 % - 1 000 €
+| Prix moyen des appartements (Sliema) | 2 800 €/m² | 4 200 €/m² | 5 500 €/m² | +96% |
+| Prix moyen des appartements (Gozo) | 1 200 €/m² | 1 800 €/m² | 2 500 €/m² | +108% |
+| Loyer mensuel moyen (2 lits, Sliema) | 900 € | 1 350 € | 2 000 € | +122% |
+| Volume de transactions (annuel) : ~12 000 | ~9 500 | ~14 000 | +17 % |
+| Population - ~430.000 | ~516.000 | ~560.000 | +30% |
+| PIB par habitant (PPA) | 28 000 € | 35 000 € | 44 000 € | +57% |
 
-> **Key insight:** Malta's property market has been driven by a combination of population growth (+30% in a decade), economic expansion, and constrained land supply. These fundamentals remain intact heading into 2026–2030.
+> Le marché immobilier maltais a été stimulé par une combinaison de croissance démographique (+30% en dix ans), d'expansion économique et d'offre foncière limitée. Ces fondamentaux restent intacts à l'horizon 2026-2030.
 
-## The Six Structural Drivers
+## Les six moteurs structurels
 
-### 1. Population Growth
+### 1. La croissance démographique
 
-Malta's population has grown from ~430,000 in 2015 to approximately 560,000 in 2025 – a 30% increase in a decade. This growth is primarily driven by immigration (iGaming, financial services, tech workers, EU nationals exercising free movement, and third-country nationals).
+La population de Malte est passée d'environ 430 000 habitants en 2015 à environ 560 000 en 2025, soit une augmentation de 30 % en dix ans. Cette croissance est principalement due à l'immigration (iGaming, services financiers, travailleurs de la technologie, ressortissants de l'UE exerçant la libre circulation, et ressortissants de pays tiers).
 
-**Forecast 2026–2030:** Continued growth of 1.5–2.5% annually, reaching 590,000–620,000 by 2030. The government's economic model is predicated on attracting foreign workers and businesses. Unless there is a major policy reversal, this trend will continue.
+**Prévisions 2026-2030:** Poursuite de la croissance de 1,5 à 2,5 % par an, pour atteindre 590 000 à 620 000 personnes d'ici 2030. Le modèle économique du gouvernement repose sur l'attraction de travailleurs et d'entreprises étrangers. À moins d'un revirement politique majeur, cette tendance se poursuivra.
 
-**Impact on property:** Every additional 10,000 residents creates demand for approximately 4,000–5,000 housing units (family size average ~2.2). At 15,000–20,000 new residents per year, Malta needs 6,000–9,000 new units annually to keep pace with demand.
+**Impact sur l'immobilier:** Chaque tranche de 10 000 habitants supplémentaires crée une demande d'environ 4 000 à 5 000 unités de logement (taille moyenne des familles ~2,2). Avec 15 000 à 20 000 nouveaux résidents par an, Malte a besoin de 6 000 à 9 000 nouvelles unités par an pour répondre à la demande.
 
-### 2. Land Scarcity
+### 2. Rareté des terres
 
-Malta is 316 km² – the EU's smallest member state. Developable land within the Development Zone (DZ) is further constrained by:
-- ODZ restrictions (rural land cannot be built on)
-- Heritage protection (scheduled buildings, urban conservation areas)
-- Infrastructure requirements (roads, schools, utilities)
+Avec une superficie de 316 km², Malte est le plus petit État membre de l'UE. Les terrains aménageables dans la zone de développement (DZ) sont en outre limités par :
+- Les restrictions de l'ODZ (les terres rurales ne peuvent pas être construites)
+- La protection du patrimoine (bâtiments classés, zones urbaines de conservation)
+- Les exigences en matière d'infrastructures (routes, écoles, services publics)
 
-As land supply decreases, land prices increase – which feeds directly into property prices. This constraint is permanent and intensifying.
+La diminution de l'offre de terrains s'accompagne d'une augmentation de leur prix, qui se répercute directement sur les prix de l'immobilier. Cette contrainte est permanente et s'intensifie.
 
-### 3. Economic Diversification
+### 3. Diversification économique
 
-Malta has successfully diversified its economy beyond traditional sectors (tourism, manufacturing):
+Malte a réussi à diversifier son économie au-delà des secteurs traditionnels (tourisme, industrie manufacturière) :
 
-| Sector | Contribution to GDP | Growth Trend |
+| Secteur : Contribution au PIB : Tendance à la croissance : Tendance à la croissance : Tendance à la croissance : Tendance à la croissance : Tendance à la croissance
 |--------|-------------------|-------------|
-| iGaming | ~12% | Stable – mature but resilient |
-| Financial services | ~8% | Growing – fund administration, fintech |
-| Tourism | ~15% | Growing – record arrivals post-COVID |
-| Maritime/shipping | ~5% | Stable |
-| Technology | ~6% | Growing – AI, blockchain, SaaS |
-| Film/creative | ~2% | Growing – Malta Film Studios, production services |
-| Aviation | ~3% | Growing – aircraft registration, maintenance |
+iGaming | ~12% | Stable - mature mais résiliente | Services financiers | ~8% | En croissance
+| Services financiers - ~8% - Croissance - administration de fonds, fintech - ~15% - Stable - mature mais résiliente - ~5% - Stabilité - mature mais résiliente
+| Tourisme - ~ 15 % - Croissance - arrivées record après la crise du COVID
+| Maritime/expédition ~5% | Stable
+| Technologie - ~6% - Croissance - IA, blockchain, SaaS - ~5% - Stable
+| Film/Création - ~2% - Croissance - Malta Film Studios, services de production - ~3% - Stable
+| Aviation - ~3% - Croissance - enregistrement d'avions, maintenance - ~5% - Stable
 
-This diversification creates broad-based demand for housing across multiple professional segments, reducing vulnerability to any single sector downturn.
+Cette diversification crée une large demande de logements à travers de multiples segments professionnels, réduisant la vulnérabilité à tout ralentissement d'un seul secteur.
 
-### 4. EU Membership and Eurozone Stability
+### 4. Adhésion à l'UE et stabilité de la zone euro
 
-Malta's EU membership and euro adoption provide institutional stability, legal certainty, and ease of transaction for European buyers. Unlike emerging markets, Malta offers first-world legal protections, an independent judiciary, and property rights that are respected and enforceable.
+L'appartenance de Malte à l'UE et l'adoption de l'euro assurent la stabilité institutionnelle, la sécurité juridique et la facilité de transaction pour les acheteurs européens. Contrairement aux marchés émergents, Malte offre des protections juridiques de premier ordre, un système judiciaire indépendant et des droits de propriété respectés et applicables.
 
-### 5. Favourable Tax Regime
+### 5. Régime fiscal favorable
 
-Malta's combination of no property tax, no inheritance tax, no wealth tax, and a favourable non-dom regime makes it structurally attractive for property accumulation. Investors keep more of their returns compared to most competing jurisdictions.
+La combinaison de l'absence de taxe foncière, de droits de succession, d'impôt sur la fortune et d'un régime favorable aux personnes non domiciliées rend la structure de Malte attrayante pour l'accumulation de biens immobiliers. Les investisseurs conservent une plus grande partie de leurs revenus que dans la plupart des juridictions concurrentes.
 
-### 6. The Infrastructure Pipeline
+### 6. Le pipeline des infrastructures
 
-Several major infrastructure projects will impact property values:
+Plusieurs grands projets d'infrastructure auront un impact sur la valeur des biens immobiliers :
 
-| Project | Timeline | Property Impact |
+| Les projets d'infrastructure ont un impact sur la valeur des biens immobiliers : projet, calendrier, impact sur les biens immobiliers, etc
 |---------|----------|----------------|
-| Gozo tunnel | 2032–2035 (if approved) | +20–40% Gozo property values |
-| Marsa Junction upgrade | 2026–2028 | Improved connectivity, south Malta accessibility |
-| Metro/light rail (proposed) | 2030+ | If built, transforms value map of entire island |
-| Port redevelopment | Ongoing | Waterfront premium expansion |
-| Manoel Island SDA | 2027–2032 | New premium district, Gżira/Sliema uplift |
+| Tunnel de Gozo | 2032-2035 (si approuvé) | +20-40% valeur des propriétés à Gozo
+| Amélioration de la liaison avec Marsa Junction | 2026-2028 | Amélioration de la connectivité et de l'accessibilité au sud de Malte
+| Métro / métro léger (proposé) | 2030+ | Si construit, transforme la carte des valeurs de l'île entière |
+| Réaménagement du port - En cours - Expansion du front de mer - En cours - Expansion du front de mer - En cours
+| SDA de l'île Manoel | 2027-2032 | Nouveau quartier haut de gamme, revalorisation de Gżira/Sliema
 
-## Price Predictions by Area: 2026–2030
+## Prévisions de prix par zone : 2026-2030
 
-### Methodology
+### Méthodologie
 
-These predictions are based on: historical growth rates, current demand/supply dynamics, planned infrastructure, population growth forecasts, and economic outlook. They assume no major global recession or structural shock to Malta's economy.
+Ces prévisions sont basées sur : les taux de croissance historiques, la dynamique actuelle de l'offre et de la demande, les infrastructures prévues, les prévisions de croissance de la population et les perspectives économiques. Elles supposent qu'il n'y a pas de récession mondiale majeure ou de choc structurel pour l'économie maltaise.
 
 ### Sliema
 
-| Year | Average Price/sqm | Change from 2025 |
+| Prix moyen au m² - Année - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025
 |------|-------------------|------------------|
-| 2025 (base) | €5,500 | – |
+2025 (base) | 5 500 € | - | 2026 | 5 800 € | +5,5
 | 2026 | €5,800 | +5.5% |
 | 2027 | €6,100 | +10.9% |
 | 2028 | €6,500 | +18.2% |
 | 2029 | €6,800 | +23.6% |
 | 2030 | €7,200 | +30.9% |
 
-**Drivers:** Tigné Point completion, Manoel Island development, limited new land, coastal premium, expatriate demand.
-**Risk:** Price ceiling if wages do not keep pace; may shift to a purely investor/HNW market.
+**Moteurs:** Achèvement de Tigné Point, développement de l'île de Manoel, nouveaux terrains limités, prime côtière, demande des expatriés.
+**Risques:** Plafonnement des prix si les salaires ne suivent pas ; risque de passer à un marché d'investisseurs et de nantis.
 
 ### St Julian's
 
-| Year | Average Price/sqm | Change from 2025 |
+| St Julian's - Année - Prix moyen au m² - Changement par rapport à 2025 - Prix moyen au m² - Changement par rapport à 2025 - Prix moyen au m² - Changement par rapport à 2025
 |------|-------------------|------------------|
-| 2025 (base) | €6,000 | – |
+| 2025 (base) | 6.000 € | - |
 | 2026 | €6,400 | +6.7% |
 | 2027 | €6,800 | +13.3% |
 | 2028 | €7,200 | +20.0% |
 | 2029 | €7,600 | +26.7% |
 | 2030 | €8,100 | +35.0% |
 
-**Drivers:** Mercury Towers, Portomaso expansion, iGaming HQ cluster, entertainment/lifestyle premium.
-**Risk:** Overdevelopment concerns; high-rise density may deter lifestyle buyers.
+**Moteurs:** Mercury Towers, Portomaso expansion, iGaming HQ cluster, entertainment/lifestyle premium.
+**Risques:** Problèmes de surdéveloppement ; la densité des tours peut dissuader les acheteurs de style de vie.
 
 ### Gżira / Msida
 
-| Year | Average Price/sqm | Change from 2025 |
+| Prix moyen au m² - Année - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025
 |------|-------------------|------------------|
-| 2025 (base) | €4,000 | – |
+| 2025 (base) - 4 000 € - - - 2026 - 4 300 € - +7 000
 | 2026 | €4,300 | +7.5% |
 | 2027 | €4,700 | +17.5% |
 | 2028 | €5,100 | +27.5% |
 | 2029 | €5,500 | +37.5% |
 | 2030 | €5,900 | +47.5% |
 
-**Drivers:** Manoel Island SDA (major uplift for Gżira), University proximity, value gap vs Sliema, infrastructure improvements.
-**Risk:** Construction disruption during Manoel Island development phase.
+**Moteurs:** SDA de l'île Manoel (augmentation majeure pour Gżira), proximité de l'université, écart de valeur par rapport à Sliema, améliorations de l'infrastructure.
+**Risque:** Perturbation de la construction pendant la phase de développement de l'île Manoel.
 
-> **Best opportunity:** Gżira and Msida offer the highest growth potential in percentage terms, driven by the Manoel Island SDA effect and their current discount to Sliema/St Julian's.
+> Gżira et Msida offrent le potentiel de croissance le plus élevé en termes de pourcentage, grâce à l'effet du SDA de l'île Manoel et à la décote actuelle par rapport à Sliema/St Julian's.
 
-### Valletta
+### La Valette
 
-| Year | Average Price/sqm | Change from 2025 |
+| Prix moyen au m² - Année - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025
 |------|-------------------|------------------|
-| 2025 (base) | €5,000 | – |
+| 2025 (base) - 5 000 € - - - 2026 - 5 300 € - +6,0 % - 2026 - 5 300 € - +6,0 % - 2026
 | 2026 | €5,300 | +6.0% |
 | 2027 | €5,600 | +12.0% |
 | 2028 | €5,900 | +18.0% |
 | 2029 | €6,200 | +24.0% |
 | 2030 | €6,600 | +32.0% |
 
-**Drivers:** UNESCO status, cultural capital, government investment, limited supply (cannot build new in Valletta), cruise tourism growth.
-**Risk:** Structural limitations (old buildings, narrow streets) limit appeal for families.
+**Moteurs:** Statut UNESCO, capital culturel, investissement gouvernemental, offre limitée (pas de nouvelle construction à La Valette), croissance du tourisme de croisière.
+**Risque:** Les limitations structurelles (vieux bâtiments, rues étroites) limitent l'attrait pour les familles.
 
 ### Gozo
 
-| Year | Average Price/sqm | Change from 2025 |
+| Prix moyen au m² - Année - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025
 |------|-------------------|------------------|
-| 2025 (base) | €2,500 | – |
+2025 (base) | €2,500 | - | 2026 | €2,700 | +8,0% | 2026 | €2,700 | +8,0% | 2026
 | 2026 | €2,700 | +8.0% |
 | 2027 | €2,950 | +18.0% |
 | 2028 | €3,250 | +30.0% |
 | 2029 | €3,600 | +44.0% |
 | 2030 | €4,000 | +60.0% |
 
-**Drivers:** Tunnel announcement effect, remote work migration, value gap vs Malta, farmhouse premium, MPRP lower threshold.
-**Risk:** If tunnel is cancelled or indefinitely delayed, appreciation will be slower (but still positive).
+**Moteurs:** Effet d'annonce du tunnel, migration des travailleurs à distance, écart de valeur par rapport à Malte, prime à la ferme, seuil inférieur du PPRM.
+**Risque:** Si le tunnel est annulé ou indéfiniment retardé, l'appréciation sera plus lente (mais toujours positive).
 
-> **Highest upside scenario:** If the Gozo tunnel is confirmed and construction begins, Gozo prices could increase 60–80% from 2025 levels by 2030.
+> Scénario le plus optimiste:** Si le tunnel de Gozo est confirmé et que la construction commence, les prix de Gozo pourraient augmenter de 60 à 80 % par rapport aux niveaux de 2025 d'ici à 2030.
 
-### Mellieħa / North Malta
+### Mellieħa / Nord de Malte
 
-| Year | Average Price/sqm | Change from 2025 |
+| Prix moyen au m² - Année - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025 - Année - Prix moyen au m² - Changement par rapport à 2025
 |------|-------------------|------------------|
-| 2025 (base) | €3,200 | – |
+| 2025 (base) | 3 200 € | - |
 | 2026 | €3,400 | +6.3% |
 | 2027 | €3,650 | +14.1% |
 | 2028 | €3,900 | +21.9% |
 | 2029 | €4,150 | +29.7% |
 | 2030 | €4,400 | +37.5% |
 
-**Drivers:** Family appeal, beach access, retirement market, value vs Sliema, improving infrastructure.
+**Moteurs:** attrait familial, accès à la plage, marché de la retraite, valeur par rapport à Sliema, amélioration de l'infrastructure.
 
-## Rental Market Outlook
+## Perspectives du marché locatif
 
-### Rental Growth Forecast (2-bed apartment, annual growth)
+### Prévisions de croissance des loyers (appartement à 2 lits, croissance annuelle)
 
-| Area | 2026 | 2027 | 2028 | 2029 | 2030 |
+| Le marché de la location est en pleine expansion, avec un taux de croissance annuel de 2,5 %
 |------|------|------|------|------|------|
-| Sliema | +4% | +4% | +5% | +4% | +3% |
-| St Julian's | +5% | +5% | +5% | +4% | +4% |
-| Gżira | +6% | +7% | +6% | +5% | +5% |
-| Valletta | +4% | +4% | +4% | +3% | +3% |
-| Gozo | +5% | +6% | +7% | +6% | +5% |
+sliema | +4% | +4% | +5% | +4% | +3% | Sliema | +5% | +5% | +4% | +3% | Sliema
 
-### Yield Compression
 
-As property prices rise faster than rents, gross yields will gradually compress:
 
-| Area | 2025 Yield | 2030 Projected Yield |
+gozo | +5% | +6% | +7% | +6% | +5% | +4% | +4% | +4% | +3% | +3% | +5% |
+
+### Compression du rendement
+
+Les prix de l'immobilier augmentant plus vite que les loyers, les rendements bruts vont progressivement se comprimer :
+
+| Rendement brut - Surface - Rendement 2025 - Rendement projeté 2030 - Rendement projeté 2030 - Rendement projeté 2030 - Rendement projeté 2030 - Rendement projeté 2030
 |------|-----------|---------------------|
-| Sliema | 5.0% | 4.3% |
-| St Julian's | 4.8% | 4.0% |
-| Gżira | 5.8% | 5.0% |
+| Sliema | 5,0 % | 4,3 % | Sliema
+| St Julian's - 4,8 % - 4,0 % - 4,0
+| Gżira - 5,8 % - 5,0 % - 5,0
 | Gozo | 6.5% | 5.5% |
 
-This yield compression is normal in maturing markets and does not mean returns are poor – total returns (yield + capital appreciation) remain attractive.
+Cette compression des rendements est normale sur les marchés arrivant à maturité et ne signifie pas que les rendements sont faibles - les rendements totaux (rendement + appréciation du capital) restent attrayants.
 
-## Risk Factors
+## Facteurs de risque
 
-### 1. Global Recession
-A major global downturn would slow Malta's economy, reduce immigration, and potentially depress prices. However, Malta's economy proved remarkably resilient during the 2020 COVID crisis, recovering faster than most EU states.
+### 1. Récession mondiale
+Une récession mondiale majeure ralentirait l'économie maltaise, réduirait l'immigration et pourrait faire baisser les prix. Cependant, l'économie maltaise a remarquablement résisté à la crise du COVID en 2020, se redressant plus rapidement que la plupart des États de l'UE.
 
-### 2. Regulatory Changes
-Changes to the AIP regime, SDA designations, short-let regulations, or tax policy could impact market dynamics. Political risk in Malta is relatively low – both major parties support property development and foreign investment.
+### 2. Changements réglementaires
+Les changements apportés au régime AIP, aux désignations SDA, à la réglementation sur la location courte ou à la politique fiscale pourraient avoir un impact sur la dynamique du marché. Le risque politique à Malte est relativement faible - les deux principaux partis soutiennent le développement immobilier et les investissements étrangers.
 
-### 3. Oversupply in Certain Segments
-Malta is building significant apartment stock. If population growth slows while construction continues, certain segments (mass-market apartments in secondary areas) could face oversupply and price pressure.
+### 3. Surabondance de l'offre dans certains segments
+Malte est en train de construire un nombre important d'appartements. Si la croissance de la population ralentit alors que la construction se poursuit, certains segments (appartements grand public dans les zones secondaires) pourraient être confrontés à une offre excédentaire et à une pression sur les prix.
 
-### 4. Climate Risk
-Rising sea levels, increased storm frequency, and water scarcity are long-term risks for a small island nation. Properties at sea level or in flood-prone areas may face insurance and value challenges over a 20–30 year horizon.
+### 4. Risque climatique
+L'élévation du niveau de la mer, la fréquence accrue des tempêtes et la rareté de l'eau sont des risques à long terme pour une petite nation insulaire. Les propriétés situées au niveau de la mer ou dans des zones inondables pourraient être confrontées à des problèmes d'assurance et de valeur sur un horizon de 20 à 30 ans.
 
-### 5. Interest Rate Environment
-While ECB rates have stabilised, any further increases would raise mortgage costs and could cool speculative demand. This primarily affects leveraged buyers.
+### 5. Environnement des taux d'intérêt
+Bien que les taux de la BCE se soient stabilisés, toute nouvelle augmentation entraînerait une hausse des coûts hypothécaires et pourrait refroidir la demande spéculative. Cela affecte principalement les acheteurs à effet de levier.
 
-## Investment Recommendations
+## Recommandations d'investissement
 
-### Short-Term (1–2 Years)
-- Buy in **Gżira** – maximum growth potential from Manoel Island effect
-- Buy **off-plan** in established SDA developments – capture the construction-period appreciation
-- Consider **Gozo farmhouses** – unique assets with asymmetric upside
+### Court terme (1-2 ans)
+- Acheter à **Gżira** - potentiel de croissance maximal grâce à l'effet de l'île de Manoel
+- Acheter **sur plan** dans des développements SDA établis - saisir l'appréciation de la période de construction
+- Envisager des **fermes de Gozo** - des actifs uniques avec une hausse asymétrique
 
-### Medium-Term (3–5 Years)
-- Build a portfolio in **high-yield areas** (Msida, Gżira, Swieqi) for rental income
-- Target **SDA properties** – unrestricted resale gives maximum exit flexibility
-- Diversify between Malta and Gozo to capture different growth drivers
+### Moyen terme (3-5 ans)
+- Constituer un portefeuille dans les **zones à haut rendement** (Msida, Gżira, Swieqi) pour les revenus locatifs
+- Cibler les propriétés **SDA** - la revente sans restriction offre une flexibilité de sortie maximale
+- Diversifier entre Malte et Gozo pour capter les différents moteurs de croissance
 
-### Long-Term (5–10 Years)
-- **Gozo** offers the highest total return potential if the tunnel proceeds
-- **Valletta** heritage properties will appreciate as supply is permanently fixed
-- **Sliema/St Julian's** remain the safest stores of value – the Monaco/Nice of Malta
+### Long terme (5-10 ans)
+- **Gozo** offre le potentiel de rendement total le plus élevé si le tunnel est construit
+- **Les propriétés patrimoniales de La Valette** s'apprécieront car l'offre est fixée de façon permanente
+- **Sliema/St Julian's** restent les réserves de valeur les plus sûres - le Monaco/Nice de Malte
 
-## Frequently Asked Questions
+## Foire aux questions
 
-### Will Malta property prices continue to rise?
-Based on structural fundamentals (population growth, land scarcity, economic diversification, tax advantages), continued price appreciation of 5–8% annually is the most likely scenario for 2026–2030. The pace may moderate compared to the faster growth seen in 2015–2020, but the direction remains clearly upward.
+### Les prix de l'immobilier à Malte vont-ils continuer à augmenter ?
+Sur la base des fondamentaux structurels (croissance de la population, rareté des terrains, diversification économique, avantages fiscaux), une appréciation continue des prix de 5 à 8 % par an est le scénario le plus probable pour 2026-2030. Le rythme pourrait se ralentir par rapport à la croissance plus rapide observée entre 2015 et 2020, mais la direction reste clairement à la hausse.
 
-### Is now a good time to buy property in Malta?
-Yes, for buyers with a 3–5+ year horizon. Prices are expected to be 25–45% higher by 2030 (area-dependent). Waiting carries the risk of higher entry costs. However, buy based on fundamentals and cash flow, not speculation.
+### Est-ce le bon moment pour acheter une propriété à Malte ?
+Oui, pour les acheteurs ayant un horizon de 3 à 5 ans. Les prix devraient augmenter de 25 à 45 % d'ici 2030 (en fonction de la région). Attendre comporte le risque de coûts d'entrée plus élevés. Toutefois, il convient d'acheter sur la base des fondamentaux et des flux de trésorerie, et non sur la base de la spéculation.
 
-### Which area of Malta will see the most price growth?
-In percentage terms: Gżira (Manoel Island effect) and Gozo (tunnel potential) offer the highest growth potential. In absolute terms per sqm: Sliema and St Julian's will continue to command the highest prices.
+### Quelle zone de Malte connaîtra la plus forte croissance des prix ?
+En pourcentage : Gżira (effet de l'île de Manoel) et Gozo (potentiel du tunnel) offrent le potentiel de croissance le plus élevé. En termes absolus par m² : Sliema et St Julian's continueront à afficher les prix les plus élevés.
 
-### Will rental yields stay strong in Malta?
-Yields will gradually compress as prices rise faster than rents (a normal market maturation pattern). However, yields of 4–6% in prime areas, combined with 5–8% annual capital appreciation, deliver total returns of 9–14% – among the best in Europe.
+### Les rendements locatifs resteront-ils élevés à Malte ?
+Les rendements se réduiront progressivement car les prix augmentent plus vite que les loyers (un schéma normal de maturation du marché). Cependant, des rendements de 4-6% dans les zones de premier ordre, combinés à une appréciation annuelle du capital de 5-8%, permettent d'obtenir des rendements totaux de 9-14% - parmi les meilleurs d'Europe.
 
-### What is the biggest risk to Malta's property market?
-A significant slowdown in immigration/population growth would reduce demand. However, this would require a major policy change or economic shock. The second risk is oversupply in mass-market apartments if construction outpaces demand – concentrate on quality, location, and SDA properties to mitigate this.
+### Quel est le plus grand risque pour le marché immobilier maltais ?
+Un ralentissement significatif de l'immigration et de la croissance démographique réduirait la demande. Cependant, il faudrait pour cela un changement majeur de politique ou un choc économique. Le deuxième risque est celui d'une offre excédentaire d'appartements grand public si la construction dépasse la demande - concentrez-vous sur la qualité, l'emplacement et les propriétés SDA pour atténuer ce risque.
 
-## Related Guides
+## Guides connexes
 
-- [Best Areas for Property Investment in Malta](/insights/best-areas-investment-malta-2026)
-- [Buying Property as a Foreigner](/insights/buying-property-in-malta-as-a-foreigner-2026)
-- [Rental Income Tax Malta 2026](/insights/rental-income-tax-malta-2026)
-- [Gozo Investment Guide](/insights/gozo-property-investment-guide-2026)
+- [Meilleures régions pour l'investissement immobilier à Malte](/insights/best-areas-investment-malta-2026)
+- [Acheter une propriété en tant qu'étranger](/insights/buying-property-in-malta-as-a-foreigner-2026)
+- [Impôt sur les revenus locatifs Malte 2026](/Instructions/impôt sur les revenus locatifs-Malte-2026)
+- [Guide de l'investissement à Gozo](/connexions/gozo-property-investment-guide-2026)
 
-*Last updated: March 2026. Forecasts are based on current market data and structural analysis. They are not guarantees of future performance. Property values can go down as well as up. Always conduct independent due diligence and seek professional advice before making investment decisions.*
+*Dernière mise à jour : Mars 2026. Les prévisions sont basées sur les données actuelles du marché et sur une analyse structurelle. Elles ne garantissent pas les performances futures. La valeur des biens immobiliers peut varier à la hausse comme à la baisse. Il convient de toujours faire preuve de diligence raisonnable et de demander l'avis d'un professionnel avant de prendre des décisions d'investissement.*

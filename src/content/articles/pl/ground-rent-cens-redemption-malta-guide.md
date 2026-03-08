@@ -1,50 +1,49 @@
 ---
-title: "How to Redeem Ground Rent (Ċens) in Malta: A 2026 Guide"
+title: "Jak umorzyć czynsz gruntowy (Ċens) na Malcie: Przewodnik 2026"
 category: "Legal"
-excerpt: "Confused by perpetual vs temporary ground rent? Learn how to calculate the redemption price and become the full owner of your Maltese property."
-metaDescription: "Complete 2026 guide to redeeming ground rent (Ċens) in Malta. Learn about the 20x formula, perpetual vs temporary ċens, and legal procedures."
+excerpt: "Mylisz wieczystą i tymczasową dzierżawę gruntu? Dowiedz się, jak obliczyć cenę wykupu i stać się pełnoprawnym właścicielem swojej maltańskiej nieruchomości."
+metaDescription: "Kompletny przewodnik 2026 dotyczący wykupu czynszu gruntowego (ċens) na Malcie. Dowiedz się o formule 20x, wieczystych i tymczasowych ċens oraz procedurach prawnych."
 image: "https://images.unsplash.com/photo-1589232390691-562095ce0970?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "13 min read"
+readTime: "13 min czytania"
 author: "Malta Luxury Real Estate Legal Desk"
 slug: "ground-rent-cens-redemption-malta-guide"
+localizedSlug: "jak-umorzyc-czynsz-gruntowy-cens-na-malcie"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# How to Redeem Ground Rent (Ċens) in Malta: A 2026 Guide
+# Jak umorzyć czynsz gruntowy (Ċens) na Malcie: Przewodnik 2026
 
-If you are browsing property listings in Malta, you will often see terms like **"Freehold"** vs. **"Ground Rent"** (known locally as *Ċens*). For many international buyers, ground rent is a confusing relic of the past, but understanding it—and knowing how to redeem it—can save you thousands of euros.
+Jeśli przeglądasz oferty nieruchomości na Malcie, często zobaczysz terminy takie jak **"Freehold "** vs **"Ground Rent "** (znane lokalnie jako *Ċens*). Dla wielu międzynarodowych nabywców czynsz gruntowy jest mylącym reliktem przeszłości, ale zrozumienie go - i wiedza, jak go wykupić - może zaoszczędzić tysiące euro.
 
-## 1. What is Ground Rent (Ċens)?
-Ground rent is an annual fee paid by the property owner to a "superior" owner (the *Dominus*). This could be the government, the Church, or a private family.
-*   **Perpetual Ground Rent:** Lasts forever. You pay a small fee every year.
-*   **Temporary Ground Rent:** Lasts for a fixed term (e.g., 99 years). When the term ends, the property technically reverts to the original owner.
-
----
-
-## 2. The 20x Formula: How to Redeem
-The good news is that under Maltese law, most **perpetual** ground rents can be "redeemed." This means you pay a lump sum to cancel the yearly fee forever, making the property **Freehold**.
-*   **The Calculation:** Simply multiply the annual ground rent by **20**.
-*   **Example:** If your annual ċens is €50, you can redeem it for €1,000 (€50 x 20).
-
-> **Note:** There is usually an additional fee for the Notary to register the redemption deed at the Public Registry.
+## 1. Co to jest czynsz gruntowy (Ċens)?
+Czynsz gruntowy to roczna opłata uiszczana przez właściciela nieruchomości na rzecz "nadrzędnego" właściciela (*Dominus*). Może to być rząd, Kościół lub prywatna rodzina.
+*   **Perpetual Ground Rent:** Trwa wiecznie. Płacisz niewielką opłatę każdego roku.
+*   **Tymczasowa dzierżawa gruntu:** Trwa przez określony czas (np. 99 lat). Po upływie tego okresu nieruchomość wraca do pierwotnego właściciela.
 
 ---
 
-## 3. Temporary Ground Rent: The Complexity
-Redeeming **temporary** ground rent is more complex. You cannot simply use the 20x formula. You must wait for a government "Scheme" to open or negotiate directly with the owner to convert it to perpetual or freehold.
-*   **Risk:** If you buy a property with only 10 years of temporary ground rent left, you could lose the property or be forced to pay a massive fee to renew it. **Always check the remaining term.**
+## 2. Formuła 20x: Jak umorzyć
+Dobrą wiadomością jest to, że zgodnie z prawem maltańskim większość **trwałych** czynszów gruntowych można "wykupić" Oznacza to, że płacisz ryczałtową kwotę, aby anulować roczną opłatę na zawsze, czyniąc nieruchomość **Freehold**.
+*   **Obliczenia:** Wystarczy pomnożyć roczny czynsz gruntowy przez **20**.
+*   **Przykład:** Jeśli roczny czynsz wynosi 50 euro, można go wykupić za 1000 euro (50 euro x 20).
+
+> Uwaga:** Zazwyczaj notariusz pobiera dodatkową opłatę za rejestrację aktu wykupu w rejestrze publicznym.
 
 ---
 
-## 4. Why Should You Redeem?
-1.  **Bank Mortgages:** Banks in Malta are hesitant to give mortgages on properties with high or temporary ground rent.
-2.  **Market Value:** Freehold properties are easier to sell and command a 5-10% higher price than those with ċens.
-3.  **Peace of Mind:** You eliminate the risk of a "recognition fee" (Laudemium) being charged every time the property changes hands.
+## 3. Tymczasowy czynsz gruntowy: złożoność
+Wykup **czasowej** dzierżawy gruntu jest bardziej złożony. Nie można po prostu użyć formuły 20x. Musisz poczekać na otwarcie rządowego "programu" lub negocjować bezpośrednio z właścicielem, aby przekształcić go w wieczystą lub wolną własność.
+*   **Ryzyko:** Jeśli kupisz nieruchomość, której pozostało tylko 10 lat tymczasowej dzierżawy gruntu, możesz stracić nieruchomość lub zostać zmuszonym do uiszczenia ogromnej opłaty za jej odnowienie. **Zawsze sprawdzaj pozostały okres
 
-## Summary
-Never ignore the *Ċens* column in a contract. If it's perpetual and small, redeem it immediately after your purchase. If it's temporary, consult a lawyer before signing the *konvenju*.
+---
 
-**Confused by a contract? [Get a free legal review from our partners](mailto:legal@maltaluxuryrealestate.com).**
+## 4. Dlaczego należy dokonać wykupu?
+1.  **Bankowe kredyty hipoteczne:** Banki na Malcie niechętnie udzielają kredytów hipotecznych na nieruchomości z wysokim lub tymczasowym czynszem gruntowym.
+2.  **Wartość rynkowa:** Nieruchomości typu freehold są łatwiejsze do sprzedania i mają o 5-10% wyższą cenę niż te z ċens.
+3.  **Spokój umysłu:** Eliminujesz ryzyko naliczenia "opłaty uznaniowej" (Laudemium) za każdym razem, gdy nieruchomość zmienia właściciela.
+
+## Podsumowanie
+Nigdy nie ignoruj kolumny *Ċens* w umowie. Jeśli jest bezterminowa i niewielka, wykup ją natychmiast po zakupie. Jeśli jest tymczasowy, skonsultuj się z prawnikiem przed podpisaniem *konvenju*.
+
+**Zdezorientowany umową? [Uzyskaj bezpłatną opinię prawną od naszych partnerów](mailto:legal@maltaluxuryrealestate.com).**

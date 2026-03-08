@@ -89,36 +89,37 @@ const ARTICLE_LINK_MAP: Record<string, string> = {
 
 const ALL_LINK_MAP = { ...LOCATION_LINK_MAP, ...ARTICLE_LINK_MAP }
 
+import { getLocalizedArticleLink } from '../markdown';
+
 /**
  * Injects internal Markdown links into the provided markdown string.
- * This function targets ONLY the first occurrence of each keyword to avoid over-linking.
  */
-export function injectInternalLinks(markdown: string): string {
+export function injectInternalLinks(markdown: string, lang: string = 'en'): string {
     let result = markdown;
     const linked = new Set<string>();
 
-    // Sort by length to match the longest terms first (e.g. "houses of character" before "house")
     const sortedKeys = Object.keys(ALL_LINK_MAP).sort((a, b) => b.length - a.length);
 
     for (const keyword of sortedKeys) {
         if (linked.has(keyword)) continue;
 
-        const href = ALL_LINK_MAP[keyword];
-        const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const rawHref = ALL_LINK_MAP[keyword];
 
-        // Regex explanation:
-        // 1. (?<!\[) - Ensure not already inside a markdown link text [keyword]
-        // 2. (?<!/) - Ensure not part of a URL path /keyword
-        // 3. \b(keyword)\b - Match the whole word
-        // 4. (?![^\]]*\]\() - Ensure not followed by a markdown link target
-        // 5. (?![^\(]*\)) - Ensure not inside a markdown link URL (...)
+        // Resolve localized href
+        let href = rawHref;
+        if (rawHref.startsWith('/insights/')) {
+            const enSlug = rawHref.replace('/insights/', '');
+            href = getLocalizedArticleLink(enSlug, lang);
+        } else if (lang !== 'en') {
+            // For properties, just add the lang prefix
+            href = `/${lang}${rawHref}`;
+        }
+
+        const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const pattern = new RegExp(`(?<!\\[|/)\\b(${escaped})\\b(?![^\\]]*\\]\\()(?![^\\(]*\\))`, 'i');
 
         if (pattern.test(result)) {
-            // Replace only the FIRST occurrence
             result = result.replace(pattern, (match) => {
-                // Double check if we are inside a link by checking if the surrounding context matches a markdown link
-                // This is a safety fallback for complex cases
                 linked.add(keyword);
                 return `[${match}](${href})`;
             });

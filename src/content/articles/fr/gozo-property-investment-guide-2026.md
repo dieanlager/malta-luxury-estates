@@ -1,232 +1,231 @@
 ---
-title: "Investing in Gozo Property 2026 – The Complete Guide to Malta's Sister Island"
+title: "Investing in Gozo Property 2026 - Le guide complet de l'île sœur de Malte"
 category: "Investing"
-excerpt: "Gozo offers 30–50% lower prices than Malta, unique farmhouse character, and massive upside potential from the planned Gozo tunnel. This guide covers the best areas, property types, rental yields, and the practical realities of owning property on Malta's sister island."
-metaDescription: "Is Gozo property the best value in the Mediterranean for 2026? Explore 30-50% lower prices than Malta, the 'Gozo tunnel effect', and luxury farmhouse rental yields."
+excerpt: "Gozo offre des prix de 30 à 50 % inférieurs à ceux de Malte, des fermes au caractère unique et un énorme potentiel de croissance grâce au projet de tunnel de Gozo. Ce guide couvre les meilleures zones, les types de propriétés, les rendements locatifs et les réalités pratiques de la propriété sur l'île sœur de Malte."
+metaDescription: "L'immobilier à Gozo est-il le meilleur rapport qualité-prix de la Méditerranée pour 2026 ? Découvrez des prix de 30 à 50 % inférieurs à ceux de Malte, l'\"effet tunnel\" de Gozo et les rendements locatifs des fermes de luxe."
 image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "18 min read"
+readTime: "18 min de lecture"
 author: "Malta Luxury Real Estate"
 slug: "gozo-property-investment-guide-2026"
+localizedSlug: "investing-in-gozo-property-2026-le-guide"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Investing in Gozo Property 2026 – The Complete Guide to Malta's Sister Island
+# Investing in Gozo Property 2026 - The Complete Guide to Malta's Sister Island (en anglais)
 
-Gozo is Malta's smaller, quieter, greener sister island – and increasingly, a serious contender for property investment. With prices 30–50% below equivalent Malta properties, unique farmhouse character stock, a growing tourism profile, and the long-discussed Gozo tunnel that could transform accessibility, Gozo offers a combination of value, lifestyle, and upside that is hard to find anywhere else in the Mediterranean.
+Gozo est l'île sœur de Malte, plus petite, plus calme, plus verte - et de plus en plus, un concurrent sérieux pour l'investissement immobilier. Avec des prix de 30 à 50 % inférieurs à ceux des propriétés équivalentes à Malte, des fermes uniques, un profil touristique croissant et le tunnel de Gozo, dont on parle depuis longtemps et qui pourrait transformer l'accessibilité, Gozo offre une combinaison de valeur, de style de vie et d'avantages qu'il est difficile de trouver ailleurs dans la Méditerranée.
 
-## Why Gozo? The Investment Case
+## Pourquoi Gozo ? Le cas de l'investissement
 
-### Price Advantage
+### L'avantage du prix
 
-The single biggest draw is price. Gozo offers significantly lower entry points than Malta for equivalent properties:
+L'avantage le plus important est le prix. Gozo offre des points d'entrée nettement plus bas que Malte pour des propriétés équivalentes :
 
-| Property Type | Malta (Sliema/StJ) | Gozo (Victoria/Xlendi) | Discount |
+| Gozo (Victoria/Xlendi) | Type de propriété | Malte (Sliema/StJ) | Gozo (Victoria/Xlendi) | Prix réduits
 |--------------|--------------------|-----------------------|----------|
-| 2-bed apartment | €350,000–€500,000 | €150,000–€280,000 | 40–55% |
-| 3-bed apartment | €500,000–€750,000 | €220,000–€380,000 | 45–55% |
-| Maisonette with garden | €400,000–€600,000 | €200,000–€350,000 | 40–50% |
-| Farmhouse (unconverted) | N/A | €150,000–€350,000 | Unique to Gozo |
-| Farmhouse (converted, luxury) | N/A | €500,000–€1,200,000 | Unique to Gozo |
-| Villa with pool | €800,000–€2,000,000 | €400,000–€900,000 | 40–55% |
+appartement de 2 chambres | €350,000-€500,000 | €150,000-€280,000 | 40-55% | Appartement de 3 chambres | €500,000 | €150,000-€280,000 | 40-55% | Appartement de 3 chambres | €500,000
+| Appartement de 3 chambres | €500,000-€750,000 | €220,000-€380,000 | 45-55% |
+| Appartement avec jardin - 400 000 € - 600 000 € - 200 000 € - 350 000 € - 40-50 %
+| Ferme (non transformée) | N/A | 150 000 € - 350 000 € | Unique à Gozo
+| Ferme (convertie, luxe) - N/A - €500,000-€1,200,000 - Unique à Gozo - N/A - €500,000-€1,200,000 - Unique à Gozo - N/A - €500,000-€1,200,000 - N/A
+| Villa avec piscine | 800 000 € - 2 000 000 € - 400 000 € - 900 000 € - 40-55 % - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 000
 
-> **Key insight:** Gozo's pricing today is roughly where Malta's Northern Harbour area was 8–10 years ago. If the island follows a similar trajectory of development and accessibility improvements, today's buyers are acquiring at a significant discount to future value.
+> Les prix pratiqués aujourd'hui à Gozo correspondent à peu près à ceux pratiqués dans la zone portuaire nord de Malte il y a 8 à 10 ans. Si l'île suit une trajectoire similaire de développement et d'amélioration de l'accessibilité, les acheteurs d'aujourd'hui acquièrent avec une décote significative par rapport à la valeur future.
 
-### The Gozo Tunnel Effect
+### L'effet du tunnel de Gozo
 
-The proposed subsea tunnel connecting Malta and Gozo has been discussed for decades. As of 2026, the project remains in the feasibility and design phase. If built, it would reduce travel time between Gozo and Malta from 50–70 minutes (including ferry) to approximately 20 minutes by road.
+Le projet de tunnel sous-marin reliant Malte et Gozo est discuté depuis des décennies. En 2026, le projet en est encore à la phase de faisabilité et de conception. S'il est construit, il réduira le temps de trajet entre Gozo et Malte de 50-70 minutes (ferry compris) à environ 20 minutes par la route.
 
-**Impact on property values:**
+**Impact sur la valeur des biens immobiliers
 
-Historical evidence from comparable projects (Channel Tunnel, Øresund Bridge, Hong Kong–Zhuhai–Macau Bridge) suggests that improved connectivity between a main economic centre and an adjacent region typically produces:
-- **20–40% property price uplift** in the connected region within 5–10 years of completion
-- Shift from "holiday/weekend" destination to viable commuter area
-- Increased commercial activity and employment in the newly connected area
-- Migration of residents priced out of the main centre
+Les données historiques issues de projets comparables (tunnel sous la Manche, pont de l'Øresund, pont Hong Kong-Zhuhai-Macau) suggèrent que l'amélioration de la connectivité entre un centre économique principal et une région adjacente entraîne généralement une augmentation de 20 à 40 % du prix des biens immobiliers :
+- **20-40% de hausse des prix de l'immobilier** dans la région connectée dans les 5-10 ans suivant l'achèvement du projet
+- Le passage d'une destination "vacances/week-end" à une zone viable pour les déplacements domicile-travail
+- Augmentation de l'activité commerciale et de l'emploi dans la région nouvellement connectée
+- Migration des résidents dont le prix est inférieur à celui du centre principal
 
-**Current status (March 2026):** Environmental impact assessment and engineering feasibility studies are ongoing. No confirmed construction start date. Estimated completion, if approved: 2032–2035. Estimated cost: €300M–€500M.
+**Statut actuel (mars 2026):** L'évaluation de l'impact environnemental et les études de faisabilité technique sont en cours. Aucune date de début de construction n'a été confirmée. Achèvement estimé, si le projet est approuvé : 2032-2035. Coût estimé : 300 à 500 millions d'euros.
 
-> **Investment thesis:** If the tunnel is built, early Gozo buyers will benefit from significant appreciation. If it is not built, Gozo still offers strong rental yields and lifestyle value at today's prices. The downside is limited; the upside is substantial.
+> Si le tunnel est construit, les premiers acheteurs de Gozo bénéficieront d'une plus-value significative. S'il n'est pas construit, Gozo offre toujours des rendements locatifs élevés et une valeur de vie aux prix d'aujourd'hui. Les inconvénients sont limités et les avantages substantiels.
 
-### Rental Yields
+### Rendements locatifs
 
-Gozo's rental yields are competitive with Malta, and in some segments, superior:
+Les rendements locatifs de Gozo sont compétitifs par rapport à Malte, et dans certains segments, supérieurs :
 
-| Rental Type | Location | Typical Yield | Notes |
+| Les rendements locatifs de Gozo sont compétitifs par rapport à ceux de Malte et, pour certains segments, supérieurs : - Type de location - Emplacement - Rendement typique - Remarques
 |------------|----------|--------------|-------|
-| Long-term residential | Victoria | 5.5–7.0% | Driven by Gozo-based workers and expats |
-| Long-term residential | Coastal (Marsalforn, Xlendi) | 5.0–6.5% | Seasonal variation in demand |
-| Short-let (Airbnb) | Farmhouse, coastal | 6.0–9.0% | Strong May–October, weak November–March |
-| Short-let | Apartment, Victoria | 5.5–7.5% | Higher occupancy than coastal due to year-round demand |
-| Seasonal holiday let | Premium farmhouse | 8.0–12.0% | Very high peak season rates offset low season |
+| Résidentiel à long terme - Victoria - 5,5-7,0 % - Porté par les travailleurs et les expatriés basés à Gozo - 5,5-7,0 % - 5,5-7,0 %
+| Résidentiel à long terme | Littoral (Marsalforn, Xlendi) | 5,0-6,5% | Variation saisonnière de la demande |
+| Location courte durée (Airbnb) | Ferme, littoral | 6.0-9.0% | Forte mai-octobre, faible novembre-mars | Location courte durée (Airbnb)
+| Location de courte durée - Appartement, Victoria - 5,5-7,5 % - Taux d'occupation plus élevé que sur la côte en raison de la demande tout au long de l'année
+| Location saisonnière de vacances - Ferme haut de gamme - 8,0-12,0% - Les taux très élevés de la haute saison compensent ceux de la basse saison
 
-**Gozo's short-let advantage:** Unique character properties (converted farmhouses, cliffside villas) command nightly rates of €150–€400 on platforms like Airbnb and Booking.com. A well-positioned, well-managed luxury farmhouse can generate €30,000–€50,000+ gross annual revenue.
+**L'avantage de la location courte durée à Gozo:** Les propriétés de caractère uniques (fermes converties, villas à flanc de falaise) commandent des tarifs nocturnes de 150 à 400 € sur des plateformes telles que Airbnb et Booking.com. Une ferme de luxe bien positionnée et bien gérée peut générer un revenu annuel brut de 30 000 à 50 000 euros ou plus.
 
-## Where to Buy in Gozo
+## Où acheter à Gozo
 
 ### Victoria (Rabat)
 
-Gozo's capital and commercial centre. Bus hub, main supermarkets, hospital, government offices, and the Citadel.
+Capitale et centre commercial de Gozo. Centre de bus, principaux supermarchés, hôpital, bureaux du gouvernement et Citadelle.
 
-**Best for:** Year-round rental (strongest long-term demand), convenience, walkability
-**Price range (2-bed apartment):** €130,000–€220,000
-**Yield potential:** 5.5–7.0%
-**Character:** Urban Gozitan – narrow streets, traditional limestone, rapidly developing
+**Meilleur pour:** Location à l'année (plus forte demande à long terme), commodité, possibilité de se déplacer à pied
+**Fourchette de prix (appartement de 2 lits):** 130 000 € - 220 000 €
+**Potentiel de rendement:** 5,5-7,0%
+**Caractère:** Gozitan urbain - rues étroites, pierre calcaire traditionnelle, développement rapide
 
 ### Marsalforn
 
-Gozo's most popular seaside resort. Restaurants, water sports, and the famous salt pans.
+La station balnéaire la plus populaire de Gozo. Restaurants, sports nautiques et les célèbres marais salants.
 
-**Best for:** Short-let (summer focus), holiday home, expat lifestyle
-**Price range (2-bed apartment):** €170,000–€280,000
-**Yield potential:** 5.5–8.0% (strong seasonal variation)
-**Character:** Tourist-oriented, lively in summer, quiet in winter
+**Idéal pour:** Location de courte durée (en été), maison de vacances, mode de vie des expatriés
+**Fourchette de prix (appartement à 2 lits):** 170 000 € - 280 000 €
+**Potentiel de rendement:** 5,5-8,0% (forte variation saisonnière)
+**Caractère:** Orienté vers le tourisme, animé en été, calme en hiver
 
 ### Xlendi
 
-Dramatic bay setting surrounded by cliffs. Popular with divers and nature lovers. More upmarket than Marsalforn.
+Baie spectaculaire entourée de falaises. Populaire auprès des plongeurs et des amoureux de la nature. Plus haut de gamme que Marsalforn.
 
-**Best for:** Premium short-let, personal use + rental hybrid, lifestyle buyers
-**Price range (2-bed apartment):** €180,000–€300,000
-**Yield potential:** 6.0–8.5%
-**Character:** Boutique, scenic, limited development (which protects value)
+**Idéal pour:** Location de courte durée, usage personnel + location hybride, acheteurs de style de vie
+**Fourchette de prix (appartement à 2 lits):** 180 000 € - 300 000 €
+**Potentiel de rendement:** 6,0-8,5%
+**Caractère:** Boutique, pittoresque, développement limité (ce qui protège la valeur)
 
 ### Għajnsielem
 
-Close to the Gozo ferry terminal (Mġarr harbour). First stop for visitors arriving from Malta.
+Près de la gare maritime de Gozo (port de Mġarr). Première étape pour les visiteurs arrivant de Malte.
 
-**Best for:** Tunnel-play investment (highest proximity benefit if tunnel built), convenience
-**Price range (2-bed apartment):** €140,000–€230,000
-**Yield potential:** 5.0–6.5%
-**Character:** Residential, developing, strategic location
+**Meilleur pour:** Investissement dans le cadre d'un tunnel (plus grand bénéfice de proximité si le tunnel est construit), commodité
+**Fourchette de prix (appartement à 2 lits):** 140 000 € - 230 000 €
+**Potentiel de rendement:** 5,0-6,5
+**Caractéristiques:** Résidentiel, en développement, emplacement stratégique
 
 ### Nadur
 
-Large village with a community feel. Elevated, with views toward Comino and Malta. Close to Ramla Bay (Gozo's best sandy beach).
+Grand village avec un sentiment de communauté. Surélevé, avec vue sur Comino et Malte. Proche de Ramla Bay (la meilleure plage de sable de Gozo).
 
-**Best for:** Farmhouses, family homes, long-term expat residence
-**Price range (farmhouse, unconverted):** €180,000–€350,000
-**Yield potential:** Varies – farmhouses outperform apartments
-**Character:** Authentic Gozitan village, strong local community
+**Idéal pour:** les fermes, les maisons familiales, les résidences d'expatriés à long terme
+**Fourchette de prix (ferme, non convertie):** 180 000 € - 350 000 €
+**Potentiel de rendement:** Variable - les fermes sont plus performantes que les appartements
+**Caractère:** Authentique village gozitan, forte communauté locale
 
 ### Sannat
 
-Southernmost large village, near the Ta' Ċenċ cliffs. Quiet, rural, and scenic.
+Grand village le plus au sud, près des falaises de Ta' Ċenċ. Calme, rural et pittoresque.
 
-**Best for:** Peace and quiet, nature lovers, writers/remote workers, character property
-**Price range (farmhouse):** €200,000–€500,000
-**Yield potential:** Lower volumes, higher per-night rates in premium lets
-**Character:** Remote, tranquil, limited commercial activity
+**Idéal pour:** Calme et tranquillité, amoureux de la nature, écrivains/travailleurs isolés, propriétés de caractère
+**Fourchette de prix (ferme):** 200 000 € - 500 000 €
+**Potentiel de rendement:** Volumes plus faibles, tarifs par nuit plus élevés pour les locations haut de gamme
+**Caractère:** Eloigné, tranquille, activité commerciale limitée
 
-## Property Types in Gozo
+## Types de propriétés à Gozo
 
-### Farmhouses (Ir-Razzett)
+### Maisons de campagne (Ir-Razzett)
 
-The defining Gozo property type. Traditional limestone farmhouses with thick walls, arched ceilings, internal courtyards, and country views. They range from derelict shells (€100,000–€250,000) to fully converted luxury homes with pools (€500,000–€1,500,000).
+C'est le type de propriété qui définit le mieux Gozo. Des fermes traditionnelles en pierre calcaire avec des murs épais, des plafonds voûtés, des cours intérieures et des vues sur la campagne. Elles vont des coquilles abandonnées (100 000 € - 250 000 €) aux maisons de luxe entièrement transformées avec piscine (500 000 € - 1 500 000 €).
 
-**Key considerations:**
-- **Planning:** Most farmhouses are ODZ (Outside Development Zone). Restoration is permitted; new construction is not. You must work within the existing footprint and volume.
-- **Costs:** Full conversion of a derelict farmhouse costs €150,000–€400,000+ depending on size and specification. Budget for 12–24 months of construction.
-- **Unique investment return:** A well-converted farmhouse generates premium rental income that no apartment can match. Nightly rates of €200–€400 are achievable for a 3–4 bedroom converted farmhouse with pool.
-- **Resale:** Limited supply and growing demand mean converted farmhouses hold value well. They are trophy assets with emotional appeal.
+**Considérations clés:**
+- **La plupart des fermes sont classées ODZ (Outside Development Zone). La restauration est autorisée, mais pas les nouvelles constructions. Vous devez travailler dans les limites de l'empreinte et du volume existants.
+- **Coûts:** La conversion complète d'une ferme abandonnée coûte entre 150 000 et 400 000 euros, en fonction de la taille et des spécifications. Prévoyez un budget de 12 à 24 mois pour la construction.
+- **Un retour sur investissement unique:** Une ferme bien convertie génère des revenus locatifs de première qualité qu'aucun appartement ne peut égaler. Des tarifs nocturnes de 200 à 400 € sont réalisables pour une ferme convertie de 3 à 4 chambres avec piscine.
+- **Revente:** L'offre limitée et la demande croissante signifient que les fermes aménagées conservent leur valeur. Ce sont des trophées qui suscitent l'émotion.
 
-### Apartments
+### Appartements
 
-Modern apartment blocks are increasingly common in Victoria, Marsalforn, and Għajnsielem. Specifications are generally good, reflecting Malta's building standards.
+Les immeubles d'appartements modernes sont de plus en plus courants à Victoria, Marsalforn et Għajnsielem. Les spécifications sont généralement bonnes, reflétant les normes de construction maltaises.
 
-**Key considerations:**
-- Entry-level pricing makes apartments accessible for first-time investors
-- Higher rental yield percentage (lower capital outlay) but lower absolute rental income than farmhouses
-- More liquid (easier to sell) than character properties
-- Less distinctive – they don't command the premium nightly rates of farmhouses in the short-let market
+**Considérations clés:**
+- Les prix d'entrée de gamme rendent les appartements accessibles aux primo-investisseurs
+- Pourcentage de rendement locatif plus élevé (investissement moindre) mais revenu locatif absolu inférieur à celui des fermes
+- Plus liquides (plus faciles à vendre) que les propriétés de caractère
+- Moins distinctifs - ils n'offrent pas les tarifs de nuitée les plus élevés des fermes sur le marché de la location à court terme
 
 ### Maisonettes
 
-Ground-floor or first-floor units with their own entrance and often a small garden or yard. A popular Gozitan housing type that combines apartment convenience with some outdoor space.
+Unités au rez-de-chaussée ou au premier étage avec leur propre entrée et souvent un petit jardin ou une cour. Un type de logement populaire à Gozitan qui combine la commodité d'un appartement avec un peu d'espace extérieur.
 
-**Key considerations:**
-- Family-friendly (garden/yard)
-- Moderate pricing between apartments and villas
-- Good for long-term family rental market
+**Considérations clés:**
+- Adapté aux familles (jardin/cour)
+- Prix modéré entre les appartements et les villas
+- Bon pour le marché de la location familiale à long terme
 
 ### Villas
 
-Detached homes with gardens, often with pools. Found in residential areas and the outskirts of villages.
+Maisons individuelles avec jardin, souvent avec piscine. On les trouve dans les zones résidentielles et à la périphérie des villages.
 
-**Key considerations:**
-- Higher price point but strong lifestyle appeal
-- Good for personal use combined with seasonal rental
-- Less historical character than farmhouses but more modern comfort
+**Principales considérations:**
+- Prix plus élevé mais fort attrait pour le style de vie
+- Idéal pour une utilisation personnelle combinée à une location saisonnière
+- Moins de caractère historique que les fermes, mais plus de confort moderne
 
-## Practical Realities of Owning in Gozo
+## Les réalités pratiques de la propriété à Gozo
 
-### The Ferry
+### Le ferry
 
-Until the tunnel is built, the Gozo Channel ferry is the primary connection. Key facts:
-- **Crossing time:** 25 minutes
-- **Frequency:** Every 30–45 minutes in summer, hourly in winter
-- **Cost:** ~€4.65 per car (return), free for passengers walking on
-- **Reliability:** Generally good, but cancelled in severe weather (rare, 5–10 days per year)
-- **Queues:** Can be significant in summer weekends (30–60 minute wait). Booking ahead is available.
+Jusqu'à la construction du tunnel, le ferry du canal de Gozo est la principale connexion. Faits marquants :
+- **Durée de la traversée:** 25 minutes
+- **Fréquence:** Toutes les 30-45 minutes en été, toutes les heures en hiver
+- **Coût : ~4,65 € par voiture (aller-retour), gratuit pour les passagers à pied
+- **Fiabilité:** Généralement bonne, mais annulée en cas de mauvais temps (rare, 5-10 jours par an)
+- **File d'attente:** Peut être important pendant les week-ends d'été (30-60 minutes d'attente). Il est possible de réserver à l'avance.
 
-### Property Management
+### Gestion de la propriété
 
-If you don't live in Gozo, you need a property manager – especially for short-let rental. Several Gozo-based agencies offer:
-- Guest check-in/check-out
-- Cleaning between stays
-- Maintenance coordination
-- Listing management (Airbnb, Booking.com)
+Si vous ne vivez pas à Gozo, vous avez besoin d'un gestionnaire immobilier, surtout pour les locations de courte durée. Plusieurs agences basées à Gozo proposent des services de gestion immobilière :
+- L'enregistrement et le départ des clients
+- Nettoyage entre les séjours
+- Coordination de l'entretien
+- Gestion des annonces (Airbnb, Booking.com)
 
-**Cost:** Typically 15–25% of gross rental income for short-let management. Long-term let management is lower (8–12%).
+**Coût:** Généralement 15-25% des revenus locatifs bruts pour la gestion des locations de courte durée. La gestion des locations à long terme est moins élevée (8-12%).
 
-### Construction and Renovation
+### Construction et rénovation
 
-Gozitan builders are generally skilled in traditional stone construction. Labour costs are slightly lower than Malta. However:
-- Specialist materials sometimes need to be shipped from Malta (adds cost and time)
-- Fewer contractors available – book early, especially for spring/summer start dates
-- Building in ODZ requires strict adherence to PA rural policies – your perit must be experienced in Gozo ODZ applications
+Les constructeurs gozitains sont généralement compétents dans la construction traditionnelle en pierre. Le coût de la main-d'œuvre est légèrement inférieur à celui de Malte. Cependant :
+- Les matériaux spécialisés doivent parfois être expédiés de Malte (ce qui augmente les coûts et les délais)
+- Moins d'entrepreneurs disponibles - réservez tôt, surtout pour les dates de début au printemps/été
+- La construction dans l'ODZ exige une adhésion stricte aux politiques rurales de la PA - votre perit doit avoir de l'expérience dans les applications ODZ de Gozo
 
-### Resale Liquidity
+### Liquidité de revente
 
-Gozo's property market is less liquid than Malta's. Properties take longer to sell (average 6–12 months vs 3–6 months in Malta's prime areas). This is not a concern for long-term investors but is important for anyone who may need to exit quickly.
+Le marché immobilier de Gozo est moins liquide que celui de Malte. Les propriétés prennent plus de temps à vendre (en moyenne 6 à 12 mois contre 3 à 6 mois dans les zones les plus prisées de Malte). Ce n'est pas un problème pour les investisseurs à long terme, mais c'est important pour ceux qui ont besoin de se retirer rapidement.
 
-## Tax Considerations for Gozo Property
+## Considérations fiscales pour les propriétés à Gozo
 
-All Maltese property tax rules apply equally to Gozo. There are no separate Gozo-specific taxes or incentives.
+Toutes les règles maltaises en matière d'impôts fonciers s'appliquent également à Gozo. Il n'existe pas de taxes ou d'incitations spécifiques à Gozo.
 
-**Relevant rules:**
-- **No annual property tax** – same as Malta
-- **Rental income:** 15% flat rate on gross rental receipts
-- **Property transfer tax on sale:** 8% of sale price or 10% on gain
-- **MPRP qualifying property:** Gozo threshold is €320,000 (vs €375,000 for Malta) – a significant advantage
+**Règles applicables:**
+- **Pas de taxe foncière annuelle** - comme à Malte
+- **Revenus locatifs:** Taux forfaitaire de 15% sur les revenus locatifs bruts
+- **Taxe de transfert de propriété sur la vente:** 8% du prix de vente ou 10% sur la plus-value
+- **Le seuil de Gozo est de 320 000 € (contre 375 000 € pour Malte), ce qui représente un avantage significatif
 
-## Frequently Asked Questions
+## Foire aux questions
 
-### Is Gozo property a good investment in 2026?
-Gozo offers strong value relative to Malta, with competitive rental yields and significant long-term appreciation potential – particularly if the Gozo tunnel proceeds. The main risk is lower liquidity compared to Malta. For investors with a 5–10 year horizon, Gozo represents one of the best value propositions in the Mediterranean.
+### L'immobilier à Gozo est-il un bon investissement en 2026 ?
+Gozo offre une valeur élevée par rapport à Malte, avec des rendements locatifs compétitifs et un potentiel d'appréciation à long terme significatif - en particulier si le tunnel de Gozo est construit. Le principal risque est une liquidité plus faible qu'à Malte. Pour les investisseurs ayant un horizon de 5 à 10 ans, Gozo représente l'une des meilleures propositions de valeur en Méditerranée.
 
-### Can foreigners buy property in Gozo?
-Yes – same rules as Malta. EU citizens can buy freely. Non-EU citizens can buy in SDAs without restriction or apply for an AIP permit for other properties. Gozo has a lower MPRP property threshold (€320,000 vs €375,000 for Malta).
+### Les étrangers peuvent-ils acheter une propriété à Gozo ?
+Oui, les règles sont les mêmes qu'à Malte. Les citoyens de l'UE peuvent acheter librement. Les citoyens non européens peuvent acheter dans les SDA sans restriction ou demander un permis AIP pour d'autres propriétés. Gozo a un seuil de propriété MPRP plus bas (€320,000 contre €375,000 pour Malte).
 
-### What is the best area of Gozo for investment?
-For rental yield: Victoria (strongest year-round demand). For capital appreciation: Għajnsielem (highest tunnel proximity benefit). For premium short-let: Nadur/Sannat farmhouses. For lifestyle + investment: Xlendi.
+### Quelle est la meilleure région de Gozo pour l'investissement ?
+Pour le rendement locatif : Victoria (la plus forte demande tout au long de l'année). Pour l'appréciation du capital : Għajnsielem (avantage de la proximité du tunnel le plus élevé). Pour une location à court terme de qualité supérieure : Les fermes de Nadur/Sannat. Pour le style de vie et l'investissement : Xlendi.
 
-### How much does it cost to convert a Gozo farmhouse?
-Budget €150,000–€400,000 for a full conversion including pool, depending on size and specification. A basic habitable conversion starts around €100,000. Premium luxury conversions can exceed €500,000 for large properties.
+### Combien coûte la conversion d'une ferme de Gozo ?
+Prévoyez un budget de 150 000 à 400 000 euros pour une conversion complète avec piscine, en fonction de la taille et des spécifications. Une conversion habitable de base commence aux alentours de 100 000 €. Les transformations de luxe peuvent dépasser 500 000 euros pour les grandes propriétés.
 
-### Will the Gozo tunnel actually be built?
-As of March 2026, the project is in the feasibility phase. No confirmed construction start date. The political will exists, but environmental, engineering, and financial challenges remain. Most analysts estimate a 60–70% probability of eventual construction, with completion no earlier than 2032.
+### Le tunnel de Gozo sera-t-il réellement construit ?
+En mars 2026, le projet est en phase de faisabilité. Aucune date de début de construction n'a été confirmée. La volonté politique existe, mais les défis environnementaux, techniques et financiers demeurent. La plupart des analystes estiment à 60-70% la probabilité d'une éventuelle construction, avec un achèvement au plus tôt en 2032.
 
-### Can I rent out my Gozo property on Airbnb?
-Yes – subject to MTA licence requirements (same as Malta). You must obtain an MTA licence, display it on all listings, collect the eco contribution (€0.50/guest/night), and declare rental income for tax purposes.
+### Puis-je louer ma propriété de Gozo sur Airbnb ?
+Oui - sous réserve des exigences de la licence MTA (la même que celle de Malte). Vous devez obtenir une licence MTA, l'afficher sur toutes les annonces, percevoir l'écocontribution (0,50 €/guest/nuit) et déclarer les revenus locatifs à des fins fiscales.
 
-## Related Guides
+## Guides connexes
 
-- [Best Areas for Property Investment in Malta](/insights/best-areas-investment-malta-2026)
-- [Short-Let vs Long-Let in Malta](/insights/short-let-vs-long-let-malta-2026)
-- [MPRP Residency Programme](/insights/malta-permanent-residency-mprp-property-guide)
-- [Rental Income Tax Malta 2026](/insights/rental-income-tax-malta-2026)
+- [Meilleures régions pour l'investissement immobilier à Malte](/insights/best-areas-investment-malta-2026)
+- [Location courte ou longue durée à Malte](/insights/short-let-vs-long-let-malta-2026)
+- [Programme de résidence MPRP](/Insights/malta-permanent-residency-mprp-property-guide)
+- [Impôt sur les revenus locatifs Malte 2026](/lire la suite/impôt sur les revenus locatifs-malte-2026)
 
-*Last updated: March 2026. Property prices, rental rates, and development timelines are subject to change. Always conduct independent due diligence and consult local professionals before investing.*
+*Dernière mise à jour : Mars 2026. Les prix des propriétés, les taux de location et les calendriers de développement sont susceptibles de changer. Effectuez toujours un contrôle préalable indépendant et consultez des professionnels locaux avant d'investir.*

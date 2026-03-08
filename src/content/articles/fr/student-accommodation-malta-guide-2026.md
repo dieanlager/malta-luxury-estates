@@ -1,283 +1,282 @@
 ---
-title: "Student Accommodation in Malta 2026 – Complete Guide for Students, Parents, and Investors"
+title: "Logement étudiant à Malte 2026 - Guide complet pour les étudiants, les parents et les investisseurs"
 category: "Investing"
-excerpt: "Malta attracts 30,000+ international students annually across English language schools, the University of Malta, and private institutions. This guide covers where to live, what to pay, how to find accommodation, and why student housing is one of Malta's most consistent rental investments."
-metaDescription: "Investing in Malta's student housing market? Our 2026 guide covers the 30,000+ student demand, top areas like Msida and Gzira, and why shared apartments offer 7%+ yields."
+excerpt: "Malte attire chaque année plus de 30 000 étudiants internationaux dans des écoles de langue anglaise, à l'université de Malte et dans des établissements privés. Ce guide explique où vivre, ce qu'il faut payer, comment trouver un logement et pourquoi le logement étudiant est l'un des investissements locatifs les plus cohérents de Malte."
+metaDescription: "Investir dans le marché du logement étudiant à Malte ? Notre guide 2026 couvre la demande de plus de 30 000 étudiants, les meilleurs quartiers comme Msida et Gzira, et les raisons pour lesquelles les appartements partagés offrent des rendements de plus de 7 %."
 image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "17 min read"
+readTime: "17 min de lecture"
 author: "Malta Luxury Real Estate"
 slug: "student-accommodation-malta-guide-2026"
+localizedSlug: "logement-etudiant-a-malte-2026-guide-complet"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Student Accommodation in Malta 2026 – Complete Guide for Students, Parents, and Investors
+# Logement étudiant à Malte 2026 - Guide complet pour les étudiants, les parents et les investisseurs
 
-Malta attracts over 30,000 international students annually. The University of Malta (UoM) is the primary institution, but dozens of English language schools, MCAST (Malta College of Arts, Science and Technology), and private institutions like London School of Commerce Malta and Global College Malta contribute to a massive, year-round demand for student housing. This demand, combined with extremely limited purpose-built student accommodation (PBSA), creates one of the most consistent rental investment opportunities on the island.
+Malte attire chaque année plus de 30 000 étudiants internationaux. L'Université de Malte (UoM) est la principale institution, mais des dizaines d'écoles de langue anglaise, le MCAST (Malta College of Arts, Science and Technology), et des institutions privées comme la London School of Commerce Malta et le Global College Malta contribuent à une demande massive de logements étudiants tout au long de l'année. Cette demande, combinée à un nombre extrêmement limité de logements étudiants construits sur mesure (PBSA), crée l'une des opportunités d'investissement locatif les plus cohérentes de l'île.
 
-## Malta's Student Market: The Numbers
+## Le marché étudiant de Malte : Les chiffres
 
-Understanding the scale of student demand is critical for both students seeking housing and investors evaluating opportunities:
+Il est essentiel de comprendre l'ampleur de la demande étudiante, tant pour les étudiants à la recherche d'un logement que pour les investisseurs qui évaluent les opportunités :
 
-| Student Segment | Annual Numbers | Average Stay | Peak Season |
+| Les chiffres de l'année, du séjour moyen et de la haute saison
 |----------------|---------------|--------------|-------------|
-| University of Malta (degree) | ~12,000 (incl. ~2,000 international) | 3–5 years | October–June |
-| MCAST | ~6,000 | 2–3 years | October–June |
-| English language students | ~10,000–15,000 | 2–12 weeks | June–September |
-| Private institutions | ~3,000–5,000 | 1–3 years | Year-round |
-| Erasmus+ exchange | ~1,500–2,000 | 1–2 semesters | Sep–Feb / Feb–Jun |
-| **Total annual demand** | **~30,000–40,000** | | |
+| Université de Malte (diplôme) - ~12 000 (dont ~2 000 internationaux) - 3 à 5 ans - octobre-juin - 3 à 5 ans - octobre-juin
+université de Malte (diplôme) | ~12 000 (dont ~2 000 internationaux) | 3-5 ans | octobre-juin | MCAST | ~6 000 | 2-3 ans | octobre-juin
+| Étudiants en langue anglaise - ~10 000-15 000 - ~ 2-12 semaines - juin-septembre - ~ 3 000
+| Établissements d'enseignement privé | ~3 000-5 000 | 1-3 ans | Toute l'année
+| Les étudiants en langue anglaise sont les plus nombreux dans le monde
+| **Demande annuelle totale** | **~30,000-40,000** | | | | |
 
-**Why this matters for the rental market:** With minimal PBSA stock (Malta has no large-scale student halls comparable to UK or US universities), nearly all students rent in the private market. This creates constant, predictable demand – particularly in areas close to the University of Malta campus in Msida and the main language school clusters in Sliema and St Julian's.
+**Avec un parc minimal d'APSB (Malte n'a pas de grandes résidences étudiantes comparables aux universités britanniques ou américaines), la quasi-totalité des étudiants louent sur le marché privé. Cela crée une demande constante et prévisible - en particulier dans les zones proches du campus de l'Université de Malte à Msida et des principaux groupes d'écoles de langues à Sliema et St Julian's.
 
-## Where Students Live: Area-by-Area Guide
+## Où vivent les étudiants : Guide région par région
 
-### Msida – The University Hub
+### Msida - Le centre universitaire
 
-The University of Malta's main campus is in Msida, making it the natural centre for degree students. Msida is central, well-connected by bus, and offers Malta's most affordable urban rental.
+Le campus principal de l'Université de Malte se trouve à Msida, ce qui en fait le centre naturel pour les étudiants. Msida est centrale, bien desservie par les bus et offre les locations urbaines les plus abordables de Malte.
 
-| Factor | Details |
+| Le site web de l'université de Malte est disponible en anglais et en français
 |--------|---------|
-| Distance to UoM | 0–15 min walk |
-| Average rent (room in shared apartment) | €350–€550/month |
-| Average rent (studio/1-bed) | €700–€1,000/month |
-| Character | Urban, student-oriented, busy, practical |
-| Transport | Bus hub – routes to Valletta, Sliema, St Julian's |
-| Pros | Cheapest rents near campus, walkable, supermarkets |
-| Cons | Traffic congestion, limited nightlife, less scenic |
+| Distance de l'UoM : 0 à 15 minutes à pied
+| Loyer moyen (chambre dans un appartement partagé) : 350 € - 550 €/mois
+| Loyer moyen (studio/chambre) : 700 € - 1 000 €/mois
+| Caractère : urbain, orienté vers les étudiants, animé, pratique
+| Transport - Hub de bus - lignes vers La Valette, Sliema, St Julian's..
+| Les avantages : loyers les moins chers près du campus, possibilité de se déplacer à pied, supermarchés
+| Les avantages et les inconvénients sont les suivants : embouteillages, vie nocturne limitée, paysages moins pittoresques..
 
-**Best for:** Budget-conscious degree students, those who want to walk to campus.
+**Le meilleur pour:** Les étudiants en licence soucieux de leur budget, ceux qui veulent se rendre à pied sur le campus.
 
-### Gżira – Value with a View
+### Gżira - Valeur avec vue
 
-Gżira sits between Msida and Sliema, offering a middle ground between affordability and lifestyle. The Manoel Island waterfront provides stunning views across to Valletta.
+Gżira se situe entre Msida et Sliema, offrant un juste milieu entre prix abordables et style de vie. Le front de mer de l'île de Manoel offre une vue imprenable sur La Valette.
 
-| Factor | Details |
+| Le site de Manoel Island offre une vue imprenable sur La Valette
 |--------|---------|
-| Distance to UoM | 10–20 min walk / 5 min bus |
-| Average rent (room in shared) | €400–€600/month |
-| Average rent (studio/1-bed) | €800–€1,200/month |
-| Character | Developing, mixed residential/commercial |
-| Transport | Walking distance to Sliema, good bus connections |
-| Pros | Harbour views, walkable to both UoM and Sliema |
-| Cons | Undergoing heavy construction, noisy in parts |
+| Distance de l'UoM : 10-20 minutes à pied / 5 minutes en bus
+| Loyer moyen (chambre en colocation) : 400 - 600 €/mois
+| Loyer moyen (studio/chambre) : 800 € - 1 200 €/mois
+| Quartier résidentiel et commercial, en plein développement
+| Transport : à distance de marche de Sliema, bien desservi par les bus
+| Pour : vue sur le port, possibilité de se rendre à pied à l'UoM et à Sliema
+| Le quartier est en cours de construction, bruyant par endroits
 
-**Best for:** Students wanting proximity to campus AND Sliema's lifestyle.
+**Le meilleur pour:** Les étudiants qui veulent être proches du campus ET du style de vie de Sliema.
 
-### Sliema – The Premium Student Choice
+### Sliema - Le meilleur choix pour les étudiants
 
-Sliema is Malta's most cosmopolitan area. Many English language schools are based here, and it's popular with international students who prioritise lifestyle and are willing to pay more.
+Sliema est le quartier le plus cosmopolite de Malte. De nombreuses écoles d'anglais y sont basées et il est populaire auprès des étudiants internationaux qui privilégient le style de vie et sont prêts à payer plus cher.
 
-| Factor | Details |
+| Le choix de Sliema est très apprécié par les étudiants internationaux qui privilégient le style de vie et sont prêts à payer plus cher
 |--------|---------|
-| Distance to UoM | 15–25 min bus |
-| Average rent (room in shared) | €500–€750/month |
-| Average rent (studio/1-bed) | €1,100–€1,600/month |
-| Character | Cosmopolitan, seafront, shopping, restaurants |
-| Transport | Excellent bus connections, walkable along the coast |
-| Pros | Best lifestyle, English language school proximity, safety |
-| Cons | Most expensive, competitive rental market |
+| Distance de l'UoM : 15-25 minutes en bus
+| Loyer moyen (chambre en colocation) : 500 € - 750 €/mois
+| Loyer moyen (studio/chambre) : 1 100 € - 1 600 €/mois
+| Quartier : Cosmopolite, front de mer, boutiques, restaurants..
+| Transports : excellentes liaisons de bus, possibilité de se déplacer à pied le long de la côte
+| Pour : Meilleur style de vie, proximité d'une école de langue anglaise, sécurité
+| Inconvénients | Plus cher, marché locatif compétitif |
 
-**Best for:** English language students, international students with higher budgets, postgraduates.
+**Le meilleur pour:** Les étudiants en langue anglaise, les étudiants internationaux avec un budget plus élevé, les étudiants de troisième cycle.
 
-### St Julian's – Nightlife and iGaming
+### St Julian's - Vie nocturne et iGaming
 
-St Julian's is Malta's entertainment hub. Popular with younger students and those seeking an active social scene. Also home to many iGaming offices, attracting young professionals who compete for the same rental stock.
+St Julian's est le centre de divertissement de Malte. Populaire auprès des jeunes étudiants et de ceux qui recherchent une scène sociale active. Il abrite également de nombreux bureaux d'iGaming, attirant de jeunes professionnels qui se disputent le même parc locatif.
 
-| Factor | Details |
+| Facteur d'attractivité - Détails - Facteur d'attractivité
 |--------|---------|
-| Distance to UoM | 20–30 min bus |
-| Average rent (room in shared) | €550–€800/month |
-| Average rent (studio/1-bed) | €1,200–€1,800/month |
-| Character | Nightlife hub, Portomaso, Paceville, modern developments |
-| Transport | Good bus connections, walkable to Sliema |
-| Pros | Social scene, modern apartments, near the beach |
-| Cons | Noisy (especially near Paceville), expensive, party atmosphere |
+| Distance de l'UoM : 20-30 minutes en bus
+| Loyer moyen (chambre en colocation) : 550-800 €/mois
+| Loyer moyen (studio/chambre) : 1 200 € - 1 800 €/mois
+| Le quartier est bien desservi par les transports en commun
+| Transport : bonnes liaisons de bus, possibilité de se rendre à pied à Sliema
+| Le quartier est bien desservi par les transports en commun, il est possible de rejoindre Sliema à pied
+| Les inconvénients : bruyant (surtout près de Paceville), cher, ambiance de fête
 
-**Best for:** Students who want nightlife and social life close by.
+**Le meilleur pour:** Les étudiants qui veulent une vie nocturne et sociale à proximité.
 
-### Swieqi – Quiet Residential Above St Julian's
+### Swieqi - Quartier résidentiel calme au-dessus de St Julian's
 
-Swieqi is the residential area above St Julian's. Quieter, more affordable, and popular with students who want peace for studying but proximity to social life.
+Swieqi est le quartier résidentiel situé au-dessus de St Julian's. Plus calme, plus abordable, il est très prisé des étudiants qui recherchent la tranquillité pour étudier, mais aussi la proximité de la vie sociale.
 
-| Factor | Details |
+| Détails de l'appartement
 |--------|---------|
-| Distance to UoM | 25–35 min bus |
-| Average rent (room in shared) | €400–€550/month |
-| Average rent (studio/1-bed) | €800–€1,100/month |
-| Character | Quiet suburban, residential, modern apartments |
-| Transport | Bus connections good but less frequent |
-| Pros | Peaceful, affordable, close to St Julian's without the noise |
-| Cons | Hilly, less walkable, fewer shops/restaurants nearby |
+| Distance de l'UoM : 25-35 minutes de bus
+| Loyer moyen (chambre en colocation) : 400-550 €/mois
+| Loyer moyen (studio/chambre) : 800 €-1 100 €/mois
+| Appartement moderne, calme, résidentiel, banlieue
+| Transports : bien desservi par les bus, mais moins fréquent
+| Le quartier est très calme, abordable, proche de St Julian's sans le bruit
+| Les appartements sont situés à proximité de St Julian's, mais sans le bruit
 
-**Best for:** Students seeking quiet study environment with weekend access to nightlife.
+**Le meilleur pour:** Les étudiants qui recherchent un environnement d'étude calme avec un accès à la vie nocturne le week-end.
 
-### Valletta – Culture and Character
+### La Valette - Culture et caractère
 
-Malta's UNESCO World Heritage capital is increasingly popular with mature students and those seeking cultural immersion.
+La capitale de Malte, classée au patrimoine mondial de l'UNESCO, est de plus en plus populaire auprès des étudiants adultes et de ceux qui recherchent une immersion culturelle.
 
-| Factor | Details |
+| La Valette - La culture et le caractère
 |--------|---------|
-| Distance to UoM | 15–20 min bus |
-| Average rent (room in shared) | €450–€650/month |
-| Average rent (studio/1-bed) | €900–€1,400/month |
-| Character | Historic, cultural, boutique, compact |
-| Transport | Central bus terminus, ferry to Three Cities |
-| Pros | Beautiful, cultural events, safe, walkable within Valletta |
-| Cons | Compact (limited stock), older buildings, stairs everywhere |
+| Distance de l'Université de Malte : 15-20 minutes en bus
+| Loyer moyen (chambre en colocation) : 450 €-650 €/mois
+| Loyer moyen (studio/chambre) : 900 € - 1 400 €/mois
+| Caractère : historique, culturel, boutique, compact
+| Transport : terminus de bus central, ferry pour les Trois Cités
+| Le quartier est très bien desservi par les transports en commun et les transports publics
+| Pour, événements culturels, sécurité, possibilité de se déplacer à pied dans La Valette
 
-**Best for:** Mature students, postgraduates, art/history students, cultural immersion seekers.
+**Le meilleur pour:** Les étudiants adultes, les étudiants de troisième cycle, les étudiants en art/histoire, les amateurs d'immersion culturelle.
 
-## Types of Student Accommodation
+## Types de logements pour étudiants
 
-### 1. Shared Apartments (Most Popular)
+### 1. Appartements partagés (les plus populaires)
 
-The dominant model. Students share a 2–3 bedroom apartment and split the rent. This is how 70–80% of students in Malta live.
+Le modèle dominant. Les étudiants partagent un appartement de 2 à 3 chambres et se partagent le loyer. C'est ainsi que vivent 70 à 80 % des étudiants à Malte.
 
-**What to expect:**
-- Furnished apartment with shared kitchen, bathroom, living area
-- Each student gets their own bedroom (sharing bedrooms is rare in Malta)
-- Bills (electricity, water, internet) usually split equally – budget €50–€100/month per person
-- Landlord provides basic furnishings (bed, desk, wardrobe, kitchen essentials)
-- 6–12 month leases for degree students; shorter for language students
+**Ce à quoi vous pouvez vous attendre:**
+- Appartement meublé avec cuisine, salle de bains et salle de séjour communes
+- Chaque étudiant a sa propre chambre (il est rare de partager une chambre à Malte)
+- Les factures (électricité, eau, internet) sont généralement partagées à parts égales - prévoir un budget de 50 à 100 €/mois par personne
+- Le propriétaire fournit le mobilier de base (lit, bureau, armoire, ustensiles de cuisine)
+- baux de 6 à 12 mois pour les étudiants en licence ; plus courts pour les étudiants en langues
 
-**Average costs (per person, per month, including share of bills):**
+**Coûts moyens (par personne, par mois, y compris le partage des factures):**
 
-| Area | Shared (2-bed, per person) | Shared (3-bed, per person) |
+| Les coûts moyens (par personne et par mois, y compris le partage des factures) sont les suivants : **Superficie : 2 lits partagés par personne **Superficie : 3 lits partagés par personne **Superficie : 3 lits partagés par personne
 |------|---------------------------|---------------------------|
-| Msida | €400–€600 | €350–€500 |
-| Gżira | €450–€650 | €400–€550 |
-| Sliema | €550–€800 | €500–€700 |
-| St Julian's | €600–€850 | €550–€750 |
-| Valletta | €500–€700 | €450–€600 |
+| Msida | €400-€600 | €350-€500 |
+| Gżira - €450-€650 - €400-€550 - €450-€550 - €450-€550
+| Sliema - €550-€800 - €500-€700 - €450-€650 - €400-€550
+| St Julian's - 600 € - 850 € - 550 € - 750 €
+| St Julian's - €600-€850 - €550-€750
 
-### 2. Studio / 1-Bedroom Apartments
+### 2. Studio / Appartements d'une chambre
 
-For students who prefer privacy and independence. More expensive but increasingly popular with postgraduates, mature students, and those with higher budgets.
+Pour les étudiants qui préfèrent l'intimité et l'indépendance. Plus chers mais de plus en plus populaires auprès des étudiants de troisième cycle, des étudiants adultes et de ceux qui ont un budget plus élevé.
 
-### 3. Host Families
+### 3. Familles d'accueil
 
-Some English language schools arrange host family accommodation. Students live with a Maltese family, typically including breakfast and dinner. Cost: €600–€900/month. Best for younger students or those wanting cultural immersion and language practice.
+Certaines écoles d'anglais organisent un hébergement en famille d'accueil. Les étudiants vivent dans une famille maltaise, avec généralement le petit-déjeuner et le dîner. Coût : 600 à 900 euros par mois. Idéal pour les jeunes étudiants ou ceux qui souhaitent une immersion culturelle et une pratique de la langue.
 
-### 4. University Residence (Limited)
+### 4. Résidence universitaire (limitée)
 
-The University of Malta has a small student residence on campus with approximately 200 beds. Given demand from 12,000+ students, availability is extremely limited. Apply as early as possible; priority is given to international students and those from Gozo.
+L'Université de Malte dispose d'une petite résidence étudiante sur le campus avec environ 200 lits. Compte tenu de la demande de plus de 12 000 étudiants, la disponibilité est extrêmement limitée. Postulez le plus tôt possible ; la priorité est donnée aux étudiants internationaux et à ceux de Gozo.
 
-### 5. Purpose-Built Student Accommodation (PBSA)
+### 5. Logement étudiant construit à cet effet (PBSA)
 
-Malta has very little PBSA compared to the UK or US. A small number of purpose-built developments cater to students in Msida and Gżira. Rooms are typically €600–€900/month, all-inclusive, with shared common areas, study rooms, and sometimes a pool or gym.
+Malte dispose de très peu de PBSA par rapport au Royaume-Uni ou aux États-Unis. Un petit nombre de lotissements spécialisés accueillent les étudiants à Msida et à Gżira. Les chambres coûtent généralement entre 600 et 900 euros par mois, tout compris, avec des espaces communs, des salles d'étude et parfois une piscine ou une salle de sport.
 
-## Finding Student Accommodation in Malta
+## Trouver un logement étudiant à Malte
 
-### Online Platforms
+### Plateformes en ligne
 
-| Platform | Best For | Notes |
+| Plate-forme en ligne - Meilleure pour - Notes - Plate-forme en ligne - Meilleure pour - Notes
 |----------|----------|-------|
-| **Facebook Groups** | All types | "Accommodation in Malta", "Students in Malta" – most active marketplace |
-| **maltapark.com** | Long-term rentals | Largest Maltese classifieds site |
-| **SpotAHome** | verified listings | All photographed and verified, higher quality |
-| **Erasmusu** | Erasmus students | International student-focused |
-| **University notice boards** | UoM students | Physical and online notice boards |
-| **Language school help** | Language students | Most schools have accommodation coordinators |
+| Les sites d'annonces en ligne les plus actifs sont "Accommodation in Malta", "Students in Malta", "Students in Malta", etc
+**Maltapark.com** | Location à long terme | Le plus grand site de petites annonces de Malte
+**SpotAHome** - Annonces vérifiées - Toutes photographiées et vérifiées, meilleure qualité
+| Site d'annonces d'étudiants étrangers **Erasmusu** | Étudiants Erasmus | Étudiants étrangers **Erasmusu** | Étudiants internationaux
+| Les étudiants de l'UoM ont la possibilité d'utiliser des panneaux d'affichage physiques et en ligne pour les étudiants de l'UoM
+| Les étudiants en langues étrangères ont besoin d'aide pour trouver un logement dans leur pays d'origine
 
-### Timing
+### Calendrier
 
-**Book early.** Malta's student rental market is competitive:
-- **September intake:** Start searching in June–July
-- **February intake:** Start in November–December
-- **Summer language:** Book by March–April for peak season (June–August)
+**Réservez tôt.** Le marché locatif étudiant de Malte est compétitif :
+- **Les étudiants admis en septembre commencent à chercher en juin-juillet
+- **Les étudiants de février commencent à chercher en novembre-décembre
+- **Langue d'été:** Réserver en mars-avril pour la haute saison (juin-août)
 
-### Viewing Tips
+### Conseils de visualisation
 
-- **Always view in person** (or send a trusted person to view) before paying any deposit
-- **Check electricity meters** – Malta's electricity is expensive; ask what the typical monthly bill is
-- **Test water pressure** – some older buildings have poor water pressure on upper floors
-- **Check air conditioning** – essential May–October; confirm it works and who pays for servicing
-- **Read the lease carefully** – understand the notice period, deposit conditions, and who pays for repairs
-- **Photograph everything** at move-in day to protect your deposit
+- **Toujours visiter en personne** (ou envoyer une personne de confiance) avant de verser un acompte
+- **Vérifiez les compteurs d'électricité** - l'électricité à Malte est chère ; demandez quelle est la facture mensuelle typique
+- **Testez la pression de l'eau** - dans certains bâtiments anciens, la pression de l'eau est insuffisante aux étages supérieurs
+- **Vérifiez l'air conditionné** - indispensable de mai à octobre ; confirmez qu'il fonctionne et qui paie l'entretien
+- **Lire attentivement le bail** - comprendre la période de préavis, les conditions de dépôt et qui prend en charge les réparations
+- **Photographiez tout** le jour de l'emménagement pour protéger votre caution
 
-## For Investors: Student Housing as a Rental Investment
+## Pour les investisseurs : Le logement étudiant comme investissement locatif
 
-### Why Student Rental Is Attractive
+### Pourquoi la location étudiante est intéressante
 
-Student housing is one of Malta's most **consistent and resilient** rental segments:
+Le logement étudiant est l'un des segments locatifs les plus **constants et résistants** de Malte :
 
-1. **Year-round demand:** Degree students rent 10–12 months. Language students fill summer gaps. No extended voids.
-2. **Higher yield per sqm:** A 3-bed apartment rented to 3 students at €500 each = €1,500/month, vs €1,200 for the same apartment rented to one tenant.
-3. **Predictable tenant turnover:** Leases align with academic years. Marketing timing is predictable.
-4. **Growing market:** International student numbers have grown consistently, driven by Malta's English-language advantage and EU membership.
-5. **Lower tenant expectations:** Students accept basic furnishings. No need for premium finishes.
+1. **Demande tout au long de l'année** : les étudiants en licence louent pendant 10 à 12 mois. Les étudiants en langues comblent les lacunes de l'été. Pas de vide prolongé.
+2. **Un appartement de 3 lits loué à 3 étudiants à 500 € chacun = 1 500 €/mois, contre 1 200 € pour le même appartement loué à un seul locataire.
+3. **Rotation prévisible des locataires:** Les baux s'alignent sur les années universitaires. Le calendrier de commercialisation est prévisible.
+4. **Marché en croissance:** Le nombre d'étudiants internationaux a augmenté de façon constante, stimulé par l'avantage de la langue anglaise de Malte et l'adhésion à l'UE.
+5. **Les étudiants acceptent un ameublement de base et n'ont pas besoin de finitions haut de gamme. Pas besoin de finitions haut de gamme.
 
-### Yield Comparison: Student vs Standard Residential Rental
+### Comparaison du rendement : Location pour étudiants vs. location résidentielle standard
 
-| | Standard Long-Let | Student Let (per room) |
+| Location étudiante (par chambre)
 |--|-------------------|----------------------|
-| Property: 3-bed, Msida, market value €250,000 | | |
-| Monthly rental income | €1,200 | €1,500 (3 × €500) |
-| Annual gross income | €14,400 | €18,000 |
-| Gross yield | **5.8%** | **7.2%** |
-| Void rate | 5% (1 month void) | 3% (summer fill from language students) |
-| Management intensity | Low | Medium (more turnover, more maintenance) |
+| Propriété : 3 chambres, Msida, valeur du marché 250 000 €
+| Revenu locatif mensuel : 1 200 € | 1 500 € (3 × 500 €)
+| Revenu annuel brut : 14 400 € - 18 000 €
+| Rendement brut : **5,8 %** | **7,2 %** |
+| Taux de vacance : 5% (1 mois de vacance) | 3% (remplissage en été par des étudiants en langues) |
+| Intensité de la gestion : faible - moyenne (plus de rotation, plus d'entretien)
 
-### Best Areas for Student Investment Property
+### Meilleures zones pour l'investissement immobilier des étudiants
 
-| Area | Investment Rating | Why |
+| Le taux de vacance est de 5 % pendant un mois et de 3 % pendant l'été
 |------|------------------|-----|
-| **Msida** | ⭐⭐⭐⭐⭐ | Highest demand, closest to UoM, low vacancy |
-| **Gżira** | ⭐⭐⭐⭐⭐ | Strong demand, good value, close to UoM and Sliema |
-| **Sliema** | ⭐⭐⭐⭐ | Premium rents, language school demand, but higher entry price |
-| **Swieqi** | ⭐⭐⭐⭐ | Growing student demand, still affordable for investors |
-| **St Julian's** | ⭐⭐⭐ | Good demand but higher competition from professional tenants |
-| **Birkirkara** | ⭐⭐⭐ | Bus route to UoM, affordable, growing student presence |
+**Msida** | ⭐⭐⭐⭐⭐ | Demande la plus élevée, le plus proche de l'UoM, faible taux d'inoccupation
+**Gżira** | ⭐⭐⭐⭐⭐ | Forte demande, bon rapport qualité/prix, proche de l'UoM et de Sliema
+**Sliema** | ⭐⭐⭐⭐ | Loyers élevés, demande d'écoles de langues, mais prix d'entrée plus élevé
+**Swieqi** | ⭐⭐⭐⭐ | Demande croissante des étudiants, encore abordable pour les investisseurs
+**St Julian's** ⭐⭐⭐⭐ | Bonne demande, mais concurrence accrue des locataires professionnels
 
-### What to Buy for Student Rental
+
+### Que faut-il acheter pour une location étudiante ?
 
 **Ideal property profile:**
-- 2–3 bedrooms (more rooms = higher total rent)
-- Close to bus routes (essential – most students don't have cars)
-- Within 20 minutes of University of Malta campus
-- Furnished to a basic-but-clean standard
-- Modern bathroom and kitchen (the two areas students care about most)
-- Air conditioning in bedrooms (non-negotiable for summer rentals)
-- Budget: €180,000–€300,000 for a 2–3 bed in Msida or Gżira
+- 2-3 chambres (plus de chambres = loyer total plus élevé)
+- Proche des lignes de bus (essentiel - la plupart des étudiants n'ont pas de voiture)
+- A moins de 20 minutes du campus de l'Université de Malte
+- Meublé à un niveau basique mais propre
+- Salle de bain et cuisine modernes (les deux éléments les plus importants pour les étudiants)
+- Climatisation dans les chambres (non négociable pour les locations d'été)
+- Budget : 180 000 € - 300 000 € pour un appartement de 2 ou 3 chambres à Msida ou Gżira
 
-### Management Considerations
+### Considérations de gestion
 
-Student lets require more active management than standard long-lets:
-- **Turnover:** Annual lease renewals, move-in/move-out inspections
-- **Maintenance:** Students are typically less careful with properties than professionals
-- **Communication:** International students may need more guidance on Maltese utilities, waste, etc.
-- **Deposit management:** Hold deposits properly; deduct for damage with photographic evidence
+Les locations pour étudiants nécessitent une gestion plus active que les locations de longue durée standard :
+- **Turnover:** Renouvellement annuel des baux, inspections des emménagements et déménagements
+- **Entretien : les étudiants sont généralement moins attentifs aux biens que les professionnels
+- **Communication : les étudiants internationaux peuvent avoir besoin de plus de conseils sur les services publics maltais, les déchets, etc.
+- **Gestion des dépôts:** Conserver les dépôts correctement ; déduire les dommages avec des preuves photographiques
 
-**Consider a property manager** if you don't live in Malta. Cost: 8–12% of gross rent for long-term student lets.
+**Envisagez de faire appel à un administrateur de biens** si vous ne vivez pas à Malte. Coût : 8-12% du loyer brut pour les locations étudiantes à long terme.
 
-## Frequently Asked Questions
+## Foire aux questions
 
-### How much does student accommodation cost in Malta per month?
-Shared room in a student apartment: €350–€800/month depending on area (cheapest in Msida, most expensive in St Julian's). Studio apartment: €700–€1,600/month. Host family: €600–€900/month. These prices typically exclude utilities (add €50–€100/month for your share).
+### Combien coûte un logement étudiant à Malte par mois ?
+Chambre partagée dans un appartement d'étudiant : 350 € - 800 €/mois selon le quartier (le moins cher à Msida, le plus cher à St Julian's). Studio : 700 € - 1 600 €/mois. Famille d'accueil : 600 à 900 euros par mois. Ces prix ne comprennent généralement pas les charges (ajoutez 50 à 100 €/mois pour votre part).
 
-### Is there student housing at the University of Malta?
-The University has a small residence with approximately 200 beds on campus. Demand far exceeds supply. Priority goes to international and Gozitan students. Most students rent in the private market.
+### Existe-t-il des logements étudiants à l'Université de Malte ?
+L'université dispose d'une petite résidence d'environ 200 lits sur le campus. La demande dépasse largement l'offre. La priorité va aux étudiants internationaux et gozitains. La plupart des étudiants louent sur le marché privé.
 
-### When should I start looking for student accommodation in Malta?
-For September: start in June–July. For February: start in November–December. For summer language courses: book by March–April. Malta's rental market is competitive – don't wait until the last minute.
+### Quand dois-je commencer à chercher un logement étudiant à Malte ?
+Pour septembre : commencez en juin-juillet. Pour février : commencez en novembre-décembre. Pour les cours de langue d'été : réservez avant mars-avril. Le marché de la location à Malte est compétitif - n'attendez pas la dernière minute.
 
-### Can international students work part-time to cover rent in Malta?
-EU students can work without restriction. Non-EU students can work up to 20 hours/week during term time with a student employment licence. Average student part-time wage: €6–€9/hour. This covers bills and groceries but typically not rent in full.
+### Les étudiants internationaux peuvent-ils travailler à temps partiel pour payer leur loyer à Malte ?
+Les étudiants de l'UE peuvent travailler sans restriction. Les étudiants non-européens peuvent travailler jusqu'à 20 heures par semaine pendant le trimestre avec une licence d'emploi étudiant. Salaire moyen d'un étudiant à temps partiel : 6 à 9 €/heure. Ce salaire couvre les factures et l'épicerie, mais généralement pas le loyer dans son intégralité.
 
-### Is Malta safe for students?
-Yes. Malta consistently ranks among the safest countries in the EU. Campuses and student areas (Msida, Sliema, St Julian's) are generally safe at all hours. Common-sense precautions apply, particularly around Paceville late at night.
+### Malte est-elle sûre pour les étudiants ?
+Oui. Malte se classe régulièrement parmi les pays les plus sûrs de l'UE. Les campus et les quartiers étudiants (Msida, Sliema, St Julian's) sont généralement sûrs à toute heure. Des précautions de bon sens s'appliquent, en particulier autour de Paceville tard dans la nuit.
 
-### Are utilities included in student rent in Malta?
-Usually not. Most Maltese leases quote rent excluding utilities. Budget €50–€100/month per person for electricity, water, and internet. In summer, electricity costs rise significantly due to air conditioning usage.
+### Les charges sont-elles incluses dans le loyer des étudiants à Malte ?
+En général, non. La plupart des baux maltais indiquent un loyer hors charges. Prévoyez un budget de 50 à 100 euros par mois et par personne pour l'électricité, l'eau et l'Internet. En été, les frais d'électricité augmentent considérablement en raison de l'utilisation de l'air conditionné.
 
-## Related Guides
+## Guides connexes
 
-- [Cost of Living in Malta 2026](/insights/cost-of-living-malta-2026)
-- [Moving to Malta Complete Guide](/insights/moving-to-malta-complete-guide)
-- [Rental Income Tax Malta 2026](/insights/rental-income-tax-malta-2026)
-- [Best Areas for Property Investment](/insights/best-areas-investment-malta-2026)
+- [Coût de la vie à Malte 2026](/regards/coût-de-la-vie-à-Malte-2026)
+- [Guide complet du déménagement à Malte](/insights/moving-to-malta-complete-guide)
+- [Impôt sur les revenus locatifs Malte 2026](/Instructions/impôt sur les revenus locatifs-Malte-2026)
+- [Meilleures régions pour l'investissement immobilier](/Instructions/meilleures régions-investissement-malte-2026)
 
-*Last updated: March 2026. Rental prices and student intake numbers are based on current market data and may vary. Always verify accommodation details directly with landlords, universities, or schools before committing.*
+*Dernière mise à jour : Mars 2026. Les prix des loyers et le nombre d'étudiants admis sont basés sur les données actuelles du marché et peuvent varier. Vérifiez toujours les détails de l'hébergement directement auprès des propriétaires, des universités ou des écoles avant de vous engager.*

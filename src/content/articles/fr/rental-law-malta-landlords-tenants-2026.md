@@ -1,254 +1,253 @@
 ---
-title: "Malta Rental Law 2026: Complete Guide for Landlords & Tenants"
+title: "Malta Rental Law 2026 : Complete Guide for Landlords & Tenants (en anglais)"
 category: "Legal"
-excerpt: "Your complete reference to Malta's rental regulations in 2026, covering the Housing Authority rules, mandatory registration, deposit protection, eviction procedures, and the rights of both landlords and tenants."
-metaDescription: "The definitive guide to Malta rental law in 2026. Understand Housing Authority registration, rent increase caps, deposit protection, and eviction rules."
+excerpt: "Votre référence complète à la réglementation locative de Malte en 2026, couvrant les règles de l'Autorité du logement, l'enregistrement obligatoire, la protection des dépôts, les procédures d'expulsion et les droits des propriétaires et des locataires."
+metaDescription: "Le guide définitif du droit locatif maltais en 2026. Comprendre l'enregistrement auprès de l'autorité du logement, les plafonds d'augmentation des loyers, la protection des dépôts et les règles d'expulsion."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "16 min read"
+readTime: "16 min de lecture"
 author: "Malta Luxury Real Estate"
 slug: "rental-law-malta-landlords-tenants-2026"
+localizedSlug: "malta-rental-law-2026-guide-complet-pour"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Malta Rental Law 2026: Complete Guide for Landlords & Tenants
+# Loi maltaise sur les loyers 2026 : Guide complet pour les propriétaires et les locataires
 
-Malta's rental market has undergone significant regulatory changes since 2020. Whether you're a landlord renting out an investment property or a tenant looking for a home, understanding the current rules is essential to protect your rights and avoid penalties.
+Le marché locatif maltais a subi d'importants changements réglementaires depuis 2020. Que vous soyez un propriétaire louant un bien d'investissement ou un locataire à la recherche d'un logement, il est essentiel de comprendre les règles actuelles pour protéger vos droits et éviter les pénalités.
 
-## Overview: Malta's Rental Framework
+## Vue d'ensemble : Le cadre locatif maltais
 
-Malta's private rental sector is governed by the **Private Residential Leases Act (Chapter 604)**, enacted in January 2020 and updated periodically since. The law introduced:
+Le secteur locatif privé de Malte est régi par le **Private Residential Leases Act (Chapter 604)**, promulgué en janvier 2020 et mis à jour périodiquement depuis. La loi a introduit :
 
-- **Mandatory registration** of all rental contracts with the Housing Authority
-- **Minimum lease duration** of one year
-- **Deposit protection** rules
-- **Rent increase caps** tied to the HICP inflation index
-- **Clear eviction procedures**
+- **L'enregistrement obligatoire** de tous les contrats de location auprès de l'Autorité du logement
+- **Durée minimale du bail** d'un an
+- **Règles de protection des dépôts
+- **Plafonds d'augmentation des loyers** liés à l'indice d'inflation HICP
+- **Procédures d'expulsion claires
 
-> **Important:** These rules apply to **private residential leases** only. Short-term holiday lets (under 6 months) regulated by the MTA, and commercial leases, follow different rules.
+**Important:** Ces règles s'appliquent uniquement aux **baux résidentiels privés**. Les locations de vacances à court terme (moins de 6 mois) réglementées par la MTA et les baux commerciaux suivent des règles différentes.
 
-## Mandatory Contract Registration
+## Enregistrement obligatoire du contrat
 
-### The Rule
+### La règle
 
-**Every private residential lease in Malta must be registered** with the Housing Authority within **10 working days** of signing.
+**Chaque bail résidentiel privé à Malte doit être enregistré** auprès de l'Autorité du logement dans les **10 jours ouvrables** suivant la signature.
 
-Both landlord and tenant can register, but the **landlord is primarily responsible** for ensuring registration occurs.
+Le propriétaire et le locataire peuvent tous deux s'enregistrer, mais le **propriétaire est le principal responsable** de l'enregistrement.
 
-### How to Register
+### Comment s'enregistrer
 
-1. Visit the [Housing Authority portal](https://housingauthority.gov.mt)
-2. Complete the online registration form
-3. Upload a copy of the signed lease agreement
-4. Pay the registration fee (€5 per registration)
-5. Receive confirmation and registration number
+1. Visitez le [portail de l'autorité du logement] (https://housingauthority.gov.mt)
+2. Remplir le formulaire d'inscription en ligne
+3. Télécharger une copie du contrat de bail signé
+4. Payer les frais d'inscription (5 € par inscription)
+5. Recevoir la confirmation et le numéro d'enregistrement
 
-### Penalties for Non-Registration
+### Pénalités en cas de non-inscription
 
-| Offence | Penalty |
+| Infraction | Pénalité |
 |---------|---------|
-| Failure to register within 10 days | €2,500 fine (per contract) |
-| Deliberate non-registration | Up to €10,000 fine |
-| Operating without a written contract | Contract deemed to exist on default terms favouring the tenant |
+| Absence d'enregistrement dans les 10 jours | Amende de 2 500 € (par contrat)
+| Non-enregistrement délibéré - Jusqu'à 10 000 € d'amende - Non-enregistrement délibéré - Jusqu'à 10 000 € d'amende - Non-enregistrement délibéré
+| Contrat réputé exister par défaut, à l'avantage du locataire
 
-> **Warning for Landlords:** Renting without registration is the single biggest compliance risk. The Housing Authority actively enforces this – fines are real and substantial.
+**Avertissement aux propriétaires : ** Louer sans enregistrement est le plus grand risque de non-conformité. L'autorité chargée du logement veille activement au respect de cette règle - les amendes sont réelles et substantielles.
 
-## Lease Duration and Terms
+## Durée et conditions du bail
 
-### Minimum Duration
+### Durée minimale
 
-- **Minimum lease term: 1 year** (for contracts signed after 1 January 2020)
-- No maximum term – parties can agree to any duration above 1 year
-- **Renewal:** The lease automatically renews unless terminated with proper notice
+- **Durée minimale du bail : 1 an** (pour les contrats signés après le 1er janvier 2020)
+- Pas de durée maximale - les parties peuvent convenir de toute durée supérieure à 1 an
+- **Renouvellement:** Le bail est automatiquement renouvelé, sauf s'il est résilié avec un préavis approprié
 
-### Notice Periods
+### Périodes de préavis
 
-| Who Terminates | Minimum Notice | When |
+| Le bail se renouvelle automatiquement, à moins qu'il ne soit résilié avec un préavis adéquat
 |---------------|----------------|------|
-| Tenant (year 1) | Cannot terminate before 6 months | Unless lease allows earlier exit |
-| Tenant (after year 1) | 3 months written notice | At any time |
-| Landlord (year 1) | Cannot terminate | Except for specific reasons |
-| Landlord (after year 1) | 3 months written notice | At end of contract term |
-| Either party (breach) | As specified in lease | After written warning |
+| Locataire (année 1) | Ne peut pas résilier avant 6 mois | Sauf si le bail permet une sortie plus rapide |
+| Locataire (après l'année 1) | Préavis écrit de 3 mois | À tout moment |
+| Propriétaire (année 1) | Ne peut pas résilier | Sauf pour des raisons spécifiques |
+| Le bailleur (après l'année 1) | Préavis écrit de 3 mois | A la fin de la période contractuelle
+| Le bailleur peut résilier le contrat à tout moment, sauf pour des raisons spécifiques
 
-### Fixed-Term vs Indefinite
+### Contrat à durée déterminée et contrat à durée indéterminée
 
-- **Fixed-term leases** (e.g., 2 years) automatically revert to indefinite at the end of the term unless renewed or terminated with notice
-- **Indefinite leases** continue until terminated by either party with proper notice
+- **Les baux à durée déterminée** (par exemple, 2 ans) deviennent automatiquement des baux à durée indéterminée à la fin de la période, sauf s'ils sont renouvelés ou résiliés avec un préavis
+- **Les baux à durée indéterminée** se poursuivent jusqu'à ce que l'une ou l'autre des parties y mette fin moyennant un préavis en bonne et due forme
 
-## Rent and Increases
+## Loyer et augmentations
 
-### Setting the Initial Rent
+### Fixation du loyer initial
 
-There is **no rent control** on initial rents in Malta. The landlord can set any price they wish when first renting a property. Market forces determine the rate.
+Il n'y a **aucun contrôle des loyers** sur les loyers initiaux à Malte. Le propriétaire peut fixer le prix qu'il souhaite lors de la première location d'un bien. Les forces du marché déterminent le taux.
 
-### Rent Increases During Tenancy
+### Augmentations de loyer pendant la location
 
-Once a lease is in effect, rent increases are capped:
+Une fois le bail en vigueur, les augmentations de loyer sont plafonnées :
 
-- **During the first year:** No increase allowed
-- **After year 1:** Maximum annual increase is **the lower of 5% or the HICP inflation rate** (whichever is lower)
-- **Exceptions:** Landlord and tenant can agree to specific increases in the original contract, provided these are clearly stated
+- **La première année:** Aucune augmentation n'est autorisée
+- **Après la première année : **L'augmentation annuelle maximale est **la moins élevée des deux valeurs suivantes : 5% ou le taux d'inflation de l'IPCH** (la moins élevée des deux)
+- **Exceptions:** Le propriétaire et le locataire peuvent convenir d'augmentations spécifiques dans le contrat initial, à condition qu'elles soient clairement indiquées
 
-### When Can Rent Be Increased Beyond the Cap?
+### Quand le loyer peut-il être augmenté au-delà du plafond ?
 
-A landlord can increase rent above the cap only if:
-1. The landlord has carried out **significant improvements** (not routine maintenance) that cost at least 50% of the annual rent
-2. Both parties agree in writing
-3. The increase is proportional to the improvement
+Un propriétaire ne peut augmenter le loyer au-delà du plafond que dans les cas suivants :
+1. Le propriétaire a effectué des **améliorations significatives** (pas d'entretien de routine) qui coûtent au moins 50 % du loyer annuel
+2. Les deux parties sont d'accord par écrit
+3. L'augmentation est proportionnelle à l'amélioration
 
-## Security Deposit
+## Dépôt de garantie
 
-### Rules
+### Règles
 
-- **Maximum deposit:** One month's rent
-- **Must be returned** within 1 month of lease termination, minus any legitimate deductions
-- **Legitimate deductions:** Damage beyond normal wear and tear, unpaid rent, unpaid utility bills
-- **Cannot be used as last month's rent** by the tenant
+- **Dépôt de garantie maximum : un mois de loyer
+- **Doit être restitué dans un délai d'un mois après la résiliation du bail, moins les déductions légitimes
+- **Déductions légitimes:** Dommages dépassant l'usure normale, loyers impayés, factures de services publics impayées
+- **Ne peut être utilisé comme dernier mois de loyer** par le locataire
 
-### Deposit Disputes
+### Différends concernant les dépôts de garantie
 
-If there is a disagreement about deposit deductions:
-1. Either party can file a complaint with the **Rent Regulation Board**
-2. The Board will inspect and make a binding decision
-3. Processing time: 2-4 months typically
+En cas de désaccord sur les déductions de la caution :
+1. L'une ou l'autre des parties peut déposer une plainte auprès de la **Commission de contrôle des loyers**
+2. La Commission procédera à une inspection et prendra une décision contraignante
+3. Délai de traitement : 2 à 4 mois en général
 
-> **Best Practice for Landlords:** Conduct a detailed check-in and check-out inventory with photos. This is your evidence if deposit deductions are challenged.
+**Pratique exemplaire pour les propriétaires:** Réalisez un inventaire détaillé de l'état des lieux d'entrée et de sortie, avec des photos. Il s'agit d'une preuve en cas de contestation des déductions de la caution.
 
-## Landlord Obligations
+## Obligations du propriétaire
 
-As a landlord in Malta, you must:
+En tant que propriétaire à Malte, vous devez :
 
-### Property Condition
-- Deliver the property in a **habitable condition** – functioning plumbing, electrical, heating, and structural integrity
-- Maintain all **structural elements** – roof, walls, external doors and windows
-- Repair any damage NOT caused by the tenant within a **reasonable timeframe**
-- Provide a **functioning boiler/water heater** (if included in the original let)
+### Condition de la propriété
+- Livrer le bien dans un **état habitable** - plomberie, électricité, chauffage et intégrité structurelle en état de marche
+- Entretenir tous les **éléments structurels** - toit, murs, portes extérieures et fenêtres
+- Réparer tout dommage NON causé par le locataire dans un **délai raisonnable**
+- Fournir une **chaudière/chauffe-eau en état de marche** (si elle est incluse dans le contrat de location initial)
 
-### Administrative
-- **Register the lease** with the Housing Authority within 10 days
-- Provide a **written lease agreement** (standard template available from Housing Authority)
-- Issue **receipts for all rent payments** if the tenant requests them
-- Declare **rental income** on your tax return (15% flat rate option available)
+### Administratif
+- **Enregistrer le bail** auprès de l'Office du logement dans les 10 jours
+- Fournir un **contrat de bail écrit** (modèle standard disponible auprès de l'Office du logement)
+- Délivrer des **reçus pour tous les paiements de loyer** si le locataire en fait la demande
+- Déclarer les **revenus locatifs** sur votre déclaration d'impôts (option forfaitaire de 15 % disponible)
 
-### What You CAN'T Do
-- Enter the property without 24 hours' written notice (except emergencies)
-- Change locks while the tenant is in residence
-- Withhold essential services (water, electricity) to pressure a tenant
-- Evict without following legal procedures
+### Ce que vous ne pouvez pas faire
+- Entrer dans le logement sans préavis écrit de 24 heures (sauf en cas d'urgence)
+- Changer les serrures pendant que le locataire est à son domicile
+- Retenir les services essentiels (eau, électricité) pour faire pression sur un locataire
+- Expulser sans respecter les procédures légales
 
-## Tenant Obligations
+## Obligations du locataire
 
-As a tenant in Malta, you must:
+En tant que locataire à Malte, vous devez :
 
-- **Pay rent on time** as specified in the lease
-- **Maintain the property** in reasonable condition ("as a good father of a family" – Maltese legal standard)
-- **Report damage** or maintenance issues promptly
-- **Not sublet** without the landlord's written permission
-- **Not make structural changes** without permission
-- **Return the property** in the same condition (allowing for normal wear and tear)
+- **Payer le loyer à temps** comme spécifié dans le bail
+- **Maintenir la propriété** dans un état raisonnable ("en bon père de famille" - norme juridique maltaise)
+- **Signaler rapidement les dommages** ou les problèmes d'entretien
+- **Ne pas sous-louer** sans l'autorisation écrite du propriétaire
+- **Ne pas effectuer de changements structurels** sans autorisation
+- **Rendre le bien** dans le même état (en tenant compte de l'usure normale)
 
-## Eviction Procedures
+## Procédures d'expulsion
 
-### Legal Grounds for Eviction
+### Motifs légaux d'expulsion
 
-A landlord can only evict a tenant for specific reasons:
+Un propriétaire ne peut expulser un locataire que pour des raisons spécifiques :
 
-1. **Non-payment of rent** – after written demand and 15-day grace period
-2. **Breach of lease terms** – after written warning
-3. **Property needed for personal use** – landlord or immediate family (restrictive conditions apply)
-4. **Major works required** – structural repairs that require vacant possession
-5. **Illegal activity** – proven illegal use of the premises
+1. **non-paiement du loyer** - après une demande écrite et un délai de grâce de 15 jours
+2. **Violation des conditions du bail** - après un avertissement écrit
+3. **Propriété nécessaire à des fins personnelles** - propriétaire ou famille proche (des conditions restrictives s'appliquent)
+4. **Travaux importants nécessaires** - réparations structurelles nécessitant la possession du bien par le locataire
+5. **Activité illégale** - utilisation illégale avérée des locaux
 
-### The Eviction Process
+### La procédure d'expulsion
 
-1. **Written notice** specifying the reason and giving adequate notice period
-2. If tenant refuses to leave → **file with the Rent Regulation Board**
-3. Board hears both parties (typically within 2-3 months)
-4. If ruling is in landlord's favour → **court enforcement order**
-5. Court bailiff executes eviction (can take additional 2-4 months)
+1. **Notification écrite** précisant le motif et donnant un délai de préavis suffisant
+2. Si le locataire refuse de partir → **Dépôt d'un dossier auprès de la Commission de régulation des loyers**
+3. La Commission entend les deux parties (généralement dans un délai de 2 à 3 mois)
+4. Si la décision est en faveur du propriétaire → **ordre d'exécution du tribunal**
+5. L'huissier de justice exécute l'expulsion (peut prendre 2 à 4 mois supplémentaires)
 
-**Total process: 4-8 months** from initial notice to enforcement.
+**Procédure totale : 4 à 8 mois** entre la notification initiale et l'exécution.
 
-> **Critical Warning:** Self-help eviction (changing locks, removing belongings, cutting utilities) is **illegal** in Malta and can result in criminal prosecution of the landlord.
+**Avertissement critique:** L'expulsion par auto-assistance (changer les serrures, enlever les biens, couper les services publics) est **illégale** à Malte et peut entraîner des poursuites pénales à l'encontre du propriétaire.
 
-## Tax on Rental Income
+## Taxe sur les revenus locatifs
 
-### The 15% Flat Rate Option
+### L'option du taux forfaitaire de 15
 
-Malta offers a simple and attractive rental income tax regime:
+Malte offre un régime d'imposition des revenus locatifs simple et attractif :
 
-| Tax Option | Rate | Best For |
+| Option fiscale - Taux - Meilleur pour - Option fiscale - Taux - Meilleur pour - Option fiscale - Taux - Meilleur pour - Option fiscale - Taux - Meilleur pour
 |-----------|------|----------|
-| **15% Final Withholding Tax** | 15% on gross rent | Most landlords – simple and final |
-| **Standard Income Tax** | Progressive rates (0-35%) | Low earners with high deductible expenses |
+| Impôt sur le revenu** **15% de retenue à la source** | 15% sur le loyer brut | La plupart des propriétaires - simple et définitif | Impôt sur le revenu** **15% de retenue à la source** **15% sur le loyer brut
+| Impôt sur le revenu : **Impôt sur le revenu standard** | Taux progressifs (0-35%) | Faibles revenus avec des dépenses déductibles élevées
 
-Under the 15% FWT:
-- Applied to **gross rental income** (no deductions for expenses)
-- It is a **final tax** – no further liability on this income
-- Very simple to calculate and pay
-- Declared on the annual personal tax return
+Dans le cadre de l'ISF de 15 % :
+- Appliqué au **revenu locatif brut** (pas de déductions pour les dépenses)
+- Il s'agit d'un **impôt final** - pas d'obligation supplémentaire sur ce revenu
+- Très simple à calculer et à payer
+- Déclaré dans la déclaration annuelle d'impôt sur le revenu des personnes physiques
 
-Under standard income tax:
-- You can deduct **qualifying expenses** (maintenance, insurance, interest on mortgage, management fees)
-- Net income is added to your other income and taxed at your marginal rate
-- Better only if total income is low and deductible expenses are high
+Dans le cadre de l'impôt sur le revenu normal :
+- Vous pouvez déduire les **dépenses admissibles** (entretien, assurance, intérêts hypothécaires, frais de gestion)
+- Le revenu net est ajouté à vos autres revenus et imposé à votre taux marginal
+- Plus avantageux uniquement si le revenu total est faible et si les dépenses déductibles sont élevées
 
-### VAT on Rent
+### TVA sur les loyers
 
-- **Residential long-term lets: VAT exempt** – no VAT is charged
-- **Short-term lets (under 6 months): 7% VAT** applies if registered with MTA
-- **Commercial property lets: 18% VAT** standard rate
+- **Location résidentielle à long terme : Exonération de la TVA** - aucune TVA n'est facturée
+- **Locations à court terme (moins de 6 mois) : 7% de TVA** s'appliquent si elles sont enregistrées auprès de MTA
+- **Location de biens commerciaux : 18% de TVA** taux normal
 
-## Short-Term Lets (Holiday Lets)
+## Location à court terme (location de vacances)
 
-If you want to rent your property on Airbnb, Booking.com, or similar platforms:
+Si vous souhaitez louer votre bien sur Airbnb, Booking.com ou d'autres plateformes similaires :
 
-### MTA (Malta Tourism Authority) Requirements
+### Exigences de la MTA (Malta Tourism Authority)
 
-1. **Must obtain an MTA licence** before advertising
-2. Property must meet minimum standards (safety, cleanliness, facilities)
-3. **Categories:** Standard, Comfort, First Class (1 to 5 star equivalent)
-4. **Licence cost:** €100-€250 annually depending on category
-5. **Must display licence number** on all listings and advertisements
+1. **Vous devez obtenir une licence MTA** avant de publier une annonce
+2. La propriété doit répondre à des normes minimales (sécurité, propreté, installations)
+3. **Catégories:** Standard, Confort, Première classe (équivalent 1 à 5 étoiles)
+4. **Coût de la licence:** 100 à 250 € par an selon la catégorie
+5. **Le numéro de licence doit figurer sur toutes les annonces et publicités
 
-### Short-Let Tax Treatment
+### Traitement fiscal des locations de courte durée
 
-- 15% FWT on gross rental income (same as long-let), OR
-- 7% reduced VAT rate applies to accommodation charges
-- Must register for VAT if turnover exceeds €30,000
+- 15% de TVA sur les revenus locatifs bruts (comme pour les locations de longue durée), OU
+- le taux de TVA réduit de 7 % s'applique aux frais d'hébergement
+- Doit s'enregistrer à la TVA si le chiffre d'affaires dépasse 30 000 €
 
-### Where Are Short-Lets Most Profitable?
+### Où les locations courtes sont-elles les plus rentables ?
 
-Top areas for Airbnb/holiday lets in Malta (2026 data):
+Principales régions pour les locations Airbnb/de vacances à Malte (données de 2026) :
 
-| Area | Avg. Nightly Rate | Avg. Occupancy | Est. Annual Revenue (2-bed) |
+région | Prix moyen par nuit | Prix moyen par nuit Prix de la nuit | Occupation moyenne Occupation moyenne | Revenu annuel est. Revenu annuel moyen (2 lits)
 |------|-------------------|----------------|----------------------------|
-| Sliema | €95-140 | 75% | €26,000-38,000 |
-| St. Julian's | €110-160 | 70% | €28,000-41,000 |
-| Valletta | €100-150 | 65% | €24,000-36,000 |
-| Mellieħa | €80-120 | 55% | €16,000-24,000 |
-| St. Paul's Bay | €60-90 | 60% | €13,000-20,000 |
+| Sliema - €95-140 - 75% - €26,000-38,000 - €26,000-38,000 - €26,000-38,000 - €26,000-38,000
+| St. Julian's - 110-160 € - 70 % - 28 000-41 000 € - 10 000 € - 10 000 000
+| La Valette - 100-150 € - 65 % - 24 000-36 000 €
+| Mellieħa - 80-120 € - 55 % - 16 000-24 000 € - 10 000 € - 10 000 000
+| Paul's Bay - 60-90 € - 60 % - 13 000-20 000 €
 
-## Frequently Asked Questions
+## Foire aux questions
 
-### Is it mandatory to register rental contracts in Malta?
-Yes. Since January 2020, all private residential lease agreements must be registered with the Housing Authority within 10 working days of signing. Failure to register can result in fines of up to €10,000.
+### Est-il obligatoire d'enregistrer les contrats de location à Malte ?
+Oui. Depuis janvier 2020, tous les contrats de location résidentiels privés doivent être enregistrés auprès de l'autorité du logement dans les 10 jours ouvrables suivant la signature. Le défaut d'enregistrement peut entraîner des amendes allant jusqu'à 10 000 €.
 
-### What is the minimum lease duration in Malta?
-The minimum lease duration for private residential agreements signed after 1 January 2020 is one year. There is no maximum duration – parties can agree to any term above one year.
+### Quelle est la durée minimale d'un bail à Malte ?
+La durée minimale du bail pour les accords résidentiels privés signés après le 1er janvier 2020 est d'un an. Il n'y a pas de durée maximale - les parties peuvent convenir d'une durée supérieure à un an.
 
-### How much can a landlord increase rent in Malta?
-After the first year, annual rent increases are capped at the lower of 5% or the HICP inflation rate. During the first year, no increase is permitted at all.
+### De combien un propriétaire peut-il augmenter le loyer à Malte ?
+Après la première année, les augmentations annuelles de loyer sont plafonnées à 5 % ou au taux d'inflation de l'IPCH, selon le montant le plus bas. Au cours de la première année, aucune augmentation n'est autorisée.
 
-### What tax do landlords pay on rental income in Malta?
-Most landlords opt for the 15% Final Withholding Tax on gross rental income. This is a simple, final tax with no further liability. Alternatively, landlords can choose to declare rental income under standard progressive rates (0-35%) and deduct qualifying expenses.
+### Quelle taxe les propriétaires doivent-ils payer sur les revenus locatifs à Malte ?
+La plupart des propriétaires optent pour la retenue à la source finale de 15 % sur les revenus locatifs bruts. Il s'agit d'une taxe simple et définitive qui ne donne lieu à aucune autre obligation. Les propriétaires peuvent également choisir de déclarer leurs revenus locatifs à des taux progressifs standard (0-35%) et de déduire les dépenses admissibles.
 
-### Can a landlord evict a tenant in Malta?
-A landlord can only evict a tenant for specific legal reasons (non-payment, breach of terms, personal use, major works, or illegal activity). Self-help eviction (changing locks, cutting utilities) is illegal. The formal eviction process through the Rent Regulation Board and courts typically takes 4-8 months.
+### Un propriétaire peut-il expulser un locataire à Malte ?
+Un propriétaire ne peut expulser un locataire que pour des raisons légales spécifiques (non-paiement, violation des conditions, utilisation personnelle, travaux importants ou activité illégale). L'expulsion par auto-assistance (changement de serrure, coupure des services publics) est illégale. La procédure officielle d'expulsion par l'intermédiaire de la Commission de régulation des loyers et des tribunaux dure généralement de 4 à 8 mois.
 
-## Need Help Finding Your Next Rental Investment?
+## Vous avez besoin d'aide pour trouver votre prochain investissement locatif ?
 
-Browse high-yield rental properties across Malta's top rental markets, complete with estimated yield data and location analytics.
+Parcourez les propriétés locatives à haut rendement sur les principaux marchés locatifs de Malte, avec des données de rendement estimées et des analyses d'emplacement.

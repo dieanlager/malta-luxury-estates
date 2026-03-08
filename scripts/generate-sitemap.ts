@@ -37,6 +37,9 @@ const slugTranslations: Record<string, Record<string, string>> = {
   de: { properties: 'immobilien', all: 'alle', insights: 'einblicke', about: 'ueber-uns', market: 'markt', live: 'live-ticker', tools: 'tools', valuation: 'immobilienbewertung', quiz: 'immobilien-quiz' }
 };
 
+// Load article slug map
+const articleSlugsMap = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/lib/article-slugs.json'), 'utf-8'));
+
 function generateSitemap() {
   const articleDir = path.join(process.cwd(), 'src/content/articles/en');
   const articleSlugs = fs.readdirSync(articleDir)
@@ -51,7 +54,13 @@ function generateSitemap() {
     if (!lang) return `${BASE_URL}${originalPath === '/' ? '' : originalPath}`;
 
     const parts = originalPath.split('/').filter(Boolean);
-    const localizedParts = parts.map(part => {
+    const isArticle = parts[0] === 'insights' && parts.length > 1;
+
+    const localizedParts = parts.map((part, i) => {
+      // If it's an article slug (second part of /insights/slug)
+      if (isArticle && i === 1) {
+        return articleSlugsMap[lang]?.[part] || part;
+      }
       return slugTranslations[lang]?.[part] || part;
     });
 

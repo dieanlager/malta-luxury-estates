@@ -1,0 +1,67 @@
+﻿{
+  "pl": {
+    "total": 44,
+    "translated": 44,
+    "english_body": [],
+    "missing_slug": [],
+    "identical_slug": []
+  },
+  "de": {
+    "total": 45,
+    "translated": 45,
+    "english_body": [],
+    "missing_slug": [
+      "buying-process-malta-2026.md"
+    ],
+    "identical_slug": []
+  },
+  "fr": {
+    "total": 44,
+    "translated": 44,
+    "english_body": [],
+    "missing_slug": [],
+    "identical_slug": []
+  },
+  "it": {
+    "total": 44,
+    "translated": 28,
+    "english_body": [
+      "property-taxes-malta-2026.md",
+      "renovating-house-of-character-malta-costs-pitfalls.md",
+      "rental-income-tax-malta-2026.md",
+      "rental-law-malta-landlords-tenants-2026.md",
+      "rental-yields-malta-2026.md",
+      "restoring-historic-palazzo-malta-guide.md",
+      "retirement-in-malta-for-british-eu-citizens-2026.md",
+      "sda-projects-complete-list-malta-2026.md",
+      "selling-property-malta-complete-guide.md",
+      "short-let-vs-long-let-malta-2026.md",
+      "special-designated-areas-malta-guide.md",
+      "st-julians-portomaso-luxury-living-nightlife-investment-2026.md",
+      "step-by-step-buying-process-malta.md",
+      "student-accommodation-malta-guide-2026.md",
+      "valletta-investing-in-malta-baroque-capital-2026.md",
+      "yachting-lifestyle-malta-marinas-property.md"
+    ],
+    "missing_slug": [],
+    "identical_slug": [
+      "property-taxes-malta-2026.md",
+      "renovating-house-of-character-malta-costs-pitfalls.md",
+      "rental-income-tax-malta-2026.md",
+      "rental-law-malta-landlords-tenants-2026.md",
+      "rental-yields-malta-2026.md",
+      "restoring-historic-palazzo-malta-guide.md",
+      "retirement-in-malta-for-british-eu-citizens-2026.md",
+      "sda-projects-complete-list-malta-2026.md",
+      "selling-property-malta-complete-guide.md",
+      "short-let-vs-long-let-malta-2026.md",
+      "sliema-real-estate-market-deep-dive-2026.md",
+      "special-designated-areas-malta-guide.md",
+      "st-julians-portomaso-luxury-living-nightlife-investment-2026.md",
+      "step-by-step-buying-process-malta.md",
+      "student-accommodation-malta-guide-2026.md",
+      "valletta-investing-in-malta-baroque-capital-2026.md",
+      "yachting-lifestyle-malta-marinas-property.md"
+    ]
+  }
+}

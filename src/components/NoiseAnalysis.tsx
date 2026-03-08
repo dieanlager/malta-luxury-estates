@@ -19,18 +19,13 @@ const DEFAULT_NOISE: NoiseAssessment = {
 };
 
 export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isOpen, onClose }) => {
+    const { t } = useTranslation();
     const noise = property.noiseLevel || DEFAULT_NOISE;
 
     const getScoreColor = (score: number) => {
         if (score >= 80) return 'text-emerald-400';
         if (score >= 60) return 'text-gold';
         return 'text-red-400';
-    };
-
-    const getProgressColor = (score: number) => {
-        if (score >= 80) return 'bg-emerald-500';
-        if (score >= 60) return 'bg-gold';
-        return 'bg-red-500';
     };
 
     return (
@@ -57,9 +52,10 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
 
                         <button
                             onClick={onClose}
-                            className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all"
+                            className="absolute top-8 right-8 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-all z-[150] shadow-2xl border border-white/10"
+                            aria-label="Close modal"
                         >
-                            <X size={20} />
+                            <X size={24} />
                         </button>
 
                         <div className="flex items-center gap-4 mb-10">
@@ -67,8 +63,8 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                                 <Volume2 size={24} />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-serif text-white">Smart Sound <span className="text-gold italic">Assessment</span></h3>
-                                <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Malta Environmental Noise Audit v2.0</p>
+                                <h3 className="text-2xl font-serif text-white">{t('interactive.noise.title', 'Smart Sound Assessment')}</h3>
+                                <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">{t('interactive.noise.subtitle', 'Malta Environmental Noise Audit v2.0')}</p>
                             </div>
                         </div>
 
@@ -100,15 +96,15 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                                 </svg>
                                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                                     <span className={`text-5xl font-serif font-bold ${getScoreColor(noise.score)}`}>{noise.score}</span>
-                                    <span className="text-[10px] uppercase tracking-widest text-white/20 font-bold">Quiet Score</span>
+                                    <span className="text-[10px] uppercase tracking-widest text-white/20 font-bold">{t('interactive.noise.score_label')}</span>
                                 </div>
                             </div>
                             <p className="mt-6 text-sm text-white/60 text-center max-w-xs">
                                 {noise.score >= 80
-                                    ? "Exceptional tranquility. Ideal for remote work and deep rest."
+                                    ? t('interactive.noise.exceptional')
                                     : noise.score >= 60
-                                        ? "Standard urban soundscape. Managed traffic and moderate activity."
-                                        : "High-activity zone. vibrant nightlife or key transport arterial."}
+                                        ? t('interactive.noise.standard')
+                                        : t('interactive.noise.high')}
                             </p>
                         </div>
 
@@ -117,50 +113,50 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
                                 <div className="flex items-center gap-3 text-white/40 mb-2">
                                     <Car size={14} />
-                                    <span className="text-[10px] uppercase font-bold tracking-widest">Traffic</span>
+                                    <span className="text-[10px] uppercase font-bold tracking-widest">{t('interactive.noise.traffic')}</span>
                                 </div>
-                                <div className="text-sm text-white font-medium">{noise.traffic} Intensity</div>
+                                <div className="text-sm text-white font-medium">{noise.traffic} {t('interactive.noise.intensity')}</div>
                             </div>
 
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
                                 <div className="flex items-center gap-3 text-white/40 mb-2">
                                     <Music size={14} />
-                                    <span className="text-[10px] uppercase font-bold tracking-widest">Nightlife</span>
+                                    <span className="text-[10px] uppercase font-bold tracking-widest">{t('interactive.noise.nightlife')}</span>
                                 </div>
-                                <div className="text-sm text-white font-medium">{noise.nightlife} Surroundings</div>
+                                <div className="text-sm text-white font-medium">{noise.nightlife} {t('interactive.noise.surroundings')}</div>
                             </div>
 
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
                                 <div className="flex items-center gap-3 text-white/40 mb-2">
                                     <Hammer size={14} />
-                                    <span className="text-[10px] uppercase font-bold tracking-widest">Construction</span>
+                                    <span className="text-[10px] uppercase font-bold tracking-widest">{t('interactive.noise.construction')}</span>
                                 </div>
-                                <div className="text-sm text-white font-medium">{noise.constructionRisk} Risk (26/27)</div>
+                                <div className="text-sm text-white font-medium">{noise.constructionRisk} {t('interactive.noise.risk')}</div>
                             </div>
 
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
                                 <div className="flex items-center gap-3 text-white/40 mb-2">
                                     <Plane size={14} />
-                                    <span className="text-[10px] uppercase font-bold tracking-widest">Aviation</span>
+                                    <span className="text-[10px] uppercase font-bold tracking-widest">{t('interactive.noise.aviation')}</span>
                                 </div>
-                                <div className="text-sm text-white font-medium">{noise.isFlightPath ? "Within Flight Path" : "Outside Flight Path"}</div>
+                                <div className="text-sm text-white font-medium">{noise.isFlightPath ? t('interactive.noise.flight_path') : t('interactive.noise.outside_flight_path')}</div>
                             </div>
                         </div>
 
-                        {/* Certifiction Badge */}
+                        {/* Certification Badge */}
                         <div className="mt-10 p-4 bg-emerald-500/5 border border-emerald-500/20 rounded-xl flex items-center gap-4">
                             <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
                                 <ShieldCheck size={18} />
                             </div>
                             <p className="text-[10px] text-emerald-400/80 uppercase tracking-wide leading-relaxed font-medium">
-                                Verified via 2026 satellite acoustic mapping & local council noise ordinance data.
+                                {t('interactive.noise.verified_desc')}
                             </p>
                         </div>
 
                         <div className="mt-8 flex gap-3 text-white/20">
                             <Info size={14} className="shrink-0 mt-0.5" />
                             <p className="text-[9px] uppercase tracking-wider leading-relaxed">
-                                Quiet scores are normalized across the Maltese islands. A score of 80 in Sliema is equivalent to 80 in Gozo in terms of decibel variance.
+                                {t('interactive.noise.disclaimer')}
                             </p>
                         </div>
                     </motion.div>
@@ -190,7 +186,7 @@ export const NoiseAnalysisButton: React.FC<{
                     ) : (
                         <Volume2 size={20} className="text-gold group-hover:scale-110 transition-transform" />
                     )}
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold">Quiet Score: {score}</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold">{t('common.quiet_score')}: {score}</span>
                 </button>
                 <NoiseAnalysisModal property={property} isOpen={isOpen} onClose={() => setIsOpen(false)} />
             </>
@@ -205,14 +201,14 @@ export const NoiseAnalysisButton: React.FC<{
                     e.stopPropagation();
                     setIsOpen(true);
                 }}
-                className="flex items-center gap-3 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:text-gold hover:border-gold/50 transition-all group relative overflow-hidden"
+                className="flex-1 flex items-center gap-2 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:text-gold hover:border-gold/50 transition-all group relative overflow-hidden h-10"
             >
                 {score >= 80 ? (
-                    <VolumeX size={14} className="text-emerald-400 group-hover:scale-110 transition-transform" />
+                    <VolumeX size={14} className="text-emerald-400 group-hover:scale-110 transition-transform shrink-0" />
                 ) : (
-                    <Volume2 size={14} className="text-gold group-hover:scale-110 transition-transform" />
+                    <Volume2 size={14} className="text-gold group-hover:scale-110 transition-transform shrink-0" />
                 )}
-                <span className="text-[10px] font-bold uppercase tracking-widest">{t('common.quiet_score')}: {score}</span>
+                <span className="text-[9px] font-bold uppercase tracking-widest whitespace-nowrap">{t('common.quiet_score')}: {score}</span>
             </button>
 
             <NoiseAnalysisModal

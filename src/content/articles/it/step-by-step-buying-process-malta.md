@@ -1,278 +1,277 @@
 ---
-title: "How to Buy Property in Malta in 2026 – Complete Step-by-Step Guide"
+title: "Come Acquistare Proprietà a Malta nel 2026 – Guida Completa Passo Dopo Passo"
 category: "Buying"
-excerpt: "The definitive step-by-step guide to buying property in Malta in 2026, from defining your budget through to picking up the keys. Covers konvenju, due diligence, notary process, and common pitfalls."
-metaDescription: "Master the property buying process in Malta with our 2026 step-by-step guide. From budget planning and konvenju to final deed and utility transfers."
+excerpt: "La guida definitiva passo dopo passo per acquistare proprietà a Malta nel 2026, dalla definizione del budget al ritiro delle chiavi. Copre konvenju, due diligence, procedura notarile e insidie comuni."
+metaDescription: "Padroneggia il processo di acquisto di proprietà a Malta con la nostra guida passo dopo passo per il 2026. Dalla pianificazione del budget e konvenju all'atto finale e ai trasferimenti delle utenze."
 image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "18 min read"
+readTime: "18 min di lettura"
 author: "Malta Luxury Real Estate"
 slug: "step-by-step-buying-process-malta"
+localizedSlug: "come-acquistare-proprieta-malta-2026"
 lang: it
-translatedFrom: en
-translatedAt: 2026-03-06
 ---
 
-# How to Buy Property in Malta in 2026 – Complete Step-by-Step Guide
+# Come Acquistare Proprietà a Malta nel 2026 – Guida Completa Passo Dopo Passo
 
-Buying property in Malta is straightforward once you understand the process, but there are important differences from the UK, US, or other European markets. This guide walks you through every stage – from defining your budget to picking up the keys – with practical advice from local experts.
+L'acquisto di una proprietà a Malta è semplice una volta compreso il processo, ma ci sono differenze importanti rispetto al Regno Unito, agli Stati Uniti o ad altri mercati europei. Questa guida ti accompagna attraverso ogni fase – dalla definizione del tuo budget al ritiro delle chiavi – con consigli pratici da esperti locali.
 
-## How Long Does the Buying Process Take?
+## Quanto Tempo Richiede il Processo di Acquisto?
 
-The typical timeline from first viewing to final deed is **3 to 6 months**, although it can stretch to 9-12 months for complex transactions involving AIP permits, renovations, or developer-built properties.
+La tempistica tipica dalla prima visita all'atto finale è di **da 3 a 6 mesi**, anche se può estendersi a 9-12 mesi per transazioni complesse che coinvolgono permessi AIP, ristrutturazioni o proprietà costruite da sviluppatori.
 
-Here's a rough timeline:
+Ecco una tempistica approssimativa:
 
-| Stage | Duration |
-|-------|----------|
-| Property Search | 2-8 weeks |
-| Offer & Negotiation | 1-2 weeks |
-| **Konvenju (Promise of Sale)** | **1 day (signing)** |
-| Due Diligence Period | 3-6 months |
-| Final Deed (Kuntratt) | 1 day |
-| **Total** | **3-6 months** |
+| Fase | Durata |
+|---|---|
+| Ricerca Proprietà | 2-8 settimane |
+| Offerta e Negoziazione | 1-2 settimane |
+| **Konvenju (Promessa di Vendita)** | **1 giorno (firma)** |
+| Periodo di Due Diligence | 3-6 mesi |
+| Atto Finale (Kuntratt) | 1 giorno |
+| **Totale** | **3-6 mesi** |
 
-> **Key Takeaway:** The konvenju (preliminary agreement) is the defining moment. Once signed, both buyer and seller are legally committed.
+> **Concetto Chiave:** Il konvenju (accordo preliminare) è il momento decisivo. Una volta firmato, sia l'acquirente che il venditore sono legalmente vincolati.
 
-## Step 1: Define Your Budget and Eligibility
+## Passo 1: Definire il Budget e l'Idoneità
 
-### What Can You Actually Afford?
+### Cosa Puoi Realmente Permetterti?
 
-The price tag on the listing is just the beginning. Here is a realistic breakdown of the **total costs** of buying a €500,000 property in Malta:
+Il prezzo sull'annuncio è solo l'inizio. Ecco una ripartizione realistica dei **costi totali** per l'acquisto di una proprietà a Malta di €500.000:
 
-| Cost | Amount | Notes |
-|------|--------|-------|
-| Purchase Price | €500,000 | |
-| Stamp Duty (5%) | €25,000 | Reduced to 3.5% on first €200k for primary residence |
-| Notary Fees (~1.5%) | €7,500 | Varies: 1-2.5% |
-| Agent Fee | €0 | Usually paid by seller in Malta |
-| AIP Permit Fee | €233 | Only if non-EU or buying outside SDA |
-| Search & Registration | €300-600 | Title searches, LPA registration |
-| **Total Cost** | **~€533,000** | **~6.6% above listing price** |
+| Costo | Importo | Note |
+|---|---|---|
+| Prezzo di Acquisto | €500.000 | |
+| Imposta di Bollo (5%) | €25.000 | Ridotta al 3,5% sui primi €200k per residenza principale |
+| Onorari del Notaio (~1,5%) | €7.500 | Varia: 1-2,5% |
+| Commissione Agente | €0 | Solitamente pagata dal venditore a Malta |
+| Permesso AIP | €233 | Solo se non si è cittadini UE o si acquista fuori da una SDA |
+| Ricerca e Registrazione | €300-600 | Ricerche sui titoli, registrazione LPA |
+| **Costo Totale** | **~€533.000** | **~6,6% sopra il prezzo di listino** |
 
-### Are You Eligible to Buy?
+### Sei Idoneo ad Acquistare?
 
-Your eligibility depends on your nationality and where you want to buy:
+La tua idoneità dipende dalla tua nazionalità e da dove desideri acquistare:
 
-- **Maltese / EU citizen (5+ years resident):** Buy anything, anywhere, no restrictions.
-- **EU citizen (under 5 years resident):** One property for personal use, OR unlimited in SDAs.
-- **Non-EU citizen:** AIP permit required outside SDAs. One property for personal use. SDAs: unlimited.
+- **Cittadino Maltese / UE (residente da 5+ anni):** Può acquistare qualsiasi cosa, ovunque, senza restrizioni.
+- **Cittadino UE (residente da meno di 5 anni):** Una proprietà per uso personale, OPPURE illimitato nelle SDA.
+- **Cittadino non UE:** Permesso AIP richiesto al di fuori delle SDA. Una proprietà per uso personale. SDA: illimitato.
 
-If you're buying in a **Special Designated Area (SDA)** – such as Portomaso, Tigné Point, Fort Cambridge, or Pender Gardens – nationality restrictions do not apply. SDAs are the easiest route for international investors.
+Se acquisti in una **Area Specialmente Designata (SDA)** – come Portomaso, Tigné Point, Fort Cambridge o Pender Gardens – le restrizioni di nazionalità non si applicano. Le SDA sono la via più semplice per gli investitori internazionali.
 
-### Cash vs Mortgage: Key Differences in Malta
+### Contanti vs Mutuo: Differenze Chiave a Malta
 
-Maltese banks offer mortgages to both residents and non-residents, though terms differ:
+Le banche maltesi offrono mutui sia ai residenti che ai non residenti, sebbene i termini differiscano:
 
-| Factor | Resident | Non-Resident |
-|--------|----------|--------------|
-| LTV (Loan-to-Value) | Up to 80% | Up to 70% |
-| Typical Rate (2026) | 3.5-4.5% | 4.5-5.5% |
-| Max Term | 25-40 years | 20-25 years |
-| Banks Available | BOV, HSBC, APS, BNF | BOV, HSBC |
-| Min. Income Requirement | Varies | Proof of stable income required |
+| Fattore | Residente | Non Residente |
+|---|---|---|
+| LTV (Loan-to-Value) | Fino all'80% | Fino al 70% |
+| Tasso Tipico (2026) | 3,5-4,5% | 4,5-5,5% |
+| Durata Massima | 25-40 anni | 20-25 anni |
+| Banche Disponibili | BOV, HSBC, APS, BNF | BOV, HSBC |
+| Requisito Minimo di Reddito | Varia | Richiesta prova di reddito stabile |
 
-> **Pro Tip:** If you're financing, get a mortgage pre-approval **before** signing the konvenju. This avoids the embarrassment (and financial exposure) of committing to a purchase you can't finance.
+> **Suggerimento Pro:** Se stai finanziando, ottieni un pre-approvazione del mutuo **prima** di firmare il konvenju. Questo evita l'imbarazzo (e l'esposizione finanziaria) di impegnarsi in un acquisto che non puoi finanziare.
 
-## Step 2: Find the Right Property
+## Passo 2: Trovare la Proprietà Giusta
 
-### Working with Estate Agents
+### Lavorare con gli Agenti Immobiliari
 
-Malta's real estate market is overwhelmingly agent-driven. Most properties are listed with one or more agencies, and the seller typically pays the agent's commission (5% + VAT).
+Il mercato immobiliare di Malta è prevalentemente guidato da agenti. La maggior parte delle proprietà è elencata con una o più agenzie, e il venditore paga tipicamente la commissione dell'agente (5% + IVA).
 
-As a buyer, this means:
-- Use agents freely – they cost you nothing
-- Many agents have exclusive listings not found online
-- Specify exactly what you want: budget, area, type, must-haves
-- Use multiple agents simultaneously (it's standard practice)
+Come acquirente, questo significa:
+- Usa gli agenti liberamente – non ti costano nulla
+- Molti agenti hanno inserzioni esclusive non trovate online
+- Specifica esattamente ciò che desideri: budget, zona, tipo, indispensabili
+- Usa più agenti contemporaneamente (è una pratica standard)
 
-### What to Check at Viewings
+### Cosa Controllare Durante le Visite
 
-Malta has some quirks that international buyers should watch for:
+Malta presenta alcune stranezze a cui gli acquirenti internazionali dovrebbero prestare attenzione:
 
-1. **Water pressure and tanks** – Many Maltese properties rely on roof-top water tanks (tanki). Check pressure and tank condition.
-2. **Damp and humidity** – Malta's limestone construction can trap moisture. Look for signs of rising damp, especially in ground-floor units and older buildings.
-3. **Permits and planning** – Ask whether all rooms, extensions, and terraces are covered by valid planning permits. Unpermitted additions are common.
-4. **Shared common areas** – In apartment blocks, check the condition of lifts, stairwells, and communal areas. Ask about the condominium committee and management fees.
-5. **Noise** – Malta is densely populated. Visit at different times of day to check noise levels from neighbours, roads, and construction.
-6. **Parking** – Off-street parking is extremely valuable. A garage can add €30,000-€50,000 to a property's value.
+1. **Pressione dell'acqua e serbatoi** – Molte proprietà maltesi si affidano a serbatoi d'acqua sul tetto (*tanki*). Controlla la pressione e le condizioni del serbatoio.
+2. **Umidità e muffa** – La costruzione in pietra calcarea di Malta può intrappolare l'umidità. Cerca segni di umidità di risalita, specialmente nelle unità al piano terra e negli edifici più vecchi.
+3. **Permessi e pianificazione** – Chiedi se tutte le stanze, estensioni e terrazze sono coperte da permessi di pianificazione validi. Le aggiunte non autorizzate sono comuni.
+4. **Aree comuni condivise** – Nei condomini, controlla le condizioni di ascensori, vani scala e aree comuni. Chiedi informazioni sul comitato condominiale e sulle spese di gestione.
+5. **Rumore** – Malta è densamente popolata. Visita in diversi momenti della giornata per verificare i livelli di rumore provenienti da vicini, strade e costruzioni.
+6. **Parcheggio** – Il parcheggio fuori strada è estremamente prezioso. Un garage può aggiungere €30.000-€50.000 al valore di una proprietà.
 
-### Red Flags to Avoid
+### Segnali di Pericolo da Evitare
 
-- Properties listed "well below market" with pressure to decide quickly
-- Sellers who refuse to show planning permits or architect's certificate
-- Properties with ongoing court cases or ownership disputes (the notary will catch these, but it wastes months)
-- Brand-new developments without a valid MEPA/PA completion certificate
+- Proprietà elencate "ben al di sotto del mercato" con pressione a decidere rapidamente
+- Venditori che si rifiutano di mostrare permessi di pianificazione o certificato dell'architetto
+- Proprietà con cause legali in corso o controversie sulla proprietà (il notaio le scoprirà, ma fanno perdere mesi)
+- Nuove costruzioni senza un certificato di completamento MEPA/PA valido
 
-## Step 3: Make an Offer
+## Passo 3: Fare un'Offerta
 
-### How Offers Work in Malta
+### Come Funzionano le Offerte a Malta
 
-Unlike the UK, there is no formal "offer and acceptance" process in Malta. Offers are typically:
+A differenza del Regno Unito, a Malta non esiste un processo formale di "offerta e accettazione". Le offerte sono tipicamente:
 
-1. Made verbally through the agent
-2. The agent relays to the seller
-3. Negotiation goes back and forth until agreement
-4. **Nothing is binding** until the konvenju is signed
+1. Fatte verbalmente tramite l'agente
+2. L'agente le comunica al venditore
+3. La negoziazione va avanti e indietro fino all'accordo
+4. **Nulla è vincolante** fino alla firma del konvenju
 
-This means you can make an offer, withdraw it, or negotiate freely – but so can the seller (gazumping happens).
+Ciò significa che puoi fare un'offerta, ritirarla o negoziare liberamente – ma anche il venditore può farlo (il *gazumping* accade).
 
-### Negotiation Tips
+### Suggerimenti per la Negoziazione
 
-- **Typical negotiation margin:** 5-10% off asking price for standard properties, less for SDA or new-builds where developers hold firm.
-- **Cash buyers** often secure 3-5% additional discount.
-- **Time on market** matters: properties listed 6+ months have more negotiation room.
-- **Multiple interested parties:** In hot areas (Sliema, St. Julian's), good properties sell fast. Don't lowball if you're serious.
+- **Margine di negoziazione tipico:** 5-10% di sconto sul prezzo richiesto per le proprietà standard, meno per SDA o nuove costruzioni dove gli sviluppatori mantengono la posizione.
+- Gli **acquirenti in contanti** assicurano spesso uno sconto aggiuntivo del 3-5%.
+- Il **tempo sul mercato** è importante: le proprietà elencate da 6+ mesi hanno più margine di negoziazione.
+- **Parti interessate multiple:** Nelle aree calde (Sliema, St. Julian's), le buone proprietà si vendono velocemente. Non fare offerte troppo basse se sei serio.
 
-### Reservation Deposit
+### Deposito di Prenotazione
 
-Some sellers or developers may request a **reservation deposit** (€2,000-€10,000) to take the property off the market while the konvenju is prepared. This is:
-- Usually **refundable** if the deal falls through before konvenju
-- Applied against the 10% konvenju deposit
-- Not legally required – some sellers skip this step
+Alcuni venditori o sviluppatori possono richiedere un **deposito di prenotazione** (€2.000-€10.000) per togliere la proprietà dal mercato mentre il konvenju viene preparato. Questo è:
+- Di solito **rimborsabile** se l'affare salta prima del konvenju
+- Applicato al deposito del konvenju del 10%
+- Non legalmente richiesto – alcuni venditori saltano questo passaggio
 
-## Step 4: Sign the Konvenju (Promise of Sale)
+## Passo 4: Firmare il Konvenju (Promessa di Vendita)
 
-### What is a Konvenju?
+### Cos'è un Konvenju?
 
-The *konvenju* (also called *compromesso* or preliminary agreement) is the most important document in Maltese property law. It is a **legally binding contract** between buyer and seller, signed before a notary public.
+Il *konvenju* (chiamato anche *compromesso* o accordo preliminare) è il documento più importante nella legge immobiliare maltese. È un **contratto legalmente vincolante** tra acquirente e venditore, firmato davanti a un notaio.
 
-Once signed, both parties are committed. Walking away has serious financial consequences.
+Una volta firmato, entrambe le parti sono impegnate. Tirarsi indietro comporta gravi conseguenze finanziarie.
 
-### Key Clauses to Include
+### Clausole Chiave da Includere
 
-Your notary should ensure these clauses are included:
+Il tuo notaio dovrebbe assicurarsi che queste clausole siano incluse:
 
-1. **Full property description** – address, boundaries, apartment number, ownership history
-2. **Purchase price** and payment schedule
-3. **Completion date** – when the final deed must be signed (typically 3-6 months)
-4. **Conditions precedent** – including AIP approval, mortgage approval, and clear title
-5. **Penalty for non-completion** – usually forfeiture of deposit if buyer defaults, or double deposit if seller defaults
-6. **What's included** – fixtures, fittings, furniture, appliances. Be specific.
+1. **Descrizione completa della proprietà** – indirizzo, confini, numero dell'appartamento, storia della proprietà
+2. **Prezzo di acquisto** e calendario dei pagamenti
+3. **Data di completamento** – quando l'atto finale deve essere firmato (tipicamente 3-6 mesi)
+4. **Condizioni sospensive** – inclusa l'approvazione AIP, l'approvazione del mutuo e il titolo chiaro
+5. **Penale per mancato completamento** – di solito la perdita del deposito se l'acquirente è inadempiente, o il doppio del deposito se il venditore è inadempiente
+6. **Cosa è incluso** – infissi, arredi, mobili, elettrodomestici. Sii specifico.
 
-### The 10% Deposit
+### Il Deposito del 10%
 
-At signing, the buyer pays:
-- **10% of the purchase price** held by the notary
-- **1% provisional stamp duty** to the Commissioner for Revenue
+Alla firma, l'acquirente paga:
+- **10% del prezzo di acquisto** trattenuto dal notaio
+- **1% di imposta di registro provvisoria** al Commissario delle Entrate
 
-If the **buyer** defaults: they lose the 10% deposit.
-If the **seller** defaults: they must return the deposit plus an equal amount (so 20% total).
+Se l'**acquirente** è inadempiente: perde il deposito del 10%.
+Se il **venditore** è inadempiente: deve restituire il deposito più un importo uguale (quindi il 20% totale).
 
-> **Important:** Make sure your konvenju includes a **finance clause** if you're relying on a mortgage. Without it, you could lose your deposit if the bank declines your application.
+> **Importante:** Assicurati che il tuo konvenju includa una **clausola di finanziamento** se fai affidamento su un mutuo. Senza di essa, potresti perdere il tuo deposito se la banca rifiuta la tua richiesta.
 
-### Typical Konvenju Duration
+### Durata Tipica del Konvenju
 
-The standard period between konvenju and final deed is **3 to 6 months**. This allows time for:
-- Notary to complete title searches
-- AIP permit application and approval (if needed)
-- Mortgage approval
-- Any conditions in the konvenju to be satisfied
+Il periodo standard tra il konvenju e l'atto finale è di **da 3 a 6 mesi**. Questo concede tempo per:
+- Il notaio per completare le ricerche sui titoli
+- La richiesta e l'approvazione del permesso AIP (se necessario)
+- L'approvazione del mutuo
+- Qualsiasi condizione nel konvenju da soddisfare
 
-## Step 5: Due Diligence Period
+## Passo 5: Periodo di Due Diligence
 
-This is the period between signing the konvenju and the final deed. Your notary handles most of this, but here's what happens:
+Questo è il periodo tra la firma del konvenju e l'atto finale. Il tuo notaio gestisce la maggior parte di questo, ma ecco cosa succede:
 
-### Notary Title Searches
+### Ricerche sui Titoli del Notaio
 
-Your notary will conduct thorough searches over 3-6 months:
-- **Ownership history** – tracing title back 30+ years
-- **Hypothecs and charges** – checking for mortgages, court orders, or debts tied to the property
-- **Planning permits** – verifying all structures and extensions are legally approved
-- **Fiscal obligations** – ensuring property taxes and ground rent are up to date
+Il tuo notaio condurrà ricerche approfondite nell'arco di 3-6 mesi:
+- **Storia della proprietà** – tracciando il titolo indietro di oltre 30 anni
+- **Ipoteca e oneri** – verifica di mutui, ordinanze del tribunale o debiti legati alla proprietà
+- **Permessi di pianificazione** – verifica che tutte le strutture ed estensioni siano legalmente approvate
+- **Obblighi fiscali** – assicurandosi che le tasse sulla proprietà e l'affitto del terreno siano aggiornati
 
-### AIP Application (if Required)
+### Richiesta AIP (se Richiesta)
 
-If you need an AIP permit, your notary submits the application to the Department of Lands. **Processing time: 4-8 weeks** typically, though it can take longer.
+Se hai bisogno di un permesso AIP, il tuo notaio presenta la domanda al Dipartimento dei Terreni. **Tempo di elaborazione: 4-8 settimane** tipicamente, anche se può richiedere più tempo.
 
-Requirements include:
-- Property must be used as your primary residence (or is in a tourist zone)
-- Minimum value thresholds may apply
-- Must complete the purchase within 12 months of approval
+I requisiti includono:
+- La proprietà deve essere utilizzata come residenza principale (o si trova in una zona turistica)
+- Potrebbero applicarsi soglie di valore minimo
+- L'acquisto deve essere completato entro 12 mesi dall'approvazione
 
-### Survey and Structural Inspection
+### Ispezione e Perizia Strutturale
 
-Malta does not have a mandatory survey requirement, but it is **strongly recommended** – especially for:
-- Older properties (pre-1960s)
-- Houses of character with traditional construction
-- Properties showing signs of structural movement
-- Any property with major renovation planned
+Malta non ha un requisito di perizia obbligatorio, ma è **fortemente raccomandato** – specialmente per:
+- Proprietà più vecchie (pre-1960)
+- Case di carattere con costruzione tradizionale
+- Proprietà che mostrano segni di movimento strutturale
+- Qualsiasi proprietà con importanti ristrutturazioni pianificate
 
-Cost: €300-€800 depending on property size and detail required.
+Costo: €300-€800 a seconda delle dimensioni della proprietà e del dettaglio richiesto.
 
-### Mortgage Approval
+### Approvazione del Mutuo
 
-If financing, expect the bank process to take 4-8 weeks including:
-- Property valuation by the bank's appointed architect
-- Income and employment verification
-- Credit checks and risk assessment
+Se si finanzia, aspettati che il processo bancario richieda 4-8 settimane, inclusi:
+- Valutazione della proprietà da parte dell'architetto nominato dalla banca
+- Verifica del reddito e dell'impiego
+- Controlli del credito e valutazione del rischio
 
-## Step 6: The Final Deed (Kuntratt)
+## Passo 6: L'Atto Finale (Kuntratt)
 
-### What Happens on Deed Day
+### Cosa Succede il Giorno dell'Atto
 
-The *kuntratt* (final deed of sale) is the culmination of the process. It typically happens at the notary's office. Present are:
-- Buyer (you) and seller – or their power of attorney holders
-- The notary public
-- Witnesses
-- Bank representative (if mortgage involved)
+Il *kuntratt* (atto finale di vendita) è il culmine del processo. Si svolge tipicamente presso l'ufficio del notaio. Presenti sono:
+- Acquirente (tu) e venditore – o i loro delegati con procura
+- Il notaio
+- Testimoni
+- Rappresentante della banca (se coinvolto un mutuo)
 
-The notary reads the deed aloud (in Maltese, with English translation available), both parties sign, and ownership formally transfers.
+Il notaio legge l'atto ad alta voce (in maltese, con traduzione in inglese disponibile), entrambe le parti firmano e la proprietà viene trasferita formalmente.
 
-### Payments Due at Deed
+### Pagamenti Dovuti all'Atto
 
-| Payment | Amount | Payable To |
-|---------|--------|------------|
-| Balance of purchase price | 90% of price | Seller |
-| Remaining stamp duty (4%) | 4% of price | Commissioner for Revenue |
-| Notary fees | ~1-1.5% | Notary |
+| Pagamento | Importo | Da Pagare A |
+|---|---|---|
+| Saldo del prezzo di acquisto | 90% del prezzo | Venditore |
+| Imposta di registro rimanente (4%) | 4% del prezzo | Commissario delle Entrate |
+| Onorari notarili | ~1-1.5% | Notaio |
 
-The 1% provisional stamp duty paid at konvenju is deducted from the total 5% stamp duty.
+L'imposta di registro provvisoria dell'1% pagata al konvenju viene detratta dall'imposta di registro totale del 5%.
 
-### Registration and Ownership
+### Registrazione e Proprietà
 
-After signing, the notary:
-1. Registers the deed at the **Public Registry** within 15 working days
-2. Files with the **Land Registration Authority** (LPA)
-3. Provides you with certified copies
+Dopo la firma, il notaio:
+1. Registra l'atto presso il **Registro Pubblico** entro 15 giorni lavorativi
+2. Presenta domanda presso l'**Autorità per la Registrazione Fondiaria** (LPA)
+3. Ti fornisce copie certificate
 
-You are now the legal owner.
+Ora sei il proprietario legale.
 
-## Step 7: After Purchase
+## Passo 7: Dopo l'Acquisto
 
-### Utility Transfers
-- **ARMS (water & electricity):** Visit the ARMS office with your deed copy to transfer the account. Budget 1-2 weeks.
-- **Internet/TV:** GO, Melita, or Epic are the main providers. Installation typically within 3-5 days.
+### Trasferimento Utenze
+- **ARMS (acqua ed elettricità):** Visita l'ufficio ARMS con la copia dell'atto per trasferire il conto. Prevedi 1-2 settimane.
+- **Internet/TV:** GO, Melita o Epic sono i principali fornitori. Installazione tipicamente entro 3-5 giorni.
 
-### Property Insurance
-- **Mandatory** if you have a mortgage (the bank requires it)
-- Recommended even without a mortgage – covers storm damage, fire, third-party liability
-- Cost: €300-€800 per year for a standard apartment
+### Assicurazione Immobiliare
+- **Obbligatoria** se si ha un mutuo (la banca lo richiede)
+- Consigliata anche senza mutuo – copre danni da tempesta, incendio, responsabilità civile verso terzi
+- Costo: €300-€800 all'anno per un appartamento standard
 
-### Community/Condominium Fees
-If buying an apartment, you'll contribute to building maintenance through monthly or annual condominium fees. These cover:
-- Lift maintenance, cleaning, common area electricity
-- Building insurance
-- Sinking fund for major repairs
-- Typical cost: €500-€2,000 per year
+### Spese Condominiali/Condominio
+Se si acquista un appartamento, si contribuirà alla manutenzione dell'edificio tramite spese condominiali mensili o annuali. Queste coprono:
+- Manutenzione ascensore, pulizia, elettricità aree comuni
+- Assicurazione dell'edificio
+- Fondo di ammortamento per riparazioni importanti
+- Costo tipico: €500-€2.000 all'anno
 
-## Frequently Asked Questions
+## Domande Frequenti
 
-### How much does it cost to buy property in Malta?
-Total acquisition costs typically add 6-7% on top of the purchase price, covering stamp duty (5%), notary fees (1-1.5%), and search/registration fees. First-time buyers benefit from reduced stamp duty (3.5% on first €200,000).
+### Quanto costa acquistare una proprietà a Malta?
+I costi totali di acquisizione aggiungono tipicamente il 6-7% in più rispetto al prezzo di acquisto, coprendo l'imposta di bollo (5%), le spese notarili (1-1,5%) e le spese di ricerca/registrazione. Gli acquirenti per la prima volta beneficiano di un'imposta di bollo ridotta (3,5% sui primi €200.000).
 
-### Can foreigners get a mortgage in Malta?
-Yes. Both BOV (Bank of Valletta) and HSBC Malta offer mortgages to non-residents, typically up to 70% LTV with terms of 20-25 years. Interest rates for non-residents are generally 4.5-5.5% in 2026.
+### Gli stranieri possono ottenere un mutuo a Malta?
+Sì. Sia BOV (Bank of Valletta) che HSBC Malta offrono mutui ai non residenti, tipicamente fino al 70% LTV con termini di 20-25 anni. I tassi di interesse per i non residenti sono generalmente del 4,5-5,5% nel 2026.
 
-### What is the minimum property price in Malta?
-There is no legal minimum purchase price for EU citizens. Non-EU buyers applying for an AIP permit must purchase a property valued at or above the thresholds set by the Commissioner for Land, which vary by property type and location.
+### Qual è il prezzo minimo della proprietà a Malta?
+Non esiste un prezzo minimo legale di acquisto per i cittadini UE. Gli acquirenti non UE che richiedono un permesso AIP devono acquistare una proprietà valutata pari o superiore alle soglie stabilite dal Commissario per la Terra, che variano in base al tipo di proprietà e alla località.
 
-### How long does it take to buy property in Malta?
-The typical process from signed konvenju to final deed takes 3-6 months. The overall process from first viewing to completion is usually 4-8 months.
+### Quanto tempo ci vuole per acquistare una proprietà a Malta?
+Il processo tipico dalla firma del *konvenju* all'atto finale richiede 3-6 mesi. Il processo complessivo dalla prima visita al completamento è solitamente di 4-8 mesi.
 
-### Is buying property in Malta a good investment?
-Malta's property market has shown consistent growth averaging 5-7% annually in prime areas. The combination of limited land supply, growing expatriate community, and strong tourism sector supports continued demand and appreciation.
+### L'acquisto di una proprietà a Malta è un buon investimento?
+Il mercato immobiliare di Malta ha mostrato una crescita costante con una media del 5-7% annuo nelle aree principali. La combinazione di offerta limitata di terreni, crescente comunità di espatriati e forte settore turistico supporta la domanda continua e l'apprezzamento.
 
-## Ready to Start Your Malta Property Search?
+## Pronti per Iniziare la Vostra Ricerca Immobiliare a Malta?
 
-Browse premium listings across Malta's most desirable locations, each hand-selected for quality and investment potential.
+Sfogliare annunci premium nelle località più desiderabili di Malta, ognuna selezionata a mano per qualità e potenziale di investimento.

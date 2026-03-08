@@ -1,4 +1,5 @@
 import type { Article } from '../types'
+import articleSlugs from './article-slugs.json'
 
 // ── Wszystkie pliki MD załadowane przez Vite w build time ────
 // Vite bundluje je statycznie — działa SSG/SSR i na produkcji
@@ -59,8 +60,20 @@ export async function loadArticle(
     lang: ArticleLang
 ): Promise<Article | null> {
 
-    const primaryPath = buildPath(slug, lang)
-    const fallbackPath = buildPath(slug, 'en')
+    let realSlug = slug;
+
+    // Resolve localized slug to English filename slug
+    if (lang !== 'en') {
+        const langMap = (articleSlugs as any)[lang] || {};
+        const entries = Object.entries(langMap);
+        const found = entries.find(([_, local]) => local === slug);
+        if (found) {
+            realSlug = found[0];
+        }
+    }
+
+    const primaryPath = buildPath(realSlug, lang)
+    const fallbackPath = buildPath(realSlug, 'en')
 
     // Próbuj główny język → fallback do EN
     const loader = allMarkdownFiles[primaryPath] ?? allMarkdownFiles[fallbackPath]
@@ -108,7 +121,8 @@ export async function loadAllArticles(lang: ArticleLang): Promise<Article[]> {
                 const { fm, body } = parseFrontmatter(raw)
 
                 // Wyciągnij slug z nazwy pliku
-                const slug = path.split('/').pop()?.replace(/\.md$/, '') ?? ''
+                const enSlug = path.split('/').pop()?.replace(/\.md$/, '') ?? ''
+                const slug = fm.localizedSlug || enSlug
 
                 return {
                     slug,
@@ -134,4 +148,22 @@ export async function loadAllArticles(lang: ArticleLang): Promise<Article[]> {
             if (a.date && b.date) return b.date.localeCompare(a.date)
             return 0
         })
+}
+
+// ── Pobierz zlokalizowany link do artykułu ──────────────────
+export function getLocalizedArticleLink(enSlug: string, lang: string): string {
+    const activeLang = resolveArticleLang(lang);
+    const insightsSlug = activeLang === 'pl' ? 'wiedza' :
+        activeLang === 'de' ? 'einblicke' :
+            activeLang === 'fr' ? 'conseils' :
+                activeLang === 'it' ? 'approfondimenti' : 'insights';
+
+    let finalSlug = enSlug;
+    if (activeLang !== 'en') {
+        const langMap = (articleSlugs as any)[activeLang] || {};
+        finalSlug = langMap[enSlug] || enSlug;
+    }
+
+    const prefix = activeLang === 'en' ? '' : `/${activeLang}`;
+    return `${prefix}/${insightsSlug}/${finalSlug}`;
 }

@@ -1,0 +1,252 @@
+﻿
+­čîŹ EN Ôćĺ IT | 44 files | Gemini 1.5 Flash
+
+  Ôťô buying-off-plan-property-malta-risks-rewards.md
+  Ôťô buying-property-in-malta-as-a-foreigner-2026.md
+  Ôťô buying-property-malta-cryptocurrency-guide-2026.md
+  Ôťô commercial-vs-residential-investment-malta-2026.md
+  Ôťô condominium-fees-management-malta-guide-2026.md
+  Ôťô cost-of-living-malta-2026.md
+  Ôťô digital-nomad-residence-permit-malta-housing-guide-2026.md
+  Ôťô energy-efficiency-epc-malta-solar-incentives-2026.md
+  Ôťô gozo-property-investment-guide-2026.md
+  Ôťô ground-rent-cens-redemption-malta-guide.md
+  Ôťô healthcare-in-malta-guide-for-expats-2026.md
+  Ôťô international-schools-malta-expat-guide.md
+  Ôťô investing-gozo-vs-malta-financial-comparison.md
+  Ôťô malta-permanent-residency-mprp-financial-benefits.md
+  Ôťô malta-permanent-residency-mprp-property-guide.md
+  Ôťô malta-property-market-forecast-2026-2030.md
+  Ôťô marsaxlokk-south-malta-emerging-real-estate-values.md
+  Ôťô mdina-rabat-noble-heartland-property-guide-2026.md
+  Ôťô mortgage-malta-foreigners-guide-2026.md
+  Ôťô most-exclusive-neighborhoods-malta-villas-2026.md
+  Ôťô moving-to-malta-complete-guide.md
+  Ôťô moving-to-malta-with-pets-buying-renting-guide.md
+  Ôťô off-plan-buying-guide-malta-2026.md
+  Ôťô planning-permission-malta-guide.md
+  Ôťô property-inheritance-malta-succession-tax-2026.md
+  Ôťô property-inheritance-malta.md
+  Ôťô property-tax-optimization-malta-2026.md
+  Ôťô property-taxes-malta-2026.md
+
+  ÔľÂ renovating-house-of-character-malta-costs-pitfalls.md Ôćĺ IT
+    [FM]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 2)...
+DEBUG [FM RAW]: {
+  "title": "Ristrutturare una Casa di Carattere: Costi Reali e Consigli 2026",
+  "excerpt": "Acquistare una casa da ristrutturare nel centro di un villaggio pu├▓ essere redditizio. Analizziamo i costi al metro quadro e le comuni insidie architettoniche.",
+  "metaDescription": "Guida completa alla ristrutturazione delle Case di Carattere maltesi. Costi al mq, permessi di pianificazione, soluzioni per l'umidit├á di risalita e restauro della pietra tradizionale."
+}
+Ôťô "Ristrutturare una Casa di Carattere: Costi Reali e..."
+    [SLUG] Ôťô ristrutturare-casa-carattere-costi-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2320 chars)
+  Ôťů Done: renovating-house-of-character-malta-costs-pitfalls.md
+  Ôťô Fixing slug... [tasse-affitto-malta-2026-guida-proprietari] rental-income-tax-malta-2026.md
+
+  ÔľÂ rental-law-malta-landlords-tenants-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Legge sugli Affitti a Malta 2026: Guida Completa per Proprietari e Inquilini",
+  "excerpt": "Il vostro riferimento completo alla normativa sugli affitti di Malta nel 2026, che copre le regole dell'Autorit├á per l'Edilizia Abitativa, la registrazione obbligatoria, la protezione dei depositi, le procedure di sfratto e i diritti sia dei proprietari che degli inquilini.",
+  "metaDescription": "La guida definitiva alla legge sugli affitti di Malta nel 2026. Comprendere la registrazione presso l'Autorit├á per l'Edilizia Abitativa, i limiti all'aumento degli affitti, la protezione dei depositi e le norme sugli sfratti."
+}
+Ôťô "Legge sugli Affitti a Malta 2026: Guida Completa p..."
+    [SLUG] Ôťô legge-affitti-malta-2026-guida-proprietari-inquilini
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6582 chars)
+      [2/3] Ôťô (6218 chars)
+      [3/3] Ôťô (689 chars)
+  Ôťů Done: rental-law-malta-landlords-tenants-2026.md
+
+  ÔľÂ rental-yields-malta-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Affitto Breve vs Affitto Lungo a Malta: Cosa Rende di Pi├╣ nel 2026?",
+  "excerpt": "Un confronto basato sui dati tra affitti turistici brevi e affitti a lungo termine a Malta, che copre le normative MTA, il trattamento fiscale, l'analisi della redditivit├á per localit├á e casi studio reali per il 2026.",
+  "metaDescription": "Affitto breve vs affitto lungo a Malta: Quale strategia di investimento vince nel 2026? Un confronto basato sui dati di rendimenti, normative e costi di gestione."
+}
+Ôťô "Affitto Breve vs Affitto Lungo a Malta: Cosa Rende..."
+    [SLUG] Ôťô affitto-breve-vs-lungo-malta-2026
+    [BODY] 3 chunks:
+      [1/3]     ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 1)...
+Ôťô (6158 chars)
+      [2/3] Ôťô (6333 chars)
+      [3/3] Ôťô (673 chars)
+  Ôťů Done: rental-yields-malta-2026.md
+
+  ÔľÂ restoring-historic-palazzo-malta-guide.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Restauro di un Palazzo Storico a Malta: Sfide e Ricompense",
+  "excerpt": "Possedere un pezzo di storia ├Ę un sogno per molti. Ti guidiamo attraverso il processo di restauro di un palazzo maltese, inclusi permessi e incentivi.",
+  "metaDescription": "Guida completa al restauro dei Palazzi storici a Malta. Scopri la protezione di Grado 1, i permessi dell'Autorit├á di Pianificazione e gli incentivi fiscali 2026."
+}
+Ôťô "Restauro di un Palazzo Storico a Malta: Sfide e Ri..."
+    [SLUG] Ôťô restauro-palazzo-storico-malta-sfide-ricompense
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2917 chars)
+  Ôťů Done: restoring-historic-palazzo-malta-guide.md
+
+  ÔľÂ retirement-in-malta-for-british-eu-citizens-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Andare in pensione a Malta: Una guida 2026 per cittadini britannici e UE",
+  "excerpt": "Malta ├Ę la destinazione preferita per la pensione in Europa. Esplora i programmi fiscali al 15%, l'accesso all'assistenza sanitaria e le migliori citt├á 'tranquille' per il 2026.",
+  "metaDescription": "Andare in pensione a Malta nel 2026? Una guida per pensionati del Regno Unito e dell'UE. Scopri il Programma per Pensionati (MPRP), l'assistenza sanitaria e i posti migliori dove vivere."
+}
+Ôťô "Andare in pensione a Malta: Una guida 2026 per cit..."
+    [SLUG] Ôťô pensione-malta-guida-2026-britannici-ue
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2586 chars)
+  Ôťů Done: retirement-in-malta-for-british-eu-citizens-2026.md
+
+  ÔľÂ sda-projects-complete-list-malta-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Propriet├á SDA Malta 2026 ÔÇô Elenco Completo dei Progetti di Area Specialmente Designata",
+  "excerpt": "Le Aree Specialmente Designate (SDA) sono le uniche propriet├á a Malta che qualsiasi nazionalit├á pu├▓ acquistare senza un permesso AIP. Questo elenco completo e aggiornato copre ogni sviluppo SDA attivo, con prezzi, tipi di unit├á, servizi e analisi degli investimenti.",
+  "metaDescription": "Elenco completo 2026 delle Aree Specialmente Designate (SDA) a Malta. Scopri sviluppi di lusso come Portomaso e Tigne Point dove qualsiasi nazionalit├á pu├▓ acquistare senza un permesso AIP."
+}
+Ôťô "Propriet├á SDA Malta 2026 ÔÇô Elenco Completo dei Pro..."
+    [SLUG] Ôťô proprieta-sda-malta-2026-elenco-progetti
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6256 chars)
+      [2/3] Ôťô (6304 chars)
+      [3/3] Ôťô (2590 chars)
+  Ôťů Done: sda-projects-complete-list-malta-2026.md
+
+  ÔľÂ selling-property-malta-complete-guide.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Vendita di Propriet├á a Malta: Guida Completa 2026",
+  "excerpt": "Tutto ci├▓ che devi sapere sulla vendita di propriet├á a Malta nel 2026, incluse l'imposta sulle plusvalenze, la selezione dell'agente, la valutazione immobiliare e il processo legale dalla messa in vendita all'atto definitivo.",
+  "metaDescription": "Guida esperta alla vendita di propriet├á a Malta nel 2026. Scopri la valutazione immobiliare, l'imposta sostitutiva finale (FWT), le commissioni degli agenti e i requisiti legali."
+}
+Ôťô "Vendita di Propriet├á a Malta: Guida Completa 2026..."
+    [SLUG] Ôťô vendita-proprieta-malta-guida-completa-2026
+    [BODY] 2 chunks:
+      [1/2] Ôťô (5947 chars)
+      [2/2] Ôťô (6049 chars)
+  Ôťů Done: selling-property-malta-complete-guide.md
+
+  ÔľÂ short-let-vs-long-let-malta-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Affitto Breve vs Affitto Lungo a Malta: Cosa Rende di Pi├╣ nel 2026?",
+  "excerpt": "Un confronto basato sui dati tra affitti turistici brevi e affitti a lungo termine a Malta, che copre le normative MTA, il trattamento fiscale, l'analisi del rendimento per localit├á e casi studio reali per il 2026.",
+  "metaDescription": "Affitto breve vs affitto lungo a Malta: Quale strategia di investimento vince nel 2026? Un confronto basato sui dati di rendimenti, normative e costi di gestione."
+}
+Ôťô "Affitto Breve vs Affitto Lungo a Malta: Cosa Rende..."
+    [SLUG] Ôťô affitto-breve-vs-lungo-malta-2026
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6148 chars)
+      [2/3] Ôťô (6458 chars)
+      [3/3]     ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 3)...
+Ôťô (673 chars)
+  Ôťů Done: short-let-vs-long-let-malta-2026.md
+  Ôťô Fixing slug... [sliema-mercato-prezzi-rendimenti-2026] sliema-real-estate-market-deep-dive-2026.md
+
+  ÔľÂ special-designated-areas-malta-guide.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Propriet├á SDA Malta 2026 ÔÇô Elenco Completo dei Progetti di Area Specialmente Designata",
+  "excerpt": "Le Aree Specialmente Designate (SDA) sono le uniche propriet├á a Malta che qualsiasi nazionalit├á pu├▓ acquistare senza un permesso AIP. Questo elenco completo e aggiornato copre ogni sviluppo SDA attivo, con prezzi, tipi di unit├á, servizi e analisi degli investimenti.",
+  "metaDescription": "Elenco completo 2026 delle Aree Specialmente Designate (SDA) a Malta. Scopri sviluppi di lusso come Portomaso e Tigne Point dove qualsiasi nazionalit├á pu├▓ acquistare senza un permesso AIP."
+}
+Ôťô "Propriet├á SDA Malta 2026 ÔÇô Elenco Completo dei Pro..."
+    [SLUG] Ôťô proprieta-sda-malta-2026-progetti
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6232 chars)
+      [2/3] Ôťô (6267 chars)
+      [3/3] Ôťô (2580 chars)
+  Ôťů Done: special-designated-areas-malta-guide.md
+
+  ÔľÂ st-julians-portomaso-luxury-living-nightlife-investment-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "St. Julian's e Portomaso: Intelligenza sul Lusso Abitativo e la Vita Notturna 2026",
+  "excerpt": "Tuffatevi nella capitale dell'intrattenimento di Malta. Analizziamo il 'SDA Premium' a Portomaso e l'evoluzione di Paceville in un polo commerciale di lusso.",
+  "metaDescription": "Investite nel settore immobiliare di St. Julian's. Un'analisi dettagliata 2026 del Porto Turistico di Portomaso, Pender Gardens e il mercato degli affitti brevi ad alto rendimento nella citt├á pi├╣ dinamica di Malta."
+}
+Ôťô "St. Julian's e Portomaso: Intelligenza sul Lusso A..."
+    [SLUG] Ôťô st-julians-portomaso-lusso-vita-notturna-2026
+    [BODY] 1 chunks:
+      [1/1] ÔťŚ kept original (Gemini: This model is currently experien)
+  Ôťů Done: st-julians-portomaso-luxury-living-nightlife-investment-2026.md
+
+  ÔľÂ step-by-step-buying-process-malta.md Ôćĺ IT
+    [FM]     ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 8)...
+DEBUG [FM RAW]: {
+  "title": "Come Acquistare Propriet├á a Malta nel 2026 ÔÇô Guida Completa Passo Dopo Passo",
+  "excerpt": "La guida definitiva passo dopo passo per acquistare propriet├á a Malta nel 2026, dalla definizione del budget al ritiro delle chiavi. Copre konvenju, due diligence, procedura notarile e insidie comuni.",
+  "metaDescription": "Padroneggia il processo di acquisto di propriet├á a Malta con la nostra guida passo dopo passo per il 2026. Dalla pianificazione del budget e konvenju all'atto finale e ai trasferimenti delle utenze."
+}
+Ôťô "Come Acquistare Propriet├á a Malta nel 2026 ÔÇô Guida..."
+    [SLUG]     ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 3)...
+    ÔÜí Network error (ENOTFOUND). Retrying... (Attempt 4)
+Ôťô come-acquistare-proprieta-malta-2026
+    [BODY] 3 chunks:
+      [1/3]     ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 1)...
+Ôťô (6074 chars)
+      [2/3]     ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 1)...
+Ôťô (6281 chars)
+      [3/3]     ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 1)...
+Ôťô (2361 chars)
+  Ôťů Done: step-by-step-buying-process-malta.md
+
+  ÔľÂ student-accommodation-malta-guide-2026.md Ôćĺ IT
+    [FM]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 8)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 9)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 10)...
+    ÔÜá FM translate error: Gemini: You exceeded your current quota, please ch, keeping original
+Ôťô "Student Accommodation in Malta 2026 ÔÇô Complete Gui..."
+    [SLUG]     ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 6)...
+Ôťô alloggio-studenti-malta-2026-guida-completa
+    [BODY] 3 chunks:
+      [1/3]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+Ôťô (6206 chars)
+      [2/3]     ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 1)...
+Ôťô (6167 chars)
+      [3/3]     ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 1)...
+Ôťô (5168 chars)
+  Ôťů Done: student-accommodation-malta-guide-2026.md
+
+  ÔľÂ valletta-investing-in-malta-baroque-capital-2026.md Ôćĺ IT
+    [FM]     ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 8)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 9)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 10)...
+    ÔÜá FM translate error: Gemini: You exceeded your current quota, please ch, keeping original
+Ôťô "Valletta: Investing in the Baroque Capital ÔÇô UNESC..."
+    [SLUG]     ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 8)...
+    ÔÜí Quota/Rate limit. Switching to API key 3 (Attempt 9)...
+    ÔÜí Quota/Rate limit. Switching to API key 4 (Attempt 10)...

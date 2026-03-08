@@ -1,253 +1,253 @@
 ---
-title: "Malta Rental Law 2026: Complete Guide for Landlords & Tenants"
+title: "Maltesisches Mietrecht 2026: Vollständiger Leitfaden für Vermieter und Mieter"
 category: "Legal"
-excerpt: "Your complete reference to Malta's rental regulations in 2026, covering the Housing Authority rules, mandatory registration, deposit protection, eviction procedures, and the rights of both landlords and tenants."
-metaDescription: "The definitive guide to Malta rental law in 2026. Understand Housing Authority registration, rent increase caps, deposit protection, and eviction rules."
+excerpt: "Ihr komplettes Nachschlagewerk zu den maltesischen Mietvorschriften im Jahr 2026, das die Vorschriften der Wohnungsbehörde, die Registrierungspflicht, den Kautionsschutz, die Räumungsverfahren und die Rechte von Vermietern und Mietern umfasst."
+metaDescription: "Der endgültige Leitfaden zum maltesischen Mietrecht im Jahr 2026. Informieren Sie sich über die Registrierung bei der Wohnungsbehörde, Obergrenzen für Mieterhöhungen, Kautionsschutz und Räumungsvorschriften."
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "16 min read"
+readTime: "16 Min. Lesezeit"
 author: "Malta Luxury Real Estate"
 slug: "rental-law-malta-landlords-tenants-2026"
+localizedSlug: "maltesisches-mietrecht-2026-vollstandiger-leitfaden-fur-vermieter"
 lang: de
-translatedFrom: en
-translatedAt: 2026-03-06
 ---
-# Malta Rental Law 2026: Complete Guide for Landlords & Tenants
 
-Malta's rental market has undergone significant regulatory changes since 2020. Whether you're a landlord renting out an investment property or a tenant looking for a home, understanding the current rules is essential to protect your rights and avoid penalties.
+# Malta Rental Law 2026: Vollständiger Leitfaden für Vermieter und Mieter
 
-## Overview: Malta's Rental Framework
+Der maltesische Mietmarkt hat seit 2020 erhebliche regulatorische Änderungen erfahren. Egal, ob Sie als Vermieter eine Anlageimmobilie vermieten oder als Mieter eine Wohnung suchen, die Kenntnis der aktuellen Vorschriften ist wichtig, um Ihre Rechte zu schützen und Strafen zu vermeiden.
 
-Malta's private rental sector is governed by the **Private Residential Leases Act (Chapter 604)**, enacted in January 2020 and updated periodically since. The law introduced:
+## Überblick: Maltas Rahmenbedingungen für die Vermietung
 
-- **Mandatory registration** of all rental contracts with the Housing Authority
-- **Minimum lease duration** of one year
-- **Deposit protection** rules
-- **Rent increase caps** tied to the HICP inflation index
-- **Clear eviction procedures**
+Maltas privater Mietsektor wird durch das **Private Residential Leases Act (Chapter 604)** geregelt, das im Januar 2020 in Kraft trat und seitdem regelmäßig aktualisiert wurde. Das Gesetz wurde eingeführt:
 
-> **Important:** These rules apply to **private residential leases** only. Short-term holiday lets (under 6 months) regulated by the MTA, and commercial leases, follow different rules.
+- **Pflicht zur Registrierung** aller Mietverträge bei der Wohnungsbehörde
+- **Mindestmietdauer** von einem Jahr
+- **Kautionsschutz** Regeln
+- **Mieterhöhungsobergrenzen**, die an den HVPI-Inflationsindex gebunden sind
+- **Klare Räumungsverfahren**
 
-## Mandatory Contract Registration
+**Wichtig:** Diese Regeln gelten nur für **Privatwohnungsmietverträge**. Für kurzfristige Ferienvermietungen (unter 6 Monaten), die von der MTA geregelt werden, und für gewerbliche Mietverträge gelten andere Regeln.
 
-### The Rule
+## Obligatorische Vertragsregistrierung
 
-**Every private residential lease in Malta must be registered** with the Housing Authority within **10 working days** of signing.
+### Die Regel
 
-Both landlord and tenant can register, but the **landlord is primarily responsible** for ensuring registration occurs.
+**Jeder private Wohnungsmietvertrag in Malta muss innerhalb von **10 Werktagen** nach Unterzeichnung bei der Wohnungsbehörde registriert werden.
 
-### How to Register
+Sowohl Vermieter als auch Mieter können sich registrieren lassen, aber der **Vermieter ist in erster Linie dafür verantwortlich**, dass die Registrierung erfolgt.
 
-1. Visit the [Housing Authority portal](https://housingauthority.gov.mt)
-2. Complete the online registration form
-3. Upload a copy of the signed lease agreement
-4. Pay the registration fee (€5 per registration)
-5. Receive confirmation and registration number
+### Wie wird registriert?
 
-### Penalties for Non-Registration
+1. Besuchen Sie das [Portal der Wohnungsbehörde](https://housingauthority.gov.mt)
+2. Füllen Sie das Online-Anmeldeformular aus
+3. Laden Sie eine Kopie des unterzeichneten Mietvertrags hoch
+4. Bezahlen Sie die Anmeldegebühr (5 € pro Anmeldung)
+5. Bestätigung und Registrierungsnummer erhalten
 
-| Offence | Penalty |
+### Strafen bei Nichtanmeldung
+
+| Ordnungswidrigkeit | Strafe |
 |---------|---------|
-| Failure to register within 10 days | €2,500 fine (per contract) |
-| Deliberate non-registration | Up to €10,000 fine |
-| Operating without a written contract | Contract deemed to exist on default terms favouring the tenant |
+| Nichtregistrierung innerhalb von 10 Tagen | 2.500 € Geldstrafe (pro Vertrag) |
+| Vorsätzliche Nichtregistrierung | Bis zu 10.000 € Geldstrafe |
+| Betrieb ohne schriftlichen Vertrag | Vertrag gilt als Vertrag zu Standardbedingungen zugunsten des Mieters |
 
-> **Warning for Landlords:** Renting without registration is the single biggest compliance risk. The Housing Authority actively enforces this – fines are real and substantial.
+**Warnung für Vermieter:** Die Vermietung ohne Registrierung ist das größte Risiko für die Einhaltung der Vorschriften. Die Wohnungsbehörde setzt dies aktiv durch - die Geldstrafen sind real und erheblich.
 
-## Lease Duration and Terms
+## Mietdauer und -bedingungen
 
-### Minimum Duration
+### Mindestdauer
 
-- **Minimum lease term: 1 year** (for contracts signed after 1 January 2020)
-- No maximum term – parties can agree to any duration above 1 year
-- **Renewal:** The lease automatically renews unless terminated with proper notice
+- **Mindestmietdauer: 1 Jahr** (für Verträge, die nach dem 1. Januar 2020 unterzeichnet werden)
+- Keine Höchstdauer - die Parteien können eine beliebige Dauer über 1 Jahr hinaus vereinbaren
+- **Verlängerung:** Der Mietvertrag verlängert sich automatisch, sofern er nicht fristgerecht gekündigt wird
 
-### Notice Periods
+### Kündigungsfristen
 
-| Who Terminates | Minimum Notice | When |
+| Wer kündigt | Mindestkündigungsfrist | Wann |
 |---------------|----------------|------|
-| Tenant (year 1) | Cannot terminate before 6 months | Unless lease allows earlier exit |
-| Tenant (after year 1) | 3 months written notice | At any time |
-| Landlord (year 1) | Cannot terminate | Except for specific reasons |
-| Landlord (after year 1) | 3 months written notice | At end of contract term |
-| Either party (breach) | As specified in lease | After written warning |
+| Mieter (1. Jahr) | Kann nicht vor 6 Monaten kündigen | Es sei denn, der Mietvertrag erlaubt einen früheren Ausstieg |
+| Mieter (nach Jahr 1) | 3 Monate schriftliche Kündigungsfrist | Jederzeit |
+| Vermieter (1. Jahr) | Kann nicht kündigen | Außer aus besonderen Gründen |
+| Vermieter (nach Jahr 1) | 3 Monate Kündigungsfrist | Zum Ende der Vertragslaufzeit |
+| Beide Parteien (Vertragsbruch) | Wie im Mietvertrag festgelegt | Nach schriftlicher Abmahnung |
 
-### Fixed-Term vs Indefinite
+### Befristet vs. unbefristet
 
-- **Fixed-term leases** (e.g., 2 years) automatically revert to indefinite at the end of the term unless renewed or terminated with notice
-- **Indefinite leases** continue until terminated by either party with proper notice
+- **Befristete Mietverträge** (z.B. 2 Jahre) gehen am Ende der Laufzeit automatisch in einen unbefristeten Mietvertrag über, wenn sie nicht verlängert oder gekündigt werden
+- **Unbefristete Mietverträge** laufen weiter, bis sie von einer der beiden Parteien mit einer ordentlichen Kündigungsfrist beendet werden
 
-## Rent and Increases
+## Miete und Erhöhungen
 
-### Setting the Initial Rent
+### Festsetzung der Anfangsmiete
 
-There is **no rent control** on initial rents in Malta. The landlord can set any price they wish when first renting a property. Market forces determine the rate.
+In Malta gibt es **keine Mietpreisbindung** für die Anfangsmiete. Der Vermieter kann bei der Erstvermietung einer Immobilie jeden beliebigen Preis festsetzen. Die Marktkräfte bestimmen den Preis.
 
-### Rent Increases During Tenancy
+### Mieterhöhungen während des Mietverhältnisses
 
-Once a lease is in effect, rent increases are capped:
+Sobald ein Mietvertrag in Kraft ist, sind Mieterhöhungen nach oben begrenzt:
 
-- **During the first year:** No increase allowed
-- **After year 1:** Maximum annual increase is **the lower of 5% or the HICP inflation rate** (whichever is lower)
-- **Exceptions:** Landlord and tenant can agree to specific increases in the original contract, provided these are clearly stated
+- **Im ersten Jahr:** Keine Erhöhung erlaubt
+- **Nach dem ersten Jahr: **Maximale jährliche Erhöhung ist **der niedrigere Wert von 5% oder die HVPI-Inflationsrate** (je nachdem, welcher Wert niedriger ist)
+- **Ausnahmen:** Vermieter und Mieter können im ursprünglichen Vertrag bestimmte Erhöhungen vereinbaren, sofern diese deutlich angegeben sind
 
-### When Can Rent Be Increased Beyond the Cap?
+### Wann kann die Miete über die Obergrenze hinaus erhöht werden?
 
-A landlord can increase rent above the cap only if:
-1. The landlord has carried out **significant improvements** (not routine maintenance) that cost at least 50% of the annual rent
-2. Both parties agree in writing
-3. The increase is proportional to the improvement
+Ein Vermieter kann die Miete nur dann über die Kappungsgrenze hinaus erhöhen, wenn:
+1. Der Vermieter hat **wesentliche Verbesserungen** (keine routinemäßige Instandhaltung) durchgeführt, die mindestens 50 % der Jahresmiete kosten
+2. Beide Parteien schriftlich zustimmen
+3. Die Erhöhung ist proportional zur Verbesserung
 
-## Security Deposit
+## Sicherheitskaution
 
-### Rules
+### Regeln
 
-- **Maximum deposit:** One month's rent
-- **Must be returned** within 1 month of lease termination, minus any legitimate deductions
-- **Legitimate deductions:** Damage beyond normal wear and tear, unpaid rent, unpaid utility bills
-- **Cannot be used as last month's rent** by the tenant
+- **Maximale Kaution:** Eine Monatsmiete
+- **Muss innerhalb von 1 Monat nach Beendigung des Mietverhältnisses zurückerstattet werden**, abzüglich aller berechtigten Abzüge
+- **Legitime Abzüge:** Schäden, die über normale Abnutzung hinausgehen, unbezahlte Miete, unbezahlte Nebenkostenabrechnungen
+- **kann vom Mieter nicht als letzte Monatsmiete** verwendet werden
 
-### Deposit Disputes
+### Kautionsstreitigkeiten
 
-If there is a disagreement about deposit deductions:
-1. Either party can file a complaint with the **Rent Regulation Board**
-2. The Board will inspect and make a binding decision
-3. Processing time: 2-4 months typically
+Bei Meinungsverschiedenheiten über Kautionsabzüge:
+1. Jede Partei kann eine Beschwerde bei der **Mietaufsichtsbehörde** einreichen
+2. Die Behörde prüft und trifft eine verbindliche Entscheidung
+3. Bearbeitungszeit: in der Regel 2-4 Monate
 
-> **Best Practice for Landlords:** Conduct a detailed check-in and check-out inventory with photos. This is your evidence if deposit deductions are challenged.
+**Best Practice für Vermieter:** Führen Sie ein detailliertes Check-in- und Check-out-Inventar mit Fotos durch. Dies ist Ihr Beweismittel, wenn Kautionsabzüge angefochten werden.
 
-## Landlord Obligations
+## Pflichten des Vermieters
 
-As a landlord in Malta, you must:
+Als Vermieter in Malta müssen Sie:
 
-### Property Condition
-- Deliver the property in a **habitable condition** – functioning plumbing, electrical, heating, and structural integrity
-- Maintain all **structural elements** – roof, walls, external doors and windows
-- Repair any damage NOT caused by the tenant within a **reasonable timeframe**
-- Provide a **functioning boiler/water heater** (if included in the original let)
+### Zustand der Immobilie
+- Die Immobilie in einem **bewohnbaren Zustand** übergeben - funktionierende Sanitäranlagen, Elektrik, Heizung und bauliche Integrität
+- Alle **strukturellen Elemente** instand halten - Dach, Wände, Außentüren und Fenster
+- Reparatur aller Schäden, die NICHT vom Mieter verursacht wurden, innerhalb eines **angemessenen Zeitrahmens**
+- Bereitstellung eines **funktionsfähigen Heizkessels/Wassererhitzers** (falls im ursprünglichen Mietvertrag enthalten)
 
-### Administrative
-- **Register the lease** with the Housing Authority within 10 days
-- Provide a **written lease agreement** (standard template available from Housing Authority)
-- Issue **receipts for all rent payments** if the tenant requests them
-- Declare **rental income** on your tax return (15% flat rate option available)
+### Verwaltung
+- **Registrieren Sie den Mietvertrag** innerhalb von 10 Tagen bei der Wohnungsbehörde
+- Vorlage eines **schriftlichen Mietvertrags** (Standardvorlage bei der Wohnungsbehörde erhältlich)
+- Ausstellung von **Quittungen für alle Mietzahlungen**, wenn der Mieter sie verlangt
+- Deklarieren Sie **Mieteinnahmen** in Ihrer Steuererklärung (Option auf 15% Pauschalsatz)
 
-### What You CAN'T Do
-- Enter the property without 24 hours' written notice (except emergencies)
-- Change locks while the tenant is in residence
-- Withhold essential services (water, electricity) to pressure a tenant
-- Evict without following legal procedures
+### Was Sie nicht tun dürfen
+- Die Wohnung ohne 24-stündige schriftliche Ankündigung betreten (außer in Notfällen)
+- Schlösser austauschen, während der Mieter anwesend ist
+- Vorenthaltung wesentlicher Dienstleistungen (Wasser, Strom), um einen Mieter unter Druck zu setzen
+- Räumung ohne Einhaltung der gesetzlichen Verfahren
 
-## Tenant Obligations
+## Mieterverpflichtungen
 
-As a tenant in Malta, you must:
+Als Mieter in Malta müssen Sie:
 
-- **Pay rent on time** as specified in the lease
-- **Maintain the property** in reasonable condition ("as a good father of a family" – Maltese legal standard)
-- **Report damage** or maintenance issues promptly
-- **Not sublet** without the landlord's written permission
-- **Not make structural changes** without permission
-- **Return the property** in the same condition (allowing for normal wear and tear)
+- **Pünktlich die Miete zahlen**, wie im Mietvertrag festgelegt
+- **Die Immobilie** in einem angemessenen Zustand halten ("wie ein guter Familienvater" - maltesischer Rechtsstandard)
+- **Schäden** oder Wartungsprobleme umgehend melden
+- **keine Untervermietung** ohne die schriftliche Erlaubnis des Vermieters
+- **keine baulichen Veränderungen** ohne Erlaubnis vornehmen
+- **die Wohnung** im gleichen Zustand zurückgeben (unter Berücksichtigung der normalen Abnutzung)
 
-## Eviction Procedures
+## Räumungsverfahren
 
-### Legal Grounds for Eviction
+### Rechtliche Gründe für eine Räumung
 
-A landlord can only evict a tenant for specific reasons:
+Ein Vermieter kann einen Mieter nur aus bestimmten Gründen zwangsräumen:
 
-1. **Non-payment of rent** – after written demand and 15-day grace period
-2. **Breach of lease terms** – after written warning
-3. **Property needed for personal use** – landlord or immediate family (restrictive conditions apply)
-4. **Major works required** – structural repairs that require vacant possession
-5. **Illegal activity** – proven illegal use of the premises
+1. **Nichtzahlung der Miete** - nach schriftlicher Aufforderung und 15-tägiger Nachfrist
+2. **Verletzung der Mietbedingungen** - nach schriftlicher Abmahnung
+3. **Eigentum wird für den persönlichen Gebrauch benötigt** - Vermieter oder unmittelbare Familie (es gelten restriktive Bedingungen)
+4. **Erforderliche größere Arbeiten** - strukturelle Reparaturen, die eine Räumung der Wohnung erfordern
+5. **Illegale Aktivitäten** - nachweislich illegale Nutzung der Räumlichkeiten
 
-### The Eviction Process
+### Das Räumungsverfahren
 
-1. **Written notice** specifying the reason and giving adequate notice period
-2. If tenant refuses to leave → **file with the Rent Regulation Board**
-3. Board hears both parties (typically within 2-3 months)
-4. If ruling is in landlord's favour → **court enforcement order**
-5. Court bailiff executes eviction (can take additional 2-4 months)
+1. **Schriftliche Kündigung** mit Angabe des Grundes und angemessener Kündigungsfrist
+2. Wenn der Mieter sich weigert zu gehen → **Antrag bei der Mietaufsichtsbehörde**
+3. Die Behörde hört beide Parteien an (normalerweise innerhalb von 2-3 Monaten)
+4. Wenn die Entscheidung zugunsten des Vermieters ausfällt → **Gerichtlicher Vollstreckungstitel**
+5. Gerichtsvollzieher vollstreckt Räumung (kann weitere 2-4 Monate dauern)
 
-**Total process: 4-8 months** from initial notice to enforcement.
+**Gesamtverfahren: 4-8 Monate** von der ersten Ankündigung bis zur Vollstreckung.
 
-> **Critical Warning:** Self-help eviction (changing locks, removing belongings, cutting utilities) is **illegal** in Malta and can result in criminal prosecution of the landlord.
+**Kritische Warnung:** Eine Zwangsräumung zur Selbsthilfe (Auswechseln von Schlössern, Entfernen von Gegenständen, Kappen von Versorgungsleitungen) ist in Malta **rechtswidrig** und kann zu einer strafrechtlichen Verfolgung des Vermieters führen.
 
-## Tax on Rental Income
+## Steuer auf Mieteinnahmen
 
-### The 15% Flat Rate Option
+### Die 15%ige Pauschalbesteuerung
 
-Malta offers a simple and attractive rental income tax regime:
+Malta bietet eine einfache und attraktive Regelung für die Besteuerung von Mieteinnahmen:
 
-| Tax Option | Rate | Best For |
+| Option | Steuersatz | Beste für |
 |-----------|------|----------|
-| **15% Final Withholding Tax** | 15% on gross rent | Most landlords – simple and final |
-| **Standard Income Tax** | Progressive rates (0-35%) | Low earners with high deductible expenses |
+**15% Abgeltungssteuer** | 15% auf Bruttomiete | Die meisten Vermieter - einfach und endgültig |
+**Standardeinkommenssteuer** | Progressive Sätze (0-35%) | Geringverdiener mit hohen abzugsfähigen Ausgaben |
 
-Under the 15% FWT:
-- Applied to **gross rental income** (no deductions for expenses)
-- It is a **final tax** – no further liability on this income
-- Very simple to calculate and pay
-- Declared on the annual personal tax return
+Unter der 15%igen FWT:
+- Angewandt auf **Brutto-Mieteinnahmen** (keine Abzüge für Ausgaben)
+- Es handelt sich um eine **Endsteuer** - keine weitere Steuerpflicht auf dieses Einkommen
+- Sehr einfach zu berechnen und zu zahlen
+- Wird in der jährlichen persönlichen Steuererklärung angegeben
 
-Under standard income tax:
-- You can deduct **qualifying expenses** (maintenance, insurance, interest on mortgage, management fees)
-- Net income is added to your other income and taxed at your marginal rate
-- Better only if total income is low and deductible expenses are high
+Unter der normalen Einkommensteuer:
+- Sie können **qualifizierende Ausgaben** (Unterhalt, Versicherungen, Hypothekenzinsen, Verwaltungsgebühren) absetzen
+- Das Nettoeinkommen wird zu Ihrem übrigen Einkommen addiert und zu Ihrem Grenzsteuersatz besteuert
+- Besser nur, wenn das Gesamteinkommen niedrig ist und die abzugsfähigen Ausgaben hoch sind
 
-### VAT on Rent
+### Mehrwertsteuer auf Miete
 
-- **Residential long-term lets: VAT exempt** – no VAT is charged
-- **Short-term lets (under 6 months): 7% VAT** applies if registered with MTA
-- **Commercial property lets: 18% VAT** standard rate
+- **Langzeitvermietung von Wohnungen: Mehrwertsteuerbefreiung** - es wird keine Mehrwertsteuer erhoben
+- **Kurzfristige Vermietungen (unter 6 Monaten): 7% Mehrwertsteuer**, wenn bei der MTA registriert
+- **Gewerbliche Vermietung von Immobilien: 18% MwSt.** Normalsatz
 
-## Short-Term Lets (Holiday Lets)
+## Kurzfristige Vermietungen (Ferienvermietungen)
 
-If you want to rent your property on Airbnb, Booking.com, or similar platforms:
+Wenn Sie Ihre Immobilie auf Airbnb, Booking.com oder ähnlichen Plattformen vermieten möchten:
 
-### MTA (Malta Tourism Authority) Requirements
+### MTA (Malta Tourism Authority) Anforderungen
 
-1. **Must obtain an MTA licence** before advertising
-2. Property must meet minimum standards (safety, cleanliness, facilities)
-3. **Categories:** Standard, Comfort, First Class (1 to 5 star equivalent)
-4. **Licence cost:** €100-€250 annually depending on category
-5. **Must display licence number** on all listings and advertisements
+1. **Müssen eine MTA-Lizenz** erhalten, bevor Sie inserieren
+2. Das Objekt muss Mindeststandards erfüllen (Sicherheit, Sauberkeit, Ausstattung)
+3. **Kategorien:** Standard, Komfort, First Class (1 bis 5 Sterne entsprechend)
+4. **Lizenzkosten:** 100- 250 € jährlich je nach Kategorie
+5. **Muss die Lizenznummer** auf allen Inseraten und Anzeigen anzeigen
 
-### Short-Let Tax Treatment
+### Steuerliche Behandlung von Kurzzeitvermietungen
 
-- 15% FWT on gross rental income (same as long-let), OR
-- 7% reduced VAT rate applies to accommodation charges
-- Must register for VAT if turnover exceeds €30,000
+- 15% FWT auf Bruttomieteinnahmen (wie bei Langzeitvermietung), ODER
+- 7% ermäßigter Mehrwertsteuersatz auf die Unterkunftskosten
+- Muss sich für die Mehrwertsteuer registrieren lassen, wenn der Umsatz 30.000 € übersteigt
 
-### Where Are Short-Lets Most Profitable?
+### Wo sind Kurzzeitmieten am profitabelsten?
 
-Top areas for Airbnb/holiday lets in Malta (2026 data):
+Top-Gebiete für Airbnb/Ferienvermietung in Malta (Daten für 2026):
 
-| Area | Avg. Nightly Rate | Avg. Occupancy | Est. Annual Revenue (2-bed) |
+| Gebiet | Avg. Übernachtungspreis | Avg. Auslastung | Est. Jahresumsatz (2-Bett) |
 |------|-------------------|----------------|----------------------------|
-| Sliema | €95-140 | 75% | €26,000-38,000 |
-| St. Julian's | €110-160 | 70% | €28,000-41,000 |
-| Valletta | €100-150 | 65% | €24,000-36,000 |
-| Mellieħa | €80-120 | 55% | €16,000-24,000 |
-| St. Paul's Bay | €60-90 | 60% | €13,000-20,000 |
+| Sliema | 95-140 € | 75% | 26.000-38.000 € |
+| St. Julian's | 110-160 € | 70% | 28.000-41.000 € |
+| Valletta | 100-150 € | 65% | 24.000-36.000 € |
+| Mellieħa | 80-120 € | 55% | 16.000-24.000 € |
+| St. Paul's Bay | 60-90 € | 60% | 13.000-20.000 € |
 
-## Frequently Asked Questions
+## Häufig gestellte Fragen
 
-### Is it mandatory to register rental contracts in Malta?
-Yes. Since January 2020, all private residential lease agreements must be registered with the Housing Authority within 10 working days of signing. Failure to register can result in fines of up to €10,000.
+### Müssen Mietverträge in Malta registriert werden?
+Ja. Seit Januar 2020 müssen alle privaten Wohnungsmietverträge innerhalb von 10 Arbeitstagen nach Unterzeichnung bei der Wohnungsbehörde registriert werden. Die Nichtregistrierung kann zu Geldstrafen von bis zu 10 000 € führen.
 
-### What is the minimum lease duration in Malta?
-The minimum lease duration for private residential agreements signed after 1 January 2020 is one year. There is no maximum duration – parties can agree to any term above one year.
+### Wie lange ist die Mindestmietdauer in Malta?
+Die Mindestmietdauer für private Wohnverträge, die nach dem 1. Januar 2020 unterzeichnet werden, beträgt ein Jahr. Es gibt keine Höchstdauer - die Parteien können eine beliebige Laufzeit über ein Jahr hinaus vereinbaren.
 
-### How much can a landlord increase rent in Malta?
-After the first year, annual rent increases are capped at the lower of 5% or the HICP inflation rate. During the first year, no increase is permitted at all.
+### Um wie viel kann ein Vermieter in Malta die Miete erhöhen?
+Nach dem ersten Jahr sind die jährlichen Mieterhöhungen auf den niedrigeren Wert von 5 % oder der HVPI-Inflationsrate begrenzt. Im ersten Jahr ist überhaupt keine Erhöhung zulässig.
 
-### What tax do landlords pay on rental income in Malta?
-Most landlords opt for the 15% Final Withholding Tax on gross rental income. This is a simple, final tax with no further liability. Alternatively, landlords can choose to declare rental income under standard progressive rates (0-35%) and deduct qualifying expenses.
+### Welche Steuern zahlen Vermieter auf Mieteinnahmen in Malta?
+Die meisten Vermieter entscheiden sich für die 15%ige Abgeltungssteuer auf die Bruttomieteinnahmen. Dabei handelt es sich um eine einfache Abgeltungssteuer, für die keine weitere Haftung besteht. Alternativ können Vermieter ihre Mieteinnahmen nach dem progressiven Standardsteuersatz (0-35 %) versteuern und qualifizierte Ausgaben abziehen.
 
-### Can a landlord evict a tenant in Malta?
-A landlord can only evict a tenant for specific legal reasons (non-payment, breach of terms, personal use, major works, or illegal activity). Self-help eviction (changing locks, cutting utilities) is illegal. The formal eviction process through the Rent Regulation Board and courts typically takes 4-8 months.
+### Kann ein Vermieter einen Mieter in Malta zwangsräumen?
+Ein Vermieter kann einen Mieter nur aus bestimmten rechtlichen Gründen (Nichtzahlung, Verstoß gegen die Mietbedingungen, Eigenbedarf, größere Bauarbeiten oder illegale Aktivitäten) zwangsräumen. Eine Zwangsräumung in Eigenregie (Auswechseln von Schlössern, Kappen von Versorgungsleitungen) ist illegal. Das förmliche Räumungsverfahren vor der Mietaufsichtsbehörde und den Gerichten dauert in der Regel 4-8 Monate.
 
-## Need Help Finding Your Next Rental Investment?
+## Brauchen Sie Hilfe bei der Suche nach Ihrer nächsten Mietinvestition?
 
-Browse high-yield rental properties across Malta's top rental markets, complete with estimated yield data and location analytics.
+Durchsuchen Sie die renditestarken Mietobjekte in den wichtigsten maltesischen Mietmärkten, komplett mit geschätzten Renditedaten und Standortanalysen.

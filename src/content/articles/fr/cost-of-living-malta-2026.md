@@ -1,362 +1,361 @@
 ---
-title: "Cost of Living in Malta 2026 – Detailed Breakdown for Expats, Families, and Retirees"
+title: "Coût de la vie à Malte 2026 - Détail pour les expatriés, les familles et les retraités"
 category: "Relocation"
-excerpt: "Malta is cheaper than London, Amsterdam, or Zurich but more expensive than Eastern Europe. This detailed cost-of-living breakdown covers housing, groceries, dining, transport, healthcare, education, and utilities – with real monthly budgets for singles, couples, and families."
-metaDescription: "Is Malta expensive in 2026? Get a detailed breakdown of housing, groceries, high electricity costs, and private healthcare. See monthly budgets for families and singles."
+excerpt: "Malte est moins chère que Londres, Amsterdam ou Zurich, mais plus chère que l'Europe de l'Est. Cette analyse détaillée du coût de la vie couvre le logement, l'épicerie, la restauration, les transports, les soins de santé, l'éducation et les services publics - avec des budgets mensuels réels pour les célibataires, les couples et les familles."
+metaDescription: "Malte est-elle chère en 2026 ? Obtenez une ventilation détaillée du logement, des produits alimentaires, des coûts élevés de l'électricité et des soins de santé privés. Consultez les budgets mensuels des familles et des célibataires."
 image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "20 min read"
+readTime: "20 min de lecture"
 author: "Malta Luxury Real Estate"
 slug: "cost-of-living-malta-2026"
+localizedSlug: "cout-de-la-vie-a-malte-2026"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Cost of Living in Malta 2026 – Detailed Breakdown for Expats, Families, and Retirees
+# Coût de la vie à Malte 2026 - Détail pour les expatriés, les familles et les retraités
 
-Malta sits in an unusual cost-of-living bracket. It is significantly cheaper than the major Western European capitals – London, Amsterdam, Zurich, Paris – but more expensive than Southern Italy, Eastern Europe, and Portugal outside Lisbon. The main cost driver for most expats is housing; nearly everything else is broadly affordable by Western European standards. This guide provides a detailed, category-by-category breakdown with real 2026 numbers.
+Malte se situe dans une fourchette de coût de la vie inhabituelle. Elle est nettement moins chère que les principales capitales d'Europe occidentale - Londres, Amsterdam, Zurich, Paris - mais plus chère que l'Italie du Sud, l'Europe de l'Est et le Portugal en dehors de Lisbonne. Pour la plupart des expatriés, le logement est le principal facteur de coût ; presque tout le reste est largement abordable par rapport aux normes de l'Europe occidentale. Ce guide fournit une ventilation détaillée, catégorie par catégorie, avec des chiffres réels pour 2026.
 
-## Malta vs Other European Destinations
+## Malte par rapport aux autres destinations européennes
 
-Before diving into details, here is how Malta compares to popular alternatives for expats and retirees:
+Avant de plonger dans les détails, voici comment Malte se compare à d'autres destinations populaires pour les expatriés et les retraités :
 
-| Category | Malta | London | Amsterdam | Barcelona | Lisbon | Algarve |
+| Catégorie : Malte, Londres, Amsterdam, Barcelone, Lisbonne, Algarve
 |----------|-------|--------|-----------|-----------|--------|---------|
-| 2-bed apartment rent (prime) | €1,800–€2,500 | €2,800–€4,500 | €2,200–€3,500 | €1,600–€2,500 | €1,500–€2,200 | €1,000–€1,500 |
-| Meal for 2 (mid-range) | €50–€80 | €80–€120 | €70–€100 | €50–€80 | €40–€60 | €35–€55 |
-| Monthly transport | €26 (bus pass) | €150+ | €100 | €55 | €40 | Car needed |
-| Private health insurance | €100–€200 | £150–£300 | €120–€250 | €80–€200 | €80–€150 | €80–€150 |
-| International school/year | €8,000–€20,000 | €15,000–€35,000 | €12,000–€25,000 | €8,000–€18,000 | €8,000–€18,000 | €6,000–€15,000 |
-| Annual property tax | **None** | Council tax £1,200–£3,000+ | WOZ 0.05–0.1% | IBI 0.4–1.1% | IMI 0.3–0.45% | IMI 0.3–0.45% |
-| Inheritance tax | **None** | 40% above £325k | 10–40% | 7.65–34% | 0% (direct heirs) | 0% (direct heirs) |
-| Income tax (top rate) | 35% | 45% | 49.5% | 47% | 48% | 48% |
-| **Overall index (London=100)** | **65–70** | **100** | **85** | **65** | **60** | **50–55** |
+| Location d'un appartement de 2 lits (haut de gamme) | 1 800 € - 2 500 € | 2 800 € - 4 500 € | 2 200 € - 3 500 € | 1 600 € - 2 500 € | 1 500 € - 2 200 € | 1 000 € - 1 500 €
+| Repas pour 2 (milieu de gamme) - 50 € - 80 € - 80 € - 120 € - 70 € - 100 € - 50 € - 80 € - 40 € - 60 € - 35 € - 55 €
+| Transport mensuel | 26 € (carte de bus) | 150+ | 100 € | 55 € | 40 € | Nécessité d'une voiture
+| Assurance maladie privée : 100 € - 200 € - 150 € - 300 € - 120 € - 250 € - 80 € - 200 € - 80 € - 150 € - 80 € - 150 € - 80 € - 150 € - 80 € - 150 €
+| Ecole internationale/année | 8 000 € - 20 000 € - 15 000 € - 35 000 € - 12 000 € - 25 000 € - 8 000 € - 18 000 € - 8 000 € - 18 000 € - 6 000 € - 15 000 € |
+| Taxe annuelle sur les propriétés foncières - **Sans objet** - Taxe d'habitation - £1,200-£3,000+ - WOZ 0.05-0.1% - IBI 0.4-1.1% - IMI 0.3-0.45% - IMI 0.3-0.45% - WOZ - WOZ - WOZ
+| Impôt sur les successions - **Aucun** - 40% au-dessus de £325k - 10-40% - 7,65-34% - 0% (héritiers directs) - 0% (héritiers directs) - 0% (héritiers directs) - 0% (héritiers directs) - 0% (héritiers directs) - 0% (héritiers directs)
+| Impôt sur le revenu (taux supérieur) - 35 % - 45 % - 49,5 % - 47 % - 48 % - 48 % - 0 % - 0 % - 0 % - 0 % - 0 % - 0 % - 0 % - 0 % - 0 % - 0 %
+| Indice global (Londres=100)** ** **65-70** | **100** | **85** | **65** | **60** | **50-55** |
 
-> **Key takeaway:** Malta's cost of living is 30–35% below London, roughly equivalent to Barcelona, and slightly above Lisbon. The major advantage over all competitors is the absence of annual property tax, inheritance tax, and wealth tax.
+> Le coût de la vie à Malte est de 30 à 35 % inférieur à celui de Londres, à peu près équivalent à celui de Barcelone et légèrement supérieur à celui de Lisbonne. Le principal avantage par rapport à tous les concurrents est l'absence de taxe foncière annuelle, de droits de succession et d'impôt sur la fortune.
 
-## Housing Costs
+## Coût du logement
 
-Housing is the single largest expense for nearly every expat. Malta's housing market has seen consistent price growth, and rental costs reflect this.
+Le logement est la dépense la plus importante pour presque tous les expatriés. Le marché immobilier maltais a connu une croissance constante des prix et les coûts de location en sont le reflet.
 
-### Rental Prices by Area (Monthly, 2026)
+### Prix des loyers par région (mensuel, 2026)
 
-| Area | Studio | 1-bedroom | 2-bedroom | 3-bedroom |
+| Prix des loyers par région (mensuels, 2026)
 |------|--------|-----------|-----------|-----------|
-| **Sliema (prime)** | €900–€1,200 | €1,200–€1,600 | €1,800–€2,400 | €2,500–€3,500 |
-| **St Julian's** | €950–€1,300 | €1,300–€1,800 | €2,000–€2,800 | €2,800–€4,000 |
-| **Gżira** | €700–€950 | €900–€1,200 | €1,400–€1,900 | €1,800–€2,500 |
-| **Valletta** | €800–€1,100 | €1,000–€1,400 | €1,300–€2,200 | €1,800–€2,800 |
-| **Msida** | €600–€850 | €800–€1,100 | €1,200–€1,600 | €1,500–€2,000 |
-| **Swieqi** | €700–€900 | €900–€1,200 | €1,500–€2,100 | €2,000–€2,800 |
-| **Mellieħa** | €600–€800 | €750–€1,000 | €1,100–€1,500 | €1,400–€2,000 |
-| **Gozo (Victoria)** | €450–€650 | €550–€800 | €800–€1,200 | €1,000–€1,500 |
+**Sliema (prime)** | 900 € - 1 200 € | 1 200 € - 1 600 € | 1 800 € - 2 400 € | 2 500 € - 3 500 € | **Sliema (prime)** | 900 € - 1 200 € | 1 200 € - 1 600 € | 1 800 € - 2 400 € | 2 500 € - 3 500 € |
+**St Julian's** | €950-€1,300 | €1,300-€1,800 | €2,000-€2,800 | €2,800-€4,000 |
+| Gżira** - 700 € - 950 € - 900 € - 1 200 € - 1 400 € - 1 900 € - 1 800 € - 2 500 €
+**Valletta** | €800-€1,100 | €1,000-€1,400 | €1,300-€2,200 | €1,800-€2,800 |
+**Msida** | €600-€850 | €800-€1,100 | €1,200-€1,600 | €1,500-€2,000 |
+**Swieqi** | 700-€900 | 900-€1 200 | 1 500-€2 100 | 2 000-€2 800 |
+**Mellieħa** | 600-€800 | 750-€1.000 | 1.100-€1.500 | 1.400-€2.000 |
+**Gozo (Victoria)** | €450-€650 | €550-€800 | €800-€1,200 | €1,000-€1,500 |
 
-### Purchase Prices by Area (per sqm, 2026)
+### Prix d'achat par région (par m², 2026)
 
-| Area | Price per sqm (apartments) | Average 2-bed price |
+| Prix d'achat par m² (appartements) | Prix moyen d'un appartement à deux lits | Prix moyen d'un appartement à deux lits
 |------|---------------------------|---------------------|
-| Sliema | €4,500–€6,500 | €380,000–€550,000 |
-| St Julian's | €5,000–€7,500 | €420,000–€620,000 |
-| Gżira | €3,500–€5,000 | €280,000–€400,000 |
-| Valletta | €4,000–€6,000 | €320,000–€480,000 |
-| Msida | €3,000–€4,200 | €240,000–€340,000 |
-| Mellieħa | €2,800–€4,000 | €220,000–€320,000 |
-| Gozo | €2,000–€3,500 | €150,000–€280,000 |
+| Sliema - 4 500 € - 6 500 € - 380 000 € - 550 000 € - St
+| St Julian's - 5 000 € - 7 500 € - 420 000 € - 620 000 €
+| Gżira - 3 500 € - 5 000 € - 280 000 € - 400 000 €
+| La Valette - 4 000 à 6 000 € - 320 000 à 480 000 €
+| Msida - 3 000 € - 4 200 € - 240 000 € - 340 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 € - 1 000 000 000
+| Mellieħa - 2 800 € - 4 000 € - 220 000 € - 320 000 €
+| Gozo | 2 000-€3 500 | 150 000-€280 000 |
 
-## Groceries and Food
+## Épicerie et alimentation
 
-### Supermarkets
+### Supermarchés
 
-Malta has several supermarket chains catering to different budgets:
+Malte compte plusieurs chaînes de supermarchés qui s'adressent à différents budgets :
 
-| Supermarket | Positioning | Price Level | Notes |
+| Les supermarchés de Malte ont plusieurs chaînes de supermarchés qui s'adressent à différents budgets
 |------------|-------------|-------------|-------|
-| **Lidl** | Budget | € | 2 locations (Iklin, Luqa). Lowest prices, limited range |
-| **Smart Supermarket** | Budget-mid | €–€€ | Multiple locations. Good value |
-| **Park Towers** | Mid-range | €€ | Wide range, convenient locations |
-| **Arkadia** | Mid-premium | €€–€€€ | Sliema, Gozo. Good import selection |
-| **Tower Supermarket** | Premium | €€€ | Sliema. International brands, organic, specialty |
+**Lidl** | Budget | € | 2 sites (Iklin, Luqa). Prix les plus bas, assortiment limité
+**Smart Supermarket** | Budget-moyen | €-€€ | Plusieurs magasins. Bon rapport qualité-prix
+**Park Towers** | Milieu de gamme | €€ | Vaste gamme, emplacements pratiques
+**Arkadia** | Milieu de gamme | €€-€€€ | Sliema, Gozo. Bonne sélection de produits importés
+**Tower Supermarket** | Premium | €€€ | Sliema. Marques internationales, bio, spécialités
 
-### Typical Grocery Prices (2026)
+### Prix typiques des produits d'épicerie (2026)
 
-| Item | Price |
+| Prix des produits d'épicerie typiques (2026)
 |------|-------|
-| Milk (1 litre) | €1.10–€1.50 |
-| Bread (white loaf) | €0.80–€1.50 |
-| Eggs (12) | €2.50–€3.50 |
-| Chicken breast (1 kg) | €7.00–€10.00 |
-| Beef mince (500g) | €5.00–€7.50 |
-| Fresh fish (sea bass/bream, per kg) | €12.00–€18.00 |
-| Lampuki (local fish, seasonal) | €8.00–€14.00 |
-| Pasta (500g, local brand) | €0.80–€1.50 |
-| Rice (1 kg) | €1.50–€3.00 |
-| Tomatoes (1 kg) | €1.50–€3.00 |
-| Potatoes (1 kg) | €1.00–€2.00 |
-| Apples (1 kg) | €2.00–€3.50 |
-| Olive oil (1 litre, local) | €8.00–€14.00 |
-| Local wine (bottle) | €3.50–€8.00 |
-| Imported wine (bottle) | €6.00–€15.00 |
-| Beer (6-pack, local Cisk/Farsons) | €5.50–€7.00 |
-| Water (6 × 1.5L) | €2.00–€3.50 |
+| Lait (1 litre) | 1,10 € - 1,50 € | Pain (pain blanc)
+pain (miche blanche) | 0,80 € - 1,50 € | 1,50 € | 0,80 € - 1,50 € | 0,80 € - 1,50 € | 0,80 € - 1,50
+| Œufs (12) | 2,50 €-€3,50
+| Poitrine de poulet (1 kg) - €7.00-€10.00
+| Hachis de bœuf (500g) | 5,00-€7,50
+| Poisson frais (loup de mer/dame, par kg) | 12,00-18,00 € | Lampuki (poisson local, saisonnier)
+| Lampuki (poisson local, saisonnier) | €8.00-€14.00 |
+pâtes (500 g, marque locale) | 0,80 € - 1,50 € | Riz (1 kg) | 0,80 € - 1,50 € | Pâtes (1 kg)
+| Riz (1 kg) | 1,50 € - 3,00 € | Tomates (1 kg)
+tomates (1 kg) | 1,50-€3,00 | Riz (1 kg) | 1,50-€3,00 | Riz (1 kg) | Riz (1 kg)
+pommes de terre (1 kg) | 1,00-€2,00 | Pommes de terre (1 kg) | 1,00-€2,00 | Pommes de terre (1 kg)
+| Pommes (1 kg) | 2,00-€3,50 | | Huile d'olive (1 litre, local) | 1,50-€3,00
+| Huile d'olive (1 litre, locale) | €8.00-€14.00 | Huile d'olive (1 litre, locale)
+vin local (bouteille) | 3,50 € - 8,00 € | Vin importé (bouteille) | 3,50 € - 8,00 € | Vin importé (bouteille)
+vin importé (bouteille) | 6,00 € - 15,00 € | Bière (pack de 6, locale) | 3,50 € - 8,00
+| Bière (pack de 6, locale Cisk/Farsons) | 5,50 € - 7,00 € | Eau (6 × 1,5 litre)
+| Eau (6 × 1.5L) | 2.00-€3.50 |
 
-**Monthly grocery budget:**
-- Single person: €300–€500
-- Couple: €500–€800
-- Family of four: €700–€1,100
+**Budget mensuel pour l'épicerie:**
+- Personne seule : €300-€500
+- Couple : €500-€800
+- Famille de quatre personnes : 700 €-1 100 €
 
-> **Tip:** Local markets (particularly the vegetable market in Valletta and village markets around Malta) offer fresh produce at lower prices than supermarkets. Buying local, seasonal produce is significantly cheaper.
+> Les marchés locaux (en particulier le marché aux légumes de La Valette et les marchés de village autour de Malte) proposent des produits frais à des prix inférieurs à ceux des supermarchés. Acheter des produits locaux et de saison revient nettement moins cher.
 
-## Dining Out
+## Restauration
 
-Malta has a vibrant restaurant scene ranging from traditional village restaurants to high-end dining.
+Malte dispose d'une scène gastronomique dynamique, allant des restaurants de village traditionnels aux restaurants haut de gamme.
 
-### Restaurant Prices (2026)
+### Prix des restaurants (2026)
 
-| Category | Price Range | Examples |
+| Catégorie de restaurant - Fourchette de prix - Exemples de prix
 |----------|-----------|----------|
-| **Pastizzi** (Maltese pastry) | €0.30–€0.50 | Crystal Palace Rabat, countless kiosks |
-| **Local ftira/snack** | €4.00–€7.00 | Fontanella Tea Garden, village bakeries |
-| **Casual lunch (mains + drink)** | €12.00–€20.00 | Local restaurants, trattorias |
-| **Mid-range dinner (2 people)** | €50.00–€80.00 | Smart casual restaurants in Sliema/StJ |
-| **Premium restaurant (2 people)** | €100.00–€180.00 | Fine dining in Valletta, Mdina |
-| **Fast food meal (McDonald's equivalent)** | €8.00–€12.00 | Pizza Hut, McDonald's, KFC |
-| **Takeaway delivery** | €12.00–€20.00 | Bolt Food, Wolt |
-| **Coffee (cappuccino)** | €1.80–€3.50 | Cafés throughout Malta |
-| **Beer (bar)** | €2.50–€4.00 | Local bars |
-| **Beer (hotel bar)** | €5.00–€8.00 | Hotel bars, premium venues |
-| **Cocktail** | €8.00–€14.00 | Cocktail bars in Valletta, Sliema |
+**Pastizzi** (pâtisserie maltaise) | 0,30-€0,50 | Crystal Palace Rabat, innombrables kiosques | 1,50-€0,50
+| Ftira locale (collation) : 4,00 € - 7,00 € (jardin de thé Fontanella, boulangeries de village)
+| Déjeuner décontracté (plat + boisson) ** 12,00 € - 20,00 € - Restaurants locaux, trattorias
+**Dîner moyen (2 personnes)** | 50,00 € - 80,00 € | Restaurants élégants et décontractés à Sliema/StJ
+| Restaurant haut de gamme (2 personnes)** | €100.00-€180.00 | Restaurants raffinés à La Valette, Mdina |
+| Repas rapide (équivalent McDonald's) ** 8,00 € - 12,00 € - Pizza Hut, McDonald's, KFC
+| Livraison de plats à emporter** - 12,00 €-20,00 € - Bolt Food, Wolt - 12,00 €-20,00 € - 12,00 €-20,00 € - 12,00 €-20,00 € - 12,00 €-20,00
+| Café (cappuccino) ** 1,80 € - 3,50 € - Cafés dans tout Malte ** 1,80 € - 3,50 € - Cafés dans tout Malte
+**Bière (bar)** | 2,50-€4,00 | Bars locaux |
+| Bière (bar d'hôtel) ** 5,00 € - 8,00 € | Bars d'hôtel, lieux haut de gamme | Bière (bar d'hôtel) ** 5,00 € - 8,00 € | Bars d'hôtel, lieux haut de gamme
+bière (bar d'hôtel) **5,00-€8,00 | Bars d'hôtel, lieux haut de gamme | **Cocktail** 8,00-€14,00 | Bars à cocktails à La Valette, Sliema |
 
-**Monthly dining out budget:**
-- Moderate (2–3 times per week): €250–€400
-- Active social life (4–5 times per week): €500–€800
+**Budget mensuel pour les sorties au restaurant
+- Modéré (2 à 3 fois par semaine) : €250-€400
+- Vie sociale active (4-5 fois par semaine) : €500-€800
 
-## Utilities
+## Utilités
 
-### Electricity
+### Électricité
 
-Malta's electricity is among the most expensive in the EU. The single biggest surprise for most new expats is the electricity bill, particularly in summer when air conditioning is essential.
+L'électricité maltaise est l'une des plus chères de l'UE. La facture d'électricité est la plus grande surprise pour la plupart des nouveaux expatriés, en particulier en été, lorsque la climatisation est indispensable.
 
-| Usage Level | Monthly Cost | Notes |
+| Niveau d'utilisation Coût mensuel Notes
 |------------|-------------|-------|
-| Low (1-bed, no A/C) | €40–€80 | Winter months, minimal heating |
-| Moderate (2-bed, some A/C) | €80–€150 | Spring/autumn |
-| High (2-bed, daily A/C) | €150–€300 | Summer months (June–September) |
-| Very high (3-bed, full A/C) | €250–€450 | Peak summer, large apartment |
+| Faible (1 lit, pas de climatisation) | €40-€80 | Mois d'hiver, chauffage minimal |
+| Modéré (2 lits, un peu de climatisation) | 80 € - 150 € | Printemps/automne
+| Haute (2 lits, climatisation quotidienne) | 150-€300 | Mois d'été (juin-septembre) | Très haute (3 lits, climatisation quotidienne)
+| Très élevé (3 lits, climatisation complète) | €250-€450 | Plein été, grand appartement |
 
-**Electricity tariff structure:** Malta uses a rising block tariff – the more you use, the more expensive each unit becomes. The first 2,000 kWh is charged at a lower rate; above that, rates increase significantly. This means heavy summer usage disproportionately increases costs.
+**Structure tarifaire de l'électricité:** Malte utilise un tarif progressif par blocs - plus vous consommez, plus le prix de chaque unité augmente. Les 2 000 premiers kWh sont facturés à un tarif inférieur ; au-delà, les tarifs augmentent de manière significative. Cela signifie qu'une forte consommation en été augmente les coûts de manière disproportionnée.
 
-### Water
+### Eau
 
-Water costs are relatively low: €20–€50/month for a typical household. Malta's tap water comes primarily from desalination and is safe to drink but heavily chlorinated. Most residents use filtered or bottled water for drinking.
+Les coûts de l'eau sont relativement faibles : 20 à 50 euros par mois pour un ménage type. L'eau du robinet de Malte provient principalement du dessalement et est potable mais fortement chlorée. La plupart des habitants utilisent de l'eau filtrée ou en bouteille.
 
-### Internet and Mobile
+### Internet et téléphonie mobile
 
-| Service | Monthly Cost |
+| Service de téléphonie mobile - Coût mensuel
 |---------|------------|
-| Fibre broadband (100 Mbps) | €25–€40 |
-| Fibre broadband (500 Mbps+) | €40–€60 |
-| Mobile plan (unlimited calls, 20GB data) | €15–€25 |
-| Mobile plan (unlimited everything) | €25–€40 |
+internet haut débit par fibre (100 Mbps) | €25-€40 | €40-€60 | €40-€60
+| Internet haut débit par fibre optique (500 Mbps+) | €40-€60
+forfait mobile (appels illimités, 20 Go de données) | 15 € - 25 € | Forfait mobile (tout illimité) | 15 € - 25 € | Forfait mobile (tout illimité)
+| Forfait mobile (appels illimités, 20 Go de données) | €15-€25
 
-**Providers:** Melita (cable/fibre, also mobile), GO (DSL/fibre, also mobile), Epic (mobile). Melita and GO both offer competitive fibre broadband packages. Coverage is excellent across Malta.
+**Fournisseurs:** Melita (câble/fibre, également mobile), GO (DSL/fibre, également mobile), Epic (mobile). Melita et GO proposent tous deux des offres compétitives de haut débit par fibre optique. La couverture est excellente sur l'ensemble du territoire maltais.
 
-### Total Utilities Budget
+### Budget total des services publics
 
-| Household | Monthly Total (average) |
+| Budget total pour les services publics - Ménage - Total mensuel (moyenne) - Ménage - Total mensuel (moyenne) - Ménage - Ménage - Total mensuel (moyenne)
 |-----------|----------------------|
-| Single, 1-bed | €100–€200 |
-| Couple, 2-bed | €150–€300 |
-| Family, 3-bed | €250–€500 |
+| Couple, 2 lits - €150-€300 - €100-€200 - €100-€200
+| Couple, 2 lits | 150-€300
+| Famille, 3 lits | €250-€500 |
 
-> **Summer warning:** July and August bills can be 2–3x winter bills due to air conditioning. Budget accordingly and do not underestimate this cost.
+**Avertissement pour l'été:** Les factures de juillet et août peuvent être 2 à 3 fois plus élevées que les factures d'hiver en raison de l'air conditionné. Prévoyez un budget en conséquence et ne sous-estimez pas ce coût.
 
 ## Transport
 
-### Car Ownership
+### Possession d'une voiture
 
-Most expats own a car. Malta has one of the highest car densities in the EU.
+La plupart des expatriés possèdent une voiture. Malte a l'une des plus fortes densités de voitures de l'UE.
 
-| Cost | Amount |
+| Coût - Montant - Coût - Montant - Coût - Montant
 |------|--------|
-| Used car (reliable, 5–8 years old) | €5,000–€12,000 |
-| New car (compact, e.g., VW Polo equivalent) | €18,000–€25,000 |
-| Car insurance (comprehensive) | €400–€800/year |
-| Petrol (per litre) | €1.35–€1.50 |
-| Monthly petrol cost (average commuter) | €80–€150 |
-| Parking (monthly, Sliema/StJ) | €100–€200 |
-| Vehicle registration tax | Varies by vehicle age, emissions |
-| Annual road licence fee | €40–€150 |
+| Voiture d'occasion (fiable, 5-8 ans d'âge) | 5 000 € - 12 000 € | Voiture neuve (compacte, équivalente à la VW Polo)
+| Voiture neuve (compacte, par ex. équivalente à la VW Polo) | 18 000 € - 25 000 € |
+| Assurance automobile (tous risques) | 400 € - 800 €/an |
+| Essence (par litre) | 1,35€ - 1,50€ |
+| Coût mensuel de l'essence (navetteur moyen) | 80€ - 150€ |
+| Parking (mensuel, Sliema/StJ) | 100-€200
+| Taxe d'immatriculation des véhicules : varie en fonction de l'âge du véhicule et des émissions
+| Taxe annuelle sur le permis de conduire - 40 à 150 €
 
-### Public Transport
+### Transport public
 
-Malta's bus network (Tallinja) is comprehensive but slow during rush hours.
+Le réseau de bus de Malte (Tallinja) est complet mais lent aux heures de pointe.
 
-| Pass Type | Cost |
+| Type de laissez-passer - Coût
 |-----------|------|
-| Single journey | €2.00 (winter) / €2.00 (summer) |
-| 12-journey card | €15.00 |
-| Monthly Tallinja Card | €26.00 |
-| Annual Tallinja Card | €300.00 |
+| Carte de transport - Voyage unique - 2,00 € (hiver) / 2,00 € (été) - Carte de transport - 12 voyages - 15,00 € (hiver)
+| Carte de 12 trajets - 15,00 € - Carte mensuelle Tallinja - 2,00 € (hiver) / 2,00 € (été)
+| Carte mensuelle Tallinja - €26.00
+| Carte annuelle Tallinja - €300.00
 
-### Ride-Hailing
+### Location de véhicules
 
-eCabs and Bolt are widely available. Cost per trip within the Northern Harbour area: €5–€12.
+les eCabs et Bolt sont largement disponibles. Le coût d'un trajet dans la zone du port nord est de 5 à 12 euros.
 
-**Monthly transport budget:**
-- Public transport only: €26–€50
-- Car owner: €200–€450
-- Mix (car + occasional taxi): €300–€600
+**Budget mensuel pour les transports:**
+- Transports publics uniquement : 26 à 50 euros
+- Propriétaire de voiture : 200 €-450
+- Mix (voiture + taxi occasionnel) : 300 € - 600 €
 
-## Healthcare
+## Santé
 
-### Private Health Insurance
+### Assurance maladie privée
 
-Most expats use private healthcare. Costs depend on age, coverage level, and pre-existing conditions.
+La plupart des expatriés ont recours à une assurance maladie privée. Les coûts dépendent de l'âge, du niveau de couverture et des conditions préexistantes.
 
-| Coverage | Single (30–40) | Single (50–60) | Family (2 adults + 2 children) |
+| Les coûts dépendent de l'âge et des conditions préexistantes
 |----------|---------------|----------------|-------------------------------|
-| Basic (hospital only) | €60–€100/month | €120–€200/month | €250–€400/month |
-| Comprehensive (hospital + outpatient) | €100–€180/month | €180–€320/month | €350–€550/month |
-| Premium (full cover, dental, vision) | €150–€250/month | €280–€450/month | €500–€800/month |
+| Assurance de base (hôpital uniquement) | 60 € - 100 €/mois | 120 € - 200 €/mois | 250 € - 400 €/mois
+| Assurance complète (hôpital + soins ambulatoires) | 100 € - 180 €/mois | 180 € - 320 €/mois | 350 € - 550 €/mois
+| Premium (couverture complète, dentaire, vision) | €150-€250/mois | €280-€450/mois | €500-€800/mois |
 
-### Direct Medical Costs (Without Insurance)
+### Frais médicaux directs (sans assurance)
 
-| Service | Cost |
+| Service | Coût |
 |---------|------|
-| GP consultation (private) | €25–€50 |
-| Specialist consultation | €50–€100 |
-| Blood test panel | €30–€80 |
-| Dental check-up + cleaning | €50–€80 |
-| Dental filling | €60–€120 |
-| MRI scan | €200–€400 |
-| Emergency room visit (private hospital) | €100–€250 |
+| Consultation d'un médecin généraliste (privé) - 25 à 50 euros
+| Consultation d'un spécialiste | 50-€100
+| Test de dépistage sanguin | 30 € - 80 € | Contrôle dentaire + nettoyage | 50 € - 80
+| Examen dentaire + nettoyage - €50-€80
+| Obtention d'un plombage | 60-€120
+| IRM - 200 € - 400 €
+| Visite aux urgences (hôpital privé) - €100-€250
 
-## Education
+## Éducation
 
-### International Schools
+### Écoles internationales
 
-| School | Annual Fees | Ages |
+| École internationale de langues - Frais d'inscription annuels - Âges
 |--------|-------------|------|
-| Verdala International School | €12,000–€20,000 | 3–18 |
-| St Edward's College | €8,000–€12,000 | 4–18 |
-| QSI International School | €10,000–€16,000 | 3–18 |
-| San Andrea School | €4,000–€7,000 | 3–16 |
-| Chiswick House School | €3,500–€6,000 | 3–16 |
+| Verdala International School | 12 000 € - 20 000 € | 3-18 ans
+| St Edward's College | 8 000 € - 12 000 € - 4-18 ans
+| QSI International School | 10 000 € - 16 000 € - 3-18 ans
+| San Andrea School | 4 000 € - 7 000 € - 3-16 € - 4-18 € - 4-18
+| Chiswick House School - 3 500 € - 6 000 € - 3-16 ans
 
-### State Schools
+### Écoles publiques
 
-Free for all residents. English is the primary language of instruction. Quality is generally acceptable at primary level; opinions vary at secondary level.
+Gratuites pour tous les résidents. L'anglais est la principale langue d'enseignement. La qualité est généralement acceptable au niveau primaire ; les opinions varient au niveau secondaire.
 
-### Childcare
+### Garde d'enfants
 
-| Type | Monthly Cost |
+| Type de garde d'enfants - Coût mensuel
 |------|-------------|
-| Nursery/crèche (full day) | €400–€700 |
-| Nanny (full-time, live-out) | €1,000–€1,500 |
-| Babysitter (per hour) | €8–€15 |
+| Crèche (journée complète) - 400 € - 700 € - 1 000 € - 1 500 € - 1 000 € - 1 500 € - 1 000 € - 1 500
+| Nounou (à temps plein, à domicile) | 1 000 € - 1 500
+| Babysitter (par heure) | €8-€15 |
 
-> **Government subsidy:** Malta offers free childcare for working parents through the Free Childcare Scheme. Eligibility criteria apply – check with Jobsplus.
+**Subvention gouvernementale:** Malte offre des services de garde d'enfants gratuits pour les parents qui travaillent, dans le cadre du Free Childcare Scheme (programme de garde d'enfants gratuite). Des critères d'éligibilité s'appliquent - vérifiez auprès de Jobsplus.
 
-## Complete Monthly Budgets
+## Budgets mensuels complets
 
-### Single Professional (Sliema/St Julian's)
+### Professionnel unique (Sliema/St Julian's)
 
-| Category | Budget Range |
+| Catégorie de prix - Fourchette de budget - Catégorie de prix - Fourchette de budget - Catégorie de prix - Fourchette de prix
 |----------|-------------|
-| Rent (1-bed, furnished) | €1,200–€1,600 |
-| Utilities (electricity, water, internet) | €100–€200 |
-| Groceries | €300–€450 |
-| Dining out (2–3x per week) | €250–€400 |
-| Transport (car or taxi mix) | €200–€400 |
-| Health insurance (private) | €80–€150 |
-| Gym + entertainment | €100–€200 |
-| Miscellaneous | €100–€200 |
-| **Total** | **€2,330–€3,600/month** |
+| Location (1 lit, meublé) | €1,200-€1,600 |
+| Services publics (électricité, eau, internet) | 100-€200
+| 300 €-€450 |
+| Dîner au restaurant (2 à 3 fois par semaine) | 250 € - 400 € | Transport (voiture ou taxi)
+| Transport (voiture ou taxi) | 200€ - 400€ | Assurance maladie (privée)
+| Assurance maladie (privée) - 80 € - 150 € - 100 € - 100 € - 100 € - 100 € - 100 € - 100 € - 100 € - 100
+| Gymnastique + divertissements | 100-€200
+| Frais de transport (voiture ou taxi mixte) - €200-€400
+**Total** | **2 330-€3 600/mois** |
 
-### Couple (No Children, Sliema)
+### Couple (sans enfant, Sliema)
 
-| Category | Budget Range |
+| Catégorie - Fourchette de budget
 |----------|-------------|
-| Rent (2-bed, furnished) | €1,800–€2,400 |
-| Utilities | €150–€300 |
-| Groceries | €500–€800 |
-| Dining out | €400–€600 |
-| Transport (1 car) | €250–€450 |
-| Health insurance (2 adults) | €180–€350 |
-| Entertainment + social | €200–€400 |
-| Miscellaneous | €150–€300 |
-| **Total** | **€3,630–€5,600/month** |
+| Location (2 lits, meublé) | €1,800-€2,400 |
+| Services publics | 150-€300 |
+| Courses | 500 €-€800 |
+| Repas au restaurant | 400-€600 |
+| Transport (1 voiture) | 250 € - 450 € | Assurance maladie (2 adultes) | 250 € - 450 € | Assurance maladie (2 adultes)
+| Assurance maladie (2 adultes) | 180-€350
+| Divertissements + activités sociales | 200-€400
+| Divers | 150-€300
+**Total** | **3 630- 5 600 €/mois** |
 
-### Family of Four (Sliema/Swieqi)
+### Famille de quatre personnes (Sliema/Swieqi)
 
-| Category | Budget Range |
+| Catégorie - Fourchette de budget - Catégorie - Fourchette de budget - Catégorie - Fourchette de budget - Catégorie - Fourchette de budget
 |----------|-------------|
-| Rent (3-bed, furnished) | €2,500–€3,500 |
-| Utilities | €250–€450 |
-| Groceries | €700–€1,100 |
-| International school (2 children) | €800–€2,000 |
-| Dining out (family, weekly) | €400–€700 |
-| Transport (2 cars) | €500–€800 |
-| Health insurance (family) | €350–€550 |
-| Children's activities + sports | €200–€400 |
-| Miscellaneous | €200–€400 |
-| **Total** | **€5,900–€9,900/month** |
+| Location (3 lits, meublé) | €2,500-€3,500 |
+| Charges | 250-€450 |
+| 700 € - 1100 € |
+| École internationale (2 enfants) - 800 € - 2 000 € - 1 100 € - 1 000
+| Dîner au restaurant (famille, hebdomadaire) | 400 € - 700 € | Transport (2 voitures)
+| Transport (2 voitures) | 500-€800 |
+| Assurance maladie (famille) | 350-€550 |
+| Activités pour les enfants + sports | 200€-€400
+| Divers - 200 € - 400 € - 400 € - 200 € - 400 € - 400 € - 400
+**Total** | **5 900-€9 900/mois** |
 
-### Retiree Couple (Mellieħa / Gozo)
+### Couple de retraités (Mellieħa / Gozo)
 
-| Category | Budget Range |
+| Catégorie - Fourchette de budget - Catégorie - Fourchette de budget - Catégorie - Fourchette de budget - Catégorie - Fourchette de budget
 |----------|-------------|
-| Rent (2-bed, furnished) | €1,000–€1,500 |
-| Utilities | €120–€250 |
-| Groceries | €400–€650 |
-| Dining out (2x per week) | €200–€350 |
-| Transport (1 car) | €150–€300 |
-| Health insurance (comprehensive, 60+) | €350–€600 |
-| Leisure + travel | €200–€400 |
-| Miscellaneous | €100–€200 |
-| **Total** | **€2,520–€4,250/month** |
+| Location (2 lits, meublé) | €1,000-€1,500 |
+| Services publics | 120-€250 |
+| 400-€650 | | Dîner au restaurant (2 fois par semaine)
+| Repas au restaurant (2 fois par semaine) | 200 € - 350 € | Transport (1 voiture) | 200 € - 350 € | Transport (1 voiture)
+| Transport (1 voiture) | 150 € - 300 € | Assurance maladie (tous risques, 60 ans et plus)
+| Assurance maladie (multirisque, 60+) | 350-€600
+| Loisirs + voyages | 200-€400 |
+| Divers - 100 € - 200 € - 100 € - 100 € - 100 € - 100 € - 100
+| **Total** | **2 520-€4 250/mois** |
 
-## What Many Cost-of-Living Guides Get Wrong About Malta
+## Ce que de nombreux guides sur le coût de la vie se trompent à propos de Malte
 
-### 1. They Underestimate Electricity
+### 1. Ils sous-estiment l'électricité
 
-Most online comparison tools show average EU electricity costs. Malta's are significantly higher, especially with air conditioning. Real summer bills for a 2-bed apartment can reach €300–€400/month. Budget for this.
+La plupart des outils de comparaison en ligne indiquent le coût moyen de l'électricité dans l'UE. Ceux de Malte sont nettement plus élevés, surtout avec la climatisation. Les factures d'été réelles pour un appartement à deux lits peuvent atteindre 300 à 400 euros par mois. Prévoyez un budget à cet effet.
 
-### 2. They Assume You Don't Need a Car
+### 2. Ils supposent que vous n'avez pas besoin de voiture
 
-While technically possible to live without a car (especially in Sliema), the reality is that most expats find a car essential for grocery shopping, exploring the island, and avoiding the limitations of bus schedules.
+Bien qu'il soit techniquement possible de vivre sans voiture (surtout à Sliema), la réalité est que la plupart des expatriés considèrent qu'une voiture est essentielle pour faire les courses, explorer l'île et éviter les limitations des horaires de bus.
 
-### 3. They Compare to Outdated Numbers
+### 3. Ils se comparent à des chiffres dépassés
 
-Malta's cost of living has increased materially since 2020, driven by post-COVID demand for housing and inflation in imported goods. Numbers from 2022–2023 online may be 15–25% below 2026 reality.
+Le coût de la vie à Malte a augmenté de manière significative depuis 2020, en raison de la demande de logements post-COVID et de l'inflation des biens importés. Les chiffres de 2022-2023 en ligne peuvent être inférieurs de 15 à 25 % à la réalité de 2026.
 
-### 4. They Ignore the Tax Advantages
+### 4. Ils ignorent les avantages fiscaux
 
-Comparing gross cost of living without considering Malta's tax advantages (no property tax, no inheritance tax, no wealth tax, favourable non-dom regime) is misleading. Net of taxes, Malta can be significantly cheaper than headline comparisons suggest.
+Comparer le coût de la vie brut sans tenir compte des avantages fiscaux de Malte (pas de taxe foncière, pas de droits de succession, pas d'impôt sur la fortune, un régime favorable pour les non-dom) est trompeur. Déduction faite des impôts, Malte peut être beaucoup moins chère que ne le suggèrent les comparaisons globales.
 
-## Frequently Asked Questions
+## Foire aux questions
 
-### How much do you need to live comfortably in Malta?
-A single professional needs approximately €2,500–€3,500/month for a comfortable lifestyle in Sliema or St Julian's, including rent, dining out, transport, and health insurance. A family of four should budget €6,000–€10,000/month depending on school choices and lifestyle.
+### De combien avez-vous besoin pour vivre confortablement à Malte ?
+Un professionnel célibataire a besoin d'environ 2 500 à 3 500 euros par mois pour vivre confortablement à Sliema ou à St Julian's, ce qui comprend le loyer, les sorties au restaurant, les transports et l'assurance maladie. Une famille de quatre personnes doit prévoir un budget de 6 000 à 10 000 euros par mois, en fonction de ses choix d'études et de son mode de vie.
 
-### Is Malta cheaper than the UK?
-Yes, overall. Compared to London, Malta is approximately 30–35% cheaper. Compared to UK regional cities, the difference is smaller (10–20%). The main savings are in dining out, alcohol, and the absence of council tax and inheritance tax.
+### Malte est-elle moins chère que le Royaume-Uni ?
+Oui, dans l'ensemble. Par rapport à Londres, Malte est environ 30 à 35 % moins chère. Par rapport aux villes régionales du Royaume-Uni, la différence est plus faible (10-20 %). Les principales économies concernent les restaurants, l'alcool et l'absence de taxe d'habitation et de droits de succession.
 
-### Are groceries expensive in Malta?
-Comparable to Southern France or coastal Spain. Some items (especially imported goods) are more expensive than continental Europe due to shipping costs. Local produce (fruit, vegetables, fish) is very reasonably priced, especially at farmers' markets.
+### Les produits alimentaires sont-ils chers à Malte ?
+Comparables à ceux du sud de la France ou de la côte espagnole. Certains articles (en particulier les produits importés) sont plus chers qu'en Europe continentale en raison des frais d'expédition. Les produits locaux (fruits, légumes, poissons) sont à des prix très raisonnables, en particulier sur les marchés de producteurs.
 
-### Is it worth buying or renting in Malta as an expat?
-Renting is recommended for the first 6–12 months to understand areas and market conditions. If staying long-term (3+ years), buying often makes sense due to strong capital appreciation and rent savings. The absence of annual property tax makes ownership even more attractive compared to countries with recurrent charges.
+### Vaut-il la peine d'acheter ou de louer à Malte en tant qu'expatrié ?
+Il est recommandé de louer pendant les 6 à 12 premiers mois afin de comprendre les zones et les conditions du marché. Si vous restez à long terme (plus de 3 ans), il est souvent judicieux d'acheter en raison de la forte appréciation du capital et des économies de loyer. L'absence de taxe foncière annuelle rend la propriété encore plus attrayante par rapport aux pays où les charges sont récurrentes.
 
-### How expensive is air conditioning in Malta?
-This is a major budget item from May to October. Budget €100–€300/month in electricity costs for a typical 2-bedroom apartment with regular A/C use. Using inverter A/C units (more energy efficient) and limiting use to bedrooms during evenings/nights can reduce this significantly.
+### Combien coûte l'air conditionné à Malte ?
+Il s'agit d'un poste budgétaire important de mai à octobre. Prévoyez un budget de 100 à 300 euros par mois en frais d'électricité pour un appartement typique de deux chambres à coucher avec une utilisation régulière de la climatisation. L'utilisation de climatiseurs à inverseur (plus économes en énergie) et la limitation de l'utilisation aux chambres à coucher le soir et la nuit peuvent réduire considérablement ces coûts.
 
-## Related Guides
+## Guides connexes
 
-- [Moving to Malta Complete Guide](/insights/moving-to-malta-complete-guide)
-- [Buying Property in Malta as a Foreigner](/insights/buying-property-in-malta-as-a-foreigner-2026)
-- [Rental Income Tax Malta 2026](/insights/rental-income-tax-malta-2026)
-- [Best Areas for Property Investment](/insights/best-areas-investment-malta-2026)
+- [Guide complet du déménagement à Malte](/insights/moving-to-malta-complete-guide)
+- [Acheter une propriété à Malte en tant qu'étranger](/insights/buying-property-in-malta-as-a-foreigner-2026)
+- [Impôt sur les revenus locatifs Malte 2026](/Instructions/impôt sur les revenus locatifs-Malte-2026)
+- [Meilleures régions pour l'investissement immobilier](/connexions/meilleures régions-investissement-malte-2026)
 
-*Last updated: March 2026. Prices reflect current market conditions and may vary. This guide is for general planning purposes. Individual costs depend on lifestyle, location, and personal circumstances.*
+*Dernière mise à jour : Mars 2026. Les prix reflètent les conditions actuelles du marché et peuvent varier. Ce guide est destiné à des fins de planification générale. Les coûts individuels dépendent du mode de vie, de la situation géographique et des circonstances personnelles.*

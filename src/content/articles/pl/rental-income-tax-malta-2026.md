@@ -1,249 +1,248 @@
 ---
-title: "Rental Income Tax Malta 2026 – Complete Guide for Landlords and Investors"
+title: "Podatek dochodowy od wynajmu Malta 2026 - Kompletny przewodnik dla wynajmujących i inwestorów"
 category: "Finance"
-excerpt: "Rental income from Maltese property is taxed at a flat 15% final withholding rate on gross rental receipts. No deductions are allowed under this scheme. Alternatively, landlords can opt for standard progressive rates (15%–35%) with full expense deductions."
-metaDescription: "Maximize your property investment returns. Learn how Malta's 15% flat rental income tax works, alongside capital gains tax rules and primary residence exemptions for 2026."
+excerpt: "Dochód z wynajmu maltańskich nieruchomości jest opodatkowany zryczałtowaną stawką 15% od przychodów brutto z wynajmu. W ramach tego systemu nie są dozwolone żadne odliczenia. Alternatywnie, wynajmujący mogą wybrać standardowe stawki progresywne (15%-35%) z pełnymi odliczeniami wydatków."
+metaDescription: "Zmaksymalizuj zyski z inwestycji w nieruchomości. Dowiedz się, jak działa maltański 15% zryczałtowany podatek dochodowy od wynajmu, wraz z zasadami podatku od zysków kapitałowych i zwolnieniami z tytułu pierwotnego miejsca zamieszkania w 2026 r."
 image: "/assets/images/insights/tax-optimization.png"
 date: "March 2026"
-readTime: "16 min read"
+readTime: "16 min czytania"
 author: "Malta Luxury Real Estate"
 slug: "rental-income-tax-malta-2026"
+localizedSlug: "podatek-dochodowy-od-wynajmu-malta-2026-kompletny"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Rental Income Tax Malta 2026 – Complete Guide for Landlords and Investors
+# Podatek dochodowy od wynajmu Malta 2026 - Kompletny przewodnik dla wynajmujących i inwestorów
 
-Rental income from Maltese property is taxed at a flat 15% final withholding rate on gross rental receipts. No deductions are allowed under this scheme. Alternatively, landlords can opt to declare rental income under the standard progressive income tax rates (15%–35%) with full expense deductions – useful when costs are high relative to income. Property sales are subject to 8% transfer duty on the sale price (or 10% on the capital gain, if lower). There is no annual property tax in Malta.
+Dochód z wynajmu maltańskich nieruchomości jest opodatkowany zryczałtowaną stawką 15% od przychodów brutto z wynajmu. W ramach tego systemu nie są dozwolone żadne odliczenia. Alternatywnie, wynajmujący mogą zadeklarować dochód z wynajmu według standardowych progresywnych stawek podatku dochodowego (15%-35%) z pełnymi odliczeniami wydatków - przydatne, gdy koszty są wysokie w stosunku do dochodu. Sprzedaż nieruchomości podlega 8% podatkowi od ceny sprzedaży (lub 10% od zysku kapitałowego, jeśli jest niższy). Na Malcie nie ma rocznego podatku od nieruchomości.
 
-## Malta's Property Tax Landscape: Overview
+## Maltański krajobraz podatku od nieruchomości: Przegląd
 
-One of Malta's most significant advantages for property investors is the simplicity and favourability of its property tax regime. Compared to France (progressive rates up to 45%), Spain (19%–26% for non-residents), or the UK (20%–28% CGT + income tax on rent), Malta is structurally more favourable in almost every dimension.
+Jedną z najważniejszych zalet Malty dla inwestorów w nieruchomości jest prostota i korzystność jej systemu podatkowego od nieruchomości. W porównaniu z Francją (progresywne stawki do 45%), Hiszpanią (19%-26% dla nierezydentów) lub Wielką Brytanią (20%-28% CGT + podatek dochodowy od wynajmu), Malta jest strukturalnie bardziej korzystna w prawie każdym wymiarze.
 
-**The key points:**
+**Kluczowe punkty:**
 
-| Tax | Rate | Notes |
+| Podatek | Stawka | Uwagi |
 |-----|------|-------|
-| Annual property tax | **None** | No council tax, rates, or recurring property tax |
-| Inheritance tax on property | **None** | No estate duty or inheritance tax |
-| Rental income tax (flat rate) | **15%** | On gross receipts, no deductions |
-| Rental income tax (standard) | **15%–35%** | Progressive rates, full deductions allowed |
-| Property transfer tax (sale) | **8%** | On sale price, OR |
-| Capital gains alternative | **10%** | On gain only, if lower |
-| Stamp duty (purchase) | **5%** | Paid by buyer |
+| Roczny podatek od nieruchomości | **Brak** | Brak podatku miejskiego, stawek lub powtarzającego się podatku od nieruchomości |
+| Podatek od spadków od nieruchomości | **Brak** | Brak podatku od nieruchomości lub podatku od spadków |
+| Podatek dochodowy od wynajmu (ryczałt) | **15%** | Od przychodów brutto, bez odliczeń |
+| Podatek dochodowy od wynajmu (standardowy) | **15%-35%** | Stawki progresywne, pełne odliczenia dozwolone |
+| Podatek od przeniesienia własności nieruchomości (sprzedaż) | **8%** | Od ceny sprzedaży, LUB |
+| Alternatywny podatek od zysków kapitałowych | **10%** | Tylko od zysku, jeśli jest niższy |
+| Opłata skarbowa (zakup) | **5%** | Płacona przez kupującego |
 
-## Rental Income Tax: The 15% Flat Rate in Detail
+## Podatek dochodowy od wynajmu: 15% stawka ryczałtowa w szczegółach
 
-### How It Works
+### Jak to działa
 
-Malta's Income Tax Act provides that rental income from residential property can be subject to a **15% final withholding tax** on the gross amount received. "Final" means this is the complete tax settlement – you do not include rental income in your regular income tax return, and no further tax is owed on this income.
+Maltańska ustawa o podatku dochodowym stanowi, że dochód z wynajmu nieruchomości mieszkalnych może podlegać **15% ostatecznemu podatkowi u źródła** od otrzymanej kwoty brutto. "Ostateczny" oznacza, że jest to pełne rozliczenie podatkowe - nie uwzględniasz dochodu z wynajmu w swoim zwykłym zeznaniu podatkowym i nie jesteś zobowiązany do zapłaty dalszego podatku od tego dochodu.
 
-**Example:**
+**Przykład:**
 
-| Item | Amount |
+| Pozycja | Kwota |
 |------|--------|
-| Monthly rent | €1,800 |
-| Annual gross rental income | €21,600 |
-| Tax at 15% | €3,240 |
-| Net rental income after tax | €18,360 |
+| Miesięczny czynsz | €1,800 |
+| Roczny dochód brutto z wynajmu | €21,600 |
+| Podatek 15% | €3,240 |
+| Dochód netto z wynajmu po opodatkowaniu | €18,360 |
 
-**Who can use the 15% rate:**
-- Both resident and non-resident individuals
-- Maltese citizens and foreigners
-- Applies to both long-let and short-let income (for short-let, additional VAT rules may apply – see below)
+**Kto może skorzystać ze stawki 15%:**
+- Osoby fizyczne będące i niebędące rezydentami
+- Obywatele Malty i obcokrajowcy
+- Dotyczy zarówno dochodów z wynajmu długoterminowego, jak i krótkoterminowego (w przypadku wynajmu krótkoterminowego mogą obowiązywać dodatkowe zasady dotyczące podatku VAT - patrz poniżej)
 
-**Who cannot use the 15% rate:**
-- Companies (corporate rental income is taxed at the standard 35% corporate rate, though various credits may apply)
-- Properties used commercially (offices, retail) – these fall under standard income tax rules
+**Kto nie może skorzystać ze stawki 15%:**
+- Firmy (dochód z wynajmu korporacyjnego jest opodatkowany standardową stawką 35%, choć mogą mieć zastosowanie różne ulgi)
+- Nieruchomości wykorzystywane komercyjnie (biura, handel detaliczny) - podlegają one standardowym zasadom podatku dochodowego
 
-### How to Pay
+### Jak płacić
 
-You declare and pay the 15% tax to the Commissioner for Revenue by **30 June** of the year following the income year. For example, rental income earned in 2025 is declared and paid by 30 June 2026.
+Deklarujesz i płacisz 15% podatek do komisarza ds. dochodów do **30 czerwca** roku następującego po roku dochodowym. Na przykład dochód z wynajmu uzyskany w 2025 r. należy zadeklarować i zapłacić do 30 czerwca 2026 r.
 
-Payment is made by submitting Form TA24 (or its equivalent – check the Commissioner for Revenue website for current form designations, as these are updated periodically).
+Płatności dokonuje się poprzez złożenie formularza TA24 (lub jego odpowiednika - aktualne oznaczenia formularzy można znaleźć na stronie internetowej Commissioner for Revenue, ponieważ są one okresowo aktualizowane).
 
-## The Alternative: Standard Income Tax Rates with Deductions
+## Alternatywa: Standardowe stawki podatku dochodowego z odliczeniami
 
-### When Is This Better?
+### Kiedy jest to lepsze rozwiązanie?
 
-The 15% flat rate is simple but **allows no deductions**. If your allowable expenses are high relative to your rental income, you may pay less tax by opting for the standard regime.
+Zryczałtowana stawka 15% jest prosta, ale **nie pozwala na odliczenia**. Jeśli dopuszczalne wydatki są wysokie w stosunku do dochodu z wynajmu, możesz zapłacić mniejszy podatek, wybierając standardowy system.
 
-**Allowable deductions under the standard regime:**
-- Mortgage interest (but not capital repayment)
-- Maintenance and repairs (not improvements)
-- Property management fees
-- Insurance premiums
-- Ground rent (enfiteusi payments)
-- Depreciation on furnishings (at set rates)
-- Advertising and letting agent fees
+**Dozwolone odliczenia w ramach standardowego systemu:**
+- Odsetki hipoteczne (ale nie spłata kapitału)
+- Konserwacja i naprawy (nie ulepszenia)
+- Opłaty za zarządzanie nieruchomością
+- Składki ubezpieczeniowe
+- Czynsz gruntowy (płatności enfiteusi)
+- Amortyzacja wyposażenia (według ustalonych stawek)
+- Opłaty za reklamę i pośrednictwo w wynajmie
 
-**Comparison calculation:**
+**Kalkulacja porównawcza:**
 
-| | Flat 15% | Standard rate (single, resident, €35k total income) |
+| Stawka standardowa (osoba samotna, rezydent, łączny dochód 35 tys. euro) | | Stawka standardowa (osoba samotna, rezydent, łączny dochód 35 tys. euro) |
 |--|----------|------------------------------------------------------|
-| Gross rental income | €18,000 | €18,000 |
-| Deductible expenses | – | -€8,500 |
-| Taxable rental income | €18,000 | €9,500 |
-| Tax rate | 15% | ~21% (marginal rate on this slice) |
-| Tax payable on rental | €2,700 | ~€1,995 |
-| **Better option:** | | ✅ Standard rate |
+| Dochód brutto z wynajmu | €18,000 | €18,000 |
+| Wydatki podlegające odliczeniu | - | -€8,500 |
+| Podlegający opodatkowaniu dochód z najmu | €18,000 | €9,500 |
+| Stawka podatkowa | 15% | ~21% (stawka krańcowa dla tego wycinka) |
+| Podatek należny od wynajmu | €2,700 | ~€1,995 |
+** Lepsza opcja:** | | ✅ Stawka standardowa |
 
-In this example, claiming deductions under the standard rate saves approximately €700 annually. The break-even point depends on your total income, residency status, and cost structure.
+W tym przykładzie skorzystanie z odliczeń według stawki standardowej pozwala zaoszczędzić około 700 euro rocznie. Próg rentowności zależy od całkowitego dochodu, statusu rezydenta i struktury kosztów.
 
-**General rule of thumb:**
-- High expenses (mortgage interest, active management): consider standard rate
-- Low expenses, cash buyer, self-managing: flat 15% is usually simpler and competitive
+**Ogólna zasada:**
+- Wysokie wydatki (odsetki od kredytu hipotecznego, aktywne zarządzanie): rozważ stawkę standardową
+- Niskie wydatki, nabywca gotówkowy, samodzielne zarządzanie: płaskie 15% jest zwykle prostsze i konkurencyjne
 
-> You must make the election at the time of filing – you cannot change it retroactively for a given year.
+> Wyboru należy dokonać w momencie składania wniosku - nie można go zmienić z mocą wsteczną na dany rok.
 
-## Short-Let: Additional VAT Considerations
+## Short-Let: Dodatkowe kwestie dotyczące podatku VAT
 
-If you operate short-let (Airbnb, Booking.com, holiday rentals), the 15% income tax rate still applies to your rental income. However, **VAT rules apply separately:**
+Jeśli prowadzisz wynajem krótkoterminowy (Airbnb, Booking.com, wynajem wakacyjny), 15% stawka podatku dochodowego nadal ma zastosowanie do dochodów z wynajmu. Jednakże, **zasady VAT mają zastosowanie oddzielnie:**
 
-**Below €35,000 annual turnover:** VAT-exempt. You charge no VAT to guests and do not file VAT returns for rental activity.
+**Poniżej 35 000 EUR rocznego obrotu:** Zwolnienie z VAT. Nie pobierasz podatku VAT od gości i nie składasz deklaracji VAT za wynajem.
 
-**Above €35,000 annual turnover:** You must register for VAT with the Commissioner for Revenue and charge **7% VAT** on accommodation services (reduced rate for tourist accommodation in Malta). You can reclaim input VAT on related expenses.
+**Powyżej 35.000 € rocznego obrotu:** Musisz zarejestrować się jako podatnik VAT w Urzędzie Skarbowym i pobierać **7% VAT** od usług zakwaterowania (obniżona stawka dla zakwaterowania turystycznego na Malcie). Możesz odzyskać naliczony podatek VAT od powiązanych wydatków.
 
-**Example:**
-- Annual short-let income: €52,000
-- VAT on accommodation: 7% = €3,640 (collected from guests and remitted to government)
-- Income tax: 15% on gross €52,000 = €7,800
-- Total tax on €52,000: ~€11,440
+**Przykład:**
+- Roczny dochód z wynajmu krótkoterminowego: 52 000 EUR
+- VAT od zakwaterowania: 7% = 3 640 € (pobrany od gości i przekazany rządowi)
+- Podatek dochodowy: 15% od 52 000 € brutto = 7 800 €
+- Całkowity podatek od 52 000 €: ~ 11 440 €
 
-The VAT threshold applies to your total VAT-taxable turnover, not just rental income. If you have other business income in Malta, it counts toward the €35,000 threshold.
+Próg VAT dotyczy całkowitego obrotu podlegającego opodatkowaniu VAT, a nie tylko dochodu z wynajmu. Jeśli masz inny dochód z działalności gospodarczej na Malcie, liczy się on do progu 35 000 €.
 
-## Eco Contribution for Short-Let
+## Składka ekologiczna dla wynajmu krótkoterminowego
 
-In addition to income tax and potentially VAT, short-let operators must collect and remit the **eco contribution** of **€0.50 per guest per night**. This is collected from guests (add it to your pricing) and remitted quarterly to the Malta Tourism Authority.
+Oprócz podatku dochodowego i potencjalnie podatku VAT, operatorzy wynajmu krótkoterminowego muszą pobierać i przekazywać **składkę ekologiczną** w wysokości **0,50 € za gościa za noc**. Jest ona pobierana od gości (należy ją dodać do cennika) i przekazywana kwartalnie do Maltańskiego Urzędu Turystyki.
 
-## Capital Gains Tax on Property Sale: The Full Picture
+## Podatek od zysków kapitałowych od sprzedaży nieruchomości: Pełny obraz
 
-When you sell a property in Malta, you are subject to property transfer tax, not capital gains tax in the traditional sense. Malta abolished CGT on property in 1992, replacing it with the current transfer duty system.
+Kiedy sprzedajesz nieruchomość na Malcie, podlegasz podatkowi od przeniesienia własności nieruchomości, a nie podatkowi od zysków kapitałowych w tradycyjnym znaczeniu. Malta zniosła CGT od nieruchomości w 1992 r., zastępując go obecnym systemem podatku od przeniesienia własności.
 
-### Option 1: 8% on the Full Sale Price
+### Opcja 1: 8% od pełnej ceny sprzedaży
 
-The default and most common option. You pay **8% of the price shown on the deed**, regardless of what you paid or what profit you made.
+Domyślna i najbardziej powszechna opcja. Płacisz **8% ceny wskazanej w akcie notarialnym**, niezależnie od tego, ile zapłaciłeś lub jaki zysk osiągnąłeś.
 
-**Example:**
+**Przykład:**
 
-| Detail | Amount |
+| Szczegóły | Kwota |
 |--------|--------|
-| Purchase price (10 years ago) | €220,000 |
-| Sale price | €480,000 |
-| 8% transfer tax on €480,000 | **€38,400** |
+| Cena zakupu (10 lat temu) | €220,000 |
+| Cena sprzedaży | €480,000 |
+| 8% podatku od przeniesienia własności od €480,000 | **€38,400** |
 
-### Option 2: 10% on the Capital Gain
+### Opcja 2: 10% od zysku kapitałowego
 
-You may elect to pay **10% on the gain** (sale price minus original purchase price, adjusted for certain costs) instead of 8% on the sale price. This is advantageous when your gain is relatively small compared to the sale price.
+Możesz zdecydować się zapłacić **10% od zysku** (cena sprzedaży minus pierwotna cena zakupu, skorygowana o określone koszty) zamiast 8% od ceny sprzedaży. Jest to korzystne, gdy zysk jest stosunkowo niewielki w porównaniu do ceny sprzedaży.
 
-**Adjusted acquisition cost includes:**
-- Original purchase price
-- Stamp duty paid on original purchase
-- Notary fees paid on original purchase
-- Cost of improvements (with receipts/permits – unauthorised works do not qualify)
-- Inflation adjustment (based on official Retail Price Index – ask your notary for the applicable multiplier)
+**Skorygowany koszt nabycia obejmuje:**
+- Pierwotną cenę zakupu
+- Opłatę skarbową zapłaconą przy pierwotnym zakupie
+- Opłaty notarialne zapłacone przy pierwotnym zakupie
+- Koszt ulepszeń (z pokwitowaniami/zezwoleniami - nieautoryzowane prace nie kwalifikują się)
+- Korektę inflacji (w oparciu o oficjalny wskaźnik cen detalicznych - zapytaj notariusza o odpowiedni mnożnik)
 
-**Example where 10% gain option wins:**
+**Przykład, w którym wygrywa opcja 10% zysku:**
 
-| Detail | Amount |
+| Szczegóły | Kwota |
 |--------|--------|
-| Adjusted acquisition cost | €420,000 |
-| Sale price | €480,000 |
-| Capital gain | €60,000 |
-| 10% on gain | **€6,000** |
-| vs 8% on sale price | **€38,400** |
-| **Saving** | **€32,400** |
+| Skorygowany koszt nabycia | €420,000 |
+| Cena sprzedaży | €480,000 |
+| Zysk kapitałowy | €60,000 |
+| 10% od zysku | **6,000€** |
+| vs 8% od ceny sprzedaży | **38 400 EUR** |
+**Oszczędność** | **32 400 EUR** |
 
-**Example where 8% option wins:**
+**Przykład, w którym wygrywa opcja 8%:**
 
-| Detail | Amount |
+| Szczegóły | Kwota |
 |--------|--------|
-| Adjusted acquisition cost | €100,000 |
-| Sale price | €500,000 |
-| Capital gain | €400,000 |
-| 10% on gain | **€40,000** |
-| vs 8% on sale price | **€40,000** |
-| Near identical – use whichever is marginally lower |
+| Skorygowany koszt nabycia | €100,000 |
+| Cena sprzedaży | €500,000 |
+| Zysk kapitałowy | €400,000 |
+| 10% od zysku | **40.000 EUR** |
+| vs 8% od ceny sprzedaży | **40 000 EUR** |
+| Prawie identyczne - użyj tego, który jest nieznacznie niższy |
 
-**Key rule:** You must elect which option to use **at the time of the deed**. Your notary will calculate both and recommend the lower figure. The choice is irrevocable once made.
+**Kluczowa zasada:** Musisz wybrać, z której opcji chcesz skorzystać **w momencie sporządzania aktu notarialnego**. Notariusz obliczy obie wartości i zaleci niższą. Raz dokonany wybór jest nieodwołalny.
 
-### Primary Residence Exemption
+### Zwolnienie z Opłaty za Pierwotne Zamieszkanie
 
-If the property being sold was your **principal private residence** for at least 3 consecutive years immediately before the sale AND you have owned it for at least 5 years, you may qualify for a reduced transfer tax rate or full exemption.
+Jeśli sprzedawana nieruchomość była Twoją **główną rezydencją** przez co najmniej 3 kolejne lata bezpośrednio przed sprzedażą ORAZ byłeś jej właścicielem przez co najmniej 5 lat, możesz kwalifikować się do obniżonej stawki podatku transferowego lub pełnego zwolnienia.
 
-This is a significant relief that applies to many owner-occupiers. The exact conditions and applicable rates are subject to review – verify with your notary as these rules have been updated several times since 2020.
+Jest to znacząca ulga, która dotyczy wielu właścicieli-mieszkańców. Dokładne warunki i obowiązujące stawki podlegają przeglądowi - należy je zweryfikować u notariusza, ponieważ zasady te były kilkakrotnie aktualizowane od 2020 roku.
 
-### Inherited Property
+### Odziedziczona nieruchomość
 
-Special rules apply to properties acquired by inheritance:
-- The acquisition value for gain calculation purposes is the value at time of inheritance (probate value)
-- If the property has been held for many years and appreciated significantly, the 10% gain option can be extremely advantageous
-- There is no inheritance tax itself on the property – only the transfer tax applies when you eventually sell
+Specjalne zasady mają zastosowanie do nieruchomości nabytych w drodze dziedziczenia:
+- Wartością nabycia dla celów obliczenia zysku jest wartość w momencie dziedziczenia (wartość spadkowa)
+- Jeśli nieruchomość była posiadana przez wiele lat i znacznie zyskała na wartości, opcja 10% zysku może być niezwykle korzystna
+- Sama nieruchomość nie podlega opodatkowaniu podatkiem od spadków - w przypadku sprzedaży zastosowanie ma jedynie podatek od przeniesienia własności
 
-## Non-Resident Landlords: Tax Position
+## Właściciele niebędący rezydentami: Pozycja podatkowa
 
-**Rental income:** Non-resident individuals owning Maltese property and renting it out are subject to the same 15% flat rate on rental income. Malta does not impose a higher withholding rate for non-residents.
+**Dochód z wynajmu:** Osoby niebędące rezydentami posiadające maltańską nieruchomość i wynajmujące ją podlegają tej samej 15% zryczałtowanej stawce od dochodu z wynajmu. Malta nie nakłada wyższej stawki u źródła dla nierezydentów.
 
-**Tax treaty position:** Malta has an extensive double taxation treaty network (with 80+ countries). In most cases, the treaty allocates taxing rights on Maltese real property income to Malta. Verify with your home country's tax authority whether you have an obligation to declare Maltese rental income there, and whether you can credit the Maltese tax paid.
+**Umowa podatkowa:** Malta posiada rozległą sieć umów o unikaniu podwójnego opodatkowania (z ponad 80 krajami). W większości przypadków umowa przyznaje Malcie prawo do opodatkowania maltańskich dochodów z nieruchomości. Sprawdź w urzędzie skarbowym swojego kraju, czy masz obowiązek zadeklarowania maltańskiego dochodu z wynajmu i czy możesz zaliczyć zapłacony podatek maltański.
 
-**UK-Malta position:** Under the UK-Malta Double Tax Convention, rental income from Maltese property is taxable in Malta. UK residents must still declare it on their UK Self Assessment, but can claim a credit for the Maltese tax paid, so no double taxation arises in practice.
+**Stanowisko Wielkiej Brytanii i Malty:** Zgodnie z umową o unikaniu podwójnego opodatkowania zawartą między Wielką Brytanią a Maltą, dochód z wynajmu maltańskiej nieruchomości podlega opodatkowaniu na Malcie. Rezydenci Wielkiej Brytanii nadal muszą zadeklarować go w swoim brytyjskim zeznaniu podatkowym, ale mogą ubiegać się o odliczenie zapłaconego podatku maltańskiego, więc w praktyce nie występuje podwójne opodatkowanie.
 
-**Practical note:** Many non-resident landlords underestimate the administrative requirement. Even with the 15% flat rate, you must file the annual declaration. Failure to do so attracts penalties from the Commissioner for Revenue.
+**Uwaga praktyczna:** Wielu właścicieli nieruchomości niebędących rezydentami nie docenia wymogów administracyjnych. Nawet przy 15% stawce ryczałtowej, należy złożyć roczną deklarację. Niedopełnienie tego obowiązku pociąga za sobą kary ze strony komisarza ds. dochodów.
 
-## Corporate Ownership: A Note on Efficiency
+## Własność korporacyjna: Uwaga na temat efektywności
 
-Some sophisticated investors hold Maltese property through a Maltese company. The standard corporate tax rate in Malta is 35%, but Malta's tax imputation system allows shareholders to reclaim significant portions of tax on dividend distribution. The effective rate for qualifying non-resident shareholders can be as low as 5%.
+Niektórzy wyrafinowani inwestorzy posiadają maltańskie nieruchomości za pośrednictwem maltańskiej spółki. Standardowa stawka podatku dochodowego od osób prawnych na Malcie wynosi 35%, ale maltański system przypisywania podatku pozwala akcjonariuszom odzyskać znaczną część podatku od wypłaty dywidendy. Efektywna stawka dla kwalifikujących się udziałowców niebędących rezydentami może wynosić nawet 5%.
 
-This structure can be advantageous for:
-- Large property portfolios (multiple properties)
-- Investors with complex international tax positions
-- Properties where the 15% individual flat rate is not the most efficient outcome
+Struktura ta może być korzystna dla
+- Dużych portfeli nieruchomości (wiele nieruchomości)
+- Inwestorów ze złożonymi międzynarodowymi pozycjami podatkowymi
+- Nieruchomości, w przypadku których 15% indywidualna stawka ryczałtowa nie jest najbardziej efektywnym rozwiązaniem
 
-Corporate ownership adds administrative cost and complexity. It is only worth considering for investments above €500,000–€1M in aggregate value, with appropriate tax and legal advice.
+Własność korporacyjna zwiększa koszty administracyjne i złożoność. Warto to rozważyć tylko w przypadku inwestycji o łącznej wartości przekraczającej 500 000-1 mln EUR, przy odpowiednim doradztwie podatkowym i prawnym.
 
-## Tax Calendar for Malta Property Investors
+## Kalendarz podatkowy dla inwestorów w nieruchomości na Malcie
 
-| Date | Obligation |
+| Data | Obowiązek |
 |------|------------|
-| 31 March | VAT return (quarterly, if registered) |
-| 30 June | Rental income tax declaration and payment (Form TA24) |
-| 30 June | Individual income tax return (if opting for standard rate) |
-| 31 December | End of tax year |
-| Within 15 days of deed | Property transfer tax (8%) remitted by notary |
+| 31 marca | Deklaracja VAT (kwartalna, jeśli jest zarejestrowana) |
+| 30 czerwca | Deklaracja i płatność podatku dochodowego od wynajmu (Formularz TA24) |
+| 30 czerwca | Rozliczenie podatku dochodowego od osób fizycznych (jeśli wybrano stawkę standardową) |
+| 31 grudnia | Koniec roku podatkowego |
+| W ciągu 15 dni od aktu | Podatek od przeniesienia własności (8%) przekazany przez notariusza |
 
-## Frequently Asked Questions
+## Często zadawane pytania
 
-### Is there a property tax in Malta (annual recurring)?
-No. Malta has no annual property tax, council tax, rates, or similar recurring charge on property ownership. The only recurring tax obligation for landlords is income tax on rental income. For owner-occupiers who do not rent, there is no annual property tax at all.
+### Czy na Malcie obowiązuje podatek od nieruchomości (powtarzający się co roku)?
+Nie. Na Malcie nie ma rocznego podatku od nieruchomości, podatku lokalnego, stawek ani podobnych powtarzających się opłat związanych z własnością nieruchomości. Jedynym powtarzającym się obowiązkiem podatkowym dla wynajmujących jest podatek dochodowy od dochodu z wynajmu. Dla właścicieli nieruchomości, którzy nie wynajmują, nie ma w ogóle rocznego podatku od nieruchomości.
 
-### Can I deduct mortgage interest from my rental income tax in Malta?
-Under the 15% flat rate scheme, no deductions are permitted. If you opt for the standard income tax regime, mortgage interest is deductible against rental income. The decision of which regime to use must be made at the time of filing and depends on your individual income and cost situation.
+### Czy mogę odliczyć odsetki od kredytu hipotecznego od podatku dochodowego od wynajmu na Malcie?
+W ramach 15% stawki ryczałtowej odliczenia nie są dozwolone. Jeśli zdecydujesz się na standardowy system podatku dochodowego, odsetki od kredytu hipotecznego można odliczyć od dochodu z wynajmu. Decyzja o wyborze systemu musi zostać podjęta w momencie składania wniosku i zależy od indywidualnych dochodów i kosztów.
 
-### What is the capital gains tax on property in Malta?
-Malta does not have a traditional capital gains tax on property. Instead, property sales are subject to an 8% final withholding tax on the sale price, or optionally 10% on the capital gain if that produces a lower tax bill. Your notary calculates both options at the time of the deed.
+### Jaki jest podatek od zysków kapitałowych od nieruchomości na Malcie?
+Malta nie posiada tradycyjnego podatku od zysków kapitałowych od nieruchomości. Zamiast tego sprzedaż nieruchomości podlega 8% końcowemu podatkowi u źródła od ceny sprzedaży lub opcjonalnie 10% od zysku kapitałowego, jeśli daje to niższy rachunek podatkowy. Notariusz oblicza obie opcje w momencie zawarcia aktu notarialnego.
 
-### Do I need to pay tax on rental income in my home country if I am a non-resident landlord in Malta?
-This depends on your home country's tax laws and the applicable double tax treaty. Many treaties give primary taxing rights on real property to the country where the property is located (Malta). You can typically credit the Maltese tax against any home-country liability. Consult a tax adviser in your country of residence.
+### Czy muszę płacić podatek od dochodu z wynajmu w moim kraju ojczystym, jeśli jestem nierezydentem wynajmującym na Malcie?
+Zależy to od przepisów podatkowych kraju pochodzenia i obowiązującej umowy o unikaniu podwójnego opodatkowania. Wiele umów przyznaje podstawowe prawa do opodatkowania nieruchomości krajowi, w którym znajduje się nieruchomość (Malta). Podatek maltański można zazwyczaj zaliczyć na poczet wszelkich zobowiązań podatkowych w kraju pochodzenia. Należy skonsultować się z doradcą podatkowym w kraju zamieszkania.
 
-### Is rental income tax in Malta different for furnished vs unfurnished properties?
-The 15% flat rate applies equally to furnished and unfurnished rentals. Furnishing can increase your rental income (and therefore the tax base), but there is no difference in the tax rate itself. Under the standard regime, depreciation on furnishings is deductible at set rates.
+### Czy podatek dochodowy od wynajmu na Malcie jest inny dla nieruchomości umeblowanych i nieumeblowanych?
+Zryczałtowana stawka 15% ma zastosowanie zarówno do umeblowanych, jak i nieumeblowanych nieruchomości. Umeblowanie może zwiększyć dochód z wynajmu (a tym samym podstawę opodatkowania), ale nie ma różnicy w samej stawce podatkowej. W standardowym systemie amortyzacja umeblowania podlega odliczeniu według ustalonych stawek.
 
-### What happens if I do not declare rental income in Malta?
-The Commissioner for Revenue has increasingly sophisticated information-sharing systems and cross-references with the Housing Authority rental registry. Undeclared rental income is subject to the unpaid tax plus interest (8% per annum) plus penalties. Criminal prosecution is possible in serious cases of evasion.
+### Co się stanie, jeśli nie zadeklaruję dochodu z wynajmu na Malcie?
+Komisarz podatkowy dysponuje coraz bardziej zaawansowanymi systemami wymiany informacji i powiązaniami z rejestrem wynajmu Urzędu Mieszkaniowego. Niezgłoszony dochód z wynajmu podlega niezapłaconemu podatkowi wraz z odsetkami (8% rocznie) i karami. W poważnych przypadkach uchylania się od płacenia podatku możliwe jest wszczęcie postępowania karnego.
 
-## Plan Your Malta Property Investment
+## Zaplanuj swoją inwestycję w nieruchomości na Malcie
 
-Understanding the tax position is a critical part of investment analysis. Use our tools:
+Zrozumienie sytuacji podatkowej jest kluczową częścią analizy inwestycji. Skorzystaj z naszych narzędzi:
 
-- **[Rental Yield Calculator](/insights/rental-yield-calculator)** – Model net yield after tax and expenses
-- **[Property Buying Cost Calculator](/insights/buying-costs-calculator)** – Full cost breakdown including stamp duty
-- **[Compare Investment Areas](/insights/best-areas-investment-malta-2026)** – Yields and returns by location
+- **[Kalkulator zysku z wynajmu](/insights/rental-yield-calculator)** - Modelowy zysk netto po opodatkowaniu i wydatkach
+- **[Kalkulator kosztów zakupu nieruchomości](/insights/buying-costs-calculator)** - Pełny podział kosztów, w tym opłata skarbowa
+- **[Porównaj obszary inwestycyjne](/insights/best-areas-investment-malta-2026)** - Zyski i zwroty według lokalizacji
 
-Or browse investment-grade properties:
+Lub przeglądaj nieruchomości inwestycyjne:
 
-- [Properties for Sale in Sliema](/properties/sliema/for-sale)
-- [Properties for Sale in St. Julian's](/properties/st-julians/for-sale)
-- [High-Yield Properties in Malta](/properties/malta/for-sale)
+- [Nieruchomości na sprzedaż w Sliema](/properties/sliema/for-sale)
+- [Nieruchomości na sprzedaż w St. Julian's](/properties/st-julians/for-sale)
+- [Wysokodochodowe nieruchomości na Malcie](/properties/malta/for-sale)
 
-*Last updated: March 2026. Maltese tax law is subject to change. This article is for general information purposes only and does not constitute tax advice. Consult a licensed Maltese accountant or tax adviser for advice specific to your circumstances.*
+*Ostatnia aktualizacja: Marzec 2026 r. Maltańskie prawo podatkowe może ulec zmianie. Niniejszy artykuł służy wyłącznie celom informacyjnym i nie stanowi porady podatkowej. Skonsultuj się z licencjonowanym maltańskim księgowym lub doradcą podatkowym w celu uzyskania porady specyficznej dla Twojej sytuacji

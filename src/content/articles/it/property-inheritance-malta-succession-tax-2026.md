@@ -1,45 +1,44 @@
 ---
-title: "Property Inheritance in Malta: Succession & Transfer Tax 2026"
+title: "Eredità immobiliare a Malta: Imposta sulle successioni e sui trasferimenti 2026"
 category: "Legal"
-excerpt: "What happens to your Malta home when you pass away? We explain the 'Causa Mortis' deed and the 5% duty on documents."
-metaDescription: "Guide to property inheritance in Malta. Learn about Succession Tax, Causa Mortis deeds, and how to plan your estate as an expat in 2026."
+excerpt: "Cosa succede alla vostra casa a Malta quando venite a mancare? Vi spieghiamo l'atto \"Causa Mortis\" e l'imposta del 5% sui documenti."
+metaDescription: "Guida alla successione immobiliare a Malta. Scoprite la tassa di successione, gli atti di Causa Mortis e come pianificare la vostra successione come espatriati nel 2026."
 image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "13 min read"
+readTime: "13 min di lettura"
 author: "Malta Luxury Real Estate Legal & Wealth Desk"
 slug: "property-inheritance-malta-succession-tax-2026"
+localizedSlug: "eredita-immobiliare-a-malta-imposta-sulle-successioni"
 lang: it
-translatedFrom: en
-translatedAt: 2026-03-06
 ---
 
-# Property Inheritance in Malta: Succession & Transfer Tax 2026
+# Eredità di proprietà a Malta: Imposta sulle successioni e sui trasferimenti 2026
 
-Estate planning is a critical but often avoided topic. If you own property in Malta, you need to know how it will be transferred to your heirs and what the tax implications are in 2026.
+La pianificazione successoria è un argomento cruciale ma spesso evitato. Se possedete una proprietà a Malta, dovete sapere come sarà trasferita ai vostri eredi e quali sono le implicazioni fiscali nel 2026.
 
-## 1. The "Death Tax" Myth
-Malta does **not** have a traditional "Inheritance Tax" or "Estate Tax" on the total value of your wealth. Instead, there is a **Duty on Documents and Transfers**.
+## 1. Il mito della "tassa sulla morte
+A Malta non esiste una "tassa di successione" o una "tassa patrimoniale" tradizionale sul valore totale del vostro patrimonio. Esiste invece una **tassa sui documenti e sui trasferimenti**.
 
-## 2. The 5% Transfer Duty
-When an heir inherits a property, they must pay **5% duty** on the market value of the property at the time of death.
-*   **Exception (The Family Home):** If a surviving spouse continues to live in the property as their primary residence, the duty is often deferred or waived entirely.
-
----
-
-## 3. The "Causa Mortis" Deed
-The legal process of transferring property after death is called a **Causa Mortis**.
-1.  **Reporting:** The death must be reported to the Public Registry.
-2.  **Valuation:** A government-appointed architect will value the property.
-3.  **The Deed:** A Notary drafts the Causa Mortis deed, which officially moves the title to the heirs.
+## 2. L'imposta sul trasferimento del 5%
+Quando un erede eredita una proprietà, deve pagare un'imposta del **5%** sul valore di mercato della proprietà al momento della morte.
+*   **Se il coniuge superstite continua a vivere nell'immobile come residenza principale, l'imposta è spesso rinviata o completamente esentata.
 
 ---
 
-## 4. Foreign Wills vs. Maltese Wills
-If you are an expat, you likely have a will in your home country.
-*   **European Succession Regulation (Brussels IV):** Allows you to choose the law of your nationality to govern your succession.
-*   **Elite Tip:** Even if you have a foreign will, it is **highly recommended** to have a specific "Maltese Will" that deals *only* with your Maltese property. This makes the local probate process significantly faster and cheaper.
+## 3. L'atto "Causa Mortis
+Il processo legale di trasferimento della proprietà dopo la morte è chiamato **Causa Mortis**.
+1.  **Denuncia:** Il decesso deve essere denunciato al Pubblico Registro.
+2.  **Valutazione: un architetto nominato dal governo valuterà la proprietà.
+3.  **Atto: un notaio redige l'atto di Causa Mortis, che trasferisce ufficialmente il titolo agli eredi.
 
-## Summary
-Inheritance in Malta is relatively tax-efficient compared to the UK or France, but the bureaucracy is slow. Preparing a clear Maltese will today can save your family years of legal battles and thousands in unnecessary fees.
+---
 
-**Do you need a trusted Notary for estate planning? [Contact our Wealth Desk](mailto:wealth@maltaluxuryrealestate.com).**
+## 4. Testamento straniero vs. testamento maltese
+Se siete stranieri, è probabile che abbiate un testamento nel vostro paese d'origine.
+*   **Regolamento successorio europeo (Bruxelles IV):** consente di scegliere la legge della propria nazionalità per regolare la propria successione.
+*   **Anche se avete un testamento straniero, è altamente raccomandato avere un "testamento maltese" specifico che riguarda *solo* i vostri beni maltesi. In questo modo il processo di successione locale sarà molto più veloce e meno costoso.
+
+## Sintesi
+La successione a Malta è relativamente efficiente dal punto di vista fiscale rispetto al Regno Unito o alla Francia, ma la burocrazia è lenta. Preparare oggi un testamento maltese chiaro può risparmiare alla vostra famiglia anni di battaglie legali e migliaia di spese inutili.
+
+**Avete bisogno di un notaio di fiducia per la pianificazione successoria? [Contattate il nostro Wealth Desk](mailto:wealth@maltaluxuryrealestate.com).**

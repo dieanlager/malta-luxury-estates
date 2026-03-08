@@ -1,65 +1,64 @@
 ---
-title: "The Financial Logic of Malta Permanent Residency (MPRP)"
+title: "La logique financière de la résidence permanente à Malte (MPRP)"
 category: "Finance"
-excerpt: "Analyze the costs and returns of the MPRP program. How a property investment can satisfy residency requirements while building wealth."
-metaDescription: "Is the Malta Permanent Residency Programme (MPRP) worth it? We analyze the financial requirements, property investment options, and tax advantages for 2026."
+excerpt: "Analyser les coûts et les rendements du programme PPRM. Comment un investissement immobilier peut satisfaire aux exigences de résidence tout en constituant un patrimoine."
+metaDescription: "Le programme de résidence permanente à Malte en vaut-il la peine ? Nous analysons les exigences financières, les options d'investissement immobilier et les avantages fiscaux pour 2026."
 image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "11 min read"
+readTime: "11 min de lecture"
 author: "Malta Luxury Real Estate Residency Desk"
 slug: "malta-permanent-residency-mprp-financial-benefits"
+localizedSlug: "la-logique-financiere-de-la-residence-permanente"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# The Financial Logic of Malta Permanent Residency (MPRP)
+# La logique financière de la résidence permanente à Malte (MPRP)
 
-For wealthy non-EU citizens, the **Malta Permanent Residency Programme (MPRP)** is often viewed as a "Plan B" or a travel document. But from a financial perspective, it is a sophisticated asset-class play. In 2026, the program offers a clear path to European residency through a combination of government contributions and property investment.
+Pour les citoyens non européens fortunés, le **Programme de résidence permanente à Malte (PRPM)** est souvent considéré comme un "plan B" ou un document de voyage. Mais d'un point de vue financier, il s'agit d'un jeu sophistiqué sur les classes d'actifs. En 2026, le programme offre une voie claire vers la résidence européenne grâce à une combinaison de contributions gouvernementales et d'investissements immobiliers.
 
-## 1. The Financial Layout (2026 Requirements)
+## 1. Le schéma financier (exigences pour 2026)
 
-To qualify for the MPRP, an applicant must satisfy three core financial pillars:
+Pour bénéficier du PPRM, le demandeur doit satisfaire à trois piliers financiers fondamentaux :
 
-1.  **Administrative Fee:** €40,000.
-2.  **Government Contribution:** 
-    *   €28,000 if you **buy** a property.
-    *   €58,000 if you **rent** a property.
-3.  **Charitable Donation:** €2,000 to a registered NGO in Malta.
-
----
-
-## 2. Buy vs. Rent: The "Opportunity Cost" Math
-
-This is where the financial strategy comes in. Should you sink capital into a purchase or "lose" money on a lease?
-
-### The Rental Route:
-*   Min. rent: €10,000/year (South/Gozo) or €12,000/year (North/Central).
-*   Total "loss" over 5 mandatory years: ~€110,000 (including higher govt. fee).
-*   **Verdict:** Better for those who want to keep their capital deployed in high-yield stocks or businesses elsewhere.
-
-### The Purchase Route:
-*   Min. purchase: €300,000 (South/Gozo) or €350,000 (North/Central).
-*   Lower Govt. Fee.
-*   **Verdict:** If Malta's property market continues its 5% annual growth, the capital appreciation alone over 5 years (€75,000 - €90,000) essentially "pays" for the residency program.
+1.  **Frais administratifs:** 40 000 €.
+2.  *contribution gouvernementale : **28 000 € si vous **achetez** une propriété
+    *   28 000 € si vous **achetez** un bien immobilier.
+    *   58 000 € si vous **louez** un bien.
+3.  **Donation caritative:** 2 000 € à une ONG enregistrée à Malte.
 
 ---
 
-## 3. Tax Benefits of Residency
+## 2. Acheter ou louer : le calcul du "coût d'opportunité
 
-Holder of the MPRP are not automatically tax residents. However, if you choose to spend more than 183 days in Malta:
-*   You may qualify for the **Non-Dom (Non-Domiciled)** status.
-*   You only pay tax on income *remitted* to Malta.
-*   Your foreign capital gains remain **tax-free** even if brought into Malta.
+C'est ici qu'intervient la stratégie financière. Faut-il investir dans un achat ou "perdre" de l'argent dans une location ?
+
+### La voie de la location :
+*   Loyer minimum : 10 000 €/an (Sud/Gozo) ou 12 000 €/an (Nord/Centre).
+*   Perte totale sur 5 années obligatoires : ~110 000 € (y compris la taxe gouvernementale plus élevée).
+*   **Verdict:**Plus avantageux pour ceux qui veulent garder leur capital déployé dans des actions ou des entreprises à haut rendement ailleurs.
+
+### La voie de l'achat :
+*   Achat minimum : 300 000 € (Sud/Gozo) ou 350 000 € (Nord/Centre).
+*   Frais gouvernementaux réduits.
+*   **Verdict:** Si le marché immobilier maltais poursuit sa croissance annuelle de 5 %, la seule appréciation du capital sur 5 ans (75 000 € - 90 000 €) permet de "payer" le programme de résidence.
 
 ---
 
-## 4. The Exit Strategy
+## 3. Avantages fiscaux de la résidence
 
-Unlike some other programs, you only need to hold the property/lease for **5 years**. After that, you can:
-1.  Sell the property and keep the residency.
-2.  Move to a smaller/cheaper rental.
-3.  Downgrade your investment while retaining the right to live and travel within the Schengen area indefinitely.
+Les titulaires du PPRM ne sont pas automatiquement résidents fiscaux. Cependant, si vous choisissez de passer plus de 183 jours à Malte, vous pouvez bénéficier du statut **Non-Dom (Non-Domiciled)** :
+*   Vous pouvez bénéficier du statut **Non-Dom (Non-Domiciled)**.
+*   Vous ne payez l'impôt que sur les revenus *transmis* à Malte.
+*   Vos gains en capital étrangers restent **non imposables** même s'ils sont transférés à Malte.
 
-## Summary
-The MPRP is not just a "cost"—it's a leveraged investment in European access. For an investor with €500,000 in liquid capital, the Purchase Route represents a highly efficient use of funds with a potential "break-even" within 4-5 years purely through real estate appreciation.
+---
+
+## 4. La stratégie de sortie
+
+Contrairement à d'autres programmes, vous ne devez conserver le bien ou le bail que pendant **5 ans**. Après cela, vous pouvez :
+1.  Vendre le bien et conserver la résidence.
+2.  Déménager dans une location plus petite/plus économique.
+3.  Dévaloriser votre investissement tout en conservant le droit de vivre et de voyager indéfiniment dans l'espace Schengen.
+
+## Résumé
+Le PPRM n'est pas seulement un "coût", c'est un investissement à effet de levier dans l'accès à l'Europe. Pour un investisseur disposant de 500 000 euros de liquidités, le parcours d'achat représente une utilisation très efficace des fonds, avec un "seuil de rentabilité" potentiel dans les 4 à 5 ans, uniquement grâce à l'appréciation de l'immobilier.

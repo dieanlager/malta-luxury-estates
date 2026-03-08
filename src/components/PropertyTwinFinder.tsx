@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sparkles, ArrowRight, X, Zap, Heart, CheckCircle2, Building2 } from 'lucide-react';
+import { Sparkles, ArrowRight, X, Zap, CheckCircle2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Property } from '../types';
 import { PROPERTIES } from '../constants';
@@ -13,6 +13,7 @@ interface PropertyTwinFinderProps {
 }
 
 export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentProperty, isOpen, onClose }) => {
+    const { t } = useTranslation();
     const [analyzing, setAnalyzing] = useState(true);
 
     // AI Twin Finder Logic
@@ -35,7 +36,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                 const commonFeatures = p.features.filter(f => currentProperty.features.includes(f));
                 score += commonFeatures.length * 5;
 
-                return { property: p, score };
+                return { property: p, score: Math.min(score, 99) };
             })
             .sort((a, b) => b.score - a.score)
             .slice(0, 2); // Get top 2 twins
@@ -66,12 +67,13 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                         initial={{ opacity: 0, y: 50, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.95 }}
-                        className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-white/5 border border-white/10 rounded-[3rem] shadow-2xl p-8 md:p-12"
+                        className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-white/5 border border-white/10 rounded-[3rem] shadow-2xl p-8 md:p-12 scrollbar-hide"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button
                             onClick={onClose}
-                            className="absolute top-8 right-8 w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all"
+                            className="absolute top-8 right-8 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-all z-[150] shadow-2xl border border-white/10"
+                            aria-label="Close modal"
                         >
                             <X size={24} />
                         </button>
@@ -85,9 +87,9 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                                     transition={{ duration: 2, repeat: Infinity }}
                                 />
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">AI Property <span className="text-gold italic">Twin Finder</span></h2>
+                            <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">{t('interactive.twin.title', 'AI Property Twin Finder')}</h2>
                             <p className="text-white/40 max-w-xl">
-                                Our neural engine analyzes lifestyle patterns, architectural DNA, and neighborhood vibes to find properties that perfectly match the soul of your current choice.
+                                {t('interactive.twin.subtitle')}
                             </p>
                         </div>
 
@@ -106,13 +108,13 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                                         transition={{ duration: 1.5, repeat: Infinity }}
                                         className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold"
                                     >
-                                        Analyzing Layout DNA...
+                                        {t('interactive.twin.analyzing', 'Analyzing Layout DNA...')}
                                     </motion.div>
-                                    <div className="text-sm text-white/20">Deconstructing features and neighborhood indices</div>
+                                    <div className="text-sm text-white/20">{t('interactive.twin.analyzing_subtitle')}</div>
                                 </div>
                             </div>
                         ) : (
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pb-12">
                                 {twins.map(({ property, score }, idx) => (
                                     <motion.div
                                         key={property.id}
@@ -124,7 +126,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                                             <div className="px-4 py-2 bg-luxury-black border border-gold/30 rounded-xl flex items-center gap-3 shadow-xl">
                                                 <CheckCircle2 size={16} className="text-emerald-400" />
                                                 <span className="text-[10px] font-bold uppercase tracking-widest text-white">
-                                                    {score}% Match Confidence
+                                                    {score}% {t('interactive.twin.match_confidence', 'Match Confidence')}
                                                 </span>
                                             </div>
                                         </div>
@@ -135,15 +137,19 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
 
                                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 backdrop-blur-[2px] rounded-2xl p-8 border border-white/5">
                                             <div className="text-center mb-10">
-                                                <div className="text-xs text-gold font-bold uppercase tracking-widest mb-2">Why this twin?</div>
+                                                <div className="text-xs text-gold font-bold uppercase tracking-widest mb-2">{t('interactive.twin.why_title')}</div>
                                                 <h4 className="text-2xl font-serif text-white mb-4">{property.title}</h4>
                                                 <p className="text-xs text-white/60 leading-relaxed">
-                                                    Matches your interest in <span className="text-white">{property.propertyType}s</span> in <span className="text-white">{property.locationName}</span>.
-                                                    Shares similar features like <span className="text-white">{property.features[0]}</span> and <span className="text-white">{property.features[1]}</span>.
+                                                    {t('interactive.twin.why_desc', {
+                                                        type: property.propertyType,
+                                                        location: property.locationName,
+                                                        f1: property.features[0],
+                                                        f2: property.features[1]
+                                                    })}
                                                 </p>
                                             </div>
                                             <button className="w-full py-4 bg-gold text-luxury-black rounded-xl text-xs font-bold uppercase tracking-widest hover:scale-105 transition-all flex items-center justify-center gap-2 group">
-                                                Explore This Twin
+                                                {t('interactive.twin.explore_button', 'Explore This Twin')}
                                                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                                             </button>
                                         </div>
@@ -156,7 +162,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                             <div className="inline-flex items-center gap-4 px-6 py-3 rounded-2xl bg-white/3 border border-white/5">
                                 <Zap size={16} className="text-gold animate-pulse" />
                                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
-                                    Neural Engine calibrated to Malta Market Index 2026
+                                    {t('interactive.twin.footer_note')}
                                 </span>
                             </div>
                         </div>
@@ -179,11 +185,11 @@ export const PropertyTwinButton: React.FC<{ property: Property }> = ({ property 
                     e.stopPropagation();
                     setIsOpen(true);
                 }}
-                className="flex items-center gap-3 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:text-gold hover:border-gold transition-all group overflow-hidden relative"
+                className="flex-1 flex items-center gap-2 px-3 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:text-gold hover:border-gold transition-all group overflow-hidden relative h-10"
             >
                 <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <Sparkles size={16} className="text-gold group-hover:rotate-12 transition-transform" />
-                <span className="text-xs font-bold uppercase tracking-widest relative">{t('common.find_twin')}</span>
+                <Sparkles size={14} className="text-gold group-hover:rotate-12 transition-transform shrink-0" />
+                <span className="text-[9px] font-bold uppercase tracking-widest relative whitespace-nowrap">{t('common.find_twin')}</span>
             </button>
 
             <PropertyTwinFinder

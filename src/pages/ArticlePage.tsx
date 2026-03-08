@@ -10,7 +10,7 @@ import { generateArticleSchema } from '../lib/seo/schemas';
 import { usePageMeta } from '../lib/seo/meta';
 import { injectInternalLinks } from '../lib/seo/internal-linking';
 import { useTranslation } from 'react-i18next';
-import { resolveArticleLang } from '../lib/markdown';
+import { resolveArticleLang, getLocalizedArticleLink } from '../lib/markdown';
 import { SchemaScript } from '../components/SchemaScript';
 import { MortgageCalculator } from '../components/calculators/MortgageCalculator';
 
@@ -187,14 +187,14 @@ export const ArticlePage = () => {
   usePageMeta({
     title: article ? `${article.title} | Malta Luxury Real Estate` : 'Insights | Malta Luxury Real Estate',
     description: article?.metaDescription || article?.excerpt || '',
-    canonicalPath: article ? `/insights/${article.slug}` : '/insights',
+    canonicalPath: article ? getLocalizedArticleLink(article.slug, i18n.language) : '/insights',
     currentLang: i18n.language,
     ogType: 'article',
     ogImage: article?.image,
   });
 
   const articleSchema = article ? generateArticleSchema(article) : null;
-  const linkedContent = article ? injectInternalLinks(article.content) : '';
+  const linkedContent = article ? injectInternalLinks(article.content, i18n.language) : '';
 
   // ── Loading
   if (loading) {
@@ -335,7 +335,7 @@ export const ArticlePage = () => {
                 </h3>
                 <div className="space-y-8">
                   {relatedArticles.map(rel => (
-                    <Link key={rel.slug} to={`/insights/${rel.slug}`} className="group block">
+                    <Link key={rel.slug} to={getLocalizedArticleLink(rel.slug, i18n.language)} className="group block">
                       <div className="aspect-[16/10] rounded-lg overflow-hidden mb-3
                                       bg-zinc-900 border border-white/5">
                         {rel.image && (

@@ -19,7 +19,7 @@ import { ImgWithPlaceholder } from '../components/ImgWithPlaceholder';
 import { useTranslation } from 'react-i18next';
 
 export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, title: string) => void }) => {
-    const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation(['property_detail', 'common']);
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
     const [property, setProperty] = useState<Property | null>(null);
@@ -78,7 +78,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     onClick={() => navigate(-1)}
                     className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors text-xs font-bold uppercase tracking-widest"
                 >
-                    <ArrowLeft size={16} /> Back to Search
+                    <ArrowLeft size={16} /> {t('back_to_search', 'Back to Search')}
                 </button>
                 <div className="flex gap-4">
                     <button
@@ -149,11 +149,11 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
                     <div className="absolute top-8 left-8 flex gap-3">
                         <span className="px-4 py-2 bg-gold text-luxury-black text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg">
-                            For {property.type}
+                            {t('market.for')} {property.type === 'rent' ? t('market.forRent') : t('market.forSale')}
                         </span>
                         {property.isSeafront && (
                             <span className="px-4 py-2 bg-blue-500/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest rounded-full border border-white/10">
-                                Seafront
+                                {t('badges.seafront')}
                             </span>
                         )}
                     </div>
@@ -173,27 +173,27 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                             <span className="text-5xl font-serif text-gold-gradient italic">
                                 €{property.price.toLocaleString()}
                             </span>
-                            <span className="text-white/40 text-sm italic">Estimated Mortgage: €{Math.round(property.price * 0.005).toLocaleString()}/mo</span>
+                            <span className="text-white/40 text-sm italic">{t('estimated_mortgage', { amount: Math.round(property.price * 0.005).toLocaleString() })}</span>
                         </div>
 
                         {/* Quick Stats */}
                         <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/10">
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">Bedrooms</span>
+                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common.beds_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bed className="text-gold" size={20} />
                                     <span className="text-xl font-bold">{property.beds}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1 border-x border-white/5 px-6">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">Bathrooms</span>
+                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common.baths_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bath className="text-gold" size={20} />
                                     <span className="text-xl font-bold">{property.baths}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">Living Area</span>
+                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common.area_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Maximize className="text-gold" size={20} />
                                     <span className="text-xl font-bold">{property.sqm} <span className="text-sm font-normal text-white/40">sqm</span></span>
@@ -205,7 +205,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     {/* Description */}
                     <div className="mb-12">
                         <h2 className="text-2xl font-serif mb-6 flex items-center gap-3">
-                            About this <span className="text-gold italic">Estate</span>
+                            {t('about_this_estate')}
                         </h2>
                         <p className="text-white/60 leading-relaxed text-lg mb-8">
                             {property.description}
@@ -224,7 +224,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     <div className="mb-12 p-8 glass-card border-gold/10 rounded-3xl">
                         <h3 className="text-xl font-serif mb-6 flex items-center gap-2 italic">
                             <Shield className="text-gold" size={20} />
-                            Luxury <span className="text-gold">Intelligence</span> Suite
+                            {t('luxury_intelligence_suite')}
                         </h3>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <InvestmentPassportButton property={property} variant="page" />
@@ -247,8 +247,8 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                             zoom={13}
                         />
                         <div className="absolute bottom-6 left-6 bg-luxury-black/80 backdrop-blur-md px-6 py-3 rounded-xl border border-white/10">
-                            <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-1">Exact Location</p>
-                            <p className="text-sm font-serif">Available upon request</p>
+                            <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-1">{t('exact_location')}</p>
+                            <p className="text-sm font-serif">{t('available_on_request')}</p>
                         </div>
                     </div>
 
@@ -282,7 +282,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                                     <img src={property.agency.logo} className="w-full h-full object-contain" alt={property.agency.name} />
                                 </div>
                                 <div>
-                                    <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Listing Expert</p>
+                                    <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold">{t('listing_expert')}</p>
                                     <h4 className="font-serif text-lg">{property.agency.name}</h4>
                                 </div>
                             </div>
@@ -293,34 +293,34 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                                 onClick={() => onContact(property.id, property.title)}
                                 className="w-full py-5 gold-gradient text-luxury-black rounded-2xl font-bold uppercase tracking-[0.2em] text-xs flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform"
                             >
-                                <Phone size={14} /> Enquire Now
+                                <Phone size={14} /> {t('enquire_now')}
                             </button>
                             <button
                                 aria-label="Contact specialist via WhatsApp"
                                 className="w-full py-5 bg-white/5 border border-white/10 rounded-2xl text-white font-bold uppercase tracking-[0.2em] text-[10px] flex items-center justify-center gap-3 hover:bg-white/10 transition-colors"
                             >
-                                <MessageSquare size={14} /> WhatsApp Specialist
+                                <MessageSquare size={14} /> {t('whatsapp_specialist')}
                             </button>
                         </div>
 
                         <div className="mt-8 p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-start gap-3">
                             <Info className="text-blue-400 shrink-0 mt-0.5" size={16} />
                             <p className="text-[10px] text-blue-100/60 leading-relaxed">
-                                A verified MLE specialist will respond within 4 business hours. No spam, just bespoke assistance.
+                                {t('verified_mle_specialist')}
                             </p>
                         </div>
 
                         <div className="mt-8 flex flex-col gap-3">
                             <div className="flex justify-between text-xs py-2 border-b border-white/5">
-                                <span className="text-white/40">Property ID</span>
+                                <span className="text-white/40">{t('property_id')}</span>
                                 <span className="font-mono text-gold tracking-tighter">MLE-#{property.id.padStart(4, '0')}</span>
                             </div>
                             <div className="flex justify-between text-xs py-2 border-b border-white/5">
-                                <span className="text-white/40">Status</span>
-                                <span className="text-emerald-400">Available</span>
+                                <span className="text-white/40">{t('status')}</span>
+                                <span className="text-emerald-400">{t('available')}</span>
                             </div>
                             <div className="flex justify-between text-xs py-2">
-                                <span className="text-white/40">Property Type</span>
+                                <span className="text-white/40">{t('property_type')}</span>
                                 <span>{property.propertyType}</span>
                             </div>
                         </div>

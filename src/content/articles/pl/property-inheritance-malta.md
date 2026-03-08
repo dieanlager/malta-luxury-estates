@@ -1,210 +1,209 @@
 ---
-title: "Property Inheritance in Malta – No Inheritance Tax and What You Need to Know"
+title: "Dziedziczenie nieruchomości na Malcie - brak podatku od spadków i co musisz wiedzieć"
 category: "Legal"
-excerpt: "Malta has no inheritance tax, estate duty, or succession tax of any kind. When you inherit a Maltese property, you pay no tax on receipt. Tax only arises when you eventually sell. This makes Malta exceptionally favourable for intergenerational wealth transfer."
-metaDescription: "Did you know Malta has no inheritance tax? Our 2026 guide explains property inheritance law, forced heirship, and how to manage inherited estates with zero tax liability."
+excerpt: "Na Malcie nie ma podatku od spadków, podatku od nieruchomości ani podatku spadkowego. Kiedy dziedziczysz maltańską nieruchomość, nie płacisz podatku od jej otrzymania. Podatek powstaje dopiero w momencie sprzedaży. Sprawia to, że Malta jest wyjątkowo korzystna dla międzypokoleniowego transferu majątku."
+metaDescription: "Czy wiesz, że Malta nie ma podatku od spadków? Nasz przewodnik z 2026 r. wyjaśnia prawo spadkowe dotyczące nieruchomości, przymusowe dziedziczenie i sposób zarządzania odziedziczonymi nieruchomościami przy zerowym zobowiązaniu podatkowym."
 image: "/assets/images/insights/inheritance-guide.png"
 date: "March 2026"
-readTime: "14 min read"
+readTime: "14 min czytania"
 author: "Malta Luxury Real Estate"
 slug: "property-inheritance-malta"
+localizedSlug: "dziedziczenie-nieruchomosci-na-malcie-brak-podatku-od"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Property Inheritance in Malta – No Inheritance Tax and What You Need to Know
+# Dziedziczenie nieruchomości na Malcie - brak podatku od spadków i co musisz wiedzieć
 
-Malta has no inheritance tax, estate duty, or succession tax of any kind. When you inherit a Maltese property, you pay no tax on receipt of the inheritance. You do pay a transfer tax (8% or 10% on gain) only when you eventually sell the property – calculated from the probate value at time of inheritance, not the original purchase price. This makes Malta exceptionally favourable for intergenerational wealth transfer.
+Na Malcie nie ma podatku od spadków, podatku od nieruchomości ani podatku spadkowego. Kiedy dziedziczysz maltańską nieruchomość, nie płacisz podatku od otrzymania spadku. Płacisz podatek od przeniesienia własności (8% lub 10% od zysku) tylko wtedy, gdy ostatecznie sprzedajesz nieruchomość - obliczany na podstawie wartości spadkowej w momencie dziedziczenia, a nie pierwotnej ceny zakupu. Sprawia to, że Malta jest wyjątkowo korzystna dla międzypokoleniowego transferu majątku.
 
-## No Inheritance Tax in Malta: The Full Picture
+## Brak podatku od spadków na Malcie: Pełny obraz
 
-Malta abolished inheritance tax decades ago and has never reintroduced it. This applies equally to:
+Malta zniosła podatek od spadków dziesiątki lat temu i nigdy go nie przywróciła. Dotyczy to również:
 
-- **Maltese nationals** inheriting from family members
-- **Foreign nationals** inheriting Maltese property
-- **Non-residents** inheriting property located in Malta
-- **Properties of any value** – there is no threshold above which tax applies
-- **All beneficiaries** – whether spouse, child, sibling, or unrelated individual
+- **obywateli Malty** dziedziczących po członkach rodziny
+- **cudzoziemców** dziedziczących maltańskie nieruchomości
+- **nierezydentów** dziedziczących nieruchomości znajdujące się na Malcie
+- **nieruchomości o dowolnej wartości** - nie ma progu, powyżej którego obowiązuje podatek
+- **Wszyscy beneficjenci** - małżonek, dziecko, rodzeństwo lub osoba niespokrewniona
 
-**Comparison with other EU countries:**
+**Porównanie z innymi krajami UE:**
 
-| Country | Inheritance tax on property | Rate range |
+| Kraj | Podatek od spadków od nieruchomości | Zakres stawek |
 |---------|---------------------------|------------|
-| **Malta** | **None** | **0%** |
-| France | Yes | 5–45% (depends on relationship) |
-| Germany | Yes | 7–50% (depends on relationship + value) |
-| Spain | Yes | 7.65–34% (varies by region and relationship) |
-| UK | Yes | 40% above £325,000 threshold |
-| Italy | Yes | 4–8% (depends on relationship) |
-| Netherlands | Yes | 10–40% |
-| Portugal | Yes (partial) | 10% stamp duty (except spouses/direct children) |
+| **Malta** | **Brak** | **0%** |
+| Francja | Tak | 5-45% (zależy od pokrewieństwa) |
+| Niemcy | Tak | 7-50% (zależy od relacji + wartość) |
+| Hiszpania | Tak | 7,65-34% (zależy od regionu i relacji) |
+| Wielka Brytania | Tak | 40% powyżej progu £325,000 |
+| Włochy | Tak | 4-8% (zależy od relacji) |
+| Holandia | Tak | 10-40% |
+| Portugalia | Tak (częściowo) | 10% opłaty skarbowej (z wyjątkiem małżonków/bezpośrednich dzieci) |
 
-For international investors and families considering where to hold property assets for intergenerational transfer, Malta's position is one of the strongest in the EU.
+Dla międzynarodowych inwestorów i rodzin rozważających, gdzie przechowywać aktywa majątkowe w celu transferu międzypokoleniowego, pozycja Malty jest jedną z najsilniejszych w UE.
 
-## How Maltese Inheritance Law Works
+## Jak działa maltańskie prawo spadkowe
 
-### The Basic Principle: Forced Heirship
+### Podstawowa zasada: Przymusowe dziedziczenie
 
-Maltese inheritance law is based on civil law traditions (influenced by the Napoleonic Code via its historical links to France and Sicily). The key feature is **forced heirship** – certain relatives (known as "forced heirs") have a legally protected right to a minimum share of the estate, which cannot be taken away by a will.
+Maltańskie prawo spadkowe opiera się na tradycjach prawa cywilnego (pod wpływem Kodeksu Napoleona poprzez historyczne powiązania z Francją i Sycylią). Kluczową cechą jest **spadek przymusowy** - niektórzy krewni (znani jako "spadkobiercy przymusowi") mają prawnie chronione prawo do minimalnego udziału w spadku, którego nie można odebrać testamentem.
 
-**Forced heirship portions (legitim):**
-- If there is **one child**: child is entitled to at least 1/4 of the estate
-- If there are **two or more children**: collectively entitled to at least 1/3 of the estate
-- The surviving **spouse** has additional rights under the matrimonial regime
+**Wymuszone udziały spadkowe (legitim):**
+- Jeśli jest **jedno dziecko**: dziecko ma prawo do co najmniej 1/4 spadku
+- Jeśli jest **dwoje lub więcej dzieci**: wspólnie uprawnieni do co najmniej 1/3 spadku
+- Pozostały przy życiu **małżonek** ma dodatkowe prawa w ramach ustroju małżeńskiego
 
-The remaining portion of the estate (above the protected share) can be distributed freely by will.
+Pozostała część spadku (ponad udział chroniony) może zostać swobodnie rozdysponowana na mocy testamentu.
 
-**What this means in practice:** You cannot leave all your Maltese property to, say, a charity or a friend, if you have children. They can challenge the will and claim their forced heir portion.
+**Co to oznacza w praktyce:** Nie możesz zostawić całego swojego maltańskiego majątku np. organizacji charytatywnej lub przyjacielowi, jeśli masz dzieci. Mogą one zakwestionować testament i domagać się swojej przymusowej części spadku.
 
-## Intestate Succession: When There Is No Will
+## Dziedziczenie ustawowe: Gdy nie ma testamentu
 
-If a Maltese property owner dies without a valid will (intestate), Maltese law provides a default distribution hierarchy:
+Jeśli maltański właściciel nieruchomości umiera bez ważnego testamentu (intestate), prawo maltańskie zapewnia domyślną hierarchię podziału:
 
-**Order of inheritance (simplified):**
+**Porządek dziedziczenia (uproszczony):**
 
-1. **Spouse and children:** Jointly, in equal shares (spouse typically inherits usufruct – right to use and income – while children inherit the bare ownership, which merges upon the spouse's death)
-2. **If no children:** Spouse inherits in full
-3. **If no spouse or children:** Parents inherit
-4. **If no parents:** Siblings and their descendants
-5. **If none of the above:** More distant relatives, and ultimately the Maltese state
+1. **Współmałżonek i dzieci:** Wspólnie, w równych częściach (współmałżonek zazwyczaj dziedziczy użytkowanie - prawo do użytkowania i dochodów - podczas gdy dzieci dziedziczą samą własność, która łączy się po śmierci współmałżonka)
+2. **Jeśli nie ma dzieci:** Małżonek dziedziczy w całości
+3. **Jeśli nie ma małżonka ani dzieci:** Rodzice dziedziczą
+4. **Jeśli nie ma rodziców:** Rodzeństwo i ich zstępni
+5. **Jeśli żadne z powyższych:** Dalsi krewni, a ostatecznie państwo maltańskie
 
-> **Important:** The above is a simplification of the Code of Organisation and Civil Procedure provisions. The actual distribution in complex family situations (blended families, estranged relatives, non-married partners) requires legal advice.
+> Ważne:** Powyższe stanowi uproszczenie przepisów kodeksu organizacji i postępowania cywilnego. Rzeczywisty podział w złożonych sytuacjach rodzinnych (rodziny mieszane, krewni pozostający w separacji, partnerzy niepozostający w związku małżeńskim) wymaga porady prawnej.
 
-## Wills in Malta: Your Options
+## Testamenty na Malcie: Opcje
 
-### Making a Maltese Will
+### Sporządzanie maltańskiego testamentu
 
-A Maltese will dealing with Maltese property should be made before a Maltese notary. This is called a **public will (testment pubbliku)** and is the most secure form. The notary prepares the document, reads it in the presence of two witnesses and the testator, and retains the original in their protocol.
+Maltański testament dotyczący maltańskiego majątku powinien zostać sporządzony przed maltańskim notariuszem. Nazywa się to **testamentem publicznym (testment pubbliku)** i jest to najbezpieczniejsza forma. Notariusz sporządza dokument, odczytuje go w obecności dwóch świadków i spadkodawcy, a oryginał zachowuje w swoim protokole.
 
-**Cost:** Typically €200–€500 for a straightforward will.
+**Koszt:** Zazwyczaj 200-500 euro za prosty testament.
 
-**What the will should cover:**
-- All Maltese real property
-- Maltese bank accounts and investments (if any)
-- Moveable property in Malta
-- Appointment of an executor
+**Co powinien obejmować testament:**
+- Wszystkie maltańskie nieruchomości
+- Maltańskie rachunki bankowe i inwestycje (jeśli istnieją)
+- Ruchomości na Malcie
+- Wyznaczenie wykonawcy testamentu
 
-### Foreign Wills and Maltese Property
+### Testamenty zagraniczne i majątek maltański
 
-Under EU Succession Regulation 650/2012 (which Malta applies), the law of your habitual residence at time of death generally governs succession to your estate – including to Maltese property.
+Zgodnie z unijnym rozporządzeniem spadkowym 650/2012 (które stosuje Malta), prawo miejsca zwykłego pobytu w chwili śmierci zasadniczo reguluje dziedziczenie majątku - w tym majątku maltańskiego.
 
-**Exception:** You can make a choice of law in your will, electing to apply the law of your nationality instead.
+**Wyjątek:** Możesz dokonać wyboru prawa w testamencie, wybierając zamiast tego prawo swojego obywatelstwa.
 
-**Practical example:** A British national habitually resident in the UK, who owns a Maltese apartment, dies. Under EU Succession Regulation, UK law would apply to their estate, including the Maltese property – unless they specified in their will that Maltese law should apply to their Maltese property.
+**Praktyczny przykład:** Umiera obywatel brytyjski mający miejsce zwykłego pobytu w Wielkiej Brytanii, który jest właścicielem mieszkania na Malcie. Zgodnie z rozporządzeniem spadkowym UE, prawo brytyjskie miałoby zastosowanie do jego majątku, w tym maltańskiej nieruchomości - chyba że w testamencie określił, że prawo maltańskie powinno mieć zastosowanie do jego maltańskiej nieruchomości.
 
-**Recommendation:** If you own Maltese property and are not Maltese, consult both a Maltese notary and a lawyer in your country of residence to ensure your will is correctly structured. A separate Maltese will dealing exclusively with your Maltese property is often the simplest and most robust approach.
+**Zalecenie:** Jeśli posiadasz maltańską nieruchomość i nie jesteś Maltańczykiem, skonsultuj się zarówno z maltańskim notariuszem, jak i prawnikiem w kraju zamieszkania, aby upewnić się, że testament jest prawidłowo skonstruowany. Oddzielny maltański testament dotyczący wyłącznie maltańskiego majątku jest często najprostszym i najbardziej solidnym podejściem.
 
-## Practical Process: What Happens When You Inherit Maltese Property
+## Praktyczny proces: Co się dzieje, gdy dziedziczysz maltańską nieruchomość?
 
-### Step 1 – Obtain a Death Certificate
+### Krok 1 - Uzyskanie aktu zgonu
 
-The death must be registered in Malta (if death occurred in Malta) or a foreign death certificate must be apostilled and translated into Maltese or English.
+Zgon musi zostać zarejestrowany na Malcie (jeśli zgon nastąpił na Malcie) lub zagraniczny akt zgonu musi zostać opatrzony apostille i przetłumaczony na język maltański lub angielski.
 
-### Step 2 – Identify the Applicable Law
+### Krok 2 - Określenie obowiązującego prawa
 
-Determine whether Maltese law or foreign law governs the estate, based on the deceased's habitual residence and any choice of law in the will.
+Ustal, czy majątek podlega prawu maltańskiemu, czy prawu obcemu, w oparciu o miejsce zwykłego pobytu zmarłego i wybór prawa w testamencie.
 
-### Step 3 – Probate (Causa Mortis) Declaration
+### Krok 3 - Deklaracja spadkowa (Causa Mortis)
 
-In Malta, the estate is declared to the Commissioner for Revenue through a **Causa Mortis** declaration. This is not a tax filing – there is no inheritance tax – but it is a legal requirement that establishes the heirs' ownership. The declaration includes a valuation of the Maltese property.
+Na Malcie spadek jest zgłaszany komisarzowi ds. dochodów za pośrednictwem deklaracji **Causa Mortis**. Nie jest to zgłoszenie podatkowe - nie ma podatku od spadków - ale jest to wymóg prawny, który ustanawia własność spadkobierców. Deklaracja zawiera wycenę maltańskiej nieruchomości.
 
-**The probate value matters:** It becomes the "acquisition cost" for future capital gains calculations when you eventually sell. A higher probate value reduces future capital gains. Engage a PERIT (architect) to produce a market valuation at the time of inheritance – this is both legally required and financially strategic.
+**Wartość probacyjna ma znaczenie:** Staje się ona "kosztem nabycia" dla przyszłych obliczeń zysków kapitałowych, gdy ostatecznie sprzedasz nieruchomość. Wyższa wartość spadkowa zmniejsza przyszłe zyski kapitałowe. Zaangażuj PERYT (architekta) do sporządzenia wyceny rynkowej w momencie dziedziczenia - jest to zarówno wymagane prawnie, jak i strategiczne finansowo.
 
-### Step 4 – Update Property Title
+### Krok 4 - Aktualizacja tytułu własności
 
-Once the Causa Mortis is filed and accepted, the heirs' title to the property is confirmed. If there are multiple heirs sharing ownership, the property is held in **co-ownership (comproprietà)**. Each heir holds an undivided share.
+Po złożeniu i zaakceptowaniu Causa Mortis, tytuł prawny spadkobierców do nieruchomości zostaje potwierdzony. Jeśli istnieje wielu spadkobierców dzielących własność, nieruchomość jest utrzymywana w **współwłasności (comproprietà)**. Każdy spadkobierca posiada niepodzielny udział.
 
-### Step 5 – Decide: Keep, Sell, or Redistribute Among Heirs
+### Krok 5 - Podjęcie decyzji: Zatrzymać, sprzedać lub podzielić między spadkobierców
 
-**Keep the property:** Co-owners must agree on use (who lives there, who pays expenses, who manages rental if any). Co-ownership disputes are a common and costly issue in Maltese property inheritance.
+**Zachowanie nieruchomości:** Współwłaściciele muszą uzgodnić sposób korzystania z nieruchomości (kto w niej mieszka, kto ponosi wydatki, kto zarządza wynajmem, jeśli taki istnieje). Spory dotyczące współwłasności są częstą i kosztowną kwestią w przypadku dziedziczenia nieruchomości na Malcie.
 
-**Sell the property:** Any co-owner can compel a sale if an agreement on use cannot be reached (through court proceedings if necessary, though this is slow). Tax on sale: 8% transfer duty on sale price, or 10% on gain from probate value.
+**Sprzedaż nieruchomości:** Każdy współwłaściciel może wymusić sprzedaż, jeśli nie można osiągnąć porozumienia w sprawie użytkowania (w razie potrzeby w drodze postępowania sądowego, choć jest to powolne). Podatek od sprzedaży: 8% podatku od ceny sprzedaży lub 10% od zysku od wartości spadkowej.
 
-**Buy out co-heirs:** One heir purchases the shares of the others. Stamp duty applies to the purchased shares at the standard 5% rate (paid by the purchasing heir).
+**Wykup współspadkobierców:** Jeden spadkobierca nabywa udziały pozostałych. Opłata skarbowa ma zastosowanie do nabytych udziałów według standardowej stawki 5% (płaconej przez spadkobiercę nabywającego udziały).
 
-## Tax When You Eventually Sell Inherited Property
+## Podatek przy ostatecznej sprzedaży odziedziczonej nieruchomości
 
-This is where the probate value becomes financially significant.
+Jest to moment, w którym wartość spadku staje się finansowo znacząca.
 
-**The tax:**
-- Option A: 8% of the final sale price
-- Option B: 10% of (sale price minus probate value)
+**Podatek:**
+- Opcja A: 8% ostatecznej ceny sprzedaży
+- Opcja B: 10% (cena sprzedaży minus wartość spadkowa)
 
-**Why a high probate value helps:**
+**Dlaczego wysoka wartość spadkowa pomaga:**
 
-| | Low probate value (€150k) | High probate value (€380k) |
+| Niska wartość spadkowa (€150k) | Wysoka wartość spadkowa (€380k) |
 |--|--------------------------|---------------------------|
-| Sale price | €450,000 | €450,000 |
-| 8% option | €36,000 | €36,000 |
-| 10% gain option | €30,000 (€450k-€150k × 10%) | **€7,000** (€450k-€380k × 10%) |
-| **Best option** | 10% gain = €30,000 | 10% gain = **€7,000** |
-| **Tax saving vs low value** | – | **€23,000** |
+cena sprzedaży | €450,000 | | €450,000 |
+| Opcja 8% | €36,000 | €36,000 |
+| Opcja 10% zysku | €30,000 (€450k-€150k × 10%) | **€7,000** (€450k-€380k × 10%) |
+| **Najlepsza opcja** | 10% zysku = €30,000 | 10% zysku = **€7,000** |
+| **Oszczędność podatkowa a niska wartość** | - | **23 000 €** |
 
-The practical implication: at time of probate, obtain a professional valuation that reflects full current market value. This is entirely legitimate and will reduce future tax liability substantially.
+Praktyczne implikacje: w czasie postępowania spadkowego należy uzyskać profesjonalną wycenę, która odzwierciedla pełną aktualną wartość rynkową. Jest to całkowicie zgodne z prawem i znacznie zmniejszy przyszłe zobowiązania podatkowe.
 
-## Co-Ownership: Managing Inherited Property With Siblings
+## Współwłasność: Zarządzanie odziedziczonym majątkiem z rodzeństwem
 
-Shared inheritance is one of the most common causes of property disputes in Malta. When multiple siblings or relatives inherit a property, disagreements often arise about:
+Wspólne dziedziczenie jest jedną z najczęstszych przyczyn sporów majątkowych na Malcie. Kiedy wiele rodzeństwa lub krewnych dziedziczy nieruchomość, często pojawiają się nieporozumienia:
 
-- Whether to sell or keep
-- Who can use the property and when
-- Who pays maintenance, insurance, and expenses
-- Rental management if it is let
+- Czy sprzedać, czy zatrzymać
+- Kto i kiedy może korzystać z nieruchomości
+- Kto płaci za utrzymanie, ubezpieczenie i wydatki
+- Zarządzanie wynajmem, jeśli nieruchomość jest wynajmowana
 
-**Practical options for co-owners:**
+**Praktyczne opcje dla współwłaścicieli:**
 
-**Option 1 – Co-ownership agreement (rakkomandazzjonijiet):** All co-owners sign a notarial agreement setting out rules for use, cost-sharing, and an agreed process for future sale. This is the cheapest solution if all parties are cooperative.
+**Opcja 1 - Umowa współwłasności (rakkomandazzjonijiet):** Wszyscy współwłaściciele podpisują umowę notarialną określającą zasady użytkowania, podział kosztów i uzgodniony proces przyszłej sprzedaży. Jest to najtańsze rozwiązanie, jeśli wszystkie strony współpracują.
 
-**Option 2 – One heir buys out the others:** Clean solution. The buying heir pays the others their proportionate share. Stamp duty (5%) applies to the purchased shares.
+**Opcja 2 - Jeden spadkobierca wykupuje pozostałych:** Czyste rozwiązanie. Kupujący spadkobierca płaci pozostałym proporcjonalny udział. Opłata skarbowa (5%) ma zastosowanie do nabytych udziałów.
 
-**Option 3 – Sale to a third party:** If agreement cannot be reached, any co-owner can apply to court for a judicial sale (vendita all'inkant). This process is slow and costs are deducted from the proceeds.
+**Opcja 3 - Sprzedaż na rzecz osoby trzeciej:** Jeśli nie można osiągnąć porozumienia, każdy współwłaściciel może wystąpić do sądu o sprzedaż sądową (vendita all'inkant). Proces ten jest powolny, a koszty są potrącane z wpływów.
 
-**Option 4 – Partition:** If the property is physically divisible (rare for apartments, more feasible for large villas or land), a formal partition can split the property into separately owned units.
+**Opcja 4 - Podział:** Jeśli nieruchomość jest fizycznie podzielna (rzadkie w przypadku mieszkań, bardziej wykonalne w przypadku dużych willi lub gruntów), formalny podział może podzielić nieruchomość na oddzielne jednostki.
 
-## Planning Your Estate: Practical Recommendations
+## Planowanie nieruchomości: Praktyczne zalecenia
 
-### Make a Maltese Will
+### Sporządzenie maltańskiego testamentu
 
-If you own Maltese property, make a Maltese will even if you have a will in your home country. The Maltese will covers your Maltese property specifically and avoids uncertainty about which country's succession law applies.
+Jeśli posiadasz maltańską nieruchomość, sporządź maltański testament, nawet jeśli posiadasz testament w swoim kraju ojczystym. Maltański testament obejmuje konkretnie maltański majątek i pozwala uniknąć niepewności co do tego, które prawo spadkowe ma zastosowanie w danym kraju.
 
-### Consider a Life Insurance Policy
+### Rozważ ubezpieczenie na życie
 
-A life insurance policy can provide liquidity to pay for legal costs, buy out co-heirs, or cover expenses during the estate settlement period. Malta-based life policies for property owners are available from local insurers.
+Polisa ubezpieczeniowa na życie może zapewnić płynność finansową w celu pokrycia kosztów prawnych, wykupienia współspadkobierców lub pokrycia wydatków w okresie rozliczenia spadku. Maltańskie polisy na życie dla właścicieli nieruchomości są dostępne u lokalnych ubezpieczycieli.
 
-### Discuss With Your Family
+### Porozmawiaj z rodziną
 
-The most inheritance disputes are caused by lack of clarity about wishes. A clear will, discussed openly with your heirs, prevents decades of family conflict over a property.
+Większość sporów spadkowych jest spowodowana brakiem jasności co do życzeń. Jasny testament, omówiony otwarcie ze spadkobiercami, zapobiega dziesięcioleciom konfliktu rodzinnego o nieruchomość.
 
-### Take Professional Advice
+### Skorzystaj z profesjonalnej porady
 
-Maltese succession law combined with foreign succession law (for non-resident owners) is genuinely complex. Invest in professional advice upfront. A Maltese notary consultation costs €100–€300 and could save many times that amount in future disputes or tax.
+Maltańskie prawo spadkowe w połączeniu z zagranicznym prawem spadkowym (dla właścicieli niebędących rezydentami) jest naprawdę złożone. Warto z góry zainwestować w profesjonalną poradę. Maltańska konsultacja notarialna kosztuje 100-300 euro, a może zaoszczędzić wielokrotnie więcej w przyszłych sporach lub podatkach.
 
-## Frequently Asked Questions
+## Często zadawane pytania
 
-### Is there inheritance tax in Malta on property?
-No. Malta has no inheritance tax, estate duty, or succession tax of any kind. An inherited property passes to the heirs with no tax charge at the point of inheritance. Tax only arises when the heir sells the property (transfer duty of 8% or 10% on gain).
+### Czy na Malcie obowiązuje podatek spadkowy od nieruchomości?
+Na Malcie nie ma podatku od spadków, podatku od nieruchomości ani podatku spadkowego. Odziedziczona nieruchomość przechodzi na spadkobierców bez obciążenia podatkowego w momencie dziedziczenia. Podatek powstaje tylko wtedy, gdy spadkobierca sprzedaje nieruchomość (podatek transferowy w wysokości 8% lub 10% od zysku).
 
-### Do I need to declare an inherited Maltese property to the tax authorities?
-Yes, a Causa Mortis declaration must be filed with the Commissioner for Revenue. This is not a tax payment – it is a legal declaration establishing the heirs' title. There is no tax charge at this stage.
+### Czy muszę zgłosić odziedziczoną maltańską nieruchomość organom podatkowym?
+Tak, należy złożyć deklarację Causa Mortis do komisarza ds. dochodów. Nie jest to płatność podatku - jest to deklaracja prawna ustanawiająca tytuł prawny spadkobierców. Na tym etapie nie ma żadnych opłat podatkowych.
 
-### Can a foreigner inherit Maltese property?
-Yes. There is no restriction on foreigners inheriting Maltese property. The inheritance itself is tax-free. When the heir eventually sells, the standard 8%/10% gain transfer tax applies.
+### Czy cudzoziemiec może odziedziczyć maltańską nieruchomość?
+Tak. Nie ma ograniczeń co do dziedziczenia maltańskiej nieruchomości przez obcokrajowców. Samo dziedziczenie jest wolne od podatku. Gdy spadkobierca ostatecznie sprzeda nieruchomość, zastosowanie ma standardowy podatek od zysków kapitałowych w wysokości 8%/10%.
 
-### What happens to an AIP permit when the owner dies?
-An AIP permit is personal to the original buyer. Upon death, the property transfers to the heirs. If the heirs are non-EU nationals who would ordinarily require an AIP to purchase in Malta, they may need to regularise their position with the relevant authorities. Seek legal advice promptly in this situation.
+### Co dzieje się z zezwoleniem AIP po śmierci właściciela?
+Zezwolenie AIP jest osobiste dla pierwotnego nabywcy. Po śmierci, własność przechodzi na spadkobierców. Jeśli spadkobiercy są obywatelami spoza UE, którzy normalnie wymagaliby AIP do zakupu na Malcie, może być konieczne uregulowanie ich sytuacji z odpowiednimi władzami. W takiej sytuacji należy niezwłocznie zasięgnąć porady prawnej.
 
-### My sibling refuses to agree on selling our inherited property – what can I do?
-Any co-owner in Malta can apply to court for a judicial sale (vendita all'inkant) if agreement cannot be reached. This forces a public auction of the property, with proceeds distributed proportionally. It is slow (12–36 months typically) and costly. A mediated buy-out or negotiated sale is always preferable. Consult a Maltese lawyer specialising in contentious property matters.
+### Moje rodzeństwo nie zgadza się na sprzedaż odziedziczonej nieruchomości - co mogę zrobić?
+Każdy współwłaściciel na Malcie może wystąpić do sądu o sprzedaż sądową (vendita all'inkant), jeśli nie można osiągnąć porozumienia. Wymusza to publiczną aukcję nieruchomości, z proporcjonalnym podziałem wpływów. Procedura ta jest powolna (zazwyczaj 12-36 miesięcy) i kosztowna. Zawsze preferowany jest pośredni wykup lub sprzedaż negocjowana. Skonsultuj się z maltańskim prawnikiem specjalizującym się w spornych sprawach dotyczących nieruchomości.
 
-### I own Maltese property. Should I have a Maltese will or will my foreign will cover it?
-Both can work, but a separate Maltese will is strongly recommended for property owners. It removes ambiguity about which succession law applies, ensures the Maltese notary can proceed without delays from foreign probate procedures, and allows you to specify exactly what you want to happen to the Maltese property.
+### Posiadam maltańską nieruchomość. Czy powinienem mieć maltański testament, czy mój zagraniczny testament go obejmie?
+Oba te rozwiązania mogą być skuteczne, ale właścicielom nieruchomości zdecydowanie zaleca się sporządzenie osobnego maltańskiego testamentu. Usuwa on niejasności co do tego, które prawo spadkowe ma zastosowanie, zapewnia maltańskiemu notariuszowi możliwość działania bez opóźnień wynikających z zagranicznych procedur spadkowych i pozwala dokładnie określić, co ma się stać z maltańską nieruchomością.
 
-## Related Guides
+## Powiązane przewodniki
 
-- [Buying Property in Malta as a Foreigner](/insights/buying-property-malta-foreigners-2026)
-- [Capital Gains and Transfer Tax When Selling](/insights/selling-property-malta-guide)
-- [Rental Income Tax Malta 2026](/insights/rental-income-tax-malta-2026)
-- [Best Areas for Property Investment in Malta](/insights/best-areas-investment-malta-2026)
+- [Zakup nieruchomości na Malcie jako obcokrajowiec](/insights/buying-property-malta-foreigners-2026)
+- [Podatek od zysków kapitałowych i przeniesienia własności przy sprzedaży](/insights/selling-property-malta-guide)
+- [Podatek dochodowy od wynajmu na Malcie 2026](/insights/rental-income-tax-malta-2026)
+- [Najlepsze obszary do inwestowania w nieruchomości na Malcie](/insights/best-areas-investment-malta-2026)
 
-*Last updated: March 2026. Maltese succession law is a specialised area. This article provides general information only and does not constitute legal advice. Always consult a licensed Maltese notary or lawyer for advice on your specific situation.*
+*Ostatnia aktualizacja: Marzec 2026 r. Maltańskie prawo spadkowe jest dziedziną specjalistyczną. Niniejszy artykuł zawiera wyłącznie informacje ogólne i nie stanowi porady prawnej. Zawsze należy skonsultować się z licencjonowanym maltańskim notariuszem lub prawnikiem w celu uzyskania porady dotyczącej konkretnej sytuacji

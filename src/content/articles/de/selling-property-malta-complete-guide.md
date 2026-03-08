@@ -1,225 +1,225 @@
 ---
-title: "Selling Property in Malta: Complete Guide 2026"
+title: "Immobilienverkauf in Malta: Vollständiger Leitfaden 2026"
 category: "Selling"
-excerpt: "Everything you need to know about selling property in Malta in 2026, including capital gains tax, agent selection, property valuation, and the legal process from listing to final deed."
-metaDescription: "Expert guide to selling property in Malta in 2026. Learn about property valuation, final withholding tax (FWT), agent commissions, and legal requirements."
+excerpt: "Alles, was Sie über den Verkauf von Immobilien in Malta im Jahr 2026 wissen müssen, einschließlich Kapitalertragssteuer, Auswahl des Maklers, Bewertung der Immobilie und des rechtlichen Verfahrens von der Auflistung bis zur endgültigen Urkunde."
+metaDescription: "Expertenleitfaden für den Verkauf von Immobilien in Malta im Jahr 2026. Erfahren Sie mehr über Immobilienbewertung, Abgeltungssteuer (FWT), Maklerprovisionen und rechtliche Anforderungen."
 image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "15 min read"
+readTime: "15 Min. Lesezeit"
 author: "Malta Luxury Real Estate"
 slug: "selling-property-malta-complete-guide"
+localizedSlug: "immobilienverkauf-auf-malta-vollstandiger-leitfaden-2026"
 lang: de
-translatedFrom: en
-translatedAt: 2026-03-06
 ---
-# Selling Property in Malta: Complete Guide 2026
 
-Whether you're selling a family home, an investment apartment, or a luxury villa, understanding the Maltese property selling process can save you thousands of euros and months of frustration. This guide covers everything from valuation to the final deed.
+# Immobilien auf Malta verkaufen: Vollständiger Leitfaden 2026
 
-## Overview: How Does Selling Work in Malta?
+Ganz gleich, ob Sie ein Einfamilienhaus, eine Wohnung als Kapitalanlage oder eine Luxusvilla verkaufen - wenn Sie den maltesischen Immobilienverkaufsprozess verstehen, können Sie sich Tausende von Euro und Monate der Frustration sparen. Dieser Leitfaden deckt alles ab, von der Bewertung bis zur endgültigen Urkunde.
 
-The selling process in Malta broadly follows these steps:
+## Überblick: Wie funktioniert der Verkauf auf Malta?
 
-1. **Valuation & Pricing** – Establish market value
-2. **Choose an Agent** – Or sell privately
-3. **Marketing & Viewings** – List and show the property
-4. **Receive & Negotiate Offers** – Agree on price and terms
-5. **Sign Konvenju** – Binding preliminary agreement
-6. **Due Diligence** – Buyer's notary conducts searches (3-6 months)
-7. **Final Deed** – Transfer ownership and receive payment
+Der Verkaufsprozess in Malta läuft im Großen und Ganzen in folgenden Schritten ab:
 
-## Step 1: What is Your Property Worth?
+1. **Bewertung und Preisfindung** - Ermittlung des Marktwertes
+2. **Wählen Sie einen Makler** - oder verkaufen Sie privat
+3. **Vermarktung und Besichtigung** - Auflisten und Vorzeigen der Immobilie
+4. **Angebote erhalten und verhandeln** - Preis und Bedingungen vereinbaren
+5. **Konvenju** unterzeichnen - Verbindlicher Vorvertrag
+6. **Due Diligence** - Notar des Käufers führt Recherchen durch (3-6 Monate)
+7. **Endgültige Urkunde** - Eigentumsübertragung und Zahlungseingang
 
-### Getting a Professional Valuation
+## Schritt 1: Wie viel ist Ihre Immobilie wert?
 
-There are several ways to establish your property's market value:
+### Professionelle Bewertung einholen
 
-| Method | Cost | Accuracy |
+Es gibt mehrere Möglichkeiten, den Marktwert Ihrer Immobilie zu ermitteln:
+
+| Methode | Kosten | Genauigkeit |
 |--------|------|----------|
-| **Perit (Architect) Valuation** | €300-€600 | High – required for bank/court purposes |
-| **Agent Appraisal** | Free (usually) | Good – based on comparable sales |
-| **Online Estimate** | Free | Low – Malta has limited price data |
-| **Notary Land Registry Search** | €50-€100 | Shows previous sale prices |
+**Schätzung durch einen Architekten** | 300-600 € | Hoch - erforderlich für Bank-/Gerichtszwecke |
+**Schätzung durch einen Makler** | Kostenlos (normalerweise) | Gut - basiert auf vergleichbaren Verkäufen |
+**Online-Schätzung** | Kostenlos | Niedrig - Malta hat begrenzte Preisdaten |
+**Notarielle Grundbuchsuche** | €50-€100 | Zeigt frühere Verkaufspreise |
 
-> **Our Recommendation:** Get both a perit valuation AND two agent appraisals. Compare the three figures. If they're within 10% of each other, price at the lower agent's figure for a faster sale.
+**Unsere Empfehlung:** Holen Sie sowohl eine Schätzung von perit als auch zwei Schätzungen von Maklern ein. Vergleichen Sie die drei Zahlen. Wenn sie innerhalb von 10 % voneinander abweichen, setzen Sie den Preis für den niedrigeren Wert an, um einen schnelleren Verkauf zu erzielen.
 
-### Factors That Affect Price in Malta
+### Faktoren, die den Preis auf Malta beeinflussen
 
-1. **Location, location, location** – Sliema seafront vs Sliema backstreet can mean a 40% price difference
-2. **Floor level** – Upper floors command 10-20% premium for sea views
-3. **Outdoor space** – A roof terrace or garden can add €50,000-€150,000
-4. **Parking** – A garage adds €30,000-€50,000 in urban areas
-5. **Permits** – Properties with unpermitted additions sell at a discount (or don't sell at all)
-6. **Condition** – Renovated properties sell faster and at premium prices
-7. **SDA status** – Properties in Special Designated Areas command a premium due to unrestricted foreign buyer access
+1. **Lage, Lage, Lage** - Sliema Meeresfront vs. Sliema Seitenstraße kann einen Preisunterschied von 40% bedeuten
+2. **Stockwerk** - Obere Stockwerke bringen 10-20% Aufschlag für Meerblick
+3. **Außenbereich** - Eine Dachterrasse oder ein Garten kann den Preis um 50.000 bis 150.000 € erhöhen
+4. **Parkplatz** - Eine Garage kann in städtischen Gebieten 30.000 bis 50.000 € zusätzlich kosten
+5. **Genehmigungen** - Immobilien mit nicht genehmigten Anbauten werden mit einem Abschlag verkauft (oder gar nicht erst verkauft)
+6. **Zustand** - Renovierte Immobilien verkaufen sich schneller und zu höheren Preisen
+7. **SDA-Status** - Immobilien in Special Designated Areas erzielen aufgrund des uneingeschränkten Zugangs ausländischer Käufer einen Aufschlag
 
-### Pricing Strategy
+### Preisstrategie
 
-- **Market price** – Average time to sell: 3-6 months
-- **5-10% above market** – Average time: 6-12 months (common in Malta)
-- **5% below market** – Quick sale within 1-3 months (creates urgency)
-- **Auction** – For distressed sales or unique properties
+- **Marktpreis** - Durchschnittliche Verkaufsdauer: 3-6 Monate
+- **5-10% über dem Marktpreis** - Durchschnittliche Verkaufsdauer: 6-12 Monate (üblich in Malta)
+- **5% unter Marktpreis** - Schneller Verkauf innerhalb von 1-3 Monaten (schafft Dringlichkeit)
+- **Auktion** - Für Notverkäufe oder einzigartige Immobilien
 
-## Step 2: Choose an Agent (or Sell Privately)
+## Schritt 2: Wählen Sie einen Makler (oder verkaufen Sie privat)
 
-### Working with Estate Agents
+### Arbeiten mit Immobilienmaklern
 
-In Malta, the seller typically pays the agent's commission:
+In Malta zahlt in der Regel der Verkäufer die Provision des Maklers:
 
-| Commission Structure | Rate | Notes |
+| Provisionsstruktur | Satz | Anmerkungen |
 |---------------------|------|-------|
-| Standard Commission | 5% + VAT (18%) | Most common |
-| Sole Agency | 3.5-4% + VAT | Exclusivity period (3-6 months) |
-| Premium/Luxury | 3-5% + VAT | Negotiable for high-value properties |
-| Dual Agency | Shared 5% | Two agents splitting the commission |
+| Standardprovision | 5% + MwSt. (18%) | Am häufigsten |
+| Alleinvertretung | 3,5-4% + MwSt. | Exklusivitätszeitraum (3-6 Monate) |
+| Premium/Luxus | 3-5% + MwSt. | verhandelbar für hochwertige Objekte |
+| Dual Agency | Geteilte 5% | Zwei Makler teilen sich die Provision |
 
-### Exclusive vs Multi-Agency
+### Exklusiv vs. Multi-Agentur
 
-| Factor | Exclusive | Multi-Agency |
+| Faktor | Exklusiv | Multi-Agentur |
 |--------|-----------|--------------|
-| Agent Motivation | High (guaranteed commission) | Lower (competing with others) |
-| Marketing Investment | Agent spends more on promotion | Minimal per-agent investment |
-| Your Effort | Single point of contact | Managing multiple agents |
-| Typical Duration | 3-6 month exclusivity clause | Open-ended |
-| Best For | Premium/luxury properties | Standard apartments |
+| Motivation des Vertreters | Hoch (garantierte Provision) | Niedrig (Wettbewerb mit anderen) |
+| Marketing-Investition | Agent gibt mehr für Werbung aus | Minimale Investition pro Agent |
+| Ihr Aufwand | Ein einziger Ansprechpartner | Verwaltung mehrerer Vertreter |
+| Typische Dauer | 3-6 Monate Exklusivitätsklausel | Unbefristet |
+| Am besten geeignet für | Premium-/Luxusimmobilien | Standardwohnungen |
 
-### Selling Privately
+### Verkaufen von privat
 
-You can sell without an agent, saving the 5% commission. However:
-- You handle all viewings, negotiations, and paperwork
-- Reduced exposure to international buyers
-- No professional marketing (photography, portals, social media)
-- You still need a notary for the legal process
+Sie können auch ohne einen Makler verkaufen und so die 5 % Provision sparen. Allerdings:
+- Sie kümmern sich um alle Besichtigungen, Verhandlungen und den Papierkram
+- Geringerer Kontakt zu internationalen Käufern
+- Kein professionelles Marketing (Fotografie, Portale, soziale Medien)
+- Sie benötigen immer noch einen Notar für das rechtliche Verfahren
 
-> **Verdict:** For properties over €500,000 or international buyer appeal, use an agent. The exposure and negotiation expertise usually pays for the commission.
+**Verdikt:** Für Immobilien über 500.000 € oder internationale Käufer sollten Sie einen Makler beauftragen. Der Bekanntheitsgrad und die Verhandlungserfahrung machen die Provision in der Regel wieder wett.
 
-## Step 3: Prepare Your Property
+## Schritt 3: Bereiten Sie Ihre Immobilie vor
 
-### Home Staging – Malta Edition
+### Home Staging - Ausgabe Malta
 
-Professional staging is uncommon in Malta but can significantly speed up sales:
+Professionelles Staging ist in Malta unüblich, kann aber den Verkauf erheblich beschleunigen:
 
-1. **Declutter ruthlessly** – Remove personal items, family photos, excess furniture
-2. **Deep clean** – Professional cleaning costs €150-€300 and makes a huge impression
-3. **Fix the basics** – Leaky taps, cracked tiles, peeling paint are deal-breakers at viewings
-4. **Natural light** – Open all blinds and shutters. Malta's sunshine is your best selling tool
-5. **Kerb appeal** – Clean the front door, plant pots, fix the doorbell
-6. **Outdoor spaces** – Stage balconies and terraces with furniture. This is what sells
+1. **Rücksichtslos entrümpeln** - Persönliche Gegenstände, Familienfotos und überflüssige Möbel entfernen
+2. **Großreinemachen** - Eine professionelle Reinigung kostet 150 bis 300 € und macht einen sehr guten Eindruck
+3. **Grundlegende Reparaturen** - Undichte Wasserhähne, rissige Fliesen, abblätternde Farbe sind bei Besichtigungen ein absolutes No-Go
+4. **Natürliches Licht** - Öffnen Sie alle Jalousien und Rollläden. Maltas Sonnenschein ist Ihr bestes Verkaufsargument
+5. **Attraktivität** - Reinigen Sie die Haustür, bepflanzen Sie Töpfe, reparieren Sie die Türklingel
+6. **Außenbereiche** - Balkone und Terrassen mit Möbeln in Szene setzen. Das ist es, was sich verkauft
 
-### Professional Photography
+### Professionelle Fotografie
 
-**This cannot be stressed enough.** In 2026, 90%+ of buyers start their search online. Poor photos mean no viewings.
+**Dies kann nicht genug betont werden. 2026 werden mehr als 90% der Käufer ihre Suche online beginnen. Schlechte Fotos bedeuten keine Besichtigungen.
 
-Budget €200-€500 for professional real estate photography including:
-- Wide-angle interior shots
-- Drone photography (especially for sea views)
-- Twilight/golden hour exterior shots
-- Floor plan (if possible)
+Planen Sie 200 bis 500 € für professionelle Immobilienfotografie ein:
+- Weitwinkelfotos von Innenräumen
+- Drohnenaufnahmen (besonders bei Meerblick)
+- Außenaufnahmen in der Dämmerung/Goldene Stunde
+- Grundriss (wenn möglich)
 
-## The Tax Implications of Selling
+## Die steuerlichen Auswirkungen des Verkaufs
 
-### Capital Gains / Property Transfer Tax
+### Kapitalerträge / Grunderwerbssteuer
 
-Malta does not have a traditional "capital gains tax" on property. Instead, sellers pay a **Final Withholding Tax (FWT)** or can opt for the standard income tax regime.
+In Malta gibt es keine traditionelle "Kapitalertragssteuer" auf Immobilien. Stattdessen zahlen Verkäufer eine **Final Withholding Tax (FWT)** oder können sich für die Standard-Einkommensteuerregelung entscheiden.
 
-#### Option A: Final Withholding Tax (most common)
+#### Option A: Endgültige Quellensteuer (am häufigsten)
 
-| Property Transfer Type | Tax Rate |
+| Art der Immobilienübertragung | Steuersatz |
 |-----------------------|----------|
-| Property acquired **before 2004** | 5% of selling price |
-| Property acquired **2004 or later** | 8% of selling price |
-| Transfer between **family members** (up to 3rd generation) | 5% of selling price |
-| Transfer from an estate (inheritance) | 5% of selling price |
-| **AIP property** (sold by foreigner) | 12% of selling price |
-| Transfer of **business property** | 10% of selling price |
+| Immobilien, die **vor 2004** erworben wurden | 5% des Verkaufspreises |
+| Immobilien, die **2004 oder später** erworben wurden | 8% des Verkaufspreises |
+| Übertragung zwischen **Familienmitgliedern** (bis zur 3. Generation) | 5% des Verkaufspreises |
+| Übertragung aus einem Nachlass (Erbschaft) | 5% des Verkaufspreises |
+| Übertragung von **AIP-Grundstücken** (von einem Ausländer verkauft) | 12% des Verkaufspreises |
+| Übertragung von **Geschäftseigentum** | 10% des Verkaufspreises |
 
-The FWT is calculated on the **full selling price**, not the profit. This is an important distinction – even if you sell at a loss, you still pay the FWT.
+Die FWT wird auf den **vollständigen Verkaufspreis** berechnet, nicht auf den Gewinn. Dies ist eine wichtige Unterscheidung - selbst wenn Sie mit Verlust verkaufen, zahlen Sie trotzdem die FWT.
 
-#### Option B: Standard Income Tax on Profit
+#### Option B: Normale Einkommensteuer auf den Gewinn
 
-You can opt to pay income tax on the actual profit (selling price minus purchase price minus eligible expenses) instead of the FWT. This may be beneficial if:
-- You're selling at a small profit or a loss
-- You made significant improvements that can be documented
-- Your combined income puts you in a lower tax bracket
+Sie können sich dafür entscheiden, die Einkommensteuer auf den tatsächlichen Gewinn (Verkaufspreis minus Kaufpreis minus förderfähige Ausgaben) zu zahlen, statt auf die FWT. Dies kann von Vorteil sein, wenn:
+- Sie verkaufen mit einem geringen Gewinn oder Verlust
+- Sie erhebliche Verbesserungen vorgenommen haben, die dokumentiert werden können
+- Ihr kombiniertes Einkommen Sie in eine niedrigere Steuerklasse bringt
 
-Eligible deductions include:
-- Original purchase price
-- Stamp duty paid when buying
-- Notary fees paid when buying
-- Cost of documented improvements (with receipts/permits)
+Folgende Abzüge sind möglich:
+- Ursprünglicher Kaufpreis
+- Beim Kauf gezahlte Stempelsteuer
+- Beim Kauf gezahlte Notargebühren
+- Kosten für dokumentierte Verbesserungen (mit Belegen/Genehmigungen)
 
-> **Example:** You bought for €300,000, spent €50,000 on renovation, and sell for €400,000. Your profit is €50,000. Under FWT (8%): you'd pay €32,000 on the selling price. Under income tax: you'd potentially pay less depending on your tax bracket. **Always consult a tax advisor.**
+**Beispiel:** Sie haben für 300.000 € gekauft, 50.000 € für die Renovierung ausgegeben und verkaufen für 400.000 €. Ihr Gewinn beträgt 50.000 €. Bei der FWT (8 %) würden Sie 32 000 € auf den Verkaufspreis zahlen. Bei der Einkommensteuer: Je nach Steuerklasse zahlen Sie möglicherweise weniger. **Lassen Sie sich immer von einem Steuerberater beraten
 
-### Other Seller Costs
+### Sonstige Kosten des Verkäufers
 
-| Cost | Typical Amount |
+| Kosten | Typischer Betrag |
 |------|----------------|
-| Agent Commission (5% + VAT) | €25,000 + VAT on €500k sale |
-| Notary Fees (seller's share) | €500-€1,500 |
-| Energy Performance Certificate (EPC) | €100-€250 |
-| Outstanding Ground Rent | Variable – typically €100-€500/year |
-| Condo Fees (outstanding) | Must be cleared before sale |
+| Maklerprovision (5% + MwSt.) | 25.000 € + MwSt. bei einem Verkauf von 500.000 € |
+| Notargebühren (Anteil des Verkäufers) | €500-€1.500 |
+| Energieausweis (EPC) | €100-€250 |
+| Ausstehende Grundmiete | Variabel - in der Regel €100-€500/Jahr |
+| Eigentumswohnungsgebühren (ausstehend) | Muss vor dem Verkauf geklärt werden |
 
-## The Legal Process
+## Der rechtliche Prozess
 
-### Konvenju (Seller's Perspective)
+### Konvenju (Sicht des Verkäufers)
 
-As a seller, when the konvenju is signed:
-- You receive the **10% deposit** (held by the notary)
-- You must **vacate** by the agreed final deed date
-- You cannot sell to another buyer during the konvenju period
-- If you default, you must return the deposit **plus** an equal 10% penalty
+Als Verkäufer, wenn die Konvenju unterzeichnet ist:
+- Sie erhalten die **10%ige Anzahlung** (vom Notar einbehalten)
+- Sie müssen **bis zum vereinbarten Datum des endgültigen Kaufvertrags räumen**
+- Sie können während der Dauer der Konvenju nicht an einen anderen Käufer verkaufen
+- Wenn Sie in Verzug geraten, müssen Sie die Kaution **zusätzlich** zu einer Strafe in Höhe von 10% zurückzahlen
 
-### Seller's Due Diligence Obligations
+### Die Sorgfaltspflichten des Verkäufers
 
-To avoid delays, prepare these documents in advance:
-1. **Proof of ownership** – original deed of acquisition
-2. **Planning permits** – for the property and any additions/alterations
-3. **Architect's certificate** – if the property was recently built or renovated
-4. **ARMS utility statements** – showing accounts are current
-5. **Condominium declarations** – proof that fees are paid
-6. **Ground rent receipts** – if applicable (enfiteusi properties)
+Um Verzögerungen zu vermeiden, bereiten Sie diese Dokumente im Voraus vor:
+1. **Eigentumsnachweis** - Original der Kaufvertragsurkunde
+2. **Planungsgenehmigungen** - für das Grundstück und etwaige An- und Umbauten
+3. **Bescheinigung des Architekten** - wenn die Immobilie kürzlich gebaut oder renoviert wurde
+4. **Abrechnungen der Versorgungsunternehmen**, aus denen hervorgeht, dass die Konten aktuell sind
+5. **Wohnungseigentumserklärungen** - Nachweis, dass die Gebühren bezahlt wurden
+6. **Quittungen über die Grundmiete** - falls zutreffend (Enfiteusi-Eigentum)
 
-### Final Deed
+### Endgültige Urkunde
 
-On deed day, you:
-1. Receive the **remaining 90%** of the purchase price
-2. Hand over keys, remote controls, manuals
-3. The notary handles all tax payments and registrations
-4. Ownership officially transfers to the buyer
+Am Tag der Beurkundung, Sie:
+1. Sie erhalten die **verbleibenden 90%** des Kaufpreises
+2. Übergabe von Schlüsseln, Fernbedienungen, Handbüchern
+3. Der Notar erledigt alle Steuerzahlungen und Anmeldungen
+4. Das Eigentum geht offiziell auf den Käufer über
 
-## How Long Does It Take to Sell?
+## Wie lange dauert der Verkauf?
 
-Average selling timelines in Malta (2026):
+Durchschnittliche Verkaufsfristen in Malta (2026):
 
-| Property Type | Location | Average Time to Sell |
+| Immobilientyp | Standort | Durchschnittliche Verkaufsdauer |
 |--------------|----------|---------------------|
-| 2-bed apartment | Sliema/St. Julian's | 2-4 months |
-| 3-bed apartment | Sliema/St. Julian's | 3-5 months |
-| Villa/House | Attard/Madliena | 4-8 months |
-| Palazzo/Character | Valletta/Mdina | 6-12+ months |
-| New Build (off-plan) | Various | 1-3 months (developer) |
-| Investment property (tenanted) | Any | 3-6 months |
+| 2-Bett-Wohnung | Sliema/St. Julian's | 2-4 Monate |
+| 3-Bett-Wohnung | Sliema/St. Julian's | 3-5 Monate |
+| Villa/Haus | Attard/Madliena | 4-8 Monate |
+| Palazzo/Charakter | Valletta/Mdina | 6-12+ Monate |
+| Neubau (off-plan) | Verschiedene | 1-3 Monate (Bauträger) |
+| Anlageobjekt (vermietet) | Beliebig | 3-6 Monate |
 
-> **Tip:** Properties priced correctly from day one sell 60% faster than those that undergo multiple price reductions.
+**Tipp:** Immobilien, bei denen der Preis vom ersten Tag an richtig festgesetzt wurde, verkaufen sich 60 % schneller als solche, bei denen der Preis mehrfach gesenkt wurde.
 
-## Frequently Asked Questions
+## Häufig gestellte Fragen
 
-### How much tax do I pay when selling property in Malta?
-Sellers typically pay a Final Withholding Tax of 5% (property acquired before 2004) or 8% (acquired 2004 or later) of the full selling price. Foreigners holding AIP-purchased property pay 12%. You can alternatively opt to pay income tax on the actual profit, which may be lower in some cases.
+### Wie viel Steuern muss ich zahlen, wenn ich eine Immobilie auf Malta verkaufe?
+Verkäufer zahlen in der Regel eine Abgeltungssteuer in Höhe von 5 % (vor 2004 erworbene Immobilien) bzw. 8 % (2004 oder später erworbene Immobilien) des gesamten Verkaufspreises. Ausländer, die AIP-gekaufte Immobilien besitzen, zahlen 12 %. Alternativ können Sie sich dafür entscheiden, Einkommensteuer auf den tatsächlichen Gewinn zu zahlen, der in einigen Fällen niedriger sein kann.
 
-### Do I need an agent to sell my property in Malta?
-No, you can sell privately. However, using an IPS-regulated agent gives you access to professional marketing, their buyer database, and negotiation expertise. The standard commission is 5% + VAT, paid by the seller.
+### Brauche ich einen Makler, um meine Immobilie in Malta zu verkaufen?
+Nein, Sie können privat verkaufen. Wenn Sie jedoch einen IPS-regulierten Makler beauftragen, haben Sie Zugang zu professionellem Marketing, einer Käuferdatenbank und Verhandlungserfahrung. Die Standardprovision beträgt 5 % + MwSt. und wird vom Verkäufer gezahlt.
 
-### How long does it take to sell property in Malta?
-Correctly priced apartments in popular areas (Sliema, St. Julian's) typically sell within 2-5 months. Villas and character homes take 4-12 months. Overpriced properties can sit on the market for 12+ months.
+### Wie lange dauert es, eine Immobilie auf Malta zu verkaufen?
+Wohnungen in beliebten Gegenden (Sliema, St. Julian's) zu einem angemessenen Preis werden in der Regel innerhalb von 2-5 Monaten verkauft. Villen und charakteristische Häuser brauchen 4-12 Monate. Überteuerte Immobilien können mehr als 12 Monate auf dem Markt verweilen.
 
-### What documents do I need to sell my property?
-You need your original deed of acquisition, valid planning permits for all structures, recent utility statements, condominium fee receipts, and an Energy Performance Certificate (EPC). Having these ready before listing avoids delays.
+### Welche Dokumente benötige ich, um meine Immobilie zu verkaufen?
+Sie benötigen die Original-Erwerbsurkunde, gültige Baugenehmigungen für alle Bauwerke, aktuelle Abrechnungen der Versorgungsunternehmen, Quittungen für die Wohnungseigentumsgebühren und einen Energieausweis (EPC). Wenn Sie diese Unterlagen vor dem Verkauf bereithalten, lassen sich Verzögerungen vermeiden.
 
-### Can I sell a property I bought with an AIP permit?
-Yes, but the AIP property carries a 12% Final Withholding Tax on the selling price. If selling to another foreigner outside an SDA, the buyer will need their own AIP permit.
+### Kann ich eine Immobilie verkaufen, die ich mit einer AIP-Genehmigung erworben habe?
+Ja, aber auf die AIP-Immobilie wird eine Quellensteuer von 12 % auf den Verkaufspreis erhoben. Beim Verkauf an einen Ausländer außerhalb einer SDA benötigt der Käufer eine eigene AIP-Genehmigung.
 
 ## List Your Property with Malta Luxury Real Estate
 
-Reach qualified international buyers through our premium portal, featuring targeted marketing, professional photography support, and direct enquiry management.
+Erreichen Sie qualifizierte internationale Käufer über unser Premium-Portal mit gezieltem Marketing, professioneller Fotounterstützung und direktem Anfragenmanagement.

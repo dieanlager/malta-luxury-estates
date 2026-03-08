@@ -1,304 +1,303 @@
 ---
-title: "SDA Properties Malta 2026 – Complete List of Special Designated Area Projects"
+title: "SDA Properties Malta 2026 - Liste complète des projets de zones spécialement désignées"
 category: "Buying"
-excerpt: "Special Designated Areas (SDAs) are the only properties in Malta that any nationality can buy without an AIP permit. This complete, updated list covers every active SDA development, with prices, unit types, amenities, and investment analysis."
-metaDescription: "Complete 2026 list of Special Designated Areas (SDA) in Malta. Discover luxury developments like Portomaso and Tigne Point where any nationality can buy without an AIP permit."
+excerpt: "Les zones spéciales désignées (SDA) sont les seules propriétés à Malte que toute nationalité peut acheter sans permis AIP. Cette liste complète et mise à jour couvre tous les développements actifs des SDA, avec les prix, les types d'unités, les équipements et l'analyse de l'investissement."
+metaDescription: "Liste complète 2026 des zones spécialement désignées (SDA) à Malte. Découvrez les développements de luxe comme Portomaso et Tigne Point où toute nationalité peut acheter sans permis AIP."
 image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
-readTime: "19 min read"
+readTime: "19 min de lecture"
 author: "Malta Luxury Real Estate"
 slug: "sda-projects-complete-list-malta-2026"
+localizedSlug: "sda-properties-malta-2026-liste-complete-des"
 lang: fr
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# SDA Properties Malta 2026 – Complete List of Special Designated Area Projects
+# SDA Properties Malta 2026 - Liste complète des projets de zones spécialement désignées
 
-Special Designated Areas (SDAs) are government-approved developments where any nationality can purchase property without needing an Acquisition of Immovable Property (AIP) permit. SDAs represent the premium segment of Malta's property market – purpose-built, typically high-specification developments with professional management, communal amenities, and strong resale and rental performance.
+Les zones spéciales désignées (SDA) sont des développements approuvés par le gouvernement où toute nationalité peut acheter une propriété sans avoir besoin d'un permis d'acquisition de propriété immobilière (AIP). Les SDA représentent le segment haut de gamme du marché immobilier maltais. Il s'agit d'ensembles immobiliers construits à cet effet, généralement de haute qualité, avec une gestion professionnelle, des équipements collectifs et de bonnes performances en matière de revente et de location.
 
-## What Is an SDA and Why Does It Matter?
+## Qu'est-ce qu'un SDA et pourquoi est-ce important ?
 
-### The AIP Restriction
+### La restriction de l'AIP
 
-Under Maltese law, non-Maltese nationals (including EU citizens) need an AIP permit to purchase residential property in Malta. The AIP limits you to **one property** for personal use and requires that the property meets minimum value thresholds (currently €143,420 for apartments, €247,696 for other property types).
+Selon la loi maltaise, les ressortissants non maltais (y compris les citoyens de l'UE) ont besoin d'un permis AIP pour acheter une propriété résidentielle à Malte. L'AIP vous limite à **une propriété** pour votre usage personnel et exige que la propriété atteigne des seuils de valeur minimum (actuellement 143 420 € pour les appartements, 247 696 € pour les autres types de propriété).
 
-### The SDA Exception
+### L'exception SDA
 
-Properties within designated SDAs are **exempt from AIP requirements**. This means:
+Les propriétés situées dans les ZDS désignées sont **exemptées des exigences de l'AIP**. Cela signifie que :
 
-- **Any nationality** can buy without restriction
-- **No limit** on the number of SDA properties you can own
-- **No minimum value** threshold (though SDA properties are typically premium-priced)
-- **Resale** to any nationality is unrestricted
-- **Rental** is permitted without restriction
+- **Toute nationalité** peut acheter sans restriction
+- **Aucune limite** quant au nombre de propriétés SDA que vous pouvez posséder
+- **Pas de seuil de valeur minimum** (bien que les propriétés SDA soient généralement vendues à des prix élevés)
+- **La revente** à toute nationalité n'est soumise à aucune restriction
+- **La location** est autorisée sans restriction
 
-> **Bottom line for foreign buyers:** SDAs are the most straightforward way to build a Maltese property portfolio. No bureaucratic permit process, no restrictions on quantity, no resale limitations.
+> Les SDA sont le moyen le plus simple de se constituer un portefeuille immobilier à Malte. Pas de procédure bureaucratique d'obtention de permis, pas de restrictions sur la quantité, pas de limitations sur la revente.
 
-## The Complete SDA List: Malta 2026
+## La liste complète des SDA : Malte 2026
 
-### Portomaso – St Julian's
+### Portomaso - St Julian's
 
-| Detail | Information |
+| Détails | Informations |
 |--------|-------------|
-| Developer | Tumas Group |
-| Location | St Julian's, seafront |
-| Status | Completed (operational since 2001) |
-| Total units | ~450 apartments + commercial |
-| Amenities | Marina (120 berths), Hilton Hotel, restaurants, business tower, supermarket, gym, pool |
-| Unit types | 1-bed to 4-bed apartments, penthouses |
-| Price range (2026) | €350,000 (1-bed) – €3,500,000 (penthouse) |
-| Typical 2-bed | €500,000–€800,000 |
-| Rental yield | 4.5–6.0% |
-| Service charge | €1,200–€3,000/year |
+| Développeur : Tumas Group
+| Emplacement : St Julian's, front de mer
+| Statut : Achevé (opérationnel depuis 2001)
+| Nombre total d'unités : ~450 appartements + commerces
+| Aménagement : Marina (120 postes d'amarrage), hôtel Hilton, restaurants, tour d'affaires, supermarché, salle de sport, piscine
+| Type d'unités : appartements de 1 à 4 chambres, penthouses
+| Gamme de prix (2026) | 350 000 € (1 lit) - 3 500 000 € (penthouse) |
+| Appartement typique de 2 lits : 500 000 € - 800 000 €
+| Rendement locatif : 4,5-6,0 %
+| Frais de service : 1 200 € - 3 000 €/an
 
-**Why investors love Portomaso:**
-- Malta's most established luxury development
-- Marina creates a unique lifestyle proposition
-- Hilton Hotel drives short-let demand (spillover guests)
-- Consistently strong resale values – has outperformed wider Malta market
-- Full professional management
-- iGaming company offices in the business tower = built-in tenant demand
+**Pourquoi les investisseurs aiment Portomaso:**
+- Le développement de luxe le plus établi de Malte
+- Marina crée une proposition de style de vie unique
+- L'hôtel Hilton stimule la demande de location à court terme (clients indirects)
+- Les valeurs de revente sont constamment élevées - elles ont surpassé le marché maltais dans son ensemble
+- Gestion professionnelle complète
+- bureaux de la société iGaming dans la tour d'affaires = demande de location intégrée
 
-**Considerations:**
-- Aging infrastructure (20+ years old in some phases)
-- Higher service charges than newer developments
-- Parking can be challenging
+**Considérations:**
+- Infrastructure vieillissante (plus de 20 ans dans certaines phases)
+- Frais de service plus élevés que dans les nouveaux développements
+- Le stationnement peut être difficile
 
-### Tigné Point – Sliema
+### Tigné Point - Sliema
 
-| Detail | Information |
+| Tigné Point - Sliema
 |--------|-------------|
-| Developer | MIDI plc |
-| Location | Tigné Point, Sliema (peninsula) |
-| Status | Mostly completed (final phases completing) |
-| Total units | ~700 apartments + The Point shopping centre |
-| Amenities | The Point Shopping Mall, Fortina Spa, pools, gardens, underground parking, 24/7 security |
-| Unit types | Studios to 4-bed penthouses |
-| Price range (2026) | €300,000 (studio) – €4,000,000+ (penthouse) |
-| Typical 2-bed | €500,000–€900,000 |
-| Rental yield | 4.5–5.5% |
-| Service charge | €1,500–€4,000/year |
+| Développeur : MIDI plc
+| Tigné Point, Sliema (péninsule)
+| Etat d'avancement : en grande partie achevé (phases finales en cours d'achèvement)
+| Nombre total d'unités : ~700 appartements + centre commercial The Point
+| Le centre commercial The Point, le spa Fortina, les piscines, les jardins, les parkings souterrains, la sécurité 24/7
+| Types d'unités : du studio à l'appartement-terrasse de 4 chambres
+| Gamme de prix (2026) : 300 000 € (studio) - 4 000 000 € et plus (penthouse)
+| Appartement typique à 2 lits : 500 000 € - 900 000 €
+| Rendement locatif : 4,5-5,5%
+| Frais de service : 1 500 € - 4 000 €/an
 
-**Why investors love Tigné Point:**
-- Premium Sliema location – walkable to seafront, ferries to Valletta
-- The Point shopping centre adds enormous lifestyle convenience
-- High-specification finishes
-- Strong demand from corporate tenants and HNWIs
-- Likely Malta's most prestigious residential address
+**Pourquoi les investisseurs aiment Tigné Point:**
+- Emplacement de choix à Sliema - accès à pied au front de mer, ferries pour La Valette
+- Le centre commercial The Point ajoute une grande commodité à la vie de tous les jours
+- Finitions haut de gamme
+- Forte demande de la part des entreprises locataires et des HNWIs
+- Probablement l'adresse résidentielle la plus prestigieuse de Malte
 
-**Considerations:**
-- High entry price
-- Service charges are among Malta's highest
-- Some units lack sea views (internal-facing)
+**Considérations:**
+- Prix d'entrée élevé
+- Les frais de service sont parmi les plus élevés de Malte
+- Certaines unités n'ont pas de vue sur la mer (orientation interne)
 
-### Fort Cambridge – Sliema
+### Fort Cambridge - Sliema
 
-| Detail | Information |
+| Fort Cambridge - Sliema - Sliema - Sliema - Sliema - Sliema - Sliema
 |--------|-------------|
-| Developer | MIDI plc |
-| Location | Tigné, Sliema (adjacent to Tigné Point) |
-| Status | Various phases – some completed, some under construction |
-| Total units | ~500+ (when fully complete) |
-| Amenities | Pools, gym, gardens, underground parking, security |
-| Unit types | 1-bed to 3-bed apartments, penthouses |
-| Price range (2026) | €280,000 (1-bed) – €2,500,000 (penthouse) |
-| Typical 2-bed | €400,000–€700,000 |
-| Rental yield | 5.0–6.0% |
-| Service charge | €1,200–€2,500/year |
+| Développeur : MIDI plc
+| Le projet est situé à Tigné, Sliema (à côté de Tigné Point)
+| Le projet est en cours de construction et les travaux sont en cours
+| Nombre total d'unités : ~500+ (lorsque le projet sera entièrement achevé)
+| Equipements : piscines, salle de sport, jardins, parkings souterrains, sécurité
+| Types d'unités : appartements de 1 à 3 chambres, penthouses
+| Gamme de prix (2026) | 280 000 € (1 lit) - 2 500 000 € (penthouse) |
+| Appartement typique de 2 lits : 400 000 € - 700 000 €
+| Rendement locatif : 5,0-6,0 %
+| Frais de service : 1 200 € - 2 500 €/an
 
-**Why investors love Fort Cambridge:**
-- Slightly lower entry point than Tigné Point with similar location
-- Newer construction phases offer modern specifications
-- Benefits from the Tigné ecosystem (shopping, dining, transport)
-- Heritage elements (restored fort structures) add character
+**Pourquoi les investisseurs aiment Fort Cambridge:**
+- Point d'entrée légèrement inférieur à celui de Tigné Point avec un emplacement similaire
+- Les phases de construction les plus récentes offrent des spécifications modernes
+- Bénéficie de l'écosystème de Tigné (shopping, restauration, transport)
+- Les éléments patrimoniaux (structures restaurées du fort) ajoutent du caractère
 
-### Pendergardens – St Julian's
+### Pendergardens - St Julian's
 
-| Detail | Information |
+| Pendergardens - St Julian's
 |--------|-------------|
-| Developer | Pender Development Ltd |
-| Location | St Julian's, near Paceville |
-| Status | Completed |
-| Total units | ~430 apartments |
-| Amenities | Pool, gym, commercial spaces, underground parking |
-| Unit types | Studios to 3-bed apartments |
-| Price range (2026) | €180,000 (studio) – €650,000 (3-bed) |
-| Typical 2-bed | €300,000–€450,000 |
-| Rental yield | 5.5–7.0% |
-| Service charge | €800–€1,800/year |
+| Développeur : Pender Development Ltd
+| Emplacement : St Julian's, près de Paceville
+| Statut : Achevé
+| Nombre total d'unités : ~430 appartements
+| Piscine, salle de sport, espaces commerciaux, parking souterrain
+| Type d'unités : Studios à appartements de 3 chambres
+| Gamme de prix (2026) | 180 000 € (studio) - 650 000 € (3 chambres)
+| Appartement typique à 2 lits : 300 000 € - 450 000 €
+| Rendement locatif : 5,5-7,0 %
+| Frais de service : 800 € - 1 800 €/an
 
-**Why investors love Pendergardens:**
-- Most accessible SDA entry point in St Julian's
-- High rental demand from iGaming professionals
-- Modern construction, recent completion
-- Good yield-to-price ratio
+**Pourquoi les investisseurs aiment Pendergardens:**
+- Point d'entrée SDA le plus accessible à St Julian's
+- Forte demande locative de la part des professionnels de l'iGaming
+- Construction moderne, achèvement récent
+- Bon rapport rendement/prix
 
-**Considerations:**
-- Near Paceville – noise can be an issue for upper floors facing the bay
-- Higher density than Portomaso or Tigné
-- Less "prestige" positioning than waterfront SDAs
+**Considérations:**
+- Près de Paceville - le bruit peut être un problème pour les étages supérieurs donnant sur la baie
+- Densité plus élevée que Portomaso ou Tigné
+- Positionnement moins "prestigieux" que les ZDS du front de mer
 
-### Mercury Towers – St Julian's
+### Mercury Towers - St Julian's
 
-| Detail | Information |
+| Le projet de la tour Mercury - St Julian's - est en cours de réalisation
 |--------|-------------|
-| Developer | Mercury Projects |
-| Location | St Julian's, seafront (on the site of Mercury House) |
-| Status | Completed and operational |
-| Total units | ~150+ luxury apartments |
-| Amenities | Private beach club, infinity pool, Zaha Hadid-designed tower, concierge, spa, sky lounge |
-| Unit types | 1-bed to 4-bed + exclusive penthouses |
-| Price range (2026) | €500,000 (1-bed) – €5,000,000+ (penthouse) |
-| Typical 2-bed | €700,000–€1,200,000 |
-| Rental yield | 4.0–5.5% |
-| Service charge | €2,500–€6,000/year |
+| Développeur : Mercury Projects
+| Le bâtiment est situé à St Julian's, sur le front de mer (sur le site de Mercury House)
+| Statut - Achevé et opérationnel - Nombre total d'unités - ~150+ unités de luxe
+| Total des unités - ~150+ appartements de luxe - ~150+ appartements de luxe - ~ 150+ appartements de luxe - ~ 150+ appartements de luxe
+| Equipements : club de plage privé, piscine à débordement, tour conçue par Zaha Hadid, conciergerie, spa, sky lounge
+| Types d'unités : 1 à 4 lits + penthouses exclusifs
+| Gamme de prix (2026) : 500 000 € (1 lit) - 5 000 000 € et plus (penthouse)
+| Appartement typique de 2 lits : 700 000 € - 1 200 000 €
+| Rendement locatif : 4,0-5,5 %
+| Frais de service : 2 500 € - 6 000 €/an
 
-**Why investors love Mercury Towers:**
-- Ultra-premium positioning – the Zaha Hadid design is iconic
-- Private beach club is unique in Malta
-- Highest specification finishes on the island
-- Attracts ultra-HNW buyers and tenants
+**Pourquoi les investisseurs aiment les Tours Mercure:**
+- Positionnement ultra-premium - le design de Zaha Hadid est emblématique
+- Le club de plage privé est unique à Malte
+- Les finitions les plus sophistiquées de l'île
+- Attire les acheteurs et les locataires ultra-hauts de gamme
 
-**Considerations:**
-- Very high entry price
-- High service charges
-- Yield percentages are lower (but absolute rental income is very high)
+**Considérations:**
+- Prix d'entrée très élevé
+- Frais de service élevés
+- Les pourcentages de rendement sont plus faibles (mais les revenus locatifs absolus sont très élevés)
 
-### SmartCity Malta – Kalkara
+### SmartCity Malta - Kalkara
 
-| Detail | Information |
+| SmartCity Malta - Kalkara
 |--------|-------------|
-| Developer | SmartCity Malta (joint venture with Dubai's TECOM) |
-| Location | Kalkara, south-east Malta |
-| Status | Phase 1 completed, ongoing development |
-| Total units | Mixed residential and commercial – residential component ~200+ units |
-| Amenities | Business park, co-working spaces, landscaped gardens |
-| Unit types | 1-bed to 3-bed apartments |
-| Price range (2026) | €190,000 (1-bed) – €400,000 (3-bed) |
-| Typical 2-bed | €250,000–€350,000 |
-| Rental yield | 5.5–7.0% |
-| Service charge | €600–€1,500/year |
+| SmartCity Malta (joint venture avec TECOM de Dubaï)
+| Localisation : Kalkara, sud-est de l'île de Malte
+| Statut : Phase 1 achevée, développement en cours
+| Le projet est en cours de développement et la phase 1 est achevée
+| Le projet est en cours d'achèvement et la phase de développement est en cours
+| Type d'unités : appartements de 1 à 3 lits
+| Gamme de prix (2026) | 190 000 € (1 lit) - 400 000 € (3 lits) |
+| Appartement typique de 2 lits : 250 000 € - 350 000 €
+| Rendement locatif : 5,5-7,0 %
+| Frais de service : 600 € - 1 500 €/an
 
-**Why investors love SmartCity:**
-- Lowest SDA entry price on Malta (not counting Gozo)
-- Integrated business park creates on-site tenant demand
-- Modern, energy-efficient construction
-- Good yield potential relative to price
+**Pourquoi les investisseurs aiment SmartCity:**
+- Prix d'entrée SDA le plus bas à Malte (sans compter Gozo)
+- Le parc d'affaires intégré crée une demande de locataires sur place
+- Construction moderne et économe en énergie
+- Bon potentiel de rendement par rapport au prix
 
-**Considerations:**
-- Location is less central than Sliema/St Julian's SDAs
-- Lower prestige/brand recognition
-- Surrounding area is still developing
+**Considérations:**
+- Emplacement moins central que celui de Sliema/St Julian's SDAs
+- Moins de prestige/reconnaissance de la marque
+- La zone environnante est encore en développement
 
-### Manoel Island – Gżira
+### Île de Manoel - Gżira
 
-| Detail | Information |
+| Le site de l'île Manoel - Gżira - est situé sur l'île de Manoel
 |--------|-------------|
-| Developer | MIDI plc |
-| Location | Manoel Island, Gżira (connected by bridge to Gżira waterfront) |
-| Status | Planning and early development phase |
-| Total units | Planned: 500+ residential units |
-| Amenities | Planned: yacht marina, Fort Manoel restoration, waterfront promenades, commercial spaces |
-| Unit types | TBC – expected 1-bed to penthouse |
-| Price range (expected) | €350,000–€2,000,000+ |
-| Rental yield (projected) | 5.0–6.5% |
-| Service charge | TBC |
+| Développeur : MIDI plc
+| Île Manoel, Gżira (reliée par un pont au front de mer de Gżira)
+| État d'avancement : phase de planification et de développement préliminaire
+| Unités totales | Prévues : 500+ unités résidentielles
+| Aménagements : port de plaisance, restauration de Fort Manoel, promenades sur le front de mer, espaces commerciaux
+| Type d'unités : à déterminer - du 1 au penthouse
+| Fourchette de prix (prévue) | 350 000 € - 2 000 000 €+ | Rendement locatif (prévu)
+| Rendement locatif (prévu) | 5,0-6,5% |
+| Frais de service - TBC
 
-**Why this is exciting:**
-- Potentially the most significant new SDA in a decade
-- Island setting with Valletta views – unique positioning
-- Fort Manoel restoration adds heritage prestige
-- MIDI plc has a strong track record (Tigné Point, Fort Cambridge)
-- Early entry buyers may see significant appreciation during development
+**Pourquoi c'est passionnant:**
+- Potentiellement la nouvelle SDA la plus importante depuis une décennie
+- Situation sur l'île avec vue sur La Valette - positionnement unique
+- La restauration de Fort Manoel ajoute au prestige du patrimoine
+- MIDI plc a de solides antécédents (Tigné Point, Fort Cambridge)
+- Les acquéreurs précoces peuvent bénéficier d'une plus-value significative pendant le développement
 
-**Considerations:**
-- Still in development – not available for immediate purchase
-- Final specifications and pricing not confirmed
-- Construction timeline may extend
+**Considérations:**
+- Encore en développement - pas disponible pour un achat immédiat
+- Les spécifications et les prix définitifs n'ont pas été confirmés
+- Le calendrier de construction peut être prolongé
 
-### Gozo SDAs
+### SDAs de Gozo
 
-**Kempinski Residences – San Lawrenz, Gozo**
+**Résidences Kempinski - San Lawrenz, Gozo**
 
-| Detail | Information |
+| Informations sur l'hôtel de ville
 |--------|-------------|
-| Developer | Various (associated with the Kempinski Hotel development) |
-| Location | San Lawrenz, rural Gozo |
-| Status | Completed |
-| Unit types | Apartments and villas |
-| Price range | €250,000–€800,000 |
-| Rental yield | 5.0–7.0% |
-| Amenities | Access to hotel facilities, pool, spa, restaurant |
+| Le promoteur est divers (associé au développement de l'hôtel Kempinski)
+| Localisation : San Lawrenz, zone rurale de Gozo
+| Statut : Achevé
+| Type d'unités : Appartements et villas
+| Gamme de prix : 250 000 € - 800 000 €
+| Rendement locatif : 5,0-7,0 %
+| Accès aux installations de l'hôtel, à la piscine, au spa, au restaurant |
 
-**Fort Chambray – Għajnsielem, Gozo**
+**Fort Chambray - Għajnsielem, Gozo**
 
-| Detail | Information |
+| Détails | Informations |
 |--------|-------------|
-| Location | Għajnsielem, near the Gozo ferry terminal |
-| Status | Partially completed, ongoing restoration |
-| Unit types | Apartments within converted fort structures |
-| Price range | €180,000–€500,000 |
-| Character | Heritage restoration, unique architecture |
-| Amenities | Pool, communal gardens, restaurant |
+| Le fort Chambray est situé à Għajnsielem, près de la gare maritime de Gozo
+| Statut : Partiellement achevé, restauration en cours
+| Type d'unité : Appartements dans des structures de fort converties
+| Gamme de prix : 180 000 € - 500 000 €
+| Caractéristiques : restauration du patrimoine, architecture unique
+| Piscine, jardins communaux, restaurant |
 
-## SDA vs Non-SDA: Comparative Analysis
+## SDA vs Non-SDA : Analyse comparative
 
-| Factor | SDA Property | Non-SDA Property |
+| Facteur d'attractivité : Propriété SDA | Propriété non SDA | Facteur d'attractivité : Propriété SDA | Propriété non SDA
 |--------|-------------|-----------------|
-| AIP permit required | No | Yes (non-Maltese buyers) |
-| Purchase limit | Unlimited | One property (AIP) |
-| Resale to foreigners | Unrestricted | AIP transfer required |
-| Price level | Premium (15–30% above comparable non-SDA) | Market rate |
-| Specifications | Typically high | Varies widely |
-| Building management | Professional, ongoing | Often strata-managed or individual |
-| Service charges | €600–€6,000/year | Usually minimal or none |
-| Rental demand | Strong (expat/corporate) | Strong (broader market) |
-| Capital appreciation | Consistent, strong | Varies by area |
-| Liquidity (resale speed) | High – unrestricted buyer pool | Lower – restricted to AIP holders or Maltese |
+| Permis AIP requis - Non - Oui (pour les acheteurs non maltais)
+| Les biens immobiliers de la SDA ne sont pas soumis à l'obligation de permis AIP
+| Revente à des étrangers - Sans restriction - Transfert de l'AIP nécessaire
+| Niveau de prix | Prime (15-30% au-dessus d'un bien comparable non-SDA) | Taux du marché
+| Spécifications | Généralement élevé | Variable selon les cas
+| Gestion de l'immeuble | Professionnelle, continue | Souvent gérée par la copropriété ou individuelle
+| Charges locatives | 600 € - 6 000 €/an | Généralement minimes ou nulles |
+| Demande de location | Forte (expatriés/entreprises) | Forte (marché général) |
+| Plus-value en capital | Cohérente, forte | Variable selon les zones
+liquidité (vitesse de revente) | Elevée - pool d'acheteurs sans restriction | Plus faible - limitée aux détenteurs d'un AIP ou aux Maltais | Liquidité (vitesse de revente) | Liquidité (vitesse de revente)
 
-## Investment Strategy: Which SDA to Choose?
+## Stratégie d'investissement : Quelle SDA choisir ?
 
-### For Maximum Yield
-**Pendergardens** or **SmartCity** – lower entry price relative to rental income. Target iGaming professionals and young expats.
+### Pour un rendement maximum
+**Pendergardens** ou **SmartCity** - prix d'entrée plus bas par rapport au revenu locatif. Cible les professionnels de l'iGaming et les jeunes expatriés.
 
-### For Capital Appreciation
-**Manoel Island** (early entry) or **Tigné Point** – established prestige with scarcity value. Manoel Island has asymmetric upside as the development progresses.
+### Pour l'appréciation du capital
+**L'île de Manoel** (entrée précoce) ou **Tigné Point** - prestige établi avec valeur de rareté. L'île de Manoel a un potentiel asymétrique à mesure que le développement progresse.
 
-### For Premium Tenants (Corporate/HNW)
-**Portomaso** or **Mercury Towers** – the highest quality attracts the highest-paying tenants. Corporate relocation packages typically include accommodation budgets of €2,500–€5,000/month.
+### Pour les locataires haut de gamme (entreprises/HNW)
+**Portomaso** ou **Mercury Towers** - la plus haute qualité attire les locataires les mieux payés. Les programmes de relocalisation des entreprises comprennent généralement des budgets de logement de 2 500 à 5 000 euros par mois.
 
-### For Gozo Exposure
-**Fort Chambray** or **Kempinski Residences** – Gozo SDA pricing is significantly lower than Malta. If the Gozo tunnel proceeds, these properties will see outsized appreciation.
+### Pour Gozo Exposure
+**Fort Chambray** ou **Kempinski Residences** - le prix du SDA de Gozo est nettement inférieur à celui de Malte. Si le tunnel de Gozo se réalise, ces propriétés connaîtront une forte appréciation.
 
-### For Budget Entry
-**SmartCity** (Malta) or **Fort Chambray** (Gozo) – sub-€200,000 entry points with SDA benefits.
+### Pour l'entrée dans le budget
+**SmartCity** (Malte) ou **Fort Chambray** (Gozo) - points d'entrée à moins de 200 000 € avec des avantages SDA.
 
-## Frequently Asked Questions
+## Foire aux questions
 
-### Can any nationality buy SDA property in Malta?
-Yes. SDA properties are exempt from AIP restrictions. Any individual, regardless of nationality, can purchase SDA property in Malta without limit on the number of units.
+### Toute nationalité peut-elle acheter une propriété SDA à Malte ?
+Oui, les propriétés SDA sont exemptes de restrictions AIP. Tout individu, quelle que soit sa nationalité, peut acheter une propriété SDA à Malte sans limite de nombre d'unités.
 
-### Are SDA properties more expensive than equivalent non-SDA properties?
-Generally yes, by 15–30%. The premium reflects unrestricted buyer pool (driving higher demand), professional management, typically higher specifications, and the amenities package. However, the unrestricted resale market also means your exit is easier.
+### Les propriétés SDA sont-elles plus chères que les propriétés équivalentes non SDA ?
+Généralement oui, de 15 à 30 %. La prime reflète le pool d'acheteurs sans restriction (entraînant une demande plus élevée), la gestion professionnelle, les spécifications généralement plus élevées et l'ensemble des commodités. Cependant, le marché de la revente sans restriction signifie également que votre sortie est plus facile.
 
-### Do I pay the same stamp duty on SDA properties?
-Yes. Standard stamp duty (5%) applies to SDA purchases. First-time buyer reductions apply if you qualify.
+### Dois-je payer le même droit de timbre sur les propriétés SDA ?
+Oui, le droit de timbre standard (5 %) s'applique aux achats de biens immobiliers. Des réductions pour les primo-accédants s'appliquent si vous remplissez les conditions requises.
 
-### Can I rent out an SDA property on Airbnb?
-Yes. SDA properties can be rented out without restriction, including short-let (Airbnb/Booking.com). You still need an MTA licence for short-let and must comply with tax obligations.
+### Puis-je louer une propriété SDA sur Airbnb ?
+Oui. Les propriétés SDA peuvent être louées sans restriction, y compris en location courte durée (Airbnb/Booking.com). Vous avez toujours besoin d'une licence MTA pour la location à court terme et devez vous conformer aux obligations fiscales.
 
-### What are service charges and what do they cover?
-Service charges cover the cost of professional building management: common area cleaning, lift maintenance, pool upkeep, security, insurance, landscaping, and building repairs fund. Charges vary from €600/year (SmartCity) to €6,000+/year (Mercury Towers). They are mandatory and payable by all unit owners.
+### Que sont les frais de service et que couvrent-ils ?
+Les charges couvrent le coût de la gestion professionnelle de l'immeuble : nettoyage des parties communes, entretien des ascenseurs, entretien de la piscine, sécurité, assurance, aménagement paysager et fonds de réparation de l'immeuble. Les charges varient de 600 euros par an (SmartCity) à plus de 6 000 euros par an (Mercury Towers). Elles sont obligatoires et payables par tous les propriétaires d'unités.
 
-### Will new SDAs be designated in the future?
-Possibly. The Maltese government periodically designates new SDAs, typically associated with large-scale, high-quality development projects. The designation process involves parliamentary approval.
+### De nouvelles ZDS seront-elles désignées à l'avenir ?
+C'est possible. Le gouvernement maltais désigne périodiquement de nouvelles ZDS, généralement associées à des projets de développement de grande envergure et de grande qualité. Le processus de désignation implique l'approbation du Parlement.
 
-## Related Guides
+## Guides connexes
 
-- [Buying Property in Malta as a Foreigner](/insights/buying-property-in-malta-as-a-foreigner-2026)
-- [Off-Plan Buying Guide Malta](/insights/off-plan-buying-guide-malta-2026)
-- [Investing in Gozo Property](/insights/gozo-property-investment-guide-2026)
-- [MPRP Residency Programme](/insights/malta-permanent-residency-mprp-property-guide)
+- [Acheter une propriété à Malte en tant qu'étranger](/insights/buying-property-in-malta-as-a-foreigner-2026)
+- [Guide d'achat hors plan à Malte](/insights/off-plan-buying-guide-malta-2026)
+- [Investir dans l'immobilier à Gozo](/insights/gozo-property-investment-guide-2026)
+- [Programme de résidence du PPRM](/connexions/malta-permanent-residency-mprp-property-guide)
 
-*Last updated: March 2026. SDA availability, pricing, and development status are subject to change. Always verify current information with the developer or a licensed estate agent before making purchase decisions.*
+*Dernière mise à jour : Mars 2026. La disponibilité, les prix et l'état de développement de SDA sont sujets à modification. Vérifiez toujours les informations actuelles auprès du promoteur ou d'un agent immobilier agréé avant de prendre une décision d'achat.*

@@ -1,0 +1,12 @@
+﻿Testing model: gemini-2.0-flash (v1beta) with key: AIzaSyBEl_...
+Status: 429
+Response: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+Testing model: gemini-1.5-flash (v1) with key: AIzaSyBEl_...
+Status: 404
+Response: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models an

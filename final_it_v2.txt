@@ -1,0 +1,157 @@
+﻿
+­čîŹ EN Ôćĺ IT | 44 files | Gemini 1.5 Flash
+
+  Ôťô buying-off-plan-property-malta-risks-rewards.md
+  Ôťô buying-property-in-malta-as-a-foreigner-2026.md
+  Ôťô buying-property-malta-cryptocurrency-guide-2026.md
+
+  ÔľÂ commercial-vs-residential-investment-malta-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Commerciale contro Residenziale: Quale Investimento Vince a Malta?",
+  "excerpt": "Malta ├Ę la capitale mondiale dell'iGaming. Dovresti investire in uffici o appartamenti di lusso? Analizziamo i numeri per il 2026.",
+  "metaDescription": "Confronta immobiliare Commerciale contro Residenziale a Malta. Analizza rendimenti degli uffici del 6-8% contro il 4% residenziale, e i vantaggi fiscali di ciascun sistema."
+}
+Ôťô "Commerciale contro Residenziale: Quale Investiment..."
+    [SLUG] Ôťô commerciale-contro-residenziale-investimento-malta
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2208 chars)
+  Ôťů Done: commercial-vs-residential-investment-malta-2026.md
+
+  ÔľÂ condominium-fees-management-malta-guide-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Spese e Gestione del Condominio a Malta: Una Guida per il 2026",
+  "excerpt": "Chi paga l'ascensore? Come vengono suddivise le spese per le aree comuni? Spieghiamo la Legge sul Condominio e i vostri diritti come proprietari immobiliari.",
+  "metaDescription": "Gestite i costi del vostro condominio a Malta. Guida alla Legge sul Condominio, ai doveri dell'amministratore, alle spese per le aree comuni e alla risoluzione delle controversie per il 2026."
+}
+Ôťô "Spese e Gestione del Condominio a Malta: Una Guida..."
+    [SLUG] Ôťô spese-gestione-condominio-malta-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2286 chars)
+  Ôťů Done: condominium-fees-management-malta-guide-2026.md
+
+  ÔľÂ cost-of-living-malta-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Costo della Vita a Malta 2026 ÔÇô Analisi Dettagliata per Esperti, Famiglie e Pensionati",
+  "excerpt": "Malta ├Ę pi├╣ economica di Londra, Amsterdam o Zurigo, ma pi├╣ costosa dell'Europa orientale. Questa analisi dettagliata del costo della vita copre alloggi, generi alimentari, ristoranti, trasporti, assistenza sanitaria, istruzione e utenze ÔÇô con budget mensili reali per single, coppie e famiglie.",
+  "metaDescription": "Malta ├Ę costosa nel 2026? Ottieni un'analisi dettagliata di alloggi, generi alimentari, costi elevati dell'elettricit├á e assistenza sanitaria privata. Visualizza i budget mensili per famiglie e single."
+}
+Ôťô "Costo della Vita a Malta 2026 ÔÇô Analisi Dettagliat..."
+    [SLUG] Ôťô costo-vita-malta-2026-analisi-dettagliata
+    [BODY] 3 chunks:
+      [1/3] Ôťô (5855 chars)
+      [2/3] Ôťô (6135 chars)
+      [3/3] Ôťô (6344 chars)
+  Ôťů Done: cost-of-living-malta-2026.md
+
+  ÔľÂ digital-nomad-residence-permit-malta-housing-guide-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Permesso di Soggiorno per Nomadi Digitali: La Guida Abitativa 2026",
+  "excerpt": "Malta ├Ę una delle 3 principali destinazioni globali per i lavoratori da remoto. Scopri come soddisfare i requisiti abitativi del permesso e trovare i migliori spazi di co-living.",
+  "metaDescription": "Richiedi il Permesso di Soggiorno per Nomadi Digitali di Malta nel 2026. Guida pratica all'alloggio, requisiti di affitto e le migliori citt├á per i lavoratori da remoto."
+}
+Ôťô "Permesso di Soggiorno per Nomadi Digitali: La Guid..."
+    [SLUG] Ôťô permesso-soggiorno-nomadi-digitali-guida-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2408 chars)
+  Ôťů Done: digital-nomad-residence-permit-malta-housing-guide-2026.md
+
+  ÔľÂ energy-efficiency-epc-malta-solar-incentives-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Efficienza Energetica (APE) a Malta: Incentivi Solari 2026",
+  "excerpt": "Con 300 giorni di sole, l'energia solare ├Ę una scelta ovvia. Scopri come una valutazione APE influisce sul valore della tua propriet├á e quali sovvenzioni sono disponibili.",
+  "metaDescription": "Guida ai Certificati di Prestazione Energetica (APE) a Malta. Sovvenzioni per pannelli solari 2026, consigli per l'edilizia ad alta efficienza energetica e impatto sul valore della propriet├á."
+}
+Ôťô "Efficienza Energetica (APE) a Malta: Incentivi Sol..."
+    [SLUG] Ôťô efficienza-energetica-ape-malta-incentivi-solari-2026
+    [BODY] 1 chunks:
+      [1/1]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+Ôťô (2229 chars)
+  Ôťů Done: energy-efficiency-epc-malta-solar-incentives-2026.md
+  Ôťô gozo-property-investment-guide-2026.md
+  Ôťô ground-rent-cens-redemption-malta-guide.md
+
+  ÔľÂ healthcare-in-malta-guide-for-expats-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Assistenza Sanitaria a Malta: Una Guida Completa per gli Espatriati 2026",
+  "excerpt": "Malta si classifica costantemente tra i migliori sistemi sanitari al mondo. Scopri come accedere all'assistenza pubblica e privata come espatriato nel 2026.",
+  "metaDescription": "L'assistenza sanitaria ├Ę gratuita a Malta? La nostra guida per espatriati 2026 spiega i sistemi pubblico e privato, l'ospedale Mater Dei e i requisiti per l'assicurazione sanitaria."
+}
+Ôťô "Assistenza Sanitaria a Malta: Una Guida Completa p..."
+    [SLUG] Ôťô assistenza-sanitaria-malta-guida-espatriati-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2414 chars)
+  Ôťů Done: healthcare-in-malta-guide-for-expats-2026.md
+  Ôťô international-schools-malta-expat-guide.md
+  Ôťô investing-gozo-vs-malta-financial-comparison.md
+  Ôťô Fixing slug... [logica-finanziaria-malta-residency-mprp] malta-permanent-residency-mprp-financial-benefits.md
+  Ôťô malta-permanent-residency-mprp-property-guide.md
+
+  ÔľÂ malta-property-market-forecast-2026-2030.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Previsioni del Mercato Immobiliare di Malta 2026ÔÇô2030 ÔÇô Analisi degli Esperti e Previsioni dei Prezzi",
+  "excerpt": "Un'analisi basata sui dati della traiettoria del mercato immobiliare di Malta, con previsioni dei prezzi per area, previsioni dei rendimenti da locazione e i fattori chiave che plasmeranno il settore immobiliare di Malta nei prossimi cinque anni.",
+  "metaDescription": "Previsioni esperte sul mercato immobiliare di Malta 2026-2030. Analisi delle previsioni dei prezzi per Sliema, Gzira e Gozo, tendenze dei rendimenti da locazione e l'impatto del tunnel di Gozo."
+}
+Ôťô "Previsioni del Mercato Immobiliare di Malta 2026ÔÇô2..."
+    [SLUG] Ôťô previsioni-mercato-immobiliare-malta-2026-2030
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6238 chars)
+      [2/3] Ôťô (6443 chars)
+      [3/3] ÔťŚ kept original (Gemini: This model is currently experien)
+  Ôťů Done: malta-property-market-forecast-2026-2030.md
+  Ôťô marsaxlokk-south-malta-emerging-real-estate-values.md
+  Ôťô mdina-rabat-noble-heartland-property-guide-2026.md
+  Ôťô mortgage-malta-foreigners-guide-2026.md
+  Ôťô most-exclusive-neighborhoods-malta-villas-2026.md
+  Ôťô moving-to-malta-complete-guide.md
+  Ôťô moving-to-malta-with-pets-buying-renting-guide.md
+  Ôťô off-plan-buying-guide-malta-2026.md
+  Ôťô planning-permission-malta-guide.md
+  Ôťô property-inheritance-malta-succession-tax-2026.md
+  Ôťô property-inheritance-malta.md
+  Ôťô property-tax-optimization-malta-2026.md
+
+  ÔľÂ property-taxes-malta-2026.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: Gemini: This model is currently experiencing high , keeping original
+Ôťô "Property Tax Optimization in Malta: Legal Strategi..."
+    [SLUG] Ôťô property-taxes-malta-2026
+    [BODY] 1 chunks:
+      [1/1] ÔťŚ kept original (Gemini: This model is currently experien)
+  Ôťů Done: property-taxes-malta-2026.md
+
+  ÔľÂ renovating-house-of-character-malta-costs-pitfalls.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: Gemini: This model is currently experiencing high , keeping original
+Ôťô "Renovating a House of Character: Real Costs and Ti..."
+    [SLUG] Ôťô renovating-house-of-character-malta-costs-pitfalls
+    [BODY] 1 chunks:
+      [1/1] ÔťŚ kept original (Gemini: This model is currently experien)
+  Ôťů Done: renovating-house-of-character-malta-costs-pitfalls.md
+
+  ÔľÂ rental-income-tax-malta-2026.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: Gemini: This model is currently experiencing high , keeping original
+Ôťô "Rental Income Tax Malta 2026 ÔÇô Complete Guide for ..."
+    [SLUG] Ôťô rental-income-tax-malta-2026
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6572 chars)
+      [2/3] Ôťô (6625 chars)
+      [3/3]     ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 1)...
+Ôťô (3772 chars)
+  Ôťů Done: rental-income-tax-malta-2026.md
+
+  ÔľÂ rental-law-malta-landlords-tenants-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Legge sugli Affitti a Malta 2026: Guida Completa per Proprietari e Inquilini",
+  "excerpt": "Il tuo riferimento completo alla normativa sugli affitti di Malta nel 2026, che copre le regole dell'Autorit├á per l'Edilizia Abitativa, la registrazione obbligatoria, la protezione dei depositi, le procedure di sfratto e i diritti sia dei proprietari che degli inquilini.",
+  "metaDescription": "La guida definitiva alla legge sugli affitti di Malta nel 2026. Comprendi la registrazione presso l'Autorit├á per l'Edilizia Abitativa, i limiti agli aumenti degli affitti, la protezione dei depositi e le norme sugli sfratti."
+}
+Ôťô "Legge sugli Affitti a Malta 2026: Guida Completa p..."
+    [SLUG] Ôťô legge-affitti-malta-2026-guida-completa
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6565 chars)
+      [2/3]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+Ôťô (6215 chars)
+      [3/3]     ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 5)...

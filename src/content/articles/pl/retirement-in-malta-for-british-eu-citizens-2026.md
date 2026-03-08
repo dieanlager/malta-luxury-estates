@@ -1,51 +1,50 @@
 ---
-title: "Retirement in Malta: A 2026 Guide for British and EU Citizens"
+title: "Emerytura na Malcie: Przewodnik 2026 dla obywateli Wielkiej Brytanii i UE"
 category: "Legal"
-excerpt: "Malta is Europe's favorite retirement destination. Explore the 15% tax programs, healthcare access, and the best 'quiet' towns for 2026."
-metaDescription: "Retiring to Malta in 2026? A guide for UK and EU retirees. Learn about the Retirement Programme (MRP), healthcare, and the best places to live."
+excerpt: "Malta to ulubione miejsce na emeryturę w Europie. Poznaj programy 15% podatku, dostęp do opieki zdrowotnej i najlepsze \"ciche\" miasta na 2026 rok."
+metaDescription: "Emerytura na Maltę w 2026 roku? Przewodnik dla emerytów z Wielkiej Brytanii i UE. Dowiedz się o programie emerytalnym (MRP), opiece zdrowotnej i najlepszych miejscach do życia."
 image: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2, 2026"
-readTime: "13 min read"
+readTime: "13 min czytania"
 author: "Malta Luxury Real Estate Relocation Desk"
 slug: "retirement-in-malta-for-british-eu-citizens-2026"
+localizedSlug: "emerytura-na-malcie-przewodnik-2026-dla-obywateli"
 lang: pl
-translatedFrom: en
-translatedAt: 2026-03-07
 ---
 
-# Retirement in Malta: A 2026 Guide for British and EU Citizens
+# Emerytura na Malcie: Przewodnik 2026 dla obywateli Wielkiej Brytanii i UE
 
-With its mild winters, English-speaking population, and top-tier healthcare, Malta has long been a dream destination for retirees. In 2026, the island offers even more structured programs to help pensioners transition to island life.
+Dzięki łagodnym zimom, anglojęzycznej populacji i najwyższej jakości opiece zdrowotnej Malta od dawna jest wymarzonym miejscem dla emerytów. W 2026 r. wyspa oferuje jeszcze bardziej ustrukturyzowane programy, aby pomóc emerytom w przejściu na wyspiarskie życie.
 
-## 1. The Malta Retirement Programme (MRP)
-This is a specific tax status designed for pensioners.
-*   **The Benefit:** A flat **15% tax rate** on any pension income remitted (brought) to Malta.
-*   **The Requirement:** You must buy a property (min. €275,000) or rent (min. €9,600/year). 
-*   **Minimum Tax:** You must pay at least €7,500 per year to the Maltese government.
-
----
-
-## 2. Post-Brexit: The British Retiree Path
-Since Brexit, UK citizens are "Third Country Nationals," but the MRP is still open to them. The process involves a slightly more detailed residency application (the "S" Route for retirees).
-*   **Health Cover:** UK citizens can often leverage the "Social Security Agreement" between Malta and the UK to access public healthcare.
+## 1. Maltański Program Emerytalny (MRP)
+Jest to specjalny status podatkowy przeznaczony dla emerytów.
+*   **Korzyści:** Zryczałtowana **15% stawka podatkowa** od każdego dochodu emerytalnego przekazanego (przywiezionego) na Maltę.
+*   **Wymagania:** Musisz kupić nieruchomość (min. €275,000) lub wynająć (min. €9,600/rok).
+*   **Minimalny podatek:** Musisz płacić co najmniej €7,500 rocznie na rzecz rządu maltańskiego.
 
 ---
 
-## 3. Best "Quiet" Towns for Retirement
-If you want to avoid the "noisy" districts, these areas offer peace and community:
-1.  **Naxxar:** A sophisticated village with great cafes and a historic center.
-2.  **Mellieħa:** Ideal for active retirees who enjoy walking and sea views.
-3.  **The Three Cities:** Historic charm with a slower pace of life across from Valletta.
-4.  **Xagħra (Gozo):** For those who want total tranquility and a traditional Mediterranean lifestyle.
+## 2. Po Brexicie: Ścieżka brytyjskiego emeryta
+Od czasu Brexitu obywatele Wielkiej Brytanii są "obywatelami krajów trzecich", ale MRP jest dla nich nadal otwarta. Proces obejmuje nieco bardziej szczegółowy wniosek o rezydenturę (ścieżka "S" dla emerytów).
+*   **Ochrona zdrowia:** Obywatele Wielkiej Brytanii często mogą skorzystać z "Umowy o zabezpieczeniu społecznym" między Maltą a Wielką Brytanią, aby uzyskać dostęp do publicznej opieki zdrowotnej.
 
 ---
 
-## 4. Practical Living
-*   **The "Tal-Linja" Card:** Public transport is FREE for residents (including retirees).
-*   **Community:** Vibrant expat communities (especially in Sliema and Gozo) mean you will never be lonely.
-*   **Healthcare:** As covered in our Healthcare guide, both Mater Dei and private clinics offer world-class care for age-related needs.
+## 3. Najlepsze "ciche" miasta na emeryturę
+Jeśli chcesz uniknąć "hałaśliwych" dzielnic, te obszary oferują spokój i społeczność:
+1.  **Naxxar:** Wyrafinowana wioska ze świetnymi kawiarniami i historycznym centrum.
+2.  **Mellieħa:** Idealna dla aktywnych emerytów, którzy lubią spacery i widoki na morze.
+3.  **Trzy Miasta: ** Historyczny urok z wolniejszym tempem życia naprzeciwko Valletty.
+4.  **Xagħra (Gozo): ** Dla tych, którzy chcą całkowitego spokoju i tradycyjnego śródziemnomorskiego stylu życia.
 
-## Summary
-Retiring in Malta in 2026 is a blend of financial savvy and lifestyle choice. The low cost of living (outside property) and the proximity to the rest of Europe make it an unbeatable choice.
+---
 
-**Ready to plan your move? [Speak to our retirement specialist](mailto:retirement@maltaluxuryrealestate.com).**
+## 4. Praktyczne życie
+*   **Karta "Tal-Linja":** Transport publiczny jest BEZPŁATNY dla mieszkańców (w tym emerytów).
+*   **Społeczność:** Tętniące życiem społeczności emigrantów (zwłaszcza w Sliemie i Gozo) oznaczają, że nigdy nie będziesz samotny.
+*   **Opieka zdrowotna:** Jak opisano w naszym przewodniku po opiece zdrowotnej, zarówno Mater Dei, jak i prywatne kliniki oferują światowej klasy opiekę dla osób starszych.
+
+## Podsumowanie
+Przejście na emeryturę na Malcie w 2026 roku to połączenie sprytu finansowego i wyboru stylu życia. Niskie koszty życia (poza nieruchomościami) i bliskość reszty Europy sprawiają, że jest to bezkonkurencyjny wybór.
+
+**Gotowy do zaplanowania przeprowadzki? [Porozmawiaj z naszym specjalistą ds. emerytur](mailto:retirement@maltaluxuryrealestate.com).**

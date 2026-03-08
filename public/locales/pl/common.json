@@ -65,6 +65,10 @@
         "locations_grid": {
             "title": "Odkryj Lokalizacje",
             "subtitle": "Poznaj unikalny charakter najbardziej prestiżowych dzielnic Malty."
+        },
+        "insights": {
+            "title": "Kluczowe Analizy Inwestycyjne",
+            "subtitle": "Strategiczne doradztwo dla inwestorów międzynarodowych i osób szukających rezydencji na Malcie."
         }
     },
     "footer": {
@@ -114,9 +118,58 @@
         "live_feed": "Relacja na Żywo",
         "listings_count": "{{count}} ogłoszeń",
         "price_history": "Historia Cen",
-        "efficiency_audit": "Audit Energetyczny",
-        "quiet_score": "Wskaźnik Ciszy",
-        "find_twin": "Znajdź Bliźniaka"
+        "efficiency_audit": "Audit EPC",
+        "quiet_score": "Indeks Ciszy",
+        "find_twin": "Znajdź Twin",
+        "read_guide": "Czytaj Przewodnik"
+    },
+    "interactive": {
+        "epc": {
+            "title": "Inteligencja Efektywności Zielonej",
+            "subtitle": "Audit Standardów Energetycznych UE 2026",
+            "current_rating": "Aktualna Ocena",
+            "bank_premium": "Premia Bankowa",
+            "bank_note": "Dostępne przez zielone schematy bankowe (BOV/HSBC Green Loans)",
+            "upgrade_cost": "Koszt Modernizacji",
+            "annual_savings": "Roczne Oszczędności",
+            "payback_period": "Okres Zwrotu",
+            "resale_premium_title": "Premia przy Sprzedaży",
+            "resale_premium_desc": "Przewidywany wzrost wartości dla klasy A/B w 2026/27",
+            "disclaimer": "Obliczenia oparte na cenach energii z 2026 r. i standardowych kosztach modernizacji izolacji słonecznej/termicznej na wyspach maltańskich.",
+            "elite": "Efektywność Elite",
+            "years": "{{count}} Lat"
+        },
+        "noise": {
+            "title": "Inteligentna Ocena Dźwięku",
+            "subtitle": "Maltański Audit Hałasu Środowiskowego v2.0",
+            "score_label": "Wskaźnik Ciszy",
+            "exceptional": "Wyjątkowa spokojność. Idealne do pracy zdalnej i głębokiego odpoczynku.",
+            "standard": "Standardowy krajobraz dźwiękowy miasta. Umiarkowana aktywność.",
+            "high": "Strefa wysokiej aktywności. Tętniące życie nocne lub główna arteria transportowa.",
+            "traffic": "Ruch Uliczny",
+            "nightlife": "Życie Nocne",
+            "construction": "Budowa",
+            "aviation": "Lotnictwo",
+            "intensity": "Intensywność",
+            "surroundings": "Otoczenie",
+            "risk": "Ryzyko",
+            "flight_path": "W ścieżce lotu",
+            "outside_flight_path": "Poza ścieżką lotu",
+            "verified_desc": "Zweryfikowano za pomocą satelitarnego mapowania akustycznego 2026 i lokalnych danych o hałasie.",
+            "disclaimer": "Wyniki są znormalizowane dla całych wysp maltańskich."
+        },
+        "twin": {
+            "title": "AI Property Twin Finder",
+            "subtitle": "Nasz silnik neuronowy analizuje wzorce stylu życia, DNA architektury i klimat okolicy, aby znaleźć nieruchomości idealnie pasujące do Twojego wyboru.",
+            "analyzing": "Analiza DNA Układu...",
+            "analyzing_subtitle": "Dekonstrukcja cech i indeksów sąsiedztwa",
+            "match_confidence": "Dopasowanie",
+            "why_title": "Dlaczego ten Twin?",
+            "why_desc": "Pasuje do Twojego zainteresowania {{type}} w {{location}}. Wspólne cechy, takie jak {{f1}} i {{f2}}.",
+            "explore_button": "Eksploruj ten Twin",
+            "footer_note": "Silnik neuronowy skalibrowany do Indeksu Rynku Malty 2026",
+            "close": "Zamknij"
+        }
     },
     "locations": {
         "Sliema": "Sliema",

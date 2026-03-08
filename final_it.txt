@@ -1,0 +1,230 @@
+﻿
+­čîŹ EN Ôćĺ IT | 44 files | Gemini 1.5 Flash
+
+
+  ÔľÂ buying-off-plan-property-malta-risks-rewards.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Acquistare immobili su carta a Malta: Rischi vs. Benefici 2026",
+  "excerpt": "Acquistare prima della costruzione pu├▓ offrire enormi plusvalenze. Spieghiamo i pagamenti a stati di avanzamento lavori, le checklist per le finiture e la valutazione del costruttore.",
+  "metaDescription": "Conviene acquistare su carta a Malta nel 2026? Scopri i pagamenti scaglionati, lo stato grezzo vs finito e come verificare l'affidabilit├á dei costruttori."
+}
+Ôťô "Acquistare immobili su carta a Malta: Rischi vs. B..."
+    [SLUG] Ôťô acquistare-immobili-su-carta-malta-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2756 chars)
+  Ôťů Done: buying-off-plan-property-malta-risks-rewards.md
+
+  ÔľÂ buying-property-in-malta-as-a-foreigner-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Come acquistare un immobile a Malta nel 2026 ÔÇô Guida completa passo dopo passo",
+  "excerpt": "La guida definitiva passo dopo passo per acquistare un immobile a Malta nel 2026, dalla definizione del budget fino alla consegna delle chiavi. Copre il konvenju, la due diligence, il processo notarile e le insidie comuni.",
+  "metaDescription": "Padroneggia il processo di acquisto di un immobile a Malta con la nostra guida passo dopo passo del 2026. Dalla pianificazione del budget e il konvenju fino all'atto finale e al trasferimento delle utenze."
+}
+Ôťô "Come acquistare un immobile a Malta nel 2026 ÔÇô Gui..."
+    [SLUG] Ôťô come-acquistare-immobile-malta-2026
+    [BODY] 3 chunks:
+      [1/3] Ôťô (6243 chars)
+      [2/3] ÔťŚ kept original (Gemini: This model is currently experien)
+      [3/3] Ôťô (2332 chars)
+  Ôťů Done: buying-property-in-malta-as-a-foreigner-2026.md
+
+  ÔľÂ buying-property-malta-cryptocurrency-guide-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Acquistare immobili a Malta con criptovalute: il quadro legale del 2026",
+  "excerpt": "├ł possibile acquistare una villa a Sliema con Bitcoin? Esploriamo l'eredit├á di Malta come 'Blockchain Island', le normative VFA del 2026 e come utilizzare legalmente le cripto per il settore immobiliare.",
+  "metaDescription": "Guida completa all'acquisto di propriet├á a Malta con criptovalute nel 2026. Scopri le normative VFA, la conversione in Euro rispetto ai trasferimenti diretti e le procedure AML/KYC per gli acquirenti cripto."
+}
+Ôťô "Acquistare immobili a Malta con criptovalute: il q..."
+    [SLUG] Ôťô acquistare-immobili-malta-criptovalute-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (5352 chars)
+  Ôťů Done: buying-property-malta-cryptocurrency-guide-2026.md
+
+  ÔľÂ commercial-vs-residential-investment-malta-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Commerciale vs. Residenziale: Quale investimento vince a Malta?",
+  "excerpt": "Malta ├Ę la capitale mondiale dell'iGaming. Dovresti investire in uffici o appartamenti di lusso? Analizziamo i numeri per il 2026.",
+  "metaDescription": "Confronta il settore immobiliare commerciale e residenziale a Malta. Analizza i rendimenti degli uffici del 6-8% rispetto al 4% del residenziale, e i vantaggi fiscali di ogni sistema."
+}
+Ôťô "Commerciale vs. Residenziale: Quale investimento v..."
+    [SLUG] Ôťô commerciale-vs-residenziale-investimento-malta
+    [BODY] 1 chunks:
+      [1/1] ÔťŚ kept original (read ECONNRESET)
+  Ôťů Done: commercial-vs-residential-investment-malta-2026.md
+
+  ÔľÂ condominium-fees-management-malta-guide-2026.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: , keeping original
+Ôťô "Condominium Fees & Management in Malta: A 2026 Gui..."
+    [SLUG] Ôťô condominium-fees-management-malta-guide-2026
+    [BODY] 1 chunks:
+      [1/1] ÔťŚ kept original (getaddrinfo ENOTFOUND generativelanguage)
+  Ôťů Done: condominium-fees-management-malta-guide-2026.md
+
+  ÔľÂ cost-of-living-malta-2026.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: getaddrinfo ENOTFOUND generativelanguage.googleapi, keeping original
+Ôťô "Cost of Living in Malta 2026 ÔÇô Detailed Breakdown ..."
+    [SLUG] Ôťô cost-of-living-malta-2026
+    [BODY] 3 chunks:
+      [1/3] ÔťŚ kept original (getaddrinfo ENOTFOUND generativelanguage)
+      [2/3] ÔťŚ kept original (getaddrinfo ENOTFOUND generativelanguage)
+      [3/3] ÔťŚ kept original (getaddrinfo ENOTFOUND generativelanguage)
+  Ôťů Done: cost-of-living-malta-2026.md
+
+  ÔľÂ digital-nomad-residence-permit-malta-housing-guide-2026.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: getaddrinfo ENOTFOUND generativelanguage.googleapi, keeping original
+Ôťô "Digital Nomad Residence Permit: The 2026 Housing G..."
+    [SLUG] Ôťô digital-nomad-residence-permit-malta-housing-guide-2026
+    [BODY] 1 chunks:
+      [1/1] ÔťŚ kept original (getaddrinfo ENOTFOUND generativelanguage)
+  Ôťů Done: digital-nomad-residence-permit-malta-housing-guide-2026.md
+
+  ÔľÂ energy-efficiency-epc-malta-solar-incentives-2026.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: getaddrinfo ENOTFOUND generativelanguage.googleapi, keeping original
+Ôťô "Energy Efficiency (EPC) in Malta: Solar Incentives..."
+    [SLUG] Ôťô energy-efficiency-epc-malta-solar-incentives-2026
+    [BODY] 1 chunks:
+      [1/1] ÔťŚ kept original (getaddrinfo ENOTFOUND generativelanguage)
+  Ôťů Done: energy-efficiency-epc-malta-solar-incentives-2026.md
+
+  ÔľÂ gozo-property-investment-guide-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Investire in immobili a Gozo 2026 ÔÇô La guida completa all'isola sorella di Malta",
+  "excerpt": "Gozo offre prezzi inferiori del 30ÔÇô50% rispetto a Malta, il carattere unico dei farmhouse e un enorme potenziale di crescita derivante dal tunnel di Gozo pianificato. Questa guida copre le migliori zone, le tipologie di immobili, i rendimenti da locazione e le realt├á pratiche del possedere una propriet├á sull'isola sorella di Malta.",
+  "metaDescription": "Gli immobili a Gozo rappresentano il miglior rapporto qualit├á-prezzo nel Mediterraneo per il 2026? Esplora prezzi inferiori del 30-50% rispetto a Malta, l'effetto tunnel di Gozo e i rendimenti da locazione dei farmhouse di lusso."
+}
+Ôťô "Investire in immobili a Gozo 2026 ÔÇô La guida compl..."
+    [SLUG] Ôťô investire-immobili-gozo-malta-2026
+    [BODY] 3 chunks:
+      [1/3] Ôťô (1090 chars)
+      [2/3] Ôťô (1082 chars)
+      [3/3]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+Ôťô (2305 chars)
+  Ôťů Done: gozo-property-investment-guide-2026.md
+
+  ÔľÂ ground-rent-cens-redemption-malta-guide.md Ôćĺ IT
+    [FM]     ÔÜá FM translate error: Gemini: This model is currently experiencing high , keeping original
+Ôťô "How to Redeem Ground Rent (─Őens) in Malta: A 2026 ..."
+    [SLUG] Ôťô come-riscattare-censo-malta-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (1031 chars)
+  Ôťů Done: ground-rent-cens-redemption-malta-guide.md
+
+  ÔľÂ healthcare-in-malta-guide-for-expats-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Sanit├á a Malta: Una guida completa per gli espatriati 2026",
+  "excerpt": "Malta si classifica costantemente come uno dei migliori sistemi sanitari al mondo. Scopri come accedere all'assistenza pubblica e privata come espatriato nel 2026.",
+  "metaDescription": "La sanit├á ├Ę gratuita a Malta? La nostra guida per espatriati 2026 spiega i sistemi pubblico e privato, l'ospedale Mater Dei e i requisiti dell'assicurazione sanitaria."
+}
+Ôťô "Sanit├á a Malta: Una guida completa per gli espatri..."
+    [SLUG] Ôťô sanita-malta-guida-completa-espatriati-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (1170 chars)
+  Ôťů Done: healthcare-in-malta-guide-for-expats-2026.md
+
+  ÔľÂ international-schools-malta-expat-guide.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Scuole internazionali a Malta: La guida definitiva 2026 per genitori expat",
+  "excerpt": "Scegliere l'istruzione giusta ├Ę fondamentale per le famiglie che si trasferiscono. Confronta Verdala, QSI, St. Edward's e i programmi internazionali disponibili a Malta.",
+  "metaDescription": "Ti trasferisci a Malta con i bambini? La nostra guida 2026 copre le migliori scuole internazionali, i programmi (IB, britannico, americano), le rette e i consigli per l'ammissione."
+}
+Ôťô "Scuole internazionali a Malta: La guida definitiva..."
+    [SLUG] Ôťô scuole-internazionali-malta-guida-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (3877 chars)
+  Ôťů Done: international-schools-malta-expat-guide.md
+
+  ÔľÂ investing-gozo-vs-malta-financial-comparison.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Investire a Gozo vs. Malta: Un confronto finanziario per il 2026",
+  "excerpt": "Quale isola offre rendimenti migliori? Confrontiamo i rendimenti locativi, l'apprezzamento del capitale e gli incentivi fiscali per Malta e la sua isola sorella, Gozo.",
+  "metaDescription": "Gozo o Malta? Esplora le differenze finanziarie negli investimenti immobiliari. Confronta i rendimenti del 4% a Sliema rispetto al 5.5% a Xlendi, oltre alle agevolazioni fiscali specifiche per Gozo."
+}
+Ôťô "Investire a Gozo vs. Malta: Un confronto finanziar..."
+    [SLUG] Ôťô investire-gozo-malta-confronto-finanziario-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2668 chars)
+  Ôťů Done: investing-gozo-vs-malta-financial-comparison.md
+
+  ÔľÂ malta-permanent-residency-mprp-financial-benefits.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "La logica finanziaria della Malta Permanent Residency (MPRP)",
+  "excerpt": "Analisi dei costi e dei rendimenti del programma MPRP. Come un investimento immobiliare pu├▓ soddisfare i requisiti di residenza e allo stesso tempo creare ricchezza.",
+  "metaDescription": "Il Malta Permanent Residency Programme (MPRP) conviene? Analizziamo i requisiti finanziari, le opzioni di investimento immobiliare e i vantaggi fiscali per il 2026."
+}
+Ôťô "La logica finanziaria della Malta Permanent Reside..."
+    [SLUG] Ôťô malta-permanent-residency-mprp-financial-benefits
+    [BODY] 1 chunks:
+      [1/1] Ôťô (2823 chars)
+  Ôťů Done: malta-permanent-residency-mprp-financial-benefits.md
+
+  ÔľÂ malta-permanent-residency-mprp-property-guide.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Residenza Permanente a Malta tramite Investimento 2026 ÔÇô La Guida Completa al MPRP",
+  "excerpt": "Il Malta Permanent Residency Programme (MPRP) concede ai cittadini extra-UE la residenza permanente in cambio di un investimento immobiliare qualificato (ÔéČ375,000+), un contributo governativo e la prova di ÔéČ500,000 in asset. L'elaborazione richiede 4ÔÇô6 mesi.",
+  "metaDescription": "Scopri tutto sul Malta Permanent Residency Programme (MPRP) 2026. Scopri l'investimento immobiliare da ÔéČ375,000, i contributi governativi e come ottenere la residenza permanente nell'UE."
+}
+Ôťô "Residenza Permanente a Malta tramite Investimento ..."
+    [SLUG] Ôťô residenza-permanente-malta-investimento-mprp-2026
+    [BODY] 3 chunks:
+      [1/3] Ôťô (1202 chars)
+      [2/3] Ôťô (1390 chars)
+      [3/3]     ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 3)...
+Ôťô (3389 chars)
+  Ôťů Done: malta-permanent-residency-mprp-property-guide.md
+
+  ÔľÂ malta-property-market-forecast-2026-2030.md Ôćĺ IT
+    [FM]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 8)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 9)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 10)...
+    ÔÜá FM translate error: Gemini: You exceeded your current quota, please ch, keeping original
+Ôťô "Malta Property Market Forecast 2026ÔÇô2030 ÔÇô Expert ..."
+    [SLUG]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 8)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 9)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 10)...
+Ôťô malta-property-market-forecast-2026-2030
+    [BODY] 3 chunks:
+      [1/3]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 8)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 9)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 10)...
+ÔťŚ kept original (Gemini: You exceeded your current quota,)
+      [2/3]     ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 4)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 5)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 6)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 7)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 8)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 9)...
+Ôťô (738 chars)
+      [3/3] ÔťŚ kept original (Gemini: This model is currently experien)
+  Ôťů Done: malta-property-market-forecast-2026-2030.md
+
+  ÔľÂ marsaxlokk-south-malta-emerging-real-estate-values.md Ôćĺ IT
+    [FM]     ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 1)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 2)...
+    ÔÜí Quota/Rate limit. Switching to API key 1 (Attempt 3)...
+    ÔÜí Quota/Rate limit. Switching to API key 2 (Attempt 4)...

@@ -1,0 +1,19 @@
+﻿
+­čîŹ EN Ôćĺ IT | 1 files | Gemini 1.5 Flash
+
+
+  ÔľÂ property-taxes-malta-2026.md Ôćĺ IT
+    [FM] DEBUG [FM RAW]: {
+  "title": "Ottimizzazione Fiscale Immobiliare a Malta: Strategie Legali per il 2026",
+  "excerpt": "Un'analisi approfondita del sistema fiscale immobiliare di Malta. Scopri la tassazione del 15% sugli affitti, le esenzioni UCA e come strutturare la propriet├á immobiliare per la massima efficienza.",
+  "metaDescription": "Massimizza il tuo ROI con la nostra guida 2026 sulla tassazione immobiliare a Malta. Copre l'aliquota fissa del 15% sull'affitto, le esenzioni UCA e i benefici fiscali per la Residenza Principale."
+}
+Ôťô "Ottimizzazione Fiscale Immobiliare a Malta: Strate..."
+    [SLUG] Ôťô ottimizzazione-fiscale-immobiliare-malta-2026
+    [BODY] 1 chunks:
+      [1/1] Ôťô (4630 chars)
+  Ôťů Done: property-taxes-malta-2026.md
+
+­čôŐ Translated: 1 | Skipped: 0 | Failed: 0
+
+­čôä Slug map saved (177 entries) Ôćĺ src/lib/article-slugs.json

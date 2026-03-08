@@ -6,7 +6,7 @@ import { getArticles } from '../lib/data';
 import { Article } from '../types';
 import { usePageMeta } from '../lib/seo/meta';
 import { InteractiveTools } from '../components/InteractiveTools';
-import { resolveArticleLang } from '../lib/markdown';
+import { resolveArticleLang, getLocalizedArticleLink } from '../lib/markdown';
 
 import { useTranslation } from 'react-i18next';
 
@@ -94,7 +94,7 @@ export const InsightsHub = () => {
           {articles.map((article) => (
             <Link
               key={article.slug}
-              to={getLocalizedPath(`/insights/${article.slug}`)}
+              to={getLocalizedArticleLink(article.slug, i18n.language)}
               className="group relative h-[500px] rounded-[2.5rem] overflow-hidden border border-white/10"
             >
               <img
