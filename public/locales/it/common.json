@@ -174,7 +174,8 @@
             "under_1m": "Sotto €1M",
             "500k_1m": "€500K – €1M",
             "over_1m": "Oltre €1M",
-            "over_2m": "Oltre €2M"
+            "over_2m": "Oltre €2M",
+            "over_3m": "Oltre €3M"
         },
         "types": {
             "villa": "Villa",

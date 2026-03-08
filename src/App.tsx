@@ -840,8 +840,8 @@ const WeChatButton = () => {
             <div className="w-32 h-32 bg-gray-100 flex items-center justify-center rounded-lg mb-2">
               <MessageSquare className="text-luxury-black/20" size={48} />
             </div>
-            <p className="text-[9px] text-center font-bold uppercase tracking-widest text-luxury-black">{t('common:scan_to_connect')}</p>
-            <p className="text-[8px] text-center text-luxury-black/40">{t('common:official_support')}</p>
+            <p className="text-[9px] text-center font-bold uppercase tracking-widest text-luxury-black">{t('common.scan_to_connect')}</p>
+            <p className="text-[8px] text-center text-luxury-black/40">{t('common.official_support')}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -849,7 +849,7 @@ const WeChatButton = () => {
         onMouseEnter={() => setShowQR(true)}
         onMouseLeave={() => setShowQR(false)}
         className="w-14 h-14 bg-[#07C160] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform pointer-events-auto"
-        aria-label={t('common:official_support')}
+        aria-label={t('common.official_support')}
       >
         <MessageSquare size={24} />
       </button>
@@ -933,7 +933,7 @@ const Footer = () => {
                 className="group block"
               >
                 <h4 className="text-white group-hover:text-gold transition-colors font-serif text-lg mb-1">{city.nameEn}</h4>
-                <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold block">{t('common:estate_in', { location: city.nameEn })}</span>
+                <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold block">{t('common.estate_in', { location: city.nameEn })}</span>
                 <div className="h-0.5 w-0 group-hover:w-12 bg-gold mt-4 transition-all duration-300" />
               </Link>
             ))}
@@ -993,7 +993,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
-          <p>© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> {t('common:design_by')} <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
+          <p>© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> {t('common.design_by')} <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">{t('seo:privacy.title')}</Link>
             <Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">{t('seo:terms.title')}</Link>

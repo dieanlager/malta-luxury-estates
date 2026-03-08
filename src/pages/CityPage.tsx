@@ -192,7 +192,7 @@ export const CityPage: React.FC<CityPageProps> = ({
                 to={getLocalizedLocationPath(`/${f.slug}`)}
                 className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white/50 hover:border-gold/50 hover:text-gold transition-all whitespace-nowrap"
               >
-                {t(`search.filters.${f.slug.replace(/-/g, '_')}`, f.label)}
+                {t(`search.filters.${f.slug.replace(/-/g, '_')}`, { defaultValue: f.label })}
               </Link>
             ))}
           </div>
@@ -210,7 +210,7 @@ export const CityPage: React.FC<CityPageProps> = ({
               <div className="glass-card rounded-[2rem] p-8 border border-white/10">
                 <h3 className="text-2xl font-serif mb-6 flex items-center gap-3">
                   <TrendingUp className="text-gold" size={24} />
-                  {t('interactive.tools.roi_benchmarks_title', 'Market Intelligence')}
+                  {t('interactive_tools.info.roi_benchmarks_title', 'Market Intelligence')}
                 </h3>
                 <ul className="space-y-4">
                   {location.marketHighlights.map((highlight, idx) => (
@@ -255,7 +255,7 @@ export const CityPage: React.FC<CityPageProps> = ({
               to={getLocalizedArticleLink('malta-real-estate-investment-guide-2026', i18n.language)}
               className="px-8 py-4 gold-gradient text-luxury-black rounded-full text-[10px] font-bold uppercase tracking-widest hover:scale-105 transition-transform shrink-0"
             >
-              {t('article.read_guide', 'Read Guide')}
+              {t('common.read_guide')}
             </Link>
           </div>
         </div>

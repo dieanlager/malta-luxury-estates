@@ -228,7 +228,8 @@
             "under_1m": "Poniżej 1 mln €",
             "500k_1m": "500 tys. – 1 mln €",
             "over_1m": "Powyżej 1 mln €",
-            "over_2m": "Powyżej 2 mln €"
+            "over_2m": "Powyżej 2 mln €",
+            "over_3m": "Powyżej 3 mln €"
         },
         "types": {
             "villa": "Willa",

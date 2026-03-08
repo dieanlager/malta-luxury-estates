@@ -113,7 +113,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                 {property.type === 'rent' && <span className="text-[10px] text-white/40 ml-1">{t('common.per_month')}</span>}
               </span>
               <span className="text-[10px] uppercase tracking-widest font-bold text-white/30">
-                {t('common.for')} {property.type === 'rent' ? t('market.forRent') : t('market.forSale')}
+                {property.type === 'rent' ? t('market.forRent') : t('market.forSale')}
               </span>
             </div>
 

@@ -29,7 +29,11 @@ export const MarketSnapshot: React.FC<Props> = ({
 
   const locationName = i18n.language === 'en'
     ? location.nameEn
-    : (t(`locations.${location.nameEn.replace(/\s+/g, '_').replace("'", "")}`) || location.nameEn);
+    : (() => {
+      const key = `locations.${location.nameEn.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '')}`;
+      const translated = t(key, { defaultValue: '' });
+      return translated || location.nameEn;
+    })();
 
   if (!stats) {
     return (
