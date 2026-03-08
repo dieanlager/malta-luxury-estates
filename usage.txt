@@ -1,2 +1,0 @@
-﻿Status: 200
-Response: {"team_document_count":0,"document_count":0,"team_document_limit":20,"document_limit":20}
