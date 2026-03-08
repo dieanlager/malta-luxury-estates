@@ -59,7 +59,14 @@ export const CityPage: React.FC<CityPageProps> = ({
 
   // SEO – must be called before any conditional returns
   const islandLabel = location?.island === 'malta' ? t('locations.Malta') : t('locations.Gozo');
-  const locationName = location ? (i18n.language === 'en' ? location.nameEn : (t(`locations.${location.nameEn.replace(/\s+/g, '_').replace("'", "")}`) || location.nameEn)) : '';
+  const getLocationDisplayName = (loc: Location | null) => {
+    if (!loc) return '';
+    if (i18n.language === 'en') return loc.nameEn;
+    const key = `locations.${loc.nameEn.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '')}`;
+    const translated = t(key, { defaultValue: '' });
+    return translated || loc.nameEn;
+  };
+  const locationName = getLocationDisplayName(location);
 
   const pageTitle = location
     ? `${locationName} Property for Sale & Rent in ${islandLabel} | Malta Luxury Real Estate`
@@ -136,7 +143,7 @@ export const CityPage: React.FC<CityPageProps> = ({
                 <span className="text-gold uppercase tracking-widest text-xs font-bold">{islandLabel} · {t('common.location')}</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-serif mb-8 leading-tight">
-                {t('common.properties')} in <br />
+                {t('common.properties_in')} <br />
                 <span className="text-gold-gradient italic">{locationName}</span>
               </h1>
               <div className="text-white/60 text-lg leading-relaxed max-w-2xl prose-p:leading-relaxed prose-a:text-gold hover:prose-a:underline">
@@ -228,7 +235,7 @@ export const CityPage: React.FC<CityPageProps> = ({
                   {location.lifestyleTags.map((tag, idx) => (
                     <div key={idx} className="px-6 py-4 rounded-2xl bg-white/5 border border-white/5 flex flex-col gap-2 group hover:border-gold/30 transition-all">
                       <span className="text-gold font-serif text-lg">{tag}</span>
-                      <span className="text-[10px] uppercase tracking-widest text-white/30 font-bold">Lifestyle Pillar</span>
+                      <span className="text-[10px] uppercase tracking-widest text-white/30 font-bold">{t('common.lifestyle_pillar')}</span>
                     </div>
                   ))}
                 </div>
@@ -241,7 +248,7 @@ export const CityPage: React.FC<CityPageProps> = ({
               <TrendingUp className="text-gold" size={32} />
             </div>
             <div className="flex-1 text-center md:text-left">
-              <h4 className="font-serif text-2xl mb-2">{t('article.related_guides', 'Investing in')} {locationName}</h4>
+              <h4 className="font-serif text-2xl mb-2">{t('common.investing_in')} {locationName}</h4>
               <p className="text-sm text-white/40">{t('sections.market_snapshot.subtitle')}</p>
             </div>
             <Link
@@ -259,7 +266,7 @@ export const CityPage: React.FC<CityPageProps> = ({
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
             <div>
-              <h2 className="text-3xl font-serif mb-2">{t('sections.featured.title')} in {locationName}</h2>
+              <h2 className="text-3xl font-serif mb-2">{t('sections.featured.title')} {t('common.properties_in')} {locationName}</h2>
               <p className="text-white/40 text-sm">{t('sections.featured.subtitle')}</p>
             </div>
             <Link
@@ -293,7 +300,7 @@ export const CityPage: React.FC<CityPageProps> = ({
             <div className="text-center py-20 glass-card rounded-3xl border border-white/10">
               <Home className="text-white/10 mx-auto mb-4" size={48} />
               <h3 className="text-xl font-serif mb-2">{t('states.noResults')}</h3>
-              <p className="text-white/40 text-sm">New properties are being added to {locationName} regularly.</p>
+              <p className="text-white/40 text-sm">{t('states.noResults')} — {t('common.properties_in')} {locationName} {t('common.ago', 'soon')}.</p>
             </div>
           )}
         </div>

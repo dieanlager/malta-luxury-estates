@@ -100,6 +100,8 @@
         "contact_agent": "Contacter l'Agent",
         "properties": "Propriétés",
         "listings": "Annonces",
+        "avg_price": "Prix Moyen",
+        "properties_in": "Propriétés à",
         "join_list": "Rejoindre la Liste Intelligence Malte",
         "privacy_guaranteed": "Confidentialité garantie. Désactivation possible à tout moment.",
         "ago": "il y a",
@@ -115,7 +117,13 @@
         "read_guide": "Lire le Guide",
         "efficiency_audit": "Audit EPC",
         "quiet_score": "Score de Tranquillité",
-        "find_twin": "Trouver un Jumeau"
+        "find_twin": "Trouver un Jumeau",
+        "scan_to_connect": "Scanner pour Se Connecter",
+        "official_support": "Support Officiel WeChat",
+        "estate_in": "Immobilier à {{location}}",
+        "design_by": "Design par",
+        "lifestyle_pillar": "Pilier Lifestyle",
+        "investing_in": "Investir à"
     },
     "locations": {
         "Sliema": "Sliema",
@@ -157,7 +165,16 @@
             "with_pool": "Avec Piscine",
             "historic": "Historique",
             "modern": "Moderne",
-            "high_efficiency": "Haute Efficacité"
+            "high_efficiency": "Haute Efficacité",
+            "price_range": "Prix Médian",
+            "sea_view": "Vue sur Mer",
+            "new_build": "Neuf",
+            "furnished": "Meublé",
+            "under_500k": "Moins de 500K €",
+            "under_1m": "Moins d'1M €",
+            "500k_1m": "500K – 1M €",
+            "over_1m": "Plus d'1M €",
+            "over_2m": "Plus de 2M €"
         },
         "types": {
             "villa": "Villa",

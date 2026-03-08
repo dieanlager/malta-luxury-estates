@@ -100,6 +100,8 @@
         "contact_agent": "Makler kontaktieren",
         "properties": "Immobilien",
         "listings": "Angebote",
+        "avg_price": "Ø-Preis",
+        "properties_in": "Immobilien in",
         "join_list": "Werden Sie Teil der Malta Intelligence Liste",
         "privacy_guaranteed": "Datenschutz garantiert. Abmeldung jederzeit möglich.",
         "ago": "vor",
@@ -115,7 +117,13 @@
         "read_guide": "Leitfaden lesen",
         "efficiency_audit": "EPC-Audit",
         "quiet_score": "Ruhewert",
-        "find_twin": "Zwilling finden"
+        "find_twin": "Zwilling finden",
+        "scan_to_connect": "Scannen zum Verbinden",
+        "official_support": "Offizieller WeChat-Support",
+        "estate_in": "Immobilien in {{location}}",
+        "design_by": "Design von",
+        "lifestyle_pillar": "Lifestyle-Säule",
+        "investing_in": "Investieren in"
     },
     "locations": {
         "Sliema": "Sliema",
@@ -157,7 +165,16 @@
             "with_pool": "Mit Pool",
             "historic": "Historisch",
             "modern": "Modern",
-            "high_efficiency": "Hohe Effizienz"
+            "high_efficiency": "Hohe Effizienz",
+            "price_range": "Medianpreis",
+            "sea_view": "Meerblick",
+            "new_build": "Neubau",
+            "furnished": "Möbliert",
+            "under_500k": "Unter 500.000 €",
+            "under_1m": "Unter 1 Mio. €",
+            "500k_1m": "500T. – 1 Mio. €",
+            "over_1m": "Über 1 Mio. €",
+            "over_2m": "Über 2 Mio. €"
         },
         "types": {
             "villa": "Villa",

@@ -105,7 +105,9 @@
         "contact_agent": "Kontakt z Agentem",
         "properties": "Nieruchomości",
         "listings": "Oferty",
-        "join_list": "Dołącz do Malta Intelligence List",
+        "avg_price": "Śr. Cena",
+        "properties_in": "Nieruchomości w",
+        "join_list": "Dołącz do Listy Intelligence",
         "privacy_guaranteed": "Gwarancja prywatności. Możesz zrezygnować w każdej chwili.",
         "ago": "temu",
         "today": "dzisiaj",
@@ -125,7 +127,9 @@
         "scan_to_connect": "Zeskanuj aby połączyć",
         "official_support": "Oficjalne wsparcie WeChat",
         "estate_in": "Nieruchomości w {{location}}",
-        "design_by": "Projekt i Realizacja"
+        "design_by": "Projekt i Realizacja",
+        "lifestyle_pillar": "Filar Stylu Życia",
+        "investing_in": "Inwestowanie w"
     },
     "interactive": {
         "epc": {
@@ -215,7 +219,16 @@
             "with_pool": "Z Basenem",
             "historic": "Zabytkowe",
             "modern": "Nowoczesne",
-            "high_efficiency": "Energooszczędne"
+            "high_efficiency": "Energooszczędne",
+            "price_range": "Mediana Cen",
+            "sea_view": "Widok na Morze",
+            "new_build": "Nowe Budownictwo",
+            "furnished": "Umeblowane",
+            "under_500k": "Poniżej 500 tys. €",
+            "under_1m": "Poniżej 1 mln €",
+            "500k_1m": "500 tys. – 1 mln €",
+            "over_1m": "Powyżej 1 mln €",
+            "over_2m": "Powyżej 2 mln €"
         },
         "types": {
             "villa": "Willa",

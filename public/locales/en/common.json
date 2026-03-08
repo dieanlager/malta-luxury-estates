@@ -93,6 +93,8 @@
         "contact_agent": "Contact Agent",
         "properties": "Properties",
         "listings": "Listings",
+        "avg_price": "Avg. Price",
+        "properties_in": "Properties in",
         "join_list": "Join Malta Intelligence List",
         "privacy_guaranteed": "Privacy Guaranteed. Opt-out anytime.",
         "ago": "ago",
@@ -110,9 +112,8 @@
         "official_support": "Official WeChat Support",
         "estate_in": "Real Estate in {{location}}",
         "design_by": "Design by",
-        "efficiency_audit": "EPC Audit",
-        "quiet_score": "Quiet Score",
-        "find_twin": "Find Twin"
+        "lifestyle_pillar": "Lifestyle Pillar",
+        "investing_in": "Investing in"
     },
     "interactive": {
         "epc": {
@@ -202,7 +203,16 @@
             "with_pool": "With Pool",
             "historic": "Historic",
             "modern": "Modern",
-            "high_efficiency": "High Efficiency"
+            "high_efficiency": "High Efficiency",
+            "price_range": "Median Price",
+            "sea_view": "Sea View",
+            "new_build": "New Build",
+            "furnished": "Furnished",
+            "under_500k": "Under €500K",
+            "under_1m": "Under €1M",
+            "500k_1m": "€500K – €1M",
+            "over_1m": "Over €1M",
+            "over_2m": "Over €2M"
         },
         "types": {
             "villa": "Villa",

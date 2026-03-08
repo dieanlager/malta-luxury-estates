@@ -100,6 +100,8 @@
         "contact_agent": "Contatta Agente",
         "properties": "Proprietà",
         "listings": "Annunci",
+        "avg_price": "Prezzo Medio",
+        "properties_in": "Proprietà a",
         "join_list": "Unisciti alla Lista Intelligence",
         "privacy_guaranteed": "Privacy Garantita. Cancellazione in ogni momento.",
         "ago": "fa",
@@ -115,7 +117,13 @@
         "read_guide": "Leggi la Guida",
         "efficiency_audit": "Audit EPC",
         "quiet_score": "Punteggio di Tranquillità",
-        "find_twin": "Trova Gemello"
+        "find_twin": "Trova Gemello",
+        "scan_to_connect": "Scansiona per Connetterti",
+        "official_support": "Supporto Ufficiale WeChat",
+        "estate_in": "Immobili a {{location}}",
+        "design_by": "Design di",
+        "lifestyle_pillar": "Pilastro Lifestyle",
+        "investing_in": "Investire a"
     },
     "locations": {
         "Sliema": "Sliema",
@@ -157,7 +165,16 @@
             "with_pool": "Con Piscina",
             "historic": "Storico",
             "modern": "Moderno",
-            "high_efficiency": "Alta Efficienza"
+            "high_efficiency": "Alta Efficienza",
+            "price_range": "Prezzo Mediano",
+            "sea_view": "Vista Mare",
+            "new_build": "Nuova Costruzione",
+            "furnished": "Arredato",
+            "under_500k": "Sotto €500K",
+            "under_1m": "Sotto €1M",
+            "500k_1m": "€500K – €1M",
+            "over_1m": "Oltre €1M",
+            "over_2m": "Oltre €2M"
         },
         "types": {
             "villa": "Villa",

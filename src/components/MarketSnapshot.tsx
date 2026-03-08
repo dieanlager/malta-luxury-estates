@@ -82,11 +82,11 @@ export const MarketSnapshot: React.FC<Props> = ({
               </div>
               <div className="flex gap-6 pt-2">
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.listings')}</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.listings', 'Listings')}</span>
                   <span className="text-sm font-bold">{stats.listingsSaleCount}</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('footer.stats_avg_price')}</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.avg_price')}</span>
                   <span className="text-sm font-bold">{formatPrice(stats.avgPriceSale)}</span>
                 </div>
               </div>
@@ -109,11 +109,11 @@ export const MarketSnapshot: React.FC<Props> = ({
               </div>
               <div className="flex gap-6 pt-2">
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.listings')}</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.listings', 'Listings')}</span>
                   <span className="text-sm font-bold">{stats.listingsRentCount}</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('footer.stats_avg_price')}</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.avg_price')}</span>
                   <span className="text-sm font-bold">{formatPrice(stats.avgPriceRent)}</span>
                 </div>
               </div>
