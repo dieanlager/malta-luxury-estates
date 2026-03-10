@@ -7,8 +7,14 @@ export default function AgencyRegister() {
     const { signUp } = useAuth()
 
     const [form, setForm] = useState({
-        agencyName: '', licenseNo: '',
-        phone: '', email: '', password: '', confirmPassword: '',
+        agencyName: '',
+        yourName: '',
+        licenseNo: '',
+        phone: '',
+        email: '',
+        website: '',
+        password: '',
+        confirmPassword: '',
     })
     const [error, setError] = useState<string | null>(null)
     const [success, setSuccess] = useState(false)
@@ -29,7 +35,16 @@ export default function AgencyRegister() {
         }
 
         setLoading(true)
-        const { error } = await signUp(form)
+        // Pass extra meta data for the Supabase trigger to pick up
+        const { error } = await signUp({
+            ...form,
+            meta: {
+                agency_name: form.agencyName,
+                your_name: form.yourName,
+                website: form.website,
+                phone: form.phone
+            }
+        })
 
         if (error) {
             setError(error)
@@ -61,7 +76,6 @@ export default function AgencyRegister() {
             title="Join Malta Luxury Real Estate"
             sub="Create your agency account — first 30 days free"
         >
-            {/* Plan teaser */}
             <div style={{
                 padding: '0.875rem 1rem', marginBottom: '1.5rem',
                 background: 'rgba(197,160,89,0.07)',
@@ -77,10 +91,16 @@ export default function AgencyRegister() {
             </div>
 
             <form onSubmit={handleSubmit}>
-                <Field label="Agency / Company Name *">
-                    <input type="text" required value={form.agencyName} onChange={set('agencyName')}
-                        style={inputStyle} placeholder="e.g. RE/MAX Malta" />
-                </Field>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
+                    <Field label="Agency Name *">
+                        <input type="text" required value={form.agencyName} onChange={set('agencyName')}
+                            style={inputStyle} placeholder="e.g. Alliance Malta" />
+                    </Field>
+                    <Field label="Your Name *">
+                        <input type="text" required value={form.yourName} onChange={set('yourName')}
+                            style={inputStyle} placeholder="Full Name" />
+                    </Field>
+                </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
                     <Field label="MDA License No.">
@@ -93,36 +113,36 @@ export default function AgencyRegister() {
                     </Field>
                 </div>
 
-                <Field label="Email address *">
-                    <input type="email" required autoComplete="email"
-                        value={form.email} onChange={set('email')}
-                        style={inputStyle} placeholder="listings@youragency.com" />
-                </Field>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
+                    <Field label="Email *">
+                        <input type="email" required autoComplete="email"
+                            value={form.email} onChange={set('email')}
+                            style={inputStyle} placeholder="listings@agency.com" />
+                    </Field>
+                    <Field label="Website (Optional)">
+                        <input type="url" value={form.website} onChange={set('website')}
+                            style={inputStyle} placeholder="https://youragency.com" />
+                    </Field>
+                </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
                     <Field label="Password *">
                         <input type="password" required autoComplete="new-password"
                             value={form.password} onChange={set('password')}
-                            style={inputStyle} placeholder="Min 8 characters" />
+                            style={inputStyle} placeholder="Min 8 chars" />
                     </Field>
                     <Field label="Confirm Password *">
                         <input type="password" required
                             value={form.confirmPassword} onChange={set('confirmPassword')}
-                            style={inputStyle} placeholder="Repeat password" />
+                            style={inputStyle} placeholder="Repeat" />
                     </Field>
                 </div>
 
                 {error && <ErrorBox>{error}</ErrorBox>}
 
                 <button type="submit" disabled={loading} style={primaryBtn(loading)}>
-                    {loading ? 'Creating account…' : 'Create Account →'}
+                    {loading ? 'Creating account…' : 'Create Agency Account →'}
                 </button>
-
-                <p style={{ textAlign: 'center', fontSize: '0.6875rem', color: 'rgba(255,255,255,0.2)', marginTop: '1rem', lineHeight: 1.6 }}>
-                    By registering you agree to our{' '}
-                    <Link to="/terms" style={linkStyle}>Terms of Service</Link> and{' '}
-                    <Link to="/privacy" style={linkStyle}>Privacy Policy</Link>.
-                </p>
 
                 <div style={linkRow}>
                     <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: '0.8125rem' }}>Already have an account?</span>
@@ -132,4 +152,3 @@ export default function AgencyRegister() {
         </AuthShell>
     )
 }
-

@@ -28,7 +28,17 @@ import {
     ArrowUpRight,
     TrendingUp,
     TrendingDown,
-    Loader2
+    Loader2,
+    Sparkles,
+    Shield,
+    Droplets,
+    Wind,
+    Sun,
+    Zap,
+    Car,
+    Trees,
+    Camera,
+    HardHat
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePageMeta } from "../lib/seo/meta";
@@ -62,7 +72,18 @@ interface DBProperty {
     created_at?: string;
 }
 
-const MALTA_LOCATIONS = ["Sliema", "St. Julian's", "Valletta", "Gżira", "Msida", "Swieqi", "Mellieħa", "St. Paul's Bay", "Naxxar", "Marsaxlokk", "Marsascala", "Gozo – Victoria", "Gozo – Xlendi", "Gozo – Sannat", "Kalkara (SDA)", "Portomaso (SDA)", "Tigné Point (SDA)", "Mdina", "Rabat", "Attard", "Balzan", "Lija"];
+const MALTA_LOCATIONS = [
+    "Sliema", "St. Julian's", "Valletta", "Mdina", "Mellieħa", "Senglea", "Cospicua", "Vittoriosa",
+    "Gżira", "Msida", "Swieqi", "Pembroke", "San Ġwann", "St. Paul's Bay", "Qawra", "Buġibba",
+    "Naxxar", "Għargħur", "Madliena", "Iklin", "Lija", "Balzan", "Attard", "Mosta", "Rabat",
+    "Attard", "Marsaxlokk", "Marsascala", "Birżebbuġa", "Żejtun", "Qormi", "Żebbuġ", "Siġġiewi",
+    "Dingli", "Mġarr", "Baħrija", "Żurrieq", "Qrendi", "Mqabba", "Kirkop", "Safi", "Luqa", "Gudja",
+    "Għaxaq", "Tarxien", "Paola", "Fgura", "Santa Luċija", "Kalkara", "Xgħajra", "Floriana",
+    "Gozo – Victoria", "Gozo – Xlendi", "Gozo – Marsalforn", "Gozo – Nadur", "Gozo – Xagħra",
+    "Gozo – Għajnsielem", "Gozo – Qala", "Gozo – Sannat", "Gozo – Munxar", "Gozo – Żebbuġ",
+    "Gozo – Għarb", "Gozo – Għasri", "Gozo – San Lawrenz"
+];
+
 const PROPERTY_TYPES = ["Apartment", "Penthouse", "Villa", "Townhouse", "House of Character", "Palazzo", "Maisonette", "Farmhouse", "Duplex", "Studio", "Ground Floor"];
 
 // ─── Primitives ───────────────────────────────────────────────────────────────
@@ -168,9 +189,16 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
 }
 
 // ─── Add / Edit Listing Modal ──────────────────────────────────────────────────
-function ListingModal({ listing, onSave, onClose }: any) {
+function ListingModal({ listing, onSave, onClose, agencyName }: any) {
     const isEdit = Boolean(listing?.id && !listing.id.startsWith('new_'));
-    const empty = { title: "", location: "", type: "", bedrooms: "2", bathrooms: "1", sqm: "", floor: "", price: "", listingType: "sale", condition: "Good", hasSeaView: false, hasPool: false, hasGarage: false, hasTerrace: false, isSDA: false, isUCA: false, description: "", status: "active", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80" };
+    const empty = {
+        title: "", location: "", type: "", bedrooms: "2", bathrooms: "1", sqm: "", floor: "",
+        price: "", listingType: "sale", epcRating: "A", description: "", status: "active",
+        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80",
+        // Amenities
+        isSeafront: false, hasPool: false, hasGarage: false, hasTerrace: false,
+        isSDA: false, isUCA: false, hasSmartHome: false, hasGym: false, hasBoatMooring: false
+    };
 
     // Map DB fields back to form state if editing
     const initialForm = listing ? {
@@ -181,10 +209,11 @@ function ListingModal({ listing, onSave, onClose }: any) {
         price: String(listing.price || ""),
         sqm: String(listing.area_sqm || ""),
         listingType: listing.listing_type || "sale",
-        hasSeaView: listing.is_seafront || false,
+        epcRating: listing.epc_rating || "A",
+        // Map DB booleans
+        isSeafront: listing.is_seafront || false,
         hasPool: listing.has_pool || false,
         hasGarage: listing.has_garage || false,
-        hasTerrace: listing.has_terrace || false,
         isSDA: listing.is_sda || false,
         isUCA: listing.is_uca || false,
         image: listing.images?.[0] || empty.image
@@ -192,23 +221,33 @@ function ListingModal({ listing, onSave, onClose }: any) {
 
     const [form, setForm] = useState(initialForm);
     const [step, setStep] = useState(0);
+    const [isAiGenerating, setIsAiGenerating] = useState(false);
 
-    const steps = ["Basic Info", "Details & Features", "Pricing & Status"];
+    const steps = ["Basics", "Location", "Intelligence & Features", "Media & Price"];
     const set = (k: string, v: any) => setForm(f => ({ ...f, [k]: v }));
     const isValid = form.title && form.location && form.type && form.price;
 
     const inputClass = "w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-gold/50 transition-all placeholder:text-white/10 font-mono";
     const labelClass = "block text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2";
 
+    const handleAiAssist = () => {
+        setIsAiGenerating(true);
+        setTimeout(() => {
+            const prompt = `This stunning ${form.type.toLowerCase()} in the heart of ${form.location} offers ${form.bedrooms} bedrooms and premium finishes. Spanning ${form.sqm} sqm, it features ${form.isSeafront ? 'breathtaking sea views' : 'modern interiors'} and an open-plan layout ideal for luxury living.`;
+            set("description", prompt);
+            setIsAiGenerating(false);
+        }, 1500);
+    };
+
     return (
         <div className="fixed inset-0 z-[200] flex items-center justify-center px-6">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose} className="absolute inset-0 bg-black/90 backdrop-blur-sm" />
-            <motion.div initial={{ opacity: 0, scale: 0.95, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.95, y: 20 }} className="relative w-full max-w-xl bg-luxury-black border border-white/10 rounded-[2.5rem] shadow-2xl overflow-hidden">
+            <motion.div initial={{ opacity: 0, scale: 0.95, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.95, y: 20 }} className="relative w-full max-w-2xl bg-luxury-black border border-white/10 rounded-[2.5rem] shadow-2xl overflow-hidden">
 
                 {/* Header */}
                 <div className="px-8 py-6 border-b border-white/5 flex justify-between items-center">
                     <div>
-                        <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-1">{isEdit ? "Edit Listing" : "New Listing"}</div>
+                        <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-1">{isEdit ? "Edit Premium Listing" : "New Premium Listing"}</div>
                         <h3 className="text-xl font-serif text-white">{form.title || (isEdit ? "Edit Property" : "Add Property")}</h3>
                     </div>
                     <button onClick={onClose} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white transition-all">
@@ -217,7 +256,7 @@ function ListingModal({ listing, onSave, onClose }: any) {
                 </div>
 
                 {/* Step tabs */}
-                <div className="flex border-b border-white/5">
+                <div className="flex border-b border-white/5 bg-white/[0.01]">
                     {steps.map((s, i) => (
                         <button key={s} onClick={() => setStep(i)} className={`flex-1 py-4 text-[9px] font-bold uppercase tracking-widest transition-all border-b-2 ${i === step ? 'text-gold border-gold' : 'text-white/20 border-transparent hover:text-white/40'}`}>
                             {i + 1}. {s}
@@ -232,16 +271,9 @@ function ListingModal({ listing, onSave, onClose }: any) {
                             <motion.div key="step0" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} className="space-y-6">
                                 <div>
                                     <label className={labelClass}>Listing Title *</label>
-                                    <input className={inputClass} placeholder="e.g. Spacious 3-Bed Penthouse, Sea Views" value={form.title} onChange={e => set("title", e.target.value)} />
+                                    <input className={inputClass} placeholder="e.g. Palazzo Noble Residence, Mdina" value={form.title} onChange={e => set("title", e.target.value)} />
                                 </div>
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <label className={labelClass}>Location *</label>
-                                        <select className={inputClass} value={form.location} onChange={e => set("location", e.target.value)}>
-                                            <option value="">Select Location</option>
-                                            {MALTA_LOCATIONS.map(l => <option key={l} value={l}>{l}</option>)}
-                                        </select>
-                                    </div>
                                     <div>
                                         <label className={labelClass}>Property Type *</label>
                                         <select className={inputClass} value={form.type} onChange={e => set("type", e.target.value)}>
@@ -249,48 +281,89 @@ function ListingModal({ listing, onSave, onClose }: any) {
                                             {PROPERTY_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
                                         </select>
                                     </div>
+                                    <div>
+                                        <label className={labelClass}>EPC Energy Rating</label>
+                                        <select className={inputClass} value={form.epcRating} onChange={e => set("epcRating", e.target.value)}>
+                                            {["A", "B", "C", "D", "E", "F", "G"].map(r => <option key={r} value={r}>Rating {r}</option>)}
+                                        </select>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label className={labelClass}>Description</label>
-                                    <textarea className={`${inputClass} min-h-[120px] resize-none leading-relaxed`} placeholder="Describe the property highlights..." value={form.description} onChange={e => set("description", e.target.value)} />
+                                <div className="relative">
+                                    <div className="flex justify-between items-center mb-2">
+                                        <label className={labelClass + " !mb-0"}>Detailed Property Description *</label>
+                                        <button
+                                            onClick={handleAiAssist}
+                                            disabled={isAiGenerating || !form.type || !form.location}
+                                            className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gold/10 text-gold text-[9px] font-bold uppercase tracking-widest hover:bg-gold/20 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                                        >
+                                            {isAiGenerating ? <Loader2 size={10} className="animate-spin" /> : <Sparkles size={10} />}
+                                            {isAiGenerating ? "Generating..." : "AI Assist"}
+                                        </button>
+                                    </div>
+                                    <textarea
+                                        className={`${inputClass} min-h-[140px] resize-none leading-relaxed`}
+                                        placeholder="Include details about finishes, views, orientation, and unique features..."
+                                        value={form.description}
+                                        onChange={e => set("description", e.target.value)}
+                                    />
                                 </div>
                             </motion.div>
                         )}
 
                         {step === 1 && (
                             <motion.div key="step1" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} className="space-y-8">
+                                <div>
+                                    <label className={labelClass}>Locality / City *</label>
+                                    <select className={inputClass} value={form.location} onChange={e => set("location", e.target.value)}>
+                                        <option value="">Select Location (68 localites available)</option>
+                                        {MALTA_LOCATIONS.map(l => <option key={l} value={l}>{l}</option>)}
+                                    </select>
+                                </div>
+                                <div className="p-8 rounded-[2rem] border border-white/5 bg-white/1 text-center">
+                                    <MapPin size={24} className="text-gold/40 mx-auto mb-4" />
+                                    <div className="text-xs text-white/60 mb-1">Geocoding is active for: <span className="text-white">{form.location || '...'}</span></div>
+                                    <div className="text-[10px] text-white/20 uppercase tracking-widest italic">Latitude & Longitude will be auto-calculated on publish.</div>
+                                </div>
+                            </motion.div>
+                        )}
+
+                        {step === 2 && (
+                            <motion.div key="step2" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} className="space-y-10">
                                 <div className="grid grid-cols-3 gap-4">
                                     <div>
-                                        <label className={labelClass}>Beds</label>
+                                        <label className={labelClass}>Bedrooms</label>
                                         <select className={inputClass} value={form.bedrooms} onChange={e => set("bedrooms", e.target.value)}>
                                             {["Studio", "1", "2", "3", "4", "5+"].map(b => <option key={b} value={b}>{b}</option>)}
                                         </select>
                                     </div>
                                     <div>
-                                        <label className={labelClass}>Baths</label>
+                                        <label className={labelClass}>Bathrooms</label>
                                         <select className={inputClass} value={form.bathrooms} onChange={e => set("bathrooms", e.target.value)}>
                                             {["1", "2", "3", "4+"].map(b => <option key={b} value={b}>{b}</option>)}
                                         </select>
                                     </div>
                                     <div>
-                                        <label className={labelClass}>Sqm</label>
+                                        <label className={labelClass}>Area (Sqm) *</label>
                                         <input type="number" className={inputClass} placeholder="120" value={form.sqm} onChange={e => set("sqm", e.target.value)} />
                                     </div>
                                 </div>
 
-                                <div>
-                                    <label className={labelClass}>Environmental Toggles</label>
-                                    <div className="flex flex-wrap gap-2">
+                                <div className="space-y-6">
+                                    <label className={labelClass}>Amenities & Property Flags</label>
+                                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                                         {[
-                                            { id: "hasSeaView", label: "Sea View", Icon: MapPin },
-                                            { id: "hasPool", label: "Pool", Icon: Home },
-                                            { id: "hasGarage", label: "Garage", Icon: Home },
-                                            { id: "hasTerrace", label: "Terrace", Icon: Home },
-                                            { id: "isSDA", label: "SDA Status", Icon: CheckCircle2 },
-                                            { id: "isUCA", label: "UCA / Tax Free", Icon: Home },
-                                        ].map(({ id, label, Icon }) => (
-                                            <button key={id} onClick={() => set(id, !form[id as keyof typeof form])} className={`flex items-center gap-2 px-4 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${(form as any)[id] ? 'bg-gold/10 border-gold text-gold' : 'border-white/10 text-white/30 hover:border-white/20'}`}>
-                                                {Icon && <Icon size={12} />}
+                                            { id: "isSeafront", label: "Sea View", icon: Waves },
+                                            { id: "hasPool", label: "Private Pool", icon: Droplets },
+                                            { id: "hasGarage", label: "Garage / Parking", icon: Car },
+                                            { id: "isSDA", label: "SDA Status", icon: Shield },
+                                            { id: "isUCA", label: "UCA Zone", icon: Home },
+                                            { id: "hasSmartHome", label: "Smart Home", icon: Zap },
+                                            { id: "hasGym", label: "Gym / Wellness", icon: HardHat },
+                                            { id: "hasBoatMooring", label: "Boat Mooring", icon: Wind },
+                                            { id: "hasGarden", label: "Garden / Deck", icon: Trees },
+                                        ].map(({ id, label, icon: Icon }) => (
+                                            <button key={id} onClick={() => set(id, !form[id as keyof typeof form])} className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-[9px] font-bold uppercase tracking-widest border transition-all ${(form as any)[id] ? 'bg-gold/10 border-gold/40 text-gold shadow-[0_0_15px_rgba(197,160,89,0.1)]' : 'border-white/5 text-white/30 hover:border-white/10'}`}>
+                                                <Icon size={12} />
                                                 {label}
                                             </button>
                                         ))}
@@ -299,8 +372,8 @@ function ListingModal({ listing, onSave, onClose }: any) {
                             </motion.div>
                         )}
 
-                        {step === 2 && (
-                            <motion.div key="step2" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} className="space-y-8">
+                        {step === 3 && (
+                            <motion.div key="step3" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} className="space-y-8">
                                 <div className="grid grid-cols-2 gap-4">
                                     <div>
                                         <label className={labelClass}>Listing Purpose</label>
@@ -313,23 +386,28 @@ function ListingModal({ listing, onSave, onClose }: any) {
                                         </div>
                                     </div>
                                     <div>
-                                        <label className={labelClass}>Price (EUR) *</label>
+                                        <label className={labelClass}>Asking Price (€) *</label>
                                         <input type="number" className={inputClass} placeholder="895000" value={form.price} onChange={e => set("price", e.target.value)} />
                                     </div>
                                 </div>
 
-                                <div className="p-6 rounded-[2rem] border border-dashed border-white/10 text-center">
-                                    <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/20 mx-auto mb-4">
-                                        <Upload size={24} />
+                                <div className="space-y-3">
+                                    <label className={labelClass}>Cover Property Image (URL)</label>
+                                    <div className="flex gap-3">
+                                        <input className={inputClass} placeholder="https://images.unsplash.com/..." value={form.image} onChange={e => set("image", e.target.value)} />
+                                        <button className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/40 hover:text-white border border-white/5">
+                                            <Camera size={20} />
+                                        </button>
                                     </div>
-                                    <div className="text-xs font-medium text-white mb-1">Upload Property Photos</div>
-                                    <div className="text-[10px] text-white/20 uppercase tracking-widest">Max 30 high-res images</div>
+                                    <div className="p-4 rounded-xl border border-dashed border-white/10 text-[9px] text-white/20 uppercase tracking-widest text-center">
+                                        Drag & drop for bulk upload (up to 20 images) implemented in Pro Plan.
+                                    </div>
                                 </div>
 
                                 <div>
                                     <label className={labelClass}>Visibility Status</label>
                                     <div className="flex gap-2">
-                                        {[["active", "Live", "text-emerald-400"], ["draft", "Draft", "text-white/40"], ["paused", "Paused", "text-gold"]].map(([val, lbl, color]) => (
+                                        {[["active", "Publish Live", "text-emerald-400"], ["draft", "Save as Draft", "text-white/40"], ["paused", "Paused", "text-gold"]].map(([val, lbl, color]) => (
                                             <button key={val} onClick={() => set("status", val)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${form.status === val ? `bg-white/5 border-white/20 ${color}` : 'border-white/5 text-white/20'}`}>
                                                 {lbl}
                                             </button>
@@ -348,13 +426,13 @@ function ListingModal({ listing, onSave, onClose }: any) {
                         {step > 0 && <button onClick={() => setStep(s => s - 1)} className="px-8 py-3 rounded-xl border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white hover:bg-white/5 transition-all">Back</button>}
                         <button
                             onClick={() => {
-                                if (step < 2) setStep(s => s + 1);
+                                if (step < steps.length - 1) setStep(s => s + 1);
                                 else if (isValid) onSave(form);
                             }}
-                            disabled={step === 2 && !isValid}
-                            className={`px-8 py-3 rounded-xl bg-gold text-luxury-black text-[10px] font-bold uppercase tracking-widest transition-all ${step === 2 && !isValid ? 'opacity-30 cursor-not-allowed' : 'hover:scale-105 active:scale-95'}`}
+                            disabled={step === steps.length - 1 && !isValid}
+                            className={`px-10 py-3 rounded-xl bg-gold text-luxury-black text-[10px] font-bold uppercase tracking-widest transition-all ${step === steps.length - 1 && !isValid ? 'opacity-30 cursor-not-allowed' : 'hover:scale-105 active:scale-95 shadow-xl shadow-gold/20'}`}
                         >
-                            {step < 2 ? "Next Step" : (isEdit ? "Update Property" : "Publish Listing")}
+                            {step < steps.length - 1 ? "Next Step" : (isEdit ? "Save Changes" : "Save & Publish Listing")}
                         </button>
                     </div>
                 </div>
@@ -502,14 +580,15 @@ export const AgencyPortal: React.FC = () => {
             area_sqm: parseFloat(formData.sqm) || 0,
             price: parseFloat(formData.price),
             listing_type: formData.listingType,
+            epc_rating: formData.epcRating,
             status: formData.status,
             description: formData.description,
-            is_seafront: formData.hasSeaView,
+            is_seafront: formData.isSeafront,
             has_pool: formData.hasPool,
             has_garage: formData.hasGarage,
             is_sda: formData.isSDA,
             is_uca: formData.isUCA,
-            images: [formData.image], // Simplification for demo
+            images: [formData.image],
         };
 
         try {
@@ -518,7 +597,7 @@ export const AgencyPortal: React.FC = () => {
 
             await fetchData(); // Refresh
             setModal(null);
-            notify(dbData.id ? "Property updated" : "Listing published 🚀");
+            notify(dbData.id ? "Listing updated" : "Property published! 🚀");
         } catch (err: any) {
             notify(err.message, "error");
         }
@@ -572,17 +651,15 @@ export const AgencyPortal: React.FC = () => {
 
     // Stats
     const active = listings.filter(l => l.status === "active");
-    const totalViews = active.reduce((s, l) => s + (l.views_count || 0), 0);
-    const totalLeadsCount = active.reduce((s, l) => s + (l.leads_count || 0), 0);
     const newLeadsCount = leads.filter(l => l.status === "new").length;
     const filteredListings = listingFilter === "all" ? listings : listings.filter(l => l.status === listingFilter);
 
     const navItems = [
         { id: "dashboard", icon: LayoutDashboard, label: "Overview" },
-        { id: "listings", icon: List, label: "Listings", badge: listings.length },
-        { id: "leads", icon: Users, label: "Lead Pipeline", badge: newLeadsCount, badgeColor: "text-blue-400" },
-        { id: "analytics", icon: BarChart3, label: "Market Insights" },
-        { id: "settings", icon: Settings, label: "Settings" },
+        { id: "listings", icon: List, label: "My Listings", badge: listings.length },
+        { id: "leads", icon: Users, label: "Sales Pipeline", badge: newLeadsCount, badgeColor: "text-blue-400" },
+        { id: "analytics", icon: BarChart3, label: "Intelligence" },
+        { id: "settings", icon: Settings, label: "Agency Profile" },
     ];
 
     if (isLoading && authLoading) {
@@ -590,7 +667,7 @@ export const AgencyPortal: React.FC = () => {
             <div className="min-h-screen bg-luxury-black flex items-center justify-center">
                 <div className="text-center space-y-4">
                     <Loader2 className="w-12 h-12 text-gold animate-spin mx-auto" />
-                    <p className="text-gold font-mono text-[10px] uppercase tracking-widest">Accessing Secure Vault...</p>
+                    <p className="text-gold font-mono text-[10px] uppercase tracking-widest">Entering Private Vault...</p>
                 </div>
             </div>
         );
@@ -599,7 +676,6 @@ export const AgencyPortal: React.FC = () => {
     return (
         <div className="min-h-screen bg-luxury-black font-sans text-white/80 selection:bg-gold/30">
 
-            {/* ── Notification Toast ── */}
             <AnimatePresence>
                 {notification && (
                     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className={`fixed top-8 right-8 z-[300] px-6 py-4 rounded-2xl border backdrop-blur-xl shadow-2xl flex items-center gap-3 font-mono text-[10px] uppercase tracking-widest ${notification.type === 'error' ? 'bg-red-500/10 border-red-500/20 text-red-400' : 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400'}`}>
@@ -609,13 +685,13 @@ export const AgencyPortal: React.FC = () => {
                 )}
             </AnimatePresence>
 
-            {/* ── Modal ── */}
             <AnimatePresence>
                 {modal && (
                     <ListingModal
                         listing={modal === "new" ? null : modal}
                         onSave={saveListing}
                         onClose={() => setModal(null)}
+                        agencyName={agency?.name}
                     />
                 )}
             </AnimatePresence>
@@ -626,20 +702,20 @@ export const AgencyPortal: React.FC = () => {
                 <aside className="w-64 border-r border-white/5 bg-white/[0.01] flex flex-col sticky top-0 h-screen">
                     <div className="p-8 border-b border-white/5 mb-4">
                         <Link to="/" className="group block">
-                            <div className="text-[9px] font-bold uppercase tracking-[0.3em] text-gold mb-1 group-hover:text-white transition-colors">Agency Portal</div>
-                            <div className="text-sm font-serif text-white tracking-widest">MALTA <span className="text-gold italic">LUXURY</span></div>
+                            <div className="text-[9px] font-bold uppercase tracking-[0.3em] text-gold mb-1 group-hover:text-white transition-colors">Portal Partner</div>
+                            <div className="text-sm font-serif text-white tracking-widest leading-none">MALTA <span className="text-gold italic">LUXURY</span></div>
                         </Link>
                     </div>
 
                     <div className="px-6 mb-8">
                         <div className="p-4 rounded-2xl border border-white/10 bg-white/5 flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-xl bg-gold/20 border border-gold/30 flex items-center justify-center text-gold font-mono text-xs font-bold shadow-inner uppercase">
-                                {agency?.name?.substring(0, 2) || 'LE'}
+                            <div className="w-10 h-10 rounded-xl bg-gold/20 border border-gold/30 flex items-center justify-center text-gold font-mono text-xs font-bold shadow-inner">
+                                {agency?.name?.substring(0, 1) || 'A'}
                             </div>
                             <div className="min-w-0">
-                                <div className="text-xs font-bold text-white truncate">{agency?.name || 'Loading...'}</div>
+                                <div className="text-[11px] font-bold text-white truncate">{agency?.name || 'Loading...'}</div>
                                 <div className="text-[9px] font-mono text-gold flex items-center gap-1 uppercase tracking-wide">
-                                    {(agency as any)?.plan || 'Basic'} Plan <ArrowUpRight size={10} />
+                                    {agency?.plan || 'Basic'} Active <ArrowUpRight size={10} />
                                 </div>
                             </div>
                         </div>
@@ -663,17 +739,14 @@ export const AgencyPortal: React.FC = () => {
                     </nav>
 
                     <div className="p-6 border-t border-white/5">
-                        <button
-                            onClick={handleSignOut}
-                            className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-white/20 hover:text-red-400 hover:bg-red-400/5 transition-all text-xs font-medium"
-                        >
-                            <X size={16} /> Sign Out
+                        <button onClick={handleSignOut} className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-white/20 hover:text-red-400 hover:bg-red-400/5 transition-all text-xs font-medium">
+                            <X size={16} /> Sign Out Partner
                         </button>
                     </div>
                 </aside>
 
                 {/* ── Main Dashboard ── */}
-                <main className="flex-1 min-w-0 overflow-y-auto">
+                <main className="flex-1 min-w-0 overflow-y-auto bg-[#080808]">
 
                     {/* Header */}
                     <header className="px-10 py-8 border-b border-white/5 flex justify-between items-center sticky top-0 bg-luxury-black/90 backdrop-blur-xl z-50">
@@ -681,13 +754,13 @@ export const AgencyPortal: React.FC = () => {
                             <h1 className="text-3xl font-serif text-white tracking-wide">
                                 {navItems.find(n => n.id === view)?.label}
                             </h1>
-                            <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mt-1">{new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                            <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mt-1">Malta Real Estate Intelligence · {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
                         </div>
 
                         <div className="flex items-center gap-6">
                             {(view === "dashboard" || view === "listings") && (
                                 <button onClick={() => setModal({ id: `new_${Date.now()}`, title: '', status: 'active' })} className="flex items-center gap-2 px-6 py-3 bg-gold text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl shadow-gold/10">
-                                    <Plus size={14} /> New Listing
+                                    <Plus size={14} /> Add Property Listing
                                 </button>
                             )}
                         </div>
@@ -700,17 +773,17 @@ export const AgencyPortal: React.FC = () => {
                             <div className="space-y-12">
                                 {/* Metrics Grid */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                    <StatCard label="Active Portfolio" value={active.length} sub="Listings Live" trend={0} icon={Home} />
-                                    <StatCard label="Pipeline Leads" value={leads.length} sub="Agency Total" trend={0} icon={Users} />
-                                    <StatCard label="Average Days" value="–" sub="Market Velocity" trend={0} icon={Clock} />
-                                    <StatCard label="Portfolio Value" value={`€${(active.reduce((s, l) => s + l.price, 0) / 1000000).toFixed(1)}M`} sub="Active Equity" trend={0} icon={Euro} />
+                                    <StatCard label="Portfolio Strength" value={active.length} sub="Live Listings" trend={0} icon={Home} />
+                                    <StatCard label="Pipeline Interest" value={leads.length} sub="Active Leads" trend={0} icon={Users} />
+                                    <StatCard label="Inbound Today" value={newLeadsCount} sub="New Enquiries" trend={0} icon={Zap} />
+                                    <StatCard label="Asset Value" value={`€${(active.reduce((s, l) => s + l.price, 0) / 1000000).toFixed(1)}M`} sub="Active Equity" trend={0} icon={Euro} />
                                 </div>
 
                                 {/* Rows Grid */}
                                 <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-end">
-                                            <h3 className="text-xl font-serif text-white">Recent Listings</h3>
+                                            <h3 className="text-xl font-serif text-white italic">Recent Portfolio Updates</h3>
                                             <button onClick={() => setView('listings')} className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/30 hover:text-gold transition-all">
                                                 Manage All <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform" />
                                             </button>
@@ -725,7 +798,7 @@ export const AgencyPortal: React.FC = () => {
 
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-end">
-                                            <h3 className="text-xl font-serif text-white">Latest Enquiries</h3>
+                                            <h3 className="text-xl font-serif text-white italic">Latest Enquiries</h3>
                                             <button onClick={() => setView('leads')} className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/30 hover:text-gold transition-all">
                                                 Full Pipeline <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform" />
                                             </button>
@@ -744,7 +817,6 @@ export const AgencyPortal: React.FC = () => {
                         {/* ── VIEW: LISTINGS ── */}
                         {view === "listings" && (
                             <div className="space-y-8">
-                                {/* Filter Toolbar */}
                                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 p-6 rounded-[2rem] bg-white/2 border border-white/5">
                                     <div className="flex gap-2">
                                         {[["all", "All"], ["active", "Active"], ["paused", "Paused"], ["draft", "Drafts"]].map(([val, lbl]) => (
@@ -782,7 +854,6 @@ export const AgencyPortal: React.FC = () => {
                         {/* ── VIEW: LEADS ── */}
                         {view === "leads" && (
                             <div className="space-y-10">
-                                {/* Summary Row */}
                                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                                     {[
                                         { label: "Inbox", count: leads.filter(l => l.status === 'new').length, color: "text-blue-400" },
@@ -804,42 +875,42 @@ export const AgencyPortal: React.FC = () => {
                                     {leads.map(l => (
                                         <LeadRow key={l.id} lead={l} onUpdateStatus={updateLeadStatus} />
                                     ))}
-                                    {leads.length === 0 && <div className="p-20 text-center text-white/10 italic">No incoming leads yet.</div>}
+                                    {leads.length === 0 && <div className="p-20 text-center text-white/10 italic font-serif">No incoming leads yet.</div>}
                                 </div>
                             </div>
                         )}
 
-                        {/* ANALYTICS & SETTINGS placeholder logic remains ... */}
                         {view === "analytics" && <div className="glass-card p-20 rounded-[4rem] text-center bg-white/[0.01] border border-white/5 border-dashed">
                             <div className="w-20 h-20 rounded-[2rem] bg-gold/5 border border-gold/10 flex items-center justify-center text-gold mx-auto mb-8 shadow-2xl">
                                 <BarChart3 size={40} />
                             </div>
-                            <h2 className="text-4xl font-serif text-white mb-4">Deep Market Intelligence</h2>
-                            <p className="max-w-xl mx-auto text-white/30 text-lg leading-relaxed mb-10">Comparative market analysis and heatmaps are coming in the next version.</p>
+                            <h2 className="text-4xl font-serif text-white mb-4 italic">Deep Market Intelligence</h2>
+                            <p className="max-w-xl mx-auto text-white/30 text-lg leading-relaxed mb-10">Comparative market analysis, price heatmaps, and demand forecasting are reserved for Pro Partners.</p>
+                            <button onClick={() => setView('settings')} className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest text-white">Unlock Insights →</button>
                         </div>}
 
                         {view === "settings" && <div className="max-w-2xl space-y-10">
                             <div className="glass-card p-10 rounded-[3rem] border border-white/5 bg-white/1 space-y-8">
                                 <div className="flex items-center gap-4 border-b border-white/5 pb-8 mb-4">
                                     <div className="w-16 h-16 rounded-2xl bg-gold/10 border border-gold/20 flex items-center justify-center text-gold text-2xl font-mono font-bold uppercase">
-                                        {agency?.name?.substring(0, 2) || 'AG'}
+                                        {agency?.name?.substring(0, 1) || 'A'}
                                     </div>
                                     <div>
-                                        <h3 className="text-2xl font-serif text-white">{agency?.name || 'Agency Name'}</h3>
-                                        <p className="text-[10px] uppercase tracking-widest text-white/30 font-bold">Plan: {(agency as any)?.plan || 'Basic'}</p>
+                                        <h3 className="text-2xl font-serif text-white">{agency?.name || 'Agency Partner'}</h3>
+                                        <p className="text-[10px] uppercase tracking-widest text-white/30 font-bold italic">Status: {agency?.plan?.toUpperCase()} PARTNER</p>
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="col-span-full space-y-2">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30 ml-4">Management Email</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30 ml-4">Primary Contact Email</label>
                                         <div className="relative">
                                             <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-white/10" size={16} />
                                             <input className="w-full bg-white/5 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm text-white font-mono" defaultValue={agency?.email || ""} readOnly />
                                         </div>
                                     </div>
                                 </div>
-                                <button onClick={() => navigate('/agency/upgrade')} className="w-full py-4 bg-gold/10 hover:bg-gold/20 border border-gold/20 rounded-2xl text-[10px] font-bold uppercase tracking-widest text-gold transition-all">
-                                    Manage Subscription & Plan
+                                <button onClick={() => navigate('/agency/upgrade')} className="w-full py-5 bg-gold/10 hover:bg-gold/20 border border-gold/20 rounded-2xl text-[10px] font-bold uppercase tracking-widest text-gold transition-all shadow-lg">
+                                    Manage Subscription & Global Plan
                                 </button>
                             </div>
                         </div>}

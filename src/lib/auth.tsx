@@ -4,7 +4,7 @@ import {
 } from 'react'
 import { Session, User } from '@supabase/supabase-js'
 import { supabase } from './supabase'
-import { Agency } from '../types' // Assuming types are in ../types
+import { Agency } from '../types'
 
 interface AuthContextValue {
     session: Session | null
@@ -22,8 +22,11 @@ interface SignUpData {
     email: string
     password: string
     agencyName: string
+    yourName: string
     licenseNo: string
     phone: string
+    website?: string
+    meta?: any
 }
 
 const AuthContext = createContext<AuthContextValue | null>(null)
@@ -33,7 +36,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const [agency, setAgency] = useState<Agency | null>(null)
     const [loading, setLoading] = useState(true)
 
-    // ── Load session on mount ──────────────────────────────────
     useEffect(() => {
         if (!supabase) {
             setLoading(false);
@@ -46,7 +48,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             else setLoading(false)
         })
 
-        // Listen for auth state changes (login, logout, token refresh)
         const { data: { subscription } } = supabase.auth.onAuthStateChange(
             (_event, session) => {
                 setSession(session)
@@ -63,35 +64,38 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const { data } = await supabase
             .from('agencies')
             .select('*')
-            .eq('id', userId)   // agencies.id = auth.uid()
+            .eq('id', userId)
             .single()
 
         setAgency(data)
         setLoading(false)
     }
 
-    // ── Sign In ────────────────────────────────────────────────
     async function signIn(email: string, password: string) {
         if (!supabase) return { error: 'Supabase not configured' };
         const { error } = await supabase.auth.signInWithPassword({ email, password })
         return { error: error?.message ?? null }
     }
 
-    // ── Sign Up (creates auth user + agency row) ───────────────
-    async function signUp({ email, password, agencyName, licenseNo, phone }: SignUpData) {
+    async function signUp({ email, password, agencyName, yourName, licenseNo, phone, website, meta }: SignUpData) {
         if (!supabase) return { error: 'Supabase not configured' };
+
         // 1. Create auth user
         const { data, error: authError } = await supabase.auth.signUp({
             email,
             password,
             options: {
                 emailRedirectTo: `${window.location.origin}/agency/portal`,
-                data: { agency_name: agencyName },
+                data: {
+                    agency_name: agencyName,
+                    full_name: yourName,
+                    website: website
+                },
             },
         })
         if (authError) return { error: authError.message }
 
-        // 2. Insert agency profile (uses same UUID as auth user)
+        // 2. Insert agency profile
         if (data.user) {
             const { error: dbError } = await supabase.from('agencies').upsert({
                 id: data.user.id,
@@ -99,23 +103,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
                 email,
                 license_no: licenseNo || null,
                 phone: phone || null,
+                website_url: website || null,
                 plan: 'basic',
                 active: true,
             })
             if (dbError) console.error('Agency insert error:', dbError)
+
+            // 3. Trigger Welcome Email (optional, handled by API)
+            // fetch('/api/notify-welcome', { method: 'POST', body: JSON.stringify({ email, agencyName }) }).catch(() => {});
         }
 
         return { error: null }
     }
 
-    // ── Sign Out ───────────────────────────────────────────────
     async function signOut() {
         if (!supabase) return;
         await supabase.auth.signOut()
         setAgency(null)
     }
 
-    // ── Password Reset (email) ─────────────────────────────────
     async function resetPassword(email: string) {
         if (!supabase) return { error: 'Supabase not configured' };
         const { error } = await supabase.auth.resetPasswordForEmail(email, {
@@ -124,7 +130,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return { error: error?.message ?? null }
     }
 
-    // ── Update password (from reset link) ─────────────────────
     async function updatePassword(password: string) {
         if (!supabase) return { error: 'Supabase not configured' };
         const { error } = await supabase.auth.updateUser({ password })
