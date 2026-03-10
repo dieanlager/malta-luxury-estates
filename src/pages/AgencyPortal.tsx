@@ -47,6 +47,8 @@ import { useAuth } from "../lib/auth";
 import { supabase } from "../lib/supabase";
 import { LOCATIONS } from "../lib/data";
 import { CSVImport } from "../components/agency/CSVImport";
+import { usePlanStatus, PlanId } from "../lib/planLimits";
+import { FeatureGate, ListingLimitGate } from "../components/agency/PlanGate";
 
 // --- Types ---
 interface DBProperty {
@@ -191,7 +193,7 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
 }
 
 // ─── Add / Edit Listing Modal ──────────────────────────────────────────────────
-function ListingModal({ listing, onSave, onClose, agencyName }: any) {
+function ListingModal({ listing, onSave, onClose, agencyName, planStatus, requestUpgrade }: any) {
     const isEdit = Boolean(listing?.id && !listing.id.startsWith('new_'));
     const empty = {
         title: "", location: "", type: "", bedrooms: "2", bathrooms: "1", sqm: "", floor: "",
@@ -293,14 +295,16 @@ function ListingModal({ listing, onSave, onClose, agencyName }: any) {
                                 <div className="relative">
                                     <div className="flex justify-between items-center mb-2">
                                         <label className={labelClass + " !mb-0"}>Detailed Property Description *</label>
-                                        <button
-                                            onClick={handleAiAssist}
-                                            disabled={isAiGenerating || !form.type || !form.location}
-                                            className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gold/10 text-gold text-[9px] font-bold uppercase tracking-widest hover:bg-gold/20 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
-                                        >
-                                            {isAiGenerating ? <Loader2 size={10} className="animate-spin" /> : <Sparkles size={10} />}
-                                            {isAiGenerating ? "Generating..." : "AI Assist"}
-                                        </button>
+                                        <FeatureGate status={planStatus} featureLabel="AI Intelligence" onUpgrade={() => requestUpgrade()}>
+                                            <button
+                                                onClick={handleAiAssist}
+                                                disabled={isAiGenerating || !form.type || !form.location}
+                                                className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gold/10 text-gold text-[9px] font-bold uppercase tracking-widest hover:bg-gold/20 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                                            >
+                                                {isAiGenerating ? <Loader2 size={10} className="animate-spin" /> : <Sparkles size={10} />}
+                                                {isAiGenerating ? "Generating..." : "AI Assist"}
+                                            </button>
+                                        </FeatureGate>
                                     </div>
                                     <textarea
                                         className={`${inputClass} min-h-[140px] resize-none leading-relaxed`}
@@ -499,6 +503,7 @@ export const AgencyPortal: React.FC = () => {
 
     const { agency, signOut, loading: authLoading } = useAuth();
     const navigate = useNavigate();
+    const planStatus = usePlanStatus(agency?.id, (agency?.plan as PlanId) || 'basic');
     const [view, setView] = useState("dashboard");
     const [listings, setListings] = useState<any[]>([]);
     const [leads, setLeads] = useState<any[]>([]);
@@ -595,7 +600,14 @@ export const AgencyPortal: React.FC = () => {
 
         try {
             const { error } = await supabase.from('properties').upsert(dbData).select();
-            if (error) throw error;
+            if (error) {
+                if (error.message.includes('PLAN_LIMIT_EXCEEDED')) {
+                    notify("Asset Limit Reached. Upgrade required to inject more inventory.", "error");
+                    setView('settings');
+                    return;
+                }
+                throw error;
+            }
 
             await fetchData(); // Refresh
             setModal(null);
@@ -695,6 +707,8 @@ export const AgencyPortal: React.FC = () => {
                         onSave={saveListing}
                         onClose={() => setModal(null)}
                         agencyName={agency?.name}
+                        planStatus={planStatus}
+                        requestUpgrade={() => { setModal(null); setView('settings'); }}
                     />
                 )}
             </AnimatePresence>
@@ -762,9 +776,14 @@ export const AgencyPortal: React.FC = () => {
 
                         <div className="flex items-center gap-6">
                             {(view === "dashboard" || view === "listings") && (
-                                <button onClick={() => setModal({ id: `new_${Date.now()}`, title: '', status: 'active' })} className="flex items-center gap-2 px-6 py-3 bg-gold text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl shadow-gold/10">
-                                    <Plus size={14} /> Add Property Listing
-                                </button>
+                                <ListingLimitGate status={planStatus} onUpgrade={() => setView('settings')}>
+                                    <button onClick={() => setModal({ id: `new_${Date.now()}`, title: '', status: 'active' })} className="flex items-center gap-2 px-6 py-3 bg-gold text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl shadow-gold/10">
+                                        <Plus size={14} /> Add Property Listing
+                                        {planStatus.plan.listingLimit !== -1 && (
+                                            <span className="ml-2 text-[8px] opacity-40">({planStatus.remainingSlots} left)</span>
+                                        )}
+                                    </button>
+                                </ListingLimitGate>
                             )}
                         </div>
                     </header>
@@ -893,7 +912,9 @@ export const AgencyPortal: React.FC = () => {
                                         every record against the Malta Luxury standard before injection.
                                     </p>
                                 </section>
-                                <CSVImport onComplete={() => { setView('listings'); fetchData(); }} />
+                                <FeatureGate status={planStatus} featureLabel="CSV Synchronization" onUpgrade={() => setView('settings')}>
+                                    <CSVImport onComplete={() => { setView('listings'); fetchData(); }} />
+                                </FeatureGate>
                             </div>
                         )}
 
