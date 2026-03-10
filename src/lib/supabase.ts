@@ -16,10 +16,8 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 // Check if Supabase is configured
 export const isSupabaseConfigured = !!(SUPABASE_URL && SUPABASE_ANON_KEY);
 
-// Create client (will be a no-op if not configured)
-export const supabase = isSupabaseConfigured
-    ? createClient<Database>(SUPABASE_URL, SUPABASE_ANON_KEY)
-    : null;
+// Create client
+export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Helper to check connection
 export async function testConnection(): Promise<boolean> {

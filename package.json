@@ -33,6 +33,7 @@
     "motion-react": "^0.15.0-alpha.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-dropzone": "^15.0.0",
     "react-i18next": "^16.5.5",
     "react-map-gl": "^8.1.0",
     "react-markdown": "^10.1.0",

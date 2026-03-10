@@ -1,0 +1,6 @@
+# Malta Luxury Estates — Listings Import Template
+# Columns with * are required. Multiple images should be pipe-separated (|)
+Title,Property Type,Listing Type,Price (€),Location,Bedrooms,Bathrooms,Area (sqm),Description,EPC Rating,Sea View,Pool,Garage,SDA,UCA,Images (URLs),Your Ref ID
+"Luxury 3-bed apartment, Sliema seafront","apartment","sale","450000","Sliema","3","2","120","Stunning seafront apartment with panoramic views...","A","yes","no","yes","no","no","https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800","AG-1234"
+"Sea View Penthouse, St. Julians","penthouse","sale","750000","St. Julians","4","3","180","Stunning penthouse with panoramic sea views over Spinola Bay","B","yes","yes","yes","no","no","https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800","AG-0042"
+"Modern Maisonette, Mosta","maisonette","rent","1800","Mosta","2","1","95","Brand new maisonette in a quiet area of Mosta. Fully furnished and ready to move in.","C","no","no","no","no","no","https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800","AG-9988"

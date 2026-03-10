@@ -66,12 +66,14 @@ export interface Database {
                     images: string[];
                     agency_name: string | null;
                     agency_logo: string | null;
+                    agency_id: string;
+                    external_ref: string | null;
                     source_url: string | null;
                     status: 'active' | 'sold' | 'rented' | 'inactive';
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database['public']['Tables']['properties']['Row'], 'id' | 'created_at' | 'updated_at'> & { id?: string };
+                Insert: Omit<Database['public']['Tables']['properties']['Row'], 'id' | 'slug' | 'created_at' | 'updated_at'> & { id?: string; slug?: string };
                 Update: Partial<Database['public']['Tables']['properties']['Insert']>;
             };
             articles: {

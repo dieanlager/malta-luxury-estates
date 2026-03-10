@@ -83,9 +83,15 @@ CREATE TABLE IF NOT EXISTS public.properties (
   images        TEXT[] DEFAULT '{}',
   views_count   INTEGER DEFAULT 0,
   leads_count   INTEGER DEFAULT 0,
+  external_ref  TEXT,        -- Agency's internal ID for deduplication
   created_at    TIMESTAMPTZ DEFAULT NOW(),
   updated_at    TIMESTAMPTZ DEFAULT NOW()
 );
+
+-- Index for CSV Import deduplication
+CREATE UNIQUE INDEX IF NOT EXISTS idx_properties_agency_external_ref
+  ON public.properties (agency_id, external_ref)
+  WHERE external_ref IS NOT NULL;
 
 -- 3. Leads Table: Inbound enquiries
 CREATE TABLE IF NOT EXISTS public.leads (

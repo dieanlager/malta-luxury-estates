@@ -38,13 +38,15 @@ import {
     Car,
     Trees,
     Camera,
-    HardHat
+    HardHat,
+    Waves
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePageMeta } from "../lib/seo/meta";
 import { useAuth } from "../lib/auth";
 import { supabase } from "../lib/supabase";
 import { LOCATIONS } from "../lib/data";
+import { CSVImport } from "../components/agency/CSVImport";
 
 // --- Types ---
 interface DBProperty {
@@ -658,6 +660,7 @@ export const AgencyPortal: React.FC = () => {
         { id: "dashboard", icon: LayoutDashboard, label: "Overview" },
         { id: "listings", icon: List, label: "My Listings", badge: listings.length },
         { id: "leads", icon: Users, label: "Sales Pipeline", badge: newLeadsCount, badgeColor: "text-blue-400" },
+        { id: "import", icon: Upload, label: "Bulk Import" },
         { id: "analytics", icon: BarChart3, label: "Intelligence" },
         { id: "settings", icon: Settings, label: "Agency Profile" },
     ];
@@ -877,6 +880,20 @@ export const AgencyPortal: React.FC = () => {
                                     ))}
                                     {leads.length === 0 && <div className="p-20 text-center text-white/10 italic font-serif">No incoming leads yet.</div>}
                                 </div>
+                            </div>
+                        )}
+
+                        {/* ── VIEW: IMPORT ── */}
+                        {view === "import" && (
+                            <div className="space-y-10">
+                                <section className="max-w-3xl">
+                                    <h2 className="text-3xl font-serif text-white mb-2">Bulk Asset Injection</h2>
+                                    <p className="text-white/40 text-sm leading-relaxed">
+                                        Synchronize your entire portfolio with one action. Our intelligent parser validates
+                                        every record against the Malta Luxury standard before injection.
+                                    </p>
+                                </section>
+                                <CSVImport onComplete={() => { setView('listings'); fetchData(); }} />
                             </div>
                         )}
 
