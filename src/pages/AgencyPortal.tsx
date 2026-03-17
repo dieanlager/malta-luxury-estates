@@ -511,6 +511,8 @@ export const AgencyPortal: React.FC = () => {
     const [modal, setModal] = useState<any>(null); // null | "new" | listing object
     const [listingFilter, setListingFilter] = useState("all");
     const [notification, setNotification] = useState<any>(null);
+    const [closingLeadId, setClosingLeadId] = useState<string | null>(null);
+    const [txValue, setTxValue] = useState<string>('');
 
     // Fetch initial data
     useEffect(() => {
@@ -658,6 +660,30 @@ export const AgencyPortal: React.FC = () => {
             if (error) throw error;
             setLeads(ls => ls.map(l => l.id === id ? { ...l, status } : l));
             notify(`Lead moved to ${status}`);
+        } catch (err: any) {
+            notify(err.message, "error");
+        }
+    };
+
+    const closeLead = async (leadId: string) => {
+        if (!supabase) return;
+        const value = parseFloat(txValue);
+        if (!value || value <= 0) return;
+
+        try {
+            const { error } = await supabase
+                .from('leads')
+                .update({
+                    status: 'closed',
+                    closed_transaction_value: value,
+                } as any)
+                .eq('id', leadId);
+
+            if (error) throw error;
+            setClosingLeadId(null);
+            setTxValue('');
+            fetchData();
+            notify("Lead marked as closed");
         } catch (err: any) {
             notify(err.message, "error");
         }
@@ -890,15 +916,76 @@ export const AgencyPortal: React.FC = () => {
                                     ))}
                                 </div>
 
-                                <div className="glass-card rounded-[2.5rem] border border-white/5 bg-white/1 overflow-hidden">
-                                    <div className="px-8 py-6 border-b border-white/5 bg-white/[0.01]">
-                                        <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold">Real-time Interest Pipeline</h3>
-                                    </div>
-                                    {leads.map(l => (
-                                        <LeadRow key={l.id} lead={l} onUpdateStatus={updateLeadStatus} />
-                                    ))}
-                                    {leads.length === 0 && <div className="p-20 text-center text-white/10 italic font-serif">No incoming leads yet.</div>}
-                                </div>
+                                        <div className="glass-card rounded-[2.5rem] border border-white/5 bg-white/1 overflow-hidden">
+                                            <div className="px-8 py-6 border-b border-white/5 bg-white/[0.01]">
+                                                <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold">Real-time Interest Pipeline</h3>
+                                            </div>
+                                            {leads.map(l => (
+                                                <div key={l.id}>
+                                                    <LeadRow lead={l} onUpdateStatus={updateLeadStatus} />
+                                                    {/* Close transaction flow */}
+                                                    {l.status === 'qualified' && !l.closed_at && (
+                                                        <div className="mx-4 mb-4 mt-1 pt-3 border-t border-white/5">
+                                                            {closingLeadId === l.id ? (
+                                                                <div className="space-y-2">
+                                                                    <input
+                                                                        type="number"
+                                                                        placeholder="Transaction value (€)"
+                                                                        value={txValue}
+                                                                        onChange={e => setTxValue(e.target.value)}
+                                                                        className="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-white/30 focus:border-gold/40 focus:outline-none"
+                                                                    />
+                                                                    {parseFloat(txValue) > 0 && (
+                                                                        <p className="text-gold text-xs">
+                                                                            Your commission (25%): €
+                                                                            {(parseFloat(txValue) * 0.03 * 0.25).toLocaleString('en-MT', { maximumFractionDigits: 0 })}
+                                                                        </p>
+                                                                    )}
+                                                                    <div className="flex gap-2">
+                                                                        <button
+                                                                            onClick={() => closeLead(l.id)}
+                                                                            className="flex-1 py-1.5 bg-gold/20 text-gold text-xs rounded-lg border border-gold/30 hover:bg-gold/30 transition-colors"
+                                                                        >
+                                                                            Confirm &amp; Close →
+                                                                        </button>
+                                                                        <button
+                                                                            onClick={() => { setClosingLeadId(null); setTxValue(''); }}
+                                                                            className="px-3 py-1.5 text-white/30 text-xs hover:text-white/60"
+                                                                        >
+                                                                            Cancel
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            ) : (
+                                                                <button
+                                                                    onClick={() => setClosingLeadId(l.id)}
+                                                                    className="w-full py-1.5 text-xs text-white/30 hover:text-gold border border-white/5 hover:border-gold/20 rounded-lg transition-colors"
+                                                                >
+                                                                    Mark as closed
+                                                                </button>
+                                                            )}
+                                                        </div>
+                                                    )}
+                                                    {l.closed_at && l.closed_transaction_value && (
+                                                        <div className="mx-4 mb-4 mt-1 pt-3 border-t border-gold/10 text-xs">
+                                                            <div className="flex justify-between">
+                                                                <span className="text-white/30">Transaction</span>
+                                                                <span className="text-white/60">
+                                                                    €{Number(l.closed_transaction_value).toLocaleString('en-MT')}
+                                                                </span>
+                                                            </div>
+                                                            <div className="flex justify-between mt-1">
+                                                                <span className="text-gold/60">Your commission</span>
+                                                                <span className="text-gold font-mono">
+                                                                    €{Number(l.portal_commission || 0).toLocaleString('en-MT')}
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            ))}
+                                            {leads.length === 0 && <div className="p-20 text-center text-white/10 italic font-serif">No incoming leads yet.</div>}
+                                        </div>
                             </div>
                         )}
 
@@ -935,7 +1022,7 @@ export const AgencyPortal: React.FC = () => {
                                     </div>
                                     <div>
                                         <h3 className="text-2xl font-serif text-white">{agency?.name || 'Agency Partner'}</h3>
-                                        <p className="text-[10px] uppercase tracking-widest text-white/30 font-bold italic">Status: {agency?.plan?.toUpperCase()} PARTNER</p>
+                                        <p className="text-[10px] uppercase tracking-widest text-white/30 font-bold italic">Exclusive Partner</p>
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -947,9 +1034,12 @@ export const AgencyPortal: React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <button onClick={() => navigate('/agency/upgrade')} className="w-full py-5 bg-gold/10 hover:bg-gold/20 border border-gold/20 rounded-2xl text-[10px] font-bold uppercase tracking-widest text-gold transition-all shadow-lg">
-                                    Manage Subscription & Global Plan
-                                </button>
+                                <div className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-gold/20 bg-gold/5">
+                                    <span className="text-gold text-xs">★</span>
+                                    <span className="text-gold text-xs font-mono tracking-wider uppercase">
+                                        Exclusive Partner
+                                    </span>
+                                </div>
                             </div>
                         </div>}
                     </div>

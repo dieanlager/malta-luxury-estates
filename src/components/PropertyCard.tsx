@@ -81,15 +81,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           </button>
         </div>
 
-        {/* Agency Tag */}
-        {property.agency && (
-          <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-luxury-black/40 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10">
-            <div className="w-5 h-5 rounded-md bg-white/10 flex items-center justify-center p-1 overflow-hidden">
-              <img src={property.agency.logo} alt={property.agency.name} className="w-full h-full object-contain" />
-            </div>
-            <span className="text-[9px] font-bold text-white/80 uppercase tracking-tighter">{property.agency.name}</span>
-          </div>
-        )}
+        {/* Agency Tag intentionally hidden under exclusive partnership model */}
       </div>
 
       {/* Content */}

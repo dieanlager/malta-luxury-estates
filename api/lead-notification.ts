@@ -90,6 +90,13 @@ function buildLeadEmail({ lead, agency, property }: any) {
         ? `€${Number(property.price).toLocaleString('en-MT')}`
         : 'N/A';
 
+    const leadId = lead.lead_id || lead.id;
+    const sourceUrl = lead.source_url || '';
+    const propertyRef = lead.property_ref || '';
+    const attributionExpires = lead.attribution_expires_at
+        ? new Date(lead.attribution_expires_at).toLocaleDateString('en-GB')
+        : null;
+
     return `
 <!DOCTYPE html>
 <html>
@@ -128,10 +135,14 @@ function buildLeadEmail({ lead, agency, property }: any) {
       <div class="card">
         <h3>👤 Lead Details</h3>
         <p>
+          ${leadId ? `<strong>Lead ID:</strong> ${leadId}<br>` : ''}
+          ${propertyRef ? `<strong>Property Ref:</strong> ${propertyRef}<br>` : ''}
+          ${sourceUrl ? `<strong>Source URL:</strong> <a href="${sourceUrl}">${sourceUrl}</a><br>` : ''}
           <strong>Name:</strong> ${lead.name}<br>
           <strong>Email:</strong> <a href="mailto:${lead.email}">${lead.email}</a><br>
           ${lead.phone ? `<strong>Phone:</strong> <a href="tel:${lead.phone}">${lead.phone}</a><br>` : ''}
-          ${lead.message ? `<strong>Message:</strong> "${lead.message}"` : ''}
+          ${lead.message ? `<strong>Message:</strong> "${lead.message}"<br>` : ''}
+          ${attributionExpires ? `<strong>Attribution valid until:</strong> ${attributionExpires}` : ''}
         </p>
       </div>
       

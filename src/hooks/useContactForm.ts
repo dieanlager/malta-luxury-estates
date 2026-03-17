@@ -1,4 +1,6 @@
 import { useState, useCallback } from 'react';
+import { supabase } from '../lib/supabase';
+import { ALLIANCE_AGENCY_ID } from '../constants';
 
 export interface ContactFormData {
     name: string;
@@ -89,35 +91,35 @@ export const useContactForm = () => {
         }
 
         try {
-            // Try server endpoint first (for when Resend is integrated)
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                setState(prev => ({
-                    ...prev,
-                    isSubmitting: false,
-                    isSuccess: true,
-                    formData: INITIAL_FORM,
-                }));
-                return;
+            if (!formData.propertyId || !ALLIANCE_AGENCY_ID) {
+                throw new Error('Contact form is not fully configured. Please try again later.');
             }
-        } catch {
-            // Server not available – fallback to localStorage queue
-        }
 
-        // Fallback: Save to localStorage queue (for later processing)
-        try {
-            const existing = JSON.parse(localStorage.getItem(INQUIRIES_KEY) || '[]');
-            existing.push({
-                ...formData,
-                timestamp: new Date().toISOString(),
-                status: 'pending',
-            });
-            localStorage.setItem(INQUIRIES_KEY, JSON.stringify(existing));
+            // Fetch external_ref for the property to use as property_ref
+            const { data: property } = await supabase
+                .from('properties')
+                .select('external_ref')
+                .eq('id', formData.propertyId)
+                .maybeSingle();
+
+            const { error: insertError } = await supabase
+                .from('leads')
+                .insert({
+                    agency_id: ALLIANCE_AGENCY_ID,
+                    property_id: formData.propertyId,
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone || null,
+                    intent: null,
+                    budget_min: null,
+                    budget_max: null,
+                    source: window.location.href,
+                    status: 'new',
+                } as any);
+
+            if (insertError) {
+                throw insertError;
+            }
 
             setState(prev => ({
                 ...prev,
@@ -125,12 +127,31 @@ export const useContactForm = () => {
                 isSuccess: true,
                 formData: INITIAL_FORM,
             }));
-        } catch {
-            setState(prev => ({
-                ...prev,
-                isSubmitting: false,
-                error: 'Something went wrong. Please try again.',
-            }));
+        } catch (err: any) {
+            console.error('Error submitting lead', err);
+            try {
+                // Fallback: queue in localStorage for manual follow‑up
+                const existing = JSON.parse(localStorage.getItem(INQUIRIES_KEY) || '[]');
+                existing.push({
+                    ...formData,
+                    timestamp: new Date().toISOString(),
+                    status: 'pending',
+                });
+                localStorage.setItem(INQUIRIES_KEY, JSON.stringify(existing));
+
+                setState(prev => ({
+                    ...prev,
+                    isSubmitting: false,
+                    isSuccess: true,
+                    formData: INITIAL_FORM,
+                }));
+            } catch {
+                setState(prev => ({
+                    ...prev,
+                    isSubmitting: false,
+                    error: 'Something went wrong. Please try again.',
+                }));
+            }
         }
     }, [state]);
 

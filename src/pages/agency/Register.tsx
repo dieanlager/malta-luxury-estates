@@ -1,154 +1,82 @@
-import { useState, FormEvent } from 'react'
-import { Link } from 'react-router-dom'
-import { useAuth } from '../../lib/auth'
-import { AuthShell, Field, ErrorBox, inputStyle, primaryBtn, linkRow, linkStyle } from './_auth-ui'
+import { AuthShell } from './_auth-ui'
 
 export default function AgencyRegister() {
-    const { signUp } = useAuth()
-
-    const [form, setForm] = useState({
-        agencyName: '',
-        yourName: '',
-        licenseNo: '',
-        phone: '',
-        email: '',
-        website: '',
-        password: '',
-        confirmPassword: '',
-    })
-    const [error, setError] = useState<string | null>(null)
-    const [success, setSuccess] = useState(false)
-    const [loading, setLoading] = useState(false)
-
-    const set = (k: string) => (e: React.ChangeEvent<HTMLInputElement>) =>
-        setForm(f => ({ ...f, [k]: e.target.value }))
-
-    async function handleSubmit(e: FormEvent) {
-        e.preventDefault()
-        setError(null)
-
-        if (form.password !== form.confirmPassword) {
-            return setError('Passwords do not match')
-        }
-        if (form.password.length < 8) {
-            return setError('Password must be at least 8 characters')
-        }
-
-        setLoading(true)
-        // Pass extra meta data for the Supabase trigger to pick up
-        const { error } = await signUp({
-            ...form,
-            meta: {
-                agency_name: form.agencyName,
-                your_name: form.yourName,
-                website: form.website,
-                phone: form.phone
-            }
-        })
-
-        if (error) {
-            setError(error)
-            setLoading(false)
-        } else {
-            setSuccess(true)
-        }
-    }
-
-    if (success) {
-        return (
-            <AuthShell title="Check your inbox" sub="One last step">
-                <div style={{ textAlign: 'center', padding: '1rem 0' }}>
-                    <div style={{ fontSize: '2.5rem', marginBottom: '1rem', opacity: 0.6 }}>✉</div>
-                    <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-                        We sent a confirmation link to <strong style={{ color: '#C5A059' }}>{form.email}</strong>.
-                        Click it to activate your account and access the Agency Portal.
-                    </p>
-                    <Link to="/agency/login" style={{ ...primaryBtn(false), display: 'inline-block', textDecoration: 'none' }}>
-                        Back to Sign In
-                    </Link>
-                </div>
-            </AuthShell>
-        )
-    }
-
+    // Public self‑registration is disabled under the exclusive partnership model.
+    // This screen is intentionally static and invite‑only.
     return (
         <AuthShell
-            title="Join Malta Luxury Real Estate"
-            sub="Create your agency account — first 30 days free"
+            title="Partner Applications"
+            sub="Exclusive agency access by invitation only"
         >
-            <div style={{
-                padding: '0.875rem 1rem', marginBottom: '1.5rem',
-                background: 'rgba(197,160,89,0.07)',
-                border: '1px solid rgba(197,160,89,0.2)',
-                borderRadius: 3,
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-            }}>
-                <div>
-                    <div style={{ fontFamily: 'DM Mono, monospace', fontSize: '0.5625rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C5A059', marginBottom: '0.2rem' }}>Basic Plan · Free</div>
-                    <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)' }}>Up to 10 listings · Lead notifications · Analytics</div>
+            <div
+                style={{
+                    padding: '2.5rem 2rem',
+                    background: 'rgba(0,0,0,0.6)',
+                    border: '1px solid rgba(197,160,89,0.35)',
+                    borderRadius: 24,
+                    textAlign: 'center',
+                }}
+            >
+                <div
+                    style={{
+                        fontSize: '2.5rem',
+                        marginBottom: '1.5rem',
+                        opacity: 0.9,
+                    }}
+                >
+                    🏛️
                 </div>
-                <div style={{ fontFamily: 'DM Mono, monospace', fontSize: '0.875rem', color: '#C5A059', fontWeight: 500 }}>€0/mo</div>
+                <h1
+                    style={{
+                        fontFamily: 'Cormorant Garamond, serif',
+                        fontSize: '1.75rem',
+                        color: '#ffffff',
+                        marginBottom: '0.75rem',
+                    }}
+                >
+                    Private Agency Partnership
+                </h1>
+                <p
+                    style={{
+                        color: 'rgba(255,255,255,0.6)',
+                        fontSize: '0.9rem',
+                        lineHeight: 1.7,
+                        marginBottom: '1.5rem',
+                    }}
+                >
+                    Malta Luxury Real Estate currently operates through a single, exclusive
+                    agency partnership. New partner applications are reviewed on a strictly
+                    invite‑only basis.
+                </p>
+                <p
+                    style={{
+                        color: 'rgba(255,255,255,0.45)',
+                        fontSize: '0.8rem',
+                        lineHeight: 1.6,
+                        marginBottom: '1.75rem',
+                    }}
+                >
+                    If you represent a brokerage and wish to discuss future collaboration,
+                    please contact the portal owner directly.
+                </p>
+                <a
+                    href="mailto:dawid@maltaluxuryrealestate.com"
+                    style={{
+                        display: 'inline-block',
+                        padding: '0.9rem 1.75rem',
+                        borderRadius: 999,
+                        border: '1px solid rgba(197,160,89,0.6)',
+                        color: '#C5A059',
+                        textDecoration: 'none',
+                        fontSize: '0.8rem',
+                        letterSpacing: '0.18em',
+                        textTransform: 'uppercase',
+                        fontFamily: 'DM Mono, monospace',
+                    }}
+                >
+                    Contact portal owner
+                </a>
             </div>
-
-            <form onSubmit={handleSubmit}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
-                    <Field label="Agency Name *">
-                        <input type="text" required value={form.agencyName} onChange={set('agencyName')}
-                            style={inputStyle} placeholder="e.g. Alliance Malta" />
-                    </Field>
-                    <Field label="Your Name *">
-                        <input type="text" required value={form.yourName} onChange={set('yourName')}
-                            style={inputStyle} placeholder="Full Name" />
-                    </Field>
-                </div>
-
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
-                    <Field label="MDA License No.">
-                        <input type="text" value={form.licenseNo} onChange={set('licenseNo')}
-                            style={inputStyle} placeholder="MDA-2024-XXXX" />
-                    </Field>
-                    <Field label="Phone">
-                        <input type="tel" value={form.phone} onChange={set('phone')}
-                            style={inputStyle} placeholder="+356 XXXX XXXX" />
-                    </Field>
-                </div>
-
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
-                    <Field label="Email *">
-                        <input type="email" required autoComplete="email"
-                            value={form.email} onChange={set('email')}
-                            style={inputStyle} placeholder="listings@agency.com" />
-                    </Field>
-                    <Field label="Website (Optional)">
-                        <input type="url" value={form.website} onChange={set('website')}
-                            style={inputStyle} placeholder="https://youragency.com" />
-                    </Field>
-                </div>
-
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.875rem' }}>
-                    <Field label="Password *">
-                        <input type="password" required autoComplete="new-password"
-                            value={form.password} onChange={set('password')}
-                            style={inputStyle} placeholder="Min 8 chars" />
-                    </Field>
-                    <Field label="Confirm Password *">
-                        <input type="password" required
-                            value={form.confirmPassword} onChange={set('confirmPassword')}
-                            style={inputStyle} placeholder="Repeat" />
-                    </Field>
-                </div>
-
-                {error && <ErrorBox>{error}</ErrorBox>}
-
-                <button type="submit" disabled={loading} style={primaryBtn(loading)}>
-                    {loading ? 'Creating account…' : 'Create Agency Account →'}
-                </button>
-
-                <div style={linkRow}>
-                    <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: '0.8125rem' }}>Already have an account?</span>
-                    <Link to="/agency/login" style={linkStyle}>Sign In</Link>
-                </div>
-            </form>
         </AuthShell>
     )
 }

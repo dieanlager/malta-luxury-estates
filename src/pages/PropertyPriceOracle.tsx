@@ -32,7 +32,7 @@ export const PropertyPriceOracle: React.FC = () => {
     usePageMeta({
         title: t('seo:tools.oracle.title', 'AI Property Price Oracle | Free Valuation Malta & Gozo'),
         description: t('seo:tools.oracle.description', 'Get an instant, AI-powered property valuation. Our Oracle analyzes market trends, location data, and property specs to provide high-precision estimates.'),
-        canonicalPath: '/tools/property-valuation',
+        canonicalPath: '/tools/valuation',
         currentLang: i18n.language,
     });
 

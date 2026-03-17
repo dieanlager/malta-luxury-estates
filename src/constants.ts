@@ -897,3 +897,6 @@ export const MALTA_AGENCIES = [
   { name: "Luxury Malta Property", website: "luxurymaltaproperty.com" },
   { name: "Knight Frank Malta", website: "knightfrank.com/malta" },
 ];
+
+// UUID of the Alliance agency record in Supabase `agencies` table.
+export const ALLIANCE_AGENCY_ID = 'eebbc250-9ac6-4598-b5b4-250dbd1de4dd';

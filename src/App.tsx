@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation, useParams, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation, useParams, useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './i18n';
 import {
@@ -741,17 +741,28 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
       {/* Property Routes */}
       {['properties', 'nieruchomosci', 'immobiliare', 'immobilien', 'proprietes'].map(p => (
         <React.Fragment key={p}>
-          <Route path={`/${p}/all`} element={<PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
+          {/* Base English canonical routes */}
+          {p === 'properties' ? (
+            <>
+              <Route path={`/${p}/all`} element={<PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
+              <Route path={`/${p}/:citySlug`} element={<CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
+              <Route path={`/${p}/:id`} element={<PropertyDetailPage onContact={handleContact} />} />
+            </>
+          ) : (
+            <>
+              {/* Alias without language prefix → redirect to canonical English URL */}
+              <Route path={`/${p}/all`} element={<Navigate to="/properties/all" replace />} />
+              <Route path={`/${p}/:citySlug`} element={<Navigate to="/properties/:citySlug" replace />} />
+              <Route path={`/${p}/:id`} element={<Navigate to="/properties/:id" replace />} />
+            </>
+          )}
+
           <Route path={`/:lng/${p}/all`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/wszystkie`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/tutti`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/alle`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/toutes`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
-
-          <Route path={`/${p}/:citySlug`} element={<CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
           <Route path={`/:lng/${p}/:citySlug`} element={<LanguageWrapper><CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
-
-          <Route path={`/${p}/:id`} element={<PropertyDetailPage onContact={handleContact} />} />
           <Route path={`/:lng/${p}/:id`} element={<LanguageWrapper><PropertyDetailPage onContact={handleContact} /></LanguageWrapper>} />
         </React.Fragment>
       ))}
@@ -759,9 +770,20 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
       {/* Insight Routes */}
       {['insights', 'wiedza', 'approfondimenti', 'einblicke', 'conseils'].map(p => (
         <React.Fragment key={p}>
-          <Route path={`/${p}`} element={<InsightsHub />} />
+          {p === 'insights' ? (
+            <>
+              <Route path={`/${p}`} element={<InsightsHub />} />
+              <Route path={`/${p}/:slug`} element={<ArticlePage />} />
+            </>
+          ) : (
+            <>
+              {/* Alias without language prefix → redirect to canonical English URL */}
+              <Route path={`/${p}`} element={<Navigate to="/insights" replace />} />
+              <Route path={`/${p}/:slug`} element={<Navigate to="/insights/:slug" replace />} />
+            </>
+          )}
+
           <Route path={`/:lng/${p}`} element={<LanguageWrapper><InsightsHub /></LanguageWrapper>} />
-          <Route path={`/${p}/:slug`} element={<ArticlePage />} />
           <Route path={`/:lng/${p}/:slug`} element={<LanguageWrapper><ArticlePage /></LanguageWrapper>} />
         </React.Fragment>
       ))}
@@ -769,7 +791,12 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
       {/* Market & Tools */}
       {['market', 'rynek', 'mercato', 'markt', 'marche'].map(p => (
         <React.Fragment key={p}>
-          <Route path={`/${p}/live`} element={<MarketLive />} />
+          {p === 'market' ? (
+            <Route path={`/${p}/live`} element={<MarketLive />} />
+          ) : (
+            // Alias without language prefix → redirect to canonical English URL
+            <Route path={`/${p}/live`} element={<Navigate to="/market/live" replace />} />
+          )}
           <Route path={`/:lng/${p}/live`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/na-zywo`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/in-diretta`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
@@ -787,6 +814,14 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
 
       {['tools', 'narzedzia', 'strumenti', 'outils'].map(p => (
         <React.Fragment key={p}>
+          {/* English canonical routes for tools (no language prefix) */}
+          {p === 'tools' && (
+            <>
+              <Route path="/tools/valuation" element={<PropertyPriceOracle />} />
+              <Route path="/tools/quiz" element={<MaltaPropertyQuiz />} />
+            </>
+          )}
+
           <Route path={`/:lng/${p}/valuation`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/wycena-nieruchomosci`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/valutazione-immobiliare`} element={<LanguageWrapper><PropertyPriceOracle /></LanguageWrapper>} />
@@ -816,9 +851,25 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
       <Route path="/cookie-policy" element={<CookiePolicy />} />
       <Route path="/:lng/cookie-policy" element={<LanguageWrapper><CookiePolicy /></LanguageWrapper>} />
 
+      {/* Agency auth & portal routes (EN + i18n) */}
       <Route path="/agency/login" element={<AgencyLogin />} />
       <Route path="/agency/register" element={<AgencyRegister />} />
       <Route path="/agency/portal" element={<AuthGuard><AgencyPortal /></AuthGuard>} />
+
+      <Route path="/agency/forgot-password" element={<ForgotPassword />} />
+      <Route path="/agency/reset-password" element={<ResetPassword />} />
+      <Route path="/agency/upgrade" element={<AuthGuard><UpgradePage /></AuthGuard>} />
+
+      {/* Language-prefixed variants for agency URLs */}
+      <Route path="/:lng/agency/login" element={<LanguageWrapper><AgencyLogin /></LanguageWrapper>} />
+      <Route path="/:lng/agency/register" element={<LanguageWrapper><AgencyRegister /></LanguageWrapper>} />
+      <Route path="/:lng/agency/portal" element={<LanguageWrapper><AuthGuard><AgencyPortal /></AuthGuard></LanguageWrapper>} />
+      <Route path="/:lng/agency/forgot-password" element={<LanguageWrapper><ForgotPassword /></LanguageWrapper>} />
+      <Route path="/:lng/agency/reset-password" element={<LanguageWrapper><ResetPassword /></LanguageWrapper>} />
+      <Route path="/:lng/agency/upgrade" element={<LanguageWrapper><AuthGuard><UpgradePage /></AuthGuard></LanguageWrapper>} />
+
+      {/* Dedicated route for Gozo Bridge Tracker page */}
+      <Route path="/insights/gozo-bridge-effect" element={<GozoBridgeTrackerPage />} />
     </Routes>
   );
 };

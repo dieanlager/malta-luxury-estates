@@ -276,18 +276,6 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                 <div className="lg:col-span-1 space-y-8">
                     {/* Enquiry Card */}
                     <div className="sticky top-32 glass-card p-8 rounded-[2.5rem] border-gold/30 shadow-2xl border">
-                        {property.agency && (
-                            <div className="flex items-center gap-4 mb-8 pb-8 border-b border-white/10">
-                                <div className="w-16 h-16 rounded-full overflow-hidden bg-white/10 border border-white/5">
-                                    <img src={property.agency.logo} className="w-full h-full object-contain" alt={property.agency.name} />
-                                </div>
-                                <div>
-                                    <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold">{t('listing_expert')}</p>
-                                    <h4 className="font-serif text-lg">{property.agency.name}</h4>
-                                </div>
-                            </div>
-                        )}
-
                         <div className="space-y-4">
                             <button
                                 onClick={() => onContact(property.id, property.title)}

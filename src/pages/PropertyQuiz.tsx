@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
     Sparkles, ArrowRight, RefreshCcw,
@@ -116,7 +116,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
     usePageMeta({
         title: t('seo:tools.quiz.title', 'Quiz: What Property Type Suits Your Malta Lifestyle? | Malta Luxury Real Estate'),
         description: t('seo:tools.quiz.description', 'Take our 1-minute interactive lifestyle quiz to discover your perfect Malta location and property type.'),
-        canonicalPath: '/tools/property-quiz',
+        canonicalPath: '/tools/quiz',
         currentLang: i18n.language,
     });
 
@@ -124,6 +124,11 @@ export const MaltaPropertyQuiz: React.FC = () => {
     const [scores, setScores] = useState<Record<string, number>>({});
     const [isFinished, setIsFinished] = useState(false);
     const [analyzing, setAnalyzing] = useState(false);
+
+    // Ensure we always start from the top when landing on the quiz
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+    }, []);
 
     const handleOptionClick = (optionScores: Record<string, number>) => {
         const newScores = { ...scores };
