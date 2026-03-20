@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 import { EPCButton } from './EPCCalculator';
 import { NoiseAnalysisButton } from './NoiseAnalysis';
 import { PropertyTwinButton } from './PropertyTwinFinder';
+import { getImageUrl, getSrcSet } from '../lib/imageUtils';
 
 interface PropertyCardProps {
   property: Property;
@@ -47,8 +48,14 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
       <div className="relative aspect-[4/3] overflow-hidden">
         <Link to={getLocalizedLink()} className="block h-full">
           <motion.img
-            src={property.images[0]}
+            src={getImageUrl(property.images[0], 'card')}
+            srcSet={getSrcSet(property.images[0])}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             alt={property.title}
+            loading="lazy"
+            decoding="async"
+            width={800}
+            height={600}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent opacity-60" />

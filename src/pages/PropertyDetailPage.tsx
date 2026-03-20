@@ -17,6 +17,7 @@ import { DynamicMap } from '../components/DynamicMap';
 import { ROICalculator } from '../components/ROICalculator';
 import { ImgWithPlaceholder } from '../components/ImgWithPlaceholder';
 import { useTranslation } from 'react-i18next';
+import { getImageUrl, getSrcSet } from '../lib/imageUtils';
 
 export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, title: string) => void }) => {
     const { t, i18n } = useTranslation(['property_detail', 'common']);
@@ -45,6 +46,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
         description: property?.description?.substring(0, 160) || 'View luxury property details in Malta.',
         canonicalPath: `/properties/${id}`,
         currentLang: i18n.language,
+        ogImage: property ? getImageUrl(property.images?.[0], 'og') : undefined,
     });
 
     if (loading) {
@@ -100,11 +102,17 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
             <section className="max-w-[1600px] mx-auto px-6 mb-16">
                 <div className="relative h-[600px] rounded-[3rem] overflow-hidden group shadow-2xl border border-white/5">
                     <AnimatePresence mode="wait">
-                        <ImgWithPlaceholder
+                        <img
                             key={activeImage}
-                            src={property.images[activeImage]}
+                            src={getImageUrl(property.images[activeImage], activeImage === 0 ? 'hero' : 'card')}
+                            srcSet={getSrcSet(property.images[activeImage])}
+                            sizes={activeImage === 0 ? '100vw' : '(max-width: 1024px) 100vw, 70vw'}
                             alt={property.title}
-                            priority
+                            loading={activeImage === 0 ? 'eager' : 'lazy'}
+                            fetchPriority={activeImage === 0 ? 'high' as any : undefined}
+                            decoding={activeImage === 0 ? 'sync' : 'async'}
+                            width={activeImage === 0 ? 1600 : 800}
+                            height={activeImage === 0 ? 900 : 600}
                             className="absolute inset-0 w-full h-full object-cover"
                         />
                     </AnimatePresence>
@@ -138,8 +146,12 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                                 aria-label={`View image ${idx + 1}`}
                                 className={`w-20 h-14 rounded-lg overflow-hidden border-2 transition-all shrink-0 ${activeImage === idx ? 'border-gold p-0.5' : 'border-transparent opacity-60'}`}
                             >
-                                <ImgWithPlaceholder
-                                    src={img}
+                                <img
+                                    src={getImageUrl(img, 'thumb')}
+                                    loading="lazy"
+                                    decoding="async"
+                                    width={160}
+                                    height={112}
                                     className="w-full h-full object-cover"
                                     alt={`Thumbnail of ${property.title} - ${idx + 1}`}
                                 />
