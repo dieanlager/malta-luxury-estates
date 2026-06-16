@@ -1,0 +1,144 @@
+﻿name: Build & Deploy â€” Malta Luxury Real Estate
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: '22'
+  DEPLOY_PATH: /var/www/mlre
+  NEXT_PORT: '3100'
+  PM2_NAME: mlre-web
+
+jobs:
+  build-and-deploy:
+    name: Build (ubuntu-latest) â†’ Deploy (VPS)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # â”€â”€ 1. Checkout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - uses: actions/checkout@v4
+
+      # â”€â”€ 2. Node 22 + npm cache â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      # â”€â”€ 3. Install (linux/amd64 â†’ sharp builds natively, works on VPS) â”€â”€â”€â”€â”€â”€â”€
+      - name: Install dependencies
+        run: npm ci
+
+      # â”€â”€ 4. Build Next.js (1100+ SSG pages, 4 GB RAM limit) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Build
+        run: NODE_OPTIONS=--max-old-space-size=4096 npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          NEXT_PUBLIC_MAPBOX_TOKEN: ${{ secrets.NEXT_PUBLIC_MAPBOX_TOKEN }}
+          NEXT_PUBLIC_SITE_URL: https://www.maltaluxuryrealestate.com
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY || '' }}
+          STRIPE_WEBHOOK_SECRET: ${{ secrets.STRIPE_WEBHOOK_SECRET || '' }}
+          STRIPE_PRICE_PRO: ${{ secrets.STRIPE_PRICE_PRO || '' }}
+          STRIPE_PRICE_FEATURED: ${{ secrets.STRIPE_PRICE_FEATURED || '' }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY || '' }}
+          RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL || '' }}
+          ADMIN_KEY: ${{ secrets.ADMIN_KEY || 'changeme-set-in-github-secrets' }}
+
+      # â”€â”€ 5. postbuild: copy static + public into standalone â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Copy assets into standalone
+        run: |
+          cp -r .next/static .next/standalone/.next/static
+          cp -r public .next/standalone/public
+
+      # â”€â”€ 6. Write .env.production (secrets never touch process list / logs) â”€â”€â”€
+      - name: Write .env.production
+        run: |
+          cat > .env.production << ENVEOF
+          NODE_ENV=production
+          PORT=${{ env.NEXT_PORT }}
+          NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY=${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          NEXT_PUBLIC_MAPBOX_TOKEN=${{ secrets.NEXT_PUBLIC_MAPBOX_TOKEN }}
+          NEXT_PUBLIC_SITE_URL=https://www.maltaluxuryrealestate.com
+          SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}
+          STRIPE_WEBHOOK_SECRET=${{ secrets.STRIPE_WEBHOOK_SECRET }}
+          STRIPE_PRICE_PRO=${{ secrets.STRIPE_PRICE_PRO }}
+          STRIPE_PRICE_FEATURED=${{ secrets.STRIPE_PRICE_FEATURED }}
+          RESEND_API_KEY=${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM_EMAIL=${{ secrets.RESEND_FROM_EMAIL }}
+          ADMIN_KEY=${{ secrets.ADMIN_KEY }}
+          ENVEOF
+
+      # â”€â”€ 7. Package standalone + .env together â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Package release
+        run: |
+          RELEASE=$(date -u +%Y-%m-%d-%H%M)
+          echo "RELEASE=$RELEASE" >> $GITHUB_ENV
+          cp .env.production .next/standalone/.env.production
+          tar -czf release.tgz -C .next/standalone .
+          echo "Packed $(du -sh release.tgz | cut -f1) â€” release $RELEASE"
+
+      # â”€â”€ 8. SSH setup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          echo "Host vps
+            HostName ${{ secrets.VPS_HOST }}
+            User ${{ secrets.VPS_USER }}
+            IdentityFile ~/.ssh/deploy_key
+            StrictHostKeyChecking accept-new
+          " > ~/.ssh/config
+
+      # â”€â”€ 9. Create release dir + upload â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Upload release to VPS
+        run: |
+          ssh vps "mkdir -p ${{ env.DEPLOY_PATH }}/releases/${{ env.RELEASE }}"
+          scp release.tgz vps:${{ env.DEPLOY_PATH }}/releases/${{ env.RELEASE }}/
+
+      # â”€â”€ 10. Run deploy script on VPS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Deploy on VPS
+        run: |
+          ssh vps "bash ${{ env.DEPLOY_PATH }}/scripts/deploy.sh \
+            ${{ env.RELEASE }} \
+            ${{ env.NEXT_PORT }} \
+            ${{ env.PM2_NAME }} \
+            ${{ env.DEPLOY_PATH }}"
+
+      # â”€â”€ 11. Live smoke test (via public URL after nginx switch) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Smoke test â€” SSR check
+        run: |
+          sleep 6
+          BYTES=$(curl -sS --max-time 15 -A "Googlebot/2.1" \
+            "https://www.maltaluxuryrealestate.com/insights/buying-property-in-malta-as-a-foreigner-2026" \
+            | wc -c)
+          echo "Googlebot response: ${BYTES} bytes"
+          if [ "${BYTES}" -lt 10000 ]; then
+            echo "âťŚ SSR FAILED (${BYTES} bytes < 10000) â€” check: ssh vps 'pm2 logs mlre-web --lines 50'"
+            exit 1
+          fi
+          echo "âś… SSR OK â€” ${BYTES} bytes (Googlebot sees real HTML)"
+
+      # â”€â”€ 12. Job summary â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Job summary
+        if: always()
+        run: |
+          if [ "${{ job.status }}" = "success" ]; then
+            echo "## âś… Deploy sukces â€” ${{ env.RELEASE }}" >> $GITHUB_STEP_SUMMARY
+            echo "Live: https://www.maltaluxuryrealestate.com" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## âťŚ Deploy failed â€” ${{ env.RELEASE }}" >> $GITHUB_STEP_SUMMARY
+            echo "Rollback: \`ssh vps 'bash ${{ env.DEPLOY_PATH }}/scripts/rollback.sh'\`" >> $GITHUB_STEP_SUMMARY
+          fi
+
