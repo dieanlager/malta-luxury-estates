@@ -1,4 +1,4 @@
-﻿name: Build & Deploy â€” Malta Luxury Real Estate
+name: Build & Deploy â€” Malta Luxury Real Estate
 
 on:
   push:
@@ -104,7 +104,13 @@ jobs:
       # â”€â”€ 9. Create release dir + upload â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       - name: Upload release to VPS
         run: |
-          ssh vps "mkdir -p ${{ env.DEPLOY_PATH }}/releases/${{ env.RELEASE }}"
+          ssh vps "mkdir -p ${{ env.DEPLOY_PATH }}/{releases/${{ env.RELEASE }},scripts,logs,shared}"
+          scp scripts/deploy.sh scripts/rollback.sh vps:${{ env.DEPLOY_PATH }}/scripts/
+          ssh vps "chmod +x ${{ env.DEPLOY_PATH }}/scripts/*.sh"
+          scp scripts/nginx-mlre.conf vps:/tmp/nginx-mlre.conf
+          ssh vps "cp /tmp/nginx-mlre.conf /etc/nginx/sites-available/maltaluxuryrealestate.com && \
+            ln -sf /etc/nginx/sites-available/maltaluxuryrealestate.com /etc/nginx/sites-enabled/maltaluxuryrealestate.com && \
+            nginx -t"
           scp release.tgz vps:${{ env.DEPLOY_PATH }}/releases/${{ env.RELEASE }}/
 
       # â”€â”€ 10. Run deploy script on VPS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
