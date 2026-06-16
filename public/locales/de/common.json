@@ -132,7 +132,21 @@
                    "no_listings":  "Noch keine Immobilien verfügbar",
                    "luxury_real_estate":  "Luxusimmobilien",
                    "view_all":  "Alle anzeigen",
-                   "view_all_properties":  "Alle Immobilien anzeigen"
+                   "view_all_properties":  "Alle Immobilien anzeigen",
+                   "knowledge_hub":  "Wissenszentrum",
+                   "all":  "Alle",
+                   "contact_us":  "Kontakt",
+                   "our_collection":  "Unsere Sammlung",
+                   "back_to_listings":  "Zurueck zu den Angeboten",
+                   "description":  "Beschreibung",
+                   "features":  "Ausstattung",
+                   "for_sale":  "Zu verkaufen",
+                   "listed_by":  "Angeboten von",
+                   "view_listing":  "Angebot ansehen",
+                   "explore_location":  "Lage erkunden",
+                   "faq":  "Haeufig gestellte Fragen",
+                   "view_properties":  "Immobilien anzeigen",
+                   "browse_properties":  "Immobilien durchsuchen"
                },
     "locations":  {
                       "Sliema":  "Sliema",
@@ -515,7 +529,14 @@
                    "current_avg":  "Aktueller Durchschn. â‚¬/mÂ˛",
                    "projection_2031":  "Prognose 2031",
                    "bridge_prediction":  "Wenn die BrĂĽcke bis 2028 fertiggestellt wird, prognostiziert unser Modell, dass die Preise auf Gozo bis 2031 die ParitĂ¤t mit dem Norden Maltas erreichen werden (+38 % gegenĂĽber dem aktuellen Durchschnitt).",
-                   "since_date":  "seit {{date}}"
+                   "since_date":  "seit {{date}}",
+                   "avg_price":  "Durchschnittspreis",
+                   "avg_size":  "Durchschnittsgroesse",
+                   "data_updated":  "Daten aktualisiert",
+                   "for_sale":  "Zu verkaufen",
+                   "live_data":  "Live-Daten",
+                   "subtitle":  "Echtzeit-Marktdaten fuer Malta-Immobilienkaeufer und Investoren.",
+                   "total_listings":  "Gesamtangebote"
                },
     "months":  {
                    "jan":  "Jan",
@@ -613,7 +634,6 @@
                  "title_part1":  "Welche",
                  "title_part2":  "Malta-Immobilie",
                  "title_part3":  "Bist Du?",
-                 "subtitle":  "Finde dein perfektes Match in 60 Sekunden.",
                  "question_counter":  "Frage {{current}} / {{total}}",
                  "analyzing":  "Matching deiner DNA...",
                  "analyzing_subtitle":  "Unsere KI scannt die Insel nach deinem perfekten Match.",
@@ -629,7 +649,9 @@
                                 "market_desc":  "Die Ergebnisse sind mit dem realen Marktbestand und den Gebietsstatistiken fĂĽr 2026 synchronisiert.",
                                 "area_title":  "Einblicke in die Gebiete",
                                 "area_desc":  "Erhalte tiefe Empfehlungen fĂĽr bestimmte Viertel basierend auf deinem Vibe."
-                            }
+                            },
+                 "eyebrow":  "Immobilien-Matcher",
+                 "subtitle":  "Beantworten Sie einige Fragen und wir finden den idealen Immobilientyp und Standort."
              },
     "quiz_content":  {
                          "questions":  [
@@ -758,7 +780,11 @@
                   "cta":  {
                               "title":  "Bereit, Ihre unvergleichliche Residenz zu entdecken?",
                               "trust_badge":  "Autorisiertes Luxusimmobilien-Netzwerk"
-                          }
+                          },
+                  "eyebrow":  "Unsere Geschichte",
+                  "p1":  "Malta Luxury Real Estate verbindet internationale Kaeufer mit Maltas besten Immobilien.",
+                  "p2":  "Wir arbeiten ausschliesslich mit lizenzierten Agenturen und Entwicklern zusammen.",
+                  "browse_properties":  "Immobilien durchsuchen"
               },
     "properties":  {
                        "all_listings":  "Immobilien",
@@ -837,9 +863,103 @@
                                  }
                     },
     "seo":  {
+                "about":  {
+                              "title":  "Über Malta Luxury Real Estate – Unsere Mission",
+                              "description":  "Das führende unabhängige Portal, das internationale vermögende Privatpersonen mit dem Premium-Immobilienmarkt Maltas verbindet."
+                          },
+                "cookies":  {
+                                "title":  "Cookie-Richtlinie",
+                                "subtitle":  "Unsere Verwendung von Tracking-Technologien"
+                            },
+                "home":  {
+                             "title":  "Malta Luxury Real Estate – Premium-Immobilien zum Verkauf",
+                             "description":  "Entdecken Sie die exklusivsten Immobilien auf Malta und Gozo. Kuratierte Luxusimmobilien-Angebote für internationale Käufer und Investoren."
+                         },
+                "insights":  {
+                                 "title":  "Malta Immobilien-Einblicke \u0026 Investment-Hub",
+                                 "description":  "Expertenrat, Marktberichte und Leitfäden für den Kauf und die Investition in maltesische Luxusimmobilien.",
+                                 "title_buying":  "Immobilienkauf auf Malta als Ausländer",
+                                 "title_sda":  "Leitfaden für Special Designated Areas (SDA)",
+                                 "title_yields":  "Mietrenditen auf Malta 2026",
+                                 "title_taxes":  "Grundsteuern auf Malta 2026"
+                             },
+                "market":  {
+                               "title":  "Immobilienmarkt-Puls Malta | Echtzeit-Daten 2026",
+                               "description":  "Überwachen Sie Echtzeit-Immobilienpreistrends, Live-Angebote und Marktaktivität in ganz Malta und Gozo. Datenbasierte Einblicke für Luxus-Investoren."
+                           },
+                "privacy":  {
+                                "title":  "Datenschutzerklärung",
+                                "subtitle":  "Datenschutz \u0026 DSGVO-Konformität"
+                            },
+                "properties":  {
+                                   "title":  "Luxusimmobilien zum Verkauf auf Malta | Alle Angebote ansehen",
+                                   "description":  "Durchsuchen Sie unsere Kollektion von High-End-Apartments, Villen und Palazzi auf den maltesischen Inseln.",
+                                   "h1":  "Alle Immobilien"
+                               },
+                "terms":  {
+                              "title":  "Nutzungsbedingungen",
+                              "subtitle":  "Nutzervereinbarung \u0026 Plattformregeln"
+                          },
+                "tools":  {
+                              "oracle":  {
+                                             "title":  "KI-Immobilienpreis-Orakel | Kostenlose Bewertung Malta \u0026 Gozo",
+                                             "description":  "Erhalten Sie eine sofortige, KI-gestützte Immobilienbewertung. Unser Orakel analysiert Markttrends und Standortdaten für hochpräzise Schätzungen."
+                                         },
+                              "valuation":  {
+                                                "title":  "Immobilienbewertung",
+                                                "description":  "Experten-Bewertungsdienste für Luxusimmobilien auf Malta und Gozo."
+                                            },
+                              "quiz":  {
+                                           "title":  "Immobilien-Finder-Quiz | Malta Luxury Real Estate",
+                                           "description":  "Beantworten Sie 5 Fragen und entdecken Sie den perfekten Immobilientyp und Standort."
+                                       }
+                          },
                 "city":  {
                              "title":  "{location} Luxusimmobilien kaufen | Malta Immobilien",
                              "description":  "Entdecken Sie Luxusimmobilien in {location}, Malta. Exklusive Villen, Penthäuser und Wohnungen."
-                         }
-            }
+                         },
+                "contact":  {
+                                "title":  "Kontakt | Malta Luxury Real Estate",
+                                "description":  "Kontaktieren Sie Malta Luxury Real Estate fuer Immobilienberatung und exklusive Angebote."
+                            }
+            },
+    "home":  {
+                 "hero":  {
+                              "eyebrow":  "Maltas fuehrender Premium-Immobilienmarktplatz",
+                              "title":  "Luxusimmobilien",
+                              "title2":  "auf Malta",
+                              "subtitle":  "Kuratierte Angebote von Maltas fuehrenden Agenturen fuer internationale Kaeufer, HNWIs und Aufenthaltsuchende.",
+                              "cta_browse":  "Immobilien durchsuchen",
+                              "cta_quiz":  "Quiz starten"
+                          },
+                 "featured":  {
+                                  "eyebrow":  "Exklusives Portfolio",
+                                  "title":  "Kuratierte Auswahl"
+                              },
+                 "locations":  {
+                                   "eyebrow":  "Nach Lage erkunden",
+                                   "title":  "Maltas feinste Adressen"
+                               },
+                 "insights":  {
+                                  "eyebrow":  "Marktintelligenz",
+                                  "title":  "Immobilien-Insights",
+                                  "description":  "Expertenratgeber und Marktanalysen fuer Malta-Immobilienkaeufer und Investoren.",
+                                  "cta":  "Alle Insights anzeigen"
+                              }
+             },
+    "contact":  {
+                    "eyebrow":  "Kontakt aufnehmen",
+                    "subtitle":  "Unser Expertenteam hilft Ihnen, Ihre perfekte Malta-Immobilie zu finden.",
+                    "name":  "Vollstaendiger Name",
+                    "name_placeholder":  "Max Mustermann",
+                    "email":  "E-Mail-Adresse",
+                    "email_placeholder":  "max@beispiel.de",
+                    "message":  "Nachricht",
+                    "message_placeholder":  "Teilen Sie uns Ihre Immobilienanforderungen mit...",
+                    "submit":  "Nachricht senden"
+                },
+    "valuation":  {
+                      "eyebrow":  "KI-gestuetzt",
+                      "subtitle":  "Erhalten Sie eine sofortige KI-Schaetzung fuer jede Immobilie auf Malta oder Gozo."
+                  }
 }

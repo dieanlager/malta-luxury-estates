@@ -137,7 +137,21 @@
                    "no_listings":  "Brak dostępnych ofert",
                    "luxury_real_estate":  "Nieruchomości luksusowe",
                    "view_all":  "Wyświetl wszystkie",
-                   "view_all_properties":  "Przeglądaj wszystkie nieruchomości"
+                   "view_all_properties":  "Przeglądaj wszystkie nieruchomości",
+                   "knowledge_hub":  "Centrum wiedzy",
+                   "all":  "Wszystkie",
+                   "contact_us":  "Kontakt",
+                   "our_collection":  "Nasza kolekcja",
+                   "back_to_listings":  "Powrot do ofert",
+                   "description":  "Opis",
+                   "features":  "Cechy",
+                   "for_sale":  "Na sprzedaz",
+                   "listed_by":  "Oferowane przez",
+                   "view_listing":  "Zobacz oferte",
+                   "explore_location":  "Odkryj lokalizacje",
+                   "faq":  "Najczesciej zadawane pytania",
+                   "view_properties":  "Zobacz nieruchomosci",
+                   "browse_properties":  "Przegladaj nieruchomosci"
                },
     "interactive":  {
                         "epc":  {
@@ -568,7 +582,14 @@
                    "current_avg":  "Obecna Ĺ›rednia â‚¬/mÂ˛",
                    "projection_2031":  "Prognoza 2031",
                    "bridge_prediction":  "JeĹ›li most zostanie ukoĹ„czony do 2028 r., nasz model przewiduje, ĹĽe ceny na Gozo osiÄ…gnÄ… parytet z pĂłĹ‚nocnÄ… MaltÄ… do 2031 r. (+38% wzglÄ™dem obecnej Ĺ›redniej).",
-                   "since_date":  "od {{date}}"
+                   "since_date":  "od {{date}}",
+                   "avg_price":  "Srednia cena",
+                   "avg_size":  "Srednia powierzchnia",
+                   "data_updated":  "Dane zaktualizowane",
+                   "for_sale":  "Na sprzedaz",
+                   "live_data":  "Dane na zywo",
+                   "subtitle":  "Dane rynkowe w czasie rzeczywistym dla kupujacych i inwestorow na Malcie.",
+                   "total_listings":  "Laczna liczba ofert"
                },
     "months":  {
                    "jan":  "Sty",
@@ -666,7 +687,6 @@
                  "title_part1":  "JakÄ…",
                  "title_part2":  "NieruchomoĹ›ciÄ… na Malcie",
                  "title_part3":  "JesteĹ›?",
-                 "subtitle":  "ZnajdĹş swoje idealne dopasowanie w 60 sekund.",
                  "question_counter":  "Pytanie {{current}} / {{total}}",
                  "analyzing":  "Dopasowywanie Twojego DNA...",
                  "analyzing_subtitle":  "Nasza sztuczna inteligencja przeszukuje wyspÄ™ w poszukiwaniu Twojego ideaĹ‚u.",
@@ -682,7 +702,9 @@
                                 "market_desc":  "Wyniki sÄ… zsynchronizowane z rzeczywistym stanem rynku i statystykami obszarĂłw na rok 2026.",
                                 "area_title":  "WglÄ…d w Obszar",
                                 "area_desc":  "Otrzymuj szczegĂłĹ‚owe rekomendacje dla konkretnych dzielnic na podstawie Twojego klimatu."
-                            }
+                            },
+                 "eyebrow":  "Dobieracz nieruchomosci",
+                 "subtitle":  "Odpowiedz na kilka pytan, a dopasujemy idealny typ nieruchomosci i lokalizacje."
              },
     "quiz_content":  {
                          "questions":  [
@@ -811,7 +833,11 @@
                   "cta":  {
                               "title":  "Gotowy na odkrycie swojej wyjÄ…tkowej rezydencji?",
                               "trust_badge":  "Autoryzowana SieÄ‡ NieruchomoĹ›ci Luksusowych"
-                          }
+                          },
+                  "eyebrow":  "Nasza historia",
+                  "p1":  "Malta Luxury Real Estate powstalo, aby polaczyc wymagajacych nabywcow miedzynarodowych z najlepszymi nieruchomosciami Malty.",
+                  "p2":  "Wspolpracujemy wylacznie z licencjonowanymi agencjami i deweloperami, aby zaoferowac premium nieruchomosci.",
+                  "browse_properties":  "Przegladaj nieruchomosci"
               },
     "properties":  {
                        "all_listings":  "NieruchomoĹ›ci",
@@ -846,9 +872,103 @@
                                     }
                    },
     "seo":  {
+                "about":  {
+                              "title":  "O Malta Luxury Real Estate – Nasza Misja",
+                              "description":  "Wiodący niezależny portal łączący międzynarodowych inwestorów premium z maltańskim rynkiem nieruchomości."
+                          },
+                "cookies":  {
+                                "title":  "Polityka Cookies",
+                                "subtitle":  "Zasady Wykorzystywania Technologii Śledzących"
+                            },
+                "home":  {
+                             "title":  "Malta Luxury Real Estate – Nieruchomości Premium na Sprzedaż",
+                             "description":  "Odkryj najbardziej ekskluzywne nieruchomości na Malcie i Gozo. Wyselekcjonowane oferty luksusowych domów dla międzynarodowych nabywców."
+                         },
+                "insights":  {
+                                 "title":  "Wiedza i Inwestycje – Rynek Nieruchomości na Malcie",
+                                 "description":  "Eksperckie porady, raporty rynkowe i przewodniki po inwestowaniu w luksusowe nieruchomości na Malcie.",
+                                 "title_buying":  "Zakup Nieruchomości na Malcie przez Obcokrajowca",
+                                 "title_sda":  "Przewodnik po Special Designated Areas (SDA)",
+                                 "title_yields":  "Rentowność Najmu na Malcie 2026",
+                                 "title_taxes":  "Podatki od Nieruchomości na Malcie 2026"
+                             },
+                "market":  {
+                               "title":  "Rynek Nieruchomości Malta | Dane w Czasie Rzeczywistym 2026",
+                               "description":  "Monitoruj trendy cenowe, aktualne ogłoszenia i aktywność rynku na Malcie i Gozo. Analizy oparte na danych dla inwestorów luksusowych."
+                           },
+                "privacy":  {
+                                "title":  "Polityka Prywatności",
+                                "subtitle":  "Ochrona Danych i Zgodność z RODO"
+                            },
+                "properties":  {
+                                   "title":  "Luksusowe Nieruchomości na Sprzedaż na Malcie | Wszystkie Oferty",
+                                   "description":  "Przeglądaj naszą kolekcję apartamentów, willi i pałaców premium na wyspach maltańskich.",
+                                   "h1":  "Wszystkie nieruchomosci"
+                               },
+                "terms":  {
+                              "title":  "Regulamin Serwisu",
+                              "subtitle":  "Umowa Użytkownika i Zasady Platformy"
+                          },
+                "tools":  {
+                              "oracle":  {
+                                             "title":  "AI Oracle Cenowy | Bezpłatna Wycena Nieruchomości Malta",
+                                             "description":  "Otrzymaj natychmiastową wycenę nieruchomości opartą na AI. Nasz Oracle analizuje dane rynkowe, zapewniając wysoką precyzję szacunków."
+                                         },
+                              "valuation":  {
+                                                "title":  "Wycena Nieruchomości",
+                                                "description":  "Profesjonalne usługi wyceny nieruchomości luksusowych na Malcie i Gozo."
+                                            },
+                              "quiz":  {
+                                           "title":  "Quiz poszukiwacza nieruchomosci | Malta Luxury Real Estate",
+                                           "description":  "Odpowiedz na 5 pytan i odkryj idealny typ nieruchomosci oraz lokalizacje."
+                                       }
+                          },
                 "city":  {
                              "title":  "{location} Luksusowe nieruchomości na sprzedaż | Malta",
                              "description":  "Przeglądaj luksusowe nieruchomości na sprzedaż w {location}, Malta. Ekskluzywne wille, penthouse\u0027y i apartamenty."
-                         }
-            }
+                         },
+                "contact":  {
+                                "title":  "Kontakt | Malta Luxury Real Estate",
+                                "description":  "Skontaktuj sie z Malta Luxury Real Estate w sprawie doradztwa nieruchomosciowego."
+                            }
+            },
+    "home":  {
+                 "hero":  {
+                              "eyebrow":  "Wiodacy rynek nieruchomosci premium na Malcie",
+                              "title":  "Nieruchomosci luksusowe",
+                              "title2":  "na Malcie",
+                              "subtitle":  "Starannie wyselekcjonowane oferty od wiodacych agencji Malty dla nabywcow miedzynarodowych i HNWI.",
+                              "cta_browse":  "Przegladaj nieruchomosci",
+                              "cta_quiz":  "Zrob quiz"
+                          },
+                 "featured":  {
+                                  "eyebrow":  "Ekskluzywne portfolio",
+                                  "title":  "Wyselekcjonowana oferta"
+                              },
+                 "locations":  {
+                                   "eyebrow":  "Eksploruj wedlug lokalizacji",
+                                   "title":  "Najlepsze adresy Malty"
+                               },
+                 "insights":  {
+                                  "eyebrow":  "Wiedza rynkowa",
+                                  "title":  "Analizy nieruchomosci",
+                                  "description":  "Poradniki ekspertow i analizy rynku dla kupujacych i inwestorow na Malcie.",
+                                  "cta":  "Zobacz wszystkie analizy"
+                              }
+             },
+    "contact":  {
+                    "eyebrow":  "Skontaktuj sie",
+                    "subtitle":  "Nasz zespol ekspertow jest gotowy pomoc Ci znalezc idealna nieruchomosc na Malcie.",
+                    "name":  "Imie i nazwisko",
+                    "name_placeholder":  "Jan Kowalski",
+                    "email":  "Adres email",
+                    "email_placeholder":  "jan@przyklad.pl",
+                    "message":  "Wiadomosc",
+                    "message_placeholder":  "Opisz swoje wymagania dotyczace nieruchomosci...",
+                    "submit":  "Wyslij wiadomosc"
+                },
+    "valuation":  {
+                      "eyebrow":  "Wspomagane przez AI",
+                      "subtitle":  "Uzyskaj natychmiastowa wycene AI dla dowolnej nieruchomosci na Malcie lub Gozo."
+                  }
 }
