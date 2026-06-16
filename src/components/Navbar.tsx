@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTranslations, useLocale } from 'next-intl';
@@ -22,7 +22,7 @@ const LanguageSelector = () => {
 
   const handleLocaleChange = (newLocale: string) => {
     setIsOpen(false);
-    router.replace(pathname, { locale: newLocale });
+    router.replace(pathname as any, { locale: newLocale });
   };
 
   return (
@@ -165,7 +165,7 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="mt-8 pt-8 border-t border-white/10">
-                <Link href="/agency/login" onClick={() => setIsMobileOpen(false)} className="text-sm uppercase tracking-widest text-gold hover:text-white transition-colors">
+                <Link href={"/agency/login" as any} onClick={() => setIsMobileOpen(false)} className="text-sm uppercase tracking-widest text-gold hover:text-white transition-colors">
                   {t('nav.agency_login', { defaultValue: 'Agency Login' })}
                 </Link>
               </div>

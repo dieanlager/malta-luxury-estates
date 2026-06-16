@@ -1,6 +1,6 @@
-﻿'use client';
+'use client';
 import { useState } from 'react';
-import { LOCATIONS } from '@/src/lib/data';
+import { LOCATIONS } from '@/src/lib/locations';
 
 interface ValuationForm {
   location: string;

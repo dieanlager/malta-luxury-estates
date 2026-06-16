@@ -1,4 +1,4 @@
-﻿import fs from 'fs';
+import fs from 'fs';
 import path from 'path';
 import type { Article } from '../types';
 import articleSlugsJson from './article-slugs.json';

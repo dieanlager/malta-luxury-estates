@@ -1,4 +1,4 @@
-﻿export type EPCRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G';
+export type EPCRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G';
 
 export interface NoiseAssessment {
   score: number; // 1-100 (Higher is quieter)
@@ -79,10 +79,11 @@ export interface Location {
   island: 'malta' | 'gozo' | 'comino';
   region?: string;
   locationType: 'council' | 'city' | 'village' | 'area';
-  isPopular: boolean;
-  isLuxuryHub: boolean;
+  isPopular?: boolean;
+  isLuxuryHub?: boolean;
   shortDesc?: string;
   longIntro?: string;
+  description?: string;
   marketHighlights?: string[];
   lifestyleTags?: string[];
 }

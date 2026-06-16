@@ -118,6 +118,9 @@ export interface Database {
                     phone: string | null;
                     plan: 'basic' | 'pro' | 'featured';
                     active: boolean;
+                    stripe_customer_id: string | null;
+                    stripe_subscription_id: string | null;
+                    plan_expires_at: string | null;
                     created_at: string;
                     updated_at: string;
                 };

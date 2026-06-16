@@ -4,7 +4,7 @@ import { Property } from '../types';
 import { MapPin, Home, Bath, Square, ArrowRight, X, AlertTriangle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 const TOKEN_VALID = MAPBOX_TOKEN && MAPBOX_TOKEN !== 'PASTE_YOUR_TOKEN_HERE' && MAPBOX_TOKEN.startsWith('pk.');
 
 // ─── Malta island locations (for SVG fallback pins) ────────────────────

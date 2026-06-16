@@ -1,8 +1,8 @@
-﻿'use client';
+'use client';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/src/navigation';
 import { ArrowUpRight } from 'lucide-react';
-import { LOCATIONS } from '@/src/lib/data';
+import { LOCATIONS } from '@/src/lib/locations';
 import { NewsletterForm } from './NewsletterForm';
 
 export function Footer() {
@@ -55,7 +55,7 @@ export function Footer() {
               <li><Link href="/tools/quiz" className="hover:text-gold transition-colors font-bold text-white">{t('footer.quiz', { defaultValue: 'Property Quiz' })}</Link></li>
               <li><Link href="/tools/valuation" className="hover:text-gold transition-colors">{t('seo.tools.valuation.title', { defaultValue: 'Property Valuation' })}</Link></li>
               <li>
-                <Link href="/agency/portal" className="text-gold hover:text-white transition-colors flex items-center gap-2">
+                <Link href={"/agency/portal" as any} className="text-gold hover:text-white transition-colors flex items-center gap-2">
                   {t('footer.portal_for_agencies', { defaultValue: 'Agency Portal' })} <ArrowUpRight size={14} />
                 </Link>
               </li>

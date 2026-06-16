@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, Share2, Bookmark } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';

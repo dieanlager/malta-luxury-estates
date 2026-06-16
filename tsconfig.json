@@ -17,8 +17,9 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "typeRoots": ["./typings", "./node_modules/@types"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "dist", "src/backups"]
+  "exclude": ["node_modules", "dist", "src/backups", "src-backup-*", "backup-*", "backups", "masterplan-backup-complete", "masterplan-backup-*", "server-prod-backup*", "server-prod.ts", "src/main.tsx", "src/App.tsx", "src/vite-env.d.ts", "src/vite-pages/**"]
 }

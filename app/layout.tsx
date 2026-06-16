@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import '../src/index.css';
 
 const BASE_URL = 'https://www.maltaluxuryrealestate.com';

@@ -1,8 +1,8 @@
-﻿'use client';
+'use client';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/src/navigation';
-import { LOCATIONS } from '@/src/lib/data';
+import { LOCATIONS } from '@/src/lib/locations';
 
 const steps = [
   {

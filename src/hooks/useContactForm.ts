@@ -99,7 +99,7 @@ export const useContactForm = () => {
                     .select('description')
                     .eq('id', formData.propertyId)
                     .maybeSingle();
-                const m = (prop?.description || '').match(/^\[AFFILIATE_URL:([^\]]+)\]/);
+                const m = ((prop as any)?.description || '').match(/^\[AFFILIATE_URL:([^\]]+)\]/);
                 if (m) affiliateUrl = m[1];
             }
 

@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Send, CheckCircle2, Loader2, Mail, Phone, MessageSquare } from 'lucide-react';
 import { useTranslation } from 'react-i18next';

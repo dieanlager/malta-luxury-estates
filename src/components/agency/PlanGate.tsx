@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { PlanStatus, PLANS, PlanId } from '../../lib/planLimits';
 import { Lock, Zap, Crown, AlertTriangle, CheckCircle } from 'lucide-react';
 

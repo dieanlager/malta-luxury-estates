@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Bed, Bath, Maximize, Heart, ExternalLink, MapPin } from 'lucide-react';

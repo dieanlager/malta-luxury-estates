@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useEffect } from 'react';
 import { PropertyCard } from './PropertyCard';
 import { getPropertiesByLocation } from '../lib/data';

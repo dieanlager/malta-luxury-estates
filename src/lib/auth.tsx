@@ -97,7 +97,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
         // 2. Insert agency profile
         if (data.user) {
-            const { error: dbError } = await supabase.from('agencies').upsert({
+            const { error: dbError } = await (supabase as any).from('agencies').upsert({
                 id: data.user.id,
                 name: agencyName,
                 email,

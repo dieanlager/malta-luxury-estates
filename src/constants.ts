@@ -1,4 +1,4 @@
-﻿import { Property, Agency, Article } from './types';
+import { Property, Agency, Article } from './types';
 import { ARTICLES_PHASE2 } from './content/articles-phase2';
 import { ARTICLES_PHASE3 } from './content/articles-phase3';
 import { ARTICLES_PHASE3B } from './content/articles-phase3b';

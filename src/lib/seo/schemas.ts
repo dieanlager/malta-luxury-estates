@@ -1,4 +1,4 @@
-﻿import type { Location, LocationStats } from '../../types';
+import type { Location, LocationStats } from '../../types';
 
 export function formatPrice(price: number | null): string {
     if (!price) return 'N/A';

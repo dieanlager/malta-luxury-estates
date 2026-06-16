@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 export function AdminPage() {
   return (
     <main className="min-h-screen bg-luxury-black pt-32 px-6">

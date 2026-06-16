@@ -1,12 +1,11 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { createServerSupabaseClient } from '@/src/lib/supabase-server';
 
 export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2024-11-20' as any,
-});
+const getStripe = () => new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2024-11-20' as any });
 
 const PLAN_PRICES: Record<string, string> = {
   pro: process.env.STRIPE_PRICE_PRO!,
@@ -21,7 +20,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Invalid agencyId or plan' }, { status: 400 });
     }
 
-    const supabase = createServerSupabaseClient();
+    const supabase = createServerSupabaseClient() as any;
     const { data: agency, error } = await supabase
       .from('agencies')
       .select('id, name, email, stripe_customer_id')
@@ -32,6 +31,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Agency not found' }, { status: 404 });
     }
 
+    const stripe = getStripe();
     let customerId = agency.stripe_customer_id;
     if (!customerId) {
       const customer = await stripe.customers.create({

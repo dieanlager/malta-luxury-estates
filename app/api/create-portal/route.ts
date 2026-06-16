@@ -1,15 +1,16 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { createServerSupabaseClient } from '@/src/lib/supabase-server';
 
 export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2024-11-20' as any });
+const getStripe = () => new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2024-11-20' as any });
 
 export async function POST(req: NextRequest) {
   try {
     const { agencyId } = await req.json() as { agencyId: string };
-    const supabase = createServerSupabaseClient();
+    const supabase = createServerSupabaseClient() as any;
 
     const { data: agency } = await supabase
       .from('agencies')
@@ -22,7 +23,7 @@ export async function POST(req: NextRequest) {
     }
 
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.maltaluxuryrealestate.com';
-    const portalSession = await stripe.billingPortal.sessions.create({
+    const portalSession = await getStripe().billingPortal.sessions.create({
       customer: agency.stripe_customer_id,
       return_url: `${siteUrl}/agency/portal`,
     });

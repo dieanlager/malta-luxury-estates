@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const BASE_URL = 'https://www.maltaluxuryrealestate.com';
 const LANGUAGES = ['en', 'it', 'de', 'fr', 'pl'];

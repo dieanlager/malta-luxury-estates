@@ -1,13 +1,11 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { createServerSupabaseClient } from '@/src/lib/supabase-server';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2024-11-20' as any,
-});
+const getStripe = () => new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2024-11-20' as any });
 
 const PRICE_TO_PLAN: Record<string, string> = {
   [process.env.STRIPE_PRICE_PRO!]: 'pro',
@@ -19,7 +17,7 @@ async function updateAgencyPlan(
   plan: string,
   status: 'active' | 'trialing' | 'past_due' | 'canceled' | 'basic'
 ) {
-  const supabase = createServerSupabaseClient();
+  const supabase = createServerSupabaseClient() as any;
   const finalPlan = status === 'canceled' ? 'basic' : plan;
   await supabase
     .from('agencies')
@@ -40,13 +38,13 @@ export async function POST(req: NextRequest) {
 
   let event: Stripe.Event;
   try {
-    event = stripe.webhooks.constructEvent(body, sig, process.env.STRIPE_WEBHOOK_SECRET!);
+    event = getStripe().webhooks.constructEvent(body, sig, process.env.STRIPE_WEBHOOK_SECRET!);
   } catch (err: any) {
     console.error('Webhook signature failed:', err.message);
     return NextResponse.json({ error: `Webhook Error: ${err.message}` }, { status: 400 });
   }
 
-  const supabase = createServerSupabaseClient();
+  const supabase = createServerSupabaseClient() as any;
 
   try {
     switch (event.type) {
