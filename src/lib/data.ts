@@ -13,10 +13,10 @@ import {
 
 export const LOCATIONS: Location[] = [
   { id: 1, slug: 'sliema', nameEn: 'Sliema', nameMt: 'Tas-Sliema', island: 'malta', region: 'Northern Harbour', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'Seafront lifestyle hub.', lifestyleTags: ['Cosmopolitan', 'Seafront'] },
-  { id: 2, slug: 'st-julians', nameEn: "St. Julian's", nameMt: "San Giljan", island: 'malta', region: 'Northern Harbour', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'Entertainment and luxury.', lifestyleTags: ['Nightlife', 'Maritime'] },
+  { id: 2, slug: 'st-julians', nameEn: "St. Julian's", nameMt: "San Ä iljan", island: 'malta', region: 'Northern Harbour', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'Entertainment and luxury.', lifestyleTags: ['Nightlife', 'Maritime'] },
   { id: 3, slug: 'valletta', nameEn: 'Valletta', nameMt: 'Il-Belt Valletta', island: 'malta', region: 'Southern Harbour', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'UNESCO-listed capital.', lifestyleTags: ['Boutique', 'Historic'] },
   { id: 4, slug: 'mdina', nameEn: 'Mdina', nameMt: 'L-Imdina', island: 'malta', region: 'Western', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'The Silent City.', lifestyleTags: ['Noble', 'Tranquil'] },
-  { id: 5, slug: 'mellieha', nameEn: 'Mellieha', nameMt: 'Il-Mellieha', island: 'malta', region: 'Northern', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'Stunning villas.', lifestyleTags: ['Beachfront', 'Villa Living'] },
+  { id: 5, slug: 'MellieÄ§a', nameEn: 'MellieÄ§a', nameMt: 'Il-MellieÄ§a', island: 'malta', region: 'Northern', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'Stunning villas.', lifestyleTags: ['Beachfront', 'Villa Living'] },
   { id: 6, slug: 'victoria', nameEn: 'Victoria', nameMt: 'Ir-Rabat', island: 'gozo', region: 'Gozo', locationType: 'city', isPopular: true, isLuxuryHub: true, shortDesc: 'Heart of Gozo.' },
   { id: 7, slug: 'swieqi', nameEn: 'Swieqi', nameMt: 'Is-Swieqi', island: 'malta', region: 'Northern Harbour', locationType: 'city', isPopular: true },
   { id: 8, slug: 'attard', nameEn: 'Attard', nameMt: "H'Attard", island: 'malta', region: 'Central', locationType: 'city', isPopular: true },
@@ -26,17 +26,17 @@ export const LOCATIONS: Location[] = [
   { id: 12, slug: 'marsascala', nameEn: 'Marsascala', nameMt: 'Wied il-Ghajn', island: 'malta', region: 'South Eastern', locationType: 'city' },
   { id: 13, slug: 'three-cities', nameEn: 'Three Cities', nameMt: 'Il-Kottonera', island: 'malta', region: 'Southern Harbour', locationType: 'area', isPopular: true },
   { id: 14, slug: 'xlendi', nameEn: 'Xlendi', nameMt: 'Ix-Xlendi', island: 'gozo', region: 'Gozo', locationType: 'area', isPopular: true },
-  { id: 15, slug: 'gharghur', nameEn: 'Gharghur', nameMt: 'Hal Gharghur', island: 'malta', region: 'Northern', locationType: 'village' },
-  { id: 16, slug: 'gzira', nameEn: 'G¿ira', island: 'malta', region: 'Northern Harbour', locationType: 'city' },
+  { id: 15, slug: 'GÄ§argÄ§ur', nameEn: 'GÄ§argÄ§ur', nameMt: 'Hal GÄ§argÄ§ur', island: 'malta', region: 'Northern', locationType: 'village' },
+  { id: 16, slug: 'gzira', nameEn: 'GÅ¼ira', island: 'malta', region: 'Northern Harbour', locationType: 'city' },
   { id: 17, slug: 'msida', nameEn: 'Msida', island: 'malta', region: 'Northern Harbour', locationType: 'city' },
   { id: 18, slug: 'pembroke', nameEn: 'Pembroke', island: 'malta', region: 'Northern Harbour', locationType: 'city' },
   { id: 19, slug: 'san-gwann', nameEn: 'San Gwann', island: 'malta', region: 'Northern Harbour', locationType: 'city' },
   { id: 20, slug: 'mosta', nameEn: 'Mosta', island: 'malta', region: 'Northern', locationType: 'city' },
   { id: 21, slug: 'rabat', nameEn: 'Rabat', island: 'malta', region: 'Western', locationType: 'city' },
   { id: 22, slug: 'marsaxlokk', nameEn: 'Marsaxlokk', island: 'malta', region: 'South Eastern', locationType: 'village' },
-  { id: 23, slug: 'zejtun', nameEn: '¯ejtun', island: 'malta', region: 'South Eastern', locationType: 'city' },
+  { id: 23, slug: 'zejtun', nameEn: 'Å»ejtun', island: 'malta', region: 'South Eastern', locationType: 'city' },
   { id: 24, slug: 'qormi', nameEn: 'Qormi', island: 'malta', region: 'Northern Harbour', locationType: 'city' },
-  { id: 25, slug: 'zebbug', nameEn: '¯ebbug', island: 'malta', region: 'Western', locationType: 'city' },
+  { id: 25, slug: 'zebbug', nameEn: 'Å»ebbug', island: 'malta', region: 'Western', locationType: 'city' },
   { id: 26, slug: 'siggiewi', nameEn: 'Siggiewi', island: 'malta', region: 'Western', locationType: 'city' },
   { id: 27, slug: 'gozo-marsalforn', nameEn: 'Marsalforn', island: 'gozo', region: 'Gozo', locationType: 'area' },
   { id: 28, slug: 'gozo-nadur', nameEn: 'Nadur', island: 'gozo', region: 'Gozo', locationType: 'village' },
@@ -45,15 +45,15 @@ export const LOCATIONS: Location[] = [
 ];
 
 export const ALL_LOCALITIES = [
-  "Sliema", "St. Julian's", "Valletta", "Mdina", "Mellieha", "Senglea", "Cospicua", "Vittoriosa",
-  "G¿ira", "Msida", "Swieqi", "Pembroke", "San Gwann", "St. Paul's Bay", "Qawra", "Bugibba",
-  "Naxxar", "Gharghur", "Madliena", "Iklin", "Lija", "Balzan", "Attard", "Mosta", "Rabat",
-  "Marsaxlokk", "Marsascala", "Bir¿ebbuga", "¯ejtun", "Qormi", "¯ebbug", "Siggiewi",
-  "Dingli", "Mgarr", "Bahrija", "¯urrieq", "Qrendi", "Mqabba", "Kirkop", "Safi", "Luqa", "Gudja",
+  "Sliema", "St. Julian's", "Valletta", "Mdina", "MellieÄ§a", "Senglea", "Cospicua", "Vittoriosa",
+  "GÅ¼ira", "Msida", "Swieqi", "Pembroke", "San Gwann", "St. Paul's Bay", "Qawra", "Bugibba",
+  "Naxxar", "GÄ§argÄ§ur", "Madliena", "Iklin", "Lija", "Balzan", "Attard", "Mosta", "Rabat",
+  "Marsaxlokk", "Marsascala", "BirÅ¼ebbuga", "Å»ejtun", "Qormi", "Å»ebbug", "Siggiewi",
+  "Dingli", "Mgarr", "BaÄ§rija", "Å»urrieq", "Qrendi", "Mqabba", "Kirkop", "Safi", "Luqa", "Gudja",
   "Ghaxaq", "Tarxien", "Paola", "Fgura", "Santa Lucija", "Kalkara", "Xghajra", "Floriana",
-  "Gozo – Victoria", "Gozo – Xlendi", "Gozo – Marsalforn", "Gozo – Nadur", "Gozo – Xaghra",
-  "Gozo – Ghajnsielem", "Gozo – Qala", "Gozo – Sannat", "Gozo – Munxar", "Gozo – ¯ebbug",
-  "Gozo – Gharb", "Gozo – Ghasri", "Gozo – San Lawrenz",
+  "Gozo - Victoria", "Gozo - Xlendi", "Gozo - Marsalforn", "Gozo - Nadur", "Gozo - Xaghra",
+  "Gozo - Ghajnsielem", "Gozo - Qala", "Gozo - Sannat", "Gozo - Munxar", "Gozo - Å»ebbug",
+  "Gozo - Gharb", "Gozo - Ghasri", "Gozo - San Lawrenz",
 ];
 
 export const LOCATION_STATS: Record<number, LocationStats> = {
@@ -142,11 +142,11 @@ export const PROPERTY_TYPES = [
 ];
 
 export const PRICE_FILTERS = [
-  { slug: 'under-500k', label: 'Under €500k', min: 0, max: 500000 },
-  { slug: 'under-1m', label: 'Under €1M', min: 0, max: 1000000 },
-  { slug: '500k-1m', label: '€500k – €1M', min: 500000, max: 1000000 },
-  { slug: 'over-1m', label: 'Over €1M', min: 1000000, max: Infinity },
-  { slug: 'over-3m', label: 'Over €3M', min: 3000000, max: Infinity },
+  { slug: 'under-500k', label: 'Under â‚¬500k', min: 0, max: 500000 },
+  { slug: 'under-1m', label: 'Under â‚¬1M', min: 0, max: 1000000 },
+  { slug: '500k-1m', label: 'â‚¬500k â‚¬ â‚¬1M', min: 500000, max: 1000000 },
+  { slug: 'over-1m', label: 'Over â‚¬1M', min: 1000000, max: Infinity },
+  { slug: 'over-3m', label: 'Over â‚¬3M', min: 3000000, max: Infinity },
 ];
 
 export const FEATURE_FILTERS = [
@@ -304,8 +304,8 @@ export const getArticlesByCategory = async (category: Article['category'], lang 
 
 export const getFilterLabel = (filterSlug: string): string => {
   const labels: Record<string, string> = {
-    'under-500k': 'Under €500k', 'under-1m': 'Under €1M', '500k-1m': '€500k – €1M',
-    'over-1m': 'Over €1M', 'over-3m': 'Over €3M',
+    'under-500k': 'Under â‚¬500k', 'under-1m': 'Under â‚¬1M', '500k-1m': 'â‚¬500k â‚¬ â‚¬1M',
+    'over-1m': 'Over â‚¬1M', 'over-3m': 'Over â‚¬3M',
     'sea-view': 'Sea View', 'with-pool': 'With Pool', 'new-build': 'New Build', 'furnished': 'Furnished',
   };
   return labels[filterSlug] || filterSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
