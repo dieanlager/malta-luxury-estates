@@ -275,3 +275,31 @@ Il mercato immobiliare di Malta ha mostrato una crescita costante con una media 
 ## Pronti per Iniziare la Vostra Ricerca Immobiliare a Malta?
 
 Sfogliare annunci premium nelle località più desiderabili di Malta, ognuna selezionata a mano per qualità e potenziale di investimento.
+
+
+## Il ruolo del notaio nell'acquisto immobiliare maltese
+
+Il notaio maltese svolge un ruolo fondamentale e non meramente formale nel processo di acquisto. A differenza dei sistemi di common law anglossassoni dove il solicitor è principalmente un consulente del cliente, il notaio maltese ha una funzione di garante super partes: verifica la libertà da vincoli e ipoteche della proprietà, accerta l'identità e la capacità giuridica delle parti, si assicura che il trasferimento rispetti la legge, e ne conserva gli atti originali nei propri archivi per 30 anni. Questa figura offre una tutela sostanziale agli acquirenti stranieri che non hanno familiarità con il sistema legale maltese.
+
+Il notaio può essere scelto liberamente dall'acquirente — non è obbligatorio accettare il notaio proposto dall'agente immobiliare o dallo sviluppatore. Scegliere un notaio indipendente con esperienza in transazioni internazionali è sempre la scelta più sicura. Gli onorari notarili sono regolati per legge e variano tipicamente tra l'1% e il 2% del valore della transazione.
+
+## Due diligence avanzata: cosa verificare prima del konvenju
+
+La fase di due diligence preliminare, svolta prima della firma del konvenju (compromesso), è il momento più critico dell'intera transazione. Oltre alla verifica titolare standard, un acquirente accorto verificherà: la storia delle trascrizioni della proprietà (almeno 30 anni), l'eventuale presenza di usufruttari o abitatori che non figurano nel titolo ma potrebbero rivendicare diritti, la conformità della costruzione ai permessi di costruzione originali (frequente problema nelle proprietà ristrutturate senza permesso), l'esistenza di contenziosi pendenti o di procedure esecutive, e l'assenza di violazioni urbanistiche che potrebbero comportare ordini di demolizione.
+
+Per gli appartamenti in condominio, è essenziale richiedere il verbale delle ultime assemblee condominiali per verificare se sono previste spese straordinarie significative (rifacimento del tetto, ascensore, impermeabilizzazione). Queste spese, se deliberate prima della compravendita, potrebbero gravare sull'acquirente.
+
+## I costi nascosti dell'acquisto: budget completo
+
+Molti acquirenti stranieri arrivano all'atto di acquisto con sorpresa per i costi accessori. Il budget completo per un acquisto immobiliare a Malta deve includere: duty on documents (stamp duty) 5% del valore; onorari notarili 1-2%; commissioni d'agenzia 1-3% (tipicamente a carico del venditore, ma verificare); costi di registrazione al Registro Pubblico €100-200; eventuale AIP permit (non residenti UE) €230; costi bancari per il mutuo (perizia, istruttoria) €500-1.500; costi di ristrutturazione o arredamento se la proprietà non è chiavi in mano; e prime spese condominiali.
+
+Mettendo tutto insieme, i costi accessori totali ammontano tipicamente al 7-10% del prezzo di acquisto. Su una proprietà da €300.000, questo significa €21.000-€30.000 in più rispetto al prezzo negoziato. Pianificare questo budget con anticipo evita spiacevoli sorprese.
+
+Per supporto completo nel processo di acquisto a Malta, dalla ricerca della proprietà alla firma del rogito notarile, il team di Malta Luxury Real Estate offre un servizio di accompagnamento personalizzato. Contattateci a info@maltaluxuryrealestate.com.
+
+
+## Riepilogo: timeline tipica di un acquisto immobiliare a Malta
+
+Il processo di acquisto di una proprietà a Malta, dalla prima visita alla firma del rogito, segue tipicamente questa timeline: ricerca e selezione della proprietà (2-8 settimane); negoziazione del prezzo e dei termini (1-2 settimane); due diligence notarile preliminare (1-3 settimane); firma del konvenju e versamento del deposito del 10% (giorno concordato); completamento della due diligence estesa e ottenimento del mutuo se necessario (4-8 settimane); firma del contratto finale e rogito notarile (giorno concordato, tipicamente 3-6 mesi dopo il konvenju). Totale dalla prima visita al rogito: 3-7 mesi in media. Per proprietà off-plan, aggiungere il periodo di costruzione. Il nostro team gestisce ogni fase per voi — info@maltaluxuryrealestate.com.
+ Ogni fase del processo, se gestita con competenza e attenzione ai dettagli, contribuisce a trasformare quello che potrebbe sembrare un percorso complesso in un'esperienza fluida e soddisfacente che porta all'acquisizione di una proprietà in una delle destinazioni più affascinanti del Mediterraneo.
+ Il processo di acquisto, ben pianificato, apre le porte a una delle esperienze di vita più gratificanti: possedere una proprietà nella soleggiata Malta.

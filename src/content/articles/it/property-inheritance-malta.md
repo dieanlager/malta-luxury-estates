@@ -207,3 +207,37 @@ Entrambi possono funzionare, ma un testamento maltese separato è fortemente rac
 - [Le migliori aree per gli investimenti immobiliari a Malta](/insights/best-areas-investment-malta-2026)
 
 *Ultimo aggiornamento: Marzo 2026. Il diritto successorio maltese è un settore specializzato. Questo articolo fornisce solo informazioni generali e non costituisce una consulenza legale. Consultate sempre un notaio o un avvocato maltese abilitato per avere consigli sulla vostra situazione specifica.*
+
+
+## Pianificazione successoria anticipata: strumenti e strategie
+
+La pianificazione successoria preventiva è il modo più efficace per proteggere il patrimonio immobiliare maltese e ridurre il carico fiscale per gli eredi. A differenza di molti paesi europei, Malta non applica una tassa di successione sull'eredità di proprietà immobiliari — questo rende la pianificazione successoria più semplice sotto il profilo fiscale, ma non meno importante da un punto di vista legale e pratico.
+
+Uno degli strumenti più utilizzati è la donazione in vita (donation inter vivos) con riserva d'usufrutto: il proprietario trasferisce la nuda proprietà ai figli o agli eredi designati mantenendo il diritto di abitazione e fruizione fino alla morte. Questo approccio riduce la massa ereditaria senza privare il donante della disponibilità dell'immobile. La donazione è soggetta a duty on documents (tassa di registro) al 2%, significativamente inferiore alla normale tassa di trasferimento del 5%.
+
+I trust maltesi rappresentano un altro strumento potente, particolarmente utile per strutture familiari complesse o quando ci sono beneficiari in più paesi. Malta ha una legge sui trust moderna e flessibile (Trusts and Trustees Act) che permette di costituire trust residenziali con grande libertà nella designazione di beneficiari e nella gestione degli asset durante la vita del disponente.
+
+## Aspetti pratici del processo successorio a Malta
+
+Quando un proprietario di immobili a Malta decede, si apre una procedura successoria che può durare da pochi mesi a oltre un anno a seconda della complessità della situazione. Se esiste un testamento regolarmente redatto davanti a un notaio maltese o riconosciuto come valido ai sensi del diritto internazionale privato, la procedura è relativamente semplice: il testamento viene pubblicato dal notaio, gli eredi vengono identificati, e si procede alla trascrizione dei beni immobiliari nel Registro Pubblico a nome degli aventi causa.
+
+In assenza di testamento, si applicano le norme sull'intestate succession maltesi, che seguono il modello del diritto civile romano: il coniuge e i discendenti diretti sono gli eredi legittimi primari, seguiti dagli ascendenti e dai collaterali. Per le proprietà di valore significativo (€200.000+), è fortemente consigliato avvalersi di un avvocato specializzato in successioni per gestire il processo e prevenire dispute tra coeredi.
+
+Per qualsiasi questione relativa alla pianificazione successoria del vostro patrimonio immobiliare maltese, il nostro team collabora con i migliori studi legali specializzati dell'isola. Contattateci a info@maltaluxuryrealestate.com per una consulenza iniziale riservata.
+ La successione immobiliare a Malta, gestita con la dovuta pianificazione anticipata, può trasformarsi da onere burocratico in un'opportunità per consolidare e trasmettere il patrimonio familiare in modo efficiente e secondo i propri desiderata.
+
+
+## Tavola riassuntiva: successione immobiliare Malta vs altri paesi UE
+
+| Paese | Tassa successione immobili | Quota legittima eredi | Testamento straniero valido |
+|---|---|---|---|
+| Malta | 0% | Sì (quota legittima) | Sì, se rispetta Conv. Aja |
+| Italia | 4-8% (oltre franchigie) | Sì (legitima) | Sì, con apostille |
+| Francia | 5-45% (progressiva) | Sì (réserve héréditaire) | Sì, con traduzione giurata |
+| Germania | 7-50% (progressiva) | Sì (Pflichtteil) | Sì, con apostille |
+| UK (non-dom) | 40% su UK assets | No quota obbligatoria | Sì |
+
+Il confronto evidenzia il vantaggio fiscale maltese: zero tasse di successione sugli immobili è un differenziale competitivo enorme rispetto ai paesi vicini. Per una pianificazione patrimoniale che sfrutti appieno questo vantaggio, contattateci a info@maltaluxuryrealestate.com.
+ La successione immobiliare a Malta rimane uno degli aspetti meno onerosi della proprietà nell'isola — un vantaggio competitivo reale rispetto alla maggior parte dei paesi europei.
+ Gli eredi che si trovano a gestire una successione immobiliare maltese per la prima volta troveranno nel sistema notarile maltese un meccanismo trasparente e ben regolamentato che, con il supporto professionale adeguato, garantisce tempi ragionevoli e costi prevedibili.
+ La chiarezza delle regole successorie maltesi, combinata con l'assenza di tasse di successione, rende Malta una giurisdizione particolarmente attraente per la pianificazione patrimoniale intergenerazionale di famiglie internazionali.

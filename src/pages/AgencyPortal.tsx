@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
     LayoutDashboard,
@@ -77,20 +77,20 @@ interface DBProperty {
 }
 
 const MALTA_LOCATIONS = [
-    "Sliema", "St. Julian's", "Valletta", "Mdina", "Mellieħa", "Senglea", "Cospicua", "Vittoriosa",
-    "Gżira", "Msida", "Swieqi", "Pembroke", "San Ġwann", "St. Paul's Bay", "Qawra", "Buġibba",
-    "Naxxar", "Għargħur", "Madliena", "Iklin", "Lija", "Balzan", "Attard", "Mosta", "Rabat",
-    "Attard", "Marsaxlokk", "Marsascala", "Birżebbuġa", "Żejtun", "Qormi", "Żebbuġ", "Siġġiewi",
-    "Dingli", "Mġarr", "Baħrija", "Żurrieq", "Qrendi", "Mqabba", "Kirkop", "Safi", "Luqa", "Gudja",
-    "Għaxaq", "Tarxien", "Paola", "Fgura", "Santa Luċija", "Kalkara", "Xgħajra", "Floriana",
-    "Gozo – Victoria", "Gozo – Xlendi", "Gozo – Marsalforn", "Gozo – Nadur", "Gozo – Xagħra",
-    "Gozo – Għajnsielem", "Gozo – Qala", "Gozo – Sannat", "Gozo – Munxar", "Gozo – Żebbuġ",
-    "Gozo – Għarb", "Gozo – Għasri", "Gozo – San Lawrenz"
+    "Sliema", "St. Julian's", "Valletta", "Mdina", "MellieÄ§a", "Senglea", "Cospicua", "Vittoriosa",
+    "GĹĽira", "Msida", "Swieqi", "Pembroke", "San Ä wann", "St. Paul's Bay", "Qawra", "BuÄˇibba",
+    "Naxxar", "GÄ§argÄ§ur", "Madliena", "Iklin", "Lija", "Balzan", "Attard", "Mosta", "Rabat",
+    "Attard", "Marsaxlokk", "Marsascala", "BirĹĽebbuÄˇa", "Ĺ»ejtun", "Qormi", "Ĺ»ebbuÄˇ", "SiÄˇÄˇiewi",
+    "Dingli", "MÄˇarr", "BaÄ§rija", "Ĺ»urrieq", "Qrendi", "Mqabba", "Kirkop", "Safi", "Luqa", "Gudja",
+    "GÄ§axaq", "Tarxien", "Paola", "Fgura", "Santa LuÄ‹ija", "Kalkara", "XgÄ§ajra", "Floriana",
+    "Gozo â€“ Victoria", "Gozo â€“ Xlendi", "Gozo â€“ Marsalforn", "Gozo â€“ Nadur", "Gozo â€“ XagÄ§ra",
+    "Gozo â€“ GÄ§ajnsielem", "Gozo â€“ Qala", "Gozo â€“ Sannat", "Gozo â€“ Munxar", "Gozo â€“ Ĺ»ebbuÄˇ",
+    "Gozo â€“ GÄ§arb", "Gozo â€“ GÄ§asri", "Gozo â€“ San Lawrenz"
 ];
 
 const PROPERTY_TYPES = ["Apartment", "Penthouse", "Villa", "Townhouse", "House of Character", "Palazzo", "Maisonette", "Farmhouse", "Duplex", "Studio", "Ground Floor"];
 
-// ─── Primitives ───────────────────────────────────────────────────────────────
+// â”€â”€â”€ Primitives â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const G = {
     bg: "#080808", surface: "rgba(255,255,255,0.025)", border: "rgba(255,255,255,0.07)",
     gold: "#C5A059", goldDim: "#9A7A35", goldPale: "rgba(197,160,89,0.08)",
@@ -100,7 +100,7 @@ const G = {
     mono: "'DM Mono', monospace", serif: "'Cormorant Garamond', serif", sans: "'DM Sans', sans-serif",
 };
 
-// ─── Stat Card ─────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Stat Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function StatCard({ label, value, sub, trend, icon: Icon }: any) {
     const trendColor = trend > 0 ? G.green : trend < 0 ? G.red : G.muted;
     return (
@@ -115,7 +115,7 @@ function StatCard({ label, value, sub, trend, icon: Icon }: any) {
             <div className="flex items-center gap-2">
                 {trend !== undefined && trend !== 0 && (
                     <span className={`flex items-center gap-1 text-[10px] font-mono ${trendColor}`}>
-                        {trend > 0 ? <TrendingUp size={10} /> : trend < 0 ? <TrendingDown size={10} /> : '→'}
+                        {trend > 0 ? <TrendingUp size={10} /> : trend < 0 ? <TrendingDown size={10} /> : 'â†’'}
                         {Math.abs(trend)}%
                     </span>
                 )}
@@ -125,7 +125,7 @@ function StatCard({ label, value, sub, trend, icon: Icon }: any) {
     );
 }
 
-// ─── Listing Row ───────────────────────────────────────────────────────────────
+// â”€â”€â”€ Listing Row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
     const statusConfig: any = {
         active: { label: "Active", color: "text-emerald-400", bg: "bg-emerald-400/10", border: "border-emerald-400/20" },
@@ -154,7 +154,7 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
                     <span className="flex items-center gap-1"><MapPin size={10} /> {listing.location_text}</span>
                     <span>{listing.property_type}</span>
                     <span>{listing.bedrooms === 0 ? "Studio" : listing.bedrooms + " bed"}</span>
-                    <span>{listing.area_sqm} m²</span>
+                    <span>{listing.area_sqm} mÂ˛</span>
                 </div>
             </div>
 
@@ -192,7 +192,7 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
     );
 }
 
-// ─── Add / Edit Listing Modal ──────────────────────────────────────────────────
+// â”€â”€â”€ Add / Edit Listing Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ListingModal({ listing, onSave, onClose, agencyName, planStatus, requestUpgrade }: any) {
     const isEdit = Boolean(listing?.id && !listing.id.startsWith('new_'));
     const empty = {
@@ -224,6 +224,25 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
     } : empty;
 
     const [form, setForm] = useState(initialForm);
+    useEffect(() => {
+        const newForm = listing ? {
+            ...empty,
+            ...listing,
+            location: listing.location_text || '',
+            type: listing.property_type || '',
+            price: String(listing.price || ''),
+            sqm: String(listing.area_sqm || ''),
+            listingType: listing.listing_type || 'sale',
+            epcRating: listing.epc_rating || 'A',
+            isSeafront: listing.is_seafront || false,
+            hasPool: listing.has_pool || false,
+            hasGarage: listing.has_garage || false,
+            isSDA: listing.is_sda || false,
+            isUCA: listing.is_uca || false,
+            image: listing.images?.[0] || empty.image
+        } : empty;
+        setForm(newForm);
+    }, [listing?.id]);
     const [step, setStep] = useState(0);
     const [isAiGenerating, setIsAiGenerating] = useState(false);
 
@@ -447,7 +466,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
     );
 }
 
-// ─── Lead Row ─────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Lead Row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function LeadRow({ lead, onUpdateStatus }: any) {
     const statusConfig: any = {
         new: { color: "text-blue-400", bg: "bg-blue-400/10", border: "border-blue-400/20", label: "New" },
@@ -461,7 +480,7 @@ function LeadRow({ lead, onUpdateStatus }: any) {
     return (
         <div className="group flex items-center gap-6 p-4 border-b border-white/5 hover:bg-white/2 transition-all">
             <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-lg flex-shrink-0">
-                {lead.flag || "🇲🇹"}
+                {lead.flag || "đź‡˛đź‡ą"}
             </div>
             <div className="flex-1">
                 <div className="text-sm font-medium text-white">{lead.name}</div>
@@ -473,7 +492,7 @@ function LeadRow({ lead, onUpdateStatus }: any) {
                     <span className={`px-2 py-0.5 rounded text-[8px] font-bold uppercase tracking-widest border ${lead.intent === 'Buy' ? 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20' : 'bg-blue-400/10 text-blue-400 border-blue-400/20'}`}>
                         {lead.intent}
                     </span>
-                    <span className="text-[10px] font-mono text-white/20">€{lead.budget_max?.toLocaleString() || "–"}</span>
+                    <span className="text-[10px] font-mono text-white/20">€{lead.budget_max?.toLocaleString() || "â€“"}</span>
                 </div>
             </div>
             <div className="text-[10px] font-mono text-white/20 uppercase tracking-widest flex-shrink-0">
@@ -493,7 +512,7 @@ function LeadRow({ lead, onUpdateStatus }: any) {
     );
 }
 
-// ─── MAIN PORTAL ───────────────────────────────────────────────────────────────
+// â”€â”€â”€ MAIN PORTAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export const AgencyPortal: React.FC = () => {
     usePageMeta({
         title: 'Agency Portal | Malta Luxury Real Estate Control Center',
@@ -613,7 +632,7 @@ export const AgencyPortal: React.FC = () => {
 
             await fetchData(); // Refresh
             setModal(null);
-            notify(dbData.id ? "Listing updated" : "Property published! 🚀");
+            notify(dbData.id ? "Listing updated" : "Property published! đźš€");
         } catch (err: any) {
             notify(err.message, "error");
         }
@@ -741,7 +760,7 @@ export const AgencyPortal: React.FC = () => {
 
             <div className="flex min-h-screen">
 
-                {/* ── Sidebar ── */}
+                {/* â”€â”€ Sidebar â”€â”€ */}
                 <aside className="w-64 border-r border-white/5 bg-white/[0.01] flex flex-col sticky top-0 h-screen">
                     <div className="p-8 border-b border-white/5 mb-4">
                         <Link to="/" className="group block">
@@ -788,7 +807,7 @@ export const AgencyPortal: React.FC = () => {
                     </div>
                 </aside>
 
-                {/* ── Main Dashboard ── */}
+                {/* â”€â”€ Main Dashboard â”€â”€ */}
                 <main className="flex-1 min-w-0 overflow-y-auto bg-[#080808]">
 
                     {/* Header */}
@@ -816,7 +835,7 @@ export const AgencyPortal: React.FC = () => {
 
                     <div className="p-10 space-y-10">
 
-                        {/* ── VIEW: DASHBOARD ── */}
+                        {/* â”€â”€ VIEW: DASHBOARD â”€â”€ */}
                         {view === "dashboard" && (
                             <div className="space-y-12">
                                 {/* Metrics Grid */}
@@ -862,7 +881,7 @@ export const AgencyPortal: React.FC = () => {
                             </div>
                         )}
 
-                        {/* ── VIEW: LISTINGS ── */}
+                        {/* â”€â”€ VIEW: LISTINGS â”€â”€ */}
                         {view === "listings" && (
                             <div className="space-y-8">
                                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 p-6 rounded-[2rem] bg-white/2 border border-white/5">
@@ -899,7 +918,7 @@ export const AgencyPortal: React.FC = () => {
                             </div>
                         )}
 
-                        {/* ── VIEW: LEADS ── */}
+                        {/* â”€â”€ VIEW: LEADS â”€â”€ */}
                         {view === "leads" && (
                             <div className="space-y-10">
                                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -946,7 +965,7 @@ export const AgencyPortal: React.FC = () => {
                                                                             onClick={() => closeLead(l.id)}
                                                                             className="flex-1 py-1.5 bg-gold/20 text-gold text-xs rounded-lg border border-gold/30 hover:bg-gold/30 transition-colors"
                                                                         >
-                                                                            Confirm &amp; Close →
+                                                                            Confirm &amp; Close â†’
                                                                         </button>
                                                                         <button
                                                                             onClick={() => { setClosingLeadId(null); setTxValue(''); }}
@@ -989,7 +1008,7 @@ export const AgencyPortal: React.FC = () => {
                             </div>
                         )}
 
-                        {/* ── VIEW: IMPORT ── */}
+                        {/* â”€â”€ VIEW: IMPORT â”€â”€ */}
                         {view === "import" && (
                             <div className="space-y-10">
                                 <section className="max-w-3xl">
@@ -1011,7 +1030,7 @@ export const AgencyPortal: React.FC = () => {
                             </div>
                             <h2 className="text-4xl font-serif text-white mb-4 italic">Deep Market Intelligence</h2>
                             <p className="max-w-xl mx-auto text-white/30 text-lg leading-relaxed mb-10">Comparative market analysis, price heatmaps, and demand forecasting are reserved for Pro Partners.</p>
-                            <button onClick={() => setView('settings')} className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest text-white">Unlock Insights →</button>
+                            <button onClick={() => setView('settings')} className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest text-white">Unlock Insights â†’</button>
                         </div>}
 
                         {view === "settings" && <div className="max-w-2xl space-y-10">
@@ -1035,7 +1054,7 @@ export const AgencyPortal: React.FC = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-gold/20 bg-gold/5">
-                                    <span className="text-gold text-xs">★</span>
+                                    <span className="text-gold text-xs">â…</span>
                                     <span className="text-gold text-xs font-mono tracking-wider uppercase">
                                         Exclusive Partner
                                     </span>
@@ -1048,3 +1067,5 @@ export const AgencyPortal: React.FC = () => {
         </div>
     );
 };
+
+

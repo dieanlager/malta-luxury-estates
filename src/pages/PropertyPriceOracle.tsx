@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
     Scan, MapPin, Home, Maximize, Layers,
@@ -29,6 +29,9 @@ const VIEW_MULTIPLIER: Record<number, number> = {
 
 export const PropertyPriceOracle: React.FC = () => {
     const { t, i18n } = useTranslation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     usePageMeta({
         title: t('seo:tools.oracle.title', 'AI Property Price Oracle | Free Valuation Malta & Gozo'),
         description: t('seo:tools.oracle.description', 'Get an instant, AI-powered property valuation. Our Oracle analyzes market trends, location data, and property specs to provide high-precision estimates.'),

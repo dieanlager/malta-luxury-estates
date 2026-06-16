@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import {
@@ -6,7 +6,7 @@ import {
     ChevronLeft, ChevronRight, Phone, MessageSquare, Shield,
     Award, TrendingUp, Compass, Waves, CheckCircle2, Info
 } from 'lucide-react';
-import { getPropertyById } from '../lib/data';
+import { getPropertyById, getPropertyBySlug } from '../lib/data';
 import { Property } from '../types';
 import { usePageMeta } from '../lib/seo/meta';
 import { InvestmentPassportButton } from '../components/InvestmentPassport';
@@ -21,7 +21,7 @@ import { getImageUrl, getSrcSet } from '../lib/imageUtils';
 
 export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, title: string) => void }) => {
     const { t, i18n } = useTranslation(['property_detail', 'common']);
-    const { id } = useParams<{ id: string }>();
+    const { slug } = useParams<{ slug: string }>();
     const navigate = useNavigate();
     const [property, setProperty] = useState<Property | null>(null);
     const [activeImage, setActiveImage] = useState(0);
@@ -29,8 +29,15 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
     useEffect(() => {
         const fetchProperty = async () => {
-            if (id) {
-                const data = await getPropertyById(id);
+            if (slug) {
+                const isUUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(slug);
+                let data = isUUID
+                    ? await getPropertyById(slug)
+                    : await getPropertyBySlug(slug);
+                // fallback: if slug lookup fails, try by id
+                if (!data && !isUUID) {
+                    data = await getPropertyById(slug);
+                }
                 if (data) {
                     setProperty(data);
                 }
@@ -39,12 +46,12 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
         };
         fetchProperty();
         window.scrollTo(0, 0);
-    }, [id]);
+    }, [slug]);
 
     usePageMeta({
         title: property ? `${property.title} | Luxury Estate Malta` : 'Property Details',
         description: property?.description?.substring(0, 160) || 'View luxury property details in Malta.',
-        canonicalPath: `/properties/${id}`,
+        canonicalPath: `/properties/${slug}`,
         currentLang: i18n.language,
         ogImage: property ? getImageUrl(property.images?.[0], 'og') : undefined,
     });
@@ -71,6 +78,13 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
     const nextImage = () => setActiveImage((prev) => (prev + 1) % property.images.length);
     const prevImage = () => setActiveImage((prev) => (prev - 1 + property.images.length) % property.images.length);
+
+    // Format price with proper notation
+    const formatPrice = (price: number) => {
+        if (price >= 1000000) return `€${(price / 1000000).toFixed(1)}M`;
+        if (price >= 1000) return `€${(price / 1000).toFixed(0)}k`;
+        return `€${price}`;
+    };
 
     return (
         <main className="min-h-screen bg-luxury-black pt-24 pb-20">
@@ -160,11 +174,11 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     </div>
 
                     <div className="absolute top-8 left-8 flex gap-3">
-                        <span className="px-4 py-2 bg-gold text-luxury-black text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg">
+                        <span className="px-4 py-2 bg-gold text-luxury-black text-xs font-bold uppercase tracking-widest rounded-full shadow-lg">
                             {property.type === 'rent' ? t('for_rent') : t('for_sale')}
                         </span>
                         {property.isSeafront && (
-                            <span className="px-4 py-2 bg-blue-500/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest rounded-full border border-white/10">
+                            <span className="px-4 py-2 bg-blue-500/80 backdrop-blur-md text-white text-xs font-bold uppercase tracking-widest rounded-full border border-white/10">
                                 {t('seafront')}
                             </span>
                         )}
@@ -180,10 +194,10 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                         <div className="flex items-center gap-2 text-gold text-xs font-bold uppercase tracking-[0.3em] mb-4">
                             <MapPin size={14} /> {property.locationName}
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif mb-6 leading-tight">{property.title}</h1>
+                        <h1 className="text-4xl md:text-5xl font-serif mb-6 leading-tight text-white">{property.title}</h1>
                         <div className="flex flex-wrap items-baseline gap-4 mb-8">
-                            <span className="text-5xl font-serif text-gold-gradient italic">
-                                €{property.price.toLocaleString()}
+                            <span className="text-4xl md:text-5xl font-serif text-gold italic">
+                                {formatPrice(property.price)}
                             </span>
                             <span className="text-white/40 text-sm italic">{t('estimated_mortgage', { amount: Math.round(property.price * 0.005).toLocaleString() })}</span>
                         </div>
@@ -191,24 +205,24 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                         {/* Quick Stats */}
                         <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/10">
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common:beds_label')}</span>
+                                <span className="text-white/40 text-xs uppercase font-bold tracking-widest">{t('common:beds_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bed className="text-gold" size={20} />
-                                    <span className="text-xl font-bold">{property.beds}</span>
+                                    <span className="text-xl font-bold text-white">{property.beds}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1 border-x border-white/5 px-6">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common:baths_label')}</span>
+                                <span className="text-white/40 text-xs uppercase font-bold tracking-widest">{t('common:baths_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bath className="text-gold" size={20} />
-                                    <span className="text-xl font-bold">{property.baths}</span>
+                                    <span className="text-xl font-bold text-white">{property.baths}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-[10px] uppercase font-bold tracking-widest">{t('common:area_label')}</span>
+                                <span className="text-white/40 text-xs uppercase font-bold tracking-widest">{t('common:area_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Maximize className="text-gold" size={20} />
-                                    <span className="text-xl font-bold">{property.sqm} <span className="text-sm font-normal text-white/40">{t('sqm')}</span></span>
+                                    <span className="text-xl font-bold text-white">{property.sqm} <span className="text-sm font-normal text-white/40">{t('sqm')}</span></span>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +230,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
                     {/* Description */}
                     <div className="mb-12">
-                        <h2 className="text-2xl font-serif mb-6 flex items-center gap-3">
+                        <h2 className="text-2xl font-serif mb-6 flex items-center gap-3 text-white">
                             {t('about_this_estate')}
                         </h2>
                         <p className="text-white/60 leading-relaxed text-lg mb-8">
@@ -233,8 +247,8 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     </div>
 
                     {/* Intelligence Tools Section */}
-                    <div className="mb-12 p-8 glass-card border-gold/10 rounded-3xl">
-                        <h3 className="text-xl font-serif mb-6 flex items-center gap-2 italic">
+                    <div className="mb-12 p-8 glass-card border border-gold/10 rounded-3xl">
+                        <h3 className="text-xl font-serif mb-6 flex items-center gap-2 text-white italic">
                             <Shield className="text-gold" size={20} />
                             {t('luxury_intelligence_suite')}
                         </h3>
@@ -259,8 +273,8 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                             zoom={13}
                         />
                         <div className="absolute bottom-6 left-6 bg-luxury-black/80 backdrop-blur-md px-6 py-3 rounded-xl border border-white/10">
-                            <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold mb-1">{t('exact_location')}</p>
-                            <p className="text-sm font-serif">{t('available_on_request')}</p>
+                            <p className="text-xs text-white/40 uppercase tracking-widest font-bold mb-1">{t('exact_location')}</p>
+                            <p className="text-sm font-serif text-white">{t('available_on_request')}</p>
                         </div>
                     </div>
 
@@ -268,17 +282,17 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <Award className="text-blue-400 mb-4" size={24} />
-                            <h4 className="font-serif mb-2">{t('exclusive_area_title')}</h4>
+                            <h4 className="font-serif mb-2 text-white">{t('exclusive_area_title')}</h4>
                             <p className="text-xs text-white/40 leading-relaxed">{t('exclusive_area_text')}</p>
                         </div>
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <TrendingUp className="text-emerald-400 mb-4" size={24} />
-                            <h4 className="font-serif mb-2">{t('growth_title')}</h4>
+                            <h4 className="font-serif mb-2 text-white">{t('growth_title')}</h4>
                             <p className="text-xs text-white/40 leading-relaxed">{t('growth_text')}</p>
                         </div>
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <Waves className="text-cyan-400 mb-4" size={24} />
-                            <h4 className="font-serif mb-2">{t('lifestyle_hub_title')}</h4>
+                            <h4 className="font-serif mb-2 text-white">{t('lifestyle_hub_title')}</h4>
                             <p className="text-xs text-white/40 leading-relaxed">{t('lifestyle_hub_text')}</p>
                         </div>
                     </div>
@@ -297,7 +311,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                             </button>
                             <button
                                 aria-label="Contact specialist via WhatsApp"
-                                className="w-full py-5 bg-white/5 border border-white/10 rounded-2xl text-white font-bold uppercase tracking-[0.2em] text-[10px] flex items-center justify-center gap-3 hover:bg-white/10 transition-colors"
+                                className="w-full py-5 bg-white/5 border border-white/10 rounded-2xl text-white font-bold uppercase tracking-[0.2em] text-xs flex items-center justify-center gap-3 hover:bg-white/10 transition-colors"
                             >
                                 <MessageSquare size={14} /> {t('whatsapp_specialist')}
                             </button>
@@ -305,7 +319,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
                         <div className="mt-8 p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-start gap-3">
                             <Info className="text-blue-400 shrink-0 mt-0.5" size={16} />
-                            <p className="text-[10px] text-blue-100/60 leading-relaxed">
+                            <p className="text-xs text-blue-100/60 leading-relaxed">
                                 {t('verified_mle_specialist')}
                             </p>
                         </div>
@@ -313,7 +327,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                         <div className="mt-8 flex flex-col gap-3">
                             <div className="flex justify-between text-xs py-2 border-b border-white/5">
                                 <span className="text-white/40">{t('property_id')}</span>
-                                <span className="font-mono text-gold tracking-tighter">MLE-#{property.id.padStart(4, '0')}</span>
+                                <span className="font-mono text-gold tracking-tighter">MLE-{property.id.substring(0, 8).toUpperCase()}</span>
                             </div>
                             <div className="flex justify-between text-xs py-2 border-b border-white/5">
                                 <span className="text-white/40">{t('status')}</span>
@@ -321,7 +335,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                             </div>
                             <div className="flex justify-between text-xs py-2">
                                 <span className="text-white/40">{t('property_type')}</span>
-                                <span>{property.propertyType}</span>
+                                <span className="text-white">{property.propertyType}</span>
                             </div>
                         </div>
                     </div>
@@ -330,3 +344,4 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
         </main>
     );
 };
+

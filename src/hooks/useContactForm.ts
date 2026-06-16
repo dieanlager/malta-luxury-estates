@@ -91,34 +91,45 @@ export const useContactForm = () => {
         }
 
         try {
-            if (!formData.propertyId || !ALLIANCE_AGENCY_ID) {
-                throw new Error('Contact form is not fully configured. Please try again later.');
+            // Fetch affiliate URL from property if available
+            let affiliateUrl = '';
+            if (formData.propertyId) {
+                const { data: prop } = await supabase
+                    .from('properties')
+                    .select('description')
+                    .eq('id', formData.propertyId)
+                    .maybeSingle();
+                const m = (prop?.description || '').match(/^\[AFFILIATE_URL:([^\]]+)\]/);
+                if (m) affiliateUrl = m[1];
             }
 
-            // Fetch external_ref for the property to use as property_ref
-            const { data: property } = await supabase
-                .from('properties')
-                .select('external_ref')
-                .eq('id', formData.propertyId)
-                .maybeSingle();
+            // Send email via server
+            const r = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone || '',
+                    message: formData.message || '',
+                    propertyTitle: formData.propertyTitle || '',
+                    propertyId: formData.propertyId || '',
+                    affiliateUrl,
+                }),
+            });
+            if (!r.ok) throw new Error(await r.text());
 
-            const { error: insertError } = await supabase
-                .from('leads')
-                .insert({
+            // Also save to Supabase leads (non-blocking, ignore errors)
+            if (formData.propertyId && ALLIANCE_AGENCY_ID) {
+                supabase.from('leads').insert({
                     agency_id: ALLIANCE_AGENCY_ID,
                     property_id: formData.propertyId,
                     name: formData.name,
                     email: formData.email,
                     phone: formData.phone || null,
-                    intent: null,
-                    budget_min: null,
-                    budget_max: null,
                     source: window.location.href,
                     status: 'new',
-                } as any);
-
-            if (insertError) {
-                throw insertError;
+                } as any).then(() => {});
             }
 
             setState(prev => ({
@@ -128,30 +139,12 @@ export const useContactForm = () => {
                 formData: INITIAL_FORM,
             }));
         } catch (err: any) {
-            console.error('Error submitting lead', err);
-            try {
-                // Fallback: queue in localStorage for manual follow‑up
-                const existing = JSON.parse(localStorage.getItem(INQUIRIES_KEY) || '[]');
-                existing.push({
-                    ...formData,
-                    timestamp: new Date().toISOString(),
-                    status: 'pending',
-                });
-                localStorage.setItem(INQUIRIES_KEY, JSON.stringify(existing));
-
-                setState(prev => ({
-                    ...prev,
-                    isSubmitting: false,
-                    isSuccess: true,
-                    formData: INITIAL_FORM,
-                }));
-            } catch {
-                setState(prev => ({
-                    ...prev,
-                    isSubmitting: false,
-                    error: 'Something went wrong. Please try again.',
-                }));
-            }
+            console.error('Contact error:', err);
+            setState(prev => ({
+                ...prev,
+                isSubmitting: false,
+                error: 'Something went wrong. Please try again or email us directly at info@maltaluxuryrealestate.com',
+            }));
         }
     }, [state]);
 

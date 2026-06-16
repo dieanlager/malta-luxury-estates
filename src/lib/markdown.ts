@@ -1,4 +1,4 @@
-import type { Article } from '../types'
+﻿import type { Article } from '../types'
 import articleSlugs from './article-slugs.json'
 
 // ── Wszystkie pliki MD załadowane przez Vite w build time ────
@@ -33,9 +33,11 @@ interface Frontmatter {
 }
 
 function parseFrontmatter(raw: string): { fm: Frontmatter; body: string } {
+    // Strip UTF-8 BOM + any leading CR/LF that some editors add before ---
+    const cleaned = raw.replace(/^﻿[\r\n]*/, '')
     // Regex to match frontmatter between --- and ---
-    const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/)
-    if (!match) return { fm: {}, body: raw }
+    const match = cleaned.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/)
+    if (!match) return { fm: {}, body: cleaned }
 
     const fm: Frontmatter = {}
     match[1].split('\n').forEach(line => {
@@ -166,4 +168,45 @@ export function getLocalizedArticleLink(enSlug: string, lang: string): string {
 
     const prefix = activeLang === 'en' ? '' : `/${activeLang}`;
     return `${prefix}/${insightsSlug}/${finalSlug}`;
+}
+
+
+// ── Extract FAQ pairs from article body ──────────────────────
+// Supports two formats found in article content:
+//   1. Under "## Frequently Asked Questions": **Question text** followed by answer paragraph
+//   2. Under "## Frequently Asked Questions": ### Question text followed by answer paragraph
+//   3. **P: Question text** followed by answer paragraph (anywhere in body)
+export function extractFAQs(body: string): { question: string; answer: string }[] {
+    const faqs: { question: string; answer: string }[] = []
+
+    // Pattern 1 & 2: FAQ section with **bold** or ### heading questions
+    const faqSectionMatch = body.match(/##\s+Frequently Asked Questions([\s\S]*?)(?=\n##\s|\s*$)/)
+    if (faqSectionMatch) {
+        const section = faqSectionMatch[1]
+        // Match **Question** or ### Question, then capture the following paragraph
+        const itemRegex = /(?:\*\*([^*\n]+)\*\*|###\s+([^\n]+))\n+([\s\S]*?)(?=\n\s*(?:\*\*[^*]|\#\#\#\s)|\s*$)/g
+        let match: RegExpExecArray | null
+        while ((match = itemRegex.exec(section)) !== null && faqs.length < 10) {
+            const question = (match[1] || match[2]).trim()
+            const answer = match[3].trim().replace(/\n+/g, ' ')
+            if (question && answer) {
+                faqs.push({ question, answer })
+            }
+        }
+    }
+
+    // Pattern 3: **P: Question** anywhere in body (if no FAQ section found)
+    if (faqs.length === 0) {
+        const pRegex = /\*\*P:\s*([^\n*]+)\*\*\s*\n+([\s\S]*?)(?=\n\s*\*\*P:|\s*$)/g
+        let match: RegExpExecArray | null
+        while ((match = pRegex.exec(body)) !== null && faqs.length < 10) {
+            const question = match[1].trim()
+            const answer = match[2].trim().replace(/\n+/g, ' ')
+            if (question && answer) {
+                faqs.push({ question, answer })
+            }
+        }
+    }
+
+    return faqs.slice(0, 10)
 }

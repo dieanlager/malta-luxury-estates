@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useParams, useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -26,6 +26,7 @@ import {
 import { PROPERTIES, AGENCIES, ARTICLES } from './constants';
 import { Property } from './types';
 import { resolveArticleLang, getLocalizedArticleLink } from './lib/markdown';
+import AdminPage from './pages/AdminPage';
 import articleSlugs from './lib/article-slugs.json';
 import { usePageMeta } from './lib/seo/meta';
 import { DynamicMap } from './components/DynamicMap';
@@ -41,10 +42,11 @@ import { ContactModal } from './components/ContactModal';
 import { EmailCaptureModal } from './components/EmailCaptureModal';
 import { useFavorites } from './hooks/useFavorites';
 import { useContactForm } from './hooks/useContactForm';
-import { LOCATIONS } from './lib/data';
+import { LOCATIONS, getFeaturedProperties, getAllProperties } from './lib/data';
 import { InteractiveTools } from './components/InteractiveTools';
 import { PrivacyPolicy, TermsOfService, CookiePolicy } from './pages/legal/LegalPages';
 import { MarketLive } from './pages/MarketLive';
+import ContactPage from './pages/ContactPage';
 import { PropertyPriceOracle } from './pages/PropertyPriceOracle';
 import { PropertyDetailPage } from './pages/PropertyDetailPage';
 import { GozoBridgeTrackerPage } from './pages/GozoBridgeTracker';
@@ -62,7 +64,7 @@ import { AboutPage } from './pages/AboutPage';
 import { NewsletterForm } from './components/NewsletterForm';
 import { AIChatbot } from './components/AIChatbot';
 
-// ─── Scroll To Top Button ─────────────────────────────────────────────────────
+// â”€â”€â”€ Scroll To Top Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
@@ -135,6 +137,9 @@ const LanguageWrapper = ({ children }: { children: React.ReactNode }) => {
         i18n.changeLanguage('en');
       }
     }
+    // Update <html lang> for accessibility and SEO
+    const detectedLang = (location.pathname.split('/').filter(Boolean)[0] || 'en');
+    document.documentElement.lang = ['en','it','de','fr','pl'].includes(detectedLang) ? detectedLang : 'en';
   }, [location.pathname, i18n]);
 
   return <>{children}</>;
@@ -147,11 +152,11 @@ const LanguageSelector = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
-    { code: 'en', label: 'English', flag: '🇬🇧' },
-    { code: 'it', label: 'Italiano', flag: '🇮🇹' },
-    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-    { code: 'fr', label: 'Français', flag: '🇫🇷' },
-    { code: 'pl', label: 'Polski', flag: '🇵🇱' },
+    { code: 'en', label: 'English', flag: 'EN' },
+    { code: 'it', label: 'Italiano', flag: 'IT' },
+    { code: 'de', label: 'Deutsch', flag: 'DE' },
+    { code: 'fr', label: 'Français', flag: 'FR' },
+    { code: 'pl', label: 'Polski', flag: 'PL' },
   ];
 
   const currentLang = languages.find(l => l.code === (i18n.language || 'en'));
@@ -221,8 +226,8 @@ const LanguageSelector = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 hover:border-gold/30 transition-all text-[10px] font-bold uppercase tracking-widest bg-white/5"
       >
-        <span>{currentLang?.flag}</span>
-        <span className="hidden lg:block">{currentLang?.code}</span>
+        <Globe size={13} />
+        <span>{(i18n.language || 'en').toUpperCase().slice(0,2)}</span>
       </button>
 
       <AnimatePresence>
@@ -268,6 +273,7 @@ const Navbar = () => {
     const parts = path.split('/').filter(Boolean);
     const translatedParts = parts.map(part => {
       // For property detail or specific city, keep slug but translate prefix
+
       if (parts[0] === 'properties' && part !== 'properties' && part !== 'all') {
         return part;
       }
@@ -313,6 +319,9 @@ const Navbar = () => {
           </Link>
           <Link to={getLocalizedPath('/about')} className="text-sm uppercase tracking-widest hover:text-gold transition-colors font-medium">
             {t('nav.about')}
+          </Link>
+          <Link to={getLocalizedPath('/contact')} className="text-sm uppercase tracking-widest hover:text-gold transition-colors font-medium">
+            {t('nav.contact')}
           </Link>
           <div className="h-4 w-px bg-white/10" />
           <LanguageSelector />
@@ -361,6 +370,9 @@ const Navbar = () => {
               <Link to={getLocalizedPath('/about')} onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
                 {t('nav.about')}
               </Link>
+              <Link to={getLocalizedPath('/contact')} onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors">
+                {t('nav.contact')}
+              </Link>
               <Link to={getLocalizedPath('/market/live')} onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-serif hover:text-gold transition-colors flex items-center gap-4">
                 {t('nav.market_pulse')} <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
               </Link>
@@ -379,7 +391,25 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
   onContact: (propertyId: string, propertyTitle: string) => void;
 }) => {
   const { t, i18n } = useTranslation();
-  const featured = PROPERTIES.filter(p => p.type === 'sale').slice(0, 6);
+  const [featuredProps, setFeaturedProps] = useState<Property[]>([]);
+  const [allProps, setAllProps] = useState<Property[]>([]);
+  const [loadingProps, setLoadingProps] = useState(true);
+
+  useEffect(() => {
+    const load = async () => {
+      setLoadingProps(true);
+      const [featured, all] = await Promise.all([
+        getFeaturedProperties(),
+        getAllProperties(),
+      ]);
+      setFeaturedProps(featured);
+      setAllProps(all);
+      setLoadingProps(false);
+    };
+    load();
+  }, []);
+
+  const displayProps = featuredProps.length > 0 ? featuredProps : allProps.slice(0, 6);
 
   // Popular locations for the grid
   const popularLocations = [
@@ -387,7 +417,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
     { slug: 'st-julians', name: t('locations.st_julians', "St. Julian's"), count: 180, image: '/assets/images/locations/st-julians.png' },
     { slug: 'valletta', name: t('locations.valletta', 'Valletta'), count: 95, image: '/assets/images/locations/valletta.png' },
     { slug: 'three-cities', name: t('locations.three_cities', 'Three Cities'), count: 65, image: '/assets/images/locations/three-cities.png' },
-    { slug: 'mellieha', name: t('locations.mellieha', 'Mellieħa'), count: 110, image: '/assets/images/locations/mellieha.png' },
+    { slug: 'mellieha', name: t('locations.mellieha', 'MellieÄ§a'), count: 110, image: '/assets/images/locations/mellieha.png' },
     { slug: 'victoria', name: t('locations.gozo', 'Gozo'), count: 120, image: '/assets/images/locations/gozo.png' },
   ];
 
@@ -491,7 +521,11 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featured.map((property) => (
+          {loadingProps ? (
+            <div className="col-span-3 text-center text-white/30 py-12">Ładowanie...</div>
+          ) : displayProps.length === 0 ? (
+            <div className="col-span-3 text-center text-white/30 py-12">Brak nieruchomości</div>
+          ) : displayProps.map((property) => (
             <PropertyCard
               key={property.id}
               property={property}
@@ -735,6 +769,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
 
   return (
     <Routes>
+      <Route path="/admin" element={<AdminPage />} />
       <Route path="/" element={<HomePage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
       <Route path="/:lng" element={<LanguageWrapper><HomePage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
 
@@ -745,15 +780,15 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
           {p === 'properties' ? (
             <>
               <Route path={`/${p}/all`} element={<PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
+              <Route path={`/${p}/:slug`} element={<PropertyDetailPage onContact={handleContact} />} />
               <Route path={`/${p}/:citySlug`} element={<CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} />} />
-              <Route path={`/${p}/:id`} element={<PropertyDetailPage onContact={handleContact} />} />
             </>
           ) : (
             <>
-              {/* Alias without language prefix → redirect to canonical English URL */}
+              {/* Alias without language prefix â†’ redirect to canonical English URL */}
               <Route path={`/${p}/all`} element={<Navigate to="/properties/all" replace />} />
               <Route path={`/${p}/:citySlug`} element={<Navigate to="/properties/:citySlug" replace />} />
-              <Route path={`/${p}/:id`} element={<Navigate to="/properties/:id" replace />} />
+              <Route path={`/${p}/:slug`} element={<Navigate to="/properties/:slug" replace />} />
             </>
           )}
 
@@ -762,8 +797,8 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
           <Route path={`/:lng/${p}/tutti`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/alle`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/toutes`} element={<LanguageWrapper><PropertiesPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
+          <Route path={`/:lng/${p}/:slug`} element={<LanguageWrapper><PropertyDetailPage onContact={handleContact} /></LanguageWrapper>} />
           <Route path={`/:lng/${p}/:citySlug`} element={<LanguageWrapper><CityPage favorites={fav.favorites} onToggleFavorite={fav.toggle} onContact={handleContact} /></LanguageWrapper>} />
-          <Route path={`/:lng/${p}/:id`} element={<LanguageWrapper><PropertyDetailPage onContact={handleContact} /></LanguageWrapper>} />
         </React.Fragment>
       ))}
 
@@ -777,7 +812,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
             </>
           ) : (
             <>
-              {/* Alias without language prefix → redirect to canonical English URL */}
+              {/* Alias without language prefix â†’ redirect to canonical English URL */}
               <Route path={`/${p}`} element={<Navigate to="/insights" replace />} />
               <Route path={`/${p}/:slug`} element={<Navigate to="/insights/:slug" replace />} />
             </>
@@ -794,7 +829,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
           {p === 'market' ? (
             <Route path={`/${p}/live`} element={<MarketLive />} />
           ) : (
-            // Alias without language prefix → redirect to canonical English URL
+            // Alias without language prefix â†’ redirect to canonical English URL
             <Route path={`/${p}/live`} element={<Navigate to="/market/live" replace />} />
           )}
           <Route path={`/:lng/${p}/live`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
@@ -850,6 +885,9 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
 
       <Route path="/cookie-policy" element={<CookiePolicy />} />
       <Route path="/:lng/cookie-policy" element={<LanguageWrapper><CookiePolicy /></LanguageWrapper>} />
+
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/:lng/contact" element={<LanguageWrapper><ContactPage /></LanguageWrapper>} />
 
       {/* Agency auth & portal routes (EN + i18n) */}
       <Route path="/agency/login" element={<AgencyLogin />} />
@@ -1020,6 +1058,7 @@ const Footer = () => {
             <h4 className="font-serif text-lg mb-8">{t('footer.legal')}</h4>
             <ul className="space-y-4 text-sm text-white/40">
               <li><Link to={getLocalizedPath('/about')} className="hover:text-gold transition-colors">{t('nav.about')}</Link></li>
+              <li><Link to={getLocalizedPath('/contact')} className="hover:text-gold transition-colors">{t('nav.contact')}</Link></li>
               <li><Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">{t('seo:privacy.title')}</Link></li>
               <li><Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">{t('seo:terms.title')}</Link></li>
               <li><Link to={getLocalizedPath('/cookie-policy')} className="hover:text-gold transition-colors">{t('seo:cookies.title')}</Link></li>
@@ -1033,11 +1072,13 @@ const Footer = () => {
               <li><Link to={getLocalizedArticleLink('special-designated-areas-malta-guide', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_sda')}</Link></li>
               <li><Link to={getLocalizedArticleLink('rental-yields-malta-2026', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_yields')}</Link></li>
               <li><Link to={getLocalizedArticleLink('property-taxes-malta-2026', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_taxes')}</Link></li>
+              <li><Link to={getLocalizedArticleLink('gozo-property-investment-guide-2026', i18n.language)} className="hover:text-gold transition-colors">{t('footer.gozo_investment')}</Link></li>
+              <li><Link to={getLocalizedArticleLink('rental-yields-malta-2026', i18n.language)} className="hover:text-gold transition-colors">{t('footer.rental_yields')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-8">Newsletter</h4>
+            <h4 className="font-serif text-lg mb-8">{t('footer.newsletter.title')}</h4>
             <p className="text-sm text-white/40 mb-6">{t('footer.newsletter.subtitle')}</p>
             <NewsletterForm />
           </div>
@@ -1055,3 +1096,11 @@ const Footer = () => {
     </footer>
   );
 };
+
+
+
+
+
+
+
+

@@ -155,14 +155,6 @@ const MaltaSVGFallback = ({
                 </div>
             </div>
 
-            {/* ── Token Missing Notice ── */}
-            <div className="absolute bottom-6 left-6 right-6 flex justify-center pointer-events-none">
-                <div className="flex items-center gap-2 bg-luxury-black/70 backdrop-blur-sm border border-gold/20 text-[10px] text-white/40 px-4 py-2 rounded-full uppercase tracking-widest">
-                    <AlertTriangle size={11} className="text-gold/60" />
-                    Full map available after adding VITE_MAPBOX_TOKEN to .env.local
-                </div>
-            </div>
-
             {/* ── Property Popup (overlay) ── */}
             {selectedProperty && (
                 <div className="absolute top-8 right-8 w-72 bg-luxury-black border border-gold/30 rounded-2xl overflow-hidden shadow-2xl z-10">

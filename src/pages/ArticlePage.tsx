@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+﻿import React, { useEffect, useRef, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, Share2, Bookmark } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
@@ -6,11 +6,11 @@ import remarkGfm from 'remark-gfm';
 import { getArticleBySlug, getArticlesByCategory } from '../lib/data';
 import { Article } from '../types';
 import { Breadcrumb } from '../components/Breadcrumb';
-import { generateArticleSchema } from '../lib/seo/schemas';
+import { generateArticleSchema, generateArticleFAQSchema } from '../lib/seo/schemas';
 import { usePageMeta } from '../lib/seo/meta';
 import { injectInternalLinks } from '../lib/seo/internal-linking';
 import { useTranslation } from 'react-i18next';
-import { resolveArticleLang, getLocalizedArticleLink } from '../lib/markdown';
+import { resolveArticleLang, getLocalizedArticleLink, extractFAQs } from '../lib/markdown';
 import { SchemaScript } from '../components/SchemaScript';
 import { MortgageCalculator } from '../components/calculators/MortgageCalculator';
 
@@ -194,6 +194,8 @@ export const ArticlePage = () => {
   });
 
   const articleSchema = article ? generateArticleSchema(article) : null;
+  const articleFAQs = article ? extractFAQs(article.content) : [];
+  const faqSchema = articleFAQs.length > 0 ? generateArticleFAQSchema(articleFAQs) : null;
   const linkedContent = article ? injectInternalLinks(article.content, i18n.language) : '';
 
   // ── Loading
@@ -221,6 +223,7 @@ export const ArticlePage = () => {
   return (
     <>
       {articleSchema && <SchemaScript data={articleSchema} />}
+      {faqSchema && <SchemaScript data={faqSchema} />}
 
       <ReadingProgress />
 

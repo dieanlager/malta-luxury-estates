@@ -1,4 +1,4 @@
--- Malta Luxury Estates: GRAND FINALE Database Schema
+﻿-- Malta Luxury Estates: GRAND FINALE Database Schema
 -- Run this in your Supabase SQL Editor
 
 -- 1. Agencies Table: Stores B2B agency profiles (linked to Supabase Auth)
@@ -173,3 +173,5 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 CREATE OR REPLACE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE FUNCTION handle_new_user();
+
+

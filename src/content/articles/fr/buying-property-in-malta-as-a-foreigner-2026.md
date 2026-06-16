@@ -1,4 +1,4 @@
----
+﻿---
 title: "Comment acheter une propriété à Malte en 2026 - Guide complet étape par étape"
 category: "Buying"
 excerpt: "Le guide définitif, étape par étape, de l'achat d'une propriété à Malte en 2026, depuis la définition de votre budget jusqu'à la remise des clés. Il couvre les questions relatives à l'achat, à la diligence raisonnable, à la procédure notariale et aux pièges les plus courants."
@@ -12,266 +12,393 @@ localizedSlug: "comment-acheter-une-propriete-a-malte-en"
 lang: fr
 ---
 
-# Comment acheter une propriété à Malte en 2026 - Guide complet étape par étape
+Malte est l'un des marchés immobiliers les plus accessibles d'Europe pour les acheteurs étrangers — mais « accessible » ne veut pas dire « sans complexité ». Le cadre juridique, le rôle du Notaire, le système du *konvenju*, le piège caché de la rente foncière (*cens*), et les règles relatives au permis AIP présentent des différences importantes par rapport aux processus d'achat immobilier britannique, américain, allemand ou français.
 
-L'achat d'une propriété à Malte est simple une fois que vous avez compris le processus, mais il existe des différences importantes par rapport au Royaume-Uni, aux États-Unis ou à d'autres marchés européens. Ce guide vous accompagne à chaque étape, de la définition de votre budget à la remise des clés, grâce aux conseils pratiques d'experts locaux.
+Ce guide couvre chaque étape — de votre premier calcul de budget jusqu'à l'enregistrement du titre à votre nom — avec le niveau de détail qui fait la différence entre un achat réussi et une erreur coûteuse.
 
-## Combien de temps dure le processus d'achat ?
+---
 
-Le délai typique entre la première visite et l'acte final est de **3 à 6 mois**, bien qu'il puisse s'étendre à 9-12 mois pour des transactions complexes impliquant des permis AIP, des rénovations, ou des propriétés construites par des promoteurs.
+## 1. État du marché immobilier à Malte en 2026
 
-Voici un calendrier approximatif :
+Avant d'entrer dans le processus, voici où en est le marché en 2026 :
 
-| Durée de l'achat et de la vente
-|-------|----------|
-| Recherche d'un bien immobilier - 2 à 8 semaines
-| Offre et négociation - 1-2 semaines
-| Offre et négociation - 1-2 semaines - **Konvenju (promesse de vente)** ** **1 jour (signature)** - 1 jour (signature)
-| Période de diligence raisonnable - 3 à 6 mois
-| Acte final (Kuntratt) - 1 jour
-| **Total** | **3-6 mois** |
+| Localisation | Prix moyen/m² | Évolution 2023-2026 | Atouts principaux |
+|---|---|---|---|
+| La Valette (historique) | 5 800 - 7 500 EUR | +12 % | Plus-value, patrimoine |
+| Sliema (front de mer) | 5 000 - 6 500 EUR | +10 % | Rendement locatif, liquidité |
+| St. Julian's / Portomaso | 5 200 - 7 000 EUR | +11 % | SDA, clientèle corporate |
+| Mellieha / Nord de Malte | 3 500 - 4 500 EUR | +9 % | Espace, cadre de vie, villas |
+| Gozo | 2 500 - 3 800 EUR | +8 % | Rapport qualité-prix, tranquillité |
+| **Moyenne Malte** | **3 200 - 4 200 EUR** | **+9 %** | — |
 
-> Le konvenju (accord préliminaire) est le moment décisif. Une fois signé, l'acheteur et le vendeur sont juridiquement engagés.
+**Tendance clé :** Malgré la hausse des taux d'intérêt en Europe, le marché immobilier maltais a continué d'apprécier sous l'effet de trois facteurs structurels : l'offre foncière limitée sur 316 km², l'investissement direct étranger continu, et la demande croissante des candidats au Programme de Résidence Maltaise (MPRP).
 
-## Étape 1 : Définir votre budget et votre éligibilité
+---
 
-### Que pouvez-vous réellement vous permettre ?
+## 2. Qui peut acheter une propriété à Malte ?
 
-Le prix de l'annonce n'est qu'un début. Voici une répartition réaliste des **coûts totaux** de l'achat d'une propriété de 500 000 € à Malte :
+Votre éligibilité dépend entièrement de votre nationalité et du type de bien.
 
-| Coût | Montant | Notes |
-|------|--------|-------|
-| Prix d'achat | 500 000 € | | Droit de timbre (5 %)
-| Droit de timbre (5 %) | 25 000 € | Réduit à 3,5 % sur les premiers 200 000 € pour une résidence principale
-| Frais de notaire (~1,5%) | €7,500 | Variable : 1-2.5% |
-| Frais d'agence - 0 € - Généralement payés par le vendeur à Malte
-| Frais d'obtention du permis de l'AIP - 233 € - Seulement si vous n'êtes pas ressortissant de l'UE ou si vous achetez en dehors de la SDA
-| Frais de recherche et d'enregistrement - 300-600 € - Recherches de titres, enregistrement des LPA
-| Coût total** **~€533,000** | **~6.6% au-dessus du prix de vente** |
+### Ressortissants de l'UE
 
-### Êtes-vous éligible pour acheter ?
+Les citoyens de l'UE ont les mêmes droits que les ressortissants maltais. Vous pouvez acheter n'importe quel bien, n'importe où à Malte, sans permis, pour n'importe quel usage (résidence principale, investissement, résidence secondaire).
 
-Votre éligibilité dépend de votre nationalité et de l'endroit où vous souhaitez acheter :
+**Nuance importante :** Les citoyens de l'UE qui ne résident pas à Malte depuis au moins 5 ans sont techniquement limités à l'achat d'**une propriété pour leur propre usage** (et non à des fins d'investissement), sauf achat en zone SDA. En pratique, cette restriction est rarement appliquée aux acheteurs UE, mais il est utile d'en être conscient.
 
-- **Maltais / citoyen de l'UE (résident depuis plus de 5 ans):** Achetez n'importe quoi, n'importe où, sans aucune restriction.
-- **Citoyen de l'UE (moins de 5 ans de résidence):** Une propriété pour usage personnel, OU un nombre illimité de SDA.
-- **Citoyen non-européen:** Permis AIP requis en dehors des ZSD. Une propriété à usage personnel. ZDS : illimité.
+### Ressortissants non-UE (Britanniques, Américains, Australiens, Suisses, etc.)
 
-Si vous achetez dans une **Special Designated Area (SDA)** - comme Portomaso, Tigné Point, Fort Cambridge ou Pender Gardens - les restrictions liées à la nationalité ne s'appliquent pas. Les SDA sont la voie la plus facile pour les investisseurs internationaux.
+Depuis le Brexit, les ressortissants britanniques sont traités comme des acheteurs non-UE. Les acheteurs non-UE doivent obtenir un **permis AIP (Autorisation d'Acquisition de Bien Immobilier)** pour acheter en dehors des zones SDA désignées.
 
-### Argent liquide ou hypothèque : Principales différences à Malte
+Règles AIP :
+- Vous pouvez acheter **une propriété** pour usage personnel (résidence principale ou secondaire)
+- Le bien doit atteindre des seuils de valeur minimaux (fixés par le Commissaire des Terres — vérifiez les taux en vigueur)
+- Vous ne pouvez pas acheter à des fins purement d'investissement hors des SDA sans autorisation complémentaire
+- Délai de traitement : **4 à 8 semaines**
+- Coût : 233 EUR
 
-Les banques maltaises proposent des prêts hypothécaires aux résidents et aux non-résidents, mais les conditions diffèrent :
+### Zones Spécialement Désignées (SDA) — Aucune restriction
 
-| Les banques maltaises proposent des prêts hypothécaires aux résidents et aux non-résidents, mais les conditions diffèrent : - Facteur - Résident - Non-résident
-|--------|----------|--------------|
-| Prêt hypothécaire - LTV (Loan-to-Value) - Jusqu'à 80% - Jusqu'à 70% - LTV (Loan-to-Value) - LTV (Loan-to-Value) - LTV
-| Taux typique (2026) | 3,5-4,5% | 4,5-5,5% |
-| Durée maximale : 25-40 ans, 20-25 ans
-| Taux d'intérêt (2026) - 3,5-4,5 % - 4,5-5,5 % - Durée maximale - 25-40 ans - 20-25 ans - Taux d'intérêt (2026) - 4,5-5,5
-| Exigence de revenu min. Revenu minimum requis | Variable | Preuve de revenu stable requise |
+Les SDA sont des ensembles immobiliers où **toute nationalité** peut acheter **un nombre illimité de biens** pour **tout usage** (investissement, location, revente). Elles constituent la voie la plus simple pour les investisseurs internationaux :
 
-**Conseil de pro:** Si vous financez, obtenez une pré-approbation hypothécaire **avant** de signer le konvenju. Vous éviterez ainsi l'embarras (et le risque financier) de vous engager dans un achat que vous ne pouvez pas financer.
+| Développement SDA | Localisation | Type |
+|---|---|---|
+| Portomaso | St. Julian's | Marina mixte |
+| Tigné Point | Sliema | Résidentiel front de mer |
+| Fort Cambridge | Sliema | Résidentiel |
+| Pender Gardens | St. Julian's | Résidentiel |
+| Cottonera Development | Les Trois-Cités | Bord de mer |
+| Tas-Sellum | Mellieha | Complexe de vacances |
+| Chambray | Gozo | Résidentiel |
+| Kempinski San Lawrenz | Gozo | Resort |
 
-## Étape 2 : Trouver la bonne propriété
+---
+
+## 3. Calcul du coût total — Aucune mauvaise surprise
+
+L'erreur la plus fréquente des acheteurs étrangers est de budgéter uniquement sur le prix affiché. Voici le **vrai coût total** :
+
+### Achat standard (bien à 750 000 EUR, acheteur non-UE, hors SDA)
+
+| Poste | Montant | Notes |
+|---|---|---|
+| Prix d'achat | 750 000 EUR | — |
+| Droits de timbre (5 %) | 37 500 EUR | Taux standard |
+| Réduction droits de timbre (premiers 200 k à 3,5 %) | -3 000 EUR | Premier achat, usage propre |
+| Honoraires Notaire (~1,5 %) | 11 250 EUR | Fourchette : 1 % - 2,5 % |
+| Honoraires d'agence | 0 EUR | Vendeur paie à Malte |
+| Permis AIP | 233 EUR | Non-UE uniquement |
+| Recherches de titre + enregistrement | 500 EUR | — |
+| Architecte/expertise (recommandé) | 500 - 1 500 EUR | — |
+| **Coût total d'acquisition** | **~797 000 EUR** | **~6,2 % au-dessus du prix** |
+
+### Avantage premier achat
+
+Si c'est votre **premier achat immobilier à Malte** et que vous l'achetez pour en faire votre résidence principale, vous bénéficiez de :
+- Droits de timbre réduits de 5 % à **3,5 % sur les premiers 200 000 EUR** du prix
+- Économie : 3 000 EUR sur un bien à 750 000 EUR
+
+### Bien patrimonial UCA — Droits de timbre zéro
+
+L'achat d'un bien patrimonial éligible dans une Zone de Conservation Urbaine (notamment La Valette, Mdina, les Trois-Cités) peut donner droit à une **exonération totale de droits de timbre**. Renseignez-vous auprès de votre Notaire sur les conditions précises.
+
+---
+
+## 4. Le piège de la rente foncière (*Cens*) — Essentiel pour les acheteurs étrangers
+
+C'est l'aspect du droit immobilier maltais le plus mal compris par les acheteurs internationaux, et il a surpris de nombreux investisseurs expérimentés.
+
+### Qu'est-ce que le *Cens* ?
+
+Le *cens* (également appelé *ground rent* ou *censo*) est un système féodal ancien selon lequel un bien n'est pas détenu en pleine propriété — il est détenu sous emphytéose perpétuelle d'un propriétaire foncier originel (le *censu*). L'acheteur du bien doit verser une redevance annuelle au *censu*, généralement un montant très modeste (5 à 50 EUR par an), à perpétuité.
+
+Le problème n'est pas la redevance annuelle — c'est ce qui se passe si le *censu* (propriétaire foncier) est introuvable lors de la signature de l'acte, ou en cas de litige sur le prix de rachat.
+
+### Comment identifier un bien grevé d'un *cens*
+
+Votre Notaire doit vérifier l'existence d'un *cens* lors de la due diligence. Posez explicitement la question : **« Ce bien est-il soumis à un *cens* ? »**
+
+Indicateurs :
+- Les biens anciens (antérieurs à 1980) sont plus susceptibles d'être soumis à un *cens*
+- Propriétés dans les centres de villages traditionnels
+- Anciens immeubles d'appartements et maisons de ville
+
+### Rachat du *cens*
+
+En droit maltais, vous pouvez racheter définitivement le *cens*. Le prix de rachat est généralement **15 à 25 fois la redevance annuelle**. Pour un *cens* de 20 EUR/an, le rachat coûte environ 300 à 500 EUR.
+
+**Conseil pratique :** Négociez systématiquement pour que le vendeur rachète le *cens* avant ou au moment de la vente, et confirmez-le dans le *konvenju*. Acheter un bien avec un *cens* non racheté n'est pas illégal, mais cela crée une complexité administrative à chaque changement de propriétaire.
+
+---
+
+## 5. Neuf construction vs revente — Différences clés
+
+### Achat auprès d'un promoteur (neuf / sur plan)
+
+**Avantages :**
+- Souvent en SDA (aucune restriction de nationalité)
+- Normes de construction modernes, efficacité énergétique
+- Garanties promoteur (généralement 10 ans structure, 2 ans pour les équipements)
+- Paiement par tranches (acompte → paiements d'étapes → solde)
+- Plus-value potentielle pendant la construction
+
+**Inconvénients :**
+- Prix au m² plus élevé que la revente équivalente
+- Retards de livraison fréquents (ajoutez 6 à 12 mois à tout calendrier annoncé)
+- Qualité des finitions peut différer de l'appartement témoin
+- Aucune flexibilité sur le design après signature du contrat
+
+**Calendrier de paiement promoteur (typique) :**
+
+| Étape | Paiement |
+|---|---|
+| Signature du *konvenju* | 20 - 30 % |
+| Gros-œuvre terminé | 10 - 15 % |
+| Second œuvre / Toiture | 10 - 15 % |
+| Livraison / Acte | Solde |
+
+### Achat en revente
+
+**Avantages :**
+- Ce que vous voyez est ce que vous obtenez
+- Délai de réalisation plus court (3-6 mois vs 1-3 ans pour le neuf)
+- Souvent plus d'espace et de caractère
+- Meilleures localisations (les SDA sont surtout des constructions neuves sur friches)
+- Négociation du prix possible
+
+**Inconvénients :**
+- Peut nécessiter une rénovation
+- Normes de construction plus anciennes
+- Vérifier le *cens*, la conformité des permis de construire
+
+---
+
+## 6. Trouver le bon bien
 
 ### Travailler avec des agents immobiliers
 
-Le marché immobilier maltais est largement dominé par les agents. La plupart des biens sont répertoriés par une ou plusieurs agences, et le vendeur paie généralement la commission de l'agent (5 % + TVA).
+À Malte, **c'est le vendeur qui paie la commission de l'agent** (généralement 3,5 à 5 % + TVA). En tant qu'acheteur, vous ne payez rien. Cela signifie :
+- Travaillez avec plusieurs agents simultanément — c'est accepté et pratiqué
+- Demandez à chaque agent ses annonces exclusives (de nombreux bons biens ne paraissent jamais sur les portails)
+- Soyez précis sur vos critères — les agents filtreront leur base de données pour vous
 
-En tant qu'acheteur, cela signifie que
-- Utilisez les agents librement - ils ne vous coûtent rien
-- De nombreux agents ont des listes exclusives que l'on ne trouve pas en ligne
-- Spécifier exactement ce que vous voulez : budget, région, type, caractéristiques essentielles
-- Faire appel à plusieurs agents simultanément (c'est une pratique courante)
+### Principaux portails immobiliers maltais
 
-### Ce qu'il faut vérifier lors des visites
+- **MaltaPark.com** — la plus grande base de données
+- **PropertyingMalta.com** — bien pour les annonces premium
+- **Dhalia.com** — agence établie avec de nombreuses annonces exclusives
 
-Malte présente quelques particularités auxquelles les acheteurs internationaux doivent être attentifs :
+### Ce qu'il faut inspecter lors d'une visite
 
-1. **Pression de l'eau et réservoirs** - De nombreuses propriétés maltaises sont équipées de réservoirs d'eau sur le toit (tanki). Vérifiez la pression et l'état des réservoirs.
-2. **Humidité** - La construction en pierre calcaire de Malte peut retenir l'humidité. Recherchez les signes de remontées d'humidité, en particulier dans les logements situés au rez-de-chaussée et dans les bâtiments anciens.
-3. **Permis et planification** - Demandez si toutes les pièces, extensions et terrasses sont couvertes par des permis de construire valides. Les ajouts non autorisés sont fréquents.
-4. **Parties communes partagées** - Dans les immeubles d'habitation, vérifiez l'état des ascenseurs, des cages d'escalier et des parties communes. Renseignez-vous sur le comité de copropriété et les frais de gestion.
-5. **Bruit** - Malte est un pays très peuplé. Visitez le site à différents moments de la journée pour vérifier les niveaux de bruit provenant des voisins, des routes et des travaux de construction.
-6. **Stationnement** - Les places de stationnement hors rue sont extrêmement précieuses. Un garage peut ajouter 30 000 à 50 000 euros à la valeur d'une propriété.
+Malte présente des problèmes spécifiques que les acheteurs étrangers manquent souvent :
 
-### Drapeaux rouges à éviter
+**1. Alimentation en eau et citernes**
+De nombreuses propriétés maltaises dépendent de citernes sur le toit (*tanki*). Vérifiez : capacité de la citerne, âge, état, pression d'eau dans toute la propriété.
 
-- Propriétés listées "bien en dessous du marché" avec une pression pour une décision rapide
-- Les vendeurs qui refusent de présenter les permis de construire ou les certificats d'architecte
-- Les biens immobiliers faisant l'objet d'une procédure judiciaire ou d'un litige de propriété (le notaire peut les repérer, mais cela fait perdre des mois)
-- Les lotissements flambant neufs sans certificat d'achèvement MEPA/PA en cours de validité
+**2. Humidité et infiltrations**
+La construction en calcaire maltais est poreuse. Les appartements en rez-de-chaussée et les bâtiments anciens présentent souvent des remontées capillaires. Vérifiez : les murs bas pour les laisses d'humidité, les odeurs de moisissures, l'efflorescence (dépôts blancs salins sur les murs).
 
-## Étape 3 : Faire une offre
+**3. Conformité des permis de construire**
+C'est critique. Demandez au vendeur le **permis de construire de l'Autorité de Planification (PA)** couvrant chaque élément du bien — y compris toute extension, pièce aménagée, ou structure en toiture. Les additions non autorisées sont extrêmement courantes et créent un risque juridique pour l'acheteur.
 
-### Comment fonctionnent les offres à Malte ?
+**4. Parties communes**
+Dans les immeubles, inspectez les ascenseurs, les cages d'escalier et les terrasses communes. Demandez : Y a-t-il un comité de copropriété ? Quels sont les charges mensuelles ? Quand a eu lieu la dernière grande réparation ? Y a-t-il un fonds de réserve ?
 
-Contrairement au Royaume-Uni, il n'existe pas de procédure formelle d'offre et d'acceptation à Malte. Les offres sont généralement :
+**5. Stationnement**
+Un garage dédié ou une place de parking attitrée ajoute 25 000 à 60 000 EUR à la valeur. La Valette et le centre de Sliema manquent presque totalement de stationnement en voirie. Ne supposez jamais que le parking est inclus — confirmez-le par écrit.
 
-1. Faites verbalement par l'intermédiaire de l'agent
-2. L'agent transmet au vendeur
-3. Les négociations se poursuivent jusqu'à l'obtention d'un accord
-4. **Rien n'est contraignant** tant que le konvenju n'est pas signé
+**6. Nuisances sonores**
+Visitez à différents moments (matin, soir, week-end). Les routes, les voisins, et le bruit des bars et restaurants sont des facteurs de qualité de vie importants dans les zones urbaines denses de Malte.
 
-Cela signifie que vous pouvez faire une offre, la retirer ou négocier librement - mais le vendeur aussi peut le faire (le gazumping se produit).
+---
 
-### Conseils de négociation
+## 7. Faire une offre et négocier
 
-- **Marge de négociation typique:** 5-10% sur le prix demandé pour les propriétés standard, moins pour les SDA ou les nouvelles constructions où les promoteurs tiennent bon.
-- **Les acheteurs au comptant obtiennent souvent une remise supplémentaire de 3 à 5 %.
-- **Le temps passé sur le marché est important : les biens inscrits depuis plus de 6 mois ont une plus grande marge de négociation.
-- **Dans les quartiers chauds (Sliema, St. Julian's), les bonnes propriétés se vendent rapidement. Si vous êtes sérieux, ne baissez pas votre prix.
+### Comment fonctionnent les offres
 
-### Dépôt de réservation
+Contrairement au Royaume-Uni, il n'existe pas de mécanisme formel d'offre et d'acceptation à Malte. Le processus :
 
-Certains vendeurs ou promoteurs peuvent demander un **dépôt de réservation** (2 000 à 10 000 €) pour retirer le bien du marché pendant que le konvenju est préparé. Ce dépôt est :
-- Généralement **remboursable** si l'affaire n'est pas conclue avant le konvenju
-- Déduit de l'acompte de 10 % du konvenju
-- N'est pas légalement requis - certains vendeurs sautent cette étape
+1. Faites une offre verbale via votre agent
+2. L'agent la transmet au vendeur
+3. Négociez jusqu'à un accord sur le prix, les biens inclus, et le calendrier
+4. **Rien n'est contraignant avant la signature du *konvenju***
 
-## Étape 4 : Signer le Konvenju (promesse de vente)
+Cela vaut dans les deux sens : vous pouvez vous désister, et le vendeur aussi (le surenchérissement existe, notamment sur les marchés animés comme le centre de Sliema).
 
-### Qu'est-ce qu'un Konvenju ?
+### Marges de négociation (2026)
 
-Le *konvenju* (également appelé *compromesso* ou accord préliminaire) est le document le plus important du droit immobilier maltais. Il s'agit d'un **contrat juridiquement contraignant** entre l'acheteur et le vendeur, signé devant un notaire.
+| Type de bien | Marge de négociation typique |
+|---|---|
+| Appartement en revente, sur le marché depuis +6 mois | 8 - 12 % sous le prix affiché |
+| Appartement en revente, nouvelle annonce | 3 - 6 % |
+| Neuf / SDA | 0 - 3 % (les promoteurs bougent rarement) |
+| Bien patrimonial à La Valette | 5 - 10 % |
+| Villa / bien unique | 10 - 15 % |
 
-Une fois signé, les deux parties sont engagées. Le fait de s'en détourner peut avoir de graves conséquences financières.
+**Les acheteurs au comptant** obtiennent généralement une remise supplémentaire de 2 à 4 %. Les vendeurs valorisent la certitude.
 
-### Clauses clés à inclure
+---
 
-Le notaire doit veiller à ce que ces clauses soient incluses :
+## 8. Le *Konvenju* — Le document le plus important
 
-1. **Description complète de la propriété** - adresse, limites, numéro d'appartement, historique de la propriété
+Le *konvenju* (Promesse de Vente ou *Compromess*) est le document central du droit immobilier maltais. Une fois signé devant un Notaire, **les deux parties sont légalement engagées**.
+
+### Ce que le *konvenju* doit contenir
+
+1. **Description complète du bien** — adresse, numéro de plan, limites, numéro d'étage/appartement
 2. **Prix d'achat** et calendrier de paiement
-3. **Date d'achèvement** - date à laquelle l'acte définitif doit être signé (généralement 3 à 6 mois)
-4. **Conditions préalables** - y compris l'approbation de l'AIP, l'approbation de l'hypothèque et un titre de propriété clair
-5. **Pénalité en cas de non-réalisation** - généralement confiscation du dépôt si l'acheteur est défaillant, ou double dépôt si le vendeur est défaillant
-6. **Ce qui est inclus** - installations, agencements, meubles, appareils électroménagers. Soyez précis.
+3. **Date de réalisation** — délai pour la signature de l'acte final (généralement 3 à 6 mois)
+4. **Conditions suspensives** — permis AIP, accord de financement, recherches de titre satisfaisantes
+5. **Clauses pénales** — l'acheteur perd 10 % d'acompte en cas de défaillance ; le vendeur restitue 20 % en cas de défaillance de sa part
+6. **État des lieux** — chaque bien inclus (mobilier, appareils électroménagers, équipements) listé explicitement
+7. **Rachat du *cens*** — qui s'en charge et dans quel délai
+8. **Garantie de conformité urbanistique** — le vendeur confirme que toutes les structures sont couvertes par des permis de construire valides
 
-### Le dépôt de garantie de 10
+### L'acompte de 10 % + 1 % de droits de timbre provisoires
 
-Lors de la signature, l'acheteur verse :
-- **10% du prix d'achat** conservés par le notaire
-- **1 % de droit de timbre provisoire** au commissaire aux recettes
+Lors de la signature du *konvenju*, vous payez :
 
-Si l'**acheteur** est défaillant : il perd le dépôt de garantie de 10 %.
-Si le **vendeur** est défaillant : il doit restituer l'acompte plus un montant égal (soit 20 % au total).
+| Paiement | Montant | Destinataire |
+|---|---|---|
+| Acompte | 10 % du prix | Conservé par le Notaire |
+| Droits de timbre provisoires | 1 % du prix | Commissaire aux Revenus |
 
-**Important:** Assurez-vous que votre konvenju comprend une **clause financière** si vous comptez sur un prêt hypothécaire. Sans cette clause, vous risquez de perdre votre dépôt si la banque refuse votre demande.
+Le 1 % payé maintenant est déduit des 5 % de droits de timbre totaux lors de l'acte final. Vous ne recevez pas de reçu pour les droits de timbre provisoires — ils sont versés directement par votre Notaire.
 
-### Durée typique d'un Konvenju
+**Point critique :** Si vous comptez sur un prêt hypothécaire, **insistez pour inclure une clause résolutoire liée au financement** dans le *konvenju*. Sans elle, vous risquez de perdre la totalité de votre acompte de 10 % si la banque refuse votre prêt après la signature.
 
-La période standard entre le konvenju et l'acte final est de **3 à 6 mois**. Ce délai permet
-- Au notaire d'effectuer les recherches sur le titre de propriété
-- La demande et l'approbation du permis AIP (si nécessaire)
-- L'approbation de l'hypothèque
-- Le respect de toutes les conditions énoncées dans le konvenju
+---
 
-## Étape 5 : Période de diligence raisonnable
+## 9. Due diligence (3 à 6 mois)
 
-Il s'agit de la période qui s'écoule entre la signature du konvenju et l'acte définitif. Votre notaire s'occupe de la majeure partie de cette étape, mais voici ce qui se passe :
+Cette période entre le *konvenju* et l'acte final est celle où votre Notaire travaille. En tant qu'acheteur étranger, comprendre ce qu'il vérifie est essentiel.
 
-### Recherches de titres par le notaire
+### Recherche de titre
 
-Le notaire effectue des recherches approfondies sur une période de 3 à 6 mois :
-- **Historique de la propriété** - recherche du titre de propriété depuis plus de 30 ans
-- **Hypothèques et charges** - vérification des hypothèques, des décisions de justice ou des dettes liées à la propriété
-- **Permis d'urbanisme** - vérifier que toutes les structures et extensions sont légalement approuvées
-- **Obligations fiscales** - s'assurer que les taxes foncières et le loyer foncier sont à jour
+Votre Notaire remonte l'historique de propriété du bien sur un minimum de **30 ans** (souvent davantage pour les biens anciens). Il vérifie :
 
-### Demande d'AIP (si nécessaire)
+- **Chaîne de titre claire** — confirmation que le vendeur a le droit légal de vendre
+- **Hypothèques** — prêts ou charges bancaires inscrits sur le bien
+- **Ordonnances judiciaires** — tout litige juridique en cours affectant le bien
+- ***Cens*** — existence, titulaire, montant annuel, statut de rachat
+- **Emphytéose** — une autre forme de bail à long terme (moins fréquente mais existante)
+- **Successions** — réclamations d'héritiers, notamment sur les biens transmis par succession
 
-Si vous avez besoin d'un permis AIP, votre notaire soumet la demande au Département des terres. **Délai de traitement : 4 à 8 semaines** en général, mais cela peut prendre plus de temps.
+### Vérification de conformité urbanistique
 
-Les conditions à remplir sont les suivantes
-- La propriété doit être utilisée comme résidence principale (ou se trouver dans une zone touristique)
-- Des seuils de valeur minimale peuvent s'appliquer
-- L'achat doit être effectué dans les 12 mois suivant l'approbation
+Le Notaire (ou un architecte spécialisé) vérifie que chaque élément du bien — y compris les extensions, terrasses, pièces aménagées et structures en toiture — dispose d'un permis de construire valide de l'Autorité de Planification. **Les constructions non autorisées deviennent le problème juridique de l'acheteur une fois la vente réalisée.**
 
-### Enquête et inspection structurelle
+### Demande de permis AIP (non-UE uniquement)
 
-Malte n'a pas d'obligation d'enquête, mais celle-ci est **fortement recommandée** - en particulier pour :
-- Propriétés anciennes (avant les années 1960)
-- Les maisons de caractère avec une construction traditionnelle
-- Propriétés montrant des signes de mouvement structurel
-- Toute propriété faisant l'objet d'une rénovation importante
+Si nécessaire, votre Notaire soumet la demande AIP au Commissaire des Terres. Cela prend **4 à 8 semaines** et se déroule en parallèle de la recherche de titre.
 
-Coût : 300 à 800 euros en fonction de la taille du bien et des détails requis.
+### Expertise structurelle indépendante
 
-### Approbation de l'hypothèque
+Malte n'a **aucune obligation d'expertise**, mais pour :
+- Les biens construits avant 1980
+- Les maisons de caractère ou constructions traditionnelles
+- Les biens présentant des signes de fragilité structurelle lors de la visite
+- Tout bien où vous envisagez une rénovation importante
 
-En cas de financement, le processus bancaire peut durer de 4 à 8 semaines :
-- L'évaluation du bien par l'architecte désigné par la banque
-- Vérification des revenus et de l'emploi
-- Vérification de la solvabilité et évaluation du risque
+Un rapport structurel d'un architecte indépendant est indispensable. Coût : 400 à 1 200 EUR. Il peut révéler des problèmes qui vous permettront de renégocier le prix ou de vous désister avant l'acte final.
 
-## Étape 6 : L'acte définitif (Kuntratt)
+---
 
-### Ce qui se passe le jour de l'acte final
+## 10. L'acte final (*Kuntratt*)
 
-Le *kuntratt* (acte de vente définitif) est l'aboutissement de la procédure. Il se déroule généralement chez le notaire. Les personnes présentes sont :
-- L'acheteur (vous) et le vendeur - ou leurs mandataires
-- Le notaire
-- Les témoins
-- Le représentant de la banque (s'il s'agit d'un prêt hypothécaire)
+Le *kuntratt* est signé à l'étude du Notaire. Présents : acheteur, vendeur (ou leur fondé de pouvoir), le Notaire et des témoins. Les représentants de la banque assistent si un prêt hypothécaire est impliqué.
 
-Le notaire lit l'acte à haute voix (en maltais, avec une traduction en anglais disponible), les deux parties signent et la propriété est officiellement transférée.
+Le Notaire lit l'acte à voix haute. Les deux parties signent. La propriété change de mains.
 
-### Paiements dus à l'acte
+### Paiements dus lors de l'acte final
 
-| Paiement - Montant - Payable à - Montant - Payable à - Montant - Payable à - Montant - Payable à - Montant - Montant - Payable à
-|---------|--------|------------|
-| Solde du prix d'achat | 90% du prix d'achat | Vendeur
-| Droit de timbre restant (4 %) - 4 % du prix - Commissaire aux recettes - 4 % du prix - Commissaire aux recettes - 4 % du prix - Commissaire aux recettes - 4 % du prix - Commissaire aux recettes
-| Frais de notaire | ~1-1.5% | Notaire |
+| Paiement | Montant | Destinataire |
+|---|---|---|
+| Solde du prix d'achat | 90 % | Vendeur |
+| Droits de timbre restants (4 %) | 4 % du prix | Commissaire aux Revenus |
+| Honoraires du Notaire | ~1 - 1,5 % | Notaire |
+| Frais d'enregistrement | 100 - 300 EUR | Registre foncier |
 
-Le droit de timbre provisoire de 1 % payé au konvenju est déduit du droit de timbre total de 5 %.
+### Après la signature
 
-### Enregistrement et propriété
+Le Notaire enregistre l'acte au **Registre Public** et à l'**Autorité de Cadastre (LPA)** dans les 15 jours ouvrables. Vous recevez des copies certifiées de l'acte. Vous êtes désormais propriétaire légal.
 
-Après la signature, le notaire :
-1. Enregistre l'acte au **registre public** dans un délai de 15 jours ouvrables
-2. Dépose l'acte auprès de l'**Autorité chargée de l'enregistrement foncier** (LPA)
-3. Vous fournit des copies certifiées conformes
+---
 
-Vous êtes maintenant le propriétaire légal.
+## 11. Après l'achat — Les démarches essentielles
 
-## Étape 7 : Après l'achat
+### Transferts de services
 
-### Transfert des services publics
-- **ARMS (eau et électricité):** Rendez-vous au bureau ARMS avec votre copie d'acte pour transférer le compte. Prévoyez 1 à 2 semaines.
-- **Internet/TV:** GO, Melita ou Epic sont les principaux fournisseurs. L'installation se fait généralement en 3 à 5 jours.
+**Eau et électricité (ARMS) :**
+Rendez-vous au bureau ARMS le plus proche avec votre copie de l'acte. Le transfert prend 3 à 5 jours ouvrables. Si le précédent propriétaire avait des impayés, assurez-vous qu'ils sont réglés avant le transfert (votre Notaire doit le vérifier lors de l'acte).
 
-### Assurance des biens
-- **Obligatoire si vous avez un prêt hypothécaire (la banque l'exige)
-- Recommandée même sans hypothèque - couvre les dommages causés par les tempêtes, les incendies et la responsabilité civile
-- Coût : 300 à 800 euros par an pour un appartement standard
+**Internet :**
+Principaux fournisseurs : GO, Melita, Epic. La fibre optique est disponible dans la majorité de Malte. Installation : 3 à 7 jours.
 
-### Frais de communauté/de copropriété
-Si vous achetez un appartement, vous contribuerez à l'entretien de l'immeuble par le biais de charges de copropriété mensuelles ou annuelles. Ces frais couvrent :
-- L'entretien de l'ascenseur, le nettoyage, l'électricité des parties communes
-- L'assurance de l'immeuble
-- Le fonds d'amortissement pour les réparations importantes
-- Coût typique : 500 à 2 000 euros par an
+### Assurance habitation
 
-## Questions fréquemment posées
+Si vous avez un prêt hypothécaire, la banque exige une assurance bâtiment. Recommandée également pour les acheteurs au comptant. Coût annuel : 300 à 800 EUR pour un appartement standard, davantage pour les villas.
 
-### Combien coûte l'achat d'une propriété à Malte ?
-Les coûts d'acquisition totaux s'élèvent généralement à 6-7 % du prix d'achat, couvrant le droit de timbre (5 %), les frais de notaire (1 à 1,5 %) et les frais de recherche/enregistrement. Les primo-accédants bénéficient d'un droit de timbre réduit (3,5 % sur les premiers 200 000 €).
+### Charges de copropriété
 
-### Les étrangers peuvent-ils obtenir un prêt hypothécaire à Malte ?
-Oui, la BOV (Bank of Valletta) et HSBC Malta proposent toutes deux des prêts hypothécaires aux non-résidents, généralement jusqu'à un ratio prêt/valeur de 70 % et pour une durée de 20 à 25 ans. Les taux d'intérêt pour les non-résidents sont généralement de 4,5 à 5,5 % en 2026.
+Frais mensuels ou annuels couvrant l'entretien de l'immeuble, l'ascenseur, les parties communes et le fonds de réserve d'assurance de l'immeuble. Fourchette typique : 600 à 2 500 EUR par an. Demandez les deux derniers exercices comptables de la copropriété avant de signer le *konvenju*.
 
-### Quel est le prix minimum d'une propriété à Malte ?
-Il n'y a pas de prix d'achat minimum légal pour les citoyens de l'UE. Les acheteurs non européens qui demandent un permis AIP doivent acheter une propriété dont la valeur est égale ou supérieure aux seuils fixés par le commissaire à la terre, qui varient en fonction du type de propriété et de l'emplacement.
+### Inscription fiscale (si location)
 
-### Combien de temps faut-il pour acheter une propriété à Malte ?
-Le processus habituel, de la signature du konvenju à l'acte définitif, prend de 3 à 6 mois. Le processus global, de la première visite à l'achèvement, dure généralement de 4 à 8 mois.
+Si vous envisagez de louer le bien, inscrivez-vous auprès du Département des Impôts maltais et de l'Autorité Touristique de Malte (pour les locations de courte durée). L'impôt sur les revenus locatifs à Malte est généralement de **15 % taux forfaitaire** sur les revenus locatifs bruts.
 
-### L'achat d'une propriété à Malte est-il un bon investissement ?
-Le marché immobilier maltais a connu une croissance constante de 5 à 7 % par an en moyenne dans les zones les plus prisées. La combinaison d'une offre limitée de terrains, d'une communauté d'expatriés croissante et d'un secteur touristique fort soutient une demande et une appréciation continues.
+---
 
-## Prêt à commencer votre recherche de propriété à Malte ?
+## 12. Malte vs marchés concurrents : pourquoi les acheteurs étrangers choisissent Malte
 
-Parcourez les listes des meilleurs emplacements de Malte, chacun sélectionné pour sa qualité et son potentiel d'investissement.
+| Critère | Malte | Portugal | Espagne | Chypre |
+|---|---|---|---|---|
+| Droits de timbre | 5 % (0 % UCA) | 6 - 8 % | 6 - 10 % | 0,15 % |
+| Taxe foncière annuelle | **Aucune** | IMI (0,3 - 0,45 %) | IBI (0,4 - 1,1 %) | Impôt foncier |
+| Droits de succession | **5 % (Causa Mortis)** | 10 % (non-conjoint) | Jusqu'à 34 % | Aucun |
+| Plus-value (non-résident) | 8 % à la vente | 28 % | 19 % | 20 % |
+| Impôt sur les loyers | **15 % forfaitaire** | 28 % | 19 - 21 % | 30 % |
+| Anglais largement parlé | **Oui** | Modéré | Modéré | Oui |
+| Membre UE | **Oui** | Oui | Oui | Oui |
+
+---
+
+## Questions fréquentes (FAQ)
+
+**Q : Les étrangers peuvent-ils acheter une propriété à Malte ?**
+Oui. Les citoyens de l'UE peuvent acheter librement n'importe où à Malte. Les ressortissants non-UE (y compris les Britanniques post-Brexit) ont besoin d'un permis AIP pour acheter en dehors des Zones Spécialement Désignées (SDA), ce qui prend 4 à 8 semaines et coûte 233 EUR. Dans les SDA, il n'y a aucune restriction de nationalité.
+
+**Q : Combien de droits de timbre dois-je payer pour acheter une propriété à Malte ?**
+Le taux standard est de 5 % du prix d'achat. Les primo-accédants bénéficient d'un taux réduit de 3,5 % sur les premiers 200 000 EUR, économisant 3 000 EUR. Les biens patrimoniaux dans les Zones de Conservation Urbaine peuvent bénéficier d'une exonération totale. Il n'existe pas de taxe foncière annuelle après l'achat.
+
+**Q : Qu'est-ce qu'un *konvenju* à Malte ?**
+Le *konvenju* (promesse de vente) est un contrat préliminaire juridiquement contraignant signé devant un Notaire. Une fois signé, l'acheteur verse un acompte de 10 % et 1 % de droits de timbre provisoires. Si l'acheteur se désiste, il perd l'acompte. Si le vendeur se désiste, il restitue le double de l'acompte. Rien n'est juridiquement contraignant avant le *konvenju*.
+
+**Q : Qu'est-ce que la rente foncière (*cens*) à Malte ?**
+Le *cens* est une forme ancienne de titre selon laquelle le propriétaire verse une petite redevance annuelle (5 à 50 EUR/an) à un propriétaire foncier en perpétuité. Cela concerne de nombreux biens anciens. Il peut être racheté définitivement pour environ 15 à 25 fois la redevance annuelle. Demandez toujours à votre Notaire si un bien est soumis à un *cens* avant de signer.
+
+**Q : Puis-je obtenir un prêt hypothécaire à Malte en tant qu'étranger ?**
+Oui. BOV (Bank of Valletta) et HSBC Malta prêtent tous deux aux non-résidents. Conditions typiques : jusqu'à 70 % de LTV, durée de 20 à 25 ans, taux d'intérêt de 4,5 à 5,5 % en 2026. Vous aurez besoin d'une preuve de revenus, d'un historique de crédit, et le bien devra satisfaire aux critères d'évaluation de la banque.
+
+**Q : Combien de temps dure le processus d'achat à Malte ?**
+Du *konvenju* signé à l'acte final : généralement 3 à 6 mois. De la première visite à la réalisation : 4 à 8 mois. Neuf sur plan : 1 à 3 ans du contrat à la remise des clés. Traitement du permis AIP (non-UE) : 4 à 8 semaines, en parallèle de la due diligence.
+
+**Q : Ai-je besoin d'un avocat en plus du Notaire ?**
+Le Notaire gère la procédure de conveyancing et est un professionnel du droit, mais son devoir est équitable envers les deux parties. Pour les achats complexes — montants importants, sur plan, problèmes de *cens*, titres contestés — il est conseillé de faire appel à un avocat maltais spécialisé en immobilier pour examiner le *konvenju* en votre nom.
+
+**Q : Quelles taxes dois-je payer lors de la vente d'une propriété à Malte ?**
+Les vendeurs paient généralement **8 % de taxe sur le transfert de propriété** sur le plus élevé du prix de vente ou du prix d'achat d'origine. Pour les biens détenus depuis plus de 3 ans et utilisés comme résidence principale, un taux réduit ou une exonération peut s'appliquer. Il n'y a pas de taxe sur les plus-values en tant que telle — la taxe de transfert de 8 % la remplace.
+
+**Q : Quelles sont les meilleures zones pour acheter une propriété à Malte en 2026 ?**
+Pour la plus-value : La Valette et St. Julian's (Portomaso). Pour le rendement locatif : Sliema et St. Julian's. Pour l'espace et le cadre de vie : Mellieha et le Nord de Malte. Pour le rapport qualité-prix et la tranquillité : Gozo. Pour une liberté totale en tant qu'investisseur étranger : tout développement SDA (Portomaso, Tigné Point, Fort Cambridge).
+
+**Q : L'investissement immobilier à Malte est-il intéressant en 2026 ?**
+Le marché immobilier maltais a enregistré une appréciation de 8 à 12 % par an dans les emplacements premium sur 2023-2026. Les soutiens structurels restent solides : rareté foncière, population expatriée croissante, demande du programme MPRP, et secteur des services financiers / iGaming dynamique apportant des locataires à hauts revenus. Des rendements locatifs nets de 4 à 6 % dans les zones prime se comparent favorablement à la plupart des marchés européens.
+
+**Q : Qu'est-ce que le Programme de Résidence Maltaise (MPRP) ?**
+Le MPRP (Malta Permanent Residence Programme) permet aux ressortissants non-UE d'obtenir la résidence permanente à Malte en échange d'un investissement immobilier ou d'une location, complété par une contribution gouvernementale. Il est distinct du permis de séjour standard et confère des droits de résidence à long terme sans obligation de séjour minimum.
+
+---
+
+*Mis à jour : mars 2026. Les coûts, taux et exigences légales sont susceptibles d'évoluer. Ce guide fournit des informations générales et ne constitue pas un conseil juridique ou financier. Faites toujours appel à un Notaire maltais qualifié et, pour les transactions complexes, à un avocat maltais spécialisé en droit immobilier.*
+
+**Prêt à commencer votre recherche immobilière à Malte ? [Contactez notre équipe](mailto:info@maltaluxuryrealestate.com) pour des sélections personnalisées et des présentations à des Notaires maltais de confiance.**

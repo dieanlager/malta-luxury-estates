@@ -246,3 +246,61 @@ Oder stöbern Sie in Immobilien mit Investmentqualität:
 - [Renditestarke Immobilien in Malta](/properties/malta/for-sale)
 
 *Zuletzt aktualisiert: März 2026. Das maltesische Steuerrecht kann sich ändern. Dieser Artikel dient nur zu allgemeinen Informationszwecken und stellt keine Steuerberatung dar. Wenden Sie sich an einen zugelassenen maltesischen Wirtschaftsprüfer oder Steuerberater, um eine auf Ihre Situation zugeschnittene Beratung zu erhalten
+
+
+## Detaillierte Berechnungsbeispiele: 15% Pauschalsteuer vs. Progressive Einkommensteuer
+
+Um die optimale Steuerstrategie zu waehlen, helfen konkrete Rechenbeispiele. Hier drei Szenarien fuer einen Vermieter auf Malta:
+
+**Szenario 1: Kleine Wohnung in Msida (Jahresnettomiete: 9.600 Euro)**
+Option A (15% Pauschalsteuer): 9.600 x 15% = 1.440 Euro Steuer. Netto nach Steuer: 8.160 Euro.
+Option B (Progressive Steuer, angenommen 25% Grenzsteuersatz): Abzugsfaehige Kosten -- Hypothekenzinsen 2.400 Euro, Reparaturen 800 Euro, Verwaltung 480 Euro, gesamt 3.680 Euro. Steuerpflichtiges Einkommen: 5.920 Euro. Steuer bei 25%: 1.480 Euro. Netto nach Steuer: 8.120 Euro. Ergebnis: Option A ist minimal besser.
+
+**Szenario 2: Zweizimmerwohnung in Sliema (Jahresnettomiete: 18.000 Euro)**
+Option A (15%): 18.000 x 15% = 2.700 Euro Steuer.
+Option B (Progressive Steuer, 35% Grenzsteuersatz): Abzugsfaehige Kosten -- Hypothekenzinsen 6.000 Euro, Reparaturen und Instandhaltung 1.500 Euro, Verwaltungsgesellschaft 1.800 Euro, Buchhaltung 400 Euro, gesamt 9.700 Euro. Steuerpflichtiges Einkommen: 8.300 Euro. Steuer (35% Spitzensatz auf obere Haelfte): ca. 2.100 Euro. Netto nach Steuer: 15.900 Euro. Ergebnis: Option B spart ca. 600 Euro jaehrlich -- lohnt sich erst ab hoeherem Grenzsteuersatz und vielen abzugsfaehigen Ausgaben.
+
+**Szenario 3: Luxus-Penthouse in St. Julian's (Jahresnettomiete: 36.000 Euro)**
+Option A (15%): 36.000 x 15% = 5.400 Euro Steuer.
+Option B: Abzugsfaehige Kosten -- Hypothekenzinsen 12.000 Euro, Property Management 3.600 Euro, Versicherung 800 Euro, Reparaturen 2.000 Euro, Buchhaltung 500 Euro, gesamt 18.900 Euro. Steuerpflichtiges Einkommen: 17.100 Euro. Steuer (progressive Saetze): ca. 4.200 Euro. Ergebnis: Option B spart ca. 1.200 Euro jaehrlich. Bei diesem Einkommensniveau lohnt sich die ausfuehrliche Buchfuehrung fuer Option B.
+
+**Fazit:** Die 15% Pauschalsteuer (Option A) lohnt sich besonders bei niedrigen bis mittleren Mieteinnahmen mit wenigen abzugsfaehigen Kosten. Option B rechnet sich erst bei hoeheren Mieteinnahmen mit signifikanten Hypothekenzinsen und Verwaltungskosten.
+
+## Abzugsfaehige Ausgaben bei Option B (Progressive Einkommensteuer)
+
+Wenn Sie sich fuer die progressive Einkommensteuer entscheiden, koennen Sie folgende Ausgaben steuermindernd geltend machen:
+
+**Finanzierungskosten:** Hypothekenzinsen auf das vermietete Objekt sind vollstaendig abzugsfaehig. Tilgungsanteile hingegen nicht -- nur der Zinsanteil zaehlt. Bei Hypotheken mit variablem Zinssatz fuehren steigende Zinsen paradoxerweise zu hoeheren steuerlichen Abzuegen.
+
+**Instandhaltung und Reparaturen:** Alle Aufwendungen zur Erhaltung des Mietobjekts in vermietetem Zustand sind abzugsfaehig. Dazu zaehlen: Reparaturen an Heizung, Klimaanlage und Sanitaer; Malerarbeiten zwischen Mietern; Austausch defekter Geraete; Reinigungskosten. Verbesserungen (Wertsteigerungen) sind hingegen in der Regel nicht sofort abzugsfaehig, sondern muessen ueber die Nutzungsdauer abgeschrieben werden.
+
+**Verwaltungskosten:** Gebuehren an Verwaltungsgesellschaften oder Airbnb-Manager (typisch 15-25% der Mieteinnahmen bei Short-Let) sind vollstaendig abzugsfaehig. Ebenso Maklercourtagen fuer die Mietersuche.
+
+**Versicherungen:** Gebaeudeversicherung und Haftpflichtversicherung fuer das Mietobjekt koennen abgezogen werden. Inhaltsversicherung nur anteilig, falls das Objekt teilweise selbst genutzt wird.
+
+**Professionelle Dienstleistungen:** Steuerberater- und Buchhaltergebuehren fuer die Verwaltung des Mietobjekts sind abzugsfaehig. Auch Anwaltskosten bei Mietstreitigkeiten.
+
+## Anmeldung als Vermieter bei den maltesischen Steuerbehörden
+
+Als Vermieter auf Malta muessen Sie Ihre Mieteinnahmen regelmaessig erklaeren. So laeuft die Anmeldung ab:
+
+Erstens: Beantragen Sie eine maltesische Steuernummer (Tax Identification Number, TIN) beim Commissioner for Revenue, falls Sie noch keine haben. EU-Buerger erhalten diese bei der Anmeldung ihrer Residenz; Nicht-EU-Buerger bei der Beantragung des AIP-Status oder direkt beim Finanzamt.
+
+Zweitens: Registrieren Sie sich als Steuerpflichtiger mit Mieteinnahmen beim Commissioner for Revenue. Dies erfolgt ueber das Online-Portal des maltesischen Finanzamts (cfr.gov.mt) oder persoenlich im Buero des Commissioner for Revenue in Floriana.
+
+Drittens: Reichen Sie jaehrlich eine Steuererklarung ein. Die Frist ist typischerweise der 30. Juni des Folgejahres. Bei Option A (15% Pauschalsteuer) ist die Erklaerung deutlich einfacher -- es genuegt die Angabe der Bruttomieteinnahmen und die Zahlung von 15% davon.
+
+Viertens: Bei Option B fuehren Sie eine vollstaendige Buchfuehrung mit allen Einnahmen und Ausgaben. Belege muessen mindestens fuenf Jahre aufbewahrt werden. Die Zusammenarbeit mit einem maltesischen Steuerberater ist bei Option B dringend empfohlen.
+
+**Q: Muss ich als auslaendischer Vermieter in Malta eine Steuererklarung einreichen?**
+Ja, auch auslaendische Eigentuemer von Mietobjekten auf Malta sind verpflichtet, Mieteinnahmen aus maltesischen Quellen zu erklaeren und zu versteuern. Das Doppelbesteuerungsabkommen mit Deutschland verhindert eine doppelte Besteuerung, aber die maltesische Steuerpflicht auf die Mieteinnahmen bleibt bestehen. Ihr maltesischer Steuerberater koordiniert die korrekte Behandlung in beiden Laendern.
+
+**Q: Was passiert wenn ich meine Mieteinnahmen in Malta nicht erklaere?**
+Die Nichterklarung von Mieteinnahmen stellt eine Steuerhinterziehung dar und wird mit Bussgeldern und Zinsen geahndet. Malta hat in den letzten Jahren die Steuerkontrollen fuer Mietobjekte deutlich verscharft, auch durch Datenabgleich mit Airbnb und Booking.com. Das Risiko der Entdeckung ist erheblich gestiegen. Eine freiwillige Nachmeldung frueherer Jahre ist moeglich und wird milde behandelt.
+
+**Q: Gilt die 15% Pauschalsteuer auch fuer Airbnb-Einnahmen?**
+Bei kurzfristiger Vermietung (Short-Let ueber Airbnb oder aehnliche Plattformen) gelten besondere Regeln. Zunaechst benoetigen Sie eine MTA-Lizenz (Malta Tourism Authority) fuer Short-Let. Die Mieteinnahmen aus lizenzierter Kurzzeitvermietung koennen der 15% Pauschalsteuer unterliegen, aber die genaue steuerliche Einordnung haengt vom Umfang der Nebenleistungen ab -- konsultieren Sie einen maltesischen Steuerberater fuer Ihre spezifische Situation.
+
+---
+
+Haben Sie Fragen zur optimalen Steuerstruktur fuer Ihre Mietimmobilie auf Malta? Das Team von Malta Luxury Real Estate verbindet Sie mit erfahrenen maltesischen Steuerberatern und hilft Ihnen, die richtige Investitionsstrategie zu entwickeln. Kontaktieren Sie uns unter **info@maltaluxuryrealestate.com**.

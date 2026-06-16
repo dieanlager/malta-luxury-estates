@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 
 const BASE_URL = 'https://www.maltaluxuryrealestate.com';
 const LANGUAGES = ['en', 'it', 'de', 'fr', 'pl'];
@@ -85,17 +85,14 @@ export function usePageMeta(config: MetaConfig) {
         setMeta('og:site_name', 'Malta Luxury Real Estate', 'property');
         setMeta('og:locale', currentLang === 'en' ? 'en_MT' : `${currentLang}_MT`, 'property');
         setMeta('og:type', ogType || 'website', 'property');
-        if (ogImage) {
-            setMeta('og:image', ogImage, 'property');
-        }
+        const DEFAULT_OG_IMAGE = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1600&fm=webp';
+        setMeta('og:image', ogImage || DEFAULT_OG_IMAGE, 'property');
 
         // Twitter
         setMeta('twitter:card', 'summary_large_image');
         setMeta('twitter:title', title);
         setMeta('twitter:description', description);
-        if (ogImage) {
-            setMeta('twitter:image', ogImage);
-        }
+        setMeta('twitter:image', ogImage || DEFAULT_OG_IMAGE);
 
         return () => {
             // No reset needed as it will be overwritten by next page
@@ -141,7 +138,7 @@ export function getCanonicalPath(citySlug: string, filterSlug?: string): string 
         return `/properties/${citySlug}/${filterSlug}`;
     }
 
-    // Price/feature filters → canonical to city page (PageRank consolidation)
+    // Price/feature filters â†’ canonical to city page (PageRank consolidation)
     return `/properties/${citySlug}`;
 }
 
@@ -151,3 +148,5 @@ export function getCanonicalPath(citySlug: string, filterSlug?: string): string 
 export function buildPageTitle(parts: string[]): string {
     return [...parts, 'Malta Luxury Real Estate'].join(' | ');
 }
+
+

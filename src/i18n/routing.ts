@@ -1,0 +1,70 @@
+﻿import { defineRouting } from 'next-intl/routing';
+
+export const routing = defineRouting({
+  locales: ['en', 'it', 'de', 'fr', 'pl'],
+  defaultLocale: 'en',
+  localePrefix: 'as-needed',
+  pathnames: {
+    '/': '/',
+    '/properties/all': {
+      en: '/properties/all',
+      it: '/immobiliare/tutti',
+      de: '/immobilien/alle',
+      fr: '/proprietes/toutes',
+      pl: '/nieruchomosci/wszystkie',
+    },
+    '/properties/[slug]': {
+      en: '/properties/[slug]',
+      it: '/immobiliare/[slug]',
+      de: '/immobilien/[slug]',
+      fr: '/proprietes/[slug]',
+      pl: '/nieruchomosci/[slug]',
+    },
+    '/insights': {
+      en: '/insights',
+      it: '/approfondimenti',
+      de: '/einblicke',
+      fr: '/conseils',
+      pl: '/wiedza',
+    },
+    '/insights/[slug]': {
+      en: '/insights/[slug]',
+      it: '/approfondimenti/[slug]',
+      de: '/einblicke/[slug]',
+      fr: '/conseils/[slug]',
+      pl: '/wiedza/[slug]',
+    },
+    '/market/live': {
+      en: '/market/live',
+      it: '/mercato/in-diretta',
+      de: '/markt/live-ticker',
+      fr: '/marche/en-direct',
+      pl: '/rynek/na-zywo',
+    },
+    '/about': {
+      en: '/about',
+      it: '/chi-siamo',
+      de: '/ueber-uns',
+      fr: '/a-propos',
+      pl: '/o-nas',
+    },
+    '/contact': '/contact',
+    '/tools/valuation': {
+      en: '/tools/valuation',
+      it: '/strumenti/valutazione-immobiliare',
+      de: '/outils/immobilienbewertung',
+      fr: '/outils/estimation-immobiliere',
+      pl: '/narzedzia/wycena-nieruchomosci',
+    },
+    '/tools/quiz': {
+      en: '/tools/quiz',
+      it: '/strumenti/quiz-immobiliare',
+      de: '/outils/immobilien-quiz',
+      fr: '/outils/quiz-immobilier',
+      pl: '/narzedzia/quiz-nieruchomosci',
+    },
+    '/privacy-policy': '/privacy-policy',
+    '/terms-of-service': '/terms-of-service',
+    '/cookie-policy': '/cookie-policy',
+  },
+});

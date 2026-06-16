@@ -1,14 +1,19 @@
-{
-  "name": "react-example",
+﻿{
+  "name": "malta-luxury-real-estate",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "cp -r .next/static .next/standalone/.next/static && cp -r public .next/standalone/public",
+    "pack": "tar -czf mlre-release.tgz .next/standalone",
+    "start": "node .next/standalone/server.js",
+    "vite-dev": "vite",
+    "vite-build": "npx tsx scripts/generate-sitemap.ts && vite build",
     "server": "tsx server.ts",
-    "build": "npx tsx scripts/generate-sitemap.ts && vite build",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist .next",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
@@ -17,9 +22,11 @@
     "@google/generative-ai": "^0.24.1",
     "@stripe/stripe-js": "^8.9.0",
     "@supabase/supabase-js": "^2.98.0",
+    "@tailwindcss/postcss": "^4.1.14",
     "@tailwindcss/vite": "^4.1.14",
     "@vitejs/plugin-react": "^5.0.4",
     "better-sqlite3": "^12.4.1",
+    "cheerio": "^1.2.0",
     "deepl-node": "^1.24.0",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
@@ -31,6 +38,8 @@
     "mapbox-gl": "^3.19.0",
     "motion": "^12.23.24",
     "motion-react": "^0.15.0-alpha.1",
+    "next": "^15.3.3",
+    "next-intl": "^3.26.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-dropzone": "^15.0.0",
@@ -40,9 +49,12 @@
     "react-router-dom": "^7.13.1",
     "remark-gfm": "^4.0.1",
     "resend": "^6.9.3",
-    "stripe": "^20.4.0"
+    "sharp": "^0.34.2",
+    "stripe": "^20.4.0",
+    "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/express": "^4.17.21",
     "@types/mapbox-gl": "^3.4.1",
     "@types/node": "^22.19.13",
@@ -50,7 +62,6 @@
     "@types/react-dom": "^19.2.3",
     "@vercel/node": "^5.6.10",
     "autoprefixer": "^10.4.21",
-    "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",
     "vite": "^7.3.1",

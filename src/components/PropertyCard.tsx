@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
-import { Bed, Bath, Maximize, Heart, ExternalLink, MapPin, Sparkles, Leaf, Volume2 } from 'lucide-react';
-import { Property } from '../types';
+﻿'use client';
+import { useState } from 'react';
+import { motion } from 'motion/react';
+import { Bed, Bath, Maximize, Heart, ExternalLink, MapPin } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/src/navigation';
+import type { Property } from '../types';
 import { formatPrice } from '../lib/seo/schemas';
-import { generatePropertySchema } from '../lib/seo/schemas';
-import { SchemaScript } from './SchemaScript';
-import { useTranslation } from 'react-i18next';
-import { EPCButton } from './EPCCalculator';
-import { NoiseAnalysisButton } from './NoiseAnalysis';
-import { PropertyTwinButton } from './PropertyTwinFinder';
-import { getImageUrl, getSrcSet } from '../lib/imageUtils';
 
 interface PropertyCardProps {
   property: Property;
@@ -25,16 +20,10 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onToggleFavorite,
   onContact,
 }) => {
-  const { t, i18n } = useTranslation();
+  const t = useTranslations('common');
   const [isHovered, setIsHovered] = useState(false);
 
-  const schema = generatePropertySchema(property);
-
-  const getLocalizedLink = () => {
-    if (i18n.language === 'en') return `/properties/${property.id}`;
-    const prefix = t('slugs.properties', 'properties');
-    return `/${i18n.language}/${prefix}/${property.id}`;
-  };
+  const propertyUrl = `/properties/${property.slug ?? property.id}` as any;
 
   return (
     <motion.div
@@ -42,21 +31,19 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <SchemaScript data={schema} />
-
-      {/* Image Container */}
+      {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Link to={getLocalizedLink()} className="block h-full">
+        <Link href={propertyUrl} className="block h-full">
           <motion.img
-            src={getImageUrl(property.images[0], 'card')}
-            srcSet={getSrcSet(property.images[0])}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            src={property.images?.[0] ?? 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800'}
             alt={property.title}
             loading="lazy"
             decoding="async"
             width={800}
             height={600}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            animate={{ scale: isHovered ? 1.08 : 1 }}
+            transition={{ duration: 0.6 }}
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent opacity-60" />
         </Link>
@@ -65,30 +52,29 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
         <div className="absolute top-4 left-4 flex flex-wrap gap-2">
           {property.isSeafront && (
             <span className="bg-gold text-luxury-black px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest shadow-lg">
-              {t('badges.seafront')}
+              {t('badges.seafront', { defaultValue: 'Seafront' })}
             </span>
           )}
           {property.propertyType === 'Penthouse' && (
             <span className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest">
-              {t('search.types.penthouse')}
+              {t('search.types.penthouse', { defaultValue: 'Penthouse' })}
             </span>
           )}
         </div>
 
-        {/* Action Buttons */}
-        <div className="absolute top-4 right-4 flex flex-col gap-2">
+        {/* Favourite */}
+        <div className="absolute top-4 right-4">
           <button
             onClick={() => onToggleFavorite?.(property.id)}
-            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${isFavorite
-              ? 'bg-gold text-luxury-black'
-              : 'bg-luxury-black/40 backdrop-blur-md text-white hover:bg-gold hover:text-luxury-black border border-white/10'
-              }`}
+            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
+              isFavorite
+                ? 'bg-gold text-luxury-black'
+                : 'bg-luxury-black/40 backdrop-blur-md text-white hover:bg-gold hover:text-luxury-black border border-white/10'
+            }`}
           >
             <Heart size={18} fill={isFavorite ? 'currentColor' : 'none'} />
           </button>
         </div>
-
-        {/* Agency Tag intentionally hidden under exclusive partnership model */}
       </div>
 
       {/* Content */}
@@ -99,7 +85,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="text-[10px] uppercase font-bold tracking-widest">{property.locationName}</span>
           </div>
 
-          <Link to={getLocalizedLink()}>
+          <Link href={propertyUrl}>
             <h3 className="text-xl font-serif text-white mb-4 group-hover:text-gold transition-colors line-clamp-2 min-h-[3.5rem]">
               {property.title}
             </h3>
@@ -109,58 +95,54 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             <div className="flex justify-between items-center mb-6">
               <span className="text-gold font-bold text-lg">
                 {formatPrice(property.price)}
-                {property.type === 'rent' && <span className="text-[10px] text-white/40 ml-1">{t('common.per_month')}</span>}
+                {property.type === 'rent' && (
+                  <span className="text-[10px] text-white/40 ml-1">{t('common.per_month', { defaultValue: '/mo' })}</span>
+                )}
               </span>
               <span className="text-[10px] uppercase tracking-widest font-bold text-white/30">
-                {property.type === 'rent' ? t('market.forRent') : t('market.forSale')}
+                {property.type === 'rent' ? t('market.forRent', { defaultValue: 'For Rent' }) : t('market.forSale', { defaultValue: 'For Sale' })}
               </span>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-2 mb-6">
-              <PropertyTwinButton property={property} />
-              <EPCButton property={property} />
-              <NoiseAnalysisButton property={property} />
             </div>
 
             <div className="grid grid-cols-3 gap-2 border-t border-white/10 pt-6">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
-                  <Bed size={14} className="text-gold/80" />
+              {[
+                { icon: Bed, label: t('common.beds_short', { defaultValue: 'Beds' }), value: property.beds },
+                { icon: Bath, label: t('common.baths_short', { defaultValue: 'Baths' }), value: property.baths },
+                { icon: Maximize, label: 'm²', value: property.sqm },
+              ].map(({ icon: Icon, label, value }) => (
+                <div key={label} className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
+                    <Icon size={14} className="text-gold/80" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] text-white/40 uppercase font-bold">{label}</span>
+                    <span className="text-xs font-bold">{value}</span>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.beds_short')}</span>
-                  <span className="text-xs font-bold">{property.beds}</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
-                  <Bath size={14} className="text-gold/80" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">{t('common.baths_short')}</span>
-                  <span className="text-xs font-bold">{property.baths}</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
-                  <Maximize size={14} className="text-gold/80" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">m²</span>
-                  <span className="text-xs font-bold">{property.sqm}</span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
 
-        <button
-          onClick={() => onContact?.(property.id, property.title)}
-          className="w-full mt-8 py-4 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-luxury-black hover:border-gold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
-        >
-          {t('common.enquire')}
-          <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-        </button>
+        {property.affiliate_url ? (
+          <a
+            href={property.affiliate_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full mt-8 py-4 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-luxury-black hover:border-gold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+          >
+            {t('common.view_listing', { defaultValue: 'View Listing' })}
+            <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+          </a>
+        ) : (
+          <button
+            onClick={() => onContact?.(property.id, property.title)}
+            className="w-full mt-8 py-4 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-luxury-black hover:border-gold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+          >
+            {t('common.enquire', { defaultValue: 'Enquire' })}
+            <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+          </button>
+        )}
       </div>
     </motion.div>
   );

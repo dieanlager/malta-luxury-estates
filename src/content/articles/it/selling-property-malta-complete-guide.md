@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vendita di Proprietà a Malta: Guida Completa 2026"
 category: "Selling"
 excerpt: "Tutto ciò che devi sapere sulla vendita di proprietà a Malta nel 2026, incluse l'imposta sulle plusvalenze, la selezione dell'agente, la valutazione immobiliare e il processo legale dalla messa in vendita all'atto definitivo."
@@ -12,214 +12,165 @@ localizedSlug: "vendita-proprieta-malta-guida-completa-2026"
 lang: it
 ---
 
-# Vendita di Proprietà a Malta: Guida Completa 2026
+Vendere un immobile a Malta nel 2026 è un'operazione che può generare un ritorno significativo, purché si affronti il processo con la giusta preparazione. Il mercato maltese è in salute nelle sue fasce premium: le ville e i penthouse a Sliema, St. Julian's e Valletta continuano ad attrarre acquirenti internazionali disposti a pagare prezzi elevati, e la domanda da parte di espatriati, pensionati europei e acquirenti che utilizzano il Malta Permanent Residency Programme rimane sostenuta. Questa guida ti accompagna attraverso ogni fase della vendita, dalla valutazione iniziale all'atto notarile finale, con tutti i numeri reali che ti servono per prendere decisioni informate.
 
-Che tu stia vendendo una casa di famiglia, un appartamento di investimento o una villa di lusso, comprendere il processo di vendita immobiliare maltese può farti risparmiare migliaia di euro e mesi di frustrazione. Questa guida copre tutto, dalla valutazione all'atto finale.
+## Panoramica del Mercato Immobiliare di Malta nel 2026
 
-## Panoramica: Come Funziona la Vendita a Malta?
+Il mercato immobiliare maltese nel 2026 mostra un andamento differenziato a seconda delle aree geografiche e delle fasce di prezzo. Nelle zone prime — Sliema, St. Julian's, Portomaso, Tigne Point, Valletta — la domanda supera l'offerta di qualità, e gli immobili ben posizionati e presentati correttamente ricevono offerte serie entro 6-10 settimane dalla messa in vendita. Il tempo medio dalla firma del contratto preliminare (konvenju) al rogito finale si aggira tra i 3 e i 6 mesi. Nel segmento lusso, sopra i 700.000 euro, i tempi si allungano perché il bacino di acquirenti è più ristretto ma genuinamente internazionale: tedeschi, francesi, italiani, britannici e acquirenti del Medio Oriente sono tutte presenze reali sul mercato maltese.
 
-Il processo di vendita a Malta segue ampiamente questi passaggi:
+Gozo rappresenta un capitolo a parte. L'isola sorella attrae acquirenti che cercano proprietà di carattere, masserie ristrutturate, uno stile di vita più lento. Il mercato è meno liquido rispetto a Malta e la sensibilità al prezzo è più marcata, ma le proprietà di carattere ben ristrutturate in villaggi come Xagħra, Nadur e Sannat continuano a spuntare prezzi solidi. I venditori a Gozo devono pianificare tempi più lunghi: da 4 a 12 mesi è una stima realistica dalla pubblicazione dell'annuncio alla firma dell'atto. Nelle zone interne di Malta e nei centri abitati minori le condizioni sono più equilibrate, con maggiore potere contrattuale in mano agli acquirenti.
 
-1. **Valutazione e Prezzo** – Stabilire il valore di mercato
-2. **Scegliere un Agente** – O vendere privatamente
-3. **Marketing e Visite** – Pubblicizzare e mostrare la proprietà
-4. **Ricevere e Negoziare Offerte** – Concordare prezzo e termini
-5. **Firma del Konvenju** – Accordo preliminare vincolante
-6. **Due Diligence** – Il notaio dell'acquirente conduce le ricerche (3-6 mesi)
-7. **Atto Finale** – Trasferimento della proprietà e ricezione del pagamento
+## Come Determinare il Prezzo Giusto per la Tua Proprietà
 
-## Passo 1: Quanto Vale la Tua Proprietà?
+Stabilire il prezzo di listino corretto è la decisione più importante che farai come venditore. Un prezzo troppo alto non solo rallenta la vendita, ma può danneggiarla in modo permanente: a Malta, dove il mercato è piccolo e la rete tra agenti e acquirenti è fitta, un immobile sopravvalutato viene notato, ignorato, e poi associato a difficoltà quando il prezzo scende, il che porta paradossalmente a realizzare un prezzo finale più basso di quello che si sarebbe ottenuto con una valutazione corretta fin dall'inizio.
 
-### Ottenere una Valutazione Professionale
+| Metodo di Valutazione | Costo Tipico | Accuratezza |
+|---|---|---|
+| Perizia del Perit (Architetto) | €300–800 | Alta — base per mutui e usi legali |
+| Valutazione gratuita dell'agente | Gratuita | Buona — basata su vendite comparabili |
+| Ricerca di atti notarili passati | €50–100 | Mostra prezzi di vendita precedenti |
+| Stima online | Gratuita | Bassa — dati limitati su Malta |
 
-Ci sono diversi modi per stabilire il valore di mercato della tua proprietà:
+Il metodo più affidabile è combinare una perizia del perit con le valutazioni di almeno due agenti specializzati nella tua area. Confronta le tre cifre: se sono entro il 10% l'una dall'altra, hai una buona lettura del mercato. Se divergono significativamente, indaga il motivo prima di fissare il prezzo.
 
-| Metodo | Costo | Accuratezza |
-|--------|------|-------------|
-| **Valutazione del Perit (Architetto)** | €300-€600 | Alta – richiesta per scopi bancari/giudiziari |
-| **Perizia dell'Agente** | Gratuita (di solito) | Buona – basata su vendite comparabili |
-| **Stima Online** | Gratuita | Bassa – Malta ha dati sui prezzi limitati |
-| **Ricerca del Catasto Notarile** | €50-€100 | Mostra i prezzi di vendita precedenti |
+## Scegliere l'Agente Immobiliare Giusto
 
-> **La Nostra Raccomandazione:** Ottieni sia una valutazione del perit SIA due perizie dell'agente. Confronta le tre cifre. Se sono entro il 10% l'una dall'altra, prezza alla cifra dell'agente più bassa per una vendita più rapida.
+A Malta, il venditore paga la commissione dell'agente. La tariffa standard è del 3-5% più IVA al 18%, con un'aliquota effettiva tra il 3,54% e il 5,90% sul prezzo di vendita. Su un immobile da 600.000 euro con commissione al 4%, la commissione lorda ammonta a 24.000 euro più 4.320 euro di IVA, per un totale di 28.320 euro. La commissione è dovuta solo al rogito finale: se la vendita non va a buon fine prima dell'atto, non paghi.
 
-### Fattori Che Influenzano il Prezzo a Malta
+| Struttura Commissione | Aliquota + IVA | Note |
+|---|---|---|
+| Standard (multi-agenzia) | 5% + 18% IVA | Più comune |
+| Agenzia esclusiva | 3,5–4% + 18% IVA | Periodo di esclusiva 3–6 mesi |
+| Proprietà di lusso (>€700k) | 2,5–3,5% + 18% IVA | Negoziabile |
+| Doppia agenzia | 5% suddiviso tra agenti | Meno frequente |
 
-1. **Posizione, posizione, posizione** – Il lungomare di Sliema rispetto a una strada secondaria di Sliema può significare una differenza di prezzo del 40%
-2. **Piano** – I piani alti comandano un premio del 10-20% per la vista mare
-3. **Spazio esterno** – Una terrazza sul tetto o un giardino possono aggiungere €50.000-€150.000
-4. **Parcheggio** – Un garage aggiunge €30.000-€50.000 nelle aree urbane
-5. **Permessi** – Le proprietà con aggiunte non autorizzate vengono vendute a sconto (o non vengono vendute affatto)
-6. **Condizione** – Le proprietà ristrutturate si vendono più velocemente e a prezzi premium
-7. **Stato SDA** – Le proprietà nelle Aree Specialmente Designate comandano un premio grazie all'accesso illimitato per gli acquirenti stranieri
+Le principali agenzie con presenza internazionale a Malta includono Frank Salt Real Estate (la più grande per volume), Engel & Völkers (specializzata nel lusso), RE/MAX Malta, Dhalia Real Estate e Eureka Real Estate. Per proprietà di carattere a Gozo, considera agenzie con presenza locale specializzata: conosceranno il mercato dell'isola meglio di un'agenzia generalista con sede a Malta.
 
-### Strategia di Prezzo
+## Preparare la Proprietà per la Vendita
 
-- **Prezzo di mercato** – Tempo medio di vendita: 3-6 mesi
-- **5-10% sopra il mercato** – Tempo medio: 6-12 mesi (comune a Malta)
-- **5% sotto il mercato** – Vendita rapida entro 1-3 mesi (crea urgenza)
-- **Asta** – Per vendite in difficoltà o proprietà uniche
+Una proprietà presentata bene si vende più velocemente e a un prezzo più alto. Non è necessario fare una ristrutturazione completa, ma alcuni interventi minimi hanno un impatto sproporzionato sulla percezione dell'acquirente. La pulizia professionale (€200-500 a seconda delle dimensioni) è il punto di partenza: un immobile pulito e privo di disordine personale fotografa meglio, sembra più grande e trasmette l'impressione che sia stato curato.
 
-## Passo 2: Scegliere un Agente (o Vendere Privatemente)
+Una mano di vernice nelle tinte neutre è probabilmente l'investimento con il ritorno più alto in vista di una vendita. Il costo varia tra €800 e €3.000 a seconda delle dimensioni, ma l'impatto sulla prima impressione è enorme. Riparare piccoli difetti — rubinetti che perdono, piastrelle rotte, serrature difettose — è altrettanto importante: gli acquirenti li interpretano come segnali di manutenzione trascurata e iniziano a chiedersi cosa non si vede. Invece, una cucina o un bagno funzionanti ma datati non meritano necessariamente una ristrutturazione completa prima della vendita: i costi raramente si recuperano interamente, e molti acquirenti preferiscono personalizzare secondo il proprio gusto.
 
-### Lavorare con Agenti Immobiliari
+## La Fotografia Professionale È Imprescindibile
 
-A Malta, il venditore di solito paga la commissione dell'agente:
+Nel 2026, oltre il 90% degli acquirenti inizia la ricerca su portali online come property.com.mt e maltapark.com. Le foto di un immobile sono il suo biglietto da visita digitale: foto scadenti significano zero richieste, indipendentemente da quanto sia buono il prezzo. Il costo di un fotografo immobiliare professionista a Malta varia tra €300 e €800 per una sessione completa, e spesso è incluso nel pacchetto dell'agente — verificalo prima di firmare il mandato.
 
-| Struttura Commissione | Tasso | Note |
-|----------------------|-------|------|
-| Commissione Standard | 5% + IVA (18%) | La più comune |
-| Agenzia Esclusiva | 3,5-4% + IVA | Periodo di esclusività (3-6 mesi) |
-| Premium/Lusso | 3-5% + IVA | Negoziabile per proprietà di alto valore |
-| Doppia Agenzia | 5% diviso | Due agenti si dividono la commissione |
+Per proprietà sopra i 400.000 euro, il video walkthrough e le riprese con drone sono ormai standard. Un video professionale di 2-3 minuti che mostri gli interni, gli esterni e le vedute aeree della posizione trasforma l'esperienza di un acquirente internazionale che vede decine di annunci online prima di decidere quali visitare di persona. Il costo di un pacchetto video più drone si aggira tra €500 e €1.500. Se il tuo agente non lo propone, consideralo un servizio a parte.
 
-### Agenzia Esclusiva vs Multi-Agenzia
+## Certificato di Prestazione Energetica (EPC): Obbligatorio per Legge
 
-| Fattore | Esclusiva | Multi-Agenzia |
-|---------|-----------|---------------|
-| Motivazione Agente | Alta (commissione garantita) | Inferiore (competizione con altri) |
-| Investimento Marketing | L'agente spende di più in promozione | Investimento minimo per agente |
-| Tuo Sforzo | Punto di contatto unico | Gestire più agenti |
-| Durata Tipica | Clausola di esclusività di 3-6 mesi | Aperta |
-| Ideale Per | Proprietà premium/lusso | Appartamenti standard |
+Il Certificato di Prestazione Energetica (EPC) è un requisito legale per tutti gli immobili venduti a Malta. Se la proprietà non ha già un EPC valido, devi ottenerlo prima di pubblicare l'annuncio. Un tecnico certificato ispezionerà l'immobile e rilascerà una classificazione energetica da A (più efficiente) a G (meno efficiente). Il costo si aggira tra €150 e €350 per un appartamento o una casa di dimensioni standard.
 
-### Vendita Privata
+Molte proprietà maltesi di vecchia costruzione ottengono classificazioni tra D e G. Questo non scoraggerà necessariamente gli acquirenti — è la norma per il patrimonio edilizio dell'isola — ma potresti dover considerare l'impatto sui futuri costi energetici nella trattativa. Le proprietà di nuova costruzione o recentemente ristrutturate con sistemi moderni raggiungono più facilmente le classificazioni B o C.
 
-Puoi vendere senza un agente, risparmiando la commissione del 5%. Tuttavia:
-- Gestisci tutte le visite, le negoziazioni e le scartoffie
-- Esposizione ridotta agli acquirenti internazionali
-- Nessun marketing professionale (fotografia, portali, social media)
-- Hai ancora bisogno di un notaio per il processo legale
+## Le Imposte sulla Vendita di Immobili a Malta
 
-> **Verdetto:** Per proprietà superiori a €500.000 o con appeal per acquirenti internazionali, usa un agente. L'esposizione e l'esperienza nella negoziazione di solito ripagano la commissione.
+Il sistema fiscale maltese non prevede una classica imposta sulle plusvalenze immobiliari. Al suo posto, i venditori pagano un'**Imposta Sostitutiva Finale (Final Withholding Tax — FWT)** calcolata sull'intero prezzo di vendita, non sul profitto. Questa è una distinzione cruciale: anche se vendi in perdita, l'FWT è comunque dovuta.
 
-## Passo 3: Preparare la Tua Proprietà
+| Tipo di Trasferimento | Aliquota FWT |
+|---|---|
+| Proprietà acquistata prima del 2004 | 5% del prezzo di vendita |
+| Proprietà acquistata nel 2004 o dopo | 8% del prezzo di vendita |
+| Trasferimento tra familiari (fino al 3° grado) | 5% del prezzo di vendita |
+| Trasferimento da eredità | 5% del prezzo di vendita |
+| Proprietà AIP venduta da straniero | 12% del prezzo di vendita |
+| Proprietà aziendale | 10% del prezzo di vendita |
+| Residenza principale (esenzione) | 0% (condizioni applicabili) |
 
-### Home Staging – Edizione Malta
+L'**esenzione per la residenza principale** è la più importante agevolazione disponibile ai venditori maltesi. Se hai vissuto nell'immobile come residenza principale per almeno 3 anni consecutivi e vendi entro 12 mesi dal trasferimento della residenza altrove, non paghi FWT. Su una vendita da 600.000 euro, questo equivale a un risparmio di 48.000 euro. Su un immobile da un milione, il risparmio è di 80.000 euro. Pianificare intorno a questa esenzione è probabilmente la decisione finanziaria più significativa che un proprietario maltese può fare prima di vendere.
 
-Lo staging professionale è raro a Malta ma può accelerare significativamente le vendite:
+## I Costi Totali del Venditore
 
-1. **Decluttering spietato** – Rimuovi oggetti personali, foto di famiglia, mobili in eccesso
-2. **Pulizia profonda** – La pulizia professionale costa €150-€300 e fa una grande impressione
-3. **Riparare le basi** – Rubinetti che perdono, piastrelle rotte, vernice scrostata sono elementi che fanno fallire le trattative durante le visite
-4. **Luce naturale** – Apri tutte le tapparelle e le persiane. Il sole di Malta è il tuo miglior strumento di vendita
-5. **Appeal esterno** – Pulisci la porta d'ingresso, metti vasi, ripara il campanello
-6. **Spazi esterni** – Arreda balconi e terrazze con mobili. Questo è ciò che vende
+| Voce di Costo | Importo Tipico |
+|---|---|
+| FWT (8%, acquisto dal 2004) | 8% del prezzo di vendita |
+| Commissione agente (4% + IVA) | 4,72% del prezzo di vendita |
+| Spese notarili (quota venditore) | €1.000–3.000 |
+| Certificato EPC | €150–350 |
+| Fotografia professionale | €300–800 |
+| Totale senza esenzione residenza | ~13–14% del prezzo di vendita |
+| Totale con esenzione residenza | ~5–6% del prezzo di vendita |
 
-### Fotografia Professionale
+Un esempio concreto: vendi un appartamento a Sliema per 500.000 euro, acquistato nel 2010. FWT all'8%: 40.000 euro. Commissione agente al 4% + IVA: 23.600 euro. Notaio ed EPC: 2.500 euro. Totale costi: 66.100 euro (13,2% del prezzo). Incasso netto: 433.900 euro. Con l'esenzione residenza principale: paghi solo 23.600 euro di commissione più 2.500 euro di spese, per un incasso netto di 473.900 euro. La differenza è di 40.000 euro — il valore della pianificazione fiscale.
 
-**Questo non può essere sottolineato abbastanza.** Nel 2026, oltre il 90% degli acquirenti inizia la ricerca online. Foto scadenti significano zero visite.
+## Il Processo Legale dalla A alla Z
 
-Prevedi un budget di €200-€500 per la fotografia immobiliare professionale che includa:
-- Scatti interni grandangolari
-- Fotografia con drone (soprattutto per le viste mare)
-- Scatti esterni al crepuscolo/ora d'oro
-- Pianta (se possibile)
+Il processo di vendita immobiliare a Malta si articola in fasi ben definite. La prima è la firma del mandato con l'agente e l'avvio delle attività di marketing. Dopo le visite e la negoziazione di un'offerta, si passa alla fase legale: il venditore e l'acquirente scelgono i rispettivi notai (è possibile averne uno solo condiviso per operazioni semplici).
 
-## Le Implicazioni Fiscali della Vendita
+Il passo formale successivo è il **Konvenju**, il contratto preliminare firmato davanti al notaio. In questa fase, l'acquirente paga il 10% di deposito (tipicamente trattenuto dal notaio) e versa l'1% di imposta provvisoria sul prezzo di vendita. Il venditore si impegna a non cedere l'immobile ad altri durante il periodo del konvenju. La durata tipica tra il konvenju e il rogito finale è di 3-6 mesi, durante i quali il notaio dell'acquirente effettua le ricerche ipotecarie e il compratore eventualmente finalizza il finanziamento.
 
-### Plusvalenza / Imposta sul Trasferimento di Proprietà
+Il giorno del **rogito finale**, il notaio gestisce tutti i pagamenti: il venditore riceve il saldo del 90% del prezzo, il notaio trattiene e versa l'FWT e le spese di registro. Chiavi, telecomandi e documentazione tecnica vengono consegnati all'acquirente. L'operazione è conclusa.
 
-Malta non ha una tradizionale "tassazione sulle plusvalenze" sugli immobili. Invece, i venditori pagano un'**Imposta Sostitutiva Finale (FWT)** o possono optare per il regime fiscale ordinario.
+## Tempistiche Reali di Vendita a Malta
 
-#### Opzione A: Imposta Sostitutiva Finale (la più comune)
+| Tipo di Immobile | Area | Tempo Medio (Annuncio → Konvenju) |
+|---|---|---|
+| Appartamento 2 camere | Sliema / St. Julian's | 2–4 mesi |
+| Appartamento 3 camere | Sliema / St. Julian's | 3–5 mesi |
+| Penthouse con vista mare | Sliema / Tigne | 3–6 mesi |
+| Villa / Casa indipendente | Attard / Madliena | 4–8 mesi |
+| Palazzo / Proprietà di carattere | Valletta / Mdina | 6–12+ mesi |
+| Masseria ristrutturata | Gozo | 4–12 mesi |
 
-| Tipo di Trasferimento Proprietà | Aliquota Fiscale |
-|--------------------------------|------------------|
-| Proprietà acquisita **prima del 2004** | 5% del prezzo di vendita |
-| Proprietà acquisita **nel 2004 o dopo** | 8% del prezzo di vendita |
-| Trasferimento tra **membri della famiglia** (fino alla terza generazione) | 5% del prezzo di vendita |
-| Trasferimento da un patrimonio (eredità) | 5% del prezzo di vendita |
-| Proprietà **AIP** (venduta da straniero) | 12% del prezzo di vendita |
-| Trasferimento di **proprietà aziendale** | 10% del prezzo di vendita |
+## Strategie per Massimizzare il Prezzo di Vendita
 
-L'FWT è calcolato sul **prezzo di vendita intero**, non sul profitto. Questa è una distinzione importante: anche se vendi in perdita, devi comunque pagare l'FWT.
+Oltre alla presentazione dell'immobile, esistono strategie specifiche al mercato maltese che possono incidere significativamente sul prezzo finale. La prima è la stagionalità: il momento migliore per pubblicare un annuncio è tra febbraio e maggio. Gli acquirenti europei pianificano in primavera i loro acquisti estivi, le visite a Malta sono al massimo, e la concorrenza tra potenziali compratori è più alta. Un immobile pubblicato ad agosto affronta un mercato molto più silenzioso.
 
-#### Opzione B: Imposta sul Reddito Standard sul Profitto
+La seconda strategia è il posizionamento del prezzo. Immobili prezzati correttamente al valore di mercato sin dal primo giorno vendono in media il 60% più velocemente di quelli che subiscono riduzioni successive. Ogni riduzione di prezzo segnala all'acquirente che c'è qualcosa che non va, o che il venditore è in difficoltà — entrambe le percezioni indeboliscono la posizione negoziale. La terza strategia è la qualità del marketing: investire in fotografia professionale, video e descrizioni in più lingue amplia significativamente il bacino di potenziali acquirenti internazionali.
 
-Puoi scegliere di pagare l'imposta sul reddito sul profitto effettivo (prezzo di vendita meno prezzo di acquisto meno spese ammissibili) invece dell'FWT. Questo può essere vantaggioso se:
-- Stai vendendo con un piccolo profitto o in perdita
-- Hai effettuato miglioramenti significativi che possono essere documentati
-- Il tuo reddito combinato ti colloca in una fascia fiscale inferiore
+## Vendere Privatamente Senza Agente
 
-Le detrazioni ammissibili includono:
-- Prezzo di acquisto originale
-- Tassa di bollo pagata al momento dell'acquisto
-- Spese notarili pagate al momento dell'acquisto
-- Costo dei miglioramenti documentati (con ricevute/permessi)
+È possibile vendere senza un agente immobiliare, risparmiando la commissione del 4-5% più IVA. Tuttavia, questa scelta comporta la gestione autonoma di tutte le visite, le negoziazioni e la documentazione, oltre a una riduzione significativa dell'esposizione verso acquirenti internazionali che normalmente si rivolgono alle agenzie. Il processo legale richiede comunque un notaio. Per proprietà standard in zone ad alta domanda dove si conosce già un potenziale acquirente, la vendita privata può avere senso. Per proprietà di valore superiore a 500.000 euro o con un profilo internazionale, l'investimento in un agente di qualità si ripaga quasi sempre attraverso un prezzo finale più alto e una trattativa più fluida.
 
-> **Esempio:** Hai acquistato per €300.000, hai speso €50.000 in ristrutturazione e vendi per €400.000. Il tuo profitto è di €50.000. Con l'FWT (8%): pagheresti €32.000 sul prezzo di vendita. Con l'imposta sul reddito: potresti pagare meno a seconda della tua fascia fiscale. **Consultare sempre un consulente fiscale.**
+## Obblighi di Documentazione del Venditore
 
-### Altri Costi per il Venditore
+Prima di procedere alla vendita, il venditore deve raccogliere e mettere a disposizione del notaio una serie di documenti fondamentali. L'atto di acquisto originale è il punto di partenza: senza di esso il notaio non può verificare la catena di proprietà. Tutti i permessi di pianificazione relativi all'immobile — incluse eventuali aggiunte, terrazze o modifiche strutturali — devono essere validi e conformi a quanto realizzato: le discrepanze tra permessi e stato reale dell'immobile sono tra le cause più comuni di ritardi o crollo delle trattative.
 
-| Costo | Importo Tipico |
-|------|----------------|
-| Commissione Agente (5% + IVA) | €25.000 + IVA su vendita di €500k |
-| Spese Notarili (quota venditore) | €500-€1.500 |
-| Certificato di Prestazione Energetica (EPC) | €100-€250 |
-| Affitto del Terreno non saldato | Variabile – tipicamente €100-€500/anno |
-| Spese Condominiali (non saldate) | Devono essere saldate prima della vendita |
-
-## Il Processo Legale
-
-### Konvenju (Prospettiva del Venditore)
-
-Come venditore, quando il konvenju viene firmato:
-- Ricevi il **deposito del 10%** (trattenuto dal notaio)
-- Devi **liberare** entro la data dell'atto finale concordata
-- Non puoi vendere a un altro acquirente durante il periodo del konvenju
-- Se vieni meno agli obblighi, devi restituire il deposito **più** una penale uguale del 10%
-
-### Obblighi di Due Diligence del Venditore
-
-Per evitare ritardi, prepara questi documenti in anticipo:
-1. **Prova di proprietà** – atto di acquisizione originale
-2. **Permessi di pianificazione** – per la proprietà e qualsiasi aggiunta/modifica
-3. **Certificato dell'architetto** – se la proprietà è stata recentemente costruita o ristrutturata
-4. **Estratti conto utenze ARMS** – che mostrano che i conti sono aggiornati
-5. **Dichiarazioni condominiali** – prova che le quote sono pagate
-6. **Ricevute dell'affitto del terreno** – se applicabile (proprietà enfiteutiche)
-
-### Atto Finale
-
-Il giorno dell'atto, tu:
-1. Ricevi il **restante 90%** del prezzo di acquisto
-2. Consegni chiavi, telecomandi, manuali
-3. Il notaio gestisce tutti i pagamenti fiscali e le registrazioni
-4. La proprietà viene ufficialmente trasferita all'acquirente
-
-## Quanto Tempo Ci Vuole per Vendere?
-
-Tempi medi di vendita a Malta (2026):
-
-| Tipo di Proprietà | Luogo | Tempo Medio di Vendita |
-|-------------------|-------|------------------------|
-| Appartamento 2 camere | Sliema/St. Julian's | 2-4 mesi |
-| Appartamento 3 camere | Sliema/St. Julian's | 3-5 mesi |
-| Villa/Casa | Attard/Madliena | 4-8 mesi |
-| Palazzo/Carattere | Valletta/Mdina | 6-12+ mesi |
-| Nuova Costruzione (su progetto) | Varie | 1-3 mesi (sviluppatore) |
-| Proprietà di investimento (affittata) | Qualsiasi | 3-6 mesi |
-
-> **Suggerimento:** Le proprietà prezzate correttamente fin dal primo giorno vendono il 60% più velocemente di quelle che subiscono molteplici riduzioni di prezzo.
+Gli estratti conto delle utenze ARMS devono essere aggiornati. Le quote condominiali devono essere saldate. Se l'immobile è gravato da un'ipoteca, la banca deve essere coinvolta nel processo per consentire il trasferimento. Le ricevute dell'affitto del terreno (enfiteusi) vanno prodotte se applicabili. Avere tutta questa documentazione pronta prima ancora di pubblicare l'annuncio evita sorprese spiacevoli nelle fasi finali.
 
 ## Domande Frequenti
 
-### Quante tasse pago quando vendo una proprietà a Malta?
-I venditori pagano in genere una Tassa di Ritenuta Finale del 5% (proprietà acquisita prima del 2004) o dell'8% (acquisita nel 2004 o dopo) del prezzo di vendita intero. Gli stranieri che possiedono una proprietà acquistata con AIP pagano il 12%. In alternativa, è possibile scegliere di pagare l'imposta sul reddito sul profitto effettivo, che può essere inferiore in alcuni casi.
+**Q: Quante tasse pago quando vendo una proprietà a Malta?**
 
-### Ho bisogno di un agente per vendere la mia proprietà a Malta?
-No, puoi vendere privatamente. Tuttavia, l'utilizzo di un agente regolamentato IPS ti dà accesso al marketing professionale, al loro database di acquirenti e all'esperienza di negoziazione. La commissione standard è del 5% + IVA, pagata dal venditore.
+L'imposta principale è la Final Withholding Tax (FWT): 8% del prezzo di vendita per immobili acquistati dal 2004, 5% per quelli acquistati prima del 2004. Gli stranieri con permesso AIP pagano il 12%. Se l'immobile è stato la tua residenza principale per almeno 3 anni consecutivi, puoi beneficiare dell'esenzione completa dall'FWT. A queste imposte si aggiunge la commissione dell'agente (4-5% più IVA) e le spese notarili.
 
-### Quanto tempo ci vuole per vendere una proprietà a Malta?
-Gli appartamenti prezzati correttamente nelle aree popolari (Sliema, St. Julian's) di solito vendono entro 2-5 mesi. Ville e case di carattere richiedono 4-12 mesi. Le proprietà sopravvalutate possono rimanere sul mercato per 12+ mesi.
+**Q: Ho bisogno di un agente per vendere a Malta?**
 
-### Quali documenti devo fornire per vendere la mia proprietà?
-È necessario l'atto di acquisizione originale, i permessi di pianificazione validi per tutte le strutture, i recenti estratti conto delle utenze, le ricevute delle quote condominiali e un Certificato di Prestazione Energetica (EPC). Averli pronti prima dell'inserzione evita ritardi.
+No, la vendita privata è legalmente possibile. Tuttavia, per proprietà sopra i 400.000 euro o con appeal internazionale, un agente qualificato porta accesso a acquirenti esteri, marketing professionale e competenza negoziale che tipicamente più che compensano la commissione con un prezzo finale più alto e tempi di vendita più brevi.
 
-### Posso vendere una proprietà che ho acquistato con un permesso AIP?
-Sì, ma la proprietà AIP comporta una Tassa di Ritenuta Finale del 12% sul prezzo di vendita. Se si vende a un altro straniero al di fuori di una SDA, l'acquirente avrà bisogno del proprio permesso AIP.
+**Q: Quanto tempo ci vuole per vendere una proprietà a Malta?**
 
-## Elenca la Tua Proprietà con Malta Luxury Real Estate
+Nelle aree prime (Sliema, St. Julian's), gli immobili prezzati correttamente vendono in 2-5 mesi. Ville e proprietà di carattere richiedono 4-12 mesi. Proprietà sopravvalutate possono restare sul mercato per anni senza ricevere offerte serie.
 
-Raggiungi acquirenti internazionali qualificati attraverso il nostro portale premium, che offre marketing mirato, supporto fotografico professionale e gestione diretta delle richieste.
+**Q: Posso scegliere di pagare le tasse sul profitto invece che sull'intero prezzo di vendita?**
+
+Sì. In alternativa alla FWT, puoi optare per l'imposta sul reddito ordinaria calcolata sul profitto effettivo (prezzo di vendita meno prezzo di acquisto meno spese documentate). Questo può essere vantaggioso se hai un profitto basso o se hai sostenuto costi di ristrutturazione significativi e documentati. Consulta sempre un commercialista prima di scegliere.
+
+**Q: Cosa succede se il compratore si ritira dopo il konvenju?**
+
+Se il compratore si ritira senza giustificato motivo, perde il deposito del 10% versato. Questo importo va al venditore. Se invece è il venditore a ritirarsi, deve restituire il deposito e pagare una penale equivalente a un ulteriore 10% del prezzo di vendita concordato.
+
+**Q: Posso vendere un immobile acquistato con permesso AIP?**
+
+Sì. L'immobile acquistato con permesso AIP può essere rivenduto. Se lo vendi a un altro straniero non residente in una zona non-SDA, l'acquirente avrà bisogno del proprio permesso AIP. L'aliquota FWT applicabile alla vendita da parte di uno straniero è del 12%.
+
+**Q: Il notaio deve essere lo stesso per venditore e acquirente?**
+
+Non necessariamente. A Malta è comune — ma non obbligatorio — che le parti condividano un unico notaio per operazioni semplici. Per situazioni complesse (comproprietà, eredità, immobili con vincoli) è consigliabile avere ciascuno il proprio notaio.
+
+**Q: Quali sono i rischi principali nella vendita di una proprietà a Malta?**
+
+I rischi più comuni sono: documentazione incompleta (permessi mancanti, ipoteche non segnalate) che emerge durante le ricerche notarili e blocca il rogito; sopravvalutazione che porta a mesi di immobilità sul mercato; scelta di un agente non specializzato che non raggiunge il target di acquirenti giusto; mancata pianificazione fiscale (perdita dell'esenzione per residenza principale).
+
+**Q: Come funziona la vendita di un appartamento in condominio?**
+
+La vendita di un'unità condominiale richiede che tutte le quote condominiali siano saldate prima del rogito. Il venditore deve fornire prova di pagamento regolare. Le regole del condominio (incluse eventuali restrizioni sugli affitti brevi) devono essere comunicate all'acquirente. Se sono previsti lavori straordinari già approvati dall'assemblea, questi potrebbero diventare oggetto di negoziazione sul prezzo.
+
+**Q: È un buon momento per vendere a Malta nel 2026?**
+
+Per le proprietà nelle zone prime e nel segmento lusso, sì. La domanda internazionale è sostenuta, i prezzi nelle aree prime hanno continuato a salire, e il MPRP continua ad attrarre acquirenti dall'estero. Per proprietà nelle zone interne o nel segmento sotto i 200.000 euro, il mercato è più equilibrato e i tempi di vendita più lunghi.
+
+## Contatta Malta Luxury Real Estate per Vendere la Tua Proprietà
+
+Se stai considerando di mettere in vendita la tua proprietà a Malta, il team di Malta Luxury Real Estate può offrirti una valutazione gratuita, una strategia di marketing personalizzata e accesso diretto a una rete di acquirenti internazionali qualificati. Operiamo nelle zone prime di Malta e Gozo, con un'esperienza specifica nel segmento residenziale di prestigio. Contattaci all'indirizzo info@maltaluxuryrealestate.com per un primo colloquio senza impegno: risponderemo entro un giorno lavorativo.

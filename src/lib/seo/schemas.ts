@@ -1,4 +1,4 @@
-import type { Location, LocationStats } from '../../types';
+﻿import type { Location, LocationStats } from '../../types';
 
 export function formatPrice(price: number | null): string {
     if (!price) return 'N/A';
@@ -36,7 +36,7 @@ export function generateCityFAQSchema(
                 acceptedAnswer: {
                     '@type': 'Answer',
                     text: location.isLuxuryHub
-                        ? `Yes, ${location.nameEn} is one of Malta's prime locations for international buyers. Non-EU citizens can purchase property in Special Designated Areas (SDA) without requiring an AIP permit. For standard properties outside SDAs, a one-time AIP permit (€233) is required. EU citizens who have lived in Malta for 5+ years face fewer restrictions.`
+                        ? `Yes, ${location.nameEn} is one of Malta's prime locations for international buyers. Non-EU citizens can purchase property in Special Designated Areas (SDA) without requiring an AIP permit. For standard properties outside SDAs, a one-time AIP permit (â‚¬233) is required. EU citizens who have lived in Malta for 5+ years face fewer restrictions.`
                         : `Non-EU buyers require an Acquisition of Immovable Property (AIP) permit for properties outside Special Designated Areas (SDA). EU citizens with 5+ years residency in Malta face fewer restrictions. SDA developments allow unrestricted foreign ownership.`,
                 },
             },
@@ -45,7 +45,7 @@ export function generateCityFAQSchema(
                 name: `What rental yields can I expect in ${location.nameEn}?`,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: `Estimated gross rental yields in ${location.nameEn} range from 4% to 6.5% annually, depending on property type and location within the area. Seafront apartments and furnished units typically achieve higher returns (5%–7%). Short-let properties can yield even more during peak tourist season (May–October).`,
+                    text: `Estimated gross rental yields in ${location.nameEn} range from 4% to 6.5% annually, depending on property type and location within the area. Seafront apartments and furnished units typically achieve higher returns (5%â€“7%). Short-let properties can yield even more during peak tourist season (Mayâ€“October).`,
                 },
             },
             {
@@ -61,7 +61,7 @@ export function generateCityFAQSchema(
                 name: `What are the buying costs when purchasing property in ${location.nameEn}?`,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: `Standard buyer costs in Malta include: Stamp Duty of 5% (reduced to 3.5% on the first €200,000 for primary residence), Notary Fees of 1%–1.5%, Search Fees of approximately €300–€600, and an AIP Permit fee of €233 if applicable. First-time buyers enjoy stamp duty exemptions on the first €200,000. Use our Buying Costs Calculator for a personalised breakdown.`,
+                    text: `Standard buyer costs in Malta include: Stamp Duty of 5% (reduced to 3.5% on the first â‚¬200,000 for primary residence), Notary Fees of 1%â€“1.5%, Search Fees of approximately â‚¬300â€“â‚¬600, and an AIP Permit fee of â‚¬233 if applicable. First-time buyers enjoy stamp duty exemptions on the first â‚¬200,000. Use our Buying Costs Calculator for a personalised breakdown.`,
                 },
             },
         ],
@@ -74,11 +74,11 @@ export function generateFilterFAQSchema(
     filteredCount: number
 ) {
     const filterLabels: Record<string, string> = {
-        'under-500k': 'under €500,000',
-        'under-1m': 'under €1,000,000',
-        '500k-1m': '€500,000 – €1,000,000',
-        'over-1m': 'over €1,000,000',
-        'over-3m': 'over €3,000,000',
+        'under-500k': 'under â‚¬500,000',
+        'under-1m': 'under â‚¬1,000,000',
+        '500k-1m': 'â‚¬500,000 â€“ â‚¬1,000,000',
+        'over-1m': 'over â‚¬1,000,000',
+        'over-3m': 'over â‚¬3,000,000',
         'sea-view': 'with sea view',
         'with-pool': 'with a private pool',
         'new-build': 'new-build',
@@ -108,10 +108,25 @@ export function generateFilterFAQSchema(
                 name: `What is the best time to buy ${filterLabel} property in ${cityName}?`,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: `The Maltese property market is active year-round, but prices tend to be more negotiable during the quieter winter months (November–February). Spring and summer see more listings and faster transactions. For investment properties, buying before the high season allows you to capitalise on peak rental demand.`,
+                    text: `The Maltese property market is active year-round, but prices tend to be more negotiable during the quieter winter months (Novemberâ€“February). Spring and summer see more listings and faster transactions. For investment properties, buying before the high season allows you to capitalise on peak rental demand.`,
                 },
             },
         ],
+    };
+}
+
+export function generateArticleFAQSchema(faqs: { question: string; answer: string }[]) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+            },
+        })),
     };
 }
 
@@ -152,27 +167,27 @@ export function generateArticleSchema(article: {
         author: {
             '@type': 'Organization',
             name: 'Malta Luxury Real Estate',
-            url: 'https://maltaluxuryrealestate.com',
+            url: 'https://www.maltaluxuryrealestate.com',
         },
         publisher: {
             '@type': 'Organization',
             name: 'Malta Luxury Real Estate',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://maltaluxuryrealestate.com/logo.png',
+                url: 'https://www.maltaluxuryrealestate.com/logo.png',
             },
         },
         mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': `https://maltaluxuryrealestate.com/insights/${article.slug}`,
+            '@id': `https://www.maltaluxuryrealestate.com/insights/${article.slug}`,
         },
     };
 }
 
-// ─────────────────────────────────────────
-// LOCAL BUSINESS – dla każdej lokalizacji
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// LOCAL BUSINESS â€“ dla kaĹĽdej lokalizacji
 // Dominacja Google Maps / Local Pack
-// ─────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export function localBusinessSchema(location: {
     nameEn: string
     slug: string
@@ -186,11 +201,11 @@ export function localBusinessSchema(location: {
     return {
         '@context': 'https://schema.org',
         '@type': 'RealEstateAgent',
-        name: `Malta Luxury Real Estate – ${location.nameEn}`,
+        name: `Malta Luxury Real Estate â€“ ${location.nameEn}`,
         description: `Premium property listings in ${location.nameEn}, ${location.island === 'gozo' ? 'Gozo' : 'Malta'
             }. ${location.shortDesc}`,
-        url: `https://maltaluxuryrealestate.com/properties/${location.slug}`,
-        image: 'https://maltaluxuryrealestate.com/og-image.jpg',
+        url: `https://www.maltaluxuryrealestate.com/properties/${location.slug}`,
+        image: 'https://www.maltaluxuryrealestate.com/og-image.jpg',
         address: {
             '@type': 'PostalAddress',
             addressLocality: location.nameEn,
@@ -217,16 +232,16 @@ export function localBusinessSchema(location: {
     }
 }
 
-// ─────────────────────────────────────────
-// HOW-TO – artykuły procesowe
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// HOW-TO â€“ artykuĹ‚y procesowe
 // "How to buy", "How to apply for AIP" etc.
-// ─────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export function howToSchema(params: {
     name: string
     description: string
     steps: { name: string; text: string }[]
     estimatedCost?: string
-    totalTime?: string // ISO 8601 duration, np. "P3M" = 3 miesiące
+    totalTime?: string // ISO 8601 duration, np. "P3M" = 3 miesiÄ…ce
 }) {
     return {
         '@context': 'https://schema.org',
@@ -257,7 +272,7 @@ export function generatePropertySchema(property: any) {
         '@type': 'RealEstateListing',
         name: property.title,
         description: property.description,
-        url: `https://maltaluxuryrealestate.com/properties/${property.id}`,
+        url: `https://www.maltaluxuryrealestate.com/properties/${property.id}`,
         image: property.images[0],
         offeredBy: {
             '@type': 'RealEstateAgent',
@@ -265,3 +280,4 @@ export function generatePropertySchema(property: any) {
         },
     };
 }
+

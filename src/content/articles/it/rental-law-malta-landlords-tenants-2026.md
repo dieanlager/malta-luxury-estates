@@ -251,3 +251,50 @@ Un locatore può solo sfrattare un inquilino per specifiche ragioni legali (manc
 ## Bisogno di Aiuto a Trovare il Vostro Prossimo Investimento in Affitto?
 
 Sfoglia le proprietà in affitto ad alto rendimento attraverso i mercati di affitto principali di Malta, completi di dati sul rendimento stimato e analisi della posizione.
+
+
+## Risoluzione anticipata del contratto e penali
+
+La legge maltese sugli affitti prevede procedure specifiche per la risoluzione anticipata del contratto sia da parte del locatore che del conduttore. Il conduttore può recedere anticipatamente con un preavviso scritto di almeno un mese (per contratti annuali) o tre mesi (per contratti pluriennali), salvo diversa pattuizione contrattuale. Se il recesso avviene senza rispettare il preavviso, il conduttore può essere tenuto a corrispondere l'equivalente del canone per il periodo di preavviso non rispettato.
+
+Il locatore, al contrario, ha possibilità molto limitate di recedere anticipatamente: solo per gravi inadempimenti del conduttore (morosità superiore a tre mesi, danni alla proprietà, uso improprio) e previa procedura formale. La nuova legge ha rafforzato significativamente la posizione del conduttore rispetto al passato, rendendo molto più difficili gli sfratti arbitrari o motivati semplicemente dalla volontà di vendere l'immobile o di aumentare il canone.
+
+## Obblighi di registrazione del contratto di locazione
+
+Dal 2020, tutti i contratti di locazione residenziale a Malta devono essere registrati presso il Malta Tax and Customs Authority entro 21 giorni dalla firma. La mancata registrazione espone sia il locatore che il conduttore a sanzioni. Per il locatore, la registrazione è obbligatoria anche ai fini della corretta dichiarazione dei redditi da locazione e dell'applicazione dell'aliquota ridotta del 15%. Un contratto non registrato non può essere fatto valere come prova in eventuali controversie legali.
+
+La procedura di registrazione online è relativamente semplice attraverso il portale CFR (Commissioner for Revenue). I dati richiesti includono: identità delle parti, indirizzo della proprietà, durata del contratto, importo del canone mensile, e importo del deposito cauzionale. Il contratto registrato genera un numero di riferimento che entrambe le parti devono conservare.
+
+## Gestione delle controversie: l'Aġenzija Kiri
+
+L'Aġenzija Kiri (Rent Agency), istituita nel 2020, è l'organo governativo maltese specializzato nella mediazione e risoluzione delle controversie tra locatori e conduttori. Prima di rivolgersi al tribunale, le parti sono incoraggiate (e in alcuni casi obbligate) a tentare una mediazione attraverso l'Aġenzija Kiri. I procedimenti davanti all'Aġenzija sono più rapidi e meno costosi rispetto alle vie giudiziali ordinarie.
+
+Le controversie più comuni gestite dall'Aġenzija riguardano: restituzione del deposito cauzionale, riparazione di guasti e manutenzioni straordinarie, aumento del canone fuori dagli accordi contrattuali, e recupero di canoni non pagati. Il servizio di mediazione è gratuito per entrambe le parti. Per casi che non trovano risoluzione in mediazione, l'Aġenzija può emettere decisioni vincolanti su alcune questioni specifiche.
+
+## Panoramica dei prezzi di affitto per zona (2026)
+
+| Zona | Monolocale | Bilocale | Trilocale |
+|---|---|---|---|
+| Valletta centro | €900-1.200 | €1.300-1.800 | €1.800-2.500 |
+| Sliema/St. Julian's | €1.000-1.400 | €1.400-2.000 | €2.000-3.000 |
+| Msida/Gzira/Ta'Xbiex | €800-1.000 | €1.100-1.500 | €1.500-2.200 |
+| Birkirkara/San Gwann | €700-900 | €900-1.200 | €1.200-1.700 |
+| Mellieha/Nord Malta | €600-800 | €800-1.100 | €1.100-1.500 |
+| Gozo (Victoria) | €500-700 | €700-1.000 | €900-1.300 |
+
+Il mercato degli affitti a Malta rimane dinamico e competitivo. Per supporto nella gestione dei vostri immobili in affitto o per consulenza sulla normativa aggiornata, il team di Malta Luxury Real Estate è a disposizione a info@maltaluxuryrealestate.com.
+
+
+## Investire nell'affitto residenziale a Malta: prospettive per i proprietari
+
+Per i proprietari che intendono mettere a reddito i propri immobili a Malta, il contesto normativo del 2026 presenta sfide e opportunità. Da un lato, le nuove tutele per i conduttori rendono più difficile la gestione di inquilini problematici; dall'altro, la domanda elevata e il mercato affittuario attivo garantiscono tempi di vacancy ridotti per chi sa scegliere bene gli inquilini e gestire professionalmente i rapporti contrattuali.
+
+La strategia vincente per i proprietari è la selettività nella scelta degli inquilini: richiedere referenze verificabili, buste paga o estratti conto come prova della capacità di pagamento, e condurre un colloquio preliminare prima di procedere alla firma. Un inquilino affidabile, anche a fronte di un canone leggermente inferiore alla massima domanda di mercato, vale enormemente più di una situazione conflittuale con un inquilino problematico.
+
+Per i proprietari non residenti a Malta, affidarsi a un property manager locale non è solo una comodità ma una necessità: la gestione dei rapporti con l'Aġenzija Kiri, la manutenzione ordinaria e straordinaria, la comunicazione con gli inquilini e la gestione degli obblighi fiscali richiedono una presenza fisica sull'isola. Il costo del property management (10-15% dei canoni annui) è ampiamente giustificato dalla tranquillità e dalla professionalità del servizio. Per raccomandazioni sui migliori property manager a Malta, contattateci a info@maltaluxuryrealestate.com.
+ La normativa sugli affitti a Malta continua ad evolversi verso una maggiore formalizzazione e tutela di entrambe le parti — una tendenza positiva per la stabilità del mercato nel lungo periodo.
+
+## Checklist per locatori: conformità legale 2026
+
+Prima di mettere in affitto una proprietà a Malta, il locatore deve verificare: che la proprietà sia in regola con i permessi edilizi e non presenti abusi edilizi; che l'impianto elettrico e idraulico siano funzionanti e sicuri; che siano presenti rilevatori di fumo funzionanti (obbligatori per legge); che il contratto includa tutte le clausole obbligatorie previste dalla Residential Leases Act; che il contratto venga registrato entro 21 giorni dalla firma; che venga rilasciata ricevuta scritta per il deposito cauzionale; e che i redditi da locazione vengano dichiarati e tassati correttamente. La conformità legale non è solo un obbligo — è anche la migliore protezione in caso di controversia con il conduttore.
+ Il rispetto scrupoloso della normativa vigente, combinato con una gestione professionale e relazioni trasparenti con gli inquilini, è la base di un investimento immobiliare redditizio e privo di stress a Malta.

@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, MapPin, Filter, ArrowLeft, Home, SlidersHorizontal } from 'lucide-react';
 import { PROPERTIES } from '../constants';
+import { getAllProperties } from '../lib/data';
 import { PropertyCard } from '../components/PropertyCard';
+import { FeaturedPropertiesSection } from '../components/FeaturedPropertiesSection';
 import { Property } from '../types';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { usePageMeta } from '../lib/seo/meta';
@@ -40,6 +42,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
     currentLang: i18n.language,
   });
 
+  const [allProperties, setAllProperties] = useState<Property[]>(PROPERTIES);
   const [filteredProperties, setFilteredProperties] = useState<Property[]>([]);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [activeTypeFilters, setActiveTypeFilters] = useState<string[]>([]);
@@ -47,19 +50,25 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
   const [activeEPCFilters, setActiveEPCFilters] = useState<string[]>([]);
 
   useEffect(() => {
-    let results = [...PROPERTIES];
+    getAllProperties().then(props => {
+      setAllProperties(props);
+    });
+  }, []);
+
+  useEffect(() => {
+    let results = [...allProperties];
 
     if (query) {
       results = results.filter(p =>
         p.title.toLowerCase().includes(query.toLowerCase()) ||
         p.locationName.toLowerCase().includes(query.toLowerCase()) ||
-        p.description.toLowerCase().includes(query.toLowerCase())
+        (p.description || '').toLowerCase().includes(query.toLowerCase())
       );
     }
 
     if (typeFilter) {
       const types = typeFilter.split(',');
-      results = results.filter(p => types.includes(p.propertyType.toLowerCase().replace(/ /g, '-')));
+      results = results.filter(p => p.propertyType && types.includes(p.propertyType.toLowerCase().replace(/ /g, '-')));
     }
 
     if (featureFilter) {
@@ -78,7 +87,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
 
     // Apply interactive filters
     if (activeTypeFilters.length > 0) {
-      results = results.filter(p => activeTypeFilters.includes(p.propertyType));
+      results = results.filter(p => p.propertyType && activeTypeFilters.includes(p.propertyType));
     }
     if (activeFeatureFilters.includes('Seafront')) {
       results = results.filter(p => p.isSeafront);
@@ -95,7 +104,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
 
     setFilteredProperties(results);
     window.scrollTo(0, 0);
-  }, [query, typeFilter, featureFilter, epcFilter, activeTypeFilters, activeFeatureFilters, activeEPCFilters]);
+  }, [query, typeFilter, featureFilter, epcFilter, activeTypeFilters, activeFeatureFilters, activeEPCFilters, allProperties]);
 
   const toggleTypeFilter = (type: string) => {
     setActiveTypeFilters(prev =>
@@ -275,3 +284,5 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
     </main>
   );
 };
+
+

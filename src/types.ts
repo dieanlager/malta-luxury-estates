@@ -1,4 +1,4 @@
-export type EPCRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G';
+﻿export type EPCRating = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G';
 
 export interface NoiseAssessment {
   score: number; // 1-100 (Higher is quieter)
@@ -17,6 +17,7 @@ export interface PriceHistoryItem {
 
 export interface Property {
   id: string;
+  slug?: string;
   title: string;
   locationName: string;
   locationId: number;
@@ -40,6 +41,7 @@ export interface Property {
   priceHistory?: PriceHistoryItem[];
   epcRating?: EPCRating;
   noiseLevel?: NoiseAssessment;
+  affiliate_url?: string;
 }
 
 export interface Agency {
@@ -95,3 +97,4 @@ export interface LocationStats {
   avgPriceRent: number | null;
   lastCalculatedAt: string;
 }
+
