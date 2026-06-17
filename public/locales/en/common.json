@@ -68,7 +68,7 @@
                    "legal":  "Legal",
                    "knowledge_hub":  "Knowledge Hub",
                    "portal_for_agencies":  "Agency Portal",
-                   "quiz":  "Property Quiz đźŽŻ",
+                   "quiz":  "Property Quiz",
                    "newsletter":  {
                                       "title":  "Market Intelligence",
                                       "subtitle":  "Get exclusive off-market listings and quarterly market reports directly to your inbox.",
@@ -78,7 +78,8 @@
                                       "success_message":  "Welcome to the inner circle. Expect excellence in your inbox."
                                   },
                    "gozo_investment":  "Gozo Property Investment",
-                   "rental_yields":  "Rental Yields Malta 2026"
+                   "rental_yields":  "Rental Yields Malta 2026",
+                   "market_forecast":  "Market Forecast 2026-2030"
                },
     "common":  {
                    "beds":  "{{count}} Beds",

@@ -26,14 +26,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale,
     messages: { common, seo, property_detail: propertyDetail },
     onError(error) {
-      if (error.code === 'MISSING_MESSAGE') {
-        // Log missing keys without crashing the render — better a visible key name than a 500
-        if (process.env.NODE_ENV !== 'production') {
-          console.warn('[i18n] Missing message:', error.message);
-        }
-      } else {
-        throw error;
+      if (process.env.NODE_ENV !== 'production') {
+        console.warn('[i18n]', error.code, error.message);
       }
+    }
     },
     getMessageFallback({ namespace, key }) {
       // Show the key path in UI instead of crashing — visible to devs, not a 500
