@@ -1,7 +1,7 @@
+﻿'use client';
 import React, { useState, useEffect, useCallback } from 'react';
 import { Upload, X, Trash2, Link, GripVertical, Edit2, List, Plus, RefreshCw, Eye, EyeOff, Star } from 'lucide-react';
 
-const ADMIN_KEY = 'malta2026admin';
 
 interface Form {
   title: string; affiliate_url: string; price: string; location_text: string;
@@ -67,6 +67,10 @@ const AdminPage: React.FC = () => {
   const [loadingList, setLoadingList] = useState(false);
   const [confirmDel, setConfirmDel] = useState<PropRow | null>(null);
   const [deleting, setDeleting] = useState(false);
+  const [adminKey, setAdminKey] = useState<string>(() =>
+    typeof window !== 'undefined' ? sessionStorage.getItem('mlre_admin_key') || '' : ''
+  );
+  const [keyInput, setKeyInput] = useState('');
 
   const set = (k: keyof Form, v: any) => setForm(f => ({ ...f, [k]: v }));
 
@@ -78,7 +82,7 @@ const AdminPage: React.FC = () => {
   const fetchProps = useCallback(async () => {
     setLoadingList(true);
     try {
-      const r = await fetch('/api/admin/properties', { headers: { 'x-admin-key': ADMIN_KEY } });
+      const r = await fetch('/api/admin/properties', { headers: { 'x-admin-key': adminKey } });
       if (!r.ok) throw new Error(await r.text());
       setProps(await r.json());
     } catch (e: any) { toast('Blad ladowania: ' + e.message, false); }
@@ -129,7 +133,7 @@ const AdminPage: React.FC = () => {
     try {
       const r = await fetch('/api/admin/scrape', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-admin-key': ADMIN_KEY },
+        headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
         body: JSON.stringify({ url }),
       });
       if (!r.ok) throw new Error(await r.text());
@@ -175,7 +179,7 @@ const AdminPage: React.FC = () => {
 
   const uploadPhoto = async (blob: Blob, slug: string, filename: string): Promise<string> => {
     const r = await fetch('/api/admin/upload-photo?slug=' + encodeURIComponent(slug) + '&filename=' + encodeURIComponent(filename), {
-      method: 'POST', headers: { 'x-admin-key': ADMIN_KEY, 'Content-Type': 'image/webp' }, body: blob,
+      method: 'POST', headers: { 'x-admin-key': adminKey, 'Content-Type': 'image/webp' }, body: blob,
     });
     if (!r.ok) throw new Error('Upload failed: ' + r.status);
     return (await r.json()).url;
@@ -239,7 +243,7 @@ const AdminPage: React.FC = () => {
       const isEdit = !!editId;
       const r = await fetch(isEdit ? '/api/admin/update' : '/api/admin/publish', {
         method: isEdit ? 'PUT' : 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-admin-key': ADMIN_KEY },
+        headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
         body: JSON.stringify(payload),
       });
       if (!r.ok) throw new Error(await r.text());
@@ -255,7 +259,7 @@ const AdminPage: React.FC = () => {
   const handleDelete = async (p: PropRow) => {
     setDeleting(true);
     try {
-      const r = await fetch('/api/admin/delete?id=' + p.id, { method: 'DELETE', headers: { 'x-admin-key': ADMIN_KEY } });
+      const r = await fetch('/api/admin/delete?id=' + p.id, { method: 'DELETE', headers: { 'x-admin-key': adminKey } });
       if (!r.ok) throw new Error(await r.text());
       toast('Usunieto: ' + p.title);
       setConfirmDel(null);
@@ -269,7 +273,7 @@ const AdminPage: React.FC = () => {
     try {
       const r = await fetch('/api/admin/update', {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json', 'x-admin-key': ADMIN_KEY },
+        headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
         body: JSON.stringify({ id: p.id, title: p.title, price: p.price, location_text: p.location_text, status: newStatus, images: p.images }),
       });
       if (!r.ok) throw new Error(await r.text());
@@ -280,6 +284,41 @@ const AdminPage: React.FC = () => {
 
   const inp = 'w-full px-3 py-2 bg-slate-800 border border-slate-600 rounded text-white placeholder-slate-400 focus:border-amber-500 focus:outline-none text-sm';
   const card = 'bg-slate-800 border border-slate-700 rounded-xl p-6 mb-4';
+  if (!adminKey) {
+    return (
+      <main className="min-h-screen bg-luxury-black flex items-center justify-center px-6">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 w-full max-w-sm">
+          <h1 className="font-serif text-2xl text-white mb-2">Admin Panel</h1>
+          <p className="text-white/40 text-sm mb-6">Malta Luxury Real Estate</p>
+          <input
+            type="password"
+            value={keyInput}
+            onChange={e => setKeyInput(e.target.value)}
+            onKeyDown={e => {
+              if (e.key === 'Enter' && keyInput) {
+                sessionStorage.setItem('mlre_admin_key', keyInput);
+                setAdminKey(keyInput);
+              }
+            }}
+            placeholder="Admin key"
+            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 mb-4 outline-none focus:border-gold/40"
+            autoFocus
+          />
+          <button
+            onClick={() => {
+              if (keyInput) {
+                sessionStorage.setItem('mlre_admin_key', keyInput);
+                setAdminKey(keyInput);
+              }
+            }}
+            className="w-full bg-gold/20 hover:bg-gold/30 border border-gold/30 text-gold rounded-lg py-3 transition-colors font-medium"
+          >
+            Enter
+          </button>
+        </div>
+      </main>
+    );
+  }
   const lbl = 'block text-slate-300 text-xs font-semibold uppercase tracking-wide mb-1';
 
   return (
