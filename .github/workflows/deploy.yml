@@ -110,6 +110,7 @@ jobs:
           ssh vps "mkdir -p ${{ env.DEPLOY_PATH }}/{releases/${{ env.RELEASE }},scripts,logs,shared}"
           scp scripts/deploy.sh scripts/rollback.sh vps:${{ env.DEPLOY_PATH }}/scripts/
           ssh vps "chmod +x ${{ env.DEPLOY_PATH }}/scripts/*.sh"
+          sed -i 's/\xEF\xBB\xBF//g' scripts/nginx-mlre.conf
           scp scripts/nginx-mlre.conf vps:/tmp/nginx-mlre.conf
           ssh vps "cp /tmp/nginx-mlre.conf /etc/nginx/sites-available/maltaluxuryrealestate.com && \
             ln -sf /etc/nginx/sites-available/maltaluxuryrealestate.com /etc/nginx/sites-enabled/maltaluxuryrealestate.com && \
