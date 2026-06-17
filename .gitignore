@@ -16,6 +16,7 @@ coverage/
 # Scratch files and test scripts (ignore root-level temp files)
 /*.js
 /*.mjs
+!postcss.config.mjs
 /*.txt
 /*.json
 /*.zip
