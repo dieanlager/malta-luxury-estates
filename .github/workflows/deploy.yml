@@ -1,4 +1,4 @@
-name: Build & Deploy â€” Malta Luxury Real Estate
+﻿name: Build & Deploy â€” Malta Luxury Real Estate
 
 on:
   push:
@@ -53,6 +53,17 @@ jobs:
           ADMIN_KEY: ${{ secrets.ADMIN_KEY || 'changeme-set-in-github-secrets' }}
 
       # â”€â”€ 5. postbuild: copy static + public into standalone â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+      - name: Verify Tailwind output (fail before deploy)
+        run: |
+          FILE=$(find .next/static/css -name '*.css' -printf '%s %p\n' | sort -rn | head -1 | awk '{print $2}')
+          SIZE=$(stat -c%s "$FILE")
+          UTILS=$(grep -oE '\.(flex|grid-cols-[0-9]|items-center|backdrop-blur|rounded-2xl|text-5xl)' "$FILE" | sort -u | wc -l)
+          echo "CSS: $FILE -- ${SIZE} bytes -- distinct utilities: ${UTILS}"
+          if [ "$SIZE" -lt 60000 ]; then
+            echo "::error::Tailwind nie wygenerował utilities (${SIZE} B < 60 KB). Blokuję deploy."
+            exit 1
+          fi
       - name: Copy assets into standalone
         run: |
           cp -r .next/static .next/standalone/.next/static

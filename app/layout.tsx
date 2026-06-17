@@ -1,12 +1,12 @@
-import type { Metadata } from 'next';
-import '../src/index.css';
+﻿import type { Metadata } from 'next';
+import './globals.css';
 
 const BASE_URL = 'https://www.maltaluxuryrealestate.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Malta Luxury Real Estate – Luxury Property for Sale in Malta',
+    default: 'Malta Luxury Real Estate â€“ Luxury Property for Sale in Malta',
     template: '%s | Malta Luxury Real Estate',
   },
   description: 'Discover the finest luxury real estate in Malta. Exclusive property for sale, penthouses, and villas. Your premier Malta property partner.',
