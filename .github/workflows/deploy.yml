@@ -91,7 +91,13 @@ jobs:
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" | base64 -d > ~/.ssh/deploy_key
+          KEY="${{ secrets.VPS_SSH_KEY }}"
+          if printf '%s' "$KEY" | grep -q -- "-----BEGIN"; then
+            echo "::error::VPS_SSH_KEY zawiera SUROWY klucz (-----BEGIN...). Musi byc base64. Na VPS uruchom: base64 -w0 /tmp/gha; echo"
+            exit 1
+          fi
+          printf '%s' "$KEY" | base64 -d > ~/.ssh/deploy_key 2>/dev/null \
+            || { echo "::error::base64 -d nie powiodl sie - sekret nie jest poprawnym base64"; exit 1; }
           chmod 600 ~/.ssh/deploy_key
           ssh-keygen -l -f ~/.ssh/deploy_key
           ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
