@@ -91,15 +91,12 @@ jobs:
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          echo "${{ secrets.VPS_SSH_KEY }}" | base64 -d > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
+          ssh-keygen -l -f ~/.ssh/deploy_key
           ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
-          echo "Host vps
-            HostName ${{ secrets.VPS_HOST }}
-            User ${{ secrets.VPS_USER }}
-            IdentityFile ~/.ssh/deploy_key
-            StrictHostKeyChecking accept-new
-          " > ~/.ssh/config
+          printf 'Host vps\n  HostName %s\n  User %s\n  IdentityFile ~/.ssh/deploy_key\n  StrictHostKeyChecking accept-new\n' \
+            "${{ secrets.VPS_HOST }}" "${{ secrets.VPS_USER }}" > ~/.ssh/config
 
       # â”€â”€ 9. Create release dir + upload â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       - name: Upload release to VPS
