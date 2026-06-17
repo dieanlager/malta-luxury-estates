@@ -29,10 +29,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       if (process.env.NODE_ENV !== 'production') {
         console.warn('[i18n]', error.code, error.message);
       }
-    }
     },
     getMessageFallback({ namespace, key }) {
-      // Show the key path in UI instead of crashing — visible to devs, not a 500
       return `${namespace}.${key}`;
     },
   };
