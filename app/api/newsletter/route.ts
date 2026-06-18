@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'leads@maltaluxuryrealestate.com',
       to: process.env.CONTACT_EMAIL || 'info@maltaluxuryrealestate.com',
-      subject: 'New Newsletter Subscription ? Malta Luxury RE',
+      subject: 'New Newsletter Subscription - Malta Luxury RE',
       html: `<p>New newsletter subscriber: <strong>${email}</strong></p>`,
     });
     return NextResponse.json({ success: true });
