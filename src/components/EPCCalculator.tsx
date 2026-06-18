@@ -1,3 +1,4 @@
+﻿'use client';
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Leaf, Info, TrendingUp, Landmark, Zap, ShieldCheck, X } from 'lucide-react';
@@ -34,7 +35,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
             currentRating === 'B' ? property.sqm * 40 :
                 property.sqm * baseRetrofitCostPerSqm;
 
-        const annualSavings = (property.sqm * 15); // Avg savings €15/m2 for A/B rated
+        const annualSavings = (property.sqm * 15); // Avg savings â‚¬15/m2 for A/B rated
         const paybackPeriod = upgradeCost > 0 ? (upgradeCost / annualSavings).toFixed(1) : '0';
 
         const bankPremium = isHighEfficiency ? '-0.30%' : (currentRating === 'C' ? '-0.15%' : 'Standard Rate');
@@ -120,7 +121,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                         <Zap size={14} className="text-gold" />
                                         <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">{t('interactive.epc.upgrade_cost', 'Upgrade Cost')}</span>
                                     </div>
-                                    <span className="text-sm font-serif text-white">~€{analysis.upgradeCost.toLocaleString()}</span>
+                                    <span className="text-sm font-serif text-white">~â‚¬{analysis.upgradeCost.toLocaleString()}</span>
                                 </div>
 
                                 <div className="flex justify-between items-center p-4 bg-white/3 rounded-xl border border-white/5">
@@ -128,7 +129,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                         <TrendingUp size={14} className="text-emerald-400" />
                                         <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">{t('interactive.epc.annual_savings', 'Annual Savings')}</span>
                                     </div>
-                                    <span className="text-sm font-serif text-emerald-400">~€{analysis.annualSavings.toLocaleString()}</span>
+                                    <span className="text-sm font-serif text-emerald-400">~â‚¬{analysis.annualSavings.toLocaleString()}</span>
                                 </div>
 
                                 <div className="flex justify-between items-center p-4 bg-white/3 rounded-xl border border-white/5">

@@ -1,3 +1,4 @@
+﻿'use client';
 // @ts-nocheck
 import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
@@ -58,7 +59,7 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-serif text-white">Price Intelligence</h3>
-                                    <p className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">Listing ID: {property.id} · Market Benchmarking</p>
+                                    <p className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">Listing ID: {property.id} Â· Market Benchmarking</p>
                                 </div>
                             </div>
                             <button
@@ -82,8 +83,8 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                         <div className="text-lg font-serif text-white">{totalDaysOnMarket} Days</div>
                                     </div>
                                     <div className="px-4 py-2 bg-gold/5 border border-gold/20 rounded-xl text-center">
-                                        <div className="text-[9px] uppercase tracking-widest text-gold font-bold mb-1">Current €/m²</div>
-                                        <div className="text-lg font-serif text-white">€{currentPriceSqm.toLocaleString()}</div>
+                                        <div className="text-[9px] uppercase tracking-widest text-gold font-bold mb-1">Current â‚¬/mÂ˛</div>
+                                        <div className="text-lg font-serif text-white">â‚¬{currentPriceSqm.toLocaleString()}</div>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +102,7 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                 </div>
                                 <div className="p-6 bg-white/3 border border-white/5 rounded-2xl">
                                     <div className="text-[9px] uppercase tracking-widest text-white/40 font-bold mb-2">Market Sentiment</div>
-                                    <div className="text-sm text-white font-medium">{isGoodDeal ? '🔥 Competitive Pricing' : '💎 Premium Property'}</div>
+                                    <div className="text-sm text-white font-medium">{isGoodDeal ? 'đź”Ą Competitive Pricing' : 'đź’Ž Premium Property'}</div>
                                 </div>
                             </div>
 
@@ -134,7 +135,7 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                                     <span className="text-[10px] text-white/40 font-medium font-mono">{item.date}</span>
                                                 </div>
                                                 <div className="text-xl font-serif text-white">
-                                                    €{item.price.toLocaleString()}
+                                                    â‚¬{item.price.toLocaleString()}
                                                 </div>
                                             </div>
 

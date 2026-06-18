@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { routing } from '@/src/i18n/routing';
@@ -7,6 +7,7 @@ import { generateCityFAQSchema, generateBreadcrumbSchema, generatePropertySchema
 import { Link } from '@/src/navigation';
 import { PropertyCard } from '@/src/components/PropertyCard';
 import { Bed, Bath, Maximize, MapPin, ArrowLeft } from 'lucide-react';
+import PropertyDetailTools from '@/src/components/PropertyDetailTools';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -126,7 +127,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
               <div className="flex items-start justify-between gap-8 flex-wrap">
                 <div>
                   <span className="text-[10px] uppercase tracking-[0.3em] text-gold mb-4 block">
-                    {location.island === 'gozo' ? 'Gozo' : 'Malta'} {'·'} {t('common.luxury_real_estate', { defaultValue: 'Luxury Real Estate' })}
+                    {location.island === 'gozo' ? 'Gozo' : 'Malta'} {'Â·'} {t('common.luxury_real_estate', { defaultValue: 'Luxury Real Estate' })}
                   </span>
                   <h1 className="font-serif text-5xl md:text-7xl text-white mb-6">{location.nameEn}</h1>
                   {location.description && (
@@ -158,7 +159,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
                     {t('common.properties_in', { location: location.nameEn, defaultValue: `Properties in ${location.nameEn}` })}
                   </h2>
                   <Link href="/properties/all" className="text-[10px] uppercase tracking-widest text-gold hover:text-white transition-colors">
-                    {t('common.view_all', { defaultValue: 'View All' })} {'→'}
+                    {t('common.view_all', { defaultValue: 'View All' })} {'â†’'}
                   </Link>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -171,7 +172,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
               <div className="text-center py-24 text-white/40">
                 <p className="font-serif text-2xl mb-4">{t('common.no_listings', { defaultValue: 'No listings available yet' })}</p>
                 <Link href="/properties/all" className="text-gold hover:text-white transition-colors text-sm uppercase tracking-widest">
-                  {t('common.view_all_properties', { defaultValue: 'Browse all properties' })} {'→'}
+                  {t('common.view_all_properties', { defaultValue: 'Browse all properties' })} {'â†’'}
                 </Link>
               </div>
             )}
@@ -206,7 +207,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent" />
         </div>
-        {/* Gallery grid — shown when property has more than 1 image */}
+        {/* Gallery grid â€” shown when property has more than 1 image */}
         {property.images && property.images.length > 1 && (
           <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -214,7 +215,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
                 <div key={i} className="relative aspect-[4/3] overflow-hidden rounded-lg">
                   <img
                     src={src}
-                    alt={`${property.title} — photo ${i + 2}`}
+                    alt={`${property.title} â€” photo ${i + 2}`}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
@@ -242,7 +243,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
               </div>
               <div className="text-right">
                 <div className="font-serif text-4xl text-gold">
-                  {'€'}{property.price?.toLocaleString('en-GB')}
+                  {'â‚¬'}{property.price?.toLocaleString('en-GB')}
                 </div>
                 <div className="text-white/30 text-xs uppercase tracking-widest mt-1">
                   {property.type === 'rent' ? t('common.per_month', { defaultValue: 'per month' }) : t('common.for_sale', { defaultValue: 'For Sale' })}
@@ -260,7 +261,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
               </div>
               <div className="flex items-center gap-2 text-white/60 text-sm">
                 <Maximize size={16} className="text-gold" />
-                <span>{property.sqm} m{'²'}</span>
+                <span>{property.sqm} m{'Â˛'}</span>
               </div>
             </div>
           </div>
@@ -309,6 +310,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
             </div>
           </div>
         </div>
+      <PropertyDetailTools property={property} />
       </main>
     </>
   );
