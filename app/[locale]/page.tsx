@@ -8,10 +8,10 @@ import { Link } from '@/src/navigation';
 import { HeroSection } from '@/src/components/HeroSection';
 import { MarketSnapshot } from '@/src/components/MarketSnapshot';
 import { InteractiveTools } from '@/src/components/InteractiveTools';
-import dynamic from 'next/dynamic';
+import { MapSection } from '@/src/components/MapSection';
+
 import { ChevronRight, ArrowRight, ShieldCheck } from 'lucide-react';
 
-const DynamicMap = dynamic(() => import('@/src/components/DynamicMap').then(m => m.DynamicMap), { ssr: false });
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -114,7 +114,7 @@ export default async function HomePage({ params }: Props) {
             <p className="text-white/50 max-w-2xl mx-auto">From the historic streets of Valletta to the serene farmhouses of Gozo, find your perfect location on the map.</p>
           </div>
           <div className="h-[600px] w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-            <DynamicMap />
+            <MapSection />
           </div>
         </div>
       </section>
