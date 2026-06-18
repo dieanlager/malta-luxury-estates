@@ -1,5 +1,5 @@
-'use client';
 // @ts-nocheck
+'use client';
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';

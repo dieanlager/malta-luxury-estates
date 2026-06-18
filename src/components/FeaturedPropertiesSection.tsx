@@ -1,5 +1,5 @@
-'use client';
 // @ts-nocheck
+'use client';
 import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Crown, Zap, Flame, ArrowRight } from 'lucide-react';
