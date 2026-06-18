@@ -33,9 +33,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: 'Discover luxury villas, penthouses and exclusive properties for sale in Malta and Gozo. Expert real estate services for discerning buyers and investors.',
     alternates: {
       canonical: `${base}${prefix}`,
-      languages: Object.fromEntries(
-        routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}`])
-      ),
+      languages: {
+        'x-default': base,
+        ...Object.fromEntries(
+          routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}`])
+        ),
+      },
     },
   };
 }

@@ -32,22 +32,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const base = 'https://www.maltaluxuryrealestate.com';
   const prefix = (l: string) => l === 'en' ? '' : `/${l}`;
+  const insightPaths = routing.pathnames['/insights/[slug]'] as Record<string, string>;
+  const localizedSeg = (l: string) => {
+    const tpl = insightPaths[l] ?? `/insights/${slug}`;
+    return tpl.replace('[slug]', slug);
+  };
 
   return {
     title: article.title,
     description: article.excerpt || article.title,
     alternates: {
-      canonical: `${base}${prefix(locale)}/insights/${slug}`,
-      languages: Object.fromEntries(
-        routing.locales.map(l => [l, `${base}${prefix(l)}/insights/${slug}`])
-      ),
+      canonical: `${base}${prefix(locale)}${localizedSeg(locale)}`,
+      languages: {
+        'x-default': `${base}${localizedSeg('en')}`,
+        ...Object.fromEntries(
+          routing.locales.map(l => [l, `${base}${prefix(l)}${localizedSeg(l)}`])
+        ),
+      },
     },
     openGraph: {
       title: article.title,
       description: article.excerpt || article.title,
       type: 'article',
       publishedTime: article.date,
-      url: `${base}${prefix(locale)}/insights/${slug}`,
+      url: `${base}${prefix(locale)}${localizedSeg(locale)}`,
       images: article.image ? [{ url: article.image }] : [],
     },
   };
@@ -65,7 +73,9 @@ export default async function InsightPage({ params }: Props) {
 
   const base = 'https://www.maltaluxuryrealestate.com';
   const prefix = locale === 'en' ? '' : `/${locale}`;
-  const pageUrl = `${base}${prefix}/insights/${slug}`;
+  const insightPaths = routing.pathnames['/insights/[slug]'] as Record<string, string>;
+  const localizedSeg = (insightPaths[locale] ?? `/insights/${slug}`).replace('[slug]', slug);
+  const pageUrl = `${base}${prefix}${localizedSeg}`;
 
   const articleSchema = generateArticleSchema(article);
   const breadcrumbSchema = generateBreadcrumbSchema([
