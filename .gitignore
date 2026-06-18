@@ -40,3 +40,19 @@ tmp/
 Thumbs.db
 .next/
 node_modules/
+
+# Build artefakty
+*.tsbuildinfo
+
+# Lokalne skrypty / backupy (nie do repo)
+_ssh_fix*.py
+check_vps.py
+deploy_vps.py
+fix_vps.py
+verify_vps.py
+upload-photos.py
+write_renovating.py
+*_deploy.pub
+src-backup-*/
+server-prod-backup-*.ts
+FAZA3_FEATURED_GUIDE.md
