@@ -28,7 +28,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
             </script>
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-white/40 flex-wrap">
                 <Link
-                    to="/"
+                    href="/"
                     className="flex items-center gap-1 hover:text-gold transition-colors"
                 >
                     <Home size={12} />
@@ -39,7 +39,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
                         <ChevronRight size={10} className="text-white/20" />
                         {item.href ? (
                             <Link
-                                to={item.href}
+                                href={item.href}
                                 className="hover:text-gold transition-colors font-medium"
                             >
                                 {item.label}

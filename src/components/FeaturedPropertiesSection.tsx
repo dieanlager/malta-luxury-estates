@@ -64,7 +64,7 @@ export const FeaturedPropertiesSection: React.FC = () => {
                 transition={{ delay: i * 0.1 }}
                 className="group relative overflow-hidden rounded-xl bg-slate-800 hover:shadow-2xl transition-shadow"
               >
-                <Link to={`/properties/${prop.id}`} className="block">
+                <Link href={`/properties/${prop.id}`} className="block">
                   <div className="relative h-64 overflow-hidden bg-slate-700">
                     {prop.images?.[0] && (
                       <ImgWithPlaceholder

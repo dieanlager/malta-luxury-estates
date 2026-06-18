@@ -88,7 +88,7 @@ export const InteractiveTools = () => {
                         <p className="text-xs text-white/40 leading-relaxed mb-6">
                             {'Malta maintains its 15% flat rental income tax for non-residents, one of the EU&apos;s most competitive rates.'}
                         </p>
-                        <Link to="/insights/property-taxes-malta-2026" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold transition-colors">
+                        <Link href="/insights/property-taxes-malta-2026" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold transition-colors">
                             {'Read Tax Guide'} <ArrowRight size={14} />
                         </Link>
                     </div>
@@ -97,7 +97,7 @@ export const InteractiveTools = () => {
                         <p className="text-xs text-white/40 leading-relaxed mb-6">
                             {'Sliema and St Julian&apos;s deliver 5–8% gross yields. Gozo commands 6–10% in the short-let market.'}
                         </p>
-                        <Link to="/insights/rental-yields-malta-2026" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold transition-colors">
+                        <Link href="/insights/rental-yields-malta-2026" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold transition-colors">
                             {'Yield Reports'} <ArrowRight size={14} />
                         </Link>
                     </div>
@@ -111,7 +111,7 @@ export const InteractiveTools = () => {
                                 {'AI-powered valuation and investment scoring for any Malta property.'}
                             </p>
                         </div>
-                        <Link to="/tools/property-valuation" className="px-8 py-4 bg-gold text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all shadow-xl shadow-gold/10">
+                        <Link href="/tools/property-valuation" className="px-8 py-4 bg-gold text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all shadow-xl shadow-gold/10">
                             {'Try Oracle'}
                         </Link>
                     </div>
