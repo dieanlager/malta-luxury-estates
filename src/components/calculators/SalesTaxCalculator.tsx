@@ -1,12 +1,12 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { useTranslation } from 'react-i18next';
+import { useLocale } from 'next-intl';
 import { ShieldCheck, Info, Euro, Percent, Building } from 'lucide-react';
 import { calculateSellingProceeds, SellingResult } from '../../lib/calculators/property-math';
 
 export const SalesTaxCalculator = () => {
-    const { t, i18n } = useTranslation();
+    const locale = useLocale();
     const [sellingPrice, setSellingPrice] = useState(750000);
     const [acquisitionType, setAcquisitionType] = useState<'standard' | 'pre2004' | 'aip'>('standard');
     const [isSoleResidence, setIsSoleResidence] = useState(false);
@@ -31,8 +31,8 @@ export const SalesTaxCalculator = () => {
                         <ShieldCheck className="text-amber-400" size={24} />
                     </div>
                     <div>
-                        <h3 className="text-2xl font-serif text-white">{t('sales_tax.title')}</h3>
-                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{t('sales_tax.subtitle')}</p>
+                        <h3 className="text-2xl font-serif text-white">{'Malta Property Sale Calculator'}</h3>
+                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{'FINAL WITHHOLDING TAX & NET PROCEEDS'}</p>
                     </div>
                 </div>
             </div>
@@ -41,8 +41,8 @@ export const SalesTaxCalculator = () => {
                 <div className="space-y-10">
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('sales_tax.labels.selling_price')}</label>
-                            <span className="text-amber-400 font-serif text-xl">€{sellingPrice.toLocaleString(i18n.language)}</span>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Selling Price'}</label>
+                            <span className="text-amber-400 font-serif text-xl">€{sellingPrice.toLocaleString(locale)}</span>
                         </div>
                         <input
                             type="range"
@@ -57,9 +57,9 @@ export const SalesTaxCalculator = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {[
-                            { id: 'standard', label: t('sales_tax.options.standard'), rate: '8%' },
-                            { id: 'pre2004', label: t('sales_tax.options.pre2004'), rate: '5%' },
-                            { id: 'aip', label: t('sales_tax.options.aip'), rate: '12%' }
+                            { id: 'standard', label: 'Standard (post-2004)', rate: '8%' },
+                            { id: 'pre2004', label: 'Pre-2004 Purchase', rate: '5%' },
+                            { id: 'aip', label: 'AIP Property', rate: '12%' }
                         ].map(type => (
                             <button
                                 key={type.id}
@@ -77,53 +77,53 @@ export const SalesTaxCalculator = () => {
                             onClick={() => setIsSoleResidence(!isSoleResidence)}
                             className={`p-6 rounded-2xl border transition-all text-left ${isSoleResidence ? 'bg-emerald-500/10 border-emerald-500 text-emerald-500' : 'bg-white/5 border-white/10 text-white/40 hover:border-white/20'}`}
                         >
-                            <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{t('sales_tax.labels.sole_residence')}</div>
-                            <div className="text-xs">{isSoleResidence ? t('sales_tax.labels.tax_exempt') : t('sales_tax.labels.taxable')}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{'Sole Residence Exemption'}</div>
+                            <div className="text-xs">{isSoleResidence ? 'Tax Exempt' : 'Taxable'}</div>
                         </button>
 
                         <button
                             onClick={() => setAgentFee(agentFee === 5 ? 3.5 : 5)}
                             className={`p-6 rounded-2xl border transition-all text-left ${agentFee === 3.5 ? 'bg-blue-500/10 border-blue-500 text-blue-500' : 'bg-white/5 border-white/10 text-white/40 hover:border-white/20'}`}
                         >
-                            <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{t('sales_tax.labels.agent_fee')}</div>
-                            <div className="text-xs">{t('sales_tax.labels.commission', { percent: agentFee })}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{'Agent Fee'}</div>
+                            <div className="text-xs">{`${agentFee}% commission`}</div>
                         </button>
                     </div>
                 </div>
 
                 <div>
                     <div className="bg-luxury-black/40 rounded-3xl p-8 border border-white/10 relative overflow-hidden h-full">
-                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-8">{t('sales_tax.labels.financial_summary')}</h4>
+                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-8">{'FINANCIAL SUMMARY'}</h4>
 
                         <div className="space-y-6 mb-12">
                             <div className="flex justify-between items-center">
-                                <span className="text-sm text-white/60">{t('sales_tax.labels.fwt')}</span>
-                                <span className="text-lg font-serif text-amber-400">€{result?.fwtTax.toLocaleString(i18n.language)}</span>
+                                <span className="text-sm text-white/60">{'Final Withholding Tax'}</span>
+                                <span className="text-lg font-serif text-amber-400">€{result?.fwtTax.toLocaleString(locale)}</span>
                             </div>
                             <div className="flex justify-between items-center">
-                                <span className="text-sm text-white/60">{t('sales_tax.labels.agency_commission')}</span>
-                                <span className="text-lg font-serif">€{result?.agentFee.toLocaleString(i18n.language)}</span>
+                                <span className="text-sm text-white/60">{'Agency Commission'}</span>
+                                <span className="text-lg font-serif">€{result?.agentFee.toLocaleString(locale)}</span>
                             </div>
                             <div className="flex justify-between items-center">
-                                <span className="text-sm text-white/60">{t('sales_tax.labels.notary_epc')}</span>
-                                <span className="text-lg font-serif">€{(1500).toLocaleString(i18n.language)}</span>
+                                <span className="text-sm text-white/60">{'Notary + EPC'}</span>
+                                <span className="text-lg font-serif">€{(1500).toLocaleString(locale)}</span>
                             </div>
                         </div>
 
                         <div className="pt-8 border-t border-white/10">
                             <div className="flex justify-between items-end mb-12">
                                 <div>
-                                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('sales_tax.labels.net_proceeds')}</div>
-                                    <div className="text-xs text-white/40">{t('sales_tax.labels.after_taxes')}</div>
+                                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/30">{'NET PROCEEDS'}</div>
+                                    <div className="text-xs text-white/40">{'After all taxes & fees'}</div>
                                 </div>
-                                <div className="text-4xl font-serif text-amber-400">€{result?.netProceeds.toLocaleString(i18n.language)}</div>
+                                <div className="text-4xl font-serif text-amber-400">€{result?.netProceeds.toLocaleString(locale)}</div>
                             </div>
                         </div>
 
                         <div className="p-6 bg-white/5 rounded-2xl border border-white/5 flex gap-4 mt-auto">
                             <Info className="text-amber-500 shrink-0" size={20} />
                             <p className="text-[10px] text-white/40 leading-relaxed">
-                                {t('sales_tax.disclaimer')}
+                                {'Figures are indicative. Consult a notary for exact calculations. Sole residence exemption conditions apply.'}
                             </p>
                         </div>
                     </div>

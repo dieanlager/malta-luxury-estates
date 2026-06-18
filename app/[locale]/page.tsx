@@ -1,5 +1,4 @@
-import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+﻿import type { Metadata } from 'next';
 import { routing } from '@/src/i18n/routing';
 import { getFeaturedProperties, getPopularLocations } from '@/src/lib/data';
 import { PropertyCard } from '@/src/components/PropertyCard';
@@ -17,13 +16,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'common' });
   const base = 'https://www.maltaluxuryrealestate.com';
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
   return {
-    title: t('seo.home.title', { defaultValue: 'Malta Luxury Real Estate | Premium Properties in Malta & Gozo' }),
-    description: t('seo.home.description', { defaultValue: 'Discover luxury villas, penthouses and exclusive properties for sale in Malta and Gozo. Expert real estate services for discerning buyers and investors.' }),
+    title: 'Malta Luxury Real Estate | Premium Properties in Malta & Gozo',
+    description: 'Discover luxury villas, penthouses and exclusive properties for sale in Malta and Gozo. Expert real estate services for discerning buyers and investors.',
     alternates: {
       canonical: `${base}${prefix}`,
       languages: Object.fromEntries(
@@ -34,8 +32,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function HomePage({ params }: Props) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'common' });
   const [featured, popularLocations] = await Promise.all([
     getFeaturedProperties(),
     Promise.resolve(getPopularLocations()),
@@ -51,23 +47,23 @@ export default async function HomePage({ params }: Props) {
           <div className="flex items-center justify-center gap-3 mb-10">
             <div className="h-px w-16 bg-gold/50" />
             <span className="text-[10px] uppercase tracking-[0.4em] text-gold">
-              {t('home.hero.eyebrow', { defaultValue: 'Malta\'s Premier Real Estate Portal' })}
+              {"Malta's Premier Real Estate Portal"}
             </span>
             <div className="h-px w-16 bg-gold/50" />
           </div>
           <h1 className="font-serif text-6xl md:text-8xl text-white leading-none mb-8">
-            {t('home.hero.title', { defaultValue: 'Luxury Living' })}<br />
-            <span className="text-gold italic">{t('home.hero.title2', { defaultValue: 'in Malta' })}</span>
+            {'Luxury Living'}<br />
+            <span className="text-gold italic">{'in Malta'}</span>
           </h1>
           <p className="text-white/60 text-xl max-w-2xl mx-auto leading-relaxed mb-12">
-            {t('home.hero.subtitle', { defaultValue: 'Exclusive villas, penthouses, and investment properties in the heart of the Mediterranean.' })}
+            {'Exclusive villas, penthouses, and investment properties in the heart of the Mediterranean.'}
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link href="/properties/all" className="inline-flex items-center px-10 py-4 gold-gradient text-luxury-black font-bold text-[11px] uppercase tracking-widest rounded-full hover:opacity-90 transition-opacity">
-              {t('home.hero.cta_browse', { defaultValue: 'Browse Properties' })}
+              {'Browse Properties'}
             </Link>
             <Link href="/tools/quiz" className="inline-flex items-center px-10 py-4 border border-white/20 text-white font-medium text-[11px] uppercase tracking-widest rounded-full hover:border-gold/40 hover:text-gold transition-all">
-              {t('home.hero.cta_quiz', { defaultValue: 'Find Your Property' })}
+              {'Find Your Property'}
             </Link>
           </div>
         </div>
@@ -80,14 +76,14 @@ export default async function HomePage({ params }: Props) {
             <div className="flex items-center justify-between mb-16">
               <div>
                 <span className="text-[10px] uppercase tracking-[0.3em] text-gold mb-4 block">
-                  {t('home.featured.eyebrow', { defaultValue: 'Hand-Picked Selection' })}
+                  {'Hand-Picked Selection'}
                 </span>
                 <h2 className="font-serif text-5xl text-white">
-                  {t('home.featured.title', { defaultValue: 'Featured Properties' })}
+                  {'Featured Properties'}
                 </h2>
               </div>
               <Link href="/properties/all" className="hidden md:flex items-center gap-2 text-sm uppercase tracking-widest text-gold hover:text-white transition-colors">
-                {t('common.view_all', { defaultValue: 'View All' })} →
+                'View All' →
               </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -104,10 +100,10 @@ export default async function HomePage({ params }: Props) {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <span className="text-[10px] uppercase tracking-[0.3em] text-gold mb-6 block">
-              {t('home.locations.eyebrow', { defaultValue: 'Prime Locations' })}
+              {'Prime Locations'}
             </span>
             <h2 className="font-serif text-5xl text-white mb-4">
-              {t('home.locations.title', { defaultValue: 'Where to Buy in Malta' })}
+              {'Where to Buy in Malta'}
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -129,16 +125,16 @@ export default async function HomePage({ params }: Props) {
       <section className="py-32 px-6 bg-luxury-black">
         <div className="max-w-4xl mx-auto text-center">
           <span className="text-[10px] uppercase tracking-[0.3em] text-gold mb-8 block">
-            {t('home.insights.eyebrow', { defaultValue: 'Expert Knowledge' })}
+            {'Expert Knowledge'}
           </span>
           <h2 className="font-serif text-5xl text-white mb-6">
-            {t('home.insights.title', { defaultValue: 'Malta Property Guides' })}
+            {'Malta Property Guides'}
           </h2>
           <p className="text-white/50 text-lg mb-10 leading-relaxed">
-            {t('home.insights.description', { defaultValue: 'In-depth guides for buyers, investors, and expats moving to Malta.' })}
+            {'In-depth guides for buyers, investors, and expats moving to Malta.'}
           </p>
           <Link href="/insights" className="inline-flex items-center px-10 py-4 border border-gold/40 text-gold font-medium text-[11px] uppercase tracking-widest rounded-full hover:bg-gold/5 transition-all">
-            {t('home.insights.cta', { defaultValue: 'Explore All Guides' })} →
+            {'Explore All Guides'} →
           </Link>
         </div>
       </section>

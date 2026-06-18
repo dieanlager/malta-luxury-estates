@@ -1,6 +1,6 @@
-﻿'use client';
+'use client';
 // @ts-nocheck
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { History, X, TrendingDown, TrendingUp, Calendar, ArrowRight, Info, AlertCircle } from 'lucide-react';
@@ -186,7 +186,7 @@ export const PriceHistoryButton: React.FC<{
     property: Property;
     variant?: 'card' | 'page';
 }> = ({ property, variant = 'card' }) => {
-    const { t } = useTranslation();
+    const t = useTranslations('common');
     const [isOpen, setIsOpen] = useState(false);
 
     if (!property.priceHistory) return null;
@@ -217,7 +217,7 @@ export const PriceHistoryButton: React.FC<{
                 className="flex items-center gap-2 px-3 py-1.5 bg-luxury-black/60 backdrop-blur-md border border-white/10 rounded-lg text-white/60 hover:text-gold hover:border-gold transition-all group"
             >
                 <History size={12} className="group-hover:rotate-[-30deg] transition-transform" />
-                <span className="text-[9px] font-bold uppercase tracking-widest">{t('common.price_history')}</span>
+                <span className="text-[9px] font-bold uppercase tracking-widest">{t('price_history')}</span>
             </button>
 
             <PriceHistoryModal

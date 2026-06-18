@@ -1,8 +1,8 @@
-'use client';
+﻿'use client';
 import React, { useState, useMemo } from 'react';
 import { TrendingUp, Home, Key, Scale, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { useTranslation } from 'react-i18next';
+import { useLocale } from 'next-intl';
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
 interface YearlySnapshot {
@@ -131,7 +131,7 @@ const Slider = ({
 
 // ─── Timeline Bar Chart ────────────────────────────────────────────────────────
 const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[]; horizonYears: number }) => {
-    const { t } = useTranslation();
+    const locale = useLocale();
     const allValues = snapshots.flatMap(s => [s.buyNetWorth, s.rentNetWorth]);
     const maxVal = Math.max(...allValues, 1);
     const minVal = Math.min(...allValues, 0);
@@ -177,17 +177,17 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
                                     {/* Tooltip */}
                                     <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 z-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none min-w-max">
                                         <div className="bg-black/90 border border-white/10 rounded-xl p-3 text-[10px] space-y-1">
-                                            <div className="text-white/40 text-center mb-1">{t('buy_vs_rent.years_full', { count: snap.year })}</div>
+                                            <div className="text-white/40 text-center mb-1">{`${snap.year} Years`}</div>
                                             <div className="flex items-center gap-2">
                                                 <div className="w-2 h-2 rounded-full bg-gold" />
-                                                <span className="text-white/70">{t('buy_vs_rent.buy_path')}:</span>
+                                                <span className="text-white/70">{'Buy Path'}:</span>
                                                 <span className="text-gold font-bold">
                                                     {snap.buyNetWorth >= 0 ? '+' : ''}€{Math.round(snap.buyNetWorth / 1000)}k
                                                 </span>
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <div className="w-2 h-2 rounded-full bg-violet-400" />
-                                                <span className="text-white/70">{t('buy_vs_rent.rent_path')}:</span>
+                                                <span className="text-white/70">{'Rent Path'}:</span>
                                                 <span className="text-violet-400 font-bold">
                                                     {snap.rentNetWorth >= 0 ? '+' : ''}€{Math.round(snap.rentNetWorth / 1000)}k
                                                 </span>
@@ -232,11 +232,11 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
             <div className="flex items-center gap-6 mt-4 justify-center">
                 <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-sm bg-gold/80" />
-                    <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold">{t('buy_vs_rent.buy_path')}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold">{'Buy Path'}</span>
                 </div>
                 <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-sm bg-violet-500/80" />
-                    <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold">{t('buy_vs_rent.rent_path')}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold">{'Rent Path'}</span>
                 </div>
             </div>
         </div>
@@ -245,9 +245,9 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
 
 // ─── Main Component ─────────────────────────────────────────────────────────────
 export const BuyVsRentCalculator = () => {
-    const { t, i18n } = useTranslation();
-    const locale = i18n.language === 'en' ? 'en-EU' : i18n.language;
-    const fmt = (n: number) => Math.round(n).toLocaleString(locale);
+    const locale = useLocale();
+    const fmtLocale = locale === 'en' ? 'en-EU' : locale;
+    const fmt = (n: number) => Math.round(n).toLocaleString(fmtLocale);
     const fmtEur = (n: number) => `€${fmt(n)}`;
 
     // ── Inputs ──
@@ -299,12 +299,12 @@ export const BuyVsRentCalculator = () => {
                         <Scale className="text-violet-400" size={24} />
                     </div>
                     <div>
-                        <h3 className="text-2xl font-serif text-white">{t('buy_vs_rent.title')}</h3>
-                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{t('buy_vs_rent.subtitle')}</p>
+                        <h3 className="text-2xl font-serif text-white">{'Buy vs Rent Calculator'}</h3>
+                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{'LONG-TERM FINANCIAL COMPARISON'}</p>
                     </div>
                 </div>
                 <p className="text-white/40 text-sm mt-3 max-w-2xl">
-                    {t('buy_vs_rent.intro')}
+                    {'Compare the true cost of buying vs renting over time in Malta.'}
                 </p>
             </div>
 
@@ -317,15 +317,15 @@ export const BuyVsRentCalculator = () => {
                     <div className="space-y-6">
                         <div className="flex items-center gap-2 mb-2">
                             <Home size={14} className="text-gold" />
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-gold">{t('buy_vs_rent.buying_scenario')}</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gold">{'BUYING SCENARIO'}</span>
                         </div>
 
-                        <Slider label={t('buy_vs_rent.property_price')} value={propertyPrice} min={100000} max={3000000} step={25000}
+                        <Slider label={'Property Price'} value={propertyPrice} min={100000} max={3000000} step={25000}
                             onChange={setPropertyPrice} format={fmtEur} color="gold" />
 
                         <div>
                             <div className="flex justify-between items-center mb-3">
-                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('buy_vs_rent.deposit')}</label>
+                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Deposit'}</label>
                                 <div className="text-right">
                                     <span className="font-serif text-lg text-gold">{fmtEur(deposit)}</span>
                                     <span className="text-white/30 text-xs ml-2">({depositPct}%)</span>
@@ -336,18 +336,18 @@ export const BuyVsRentCalculator = () => {
                                 className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-yellow-500" />
                         </div>
 
-                        <Slider label={t('buy_vs_rent.mortgage_rate')} value={mortgageRate} min={2.5} max={7.0} step={0.05}
+                        <Slider label={'Mortgage Rate'} value={mortgageRate} min={2.5} max={7.0} step={0.05}
                             onChange={setMortgageRate} format={v => `${v.toFixed(2)}%`} color="gold" />
 
                         <div>
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3 block">{t('buy_vs_rent.mortgage_term')}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3 block">{'Mortgage Term'}</label>
                             <div className="flex gap-2">
                                 {[15, 20, 25, 30].map(y => (
                                     <button key={y} onClick={() => setMortgageTerm(y)}
                                         className={`flex-1 py-3 rounded-xl border text-[11px] font-bold transition-all ${mortgageTerm === y
                                             ? 'bg-gold text-luxury-black border-gold'
                                             : 'bg-white/5 border-white/10 text-white/40'}`}>
-                                        {t('buy_vs_rent.years', { count: y })}
+                                        {`${y}yr`}
                                     </button>
                                 ))}
                             </div>
@@ -360,13 +360,13 @@ export const BuyVsRentCalculator = () => {
                     <div className="space-y-6">
                         <div className="flex items-center gap-2 mb-2">
                             <Key size={14} className="text-violet-400" />
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-violet-400">{t('buy_vs_rent.renting_scenario')}</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-violet-400">{'RENTING SCENARIO'}</span>
                         </div>
 
-                        <Slider label={t('buy_vs_rent.monthly_rent')} value={monthlyRent} min={500} max={8000} step={50}
+                        <Slider label={'Monthly Rent'} value={monthlyRent} min={500} max={8000} step={50}
                             onChange={setMonthlyRent} format={fmtEur} color="violet" />
 
-                        <Slider label={t('buy_vs_rent.investment_return')} value={investReturn}
+                        <Slider label={'Investment Return Rate'} value={investReturn}
                             min={2} max={12} step={0.25} onChange={setInvestReturn}
                             format={v => `${v.toFixed(2)}%`} color="violet" />
                     </div>
@@ -377,24 +377,24 @@ export const BuyVsRentCalculator = () => {
                     <div className="space-y-6">
                         <div className="flex items-center gap-2 mb-2">
                             <TrendingUp size={14} className="text-emerald-400" />
-                            <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-400">{t('buy_vs_rent.market_assumptions')}</span>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-400">{'MARKET ASSUMPTIONS'}</span>
                         </div>
 
                         <div>
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3 block">{t('buy_vs_rent.time_horizon')}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3 block">{'Time Horizon'}</label>
                             <div className="flex gap-2">
                                 {[5, 7, 10, 15, 20].map(y => (
                                     <button key={y} onClick={() => setHorizonYears(y)}
                                         className={`flex-1 py-3 rounded-xl border text-[11px] font-bold transition-all ${horizonYears === y
                                             ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
                                             : 'bg-white/5 border-white/10 text-white/40'}`}>
-                                        {t('buy_vs_rent.years_full', { count: y })}
+                                        {`${y} Years`}
                                     </button>
                                 ))}
                             </div>
                         </div>
 
-                        <Slider label={t('buy_vs_rent.property_appreciation')} value={propertyGrowth}
+                        <Slider label={'Annual Property Appreciation'} value={propertyGrowth}
                             min={0} max={10} step={0.25} onChange={setPropertyGrowth}
                             format={v => `${v.toFixed(2)}%`} color="emerald" />
 
@@ -402,20 +402,20 @@ export const BuyVsRentCalculator = () => {
                         <button onClick={() => setShowAdvanced(v => !v)}
                             className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/30 hover:text-white/60 transition-colors">
                             <Info size={12} />
-                            {showAdvanced ? t('buy_vs_rent.hide_advanced') : t('buy_vs_rent.show_advanced')}
+                            {showAdvanced ? 'Hide Advanced Settings' : 'Show Advanced Settings'}
                         </button>
 
                         <AnimatePresence>
                             {showAdvanced && (
                                 <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }}
                                     exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3 }}>
-                                    <Slider label={t('buy_vs_rent.maintenance_costs')} value={maintenancePct}
+                                    <Slider label={'Annual Maintenance'} value={maintenancePct}
                                         min={0.25} max={3} step={0.25} onChange={setMaintenancePct}
                                         format={v => `${v.toFixed(2)}%`} color="gold" />
                                     <div className="mt-4 p-4 rounded-2xl bg-white/3 border border-white/5 text-[10px] text-white/30 leading-relaxed">
-                                        <strong className="text-white/50">{t('buy_vs_rent.stamp_duty_info')}</strong><br />
-                                        <strong className="text-white/50">{t('buy_vs_rent.notary_fees_info')}</strong><br />
-                                        {t('buy_vs_rent.upfront_costs_deduction')}
+                                        <strong className="text-white/50">{'Stamp Duty:'}</strong><br />
+                                        <strong className="text-white/50">{'Notary Fees:'}</strong><br />
+                                        {'One-time upfront costs deducted from buyer net worth at start.'}
                                     </div>
                                 </motion.div>
                             )}
@@ -444,7 +444,7 @@ export const BuyVsRentCalculator = () => {
                                 <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border mb-4 ${buyWins ? 'bg-gold/10 border-gold/30' : 'bg-violet-500/10 border-violet-500/30'}`}>
                                     {buyWins ? <Home size={12} className="text-gold" /> : <Key size={12} className="text-violet-400" />}
                                     <span className={`text-[10px] font-bold uppercase tracking-widest ${buyWins ? 'text-gold' : 'text-violet-400'}`}>
-                                        {buyWins ? t('buy_vs_rent.buying_wins') : t('buy_vs_rent.renting_wins')}
+                                        {buyWins ? 'Buying wins' : 'Renting wins'}
                                     </span>
                                 </div>
                                 <div className={`text-4xl font-serif mb-2 ${buyWins ? 'text-gold' : 'text-violet-400'}`}>
@@ -452,17 +452,17 @@ export const BuyVsRentCalculator = () => {
                                 </div>
                                 <p className="text-white/50 text-sm leading-relaxed max-w-xs mx-auto">
                                     {buyWins
-                                        ? t('buy_vs_rent.buying_better_off', { amount: fmtEur(diff), years: horizonYears })
-                                        : t('buy_vs_rent.renting_better_off', { amount: fmtEur(diff), years: horizonYears })}
+                                        ? `Buying leaves you ${fmtEur(diff)} better off after ${horizonYears} years`
+                                        : `Renting leaves you ${fmtEur(diff)} better off after ${horizonYears} years`}
                                 </p>
                                 {breakEvenYear && !buyWins && (
                                     <div className="mt-4 text-[11px] text-white/40">
-                                        {t('buy_vs_rent.outperform_info', { year: breakEvenYear })}
+                                        {`Buying outperforms renting from year ${breakEvenYear}`}
                                     </div>
                                 )}
                                 {buyWins && (
                                     <div className="mt-4 text-[11px] text-white/40">
-                                        {t('buy_vs_rent.key_driver', { rate: propertyGrowth })}
+                                        {`Key driver: ${propertyGrowth}% annual property appreciation`}
                                     </div>
                                 )}
                             </div>
@@ -475,23 +475,23 @@ export const BuyVsRentCalculator = () => {
                         <div className="p-5 bg-gold/5 border border-gold/20 rounded-2xl">
                             <div className="flex items-center gap-2 mb-4">
                                 <div className="w-2 h-2 rounded-full bg-gold" />
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-gold">{t('buy_vs_rent.buy_path')}</span>
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-gold">{'Buy Path'}</span>
                             </div>
                             <div className="space-y-3">
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.net_worth_at', { year: horizonYears })}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{`Net Worth at Yr ${horizonYears}`}</div>
                                     <div className="font-serif text-xl text-white">{final ? fmtEur(final.buyNetWorth) : '—'}</div>
                                 </div>
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.property_value')}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{'Property Value'}</div>
                                     <div className="font-mono text-sm text-gold/80">{final ? fmtEur(final.propertyValue) : '—'}</div>
                                 </div>
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.monthly_mortgage')}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{'Monthly Mortgage'}</div>
                                     <div className="font-mono text-sm text-white/70">{fmtEur(monthlyMortgagePmt)}</div>
                                 </div>
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.upfront_costs')}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{'Upfront Costs'}</div>
                                     <div className="font-mono text-sm text-red-400/70">{fmtEur(deposit + stampDuty + notaryFees)}</div>
                                 </div>
                             </div>
@@ -501,23 +501,23 @@ export const BuyVsRentCalculator = () => {
                         <div className="p-5 bg-violet-500/5 border border-violet-500/20 rounded-2xl">
                             <div className="flex items-center gap-2 mb-4">
                                 <div className="w-2 h-2 rounded-full bg-violet-400" />
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-violet-400">{t('buy_vs_rent.rent_path')}</span>
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-violet-400">{'Rent Path'}</span>
                             </div>
                             <div className="space-y-3">
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.net_worth_at', { year: horizonYears })}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{`Net Worth at Yr ${horizonYears}`}</div>
                                     <div className="font-serif text-xl text-white">{final ? fmtEur(final.rentNetWorth) : '—'}</div>
                                 </div>
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.investment_portfolio')}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{'Investment Portfolio'}</div>
                                     <div className="font-mono text-sm text-violet-400/80">{final ? fmtEur(final.investmentPortfolio) : '—'}</div>
                                 </div>
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.monthly_rent')}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{'Monthly Rent'}</div>
                                     <div className="font-mono text-sm text-white/70">{fmtEur(monthlyRent)}</div>
                                 </div>
                                 <div>
-                                    <div className="text-[10px] text-white/30 mb-0.5">{t('buy_vs_rent.total_rent_paid')}</div>
+                                    <div className="text-[10px] text-white/30 mb-0.5">{'Total Rent Paid'}</div>
                                     <div className="font-mono text-sm text-red-400/70">{final ? fmtEur(final.cumulativeRent) : '—'}</div>
                                 </div>
                             </div>
@@ -529,7 +529,7 @@ export const BuyVsRentCalculator = () => {
                         <div className="flex items-center gap-2 mb-6">
                             <TrendingUp size={14} className="text-white/40" />
                             <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">
-                                {t('buy_vs_rent.net_worth_over', { years: horizonYears })}
+                                {`Net Worth Over ${horizonYears} Years`}
                             </span>
                         </div>
                         <TimelineChart snapshots={snapshots} horizonYears={horizonYears} />
@@ -538,18 +538,18 @@ export const BuyVsRentCalculator = () => {
                     {/* ── KEY INPUTS RECAP ── */}
                     <div className="p-5 bg-white/3 border border-white/5 rounded-2xl">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-4 flex items-center gap-2">
-                            <Info size={12} /> {t('buy_vs_rent.key_assumptions_title')}
+                            <Info size={12} /> {'Key Assumptions'}
                         </div>
                         <div className="grid grid-cols-2 gap-x-6 gap-y-2">
                             {[
-                                [t('buy_vs_rent.property_price'), fmtEur(propertyPrice)],
-                                [t('buy_vs_rent.deposit'), `${fmtEur(deposit)} (${depositPct}%)`],
-                                [t('buy_vs_rent.mortgage_rate'), `${mortgageRate.toFixed(2)}%`],
-                                [t('buy_vs_rent.mortgage_term'), t('buy_vs_rent.years_full', { count: mortgageTerm })],
-                                [t('buy_vs_rent.monthly_rent'), fmtEur(monthlyRent)],
-                                [t('buy_vs_rent.investment_return'), `${investReturn.toFixed(2)}%`],
-                                [t('buy_vs_rent.property_appreciation'), `${propertyGrowth.toFixed(2)}%/yr`],
-                                [t('buy_vs_rent.malta_stamp_duty'), fmtEur(stampDuty)],
+                                ['Property Price', fmtEur(propertyPrice)],
+                                ['Deposit', `${fmtEur(deposit)} (${depositPct}%)`],
+                                ['Mortgage Rate', `${mortgageRate.toFixed(2)}%`],
+                                ['Mortgage Term', `${mortgageTerm} Years`],
+                                ['Monthly Rent', fmtEur(monthlyRent)],
+                                ['Investment Return Rate', `${investReturn.toFixed(2)}%`],
+                                ['Annual Property Appreciation', `${propertyGrowth.toFixed(2)}%/yr`],
+                                ['Malta Stamp Duty', fmtEur(stampDuty)],
                             ].map(([label, val]) => (
                                 <div key={label} className="flex justify-between text-[11px]">
                                     <span className="text-white/25">{label}</span>
@@ -558,7 +558,7 @@ export const BuyVsRentCalculator = () => {
                             ))}
                         </div>
                         <p className="text-[10px] text-white/20 mt-4 leading-relaxed">
-                            {t('buy_vs_rent.disclaimer')}
+                            {'Projections are indicative. Based on Malta 2026 tax rates. Consult a financial advisor before making investment decisions.'}
                         </p>
                     </div>
                 </div>

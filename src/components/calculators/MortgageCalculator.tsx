@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Home, Info } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useLocale } from 'next-intl';
 
 interface MortgageResult {
     monthlyPayment: number;
@@ -50,7 +50,7 @@ function calculateMortgage(params: MortgageInput): MortgageResult {
 }
 
 export const MortgageCalculator = () => {
-    const { t, i18n } = useTranslation();
+    const locale = useLocale();
     const [propertyPrice, setPropertyPrice] = useState(600000);
     const [depositPct, setDepositPct] = useState(30);
     const [interestRate, setInterestRate] = useState(4.75);
@@ -73,8 +73,8 @@ export const MortgageCalculator = () => {
         setResult(res);
     }, [propertyPrice, depositPct, interestRate, termYears, isResident, maxLTV]);
 
-    const locale = i18n.language === 'en' ? 'en-EU' : i18n.language;
-    const fmtItems = (n: number) => Math.round(n).toLocaleString(locale);
+    const fmtLocale = locale === 'en' ? 'en-EU' : locale;
+    const fmtItems = (n: number) => Math.round(n).toLocaleString(fmtLocale);
 
     // LTV bar colour
     const ltvColor = result
@@ -82,10 +82,10 @@ export const MortgageCalculator = () => {
         : 'bg-gold';
 
     const banks = [
-        { name: 'BOV', rate: '3.50% – 4.25%', note: isResident ? t('mortgage.bank_notes.variable_resident') : t('mortgage.bank_notes.variable_non_resident') },
-        { name: 'HSBC Malta', rate: '3.80% – 4.60%', note: isResident ? t('mortgage.bank_notes.variable_resident') : t('mortgage.bank_notes.variable_non_resident') },
-        { name: 'APS Bank', rate: '4.10% – 4.85%', note: t('mortgage.bank_notes.fixed_5y') },
-        { name: 'MFC', rate: '4.50% – 5.25%', note: t('mortgage.bank_notes.non_resident_btl') },
+        { name: 'BOV', rate: '3.50% – 4.25%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
+        { name: 'HSBC Malta', rate: '3.80% – 4.60%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
+        { name: 'APS Bank', rate: '4.10% – 4.85%', note: 'Fixed 5yr available' },
+        { name: 'MFC', rate: '4.50% – 5.25%', note: 'Non-res BTL' },
     ];
 
     return (
@@ -97,8 +97,8 @@ export const MortgageCalculator = () => {
                         <Home className="text-blue-400" size={24} />
                     </div>
                     <div>
-                        <h3 className="text-2xl font-serif text-white">{t('mortgage.title')}</h3>
-                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{t('mortgage.subtitle')}</p>
+                        <h3 className="text-2xl font-serif text-white">{'Malta Mortgage Calculator 2026'}</h3>
+                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{'2026 BANK RATES & ELIGIBILITY'}</p>
                     </div>
                 </div>
             </div>
@@ -110,8 +110,8 @@ export const MortgageCalculator = () => {
                     {/* Resident toggle */}
                     <div className="flex gap-3">
                         {[
-                            { val: false, label: t('mortgage.non_resident'), sub: t('mortgage.max_ltv', { ltv: 70 }), color: 'border-amber-500 bg-amber-500/10 text-amber-400' },
-                            { val: true, label: t('mortgage.tax_resident'), sub: t('mortgage.max_ltv', { ltv: 90 }), color: 'border-emerald-500 bg-emerald-500/10 text-emerald-400' },
+                            { val: false, label: 'NON-RESIDENT', sub: 'Max LTV: 70%', color: 'border-amber-500 bg-amber-500/10 text-amber-400' },
+                            { val: true, label: 'TAX RESIDENT', sub: 'Max LTV: 90%', color: 'border-emerald-500 bg-emerald-500/10 text-emerald-400' },
                         ].map(opt => (
                             <button key={String(opt.val)} onClick={() => setIsResident(opt.val)}
                                 className={`flex-1 p-4 rounded-2xl border text-left transition-all ${isResident === opt.val ? opt.color : 'border-white/10 bg-white/5 text-white/40'}`}>
@@ -124,7 +124,7 @@ export const MortgageCalculator = () => {
                     {/* Property Price */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('mortgage.property_price')}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Property Price'}</label>
                             <span className="text-blue-400 font-serif text-xl">€{fmtItems(propertyPrice)}</span>
                         </div>
                         <input type="range" min="100000" max="5000000" step="25000" value={propertyPrice}
@@ -138,7 +138,7 @@ export const MortgageCalculator = () => {
                     {/* Deposit */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('mortgage.deposit')}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Deposit'}</label>
                             <div className="text-right">
                                 <span className="text-blue-400 font-serif text-xl">€{fmtItems(deposit)}</span>
                                 <span className="text-white/30 text-xs ml-2">({depositPct}%)</span>
@@ -155,7 +155,7 @@ export const MortgageCalculator = () => {
                     {/* Interest Rate */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('mortgage.interest_rate')}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Interest Rate'}</label>
                             <span className="text-blue-400 font-serif text-xl">{interestRate.toFixed(2)}%</span>
                         </div>
                         <input type="range" min="2.5" max="7" step="0.05" value={interestRate}
@@ -169,14 +169,14 @@ export const MortgageCalculator = () => {
                     {/* Term */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{t('mortgage.loan_term')}</label>
-                            <span className="text-blue-400 font-serif text-xl">{t('mortgage.years', { count: termYears })}</span>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Loan Term'}</label>
+                            <span className="text-blue-400 font-serif text-xl">{`${termYears} years`}</span>
                         </div>
                         <div className="flex gap-2">
                             {[10, 15, 20, 25, 30].map(y => (
                                 <button key={y} onClick={() => setTermYears(y)}
                                     className={`flex-1 py-3 rounded-xl border text-[11px] font-bold transition-all ${termYears === y ? 'bg-blue-500 text-white border-blue-500' : 'bg-white/5 border-white/10 text-white/40'}`}>
-                                    {t('mortgage.years_short', { count: y })}
+                                    {`${y}yr`}
                                 </button>
                             ))}
                         </div>
@@ -188,27 +188,27 @@ export const MortgageCalculator = () => {
 
                     {/* Monthly Payment — Hero */}
                     <div className="p-8 rounded-3xl bg-blue-500/10 border border-blue-500/30 text-center">
-                        <div className="text-[10px] font-bold uppercase tracking-widest text-blue-400/60 mb-2">{t('mortgage.monthly_repayment')}</div>
+                        <div className="text-[10px] font-bold uppercase tracking-widest text-blue-400/60 mb-2">{'MONTHLY REPAYMENT'}</div>
                         <div className="text-5xl font-serif text-blue-400 mb-1">€{fmtItems(result?.monthlyPayment ?? 0)}</div>
-                        <div className="text-xs text-white/30">{t('mortgage.breakdown')}</div>
+                        <div className="text-xs text-white/30">{'Principal + Interest breakdown'}</div>
                     </div>
 
                     {/* Breakdown */}
                     <div className="grid grid-cols-2 gap-4">
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('mortgage.loan_amount')}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'Loan Amount'}</div>
                             <div className="text-xl font-serif">€{fmtItems(result?.loanAmount ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('mortgage.total_interest')}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'Total Interest'}</div>
                             <div className="text-xl font-serif text-red-400/80">€{fmtItems(result?.totalInterest ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('mortgage.total_repayment')}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'Total Repayment'}</div>
                             <div className="text-xl font-serif">€{fmtItems(result?.totalPayment ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('mortgage.ltv_ratio')}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'LTV Ratio'}</div>
                             <div className={`text-xl font-serif ${(result?.ltv ?? 0) > maxLTV ? 'text-red-400' : 'text-emerald-400'}`}>
                                 {result?.ltv.toFixed(1)}%
                             </div>
@@ -218,8 +218,8 @@ export const MortgageCalculator = () => {
                     {/* LTV Bar */}
                     <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
                         <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest text-white/30 mb-3">
-                            <span>{t('mortgage.ltv_ratio')}</span>
-                            <span>{t('mortgage.ltv_max_info', { ltv: maxLTV, type: isResident ? t('mortgage.residents') : t('mortgage.non_residents') })}</span>
+                            <span>{'LTV Ratio'}</span>
+                            <span>{`Max ${maxLTV}% — ${isResident ? "Residents" : "Non-Residents"}`}</span>
                         </div>
                         <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
                             <div className={`h-full rounded-full transition-all duration-700 ${ltvColor}`}
@@ -230,7 +230,7 @@ export const MortgageCalculator = () => {
                     {/* 2026 Bank Rates */}
                     <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-4 flex items-center gap-2">
-                            <Info size={12} className="text-blue-400" /> {t('mortgage.bank_rates')}
+                            <Info size={12} className="text-blue-400" /> {'2026 MALTA BANK RATES'}
                         </div>
                         <div className="space-y-2">
                             {banks.map(b => (
@@ -248,7 +248,7 @@ export const MortgageCalculator = () => {
                     {/* Warning if LTV too high */}
                     {(result?.ltv ?? 0) > maxLTV && (
                         <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-2xl text-[11px] text-red-400 leading-relaxed">
-                            {t('mortgage.ltv_warning', { min: isResident ? 10 : 30, type: isResident ? t('mortgage.residents') : t('mortgage.non_residents'), max: maxLTV })}
+                            {`Minimum deposit ${isResident ? "10%" : "30%"} required for ${isResident ? "residents" : "non-residents"} (max LTV ${maxLTV}%).`}
                         </div>
                     )}
                 </div>

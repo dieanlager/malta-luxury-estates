@@ -1,7 +1,8 @@
-'use client';
+﻿'use client';
+import { useLocale } from 'next-intl';
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { useTranslation } from 'react-i18next';
+
 import {
     ShieldCheck, Banknote, User, Briefcase,
     AlertCircle, CheckCircle2, ChevronRight,
@@ -30,7 +31,8 @@ const DSR_LIMIT = 0.35; // Debt Service Ratio limit 35%
 const STRESS_RATE = 0.0575; // 5.75% for stress testing capacity
 
 export const MortgagePreQualifier: React.FC = () => {
-    const { t, i18n } = useTranslation();
+    const locale = useLocale();
+
     const [step, setStep] = useState<Step>('status');
     const [data, setData] = useState<FunnelData>({
         residency: 'resident',
@@ -135,13 +137,13 @@ export const MortgagePreQualifier: React.FC = () => {
                     <div>
                         <div className="flex items-center gap-2 text-gold mb-6">
                             <Landmark size={20} />
-                            <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{t('pre_qualifier.subtitle')}</span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.2em]">{'MORTGAGE ELIGIBILITY WIZARD'}</span>
                         </div>
                         <h2 className="text-2xl font-serif text-white mb-4">
-                            {t('pre_qualifier.title')}
+                            {'Am I eligible for a Malta Mortgage?'}
                         </h2>
                         <p className="text-sm text-white/40 leading-relaxed mb-10">
-                            {t('pre_qualifier.intro')}
+                            {'Answer 4 quick questions to see your estimated borrowing capacity.'}
                         </p>
 
                         <AnimatePresence mode="wait">
@@ -151,10 +153,10 @@ export const MortgagePreQualifier: React.FC = () => {
                                 animate={{ opacity: 1, x: 0 }}
                                 className="p-6 bg-gold/5 border border-gold/20 rounded-2xl"
                             >
-                                <div className="text-[9px] font-bold uppercase tracking-widest text-gold mb-2">{t('pre_qualifier.estimated_cap')}</div>
-                                <div className="text-3xl font-serif text-white mb-2">€{results.maxLoan.toLocaleString(i18n.language)}</div>
+                                <div className="text-[9px] font-bold uppercase tracking-widest text-gold mb-2">{'ESTIMATED CAPACITY'}</div>
+                                <div className="text-3xl font-serif text-white mb-2">€{results.maxLoan.toLocaleString(locale)}</div>
                                 <div className="text-[10px] text-white/30 leading-relaxed">
-                                    {t('pre_qualifier.max_potential_loan', { years: results.loanDuration })}
+                                    {`Up to €${results.maxLoan.toLocaleString()} over ${results.loanDuration} years`}
                                 </div>
                             </motion.div>
                         </AnimatePresence>
@@ -163,11 +165,11 @@ export const MortgagePreQualifier: React.FC = () => {
                     <div className="space-y-4">
                         <div className="flex items-center gap-2 text-[10px] text-white/20 uppercase tracking-widest">
                             <ShieldCheck size={12} className="text-emerald-500" />
-                            {t('pre_qualifier.bank_criteria')}
+                            {'Meets standard Malta bank criteria'}
                         </div>
                         <div className="flex items-center gap-2 text-[10px] text-white/20 uppercase tracking-widest">
                             <ShieldCheck size={12} className="text-emerald-500" />
-                            {t('pre_qualifier.stress_test')}
+                            {'Stress-tested at +2% rate'}
                         </div>
                     </div>
                 </div>
@@ -186,41 +188,41 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.status')}</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.residency')}</h3>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 1 — RESIDENCY STATUS'}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{'What is your residency status?'}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                                         <OptionCard
                                             active={data.residency === 'resident'}
-                                            label={t('pre_qualifier.options.resident')}
+                                            label={'Malta Resident'}
                                             icon={User}
                                             onClick={() => updateData({ residency: 'resident' })}
-                                            desc={t('pre_qualifier.options.resident_desc')}
+                                            desc={'EU/Malta tax resident'}
                                         />
                                         <OptionCard
                                             active={data.residency === 'non-resident'}
-                                            label={t('pre_qualifier.options.non_resident')}
+                                            label={'Non-Resident'}
                                             icon={Globe}
                                             onClick={() => updateData({ residency: 'non-resident' })}
-                                            desc={t('pre_qualifier.options.non_resident_desc')}
+                                            desc={'Foreign buyer / expat'}
                                         />
                                     </div>
-                                    <h3 className="text-xl font-serif text-white mb-8">{t('pre_qualifier.questions.buyer_type')}</h3>
+                                    <h3 className="text-xl font-serif text-white mb-8">{'What type of buyer are you?'}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                         <OptionCard
                                             active={data.buyerType === 'first'}
-                                            label={t('pre_qualifier.options.first_time')}
+                                            label={'First-Time Buyer'}
                                             icon={Home}
                                             onClick={() => updateData({ buyerType: 'first' })}
                                         />
                                         <OptionCard
                                             active={data.buyerType === 'second'}
-                                            label={t('pre_qualifier.options.second_time')}
+                                            label={'Second Home'}
                                             icon={Building2}
                                             onClick={() => updateData({ buyerType: 'second' })}
                                         />
                                         <OptionCard
                                             active={data.buyerType === 'buy-to-let'}
-                                            label={t('pre_qualifier.options.investor')}
+                                            label={'Investor / BTL'}
                                             icon={TrendingUp}
                                             onClick={() => updateData({ buyerType: 'buy-to-let' })}
                                         />
@@ -236,32 +238,32 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.employment')}</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.employment')}</h3>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 2 — EMPLOYMENT'}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{'What is your employment status?'}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
                                         <OptionCard
                                             active={data.employment === 'full-time'}
-                                            label={t('pre_qualifier.options.full_time')}
+                                            label={'Employed Full-Time'}
                                             icon={Briefcase}
                                             onClick={() => updateData({ employment: 'full-time' })}
                                         />
                                         <OptionCard
                                             active={data.employment === 'self-employed'}
-                                            label={t('pre_qualifier.options.self_employed')}
+                                            label={'Self-Employed'}
                                             icon={Calculator}
                                             onClick={() => updateData({ employment: 'self-employed' })}
                                         />
                                         <OptionCard
                                             active={data.employment === 'other'}
-                                            label={t('pre_qualifier.options.other_employment')}
+                                            label={'Other'}
                                             icon={User}
                                             onClick={() => updateData({ employment: 'other' })}
                                         />
                                     </div>
                                     <div className="max-w-xs">
                                         <div className="flex justify-between items-center mb-4">
-                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.questions.age')}</label>
-                                            <span className="text-lg font-serif text-white">{t('pre_qualifier.years', { count: data.age })}</span>
+                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{'Your Age'}</label>
+                                            <span className="text-lg font-serif text-white">{`${data.age} years old`}</span>
                                         </div>
                                         <input
                                             type="range"
@@ -283,14 +285,14 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.income')}</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.income')}</h3>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 3 — INCOME'}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{'What is your gross annual income?'}</h3>
 
                                     <div className="space-y-12 max-w-md">
                                         <div>
                                             <div className="flex justify-between items-center mb-4">
-                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.labels.monthly_income')}</label>
-                                                <span className="text-xl font-serif text-white">€{data.monthlyIncome.toLocaleString(i18n.language)}</span>
+                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{'Gross Monthly Income (€)'}</label>
+                                                <span className="text-xl font-serif text-white">€{data.monthlyIncome.toLocaleString(locale)}</span>
                                             </div>
                                             <input
                                                 type="range"
@@ -304,8 +306,8 @@ export const MortgagePreQualifier: React.FC = () => {
                                         </div>
                                         <div>
                                             <div className="flex justify-between items-center mb-4">
-                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.labels.savings')}</label>
-                                                <span className="text-xl font-serif text-white">€{data.savings.toLocaleString(i18n.language)}</span>
+                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{'Available Savings / Deposit (€)'}</label>
+                                                <span className="text-xl font-serif text-white">€{data.savings.toLocaleString(locale)}</span>
                                             </div>
                                             <input
                                                 type="range"
@@ -330,33 +332,33 @@ export const MortgagePreQualifier: React.FC = () => {
                                 >
                                     <div className="flex items-center gap-3 mb-6">
                                         <CheckCircle2 className="text-emerald-400" size={24} />
-                                        <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-400">{t('pre_qualifier.results.complete')}</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-400">{'ASSESSMENT COMPLETE'}</label>
                                     </div>
-                                    <h3 className="text-3xl font-serif text-white mb-10">{t('pre_qualifier.results.assessment')}</h3>
+                                    <h3 className="text-3xl font-serif text-white mb-10">{'Your Borrowing Assessment'}</h3>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                                         <div className="p-8 bg-white/3 border border-white/5 rounded-3xl">
-                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/30 mb-4">{t('pre_qualifier.results.max_value')}</div>
-                                            <div className="text-4xl font-serif text-white mb-2">€{results.maxPropertyPrice.toLocaleString(i18n.language)}</div>
-                                            <div className="text-[10px] text-white/40">{t('pre_qualifier.results.includes_deposit', { amount: `€${data.savings.toLocaleString(i18n.language)}` })}</div>
+                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/30 mb-4">{'MAX PROPERTY VALUE'}</div>
+                                            <div className="text-4xl font-serif text-white mb-2">€{results.maxPropertyPrice.toLocaleString(locale)}</div>
+                                            <div className="text-[10px] text-white/40">{`Includes your deposit of €${data.savings.toLocaleString()}`}</div>
                                         </div>
                                         <div className="p-8 bg-gold/5 border border-gold/20 rounded-3xl">
-                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-4">{t('pre_qualifier.results.recommended_loan')}</div>
-                                            <div className="text-4xl font-serif text-gold mb-2">€{results.maxLoan.toLocaleString(i18n.language)}</div>
-                                            <div className="text-[10px] text-gold/40">{t('pre_qualifier.results.loan_term', { years: results.loanDuration })}</div>
+                                            <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-4">{'RECOMMENDED LOAN'}</div>
+                                            <div className="text-4xl font-serif text-gold mb-2">€{results.maxLoan.toLocaleString(locale)}</div>
+                                            <div className="text-[10px] text-gold/40">{`Over ${results.loanDuration} years`}</div>
                                         </div>
                                     </div>
 
                                     <div className="flex flex-col md:flex-row gap-4">
                                         <button className="flex-1 py-5 rounded-2xl bg-gold text-luxury-black text-xs font-bold uppercase tracking-widest hover:scale-[1.02] transition-transform flex items-center justify-center gap-2 group">
-                                            {t('pre_qualifier.results.official_quotation')}
+                                            {'Request Official Quotation'}
                                             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                                         </button>
                                         <button
                                             onClick={() => setStep('status')}
                                             className="px-10 py-5 rounded-2xl border border-white/10 text-white/40 text-xs font-bold uppercase tracking-widest hover:bg-white/5 transition-colors"
                                         >
-                                            {t('pre_qualifier.results.recalculate')}
+                                            {'Recalculate'}
                                         </button>
                                     </div>
                                 </motion.div>
@@ -370,14 +372,14 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{t('pre_qualifier.steps.debts')}</label>
-                                    <h3 className="text-2xl font-serif text-white mb-10">{t('pre_qualifier.questions.debts')}</h3>
-                                    <p className="text-white/40 text-sm mb-12">{t('pre_qualifier.labels.debt_desc')}</p>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 3 — EXISTING DEBTS'}</label>
+                                    <h3 className="text-2xl font-serif text-white mb-10">{'Any existing monthly debt commitments?'}</h3>
+                                    <p className="text-white/40 text-sm mb-12">{'Include loans, car finance, credit cards etc.'}</p>
 
                                     <div className="max-w-md">
                                         <div className="flex justify-between items-center mb-4">
-                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('pre_qualifier.labels.monthly_debts')}</label>
-                                            <span className="text-xl font-serif text-white">€{data.monthlyDebts.toLocaleString(i18n.language)}</span>
+                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{'Total Monthly Debt Payments (€)'}</label>
+                                            <span className="text-xl font-serif text-white">€{data.monthlyDebts.toLocaleString(locale)}</span>
                                         </div>
                                         <input
                                             type="range"
@@ -391,7 +393,7 @@ export const MortgagePreQualifier: React.FC = () => {
                                         <div className="mt-12 p-5 rounded-2xl bg-amber-500/5 border border-amber-500/20 flex gap-3">
                                             <AlertCircle className="text-amber-400 shrink-0" size={16} />
                                             <p className="text-[11px] text-amber-200/50 leading-relaxed uppercase tracking-wider font-bold">
-                                                {t('pre_qualifier.labels.stress_test_warning')}
+                                                {'Stress-tested at current rate +2%. Results are indicative only.'}
                                             </p>
                                         </div>
                                     </div>
@@ -416,7 +418,7 @@ export const MortgagePreQualifier: React.FC = () => {
                                 className="flex-1 py-4 bg-gold text-luxury-black rounded-xl text-xs font-bold uppercase tracking-widest
                            flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-gold/20 transition-all"
                             >
-                                {t('pre_qualifier.next_step')}
+                                {'NEXT STEP →'}
                                 <ChevronRight size={16} />
                             </button>
                         </div>

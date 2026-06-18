@@ -5,13 +5,13 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, MapPin, Home, ChevronDown, X } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+
 import { LOCATIONS } from '../lib/data';
 import { Location } from '../types';
 
 export const SearchFilter: React.FC = () => {
   const router = useRouter();
-  const { t } = useTranslation();
+
   const [query, setQuery] = useState('');
   const [selectedType, setSelectedType] = useState('all_types');
   const [isLocationOpen, setIsLocationOpen] = useState(false);
@@ -81,14 +81,14 @@ export const SearchFilter: React.FC = () => {
           <div className="flex items-center px-6 py-4 gap-4 border-b lg:border-b-0 lg:border-r border-white/10 group">
             <MapPin className="text-gold group-focus-within:scale-110 transition-transform" size={22} />
             <div className="flex-1">
-              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">{t('search.location')}</label>
+              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">{'Location'}</label>
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onFocus={() => query.length > 1 && setIsLocationOpen(true)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                placeholder={t('search.placeholder')}
+                placeholder={'Search area, district or location...'}
                 aria-label="Search by location in Malta"
                 className="bg-transparent border-none outline-none text-white placeholder:text-white/20 w-full text-sm font-medium"
               />
@@ -142,9 +142,9 @@ export const SearchFilter: React.FC = () => {
           >
             <Home className="text-gold group-hover:scale-110 transition-transform" size={22} />
             <div className="flex-1">
-              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">{t('search.property_type')}</label>
+              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">{'Property Type'}</label>
               <div className="text-sm font-medium text-white flex items-center justify-between">
-                {selectedType === 'all_types' ? t('search.all_types') : t(`search.types.${selectedType}`)}
+                {selectedType === 'all_types' ? 'All Types' : t(`search.types.${selectedType}`)}
                 <ChevronDown size={16} className={`transition-transform duration-300 ${isTypeOpen ? 'rotate-180' : ''}`} />
               </div>
             </div>
@@ -168,7 +168,7 @@ export const SearchFilter: React.FC = () => {
                     className={`w-full px-4 py-3 rounded-xl text-left text-sm transition-all ${selectedType === type ? 'bg-gold text-luxury-black font-bold' : 'text-white/60 hover:bg-white/5 hover:text-white'
                       }`}
                   >
-                    {type === 'all_types' ? t('search.all_types') : t(`search.types.${type}`)}
+                    {type === 'all_types' ? 'All Types' : t(`search.types.${type}`)}
                   </button>
                 ))}
               </motion.div>
@@ -184,7 +184,7 @@ export const SearchFilter: React.FC = () => {
             className="w-full h-full gold-gradient text-luxury-black px-8 py-4 lg:py-0 rounded-2xl font-bold text-sm hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg flex items-center justify-center gap-3 group"
           >
             <Search size={18} className="group-hover:rotate-12 transition-transform" />
-            <span>{t('search.search_button')}</span>
+            <span>{'Search'}</span>
           </button>
         </div>
       </motion.div>
@@ -193,11 +193,11 @@ export const SearchFilter: React.FC = () => {
       <div className="mt-6 flex flex-col items-center gap-4">
         <div className="flex flex-wrap justify-center gap-3">
           {[
-            { id: 'seafront', label: t('search.filters.seafront') },
-            { id: 'with_pool', label: t('search.filters.with_pool') },
-            { id: 'historic', label: t('search.filters.historic') },
-            { id: 'modern', label: t('search.filters.modern') },
-            { id: 'high_efficiency', label: t('search.filters.high_efficiency') }
+            { id: 'seafront', label: 'Seafront' },
+            { id: 'with_pool', label: 'With Pool' },
+            { id: 'historic', label: 'Historic' },
+            { id: 'modern', label: 'Modern' },
+            { id: 'high_efficiency', label: 'High Efficiency' }
           ].map((filter) => (
             <button
               key={filter.id}
@@ -209,7 +209,7 @@ export const SearchFilter: React.FC = () => {
           ))}
         </div>
         <p className="text-[10px] text-white/20 uppercase tracking-[0.2em] font-medium">
-          {t('search.try_suggest')} <span className="text-white/40">"Sliema"</span>, <span className="text-white/40">"St. Julian's"</span>, or <span className="text-white/40">"Valletta"</span>
+          {'Try:'} <span className="text-white/40">"Sliema"</span>, <span className="text-white/40">"St. Julian's"</span>, or <span className="text-white/40">"Valletta"</span>
         </p>
       </div>
     </div>
