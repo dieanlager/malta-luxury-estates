@@ -1,11 +1,12 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Bed, Bath, Maximize, Heart, ExternalLink, MapPin } from 'lucide-react';
+import { Bed, Bath, Maximize, ExternalLink, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/src/navigation';
 import type { Property } from '../types';
 import { formatPrice } from '../lib/seo/schemas';
+import { FavoriteButton } from '@/src/components/FavoriteButton';
 
 interface PropertyCardProps {
   property: Property;
@@ -63,17 +64,12 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
         </div>
 
         {/* Favourite */}
-        <div className="absolute top-4 right-4">
-          <button
-            onClick={() => onToggleFavorite?.(property.id)}
-            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-              isFavorite
-                ? 'bg-gold text-luxury-black'
-                : 'bg-luxury-black/40 backdrop-blur-md text-white hover:bg-gold hover:text-luxury-black border border-white/10'
-            }`}
-          >
-            <Heart size={18} fill={isFavorite ? 'currentColor' : 'none'} />
-          </button>
+        <div className="absolute top-3 right-3 z-10">
+          <FavoriteButton
+            propertyId={property.id || property.slug || ""}
+            isFavorite={isFavorite}
+            onToggle={(id) => onToggleFavorite?.(id)}
+          />
         </div>
       </div>
 

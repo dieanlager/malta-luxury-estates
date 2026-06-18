@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
 import { Navbar } from '@/src/components/Navbar';
 import { Footer } from '@/src/components/Footer';
+import { AIChatbot } from '@/src/components/AIChatbot';
 
 type Props = {
   children: React.ReactNode;
@@ -24,6 +25,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Navbar />
         {children}
         <Footer />
+        <AIChatbot />
       </div>
     </NextIntlClientProvider>
   );
