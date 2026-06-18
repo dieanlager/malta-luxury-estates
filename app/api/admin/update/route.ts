@@ -1,10 +1,10 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const supabase = createClient(
+const getSupabase = () => createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
@@ -22,7 +22,7 @@ export async function PUT(req: NextRequest) {
     ? `[FEATURES:${p.features.join(',')}]\n` : '';
   const desc = (p.affiliate_url ? `[AFFILIATE_URL:${p.affiliate_url}]\n` : '') + featuresStr + (p.description || '');
 
-  const { data, error } = await supabase.from('properties').update({
+  const { data, error } = await getSupabase().from('properties').update({
     title: p.title,
     price: Number(p.price),
     bedrooms: Number(p.beds) || null,

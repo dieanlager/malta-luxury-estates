@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const supabase = createClient(
+const getSupabase = () => createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
   let slug = baseSlug;
   let counter = 2;
   while (true) {
-    const { data: existing } = await supabase.from('properties').select('id').eq('slug', slug).maybeSingle();
+    const { data: existing } = await getSupabase().from('properties').select('id').eq('slug', slug).maybeSingle();
     if (!existing) break;
     slug = baseSlug + '-' + counter++;
   }
@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
     ? `[FEATURES:${p.features.join(',')}]\n` : '';
   const desc = (p.affiliate_url ? `[AFFILIATE_URL:${p.affiliate_url}]\n` : '') + featuresStr + (p.description || '');
 
-  const { data, error } = await supabase.from('properties').insert([{
+  const { data, error } = await getSupabase().from('properties').insert([{
     title: p.title, slug,
     price: Number(p.price),
     bedrooms: Number(p.beds) || null,
