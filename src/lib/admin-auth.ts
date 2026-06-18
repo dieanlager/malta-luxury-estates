@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 export function requireAdmin(req: NextRequest): NextResponse | null {
   const key = req.headers.get('x-admin-key');

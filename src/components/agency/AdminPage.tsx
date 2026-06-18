@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import React, { useState, useEffect, useCallback } from 'react';
 import { Upload, X, Trash2, Link, GripVertical, Edit2, List, Plus, RefreshCw, Eye, EyeOff, Star } from 'lucide-react';
 
