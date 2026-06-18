@@ -1,5 +1,8 @@
+'use client';
+
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Navigation, Home, TrendingUp, ArrowUpRight } from 'lucide-react';
 
@@ -86,13 +89,13 @@ const CITIES: City[] = [
 
 export const MaltaMap = () => {
   const [activeCity, setActiveCity] = useState<City | null>(null);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className="relative w-full max-w-5xl mx-auto aspect-[4/3] bg-luxury-black/40 rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl group/map">
       {/* Map Background SVG - More detailed paths */}
-      <svg 
-        viewBox="0 0 800 600" 
+      <svg
+        viewBox="0 0 800 600"
         className="w-full h-full fill-white/5 stroke-white/20 stroke-[0.5] transition-all duration-700"
       >
         <defs>
@@ -103,40 +106,40 @@ export const MaltaMap = () => {
         </defs>
 
         {/* Gozo */}
-        <motion.path 
+        <motion.path
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          d="M110,120 C130,100 160,80 200,85 C240,90 260,110 270,140 C280,170 260,200 230,220 C200,240 150,230 120,210 C90,190 80,150 110,120 Z" 
+          d="M110,120 C130,100 160,80 200,85 C240,90 260,110 270,140 C280,170 260,200 230,220 C200,240 150,230 120,210 C90,190 80,150 110,120 Z"
           className="hover:fill-gold/10 transition-colors cursor-default"
         />
         {/* Comino */}
-        <motion.path 
+        <motion.path
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          d="M315,215 C325,210 340,215 335,230 C330,245 315,240 315,225 Z" 
+          d="M315,215 C325,210 340,215 335,230 C330,245 315,240 315,225 Z"
           className="fill-gold/20"
         />
         {/* Malta */}
-        <motion.path 
+        <motion.path
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          d="M360,260 C400,230 460,210 520,220 C580,230 640,260 680,300 C720,340 750,400 730,460 C710,520 650,560 580,570 C510,580 440,560 380,520 C320,480 300,420 310,360 C320,300 330,280 360,260 Z" 
+          d="M360,260 C400,230 460,210 520,220 C580,230 640,260 680,300 C720,340 750,400 730,460 C710,520 650,560 580,570 C510,580 440,560 380,520 C320,480 300,420 310,360 C320,300 330,280 360,260 Z"
           className="hover:fill-gold/10 transition-colors cursor-default"
         />
 
         {/* City Markers */}
         {CITIES.map((city) => (
-          <g 
-            key={city.id} 
+          <g
+            key={city.id}
             className="cursor-pointer group/marker"
             onMouseEnter={() => setActiveCity(city)}
             onMouseLeave={() => setActiveCity(null)}
-            onClick={() => navigate(`/properties/${city.slug}`)}
+            onClick={() => router.push(`/properties/${city.slug}`)}
           >
             <motion.circle
               cx={city.x}
@@ -156,9 +159,9 @@ export const MaltaMap = () => {
               animate={{ scale: [1, 1.5, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
-            <text 
-              x={city.x + 15} 
-              y={city.y + 5} 
+            <text
+              x={city.x + 15}
+              y={city.y + 5}
               className="fill-white/60 text-[10px] font-bold uppercase tracking-widest pointer-events-none hidden md:block group-hover/marker:fill-gold transition-colors"
             >
               {city.name}
@@ -175,11 +178,11 @@ export const MaltaMap = () => {
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0, x: 20, y: 20 }}
             className="absolute bottom-8 right-8 w-80 glass-card rounded-3xl p-6 border border-gold/30 shadow-2xl z-20 cursor-pointer"
-            onClick={() => navigate(`/properties/${activeCity.slug}`)}
+            onClick={() => router.push(`/properties/${activeCity.slug}`)}
           >
             <div className="aspect-video rounded-xl overflow-hidden mb-4 border border-white/10 relative group/card">
-              <img 
-                src={activeCity.image} 
+              <img
+                src={activeCity.image}
                 alt={activeCity.name}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-110"
                 referrerPolicy="no-referrer"
@@ -191,7 +194,7 @@ export const MaltaMap = () => {
               <ArrowUpRight className="text-gold/40 group-hover/card:text-gold transition-colors" size={20} />
             </div>
             <p className="text-xs text-white/50 leading-relaxed mb-6 line-clamp-2">{activeCity.description}</p>
-            
+
             <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mb-4">
               <div className="flex flex-col">
                 <span className="text-[9px] uppercase tracking-widest font-bold text-white/30 mb-1 flex items-center gap-1">
@@ -210,8 +213,8 @@ export const MaltaMap = () => {
               <span className="text-[9px] font-bold uppercase tracking-widest text-gold hover:underline">
                 View Listings
               </span>
-              <Link 
-                to="/insights/malta-real-estate-investment-guide-2026"
+              <Link
+                href="/insights/malta-real-estate-investment-guide-2026"
                 className="text-[9px] font-bold uppercase tracking-widest text-white/40 hover:text-white transition-colors"
                 onClick={(e) => e.stopPropagation()}
               >
@@ -232,8 +235,8 @@ export const MaltaMap = () => {
       </div>
 
       {/* Decorative Grid */}
-      <div className="absolute inset-0 pointer-events-none opacity-20" 
-        style={{ backgroundImage: 'radial-gradient(circle, #C5A059 1px, transparent 1px)', backgroundSize: '40px 40px' }} 
+      <div className="absolute inset-0 pointer-events-none opacity-20"
+        style={{ backgroundImage: 'radial-gradient(circle, #C5A059 1px, transparent 1px)', backgroundSize: '40px 40px' }}
       />
     </div>
   );

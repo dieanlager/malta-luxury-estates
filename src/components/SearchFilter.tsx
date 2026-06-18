@@ -1,6 +1,8 @@
 // @ts-nocheck
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, MapPin, Home, ChevronDown, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -8,7 +10,7 @@ import { LOCATIONS } from '../lib/data';
 import { Location } from '../types';
 
 export const SearchFilter: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const { t } = useTranslation();
   const [query, setQuery] = useState('');
   const [selectedType, setSelectedType] = useState('all_types');
@@ -47,9 +49,9 @@ export const SearchFilter: React.FC = () => {
 
     if (match) {
       const typeParam = selectedType !== 'all_types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : '';
-      navigate(`/properties/${match.slug}${typeParam}`);
+      router.push(`/properties/${match.slug}${typeParam}`);
     } else {
-      navigate(`/properties/all?q=${encodeURIComponent(query)}`);
+      router.push(`/properties/all?q=${encodeURIComponent(query)}`);
     }
   };
 
@@ -63,7 +65,7 @@ export const SearchFilter: React.FC = () => {
     if (tag === 'modern') filterParams = '?style=modern';
     if (tag === 'high_efficiency') filterParams = '?epc=A,B';
 
-    navigate(`/properties/all${filterParams}`);
+    router.push(`/properties/all${filterParams}`);
   };
 
   return (
@@ -114,7 +116,7 @@ export const SearchFilter: React.FC = () => {
                       logEvent('autocomplete_select', { slug: loc.slug });
                       setQuery(loc.nameEn);
                       setIsLocationOpen(false);
-                      navigate(`/properties/${loc.slug}${selectedType !== 'all_types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : ''}`);
+                      router.push(`/properties/${loc.slug}${selectedType !== 'all_types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : ''}`);
                     }}
                     className="w-full flex items-center gap-4 px-6 py-4 hover:bg-white/5 text-left transition-colors border-b border-white/5 last:border-0"
                   >

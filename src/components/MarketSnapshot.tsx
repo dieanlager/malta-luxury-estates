@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Location, LocationStats } from '../types';
 import { TrendingUp, Home, Calendar } from 'lucide-react';
