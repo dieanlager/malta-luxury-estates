@@ -1,8 +1,9 @@
+'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 import { Calculator, TrendingUp, ShieldCheck, ArrowRight, Home, Scale, Landmark } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { BuyingCostsCalculator } from './BuyingCostsCalculator';
 import { ROICalculator } from './calculators/ROICalculator';
 import { SalesTaxCalculator } from './calculators/SalesTaxCalculator';

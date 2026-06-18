@@ -1,10 +1,11 @@
+'use client';
 // @ts-nocheck
 import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Crown, Zap, Flame, ArrowRight } from 'lucide-react';
 import { Property } from '../types';
 import { getFeaturedProperties } from '../lib/data';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ImgWithPlaceholder } from './ImgWithPlaceholder';
 import { getImageUrl } from '../lib/imageUtils';
 

@@ -1,5 +1,6 @@
-import { ReactNode } from 'react'
-import { Navigate, useLocation } from 'react-router-dom'
+'use client';
+import { ReactNode, useEffect } from 'react'
+import { useRouter, usePathname } from 'next/navigation'
 import { useAuth } from '../lib/auth'
 
 interface Props {
@@ -9,9 +10,15 @@ interface Props {
 
 export function AuthGuard({ children, requirePlan }: Props) {
     const { session, agency, loading } = useAuth()
-    const location = useLocation()
+    const router = useRouter()
+    const pathname = usePathname()
 
-    // 1. Czekamy na załadowanie sesji
+    useEffect(() => {
+        if (!loading && !session) {
+            router.replace(`/agency/login?from=${encodeURIComponent(pathname)}`)
+        }
+    }, [loading, session, router, pathname])
+
     if (loading) {
         return (
             <div style={{
@@ -30,12 +37,8 @@ export function AuthGuard({ children, requirePlan }: Props) {
         )
     }
 
-    // 2. Nie zalogowany → redirect do loginu, z zapamiętaniem docelowej ścieżki
-    if (!session) {
-        return <Navigate to="/agency/login" state={{ from: location }} replace />
-    }
+    if (!session) return null
 
-    // 3. Agencja nieaktywna / zablokowana
     if (agency && !agency.active) {
         return (
             <div style={{
@@ -48,7 +51,6 @@ export function AuthGuard({ children, requirePlan }: Props) {
         )
     }
 
-    // 4. Plan check (dla Pro-only features)
     if (requirePlan && agency) {
         const planRank = { basic: 0, pro: 1, featured: 2 }
         const currentPlan = agency.plan as 'basic' | 'pro' | 'featured';
