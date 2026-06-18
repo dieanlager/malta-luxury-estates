@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import { Home, Info } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
