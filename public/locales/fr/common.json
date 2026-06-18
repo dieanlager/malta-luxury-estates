@@ -23,12 +23,18 @@
     "badge": "Le nÂ°1 de l'immobilier de luxe Ă  Malte",
     "title_part1": "Immobilier de Luxe",
     "title_part2": "Ă  Malte",
-    "subtitle": "Une sĂ©lection exclusive des meilleures agences de Malte pour les acheteurs internationaux et investisseurs fortunĂ©s.",
+    "subtitle": "Sélections des meilleures agences de Malte pour les acheteurs internationaux, HNWI et candidats à la résidence.",
     "stats": {
       "properties": "Biens de Luxe",
       "locations": "Emplacements",
       "avg_price": "Prix Moyen"
-    }
+    },
+    "eyebrow": "La plateforme immobilière de luxe n°1 à Malte",
+    "title": "Immobilier de luxe",
+    "title_italic": "à Malte",
+    "stats_properties": "Biens de luxe",
+    "stats_locations": "Emplacements",
+    "stats_price": "Fourchette moy."
   },
   "sections": {
     "featured": {
@@ -85,7 +91,8 @@
       "success_message": "Bienvenue dans le cercle restreint. Attendez-vous Ă  l'excellence dans votre boĂ®te mail."
     },
     "gozo_investment": "Investissement Immobilier Gozo",
-    "rental_yields": "Rendements Locatifs Malte 2026"
+    "rental_yields": "Rendements Locatifs Malte 2026",
+    "market_forecast": "Prévisions du marché 2026-2030"
   },
   "common": {
     "beds": "{count} Ch.",
@@ -146,7 +153,8 @@
     "explore_location": "Explorer le quartier",
     "faq": "Questions fréquentes",
     "view_properties": "Voir les biens",
-    "browse_properties": "Parcourir les biens"
+    "browse_properties": "Parcourir les biens",
+    "price_history": "Historique des prix"
   },
   "locations": {
     "Sliema": "Sliema",

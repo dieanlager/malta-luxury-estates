@@ -217,7 +217,7 @@ export const PriceHistoryButton: React.FC<{
                 className="flex items-center gap-2 px-3 py-1.5 bg-luxury-black/60 backdrop-blur-md border border-white/10 rounded-lg text-white/60 hover:text-gold hover:border-gold transition-all group"
             >
                 <History size={12} className="group-hover:rotate-[-30deg] transition-transform" />
-                <span className="text-[9px] font-bold uppercase tracking-widest">{t('price_history')}</span>
+                <span className="text-[9px] font-bold uppercase tracking-widest">{t('common.price_history')}</span>
             </button>
 
             <PriceHistoryModal

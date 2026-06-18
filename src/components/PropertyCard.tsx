@@ -120,25 +120,13 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           </div>
         </div>
 
-        {property.affiliate_url ? (
-          <a
-            href={property.affiliate_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full mt-8 py-4 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-luxury-black hover:border-gold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
-          >
-            {t('common.view_listing', { defaultValue: 'View Listing' })}
-            <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-          </a>
-        ) : (
-          <button
-            onClick={() => onContact?.(property.id, property.title)}
-            className="w-full mt-8 py-4 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-luxury-black hover:border-gold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
-          >
-            {t('common.enquire', { defaultValue: 'Enquire' })}
-            <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-          </button>
-        )}
+        <Link
+          href={propertyUrl}
+          className="w-full mt-8 py-4 bg-white/5 border border-white/10 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-luxury-black hover:border-gold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
+        >
+          {t('common.view_listing')}
+          <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+        </Link>
       </div>
     </motion.div>
   );

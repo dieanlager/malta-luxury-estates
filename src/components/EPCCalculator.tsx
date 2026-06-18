@@ -158,7 +158,7 @@ export const EPCButton: React.FC<{
                     className="group flex flex-col items-center justify-center p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-gold/30 transition-all text-center gap-2 w-full"
                 >
                     <Leaf size={20} className="text-emerald-400 group-hover:scale-110 transition-transform" />
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold">{t('efficiency_audit')}: {rating}</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold">{t('common.efficiency_audit')}: {rating}</span>
                 </button>
                 <EPCCalculator property={property} isOpen={isOpen} onClose={() => setIsOpen(false)} />
             </>
@@ -177,7 +177,7 @@ export const EPCButton: React.FC<{
             >
                 <div className={`absolute left-0 top-0 bottom-0 w-1 ${EPC_COLORS[rating]}`} />
                 <Leaf size={14} className="text-emerald-400 group-hover:scale-110 transition-transform shrink-0" />
-                <span className="text-[9px] font-bold uppercase tracking-widest whitespace-nowrap">{t('efficiency_audit')}: {rating}</span>
+                <span className="text-[9px] font-bold uppercase tracking-widest whitespace-nowrap">{t('common.efficiency_audit')}: {rating}</span>
             </button>
             <EPCCalculator property={property} isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </>

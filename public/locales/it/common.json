@@ -23,12 +23,18 @@
     "badge": "Il portale #1 per immobili di lusso a Malta",
     "title_part1": "Immobili di Lusso",
     "title_part2": "a Malta",
-    "subtitle": "Una selezione curata dalle migliori agenzie maltesi per acquirenti internazionali, VIP e investitori.",
+    "subtitle": "Annunci selezionati dalle principali agenzie di Malta per acquirenti internazionali, HNWI e richiedenti residenza.",
     "stats": {
       "properties": "Immobili di Lusso",
       "locations": "LocalitĂ ",
       "avg_price": "Prezzo Medio"
-    }
+    },
+    "eyebrow": "Il marketplace immobiliare di lusso n°1 a Malta",
+    "title": "Immobili di lusso",
+    "title_italic": "a Malta",
+    "stats_properties": "Immobili di lusso",
+    "stats_locations": "Localizzazioni",
+    "stats_price": "Fascia di prezzo media"
   },
   "sections": {
     "featured": {
@@ -85,7 +91,8 @@
       "success_message": "Benvenuto nella cerchia ristretta. Riceverai presto aggiornamenti esclusivi."
     },
     "gozo_investment": "Investimento Gozo",
-    "rental_yields": "Rendimenti Affitti Malta 2026"
+    "rental_yields": "Rendimenti Affitti Malta 2026",
+    "market_forecast": "Previsioni di mercato 2026-2030"
   },
   "common": {
     "beds": "{count} Camere",
@@ -146,7 +153,8 @@
     "explore_location": "Esplora la zona",
     "faq": "Domande frequenti",
     "view_properties": "Vedi proprietà",
-    "browse_properties": "Sfoglia immobili"
+    "browse_properties": "Sfoglia immobili",
+    "price_history": "Storico prezzi"
   },
   "locations": {
     "Sliema": "Sliema",

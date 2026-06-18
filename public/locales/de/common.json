@@ -23,12 +23,18 @@
     "badge": "Maltas Nr. 1 Marktplatz fĂĽr Premium-Immobilien",
     "title_part1": "Luxusimmobilien",
     "title_part2": "auf Malta",
-    "subtitle": "Kuratiert von Maltas fĂĽhrenden Agenturen fĂĽr internationale KĂ¤ufer, vermĂ¶gende Privatpersonen und Residenzsuchende.",
+    "subtitle": "Kuratierte Angebote führender maltesischer Agenturen für internationale Käufer, HNWIs und Aufenthaltsuchende.",
     "stats": {
       "properties": "Luxusimmobilien",
       "locations": "Standorte",
       "avg_price": "Durchschn. Preis"
-    }
+    },
+    "eyebrow": "Maltas Nr. 1 Luxusimmobilien-Marktplatz",
+    "title": "Luxusimmobilien",
+    "title_italic": "auf Malta",
+    "stats_properties": "Luxusimmobilien",
+    "stats_locations": "Standorte",
+    "stats_price": "Ø Preisbereich"
   },
   "sections": {
     "featured": {
@@ -85,7 +91,8 @@
       "success_message": "Willkommen im inneren Zirkel. Freuen Sie sich auf exzellente Marktanalysen in Ihrem Posteingang."
     },
     "gozo_investment": "Gozo Immobilieninvestment",
-    "rental_yields": "Mietrenditen Malta 2026"
+    "rental_yields": "Mietrenditen Malta 2026",
+    "market_forecast": "Marktprognose 2026-2030"
   },
   "common": {
     "beds": "{count} SZ",
@@ -146,7 +153,8 @@
     "explore_location": "Lage erkunden",
     "faq": "Häufig gestellte Fragen",
     "view_properties": "Immobilien anzeigen",
-    "browse_properties": "Immobilien durchsuchen"
+    "browse_properties": "Immobilien durchsuchen",
+    "price_history": "Preisverlauf"
   },
   "locations": {
     "Sliema": "Sliema",

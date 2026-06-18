@@ -68,7 +68,7 @@ export const MarketSnapshot: React.FC<Props> = ({
         </div>
         <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-white/30 mb-8 font-bold">
           <Calendar size={12} />
-          <span>{t('live_feed')} · {new Date(stats.lastCalculatedAt).toLocaleDateString(locale, { month: 'long', year: 'numeric' })}</span>
+          <span>{t('common.live_feed')} · {new Date(stats.lastCalculatedAt).toLocaleDateString(locale, { month: 'long', year: 'numeric' })}</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -92,7 +92,7 @@ export const MarketSnapshot: React.FC<Props> = ({
                   <span className="text-sm font-bold">{stats.listingsSaleCount}</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('avg_price')}</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.avg_price')}</span>
                   <span className="text-sm font-bold">{formatPrice(stats.avgPriceSale)}</span>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export const MarketSnapshot: React.FC<Props> = ({
                   {formatPrice(stats.medianPriceRent)}
                 </span>
                 <span className="text-xs text-white/40 uppercase tracking-wider">
-                  {t('per_month')}
+                  {t('common.per_month')}
                 </span>
               </div>
               <div className="flex gap-6 pt-2">
@@ -119,7 +119,7 @@ export const MarketSnapshot: React.FC<Props> = ({
                   <span className="text-sm font-bold">{stats.listingsRentCount}</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('avg_price')}</span>
+                  <span className="text-[10px] text-white/30 uppercase font-bold">{t('common.avg_price')}</span>
                   <span className="text-sm font-bold">{formatPrice(stats.avgPriceRent)}</span>
                 </div>
               </div>

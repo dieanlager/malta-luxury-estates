@@ -165,7 +165,7 @@ export const NoiseAnalysisButton: React.FC<{
                     ) : (
                         <Volume2 size={20} className="text-gold group-hover:scale-110 transition-transform" />
                     )}
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold">{t('quiet_score')}: {score}</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold">{t('common.quiet_score')}: {score}</span>
                 </button>
                 <NoiseAnalysisModal property={property} isOpen={isOpen} onClose={() => setIsOpen(false)} />
             </>
@@ -187,7 +187,7 @@ export const NoiseAnalysisButton: React.FC<{
                 ) : (
                     <Volume2 size={14} className="text-gold group-hover:scale-110 transition-transform shrink-0" />
                 )}
-                <span className="text-[9px] font-bold uppercase tracking-widest whitespace-nowrap">{t('quiet_score')}: {score}</span>
+                <span className="text-[9px] font-bold uppercase tracking-widest whitespace-nowrap">{t('common.quiet_score')}: {score}</span>
             </button>
             <NoiseAnalysisModal property={property} isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </>
