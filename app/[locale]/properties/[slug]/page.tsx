@@ -1,4 +1,4 @@
-﻿import { notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { routing } from '@/src/i18n/routing';
@@ -253,11 +253,11 @@ export default async function PropertyOrCityPage({ params }: Props) {
             <div className="flex items-center gap-8 mt-8 py-6 border-y border-white/10">
               <div className="flex items-center gap-2 text-white/60 text-sm">
                 <Bed size={16} className="text-gold" />
-                <span>{property.beds} {t('common.beds', { defaultValue: 'beds' })}</span>
+                <span>{property.beds} {t('common.beds_label')}</span>
               </div>
               <div className="flex items-center gap-2 text-white/60 text-sm">
                 <Bath size={16} className="text-gold" />
-                <span>{property.baths} {t('common.baths', { defaultValue: 'baths' })}</span>
+                <span>{property.baths} {t('common.baths_label')}</span>
               </div>
               <div className="flex items-center gap-2 text-white/60 text-sm">
                 <Maximize size={16} className="text-gold" />
