@@ -206,6 +206,23 @@ export default async function PropertyOrCityPage({ params }: Props) {
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent" />
         </div>
+        {/* Gallery grid — shown when property has more than 1 image */}
+        {property.images && property.images.length > 1 && (
+          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {property.images.slice(1).map((src, i) => (
+                <div key={i} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                  <img
+                    src={src}
+                    alt={`${property.title} — photo ${i + 2}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
         <div className="max-w-5xl mx-auto px-6 -mt-32 relative z-10">
           <div className="mb-8">
             <Link href="/properties/all" className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/40 hover:text-gold transition-colors mb-6">
