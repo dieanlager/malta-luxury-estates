@@ -1,4 +1,4 @@
-import type { Location, LocationStats, Property, Article } from '../types';
+﻿import type { Location, LocationStats, Property, Article } from '../types';
 import { PROPERTIES, ARTICLES } from '../constants';
 import { supabase, isSupabaseConfigured } from './supabase';
 
@@ -178,8 +178,14 @@ export const getArticlesByCategory = async (category: Article['category'], lang 
 
 export const getFeaturedProperties = async (): Promise<Property[]> => {
   if (isSupabaseConfigured && supabase) {
-    const { data, error } = await supabase.from('properties').select('*').eq('status', 'active').eq('featured', true).order('featured_position', { ascending: true }).limit(6);
-    if (data && !error) return data.map(mapProperty);
+    const { data: featured, error: featErr } = await supabase
+      .from('properties').select('*').eq('status', 'active').eq('featured', true)
+      .order('featured_position', { ascending: true }).limit(6);
+    if (featured && !featErr && featured.length > 0) return featured.map(mapProperty);
+    const { data: top, error: topErr } = await supabase
+      .from('properties').select('*').eq('status', 'active')
+      .order('price', { ascending: false }).limit(6);
+    if (top && !topErr) return top.map(mapProperty);
   }
   return [];
 };
