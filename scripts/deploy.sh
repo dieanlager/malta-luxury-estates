@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# deploy.sh — VPS-side deployment script, triggered by GitHub Actions
+# deploy.sh â€” VPS-side deployment script, triggered by GitHub Actions
 # Usage: bash /var/www/mlre/scripts/deploy.sh <RELEASE> <PORT> <PM2_NAME> <DEPLOY_PATH>
 
 set -euo pipefail
@@ -23,13 +23,22 @@ mkdir -p "$DEPLOY_PATH/logs"
 # [2] Shared uploads dir (persistent across releases)
 echo "[2/6] Ensuring shared uploads directory..."
 mkdir -p "$DEPLOY_PATH/shared/uploads"
+# One-time migration: old Express stored uploads at /var/www/malta/uploads/properties
+# (NOT public/uploads). Copy only if destination doesn't exist yet (idempotent).
+if [ -d "/var/www/malta/uploads/properties" ] && [ ! -d "$DEPLOY_PATH/shared/uploads/properties" ]; then
+  echo "    [migrate] Copying uploads from /var/www/malta/uploads/properties ..."
+  cp -an /var/www/malta/uploads/properties "$DEPLOY_PATH/shared/uploads/"
+  chown -R www-data:www-data "$DEPLOY_PATH/shared/uploads"
+  chmod -R a+rX "$DEPLOY_PATH/shared/uploads"
+  echo "    [migrate] Done: $(ls $DEPLOY_PATH/shared/uploads/properties/ | wc -l) property folders copied"
+fi
 ln -sfn "$DEPLOY_PATH/shared/uploads" "$RELEASE_DIR/public/uploads"
 
 # [3] Atomic symlink switch
 echo "[3/6] Switching symlink: current -> $RELEASE"
 ln -sfn "$RELEASE_DIR" "$DEPLOY_PATH/current"
 
-# [4] PM2 restart (only mlre-web — never touch other projects)
+# [4] PM2 restart (only mlre-web â€” never touch other projects)
 echo "[4/6] Restarting PM2 process: $PM2_NAME"
 if pm2 describe "$PM2_NAME" > /dev/null 2>&1; then
   pm2 stop "$PM2_NAME" 2>/dev/null || true
@@ -52,12 +61,12 @@ sleep 5
 BYTES=$(curl -sf -A "Googlebot/2.1" "http://127.0.0.1:$PORT/" 2>/dev/null | wc -c || echo 0)
 echo "    Response: ${BYTES} bytes"
 if [ "${BYTES}" -lt 3000 ]; then
-  echo "ERROR: Response too small (${BYTES} bytes) — app may have crashed"
+  echo "ERROR: Response too small (${BYTES} bytes) â€” app may have crashed"
   echo "Run: pm2 logs $PM2_NAME"
   exit 1
 fi
 
-# [6] Nginx reload (test config first — never blindly reload)
+# [6] Nginx reload (test config first â€” never blindly reload)
 echo "[6/6] nginx -t && reload..."
 nginx -t
 nginx -s reload
