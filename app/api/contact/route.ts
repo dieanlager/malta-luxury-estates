@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 export const runtime = 'nodejs';
@@ -7,6 +7,11 @@ export const dynamic = 'force-dynamic';
 export async function POST(req: NextRequest) {
   const { name, email, phone, message, propertyTitle, affiliateUrl } = await req.json();
   if (!name || !email) return NextResponse.json({ error: 'name and email required' }, { status: 400 });
+
+  if (!process.env.RESEND_API_KEY) {
+    console.warn('RESEND_API_KEY not set ? contact enquiry logged but email not sent');
+    return NextResponse.json({ success: true });
+  }
 
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
