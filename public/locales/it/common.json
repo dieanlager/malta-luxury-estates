@@ -11,7 +11,7 @@
     "quiz": "quiz-immobiliare"
   },
   "nav": {
-    "properties": "ProprietĂ ",
+    "properties": "Proprietà",
     "insights": "Approfondimenti",
     "market": "Mercato",
     "about": "Chi Siamo",
@@ -26,7 +26,7 @@
     "subtitle": "Annunci selezionati dalle principali agenzie di Malta per acquirenti internazionali, HNWI e richiedenti residenza.",
     "stats": {
       "properties": "Immobili di Lusso",
-      "locations": "LocalitĂ ",
+      "locations": "Località",
       "avg_price": "Prezzo Medio"
     },
     "eyebrow": "Il marketplace immobiliare di lusso n°1 a Malta",
@@ -40,7 +40,7 @@
     "featured": {
       "badge": "Portafoglio Esclusivo",
       "title": "Selezione Curata",
-      "subtitle": "Immobili di prestigio nelle isole maltesi, selezionati per qualitĂ  e potenziale di investimento.",
+      "subtitle": "Immobili di prestigio nelle isole maltesi, selezionati per qualità e potenziale di investimento.",
       "view_all": "Vedi Tutti"
     },
     "map": {
@@ -57,7 +57,7 @@
     },
     "agencies": {
       "badge": "Per Agenzie e Sviluppatori",
-      "title_part1": "Raggiungi gli acquirenti piĂą",
+      "title_part1": "Raggiungi gli acquirenti più",
       "title_part2": "Esclusivi del mondo",
       "subtitle": "Unisciti al nostro marketplace di lusso curato e mostra il tuo portafoglio a investitori internazionali e cercatori di residenza.",
       "features": {
@@ -74,8 +74,8 @@
       "badge": "Panoramica del Mercato"
     },
     "locations_grid": {
-      "title": "Esplora per LocalitĂ ",
-      "subtitle": "Scopri il carattere unico delle zone piĂą prestigiose di Malta.",
+      "title": "Esplora per Località",
+      "subtitle": "Scopri il carattere unico delle zone più prestigiose di Malta.",
       "badge": "Location Premium",
       "count": "{count} Immobili"
     },
@@ -99,13 +99,13 @@
     }
   },
   "footer": {
-    "description": "Il principale portale indipendente per immobili di lusso a Malta. Colleghiamo acquirenti esigenti con i portafogli immobiliari piĂą esclusivi delle isole.",
+    "description": "Il principale portale indipendente per immobili di lusso a Malta. Colleghiamo acquirenti esigenti con i portafogli immobiliari più esclusivi delle isole.",
     "quick_links": "Link Rapidi",
     "premier_destinations": "Destinazioni Principali",
     "legal": "Legale",
     "knowledge_hub": "Hub di Conoscenza",
     "portal_for_agencies": "Portale Agenzie",
-    "quiz": "Quiz Immobiliare đźŽŻ",
+    "quiz": "Quiz Immobiliare 🎯",
     "newsletter": {
       "title": "Market Intelligence",
       "subtitle": "Ricevi annunci esclusivi fuori mercato e rapporti trimestrali direttamente nella tua casella di posta.",
@@ -122,7 +122,7 @@
   "common": {
     "beds": "{count} Camere",
     "baths": "{count} Bagni",
-    "sqm": "{count}mÂ˛",
+    "sqm": "{count}m²",
     "beds_label": "Camere",
     "baths_label": "Bagni",
     "area_label": "Area",
@@ -134,7 +134,7 @@
     "wow": "sett/sett",
     "view_details": "Dettagli",
     "contact_agent": "Contatta Agente",
-    "properties": "ProprietĂ ",
+    "properties": "Proprietà",
     "avg_price": "Prezzo Medio",
     "join_list": "Unisciti alla Lista Intelligence",
     "privacy_guaranteed": "Privacy Garantita. Cancellazione in ogni momento.",
@@ -150,7 +150,7 @@
     "listings_count": "{count} annunci",
     "read_guide": "Leggi la Guida",
     "efficiency_audit": "Audit EPC",
-    "quiet_score": "Punteggio di TranquillitĂ ",
+    "quiet_score": "Punteggio di Tranquillità",
     "find_twin": "Trova Gemello",
     "scan_to_connect": "Scansiona per Connetterti",
     "official_support": "Supporto Ufficiale WeChat",
@@ -185,19 +185,19 @@
     "Sliema": "Sliema",
     "Valletta": "La Valletta",
     "St_Julians": "San Giuliano",
-    "Mellieha": "MellieÄ§a",
-    "Gzira": "GĹĽira",
+    "Mellieha": "Mellieħa",
+    "Gzira": "Gżira",
     "Swieqi": "Swieqi",
     "Mdina": "Mdina",
     "Victoria": "Vitoria",
     "Attard": "Attard",
     "Madliena": "Madliena",
     "St_Pauls_Bay": "Baia di San Paolo",
-    "Three_Cities": "Tre CittĂ ",
+    "Three_Cities": "Tre Città",
     "Xlendi": "Xlendi",
     "Naxxar": "Naxxar",
     "Marsascala": "Marsascala",
-    "Gharghur": "GÄ§argÄ§ur",
+    "Gharghur": "Għargħur",
     "Malta": "Malta",
     "Gozo": "Gozo"
   },
@@ -210,7 +210,7 @@
     "2_bed_maisonette": "Maisonette 2 Camere"
   },
   "search": {
-    "location": "LocalitĂ ",
+    "location": "Località",
     "placeholder": "Dove vorresti vivere?",
     "property_type": "Tipo di Immobile",
     "all_types": "Tutti i Tipi",
@@ -226,12 +226,12 @@
       "sea_view": "Vista Mare",
       "new_build": "Nuova Costruzione",
       "furnished": "Arredato",
-      "under_500k": "Sotto â‚¬500K",
-      "under_1m": "Sotto â‚¬1M",
-      "500k_1m": "â‚¬500K â€“ â‚¬1M",
-      "over_1m": "Oltre â‚¬1M",
-      "over_2m": "Oltre â‚¬2M",
-      "over_3m": "Oltre â‚¬3M"
+      "under_500k": "Sotto €500K",
+      "under_1m": "Sotto €1M",
+      "500k_1m": "€500K – €1M",
+      "over_1m": "Oltre €1M",
+      "over_2m": "Oltre €2M",
+      "over_3m": "Oltre €3M"
     },
     "types": {
       "villa": "Villa",
@@ -245,7 +245,7 @@
   },
   "mortgage": {
     "title": "Intelligence Mutui",
-    "subtitle": "Malta 2026 Â· Residente e Non Residente",
+    "subtitle": "Malta 2026 · Residente e Non Residente",
     "non_resident": "Non Residente",
     "tax_resident": "Residente Fiscale",
     "max_ltv": "LTV Max {ltv}%",
@@ -256,7 +256,7 @@
     "years": "{count} Anni",
     "years_short": "{count}a",
     "monthly_repayment": "Rata Mensile",
-    "breakdown": "Capitale + Interessi Â· Escl. Assicurazione",
+    "breakdown": "Capitale + Interessi · Escl. Assicurazione",
     "loan_amount": "Importo del Prestito",
     "total_interest": "Interessi Totali",
     "total_repayment": "Rimborso Totale",
@@ -265,7 +265,7 @@
     "residents": "residenti",
     "non_residents": "non residenti",
     "bank_rates": "Tassi Bancari Malta 2026",
-    "ltv_warning": "âš ď¸Ź Il tuo acconto Ă¨ inferiore al minimo del {min}% per {type}. Le banche maltesi limitano il prestito al {max}% LTV.",
+    "ltv_warning": "⚠️ Il tuo acconto è inferiore al minimo del {min}% per {type}. Le banche maltesi limitano il prestito al {max}% LTV.",
     "bank_notes": {
       "variable_resident": "Variabile, residente",
       "variable_non_resident": "Variabile, non res",
@@ -283,19 +283,19 @@
     "net_yearly_profit": "Profitto Netto Annuale",
     "rental_tax": "Tassa sull'Affitto (15%)",
     "net_yield": "Rendimento Netto",
-    "reality_check": "Controllo di RealtĂ ",
+    "reality_check": "Controllo di Realtà",
     "gross_yield": "Rendimento Lordo Iniziale",
     "capital_repayment": "Ammortamento del Capitale Stimato",
     "years": "~ {count} Anni",
     "investor_insight": {
       "title": "Approfondimento Investitore",
-      "description": "Il rendimento netto include la tassa sull'affitto forfettaria del 15%, le commissioni di gestione e la manutenzione. L'apprezzamento del capitale a lungo termine di Malta (media 5%) NON Ă¨ incluso in questa cifra."
+      "description": "Il rendimento netto include la tassa sull'affitto forfettaria del 15%, le commissioni di gestione e la manutenzione. L'apprezzamento del capitale a lungo termine di Malta (media 5%) NON è incluso in questa cifra."
     }
   },
   "buy_vs_rent": {
     "title": "Intelligence Compra vs Affitta",
-    "subtitle": "Malta 2026 Â· Controllo della RealtĂ  Finanziaria",
-    "intro": "La domanda che ogni investitore si pone â€” e che ogni portale evita di rispondere onestamente. Modelliamo entrambi gli scenari al centesimo sull'orizzonte temporale scelto.",
+    "subtitle": "Malta 2026 · Controllo della Realtà Finanziaria",
+    "intro": "La domanda che ogni investitore si pone — e che ogni portale evita di rispondere onestamente. Modelliamo entrambi gli scenari al centesimo sull'orizzonte temporale scelto.",
     "buying_scenario": "Scenario Acquisto",
     "renting_scenario": "Scenario Affitto",
     "market_assumptions": "Ipotesi di Mercato",
@@ -314,10 +314,10 @@
     "upfront_costs_deduction": "Questi sono detratti dal fondo dell'acconto e confrontati equamente.",
     "buying_wins": "L'Acquisto Vince",
     "renting_wins": "L'Affitto Vince",
-    "buying_better_off": "L'acquisto ti lascia con {amount} in piĂą dopo {years} anni rispetto all'affitto e all'investimento del capitale equivalente.",
-    "renting_better_off": "L'affitto e l'investimento del capitale equivalente ti lasciamo con {amount} in piĂą dopo {years} anni.",
+    "buying_better_off": "L'acquisto ti lascia con {amount} in più dopo {years} anni rispetto all'affitto e all'investimento del capitale equivalente.",
+    "renting_better_off": "L'affitto e l'investimento del capitale equivalente ti lasciamo con {amount} in più dopo {years} anni.",
     "outperform_info": "L'acquisto supererebbe l'affitto dopo l'anno {year}",
-    "key_driver": "L'apprezzamento dell'immobile al {rate}%/anno Ă¨ il fattore chiave",
+    "key_driver": "L'apprezzamento dell'immobile al {rate}%/anno è il fattore chiave",
     "net_worth_at": "Patrimonio Netto all'Anno {year}",
     "property_value": "Valore Immobile",
     "monthly_mortgage": "Rata Mutuo Mensile",
@@ -354,7 +354,7 @@
     },
     "newsletter": {
       "title": "Resta in Anticipo sul Mercato",
-      "description": "Iscriviti al nostro rapporto mensile Market Intelligence per dati esclusivi, opportunitĂ  off-market e aggiornamenti normativi.",
+      "description": "Iscriviti al nostro rapporto mensile Market Intelligence per dati esclusivi, opportunità off-market e aggiornamenti normativi.",
       "placeholder": "Inserisci la tua email",
       "subscribe_button": "Iscriviti Ora"
     }
@@ -385,33 +385,33 @@
   "pre_qualifier": {
     "title": "Pre-Qualifica Mutuo",
     "subtitle": "Motore Bank Pulse",
-    "intro": "Ottieni una stima immediata della capacitĂ  di prestito basata sulle attuali politiche maltesi di rapporto prestito-valore (LTV) e rapporto debito-reddito.",
-    "estimated_cap": "CapacitĂ  Stimata",
+    "intro": "Ottieni una stima immediata della capacità di prestito basata sulle attuali politiche maltesi di rapporto prestito-valore (LTV) e rapporto debito-reddito.",
+    "estimated_cap": "Capacità Stimata",
     "max_potential_loan": "Massimo prestito potenziale in {years} anni.",
     "bank_criteria": "Criteri Bancari Diretti",
     "stress_test": "Stress Test 2026 applicato",
     "steps": {
-      "status": "01 Â· Residenza e Intento",
-      "employment": "02 Â· Profilo Professionale",
-      "income": "03 Â· CapacitĂ  Finanziaria",
-      "debts": "04 Â· Obblighi",
+      "status": "01 · Residenza e Intento",
+      "employment": "02 · Profilo Professionale",
+      "income": "03 · Capacità Finanziaria",
+      "debts": "04 · Obblighi",
       "result": "Risultato"
     },
     "questions": {
-      "residency": "Qual Ă¨ il tuo stato di residenza?",
+      "residency": "Qual è il tuo stato di residenza?",
       "buyer_type": "Tipo di Acquirente?",
-      "employment": "Occupazione ed EtĂ ",
-      "income": "Reddito e LiquiditĂ ",
+      "employment": "Occupazione ed Età",
+      "income": "Reddito e Liquidità",
       "debts": "Debiti Mensili Esistenti",
-      "age": "La Tua EtĂ "
+      "age": "La Tua Età"
     },
     "options": {
       "resident": "Residente a Malta",
       "resident_desc": "Vive a Malta, LTV tipico 90%",
       "non_resident": "Non Residente",
       "non_resident_desc": "Vive all'estero, LTV tipico 75%",
-      "first_time": "1Â° Acquisto",
-      "second_time": "2Â° Acquisto",
+      "first_time": "1° Acquisto",
+      "second_time": "2° Acquisto",
       "investor": "BTL / Investitore",
       "full_time": "Tempo Pieno",
       "self_employed": "Lavoratore Autonomo",
@@ -422,7 +422,7 @@
       "savings": "Risparmi Disponibili / Acconto",
       "monthly_debts": "Servizio del Debito Mensile",
       "debt_desc": "Pagamenti mensili totali per altri prestiti, carte di credito o mantenimento figli.",
-      "stress_test_warning": "Stress-test Banca Centrale: Applichiamo il +2% ai tassi correnti per valutare rigorosamente la tua capacitĂ  di rimborso."
+      "stress_test_warning": "Stress-test Banca Centrale: Applichiamo il +2% ai tassi correnti per valutare rigorosamente la tua capacità di rimborso."
     },
     "results": {
       "complete": "Pre-Qualifica Completata",
@@ -460,7 +460,7 @@
       "pre2004": "Pre-2004",
       "aip": "AIP (Stranieri)"
     },
-    "disclaimer": "L'imposta di ritenuta finale (FWT) di Malta Ă¨ solitamente calcolata sull'intero prezzo di vendita, NON sul profitto. La vendita dopo un possesso di oltre 2 anni puĂ˛ comportare aliquote diverse a seconda delle specifiche rettifiche di bilancio locali."
+    "disclaimer": "L'imposta di ritenuta finale (FWT) di Malta è solitamente calcolata sull'intero prezzo di vendita, NON sul profitto. La vendita dopo un possesso di oltre 2 anni può comportare aliquote diverse a seconda delle specifiche rettifiche di bilancio locali."
   },
   "interactive_tools": {
     "title_part1": "Strumenti di Mercato",
@@ -494,7 +494,7 @@
     "labels": {
       "acquisition_price": "Prezzo d'Acquisto",
       "first_time_buyer": "Primo Acquisto",
-      "first_time_desc": "0% di imposta di bollo (fino a â‚¬200k)",
+      "first_time_desc": "0% di imposta di bollo (fino a €200k)",
       "standard_rate": "Tariffa Standard",
       "uca_village_core": "UCA / Nucleo Abitativo",
       "uca_desc": "0% di imposta di bollo (fino 750k)",
@@ -512,7 +512,7 @@
     }
   },
   "market": {
-    "title": "Mercato Immobiliare Malta â€“ Live",
+    "title": "Mercato Immobiliare Malta – Live",
     "activeListings": "Annunci Attivi",
     "medianPrice": "Prezzo Medio",
     "priceChange": "Variazione Prezzo",
@@ -520,19 +520,19 @@
     "forSale": "In Vendita",
     "forRent": "In Affitto",
     "areaPriceHeat": "Mappa del Calore dei Prezzi",
-    "areaPriceHeatSubtitle": "Prezzo in tempo reale mÂ˛ per localitĂ ",
+    "areaPriceHeatSubtitle": "Prezzo in tempo reale m² per località",
     "disclaimer": "Dati provenienti dal Registro dei Prezzi Immobiliari di Malta (PPR), dai conteggi degli annunci attivi sui principali portali e dai dati sugli affitti brevi della Malta Tourism Authority. Le statistiche vengono aggiornate quotidianamente alle 06:00 CET. Per l'accesso ai dati istituzionali, contattare data@maltaluxuryrealestate.com.",
-    "analystNoteTitle": "Nota dell'Analista â€” Marzo 2026",
+    "analystNoteTitle": "Nota dell'Analista — Marzo 2026",
     "analystNoteBody": "Il mercato residenziale maltese continua la sua robusta traiettoria ascendente. La domanda da parte di acquirenti internazionali HNW rimane solida.",
     "risingInventoryTitle": "Attenzione: Inventario in Crescita",
     "risingInventoryBody": "Con l'offerta di annunci in aumento, gli acquirenti hanno recuperato il 4,2% di leva negoziale rispetto al quarto trimestre dell'anno scorso.",
-    "gozoOpportunityTitle": "Finestra di OpportunitĂ  a Gozo",
-    "gozoOpportunityBody": "Le proprietĂ  a Gozo si rivalutano dell'8,3% annuo â€” il doppio della media di Malta â€” spinte dall'annuncio del tunnel del ponte. Le proprietĂ  assicurate prima del 2027 sono posizionate per beneficiare del completamento delle infrastrutture nel 2028.",
+    "gozoOpportunityTitle": "Finestra di Opportunità a Gozo",
+    "gozoOpportunityBody": "Le proprietà a Gozo si rivalutano dell'8,3% annuo — il doppio della media di Malta — spinte dall'annuncio del tunnel del ponte. Le proprietà assicurate prima del 2027 sono posizionate per beneficiare del completamento delle infrastrutture nel 2028.",
     "globalSentimentTitle": "Sentiment Globale",
-    "globalSentimentBody": "L'interesse dei grandi patrimoni dal Nord Europa rimane il driver primario per le proprietĂ  SDA oltre 1,5 milioni di euro.",
+    "globalSentimentBody": "L'interesse dei grandi patrimoni dal Nord Europa rimane il driver primario per le proprietà SDA oltre 1,5 milioni di euro.",
     "ticker": {
-      "malta_avg": "Media Malta â‚¬/mÂ˛",
-      "gozo_avg": "Media Gozo â‚¬/mÂ˛",
+      "malta_avg": "Media Malta €/m²",
+      "gozo_avg": "Media Gozo €/m²",
       "sliema_median": "Mediana Sliema",
       "valletta_median": "Mediana Valletta",
       "sda_premium": "Premio SDA",
@@ -549,10 +549,10 @@
     "price_drops": "Ribassi di Prezzo",
     "just_listed": "Appena Pubblicati",
     "last_48h": "Ultime 48 ore",
-    "last_7d_5pct": "Ultimi 7 giorni â€” riduzioni del 5%+",
+    "last_7d_5pct": "Ultimi 7 giorni — riduzioni del 5%+",
     "this_week_count": "{count} questa settimana",
-    "hot_this_week": "PiĂą Visti della Settimana",
-    "most_enquired": "Immobili piĂą richiesti",
+    "hot_this_week": "Più Visti della Settimana",
+    "most_enquired": "Immobili più richiesti",
     "views_today": "{count} visualizzazioni oggi",
     "refresh_data": "Aggiorna Dati",
     "refreshing": "Aggiornamento in corso...",
@@ -560,9 +560,9 @@
     "gozo_bridge_subtitle": "Indice dei prezzi vs impatto dell'annuncio del tunnel",
     "announced": "Annunciato",
     "index_label": "Indice: {value}",
-    "current_avg": "Media attuale â‚¬/mÂ˛",
+    "current_avg": "Media attuale €/m²",
     "projection_2031": "Proiezione 2031",
-    "bridge_prediction": "Se il ponte sarĂ  completato entro il 2028, il nostro modello prevede che i prezzi di Gozo raggiungeranno la paritĂ  con il nord di Malta entro il 2031 (+38% rispetto alla media attuale).",
+    "bridge_prediction": "Se il ponte sarà completato entro il 2028, il nostro modello prevede che i prezzi di Gozo raggiungeranno la parità con il nord di Malta entro il 2031 (+38% rispetto alla media attuale).",
     "since_date": "dal {date}",
     "avg_price": "Prezzo medio",
     "avg_size": "Dimensione media",
@@ -607,7 +607,7 @@
     "beds_baths": "Camere / Bagni",
     "finish_level": "Livello di Finitura",
     "premium_signals": "Segnali Premium",
-    "view_quality": "QualitĂ  della Vista",
+    "view_quality": "Qualità della Vista",
     "back": "Indietro",
     "generate": "Genera Valutazione AI",
     "analysis_complete": "Analisi della Valutazione Completata",
@@ -616,10 +616,10 @@
     "rental_potential": "Potenziale di Affitto",
     "projected_yield": "Rendimento Lordo Previsto del 4,5%",
     "market_heat_title": "Calore del Mercato",
-    "per_sqm": "al mÂ˛",
+    "per_sqm": "al m²",
     "growth_forecast": "+4,2% di Crescita per",
     "insight_title": "Analisi: Tenere vs Vendere",
-    "insight_body": "L'indice di calore del mercato a {location} Ă¨ stabile. Consigliamo di **TENERE** fino al Q4 2026 per capitalizzare le plusvalenze previste.",
+    "insight_body": "L'indice di calore del mercato a {location} è stabile. Consigliamo di **TENERE** fino al Q4 2026 per capitalizzare le plusvalenze previste.",
     "get_report": "Ottieni Rapporto Dettagliato (PDF)",
     "start_new": "Inizia Nuova Valutazione",
     "this_area": "questa zona",
@@ -659,14 +659,14 @@
     "hot": "Hot"
   },
   "states": {
-    "loading": "Caricamento proprietĂ ...",
-    "noResults": "Nessuna proprietĂ  trovata",
-    "error": "Qualcosa Ă¨ andato storto"
+    "loading": "Caricamento proprietà...",
+    "noResults": "Nessuna proprietà trovata",
+    "error": "Qualcosa è andato storto"
   },
   "quiz": {
     "interactive": "Esperienza Interattiva",
     "title_part1": "Quale",
-    "title_part2": "ProprietĂ  a Malta",
+    "title_part2": "Proprietà a Malta",
     "title_part3": "Sei Tu?",
     "question_counter": "Domanda {current} / {total}",
     "analyzing": "Analisi del tuo DNA...",
@@ -692,14 +692,14 @@
       {
         "text": "Come immagini la tua mattina perfetta?",
         "options": {
-          "a": "CaffĂ¨ su un balcone fronte mare con vista sul porto",
+          "a": "Caffè su un balcone fronte mare con vista sul porto",
           "b": "Passeggiata tra silenziose, storiche strade di calcare",
           "c": "Un tuffo nella tua piscina privata con vista sulle colline di Gozo",
           "d": "Svegliarsi in un moderno attico domotico"
         }
       },
       {
-        "text": "Qual Ă¨ la tua serata ideale di venerdĂ¬?",
+        "text": "Qual è la tua serata ideale di venerdì?",
         "options": {
           "a": "Cena raffinata e circoli sociali in un centro vibrante",
           "b": "Un calice di vino tranquillo in un tipico casale ('farmhouse') di 400 anni a Gozo",
@@ -721,14 +721,14 @@
         "options": {
           "a": "Portineria 24/7 e servizi ultra-moderni",
           "b": "Privacy, spazio e un giardino maturo",
-          "c": "EreditĂ  architettonica unica e anima",
+          "c": "Eredità architettonica unica e anima",
           "d": "Mozzafiato, vista mare senza ostacoli"
         }
       },
       {
-        "text": "La tua prioritĂ  di investimento Ă¨...",
+        "text": "La tua priorità di investimento è...",
         "options": {
-          "a": "Massimo rendimento locativo e liquiditĂ ",
+          "a": "Massimo rendimento locativo e liquidità",
           "b": "Plusvalenze a longo termine in aree emergenti",
           "c": "Una seconda residenza / trofeo di stile di vita",
           "d": "Una casa sostenibile, certificata green"
@@ -740,25 +740,25 @@
         "title": "L'Elite Cosmopolita",
         "area": "Sliema e St. Julian's",
         "type": "Attico Fronte Mare",
-        "description": "Ami essere dove succede tutto. Alta energia, servizi di lusso e lo scintillante Mediterraneo a portata di mano. Il tuo stile di vita richiede comoditĂ , stile e i migliori club dell'isola."
+        "description": "Ami essere dove succede tutto. Alta energia, servizi di lusso e lo scintillante Mediterraneo a portata di mano. Il tuo stile di vita richiede comodità, stile e i migliori club dell'isola."
       },
       "valletta_mdina": {
-        "title": "Il Collezionista di EreditĂ ",
+        "title": "Il Collezionista di Eredità",
         "area": "Valletta e Mdina",
         "type": "Palazzo Restaurato",
-        "description": "La storia non Ă¨ solo una categoria per te; Ă¨ uno stile di vita. Apprezzi l'anima delle mura di calcare di 400 anni, la cultura boutique e il maestoso silenzio della CittĂ  Silenziosa."
+        "description": "La storia non è solo una categoria per te; è uno stile di vita. Apprezzi l'anima delle mura di calcare di 400 anni, la cultura boutique e il maestoso silenzio della Città Silenziosa."
       },
       "gozo_farmhouse": {
         "title": "L'Anima Mediterranea",
         "area": "Isola di Gozo",
         "type": "Casale Storico",
-        "description": "Cerchi serenitĂ , autenticitĂ  e spazio. Gozo Ă¨ il tuo santuario. Apprezzi il potenziale dell''Effetto Tunnel/Ponte' ma dai prioritĂ  al ritmo lento e bellissimo della vita di villaggio e delle colline."
+        "description": "Cerchi serenità, autenticità e spazio. Gozo è il tuo santuario. Apprezzi il potenziale dell''Effetto Tunnel/Ponte' ma dai priorità al ritmo lento e bellissimo della vita di villaggio e delle colline."
       },
       "madliena_villa": {
         "title": "Il Cercatore di Privacy",
         "area": "Madliena e High Ridge",
         "type": "Villa Unifamiliare con Piscina",
-        "description": "La privacy Ă¨ l'ultimo lusso. Vuoi spazio, giardini maturi e un ambiente sicuro. Preferisci il tranquillo prestigio dei quartieri residenziali piĂą esclusivi di Malta."
+        "description": "La privacy è l'ultimo lusso. Vuoi spazio, giardini maturi e un ambiente sicuro. Preferisci il tranquillo prestigio dei quartieri residenziali più esclusivi di Malta."
       }
     }
   },
@@ -766,21 +766,21 @@
     "badge": "Standard d'Eccellenza",
     "title_part1": "I Migliori Indirizzi",
     "title_part2": "Nelle Isole.",
-    "description": "Malta Luxury Real Estate Ă¨ stata fondata con una semplice premessa: semplificare l'acquisizione delle proprietĂ  piĂą eccezionali delle isole maltesi. Non siamo solo un mercato; siamo il ponte tra investitori internazionali esigenti e i piĂą noti specialisti immobiliari delle isole.",
+    "description": "Malta Luxury Real Estate è stata fondata con una semplice premessa: semplificare l'acquisizione delle proprietà più eccezionali delle isole maltesi. Non siamo solo un mercato; siamo il ponte tra investitori internazionali esigenti e i più noti specialisti immobiliari delle isole.",
     "view_collections": "Visualizza Collezioni",
     "read_insights": "Leggi Articoli",
     "stats": {
-      "properties": "ProprietĂ  Selezionate",
+      "properties": "Proprietà Selezionate",
       "agencies": "Agenzie Partner",
       "guides": "Guide Esperte",
       "satisfaction": "Soddisfazione Clienti"
     },
     "values": {
       "title": "I Nostri Principi Fondamentali",
-      "subtitle": "Tutto ciĂ˛ che facciamo Ă¨ guidato dall'impegno per la qualitĂ  e dal profondo rispetto per il patrimonio architettonico di Malta e Gozo.",
+      "subtitle": "Tutto ciò che facciamo è guidato dall'impegno per la qualità e dal profondo rispetto per il patrimonio architettonico di Malta e Gozo.",
       "value1": {
-        "title": "IntegritĂ  Innanzitutto",
-        "desc": "Selezioniamo solo le agenzie e le proprietĂ  piĂą affidabili, garantendo un processo di acquisizione trasparente e sicuro per gli investitori internazionali."
+        "title": "Integrità Innanzitutto",
+        "desc": "Selezioniamo solo le agenzie e le proprietà più affidabili, garantendo un processo di acquisizione trasparente e sicuro per gli investitori internazionali."
       },
       "value2": {
         "title": "Competenza Ineguagliabile",
@@ -788,7 +788,7 @@
       },
       "value3": {
         "title": "Servizio Discreto",
-        "desc": "L'immobiliare di lusso Ă¨ una questione di privacy. La nostra piattaforma e i nostri partner operano con la massima riservatezza e professionalitĂ ."
+        "desc": "L'immobiliare di lusso è una questione di privacy. La nostra piattaforma e i nostri partner operano con la massima riservatezza e professionalità."
       },
       "value4": {
         "title": "Prospettiva Globale",
@@ -797,13 +797,13 @@
     },
     "director": {
       "tag": "Nota del Direttore",
-      "quote": "Non elenchiamo solo proprietĂ ; rappresentiamo uno stile di vita che rispetta la storia di queste isole mentre abbraccia il futuro degli investimenti globali.",
+      "quote": "Non elenchiamo solo proprietà; rappresentiamo uno stile di vita che rispetta la storia di queste isole mentre abbraccia il futuro degli investimenti globali.",
       "name": "Alexander Vanhaut",
       "role": "Direttore Generale"
     },
     "eeat": {
-      "title": "Lo Standard di QualitĂ  (E-E-A-T)",
-      "desc": "Come membro verificato dell'ecosistema immobiliare maltese, offriamo molto di piĂą di semplici annunci. La nostra suite di intelligence â€“ inclusi i calcolatori ROI e le guide fiscali â€“ si basa su una ricerca diretta e su oltre 20 anni di dati del mercato locale.",
+      "title": "Lo Standard di Qualità (E-E-A-T)",
+      "desc": "Come membro verificato dell'ecosistema immobiliare maltese, offriamo molto di più di semplici annunci. La nostra suite di intelligence – inclusi i calcolatori ROI e le guide fiscali – si basa su una ricerca diretta e su oltre 20 anni di dati del mercato locale.",
       "points": [
         "Partnership con agenzie verificate",
         "Rapporti trimestrali sull'intelligence di mercato",
@@ -813,7 +813,7 @@
     },
     "cta": {
       "title": "Pronto a scoprire la tua residenza ineguagliabile?",
-      "trust_badge": "Rete Autorizzata ProprietĂ  di Lusso"
+      "trust_badge": "Rete Autorizzata Proprietà di Lusso"
     },
     "eyebrow": "La nostra storia",
     "p1": "Malta Luxury Real Estate è stata fondata per connettere acquirenti internazionali esigenti con le migliori proprietà di Malta.",
@@ -821,8 +821,8 @@
     "browse_properties": "Sfoglia immobili"
   },
   "properties": {
-    "all_listings": "ProprietĂ ",
-    "exclusive_title": "ProprietĂ  Esclusive",
+    "all_listings": "Proprietà",
+    "exclusive_title": "Proprietà Esclusive",
     "search_results": "Risultati della ricerca per \"{query}\"",
     "showing_count": "Visualizzazione di {count} annunci premium corrispondenti ai tuoi criteri.",
     "filters_button": "Filtri",
@@ -834,18 +834,18 @@
       "rating_label": "Classe {grade}"
     },
     "no_results": {
-      "title": "Nessuna proprietĂ  corrispondente trovata",
-      "desc": "Non abbiamo trovato annunci corrispondenti alla tua ricerca. Prova a modificare i filtri o a esplorare le nostre localitĂ  piĂą popolari.",
+      "title": "Nessuna proprietà corrispondente trovata",
+      "desc": "Non abbiamo trovato annunci corrispondenti alla tua ricerca. Prova a modificare i filtri o a esplorare le nostre località più popolari.",
       "explore": "Esplora {location}"
     },
     "breadcrumb": {
       "search": "Ricerca: \"{query}\""
     },
     "filtered": {
-      "results_count": "{count} ProprietĂ ",
+      "results_count": "{count} Proprietà",
       "also_explore": "Esplora anche:",
-      "view_all_in": "Visualizza tutte le proprietĂ  in {location}",
-      "market_overview": "{filter} a {location} â€“ Panoramica del Mercato",
+      "view_all_in": "Visualizza tutte le proprietà in {location}",
+      "market_overview": "{filter} a {location} – Panoramica del Mercato",
       "market_growth": "Crescita del Mercato",
       "rental_demand": "Domanda di Affitto",
       "growth_desc": "I valori medi degli immobili a {location} sono aumentati del 6,2% negli ultimi 12 mesi.",
@@ -871,15 +871,15 @@
     "noise": {
       "title": "Valutazione Intelligente del Suono",
       "subtitle": "Audit del Rumore Ambientale di Malta v2.0",
-      "tranquility_score": "Punteggio TranquillitĂ ",
-      "tranquility_elite": "TranquillitĂ  eccezionale",
+      "tranquility_score": "Punteggio Tranquillità",
+      "tranquility_elite": "Tranquillità eccezionale",
       "tranquility_standard": "Paesaggio sonoro urbano standard",
-      "tranquility_active": "Zona ad alta attivitĂ ",
+      "tranquility_active": "Zona ad alta attività",
       "traffic": "Traffico",
       "nightlife": "Vita notturna",
       "construction": "Costruzioni",
       "aviation": "Aviazione",
-      "intensity": "IntensitĂ ",
+      "intensity": "Intensità",
       "surroundings": "Dintorni",
       "risk": "Rischio",
       "flight_path": "Percorso di volo",
@@ -888,10 +888,10 @@
     },
     "twin": {
       "title": "Ricerca Gemello Immobiliare AI",
-      "subtitle": "Il nostro motore neurale analizza i modelli di stile di vita per trovare la tua proprietĂ  parallela perfetta.",
+      "subtitle": "Il nostro motore neurale analizza i modelli di stile di vita per trovare la tua proprietà parallela perfetta.",
       "layout_dna": "Analisi del DNA del layout...",
       "match_confidence": "Fiducia nel Match",
-      "why_twin": "PerchĂ© questo gemello?",
+      "why_twin": "Perché questo gemello?",
       "match_reason": "Supporta il tuo interesse per {type} a {location}. Esempi di caratteristiche comuni come {f1} e {f2}.",
       "explore_twin": "Esplora questo gemello"
     }
