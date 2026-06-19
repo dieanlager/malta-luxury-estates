@@ -92,7 +92,8 @@
     },
     "gozo_investment": "Investissement Immobilier Gozo",
     "rental_yields": "Rendements Locatifs Malte 2026",
-    "market_forecast": "Prévisions du marché 2026-2030"
+    "market_forecast": "Prévisions du marché 2026-2030",
+    "design_by": "Design par"
   },
   "common": {
     "beds": "{count} Ch.",

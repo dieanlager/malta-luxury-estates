@@ -96,7 +96,8 @@
     },
     "gozo_investment": "Inwestycje na Gozo",
     "rental_yields": "Stopy Zwrotu z Najmu Malta 2026",
-    "market_forecast": "Prognoza rynku 2026-2030"
+    "market_forecast": "Prognoza rynku 2026-2030",
+    "design_by": "Projekt"
   },
   "common": {
     "beds": "{count} Pokoje",
