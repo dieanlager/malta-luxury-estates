@@ -1,41 +1,88 @@
-import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
-import { routing } from '@/src/i18n/routing';
+﻿import { getTranslations } from 'next-intl/server';
+import { Lock } from 'lucide-react';
 
-interface Props { params: Promise<{ locale: string }> }
-
-export async function generateStaticParams() {
-  return routing.locales.map(locale => ({ locale }));
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const base = 'https://www.maltaluxuryrealestate.com';
-  const prefix = locale === 'en' ? '' : `/${locale}`;
+  const t = await getTranslations({ locale, namespace: 'common' });
   return {
-    title: 'Privacy Policy | Malta Luxury Real Estate',
-    description: 'Privacy Policy for Malta Luxury Real Estate. Learn how we collect and use your data.',
-    alternates: { canonical: `${base}${prefix}/privacy-policy` },
+    title: t('seo.privacy.title', { defaultValue: 'Privacy Policy' }),
     robots: { index: false },
   };
 }
 
-export default async function PrivacyPage({ params }: Props) {
+export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'common' });
+  const t = await getTranslations({ locale, namespace: 'legal' });
+
+  const sections = [
+    { key: 'intro', type: 'content' },
+    { key: 'controller', type: 'details' },
+    { key: 'collect', type: 'points' },
+    { key: 'use', type: 'points' },
+    { key: 'rights', type: 'points' },
+    { key: 'contact', type: 'contact' },
+  ] as const;
+
+  const pointKeys: Record<string, string[]> = {
+    collect: ['contact', 'preferences', 'technical'],
+    use: ['communication', 'improvement', 'legal'],
+    rights: ['access', 'rectification', 'erasure', 'object'],
+  };
+
   return (
     <main className="min-h-screen bg-luxury-black pt-32 pb-24">
-      <div className="max-w-3xl mx-auto px-6">
-        <h1 className="font-serif text-4xl text-white mb-8">{t('seo.privacy.title', { defaultValue: 'Privacy Policy' })}</h1>
-        <div className="text-white/60 space-y-4 leading-relaxed text-sm">
-          <p>Last updated: 1 January 2026</p>
-          <p>Malta Luxury Real Estate ("we", "our", "us") respects your privacy. This policy describes how we collect, use, and share personal data when you visit maltaluxuryrealestate.com.</p>
-          <h2 className="font-serif text-white text-xl mt-8">Data We Collect</h2>
-          <p>We collect information you provide directly (contact forms, newsletter sign-ups) and automatically via cookies and analytics (Google Analytics 4).</p>
-          <h2 className="font-serif text-white text-xl mt-8">How We Use Data</h2>
-          <p>To respond to enquiries, send newsletters (with consent), improve our services, and comply with legal obligations.</p>
-          <h2 className="font-serif text-white text-xl mt-8">Your Rights</h2>
-          <p>Under GDPR you have rights to access, rectify, erase, restrict, or port your data. Contact: privacy@maltaluxuryrealestate.com</p>
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/10 border border-gold/30 mb-6">
+            <Lock size={28} className="text-gold" />
+          </div>
+          <h1 className="font-serif text-4xl md:text-5xl text-white mb-4">
+            {t('privacy.intro.title')}
+          </h1>
+          <div className="w-24 h-px bg-gold/40 mx-auto" />
+        </div>
+
+        <div className="space-y-6">
+          {sections.map(({ key, type }) => (
+            <div key={key} className="rounded-[2.5rem] p-8 md:p-12 bg-white/[0.03] border border-white/10 backdrop-blur-sm">
+              <h2 className="font-serif text-xl text-gold mb-4">
+                {t(`privacy.${key}.title`)}
+              </h2>
+              {type === 'details' && (
+                <p className="text-white/60 text-sm leading-relaxed whitespace-pre-line">
+                  {t(`privacy.${key}.details`)}
+                </p>
+              )}
+              {type === 'content' && (
+                <p className="text-white/60 text-sm leading-relaxed">
+                  {t(`privacy.${key}.content`)}
+                </p>
+              )}
+              {type === 'points' && (
+                <>
+                  <p className="text-white/60 text-sm leading-relaxed mb-4">
+                    {t(`privacy.${key}.intro`)}
+                  </p>
+                  <ul className="space-y-2">
+                    {(pointKeys[key] ?? []).map((point) => (
+                      <li key={point} className="flex items-start gap-3 text-sm text-white/50">
+                        <span className="text-gold mt-0.5">--</span>
+                        <span>{t(`privacy.${key}.points.${point}`)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {type === 'contact' && (
+                <>
+                  <p className="text-white/60 text-sm leading-relaxed">
+                    {t(`privacy.${key}.content`)}
+                  </p>
+                  <p className="text-gold text-sm mt-3">info@maltaluxuryrealestate.com</p>
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </main>

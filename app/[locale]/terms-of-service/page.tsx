@@ -1,39 +1,45 @@
-import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
-import { routing } from '@/src/i18n/routing';
+﻿import { getTranslations } from 'next-intl/server';
+import { Scale } from 'lucide-react';
 
-interface Props { params: Promise<{ locale: string }> }
-
-export async function generateStaticParams() {
-  return routing.locales.map(locale => ({ locale }));
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const base = 'https://www.maltaluxuryrealestate.com';
-  const prefix = locale === 'en' ? '' : `/${locale}`;
+  const t = await getTranslations({ locale, namespace: 'common' });
   return {
-    title: 'Terms of Service | Malta Luxury Real Estate',
-    description: 'Terms and conditions for using Malta Luxury Real Estate portal.',
-    alternates: { canonical: `${base}${prefix}/terms-of-service` },
+    title: t('seo.terms.title', { defaultValue: 'Terms of Service' }),
     robots: { index: false },
   };
 }
 
-export default async function TermsPage({ params }: Props) {
+export default async function TermsOfServicePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'common' });
+  const t = await getTranslations({ locale, namespace: 'legal' });
+
+  const sections = ['nature', 'liability', 'ip', 'law'] as const;
+
   return (
     <main className="min-h-screen bg-luxury-black pt-32 pb-24">
-      <div className="max-w-3xl mx-auto px-6">
-        <h1 className="font-serif text-4xl text-white mb-8">{t('seo.terms.title', { defaultValue: 'Terms of Service' })}</h1>
-        <div className="text-white/60 space-y-4 leading-relaxed text-sm">
-          <p>Last updated: 1 January 2026</p>
-          <p>By using maltaluxuryrealestate.com you agree to these terms. The site provides property information for informational purposes only and does not constitute financial or legal advice.</p>
-          <h2 className="font-serif text-white text-xl mt-8">Listings</h2>
-          <p>Property listings are provided by third-party agencies. Prices and availability are subject to change. Always verify details directly with the listing agent.</p>
-          <h2 className="font-serif text-white text-xl mt-8">Intellectual Property</h2>
-          <p>All content on this site is the property of Malta Luxury Real Estate or its content suppliers and is protected by copyright.</p>
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/10 border border-gold/30 mb-6">
+            <Scale size={28} className="text-gold" />
+          </div>
+          <h1 className="font-serif text-4xl md:text-5xl text-white mb-4">
+            {t('terms.nature.title')}
+          </h1>
+          <div className="w-24 h-px bg-gold/40 mx-auto" />
+        </div>
+
+        <div className="space-y-6">
+          {sections.map((key) => (
+            <div key={key} className="rounded-[2.5rem] p-8 md:p-12 bg-white/[0.03] border border-white/10 backdrop-blur-sm">
+              <h2 className="font-serif text-xl text-gold mb-4">
+                {t(`terms.${key}.title`)}
+              </h2>
+              <p className="text-white/60 text-sm leading-relaxed">
+                {t(`terms.${key}.content`)}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </main>

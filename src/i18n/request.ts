@@ -1,4 +1,4 @@
-import { getRequestConfig } from 'next-intl/server';
+﻿import { getRequestConfig } from 'next-intl/server';
 import { routing } from './routing';
 
 export default getRequestConfig(async ({ requestLocale }) => {
@@ -16,15 +16,16 @@ export default getRequestConfig(async ({ requestLocale }) => {
     }
   };
 
-  const [common, seo, propertyDetail] = await Promise.all([
+  const [common, seo, propertyDetail, legal] = await Promise.all([
     loadJson('common'),
     loadJson('seo'),
     loadJson('property_detail'),
+    loadJson('legal'),
   ]);
 
   return {
     locale,
-    messages: { common, seo, property_detail: propertyDetail },
+    messages: { common, seo, property_detail: propertyDetail, legal },
     onError(error) {
       if (process.env.NODE_ENV !== 'production') {
         console.warn('[i18n]', error.code, error.message);
