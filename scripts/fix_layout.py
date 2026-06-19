@@ -1,4 +1,28 @@
-import type { Metadata } from 'next';
+﻿import sys
+sys.stdout.reconfigure(encoding="utf-8")
+
+src = r"C:\Users\beatw\Desktop\malta-luxury-estates\app\layout.tsx"
+with open(src, encoding="utf-8-sig") as fp:
+    content = fp.read()
+
+# Fix garbled em dash in title
+content = content.replace(
+    "Malta Luxury Real Estate â Luxury Property for Sale in Malta",
+    "Malta Luxury Real Estate — Luxury Property for Sale in Malta"
+)
+content = content.replace(
+    "Malta Luxury Real Estate â€“ Luxury Property for Sale in Malta",
+    "Malta Luxury Real Estate — Luxury Property for Sale in Malta"
+)
+# simpler: just find the garbled pattern
+import re
+content = re.sub(
+    r"Malta Luxury Real Estate [^—']+Luxury Property for Sale in Malta",
+    "Malta Luxury Real Estate — Luxury Property for Sale in Malta",
+    content
+)
+
+new_content = """import type { Metadata } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 import './globals.css';
 
@@ -84,3 +108,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+"""
+
+with open(src, "w", encoding="utf-8") as fp:
+    fp.write(new_content)
+print("layout.tsx written")

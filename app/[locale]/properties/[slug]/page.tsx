@@ -6,10 +6,11 @@ import { LOCATIONS, getLocationBySlug, getLocationStats, getAllProperties, getPr
 import { generateCityFAQSchema, generateBreadcrumbSchema, generatePropertySchema, formatPrice } from '@/src/lib/seo/schemas';
 import { Link } from '@/src/navigation';
 import { PropertyCard } from '@/src/components/PropertyCard';
-import { Bed, Bath, Maximize, MapPin, ArrowLeft } from 'lucide-react';
+import { Bed, Bath, Maximize, MapPin, ArrowLeft, Home } from 'lucide-react';
 import PropertyDetailTools from '@/src/components/PropertyDetailTools';
 import { PropertyGallery } from '@/src/components/PropertyGallery';
 import { PropertyContactCard } from '@/src/components/PropertyContactCard';
+import { AmenitiesGrid } from '@/src/components/AmenitiesGrid';
 import { StickyPropertyBar } from '@/src/components/StickyPropertyBar';
 
 interface Props {
@@ -91,6 +92,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PropertyOrCityPage({ params }: Props) {
   const { locale, slug } = await params;
   const t = await getTranslations({ locale, namespace: 'common' });
+  const tPD = await getTranslations({ locale, namespace: 'property_detail' });
   const base = 'https://www.maltaluxuryrealestate.com';
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
@@ -235,38 +237,45 @@ export default async function PropertyOrCityPage({ params }: Props) {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-8 mt-8 py-6 border-y border-white/10">
-              <div className="flex items-center gap-2 text-white/60 text-sm">
-                <Bed size={16} className="text-gold" />
-                <span>{property.beds} {t('common.beds_label')}</span>
-              </div>
-              <div className="flex items-center gap-2 text-white/60 text-sm">
-                <Bath size={16} className="text-gold" />
-                <span>{property.baths} {t('common.baths_label')}</span>
-              </div>
-              <div className="flex items-center gap-2 text-white/60 text-sm">
-                <Maximize size={16} className="text-gold" />
-                <span>{property.sqm} m²</span>
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
+              {property.beds ? (
+                <div className="glass-card border border-white/10 rounded-2xl p-5 text-center">
+                  <Bed size={24} className="text-gold mx-auto mb-2" aria-hidden="true" />
+                  <div className="font-serif text-3xl text-white">{property.beds}</div>
+                  <div className="text-white/50 text-[10px] uppercase tracking-widest mt-1">{t('common.beds_label')}</div>
+                </div>
+              ) : null}
+              {property.baths ? (
+                <div className="glass-card border border-white/10 rounded-2xl p-5 text-center">
+                  <Bath size={24} className="text-gold mx-auto mb-2" aria-hidden="true" />
+                  <div className="font-serif text-3xl text-white">{property.baths}</div>
+                  <div className="text-white/50 text-[10px] uppercase tracking-widest mt-1">{t('common.baths_label')}</div>
+                </div>
+              ) : null}
+              {property.sqm ? (
+                <div className="glass-card border border-white/10 rounded-2xl p-5 text-center">
+                  <Maximize size={24} className="text-gold mx-auto mb-2" aria-hidden="true" />
+                  <div className="font-serif text-3xl text-white">{property.sqm}</div>
+                  <div className="text-white/50 text-[10px] uppercase tracking-widest mt-1">{tPD('specs.area')} m²</div>
+                </div>
+              ) : null}
+              {property.propertyType ? (
+                <div className="glass-card border border-white/10 rounded-2xl p-5 text-center">
+                  <Home size={24} className="text-gold mx-auto mb-2" aria-hidden="true" />
+                  <div className="font-serif text-lg text-white truncate">{property.propertyType}</div>
+                  <div className="text-white/50 text-[10px] uppercase tracking-widest mt-1">{tPD('specs.type')}</div>
+                </div>
+              ) : null}
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <h2 className="font-serif text-2xl text-white mb-6">{t('common.description', { defaultValue: 'Property Description' })}</h2>
-              <div className="text-white/60 leading-relaxed whitespace-pre-line">{property.description}</div>
-              {property.features && property.features.length > 0 && (
-                <div className="mt-12">
-                  <h3 className="font-serif text-xl text-white mb-6">{t('common.features', { defaultValue: 'Features & Amenities' })}</h3>
-                  <div className="grid grid-cols-2 gap-3">
-                    {property.features.map((feature, i) => (
-                      <div key={i} className="flex items-center gap-3 text-white/60 text-sm">
-                        <div className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+              <div className="text-white/85 leading-relaxed whitespace-pre-line text-[1.0625rem]">{property.description}</div>
+              <AmenitiesGrid
+                features={property.features ?? []}
+                heading={t('common.features', { defaultValue: 'Features & Amenities' })}
+              />
             </div>
             <div>
               <PropertyContactCard

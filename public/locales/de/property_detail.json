@@ -38,5 +38,9 @@
     "listed_by": "Angeboten von",
     "save": "Speichern",
     "share": "Teilen"
+  },
+  "specs": {
+    "area": "Fläche",
+    "type": "Typ"
   }
 }

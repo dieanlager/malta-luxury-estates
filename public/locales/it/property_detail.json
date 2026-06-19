@@ -38,5 +38,9 @@
     "listed_by": "Proposto da",
     "save": "Salva",
     "share": "Condividi"
+  },
+  "specs": {
+    "area": "Superficie",
+    "type": "Tipo"
   }
 }

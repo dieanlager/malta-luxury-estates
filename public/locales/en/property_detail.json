@@ -38,5 +38,9 @@
     "listed_by": "Listed by",
     "save": "Save",
     "share": "Share"
+  },
+  "specs": {
+    "area": "Area",
+    "type": "Type"
   }
 }

@@ -38,5 +38,9 @@
     "listed_by": "Oferowane przez",
     "save": "Zapisz",
     "share": "Udostępnij"
+  },
+  "specs": {
+    "area": "Powierzchnia",
+    "type": "Typ"
   }
 }
