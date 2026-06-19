@@ -66,16 +66,20 @@ import { LOCATIONS, LOCATION_STATS } from './locations';
 
 export const getLocationBySlug = async (slug: string): Promise<Location | undefined> => {
   if (isSupabaseConfigured && supabase) {
-    const { data, error } = await supabase.from('locations').select('*').eq('slug', slug).single();
-    if (data && !error) return mapLocation(data);
+    try {
+      const { data, error } = await supabase.from('locations').select('*').eq('slug', slug).single();
+      if (data && !error) return mapLocation(data);
+    } catch {}
   }
   return LOCATIONS.find(l => l.slug === slug);
 };
 
 export const getLocationStats = async (id: number): Promise<LocationStats | null> => {
   if (isSupabaseConfigured && supabase) {
-    const { data, error } = await supabase.from('location_stats').select('*').eq('location_id', id).single();
-    if (data && !error) return mapLocationStats(data);
+    try {
+      const { data, error } = await supabase.from('location_stats').select('*').eq('location_id', id).single();
+      if (data && !error) return mapLocationStats(data);
+    } catch {}
   }
   return LOCATION_STATS[id] || null;
 };
@@ -113,8 +117,10 @@ export const getPropertyBySlug = async (slug: string): Promise<Property | undefi
 
 export const getAllProperties = async (): Promise<Property[]> => {
   if (isSupabaseConfigured && supabase) {
-    const { data, error } = await supabase.from('properties').select('*').eq('status', 'active').order('price', { ascending: false });
-    if (data && !error) return data.map(mapProperty);
+    try {
+      const { data, error } = await supabase.from('properties').select('*').eq('status', 'active').order('price', { ascending: false });
+      if (data && !error) return data.map(mapProperty);
+    } catch {}
   }
   return PROPERTIES;
 };
@@ -178,14 +184,18 @@ export const getArticlesByCategory = async (category: Article['category'], lang 
 
 export const getFeaturedProperties = async (): Promise<Property[]> => {
   if (isSupabaseConfigured && supabase) {
-    const { data: featured, error: featErr } = await supabase
-      .from('properties').select('*').eq('status', 'active').eq('featured', true)
-      .order('featured_position', { ascending: true }).limit(6);
-    if (featured && !featErr && featured.length > 0) return featured.map(mapProperty);
-    const { data: top, error: topErr } = await supabase
-      .from('properties').select('*').eq('status', 'active')
-      .order('price', { ascending: false }).limit(6);
-    if (top && !topErr) return top.map(mapProperty);
+    try {
+      const { data: featured, error: featErr } = await supabase
+        .from('properties').select('*').eq('status', 'active').eq('featured', true)
+        .order('featured_position', { ascending: true }).limit(6);
+      if (featured && !featErr && featured.length > 0) return featured.map(mapProperty);
+      const { data: top, error: topErr } = await supabase
+        .from('properties').select('*').eq('status', 'active')
+        .order('price', { ascending: false }).limit(6);
+      if (top && !topErr) return top.map(mapProperty);
+    } catch {
+      return [];
+    }
   }
   return [];
 };
