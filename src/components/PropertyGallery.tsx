@@ -31,6 +31,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+
   const openLightbox = useCallback((index: number) => {
     setLightboxIndex(index);
     setLightboxOpen(true);
@@ -56,19 +57,21 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
 
   const gridImages = images.slice(1, 5);
   const hasRightGrid = gridImages.length > 0;
+  const hiddenCount = images.length - 5;
 
   return (
     <>
       {/* ── Desktop mosaic ─────────────────────────────────────────── */}
-      <div className="relative hidden md:block">
-        <div
-          className={`grid h-[70vh] gap-0.5 ${hasRightGrid ? 'grid-cols-[65%_35%]' : 'grid-cols-1'}`}
-        >
-          {/* Hero image */}
-          <button
-            type="button"
-            className="relative overflow-hidden group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+      <div className="relative hidden md:block h-[70vh]">
+        <div className={`grid h-full gap-0.5 ${hasRightGrid ? 'grid-cols-[65%_35%]' : 'grid-cols-1'}`}>
+
+          {/* Hero */}
+          <div
+            className="relative overflow-hidden group cursor-pointer w-full h-full"
             onClick={() => openLightbox(0)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && openLightbox(0)}
           >
             <Image
               src={images[0]}
@@ -79,20 +82,21 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
               className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-          </button>
+          </div>
 
-          {/* Right 2×2 grid */}
+          {/* Right 2x2 grid */}
           {hasRightGrid && (
-            <div className={`grid gap-0.5 ${gridImages.length > 2 ? 'grid-rows-2' : 'grid-rows-1'}`}>
+            <div className={`grid gap-0.5 h-full ${gridImages.length > 2 ? 'grid-rows-2' : 'grid-rows-1'}`}>
               {gridImages.map((src, i) => {
                 const isLast = i === gridImages.length - 1;
-                const hiddenCount = images.length - 5;
                 return (
-                  <button
+                  <div
                     key={i}
-                    type="button"
-                    className="relative overflow-hidden group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                    className="relative overflow-hidden group cursor-pointer w-full h-full"
                     onClick={() => openLightbox(i + 1)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => e.key === 'Enter' && openLightbox(i + 1)}
                   >
                     <Image
                       src={src}
@@ -102,7 +106,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                     />
                     {isLast && hiddenCount > 0 && (
-                      <div className="absolute inset-0 bg-luxury-black/65 backdrop-blur-[1px] flex flex-col items-center justify-center gap-1">
+                      <div className="absolute inset-0 bg-luxury-black/65 backdrop-blur-[1px] flex flex-col items-center justify-center gap-2">
                         <Camera size={22} className="text-gold" />
                         <span className="text-white text-xs font-bold uppercase tracking-widest text-center px-3 leading-tight">
                           {t('gallery.view_all', { count: images.length })}
@@ -110,7 +114,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
                       </div>
                     )}
                     <div className="absolute inset-0 bg-luxury-black/0 group-hover:bg-luxury-black/10 transition-colors" />
-                  </button>
+                  </div>
                 );
               })}
             </div>
@@ -135,7 +139,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
             {images.map((src, i) => (
               <div
                 key={i}
-                className="relative flex-[0_0_100%] aspect-[4/3] overflow-hidden"
+                className="relative flex-[0_0_100%] aspect-[4/3] overflow-hidden cursor-pointer"
                 onClick={() => openLightbox(i)}
               >
                 <Image
