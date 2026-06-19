@@ -1,84 +1,91 @@
-﻿{
-    "privacy":  {
-                    "use":  {
-                                "title":  "Verwendung Ihrer Daten",
-                                "intro":  "Wir verwenden erhobene Daten für folgende Zwecke:",
-                                "points":  {
-                                               "communication":  "Beantwortung von Anfragen und Newsletter-Versand (mit Ihrer Einwilligung)",
-                                               "improvement":  "Verbesserung unserer Website und Nutzererfahrung",
-                                               "legal":  "Einhaltung gesetzlicher Pflichten nach EU-/maltesischem Recht"
-                                           }
-                            },
-                    "contact":  {
-                                    "content":  "für datenschutzbezogene Anfragen kontaktieren Sie uns bitte unter:",
-                                    "title":  "Kontakt"
-                                },
-                    "collect":  {
-                                    "title":  "Erhobene Daten",
-                                    "intro":  "Wir können folgende Kategorien personenbezogener Daten erheben:",
-                                    "points":  {
-                                                   "preferences":  "ImmobilienSuchpräferenzen und gespeicherte Angebote",
-                                                   "contact":  "Kontaktdaten aus Formularen (Name, E-Mail, Telefon)",
-                                                   "technical":  "Technische Daten: IP-Adresse, Browsertyp, besuchte Seiten (über Google Analytics 4)"
-                                               }
-                                },
-                    "controller":  {
-                                       "details":  "Malta Luxury Real Estate\ninfo@maltaluxuryrealestate.com\nMalta, Europäische Union",
-                                       "title":  "Verantwortlicher"
-                                   },
-                    "rights":  {
-                                   "title":  "Ihre Rechte (DSGVO)",
-                                   "intro":  "gemäß der Datenschutz-Grundverordnung haben Sie das Recht auf:",
-                                   "points":  {
-                                                  "rectification":  "Berichtigung unrichtiger Daten",
-                                                  "object":  "Widerspruch gegen oder Einschränkung der Verarbeitung",
-                                                  "erasure":  "Löschung Ihrer Daten (Recht auf Vergessenwerden)",
-                                                  "access":  "Auskunft über die von uns gespeicherten Daten"
-                                              }
-                               },
-                    "intro":  {
-                                  "content":  "Malta Luxury Real Estate respektiert Ihre Privatsphäre und verpflichtet sich zum Schutz Ihrer personenbezogenen Daten. Diese Datenschutzrichtlinie erläutert, wie wir Informationen erheben, verwenden und schützen, wenn Sie maltaluxuryrealestate.com besuchen.",
-                                  "title":  "Einleitung"
-                              }
-                },
-    "cookies":  {
-                    "third_party":  {
-                                        "title":  "Drittanbieter-Cookies",
-                                        "intro":  "Wir verwenden Drittanbieterdienste, die eigene Cookies setzen können:",
-                                        "points":  {
-                                                       "mapbox":  "Mapbox für interaktive Immobilienkarten (Standortdaten)",
-                                                       "analytics":  "Google Analytics 4 für anonymisierte Nutzungsstatistiken"
-                                                   }
-                                    },
-                    "preferences":  {
-                                        "content":  "Sie können Cookies ueber Ihre Browsereinstellungen steuern oder loeschen. Das Deaktivieren von Cookies kann die Funktionalitaet einiger Website-Funktionen beeintraechtigen.",
-                                        "title":  "Einstellungen verwalten"
-                                    },
-                    "definition":  {
-                                       "content":  "Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Geraet gespeichert werden. Sie helfen der Website, Ihre Einstellungen zu speichern und das Surferlebnis zu verbessern.",
-                                       "title":  "Was sind Cookies?"
-                                   },
-                    "essential":  {
-                                      "content":  "Wir verwenden technisch notwendige Cookies für die korrekte Funktionalitaet der Website, einschliesslich Sitzungsverwaltung und Sicherheit. Diese können nicht deaktiviert werden.",
-                                      "title":  "Notwendige Cookies"
-                                  }
-                },
-    "terms":  {
-                  "liability":  {
-                                    "content":  "Alle Immobilieninformationen dienen nur zu Informationszwecken. Wir uebernehmen keine Gewaehr für Richtigkeit oder Vollstaendigkeit. Malta Luxury Real Estate haftet nicht für Verluste, die aus dem Vertrauen auf veroeffentlichte Informationen entstehen.",
-                                    "title":  "Haftungsbeschraenkung"
-                                },
-                  "law":  {
-                              "content":  "Diese Bedingungen unterliegen dem maltesischen Recht. Streitigkeiten unterliegen der ausschliesslichen Zustaendigkeit der maltesischen Gerichte.",
-                              "title":  "Anwendbares Recht"
-                          },
-                  "ip":  {
-                             "content":  "Alle Inhalte dieser Website einschliesslich Texte, Bilder, Logos und Design sind Eigentum von Malta Luxury Real Estate oder seinen Lizenzgebern. Vervielfaeltigung ohne vorherige schriftliche Genehmigung ist untersagt.",
-                             "title":  "Geistiges Eigentum"
-                         },
-                  "nature":  {
-                                 "content":  "Malta Luxury Real Estate bietet eine Online-Plattform zum Durchsuchen von Luxusimmobilien in Malta und Gozo. Wir fungieren als Informationsvermittler und vertreten keine Kaeufer oder Verkaeufer in rechtlicher Funktion.",
-                                 "title":  "Art des Dienstes"
-                             }
-              }
+{
+  "privacy": {
+    "pageTitle": "Datenschutzerklärung",
+    "pageSubtitle": "Datenschutz & DSGVO-Konformität",
+    "intro": {
+      "title": "Einleitung",
+      "content": "Malta Luxury Real Estate respektiert Ihre Privatsphäre und verpflichtet sich zum Schutz Ihrer personenbezogenen Daten. Diese Datenschutzerklärung erläutert, wie wir Informationen erheben, verwenden und schützen, wenn Sie maltaluxuryrealestate.com besuchen."
+    },
+    "controller": {
+      "title": "Verantwortlicher",
+      "details": "Brand House Dawid Ziobro\nNIP: 6381513187 | REGON: 356821592\nStrachocin 31, 57-550 Stronie Slaskie, Polen"
+    },
+    "collect": {
+      "title": "Erhobene Daten",
+      "intro": "Wir können folgende Kategorien personenbezogener Daten erheben:",
+      "points": {
+        "contact": "Kontaktdaten, die Sie über Formulare angeben (Name, E-Mail, Telefon)",
+        "preferences": "Suchpräferenzen für Immobilien und gespeicherte Angebote",
+        "technical": "Technische Daten: IP-Adresse, Browsertyp, besuchte Seiten (über Google Analytics 4)"
+      }
+    },
+    "use": {
+      "title": "Verwendung Ihrer Daten",
+      "intro": "Wir verwenden die erhobenen Daten für folgende Zwecke:",
+      "points": {
+        "communication": "Beantwortung von Anfragen und Versand von Newslettern (mit Ihrer Einwilligung)",
+        "improvement": "Verbesserung unserer Website und der Nutzererfahrung",
+        "legal": "Einhaltung gesetzlicher Pflichten nach EU- und maltesischem Recht"
+      }
+    },
+    "rights": {
+      "title": "Ihre Rechte (DSGVO)",
+      "intro": "Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf:",
+      "points": {
+        "access": "Auskunft über die von uns gespeicherten Daten",
+        "rectification": "Berichtigung unrichtiger Daten",
+        "erasure": "Löschung Ihrer Daten (Recht auf Vergessenwerden)",
+        "object": "Widerspruch gegen die Verarbeitung oder deren Einschränkung"
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Für datenschutzbezogene Anfragen kontaktieren Sie uns bitte unter:",
+      "email": "info@maltaluxuryrealestate.com"
+    }
+  },
+  "terms": {
+    "pageTitle": "Nutzungsbedingungen",
+    "pageSubtitle": "Nutzungsvereinbarung & Plattformregeln",
+    "nature": {
+      "title": "Art des Dienstes",
+      "content": "Malta Luxury Real Estate bietet eine Online-Plattform zum Durchsuchen von und Anfragen zu Luxusimmobilien in Malta und Gozo. Wir handeln als Informationsvermittler und vertreten weder Käufer noch Verkäufer in rechtlicher Funktion."
+    },
+    "liability": {
+      "title": "Haftungsbeschränkung",
+      "content": "Alle Immobilieninformationen dienen ausschließlich zu Informationszwecken. Malta Luxury Real Estate haftet nicht für Verluste, die aus dem Vertrauen auf veröffentlichte Informationen entstehen."
+    },
+    "ip": {
+      "title": "Geistiges Eigentum",
+      "content": "Alle Inhalte dieser Website, einschließlich Texte, Bilder, Logos und Design, sind Eigentum von Malta Luxury Real Estate oder seinen Lizenzgebern. Eine Vervielfältigung ohne vorherige schriftliche Genehmigung ist untersagt."
+    },
+    "law": {
+      "title": "Anwendbares Recht",
+      "content": "Diese Bedingungen unterliegen dem Recht Maltas. Streitigkeiten unterliegen der ausschließlichen Zuständigkeit der maltesischen Gerichte."
+    }
+  },
+  "cookies": {
+    "pageTitle": "Cookie-Richtlinie",
+    "pageSubtitle": "Unsere Verwendung von Tracking-Technologien",
+    "definition": {
+      "title": "Was sind Cookies?",
+      "content": "Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Gerät gespeichert werden. Sie helfen der Website, Ihre Einstellungen zu speichern und das Surferlebnis zu verbessern."
+    },
+    "essential": {
+      "title": "Notwendige Cookies",
+      "content": "Wir verwenden technisch notwendige Cookies, um die korrekte Funktion der Website zu gewährleisten, einschließlich Sitzungsverwaltung und Sicherheit. Diese können nicht deaktiviert werden."
+    },
+    "third_party": {
+      "title": "Cookies von Drittanbietern",
+      "intro": "Wir nutzen Drittanbieterdienste, die eigene Cookies setzen können:",
+      "points": {
+        "mapbox": "Mapbox - für interaktive Immobilienkarten (Standortdaten)",
+        "analytics": "Google Analytics 4 - für anonymisierte Nutzungsstatistiken"
+      }
+    },
+    "preferences": {
+      "title": "Einstellungen verwalten",
+      "content": "Sie können Cookies über Ihre Browsereinstellungen steuern oder löschen. Das Deaktivieren von Cookies kann die Funktionalität einiger Funktionen dieser Website beeinträchtigen."
+    }
+  }
 }

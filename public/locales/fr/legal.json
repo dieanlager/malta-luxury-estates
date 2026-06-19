@@ -1,84 +1,91 @@
 {
-    "privacy": {
-        "intro": {
-            "title": "1. Introduction",
-            "content": "Bienvenue sur Malta Luxury Real Estate. Nous ci-engageons à protéger vos données personnelles et votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous visitez notre site web et utilisez nos services."
-        },
-        "controller": {
-            "title": "Informations sur le Responsable du Traitement :",
-            "details": "Brand House Dawid Ziobro\nN° de TVA : PL6381513187\nAdresse : Strachocin 31, 57-550 Stronie Śląskie, Pologne"
-        },
-        "collect": {
-            "title": "2. Données que nous collectons",
-            "intro": "Nous collectons des informations que vous nous fournissez directement via des formulaires et des interactions sur notre site :",
-            "points": {
-                "contact": "Coordonnées : Nom, adresse e-mail et numéro de téléphone lors d'une demande de renseignements sur un bien.",
-                "preferences": "Préférences : Informations sur les propriétés enregistrées dans vos favoris.",
-                "technical": "Données techniques : Adresse IP, type de navigateur et informations sur l'appareil collectées via des cookies analytiques."
-            }
-        },
-        "use": {
-            "title": "3. Comment nous utilisons vos données",
-            "intro": "Nous traitons vos données aux fins suivantes :",
-            "points": {
-                "communication": "Pour faciliter la communication entre vous et les agences immobilières (exécution d'un contrat).",
-                "improvement": "Pour améliorer les performances de notre site et l'expérience utilisateur (intérêt légitime).",
-                "legal": "Pour nous conformer aux obligations légales à Malte et dans l'Union Européenne."
-            }
-        },
-        "rights": {
-            "title": "4. Vos Droits (RGPD)",
-            "intro": "En vertu du Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :",
-            "points": {
-                "access": "Le droit d'accéder et de recevoir une copie de vos données.",
-                "rectification": "Le droit de rectification des données inexactes.",
-                "erasure": "Le droit à l'effacement (« droit à l'oubli »).",
-                "object": "Le droit d'opposition au traitement fondé sur des intérêts légitimes."
-            }
-        },
-        "contact": {
-            "title": "5. Informations de Contact",
-            "content": "Pour toute question concernant cette politique ou pour exercer vos droits sur vos données, veuillez nous contacter à l'adresse :"
-        }
+  "privacy": {
+    "pageTitle": "Politique de confidentialité",
+    "pageSubtitle": "Protection des données & conformité RGPD",
+    "intro": {
+      "title": "Introduction",
+      "content": "Malta Luxury Real Estate respecte votre vie privée et s'engage à protéger vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons les informations lorsque vous visitez maltaluxuryrealestate.com."
     },
-    "terms": {
-        "nature": {
-            "title": "1. Nature de la Plateforme",
-            "content": "Malta Luxury Real Estate est une plateforme publicitaire spécialisée et une place de marché. Nous ne sommes PAS un courtier immobilier. Nous offrons un espace aux vendeurs, agences et promoteurs pour présenter des biens de luxe à des acheteurs potentiels."
-        },
-        "liability": {
-            "title": "2. Limitation de Responsabilité",
-            "content": "Bien que nous nous efforcions d'être précis, les données immobilières sur notre site sont fournies par des agences tierces. Malta Luxury Real Estate ne peut être tenue responsable d'éventuelles inexactitudes, de changements de prix ou du retrait de biens du marché. Il est conseillé aux utilisateurs de vérifier tous les détails auprès de l'agence émettrice."
-        },
-        "ip": {
-            "title": "3. Propriété Intellectuelle",
-            "content": "Tous les éléments de marque, de design et le contenu généré par Malta Luxury Real Estate sont la propriété intellectuelle de Brand House Dawid Ziobro. Toute reproduction sans consentement écrit exprès est interdite."
-        },
-        "law": {
-            "title": "4. Droit Applicable",
-            "content": "Le présent accord est régi par les lois de Malte. Tout litige découlant de l'utilisation de cette plateforme sera soumis à la juridiction des tribunaux maltais."
-        }
+    "controller": {
+      "title": "Responsable du traitement",
+      "details": "Brand House Dawid Ziobro\nNIP: 6381513187 | REGON: 356821592\nStrachocin 31, 57-550 Stronie Slaskie, Pologne"
     },
-    "cookies": {
-        "definition": {
-            "title": "1. Que sont les Cookies ?",
-            "content": "Les cookies sont de petits fichiers texte stockés sur votre appareil qui nous aident à offrir une expérience utilisateur fluide. Ils nous permettent de mémoriser vos préférences et d'analyser comment notre site est utilisé."
-        },
-        "essential": {
-            "title": "2. Cookies Essentiels",
-            "content": "Ces cookies sont nécessaires au fonctionnement du site web. Sans eux, des fonctionnalités telles que les « Favoris Enregistrés » ou les fonctions de carte pourraient ne pas fonctionner correctement."
-        },
-        "third_party": {
-            "title": "3. Services Tiers",
-            "intro": "Nous utilisons des outils tiers contrôlés qui peuvent définir des cookies :",
-            "points": {
-                "mapbox": "Mapbox : Utilisé pour afficher les emplacements interactifs des biens sur l'archipel.",
-                "analytics": "Google Analytics : (Anonymisé) Utilisé pour comprendre comment les visiteurs interagissent avec notre contenu."
-            }
-        },
-        "preferences": {
-            "title": "4. Gestion des Préférences",
-            "content": "Vous pouvez désactiver les cookies via les paramètres de votre navigateur. Veuillez noter toutefois que certaines fonctionnalités de la plateforme peuvent ne pas fonctionner comme prévu sans eux."
-        }
+    "collect": {
+      "title": "Données collectées",
+      "intro": "Nous pouvons collecter les catégories suivantes de données personnelles :",
+      "points": {
+        "contact": "Coordonnées fournies via les formulaires (nom, e-mail, téléphone)",
+        "preferences": "Préférences de recherche immobilière et annonces enregistrées",
+        "technical": "Données techniques : adresse IP, type de navigateur, pages visitées (via Google Analytics 4)"
+      }
+    },
+    "use": {
+      "title": "Utilisation de vos données",
+      "intro": "Nous utilisons les données collectées aux fins suivantes :",
+      "points": {
+        "communication": "Répondre aux demandes et envoyer des newsletters (avec votre consentement)",
+        "improvement": "Améliorer notre site web et l'expérience utilisateur",
+        "legal": "Respecter les obligations légales en vertu du droit maltais et européen"
+      }
+    },
+    "rights": {
+      "title": "Vos droits (RGPD)",
+      "intro": "En vertu du Règlement général sur la protection des données (RGPD), vous avez le droit de :",
+      "points": {
+        "access": "Accéder aux données personnelles que nous détenons à votre sujet",
+        "rectification": "Demander la correction des données inexactes",
+        "erasure": "Demander la suppression de vos données (droit à l'oubli)",
+        "object": "Vous opposer au traitement ou en demander la limitation"
+      }
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "content": "Pour toute demande relative à la confidentialité, veuillez nous contacter à :",
+      "email": "info@maltaluxuryrealestate.com"
     }
+  },
+  "terms": {
+    "pageTitle": "Conditions d'utilisation",
+    "pageSubtitle": "Accord utilisateur & règles de la plateforme",
+    "nature": {
+      "title": "Nature du service",
+      "content": "Malta Luxury Real Estate propose une plateforme en ligne permettant de consulter des annonces immobilières de luxe à Malte et Gozo. Nous agissons en tant qu'intermédiaire d'information et ne représentons ni les acheteurs ni les vendeurs à titre juridique."
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "content": "Toutes les informations immobilières sont fournies à titre informatif uniquement. Malta Luxury Real Estate n'est pas responsable des pertes résultant de la confiance accordée aux informations publiées sur cette plateforme."
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "content": "Tout le contenu de ce site, y compris les textes, images, logos et design, est la propriété de Malta Luxury Real Estate ou de ses concédants de licence. Toute reproduction sans autorisation écrite préalable est interdite."
+    },
+    "law": {
+      "title": "Droit applicable",
+      "content": "Les présentes conditions sont régies par le droit maltais. Tout litige relève de la compétence exclusive des tribunaux maltais."
+    }
+  },
+  "cookies": {
+    "pageTitle": "Politique relative aux cookies",
+    "pageSubtitle": "Notre utilisation des technologies de suivi",
+    "definition": {
+      "title": "Que sont les cookies ?",
+      "content": "Les cookies sont de petits fichiers texte placés sur votre appareil lorsque vous visitez un site web. Ils aident le site à mémoriser vos préférences et à améliorer votre expérience de navigation."
+    },
+    "essential": {
+      "title": "Cookies essentiels",
+      "content": "Nous utilisons des cookies strictement nécessaires pour assurer le bon fonctionnement du site, notamment la gestion des sessions et la sécurité. Ils ne peuvent pas étre désactivés."
+    },
+    "third_party": {
+      "title": "Cookies tiers",
+      "intro": "Nous utilisons des services tiers susceptibles de déposer leurs propres cookies :",
+      "points": {
+        "mapbox": "Mapbox - pour les cartes immobilières interactives (données de géolocalisation)",
+        "analytics": "Google Analytics 4 - pour des statistiques d'utilisation anonymisées"
+      }
+    },
+    "preferences": {
+      "title": "Gérer vos préférences",
+      "content": "Vous pouvez contrôler ou supprimer les cookies via les paramètres de votre navigateur. La désactivation des cookies peut affecter le fonctionnement de certaines fonctionnalités de ce site."
+    }
+  }
 }

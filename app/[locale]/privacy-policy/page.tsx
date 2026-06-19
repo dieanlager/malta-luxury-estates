@@ -1,90 +1,78 @@
-﻿import { getTranslations } from 'next-intl/server';
-import { Lock } from 'lucide-react';
+import { getTranslations } from 'next-intl/server';
+import { LegalLayout, LockIcon } from '@/src/components/LegalLayout';
+import { routing } from '@/src/i18n/routing';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'common' });
-  return {
-    title: t('seo.privacy.title', { defaultValue: 'Privacy Policy' }),
-    robots: { index: false },
-  };
+export async function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
+
+export const metadata = {
+  robots: { index: false, follow: true },
+};
 
 export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'legal' });
 
-  const sections = [
-    { key: 'intro', type: 'content' },
-    { key: 'controller', type: 'details' },
-    { key: 'collect', type: 'points' },
-    { key: 'use', type: 'points' },
-    { key: 'rights', type: 'points' },
-    { key: 'contact', type: 'contact' },
-  ] as const;
-
-  const pointKeys: Record<string, string[]> = {
-    collect: ['contact', 'preferences', 'technical'],
-    use: ['communication', 'improvement', 'legal'],
-    rights: ['access', 'rectification', 'erasure', 'object'],
-  };
+  const collectPoints = ['contact', 'preferences', 'technical'] as const;
+  const usePoints = ['communication', 'improvement', 'legal'] as const;
+  const rightsPoints = ['access', 'rectification', 'erasure', 'object'] as const;
 
   return (
-    <main className="min-h-screen bg-luxury-black pt-32 pb-24">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/10 border border-gold/30 mb-6">
-            <Lock size={28} className="text-gold" />
-          </div>
-          <h1 className="font-serif text-4xl md:text-5xl text-white mb-4">
-            {t('privacy.intro.title')}
-          </h1>
-          <div className="w-24 h-px bg-gold/40 mx-auto" />
-        </div>
+    <LegalLayout
+      title={t('privacy.pageTitle')}
+      subtitle={t('privacy.pageSubtitle')}
+      icon={<LockIcon />}
+    >
+      <section>
+        <h2>{t('privacy.intro.title')}</h2>
+        <p>{t('privacy.intro.content')}</p>
+      </section>
 
-        <div className="space-y-6">
-          {sections.map(({ key, type }) => (
-            <div key={key} className="rounded-[2.5rem] p-8 md:p-12 bg-white/[0.03] border border-white/10 backdrop-blur-sm">
-              <h2 className="font-serif text-xl text-gold mb-4">
-                {t(`privacy.${key}.title`)}
-              </h2>
-              {type === 'details' && (
-                <p className="text-white/60 text-sm leading-relaxed whitespace-pre-line">
-                  {t(`privacy.${key}.details`)}
-                </p>
-              )}
-              {type === 'content' && (
-                <p className="text-white/60 text-sm leading-relaxed">
-                  {t(`privacy.${key}.content`)}
-                </p>
-              )}
-              {type === 'points' && (
-                <>
-                  <p className="text-white/60 text-sm leading-relaxed mb-4">
-                    {t(`privacy.${key}.intro`)}
-                  </p>
-                  <ul className="space-y-2">
-                    {(pointKeys[key] ?? []).map((point) => (
-                      <li key={point} className="flex items-start gap-3 text-sm text-white/50">
-                        <span className="text-gold mt-0.5">--</span>
-                        <span>{t(`privacy.${key}.points.${point}`)}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              {type === 'contact' && (
-                <>
-                  <p className="text-white/60 text-sm leading-relaxed">
-                    {t(`privacy.${key}.content`)}
-                  </p>
-                  <p className="text-gold text-sm mt-3">info@maltaluxuryrealestate.com</p>
-                </>
-              )}
-            </div>
+      <section>
+        <h2>{t('privacy.controller.title')}</h2>
+        <pre className="whitespace-pre-wrap font-light text-sm">{t('privacy.controller.details')}</pre>
+      </section>
+
+      <section>
+        <h2>{t('privacy.collect.title')}</h2>
+        <p>{t('privacy.collect.intro')}</p>
+        <ul>
+          {collectPoints.map((k) => (
+            <li key={k}>{t(`privacy.collect.points.${k}`)}</li>
           ))}
-        </div>
-      </div>
-    </main>
+        </ul>
+      </section>
+
+      <section>
+        <h2>{t('privacy.use.title')}</h2>
+        <p>{t('privacy.use.intro')}</p>
+        <ul>
+          {usePoints.map((k) => (
+            <li key={k}>{t(`privacy.use.points.${k}`)}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2>{t('privacy.rights.title')}</h2>
+        <p>{t('privacy.rights.intro')}</p>
+        <ul>
+          {rightsPoints.map((k) => (
+            <li key={k}>{t(`privacy.rights.points.${k}`)}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2>{t('privacy.contact.title')}</h2>
+        <p>{t('privacy.contact.content')}</p>
+        <p>
+          <a href={`mailto:${t('privacy.contact.email')}`} className="text-gold hover:underline">
+            {t('privacy.contact.email')}
+          </a>
+        </p>
+      </section>
+    </LegalLayout>
   );
 }
