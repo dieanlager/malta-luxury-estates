@@ -42,5 +42,9 @@
   "specs": {
     "area": "Area",
     "type": "Type"
+  },
+  "similar": {
+    "title": "Similar Properties",
+    "view_all": "View All Properties"
   }
 }

@@ -266,18 +266,90 @@ export function howToSchema(params: {
 }
 
 
-export function generatePropertySchema(property: any) {
+export function generatePropertySchema(property: any, baseUrl = 'https://www.maltaluxuryrealestate.com') {
+    const slug = property.slug ?? String(property.id);
+    const url = `${baseUrl}/properties/${slug}`;
+    const images: string[] = property.images ?? [];
+
+    // Strip internal annotation tags from description
+    const cleanDesc = (property.description as string | null)
+        ?.replace(/\[AFFILIATE_URL:[^\]]+\]\n?/g, '')
+        ?.replace(/\[FEATURES:[^\]]+\]\n?/g, '')
+        ?.trim() ?? '';
+
+    const additionalProperty = [
+        property.beds && {
+            '@type': 'PropertyValue',
+            name: 'Bedrooms',
+            value: property.beds,
+        },
+        property.baths && {
+            '@type': 'PropertyValue',
+            name: 'Bathrooms',
+            value: property.baths,
+        },
+        property.sqm && {
+            '@type': 'PropertyValue',
+            name: 'Floor area',
+            value: property.sqm,
+            unitCode: 'MTK',
+            unitText: 'm²',
+        },
+        property.propertyType && {
+            '@type': 'PropertyValue',
+            name: 'Property type',
+            value: property.propertyType,
+        },
+        property.isSeafront && {
+            '@type': 'PropertyValue',
+            name: 'Seafront',
+            value: 'Yes',
+        },
+    ].filter(Boolean);
+
     return {
         '@context': 'https://schema.org',
-        '@type': 'RealEstateListing',
-        name: property.title,
-        description: property.description,
-        url: `https://www.maltaluxuryrealestate.com/properties/${property.id}`,
-        image: property.images[0],
-        offeredBy: {
-            '@type': 'RealEstateAgent',
-            name: property.agency?.name || 'Malta Luxury Real Estate',
-        },
+        '@graph': [
+            {
+                '@type': 'Product',
+                name: property.title,
+                description: cleanDesc,
+                image: images,
+                url,
+                brand: {
+                    '@type': 'Organization',
+                    name: property.agency?.name ?? 'Malta Luxury Real Estate',
+                },
+                ...(additionalProperty.length > 0 && { additionalProperty }),
+                ...(property.locationName && {
+                    address: {
+                        '@type': 'PostalAddress',
+                        addressLocality: property.locationName,
+                        addressCountry: 'MT',
+                    },
+                }),
+                ...(property.price && {
+                    offers: {
+                        '@type': 'Offer',
+                        price: property.price,
+                        priceCurrency: 'EUR',
+                        availability: 'https://schema.org/InStock',
+                        url,
+                    },
+                }),
+            },
+            {
+                '@type': 'RealEstateListing',
+                name: property.title,
+                description: cleanDesc,
+                url,
+                ...(images[0] && { image: images[0] }),
+                offeredBy: {
+                    '@type': 'RealEstateAgent',
+                    name: property.agency?.name ?? 'Malta Luxury Real Estate',
+                },
+            },
+        ],
     };
 }
 

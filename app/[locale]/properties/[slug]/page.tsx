@@ -12,6 +12,7 @@ import { PropertyGallery } from '@/src/components/PropertyGallery';
 import { PropertyContactCard } from '@/src/components/PropertyContactCard';
 import { AmenitiesGrid } from '@/src/components/AmenitiesGrid';
 import { StickyPropertyBar } from '@/src/components/StickyPropertyBar';
+import { SimilarProperties } from '@/src/components/SimilarProperties';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -190,12 +191,25 @@ export default async function PropertyOrCityPage({ params }: Props) {
   const property = await getPropertyBySlug(slug);
   if (!property) notFound();
 
+  // Similar properties: same location or ±40% price, exclude self, limit 6
+  const allForSimilar = await getAllProperties();
+  const priceMin = property.price ? property.price * 0.6 : 0;
+  const priceMax = property.price ? property.price * 1.4 : Infinity;
+  const similarProperties = allForSimilar
+    .filter(p => {
+      if ((p.slug ?? String(p.id)) === slug) return false;
+      const sameLocation = p.locationName?.toLowerCase() === property.locationName?.toLowerCase();
+      const inPriceRange = !property.price || (p.price != null && p.price >= priceMin && p.price <= priceMax);
+      return sameLocation || inPriceRange;
+    })
+    .slice(0, 6);
+
   const breadcrumb = generateBreadcrumbSchema([
     { name: 'Home', url: base },
     { name: t('nav.properties', { defaultValue: 'Properties' }), url: `${base}${prefix}/properties/all` },
     { name: property.title, url: `${base}${prefix}/properties/${slug}` },
   ]);
-  const propertySchema = generatePropertySchema(property);
+  const propertySchema = generatePropertySchema(property, base);
 
   return (
     <>
@@ -289,6 +303,11 @@ export default async function PropertyOrCityPage({ params }: Props) {
           </div>
         </div>
         <PropertyDetailTools property={property} />
+        <SimilarProperties
+          properties={similarProperties}
+          heading={tPD('similar.title')}
+          viewAllLabel={tPD('similar.view_all')}
+        />
       </main>
     </>
   );

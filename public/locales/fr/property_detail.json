@@ -42,5 +42,9 @@
   "specs": {
     "area": "Surface",
     "type": "Type"
+  },
+  "similar": {
+    "title": "Propriétés Similaires",
+    "view_all": "Voir Toutes les Propriétés"
   }
 }

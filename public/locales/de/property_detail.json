@@ -42,5 +42,9 @@
   "specs": {
     "area": "Fläche",
     "type": "Typ"
+  },
+  "similar": {
+    "title": "Ähnliche Immobilien",
+    "view_all": "Alle Immobilien anzeigen"
   }
 }

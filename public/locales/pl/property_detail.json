@@ -42,5 +42,9 @@
   "specs": {
     "area": "Powierzchnia",
     "type": "Typ"
+  },
+  "similar": {
+    "title": "Podobne Nieruchomości",
+    "view_all": "Zobacz Wszystkie Nieruchomości"
   }
 }
