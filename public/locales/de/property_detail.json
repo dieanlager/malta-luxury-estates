@@ -31,5 +31,12 @@
     "photo_alt": "{title} — Foto {index}",
     "counter": "{current} / {total}",
     "no_images": "Fotos demnächst verfügbar"
+  },
+  "contact": {
+    "request_viewing": "Besichtigung anfragen",
+    "contact_agent": "Makler kontaktieren",
+    "listed_by": "Angeboten von",
+    "save": "Speichern",
+    "share": "Teilen"
   }
 }

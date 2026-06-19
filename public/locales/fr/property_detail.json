@@ -31,5 +31,12 @@
     "photo_alt": "{title} — photo {index}",
     "counter": "{current} / {total}",
     "no_images": "Photos disponibles prochainement"
+  },
+  "contact": {
+    "request_viewing": "Demander une visite",
+    "contact_agent": "Contacter l’agent",
+    "listed_by": "Proposé par",
+    "save": "Sauvegarder",
+    "share": "Partager"
   }
 }

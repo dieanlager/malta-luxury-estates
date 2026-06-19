@@ -9,6 +9,8 @@ import { PropertyCard } from '@/src/components/PropertyCard';
 import { Bed, Bath, Maximize, MapPin, ArrowLeft } from 'lucide-react';
 import PropertyDetailTools from '@/src/components/PropertyDetailTools';
 import { PropertyGallery } from '@/src/components/PropertyGallery';
+import { PropertyContactCard } from '@/src/components/PropertyContactCard';
+import { StickyPropertyBar } from '@/src/components/StickyPropertyBar';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -197,10 +199,18 @@ export default async function PropertyOrCityPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(propertySchema) }} />
-      <main className="min-h-screen bg-luxury-black pt-24 pb-24">
+      <main className="min-h-screen bg-luxury-black pt-24 pb-24 lg:pb-24">
         <PropertyGallery images={property.images ?? []} title={property.title} />
-        <div className="max-w-5xl mx-auto px-6 pt-10 relative z-10">
-          <div className="mb-8">
+        <StickyPropertyBar
+          title={property.title}
+          price={property.price}
+          image={property.images?.[0]}
+          slug={property.slug ?? String(property.id)}
+          statusLabel={property.type === 'rent' ? t('common.per_month', { defaultValue: 'per month' }) : t('common.for_sale', { defaultValue: 'For Sale' })}
+          sentinelId="property-title-sentinel"
+        />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 relative z-10 pb-24 lg:pb-0">
+          <div className="mb-8" id="property-title-sentinel">
             <Link href="/properties/all" className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/40 hover:text-gold transition-colors mb-6">
               <ArrowLeft size={14} />
               {t('common.back_to_listings', { defaultValue: 'Back to Listings' })}
@@ -259,22 +269,17 @@ export default async function PropertyOrCityPage({ params }: Props) {
               )}
             </div>
             <div>
-              <div className="glass-card p-8 rounded-3xl border border-white/10 sticky top-28">
-                <h3 className="font-serif text-xl text-white mb-2">{t('common.enquire', { defaultValue: 'Enquire About This Property' })}</h3>
-                {property.agency?.name && (
-                  <p className="text-white/40 text-xs mb-6">{t('common.listed_by', { defaultValue: 'Listed by' })} {property.agency.name}</p>
-                )}
-                <Link
-                    href="/contact"
-                    className="w-full block text-center py-4 gold-gradient text-luxury-black font-bold text-sm uppercase tracking-widest rounded-2xl hover:opacity-90 transition-opacity"
-                  >
-                    {t('common.contact_agent')}
-                  </Link>
-              </div>
+              <PropertyContactCard
+                price={property.price}
+                slug={property.slug ?? String(property.id)}
+                statusLabel={property.type === 'rent' ? t('common.per_month', { defaultValue: 'per month' }) : t('common.for_sale', { defaultValue: 'For Sale' })}
+                agencyName={property.agency?.name}
+                agencyLogo={property.agency?.logo}
+              />
             </div>
           </div>
         </div>
-      <PropertyDetailTools property={property} />
+        <PropertyDetailTools property={property} />
       </main>
     </>
   );

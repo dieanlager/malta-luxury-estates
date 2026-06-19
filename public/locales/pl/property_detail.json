@@ -31,5 +31,12 @@
     "photo_alt": "{title} — zdjęcie {index}",
     "counter": "{current} / {total}",
     "no_images": "Zdjęcia wkrótce dostępne"
+  },
+  "contact": {
+    "request_viewing": "Umów oglądanie",
+    "contact_agent": "Skontaktuj się z agentem",
+    "listed_by": "Oferowane przez",
+    "save": "Zapisz",
+    "share": "Udostępnij"
   }
 }
