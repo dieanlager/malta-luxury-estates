@@ -46,7 +46,10 @@
     "map": {
       "badge": "Exploration GĂ©ographique",
       "title": "Explorez l'Archipel",
-      "subtitle": "Des rues historiques de La Valette aux fermes sereines de Gozo, trouvez votre emplacement idĂ©al sur la carte."
+      "subtitle": "Des rues historiques de La Valette aux fermes sereines de Gozo, trouvez votre emplacement idĂ©al sur la carte.",
+      "interactive_badge": "Carte Interactive",
+      "interactive_title": "Explorer Malte par Localisation",
+      "interactive_subtitle": "Parcourez les propriétés dans les zones les plus recherchées de Malte."
     },
     "partners": {
       "badge": "Leaders du Secteur",
@@ -67,11 +70,32 @@
     },
     "market_snapshot": {
       "title": "Intelligence MarchĂ© en Temps RĂ©el",
-      "subtitle": "Notre moteur agrĂ¨ge les donnĂ©es de tout l'archipel maltais pour vous fournir des indicateurs d'investissement prĂ©cis."
+      "subtitle": "Notre moteur agrĂ¨ge les donnĂ©es de tout l'archipel maltais pour vous fournir des indicateurs d'investissement prĂ©cis.",
+      "badge": "Aperçu du Marché"
     },
     "locations_grid": {
       "title": "Explorer par Localisation",
-      "subtitle": "DĂ©couvrez le caractĂ¨re unique des quartiers les plus prestigieux de Malte."
+      "subtitle": "DĂ©couvrez le caractĂ¨re unique des quartiers les plus prestigieux de Malte.",
+      "badge": "Emplacements Premium",
+      "count": "{count} Propriétés"
+    },
+    "cta": {
+      "badge": "Pour les Professionnels",
+      "title": "Publiez vos biens avec nous",
+      "subtitle": "Rejoignez le premier réseau immobilier de luxe de Malte. Atteignez des investisseurs et expatriés internationaux.",
+      "feature_1": "Positionnement annonce premium",
+      "feature_2": "Portée internationale acheteurs",
+      "feature_3": "Gestionnaire de compte dédié",
+      "feature_4": "Tableau de bord analytique avancé",
+      "button": "Rejoindre comme agence",
+      "reach_label": "Portée mensuelle",
+      "testimonial": "Le meilleur taux de conversion pour les prospects de luxe sur l'île."
+    },
+    "insights": {
+      "badge": "Expertise",
+      "title": "Analyses Stratégiques d'Investissement",
+      "subtitle": "Conseils d'experts pour les investisseurs internationaux et les particuliers fortunés.",
+      "cta": "Lire le guide"
     }
   },
   "footer": {
@@ -461,7 +485,8 @@
       "oracle_title": "Oracle de prix par IA",
       "oracle_desc": "Obtenez une estimation instantanĂ©e par IA pour n'importe quel bien maltais grĂ˘ce Ă  notre index de marchĂ© neural.",
       "try_oracle": "Essayer l'Oracle IA"
-    }
+    },
+    "eyebrow": "Intelligence Financière Malte 2026"
   },
   "buying_costs": {
     "title": "Intelligence sur les coĂ»ts d'achat",

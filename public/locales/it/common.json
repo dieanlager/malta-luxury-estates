@@ -46,7 +46,10 @@
     "map": {
       "badge": "Esplorazione Geografica",
       "title": "Esplora l'Arcipelago",
-      "subtitle": "Dalle storiche strade di Valletta alle serene case di campagna di Gozo, trova la tua posizione ideale sulla mappa."
+      "subtitle": "Dalle storiche strade di Valletta alle serene case di campagna di Gozo, trova la tua posizione ideale sulla mappa.",
+      "interactive_badge": "Mappa Interattiva",
+      "interactive_title": "Esplora Malta per Posizione",
+      "interactive_subtitle": "Sfoglia gli immobili nelle zone più ricercate di Malta."
     },
     "partners": {
       "badge": "Leader del settore",
@@ -67,11 +70,32 @@
     },
     "market_snapshot": {
       "title": "Market Intelligence in Tempo Reale",
-      "subtitle": "Il nostro motore aggrega dati da tutte le isole maltesi per fornirti parametri di investimento accurati."
+      "subtitle": "Il nostro motore aggrega dati da tutte le isole maltesi per fornirti parametri di investimento accurati.",
+      "badge": "Panoramica del Mercato"
     },
     "locations_grid": {
       "title": "Esplora per LocalitĂ ",
-      "subtitle": "Scopri il carattere unico delle zone piĂą prestigiose di Malta."
+      "subtitle": "Scopri il carattere unico delle zone piĂą prestigiose di Malta.",
+      "badge": "Location Premium",
+      "count": "{count} Immobili"
+    },
+    "cta": {
+      "badge": "Per i Professionisti",
+      "title": "Pubblica i tuoi immobili con noi",
+      "subtitle": "Unisciti alla principale rete immobiliare di lusso di Malta. Raggiungi HNWIs internazionali, expat e investitori.",
+      "feature_1": "Posizionamento annuncio premium",
+      "feature_2": "Portata internazionale acquirenti",
+      "feature_3": "Account manager dedicato",
+      "feature_4": "Dashboard analisi avanzate",
+      "button": "Unisciti come agenzia",
+      "reach_label": "Portata mensile",
+      "testimonial": "Il tasso di conversione più alto per lead di lusso sull'isola."
+    },
+    "insights": {
+      "badge": "Competenza Esperta",
+      "title": "Analisi Strategiche degli Investimenti",
+      "subtitle": "Guida esperta per investitori internazionali e individui ad alto patrimonio.",
+      "cta": "Leggi la guida"
     }
   },
   "footer": {
@@ -461,7 +485,8 @@
       "oracle_title": "Oracolo dei Prezzi AI",
       "oracle_desc": "Ottieni una valutazione immediata alimentata dall'IA per qualsiasi immobile maltese utilizzando il nostro indice di mercato neurale.",
       "try_oracle": "Prova l'Oracolo AI"
-    }
+    },
+    "eyebrow": "Intelligence Finanziaria Malta 2026"
   },
   "buying_costs": {
     "title": "Intelligenza sui Costi d'Acquisto",

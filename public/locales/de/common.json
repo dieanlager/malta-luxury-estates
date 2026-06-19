@@ -46,7 +46,10 @@
     "map": {
       "badge": "Geografische Erkundung",
       "title": "Entdecken Sie das Archipel",
-      "subtitle": "Von den historischen StraĂźen Vallettas bis zu den ruhigen BauernhĂ¤usern auf Gozo â€“ finden Sie Ihren perfekten Standort auf der Karte."
+      "subtitle": "Von den historischen StraĂźen Vallettas bis zu den ruhigen BauernhĂ¤usern auf Gozo â€“ finden Sie Ihren perfekten Standort auf der Karte.",
+      "interactive_badge": "Interaktive Karte",
+      "interactive_title": "Malta nach Standort erkunden",
+      "interactive_subtitle": "Durchsuchen Sie Immobilien in Maltas begehrtesten Lagen."
     },
     "partners": {
       "badge": "BranchenfĂĽhrer",
@@ -67,11 +70,32 @@
     },
     "market_snapshot": {
       "title": "Echtzeit-Marktintelligenz",
-      "subtitle": "Unsere Engine aggregiert Daten von allen maltesischen Inseln, um Ihnen genaue Investitions-Benchmarks zu liefern."
+      "subtitle": "Unsere Engine aggregiert Daten von allen maltesischen Inseln, um Ihnen genaue Investitions-Benchmarks zu liefern.",
+      "badge": "Marktüberblick"
     },
     "locations_grid": {
       "title": "Nach Standort erkunden",
-      "subtitle": "Entdecken Sie den einzigartigen Charakter der prestigetrĂ¤chtigsten Gegenden Maltas."
+      "subtitle": "Entdecken Sie den einzigartigen Charakter der prestigetrĂ¤chtigsten Gegenden Maltas.",
+      "badge": "Premiumlagen",
+      "count": "{count} Immobilien"
+    },
+    "cta": {
+      "badge": "Für Profis",
+      "title": "Inserieren Sie Ihre Immobilien bei uns",
+      "subtitle": "Werden Sie Teil von Maltas führendem Luxusnetzwerk. Erreichen Sie internationale HNWIs, Expats und Investoren.",
+      "feature_1": "Premium-Inseratplatzierung",
+      "feature_2": "Internationale Käuferreichweite",
+      "feature_3": "Persönlicher Account-Manager",
+      "feature_4": "Erweitertes Analytics-Dashboard",
+      "button": "Als Agentur beitreten",
+      "reach_label": "Monatliche Reichweite",
+      "testimonial": "Die höchste Konversionsrate für Luxus-Leads auf der Insel."
+    },
+    "insights": {
+      "badge": "Expertenwissen",
+      "title": "Strategische Investitionseinblicke",
+      "subtitle": "Expertenratschläge für internationale Investoren und vermögende Privatpersonen.",
+      "cta": "Leitfaden lesen"
     }
   },
   "footer": {
@@ -461,7 +485,8 @@
       "oracle_title": "KI-Preis-Orakel",
       "oracle_desc": "Erhalten Sie eine sofortige, KI-gestĂĽtzte Bewertung fĂĽr jede maltesische Immobilie mit unserem neuralen Marktindex.",
       "try_oracle": "KI-Orakel ausprobieren"
-    }
+    },
+    "eyebrow": "Malta 2026 Finanzielle Intelligenz"
   },
   "buying_costs": {
     "title": "Kaufkosten-Intelligenz",

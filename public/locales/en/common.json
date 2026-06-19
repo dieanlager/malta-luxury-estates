@@ -35,7 +35,10 @@
     "map": {
       "badge": "Geographic Exploration",
       "title": "Explore the Archipelago",
-      "subtitle": "From the historic streets of Valletta to the serene farmhouses of Gozo, find your perfect location on the map."
+      "subtitle": "From the historic streets of Valletta to the serene farmhouses of Gozo, find your perfect location on the map.",
+      "interactive_badge": "Interactive Map",
+      "interactive_title": "Explore Malta by Location",
+      "interactive_subtitle": "Browse properties across Malta's most sought-after areas."
     },
     "partners": {
       "badge": "Industry Leaders",
@@ -56,15 +59,32 @@
     },
     "market_snapshot": {
       "title": "Real-Time Market Intelligence",
-      "subtitle": "Our programmatic engine aggregates data from across the Maltese Islands to provide you with accurate investment benchmarks."
+      "subtitle": "Our programmatic engine aggregates data from across the Maltese Islands to provide you with accurate investment benchmarks.",
+      "badge": "Market Snapshot"
     },
     "locations_grid": {
       "title": "Explore by Location",
-      "subtitle": "Discover the unique character of Malta's most prestigious areas."
+      "subtitle": "Discover the unique character of Malta's most prestigious areas.",
+      "badge": "Prime Locations",
+      "count": "{count} Properties"
     },
     "insights": {
       "title": "Strategic Investment Insights",
-      "subtitle": "Expert guidance for international investors and residency seekers."
+      "subtitle": "Expert guidance for international investors and residency seekers.",
+      "badge": "Expert Knowledge",
+      "cta": "Read Guide"
+    },
+    "cta": {
+      "badge": "For Professionals",
+      "title": "List your properties with us",
+      "subtitle": "Join Malta's premier luxury property network. Reach international HNWIs, expats, and investors seeking premium real estate.",
+      "feature_1": "Premium listing placement",
+      "feature_2": "International buyer reach",
+      "feature_3": "Dedicated account manager",
+      "feature_4": "Advanced analytics dashboard",
+      "button": "Join as Agency",
+      "reach_label": "Monthly Reach",
+      "testimonial": "The highest conversion rate for luxury leads on the island."
     }
   },
   "footer": {
@@ -502,7 +522,8 @@
       "oracle_title": "AI Price Oracle",
       "oracle_desc": "Get an instant, AI-powered valuation for any Maltese property using our neural market index.",
       "try_oracle": "Try AI Oracle"
-    }
+    },
+    "eyebrow": "Malta 2026 Financial Intelligence"
   },
   "buying_costs": {
     "title": "Purchase Cost Intelligence",
