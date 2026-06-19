@@ -8,6 +8,7 @@ import { Link } from '@/src/navigation';
 import { PropertyCard } from '@/src/components/PropertyCard';
 import { Bed, Bath, Maximize, MapPin, ArrowLeft } from 'lucide-react';
 import PropertyDetailTools from '@/src/components/PropertyDetailTools';
+import { PropertyGallery } from '@/src/components/PropertyGallery';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -197,34 +198,8 @@ export default async function PropertyOrCityPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(propertySchema) }} />
       <main className="min-h-screen bg-luxury-black pt-24 pb-24">
-        <div className="relative h-[60vh] overflow-hidden">
-          {property.images?.[0] ? (
-            <img src={property.images[0]} alt={property.title} className="w-full h-full object-cover" />
-          ) : (
-            <div className="w-full h-full bg-white/5 flex items-center justify-center">
-              <span className="text-white/20 font-serif text-4xl">Malta Luxury</span>
-            </div>
-          )}
-          <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent" />
-        </div>
-        {/* Gallery grid – shown when property has more than 1 image */}
-        {property.images && property.images.length > 1 && (
-          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {property.images.slice(1).map((src, i) => (
-                <div key={i} className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                  <img
-                    src={src}
-                    alt={`${property.title} – photo ${i + 2}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-        <div className="max-w-5xl mx-auto px-6 -mt-32 relative z-10">
+        <PropertyGallery images={property.images ?? []} title={property.title} />
+        <div className="max-w-5xl mx-auto px-6 pt-10 relative z-10">
           <div className="mb-8">
             <Link href="/properties/all" className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/40 hover:text-gold transition-colors mb-6">
               <ArrowLeft size={14} />
