@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 
   return {
-    title: t('home.title'),
+    title: { absolute: t('home.title') },
     description: t('home.description'),
     alternates: {
       canonical: `${base}${prefix}`,
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: t('home.title'),
+      title: { absolute: t('home.title') },
       description: t('home.description'),
       type: 'website',
       url: `${base}${prefix}`,
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: t('home.title'),
+      title: { absolute: t('home.title') },
       description: t('home.description'),
       images: [`${base}/og-image.png`],
     },
