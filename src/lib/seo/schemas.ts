@@ -1,4 +1,4 @@
-import type { Location, LocationStats } from '../../types';
+﻿import type { Location, LocationStats } from '../../types';
 
 export function formatPrice(price: number | null): string {
     if (!price) return 'N/A';
@@ -317,7 +317,7 @@ export function generatePropertySchema(property: any, baseUrl = 'https://www.mal
                 image: images,
                 url,
                 brand: {
-                    '@type': 'Organization',
+                    '@type': 'Brand',
                     name: property.agency?.name ?? 'Malta Luxury Real Estate',
                 },
                 ...(additionalProperty.length > 0 && { additionalProperty }),
@@ -335,6 +335,38 @@ export function generatePropertySchema(property: any, baseUrl = 'https://www.mal
                         priceCurrency: 'EUR',
                         availability: 'https://schema.org/InStock',
                         url,
+                        hasMerchantReturnPolicy: {
+                            '@type': 'MerchantReturnPolicy',
+                            applicableCountry: 'MT',
+                            returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+                        },
+                        shippingDetails: {
+                            '@type': 'OfferShippingDetails',
+                            shippingRate: {
+                                '@type': 'MonetaryAmount',
+                                value: '0',
+                                currency: 'EUR',
+                            },
+                            shippingDestination: {
+                                '@type': 'DefinedRegion',
+                                addressCountry: 'MT',
+                            },
+                            deliveryTime: {
+                                '@type': 'ShippingDeliveryTime',
+                                handlingTime: {
+                                    '@type': 'QuantitativeValue',
+                                    minValue: 0,
+                                    maxValue: 0,
+                                    unitCode: 'DAY',
+                                },
+                                transitTime: {
+                                    '@type': 'QuantitativeValue',
+                                    minValue: 0,
+                                    maxValue: 0,
+                                    unitCode: 'DAY',
+                                },
+                            },
+                        },
                     },
                 }),
             },
