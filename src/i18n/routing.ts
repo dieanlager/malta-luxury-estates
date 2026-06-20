@@ -1,4 +1,4 @@
-import { defineRouting } from 'next-intl/routing';
+﻿import { defineRouting } from 'next-intl/routing';
 
 export const routing = defineRouting({
   locales: ['en', 'it', 'de', 'fr', 'pl'],
@@ -49,7 +49,13 @@ export const routing = defineRouting({
       fr: '/a-propos',
       pl: '/o-nas',
     },
-    '/contact': '/contact',
+    '/contact': {
+      en: '/contact',
+      it: '/contatti',
+      de: '/kontakt',
+      fr: '/contact',
+      pl: '/kontakt',
+    },
     '/tools/valuation': {
       en: '/tools/valuation',
       it: '/strumenti/valutazione-immobiliare',
@@ -85,8 +91,33 @@ export const routing = defineRouting({
       fr: '/outils/calculateur-taxes',
       pl: '/narzedzia/kalkulator-podatkow',
     },
-    '/privacy-policy': '/privacy-policy',
-    '/terms-of-service': '/terms-of-service',
-    '/cookie-policy': '/cookie-policy',
+    '/tools': {
+      en: '/tools',
+      it: '/strumenti',
+      de: '/outils',
+      fr: '/outils',
+      pl: '/narzedzia',
+    },
+    '/privacy-policy': {
+      en: '/privacy-policy',
+      de: '/datenschutz',
+      fr: '/politique-de-confidentialite',
+      it: '/privacy',
+      pl: '/polityka-prywatnosci',
+    },
+    '/terms-of-service': {
+      en: '/terms-of-service',
+      de: '/agb',
+      fr: '/conditions-dutilisation',
+      it: '/termini-di-servizio',
+      pl: '/regulamin',
+    },
+    '/cookie-policy': {
+      en: '/cookie-policy',
+      de: '/cookie-richtlinie',
+      fr: '/politique-cookies',
+      it: '/cookie-policy',
+      pl: '/polityka-cookies',
+    },
   },
 });

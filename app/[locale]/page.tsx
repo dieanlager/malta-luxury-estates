@@ -15,7 +15,7 @@ interface Props {
   params: Promise<{ locale: string }>;
 }
 
-export const revalidate = 3600;
+export const revalidate = 900;
 
 export async function generateStaticParams() {
   return routing.locales.map(locale => ({ locale }));
@@ -23,12 +23,16 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'seo' });
   const base = 'https://www.maltaluxuryrealestate.com';
   const prefix = locale === 'en' ? '' : `/${locale}`;
+  const ogLocaleMap: Record<string, string> = {
+    en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL',
+  };
 
   return {
-    title: 'Malta Luxury Real Estate | Premium Properties in Malta & Gozo',
-    description: 'Discover luxury villas, penthouses and exclusive properties for sale in Malta and Gozo. Expert real estate services for discerning buyers and investors.',
+    title: t('home.title'),
+    description: t('home.description'),
     alternates: {
       canonical: `${base}${prefix}`,
       languages: {
@@ -37,6 +41,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}`])
         ),
       },
+    },
+    openGraph: {
+      title: t('home.title'),
+      description: t('home.description'),
+      type: 'website',
+      url: `${base}${prefix}`,
+      locale: ogLocaleMap[locale] ?? 'en_US',
+      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630, alt: 'Malta Luxury Real Estate' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('home.title'),
+      description: t('home.description'),
+      images: [`${base}/og-image.jpg`],
     },
   };
 }

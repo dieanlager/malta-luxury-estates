@@ -36,7 +36,7 @@ export function generateCityFAQSchema(
                 acceptedAnswer: {
                     '@type': 'Answer',
                     text: location.isLuxuryHub
-                        ? `Yes, ${location.nameEn} is one of Malta's prime locations for international buyers. Non-EU citizens can purchase property in Special Designated Areas (SDA) without requiring an AIP permit. For standard properties outside SDAs, a one-time AIP permit (â‚¬233) is required. EU citizens who have lived in Malta for 5+ years face fewer restrictions.`
+                        ? `Yes, ${location.nameEn} is one of Malta's prime locations for international buyers. Non-EU citizens can purchase property in Special Designated Areas (SDA) without requiring an AIP permit. For standard properties outside SDAs, a one-time AIP permit (€233) is required. EU citizens who have lived in Malta for 5+ years face fewer restrictions.`
                         : `Non-EU buyers require an Acquisition of Immovable Property (AIP) permit for properties outside Special Designated Areas (SDA). EU citizens with 5+ years residency in Malta face fewer restrictions. SDA developments allow unrestricted foreign ownership.`,
                 },
             },
@@ -45,7 +45,7 @@ export function generateCityFAQSchema(
                 name: `What rental yields can I expect in ${location.nameEn}?`,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: `Estimated gross rental yields in ${location.nameEn} range from 4% to 6.5% annually, depending on property type and location within the area. Seafront apartments and furnished units typically achieve higher returns (5%â€“7%). Short-let properties can yield even more during peak tourist season (Mayâ€“October).`,
+                    text: `Estimated gross rental yields in ${location.nameEn} range from 4% to 6.5% annually, depending on property type and location within the area. Seafront apartments and furnished units typically achieve higher returns (5%–7%). Short-let properties can yield even more during peak tourist season (May–October).`,
                 },
             },
             {
@@ -61,7 +61,7 @@ export function generateCityFAQSchema(
                 name: `What are the buying costs when purchasing property in ${location.nameEn}?`,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: `Standard buyer costs in Malta include: Stamp Duty of 5% (reduced to 3.5% on the first â‚¬200,000 for primary residence), Notary Fees of 1%â€“1.5%, Search Fees of approximately â‚¬300â€“â‚¬600, and an AIP Permit fee of â‚¬233 if applicable. First-time buyers enjoy stamp duty exemptions on the first â‚¬200,000. Use our Buying Costs Calculator for a personalised breakdown.`,
+                    text: `Standard buyer costs in Malta include: Stamp Duty of 5% (reduced to 3.5% on the first €200,000 for primary residence), Notary Fees of 1%–1.5%, Search Fees of approximately €300–€600, and an AIP Permit fee of €233 if applicable. First-time buyers enjoy stamp duty exemptions on the first €200,000. Use our Buying Costs Calculator for a personalised breakdown.`,
                 },
             },
         ],
@@ -74,11 +74,11 @@ export function generateFilterFAQSchema(
     filteredCount: number
 ) {
     const filterLabels: Record<string, string> = {
-        'under-500k': 'under â‚¬500,000',
-        'under-1m': 'under â‚¬1,000,000',
-        '500k-1m': 'â‚¬500,000 â€“ â‚¬1,000,000',
-        'over-1m': 'over â‚¬1,000,000',
-        'over-3m': 'over â‚¬3,000,000',
+        'under-500k': 'under €500,000',
+        'under-1m': 'under €1,000,000',
+        '500k-1m': '€500,000 – €1,000,000',
+        'over-1m': 'over €1,000,000',
+        'over-3m': 'over €3,000,000',
         'sea-view': 'with sea view',
         'with-pool': 'with a private pool',
         'new-build': 'new-build',
@@ -108,7 +108,7 @@ export function generateFilterFAQSchema(
                 name: `What is the best time to buy ${filterLabel} property in ${cityName}?`,
                 acceptedAnswer: {
                     '@type': 'Answer',
-                    text: `The Maltese property market is active year-round, but prices tend to be more negotiable during the quieter winter months (Novemberâ€“February). Spring and summer see more listings and faster transactions. For investment properties, buying before the high season allows you to capitalise on peak rental demand.`,
+                    text: `The Maltese property market is active year-round, but prices tend to be more negotiable during the quieter winter months (November–February). Spring and summer see more listings and faster transactions. For investment properties, buying before the high season allows you to capitalise on peak rental demand.`,
                 },
             },
         ],
@@ -151,8 +151,11 @@ export function generateArticleSchema(article: {
     date: string;
     readTime: string;
     slug: string;
-}) {
+}, locale = 'en') {
     const wordCount = article.content.split(/\s+/).length;
+    const langMap: Record<string, string> = {
+        en: 'en-US', de: 'de-DE', fr: 'fr-FR', it: 'it-IT', pl: 'pl-PL',
+    };
 
     return {
         '@context': 'https://schema.org',
@@ -163,11 +166,12 @@ export function generateArticleSchema(article: {
         datePublished: article.date,
         dateModified: article.date,
         wordCount,
+        inLanguage: langMap[locale] ?? 'en-US',
         articleSection: 'Real Estate',
         author: {
-            '@type': 'Organization',
-            name: 'Malta Luxury Real Estate',
-            url: 'https://www.maltaluxuryrealestate.com',
+            '@type': 'Person',
+            name: 'Malta Luxury Real Estate Editorial Team',
+            url: 'https://www.maltaluxuryrealestate.com/about',
         },
         publisher: {
             '@type': 'Organization',
@@ -181,13 +185,17 @@ export function generateArticleSchema(article: {
             '@type': 'WebPage',
             '@id': `https://www.maltaluxuryrealestate.com/insights/${article.slug}`,
         },
+        speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['h1', '.article-lead'],
+        },
     };
 }
 
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// LOCAL BUSINESS â€“ dla kaĹĽdej lokalizacji
+// ─────────────────────────────────────────────────────
+// LOCAL BUSINESS – dla każdej lokalizacji
 // Dominacja Google Maps / Local Pack
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─────────────────────────────────────────────────────
 export function localBusinessSchema(location: {
     nameEn: string
     slug: string
@@ -201,7 +209,7 @@ export function localBusinessSchema(location: {
     return {
         '@context': 'https://schema.org',
         '@type': 'RealEstateAgent',
-        name: `Malta Luxury Real Estate â€“ ${location.nameEn}`,
+        name: `Malta Luxury Real Estate – ${location.nameEn}`,
         description: `Premium property listings in ${location.nameEn}, ${location.island === 'gozo' ? 'Gozo' : 'Malta'
             }. ${location.shortDesc}`,
         url: `https://www.maltaluxuryrealestate.com/properties/${location.slug}`,
@@ -232,16 +240,16 @@ export function localBusinessSchema(location: {
     }
 }
 
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// HOW-TO â€“ artykuĹ‚y procesowe
+// ─────────────────────────────────────────────────────
+// HOW-TO – artykuły procesowe
 // "How to buy", "How to apply for AIP" etc.
-// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─────────────────────────────────────────────────────
 export function howToSchema(params: {
     name: string
     description: string
     steps: { name: string; text: string }[]
     estimatedCost?: string
-    totalTime?: string // ISO 8601 duration, np. "P3M" = 3 miesiÄ…ce
+    totalTime?: string // ISO 8601 duration, np. "P3M" = 3 miesiące
 }) {
     return {
         '@context': 'https://schema.org',
@@ -265,8 +273,89 @@ export function howToSchema(params: {
     }
 }
 
+export function generateOrganizationSchema(baseUrl = 'https://www.maltaluxuryrealestate.com') {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${baseUrl}/#organization`,
+    name: 'Malta Luxury Real Estate',
+    url: baseUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}/logo.png`,
+      width: 200,
+      height: 200,
+    },
+    email: 'info@maltaluxuryrealestate.com',
+    areaServed: { '@type': 'Country', name: 'Malta' },
+    sameAs: [
+      'https://www.facebook.com/maltaluxuryrealestate',
+      'https://www.linkedin.com/company/maltaluxuryrealestate',
+    ],
+  };
+}
 
-export function generatePropertySchema(property: any, baseUrl = 'https://www.maltaluxuryrealestate.com') {
+export function generateWebSiteSchema(locale: string, baseUrl = 'https://www.maltaluxuryrealestate.com') {
+  const prefix = locale === 'en' ? '' : `/${locale}`;
+  const langMap: Record<string, string> = {
+    en: 'en-US', de: 'de-DE', fr: 'fr-FR', it: 'it-IT', pl: 'pl-PL',
+  };
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${baseUrl}/#website`,
+    url: `${baseUrl}${prefix}`,
+    name: 'Malta Luxury Real Estate',
+    inLanguage: langMap[locale] ?? 'en-US',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${baseUrl}${prefix}/properties/all?query={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+}
+
+export function generateItemListSchema(
+  items: { url: string; name: string; position: number; image?: string }[],
+  listName: string,
+  baseUrl = 'https://www.maltaluxuryrealestate.com'
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: listName,
+    url: baseUrl,
+    numberOfItems: items.length,
+    itemListElement: items.map(item => ({
+      '@type': 'ListItem',
+      position: item.position,
+      name: item.name,
+      url: item.url,
+      ...(item.image && { image: item.image }),
+    })),
+  };
+}
+
+interface PropertySchemaInput {
+  id?: string | number;
+  slug?: string;
+  title: string;
+  description?: string | null;
+  images?: string[];
+  beds?: number | null;
+  baths?: number | null;
+  sqm?: number | null;
+  propertyType?: string | null;
+  isSeafront?: boolean | null;
+  locationName?: string | null;
+  price?: number | null;
+  agency?: { name: string } | null;
+}
+
+export function generatePropertySchema(property: PropertySchemaInput, baseUrl = 'https://www.maltaluxuryrealestate.com') {
     const slug = property.slug ?? String(property.id);
     const url = `${baseUrl}/properties/${slug}`;
     const images: string[] = property.images ?? [];
@@ -335,6 +424,7 @@ export function generatePropertySchema(property: any, baseUrl = 'https://www.mal
                         priceCurrency: 'EUR',
                         availability: 'https://schema.org/InStock',
                         url,
+                        priceValidUntil: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
                         hasMerchantReturnPolicy: {
                             '@type': 'MerchantReturnPolicy',
                             applicableCountry: 'MT',
@@ -384,4 +474,3 @@ export function generatePropertySchema(property: any, baseUrl = 'https://www.mal
         ],
     };
 }
-

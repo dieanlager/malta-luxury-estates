@@ -1,7 +1,7 @@
 {
     "home": {
-        "title": "Malta Luxury Real Estate – Immobili di Prestigio in Vendita",
-        "description": "Scopri le proprietà più esclusive a Malta e Gozo. Annunci di immobili di lusso curati per acquirenti e investitori internazionali."
+        "title": "Immobili di Lusso a Malta | Propriet\u00e0 Premium a Malta & Gozo",
+        "description": "Scopri ville di lusso, attici e propriet\u00e0 esclusive in vendita a Malta e Gozo. Servizi immobiliari esperti per acquirenti e investitori esigenti."
     },
     "properties": {
         "title": "Immobili di Lusso in Vendita a Malta | Visualizza Tutti gli Annunci",
@@ -16,12 +16,12 @@
         "title_taxes": "Tasse Immobiliari a Malta 2026"
     },
     "about": {
-        "title": "Su Malta Luxury Real Estate – La Nostra Missione",
+        "title": "Su Malta Luxury Real Estate \u2013 La Nostra Missione",
         "description": "Il principale portale indipendente che collega investitori internazionali di alto profilo con il mercato immobiliare premium di Malta."
     },
     "market": {
         "title": "Andamento Mercato Immobiliare Malta | Dati in Tempo Reale 2026",
-        "description": "Monitora le tendenze dei prezzi, gli annunci in diretta e l'attività del mercato a Malta e Gozo. Approfondimenti basati sui dati per investitori di lusso."
+        "description": "Monitora le tendenze dei prezzi, gli annunci in diretta e l'attivit\u00e0 del mercato a Malta e Gozo. Approfondimenti basati sui dati per investitori di lusso."
     },
     "tools": {
         "oracle": {
@@ -35,7 +35,7 @@
     },
     "privacy": {
         "title": "Informativa sulla Privacy",
-        "subtitle": "Protezione dei Dati e Conformità GDPR"
+        "subtitle": "Protezione dei Dati e Conformit\u00e0 GDPR"
     },
     "terms": {
         "title": "Termini di Servizio",

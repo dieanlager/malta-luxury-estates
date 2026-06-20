@@ -56,7 +56,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: article.date,
       url: `${base}${prefix(locale)}${localizedSeg(locale)}`,
+      locale: ({ en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' } as Record<string, string>)[locale] ?? 'en_US',
       images: article.image ? [{ url: article.image }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      images: article.image ? [article.image] : [`${base}/og-image.jpg`],
     },
   };
 }
@@ -77,7 +82,7 @@ export default async function InsightPage({ params }: Props) {
   const localizedSeg = (insightPaths[locale] ?? `/insights/${slug}`).replace('[slug]', slug);
   const pageUrl = `${base}${prefix}${localizedSeg}`;
 
-  const articleSchema = generateArticleSchema(article);
+  const articleSchema = generateArticleSchema(article, locale);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: base },
     { name: t('nav.insights', { defaultValue: 'Insights' }), url: `${base}${prefix}/insights` },

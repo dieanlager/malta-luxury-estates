@@ -70,7 +70,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const property = await getPropertyBySlug(slug);
   if (!property) return {};
   const title = `${property.title} | Malta Luxury Real Estate`;
-  const description = property.description?.slice(0, 160) ?? title;
+  const cleanDesc = (raw: string | null | undefined): string =>
+    (raw ?? '')
+      .replace(/\[AFFILIATE_URL:[^\]]+\]\n?/g, '')
+      .replace(/\[FEATURES:[^\]]+\]\n?/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  const description = cleanDesc(property.description).slice(0, 160) || title;
   return {
     title,
     description,
@@ -85,7 +91,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       type: 'website',
       url: `${base}${prefix}/properties/${slug}`,
+      locale: ({ en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' } as Record<string, string>)[locale] ?? 'en_US',
       images: property.images?.[0] ? [{ url: property.images[0] }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      images: property.images?.[0] ? [property.images[0]] : [`${base}/og-image.jpg`],
     },
   };
 }

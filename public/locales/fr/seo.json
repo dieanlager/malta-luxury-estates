@@ -1,45 +1,45 @@
 {
     "home": {
-        "title": "Malta Luxury Real Estate – Immobilier de Prestige à Vendre",
-        "description": "Découvrez les propriétés les plus exclusives à Malte et Gozo. Annonces immobilières de luxe pour acheteurs et investisseurs internationaux."
+        "title": "Immobilier de Luxe \u00e0 Malte | Propri\u00e9t\u00e9s Premium \u00e0 Malte & Gozo",
+        "description": "D\u00e9couvrez des villas de luxe, penthouses et propri\u00e9t\u00e9s exclusives \u00e0 vendre \u00e0 Malte et Gozo. Services immobiliers experts pour acheteurs et investisseurs exigeants."
     },
     "properties": {
-        "title": "Immobilier de Luxe à Vendre à Malte | Voir Toutes les Annonces",
-        "description": "Parcourez notre collection d'appartements, villas et palais haut de gamme à travers l'archipel maltais."
+        "title": "Immobilier de Luxe \u00e0 Vendre \u00e0 Malte | Voir Toutes les Annonces",
+        "description": "Parcourez notre collection d'appartements, villas et palais haut de gamme \u00e0 travers l'archipel maltais."
     },
     "insights": {
         "title": "Conseils Immobiliers Malte & Hub d'Investissement",
-        "description": "Conseils d'experts, rapports de marché et guides pour acheter et investir dans l'immobilier de luxe à Malte.",
-        "title_buying": "Acheter un Bien à Malte en tant qu'Étranger",
+        "description": "Conseils d'experts, rapports de march\u00e9 et guides pour acheter et investir dans l'immobilier de luxe \u00e0 Malte.",
+        "title_buying": "Acheter un Bien \u00e0 Malte en tant qu'\u00c9tranger",
         "title_sda": "Guide des Special Designated Areas (SDA)",
-        "title_yields": "Rendements Locatifs à Malte 2026",
-        "title_taxes": "Taxes Immobilières à Malte 2026"
+        "title_yields": "Rendements Locatifs \u00e0 Malte 2026",
+        "title_taxes": "Taxes Immobili\u00e8res \u00e0 Malte 2026"
     },
     "about": {
-        "title": "À Propos de Malta Luxury Real Estate – Notre Mission",
-        "description": "Le premier portail indépendant reliant les investisseurs internationaux au marché immobilier de prestige de Malte."
+        "title": "\u00c0 Propos de Malta Luxury Real Estate \u2013 Notre Mission",
+        "description": "Le premier portail ind\u00e9pendant reliant les investisseurs internationaux au march\u00e9 immobilier de prestige de Malte."
     },
     "market": {
-        "title": "Le Pouls du Marché Immobilier Malte | Données en Direct 2026",
-        "description": "Suivez les tendances de prix, les annonces en direct et l'activité du marché à Malte et Gozo. Analyses basées sur les données pour investisseurs."
+        "title": "Le Pouls du March\u00e9 Immobilier Malte | Donn\u00e9es en Direct 2026",
+        "description": "Suivez les tendances de prix, les annonces en direct et l'activit\u00e9 du march\u00e9 \u00e0 Malte et Gozo. Analyses bas\u00e9es sur les donn\u00e9es pour investisseurs."
     },
     "tools": {
         "oracle": {
             "title": "Oracle des Prix par IA | Estimation Gratuite Malte & Gozo",
-            "description": "Obtenez une estimation immobilière instantanée par IA. Notre Oracle analyse les tendances du marché et les données locales pour des estimations précises."
+            "description": "Obtenez une estimation immobili\u00e8re instantan\u00e9e par IA. Notre Oracle analyse les tendances du march\u00e9 et les donn\u00e9es locales pour des estimations pr\u00e9cises."
         },
         "valuation": {
-            "title": "Estimation Immobilière",
-            "description": "Services d'expertise en évaluation immobilière pour le luxe à Malte et Gozo."
+            "title": "Estimation Immobili\u00e8re",
+            "description": "Services d'expertise en \u00e9valuation immobili\u00e8re pour le luxe \u00e0 Malte et Gozo."
         }
     },
     "privacy": {
-        "title": "Politique de Confidentialité",
-        "subtitle": "Protection des Données & Conformité RGPD"
+        "title": "Politique de Confidentialit\u00e9",
+        "subtitle": "Protection des Donn\u00e9es & Conformit\u00e9 RGPD"
     },
     "terms": {
         "title": "Conditions d'Utilisation",
-        "subtitle": "Accord Utilisateur & Règles de la Plateforme"
+        "subtitle": "Accord Utilisateur & R\u00e8gles de la Plateforme"
     },
     "cookies": {
         "title": "Politique relative aux Cookies",

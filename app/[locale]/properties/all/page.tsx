@@ -22,13 +22,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
   return {
-    title: t('seo.properties.title', { defaultValue: 'Luxury Properties for Sale in Malta | Malta Luxury Real Estate' }),
-    description: t('seo.properties.description', { defaultValue: 'Browse our curated selection of luxury properties in Malta and Gozo. Villas, penthouses, townhouses, and investment properties.' }),
+    title: t('seo.properties.title', { defaultValue: 'Luxury Properties for Sale in Malta' }),
+    description: t('seo.properties.description', { defaultValue: 'Browse our curated selection of luxury properties.' }),
     alternates: {
       canonical: `${base}${prefix}/properties/all`,
-      languages: Object.fromEntries(
-        routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}/properties/all`])
-      ),
+      languages: {
+        'x-default': `${base}/properties/all`,
+        en: `${base}/properties/all`,
+        it: `${base}/it/immobiliare/tutti`,
+        de: `${base}/de/immobilien/alle`,
+        fr: `${base}/fr/proprietes/toutes`,
+        pl: `${base}/pl/nieruchomosci/wszystkie`,
+      },
+    },
+    openGraph: {
+      title: t('seo.properties.title', { defaultValue: 'Luxury Properties for Sale in Malta' }),
+      description: t('seo.properties.description', { defaultValue: 'Browse our curated selection of luxury properties.' }),
+      type: 'website',
+      url: `${base}${prefix}/properties/all`,
+      locale: ({ en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' } as Record<string, string>)[locale] ?? 'en_US',
+      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      images: [`${base}/og-image.jpg`],
     },
   };
 }

@@ -1,48 +1,48 @@
 {
     "home": {
-        "title": "Malta Luxury Real Estate – Nieruchomości Premium na Sprzedaż",
-        "description": "Odkryj najbardziej ekskluzywne nieruchomości na Malcie i Gozo. Wyselekcjonowane oferty luksusowych domów dla międzynarodowych nabywców."
+        "title": "Luksusowe Nieruchomo\u015bci na Malcie | Premium Oferty Malta & Gozo",
+        "description": "Odkryj luksusowe wille, penthousey i ekskluzywne nieruchomo\u015bci na sprzeda\u017c na Malcie i Gozo. Eksperci rynku nieruchomo\u015bci dla wymagaj\u0105cych nabywc\u00f3w i inwestor\u00f3w."
     },
     "properties": {
-        "title": "Luksusowe Nieruchomości na Sprzedaż na Malcie | Wszystkie Oferty",
-        "description": "Przeglądaj naszą kolekcję apartamentów, willi i pałaców premium na wyspach maltańskich."
+        "title": "Luksusowe Nieruchomo\u015bci na Sprzeda\u017c na Malcie | Wszystkie Oferty",
+        "description": "Przegl\u0105daj nasz\u0105 kolekcj\u0119 apartament\u00f3w, willi i pa\u0142ac\u00f3w premium na wyspach malta\u0144skich."
     },
     "insights": {
-        "title": "Wiedza i Inwestycje – Rynek Nieruchomości na Malcie",
-        "description": "Eksperckie porady, raporty rynkowe i przewodniki po inwestowaniu w luksusowe nieruchomości na Malcie.",
-        "title_buying": "Zakup Nieruchomości na Malcie przez Obcokrajowca",
+        "title": "Wiedza i Inwestycje \u2013 Rynek Nieruchomo\u015bci na Malcie",
+        "description": "Eksperckie porady, raporty rynkowe i przewodniki po inwestowaniu w luksusowe nieruchomo\u015bci na Malcie.",
+        "title_buying": "Zakup Nieruchomo\u015bci na Malcie przez Obcokrajowca",
         "title_sda": "Przewodnik po Special Designated Areas (SDA)",
-        "title_yields": "Rentowność Najmu na Malcie 2026",
-        "title_taxes": "Podatki od Nieruchomości na Malcie 2026"
+        "title_yields": "Rentowno\u015b\u0107 Najmu na Malcie 2026",
+        "title_taxes": "Podatki od Nieruchomo\u015bci na Malcie 2026"
     },
     "about": {
-        "title": "O Malta Luxury Real Estate – Nasza Misja",
-        "description": "Wiodący niezależny portal łączący międzynarodowych inwestorów premium z maltańskim rynkiem nieruchomości."
+        "title": "O Malta Luxury Real Estate \u2013 Nasza Misja",
+        "description": "Wiod\u0105cy niezale\u017cny portal \u0142\u0105cz\u0105cy mi\u0119dzynarodowych inwestor\u00f3w premium z malta\u0144skim rynkiem nieruchomo\u015bci."
     },
     "market": {
-        "title": "Rynek Nieruchomości Malta | Dane w Czasie Rzeczywistym 2026",
-        "description": "Monitoruj trendy cenowe, aktualne ogłoszenia i aktywność rynku na Malcie i Gozo. Analizy oparte na danych dla inwestorów luksusowych."
+        "title": "Rynek Nieruchomo\u015bci Malta | Dane w Czasie Rzeczywistym 2026",
+        "description": "Monitoruj trendy cenowe, aktualne og\u0142oszenia i aktywno\u015b\u0107 rynku na Malcie i Gozo. Analizy oparte na danych dla inwestor\u00f3w luksusowych."
     },
     "tools": {
         "oracle": {
-            "title": "AI Oracle Cenowy | Bezpłatna Wycena Nieruchomości Malta",
-            "description": "Otrzymaj natychmiastową wycenę nieruchomości opartą na AI. Nasz Oracle analizuje dane rynkowe, zapewniając wysoką precyzję szacunków."
+            "title": "AI Oracle Cenowy | Bezp\u0142atna Wycena Nieruchomo\u015bci Malta",
+            "description": "Otrzymaj natychmiastow\u0105 wycen\u0119 nieruchomo\u015bci opart\u0105 na AI. Nasz Oracle analizuje dane rynkowe, zapewniaj\u0105c wysok\u0105 precyzj\u0119 szacunk\u00f3w."
         },
         "valuation": {
-            "title": "Wycena Nieruchomości",
-            "description": "Profesjonalne usługi wyceny nieruchomości luksusowych na Malcie i Gozo."
+            "title": "Wycena Nieruchomo\u015bci",
+            "description": "Profesjonalne us\u0142ugi wyceny nieruchomo\u015bci luksusowych na Malcie i Gozo."
         }
     },
     "privacy": {
-        "title": "Polityka Prywatności",
-        "subtitle": "Ochrona Danych i Zgodność z RODO"
+        "title": "Polityka Prywatno\u015bci",
+        "subtitle": "Ochrona Danych i Zgodno\u015b\u0107 z RODO"
     },
     "terms": {
         "title": "Regulamin Serwisu",
-        "subtitle": "Umowa Użytkownika i Zasady Platformy"
+        "subtitle": "Umowa U\u017cytkownika i Zasady Platformy"
     },
     "cookies": {
         "title": "Polityka Cookies",
-        "subtitle": "Zasady Wykorzystywania Technologii Śledzących"
+        "subtitle": "Zasady Wykorzystywania Technologii \u015aledz\u0105cych"
     }
 }

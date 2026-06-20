@@ -1,5 +1,7 @@
 ﻿User-agent: *
 Allow: /
 
-# Sitemaps
+Disallow: /admin
+Disallow: /agency/
+
 Sitemap: https://www.maltaluxuryrealestate.com/sitemap.xml

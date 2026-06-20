@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
 import { getAllProperties } from '@/src/lib/data';
@@ -8,6 +8,18 @@ export const revalidate = 60;
 interface Props { params: Promise<{ locale: string }> }
 export async function generateStaticParams() { return routing.locales.map(locale => ({ locale })); }
 
+const MARKET_PATHS: Record<string, string> = {
+  en: '/market/live',
+  de: '/de/markt/live-ticker',
+  fr: '/fr/marche/en-direct',
+  it: '/it/mercato/in-diretta',
+  pl: '/pl/rynek/na-zywo',
+};
+
+const ogLocaleMap: Record<string, string> = {
+  en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL',
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'common' });
@@ -16,7 +28,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('seo.market.title', { defaultValue: 'Malta Property Market Pulse | Live Data 2026' }),
     description: t('seo.market.description', { defaultValue: 'Live Malta real estate market data: prices, inventory, trends, and forecasts updated daily.' }),
-    alternates: { canonical: `${base}${prefix}/market/live` },
+    alternates: {
+      canonical: `${base}${prefix}/market/live`,
+      languages: Object.fromEntries(
+        routing.locales.map(l => [l, `${base}${MARKET_PATHS[l]}`])
+      ),
+    },
+    openGraph: {
+      locale: ogLocaleMap[locale] ?? 'en_US',
+      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630 }],
+    },
+    twitter: { card: 'summary_large_image', images: [`${base}/og-image.jpg`] },
   };
 }
 
