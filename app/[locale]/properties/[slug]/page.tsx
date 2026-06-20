@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { routing } from '@/src/i18n/routing';
@@ -63,7 +63,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}/properties/${slug}`])
         ),
       },
-      openGraph: { title, description, type: 'website', url: `${base}${prefix}/properties/${slug}` },
+      openGraph: {
+        title,
+        description,
+        type: 'website',
+        url: `${base}${prefix}/properties/${slug}`,
+        locale: ({ en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' } as Record<string, string>)[locale] ?? 'en_US',
+        images: [{ url: `${base}/og-image.png`, width: 1200, height: 630, alt: `${location.nameEn} Property Malta` }],
+      },
+      twitter: {
+        card: 'summary_large_image' as const,
+        images: [`${base}/og-image.png`],
+      },
     };
   }
 
@@ -96,7 +107,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image' as const,
-      images: property.images?.[0] ? [property.images[0]] : [`${base}/og-image.jpg`],
+      images: property.images?.[0] ? [property.images[0]] : [`${base}/og-image.png`],
     },
   };
 }

@@ -36,9 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       locale: ogLocaleMap[locale] ?? 'en_US',
-      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630 }],
+      images: [{ url: `${base}/og-image.png`, width: 1200, height: 630 }],
     },
-    twitter: { card: 'summary_large_image', images: [`${base}/og-image.jpg`] },
+    twitter: { card: 'summary_large_image', images: [`${base}/og-image.png`] },
   };
 }
 

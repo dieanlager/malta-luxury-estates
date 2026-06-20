@@ -213,7 +213,7 @@ export function localBusinessSchema(location: {
         description: `Premium property listings in ${location.nameEn}, ${location.island === 'gozo' ? 'Gozo' : 'Malta'
             }. ${location.shortDesc}`,
         url: `https://www.maltaluxuryrealestate.com/properties/${location.slug}`,
-        image: 'https://www.maltaluxuryrealestate.com/og-image.jpg',
+        image: 'https://www.maltaluxuryrealestate.com/og-image.png',
         address: {
             '@type': 'PostalAddress',
             addressLocality: location.nameEn,

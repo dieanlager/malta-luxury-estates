@@ -48,13 +48,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
       url: `${base}${prefix}`,
       locale: ogLocaleMap[locale] ?? 'en_US',
-      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630, alt: 'Malta Luxury Real Estate' }],
+      images: [{ url: `${base}/og-image.png`, width: 1200, height: 630, alt: 'Malta Luxury Real Estate' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: t('home.title'),
       description: t('home.description'),
-      images: [`${base}/og-image.jpg`],
+      images: [`${base}/og-image.png`],
     },
   };
 }
