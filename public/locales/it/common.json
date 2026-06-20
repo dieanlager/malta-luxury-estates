@@ -898,7 +898,7 @@
   },
   "seo": {
     "about": {
-      "title": "Su Malta Luxury Real Estate – La Nostra Missione",
+      "title": "Chi Siamo – La Nostra Missione",
       "description": "Il principale portale indipendente che collega investitori internazionali di alto profilo con il mercato immobiliare premium di Malta."
     },
     "cookies": {
@@ -944,8 +944,20 @@
         "description": "Servizi esperti di valutazione immobiliare per immobili di lusso a Malta e Gozo."
       },
       "quiz": {
-        "title": "Quiz Trova Immobile | Malta Luxury Real Estate",
+        "title": "Quiz Trova Immobile",
         "description": "Rispondi a 5 domande per scoprire il tipo di proprieta e la posizione perfetta."
+      },
+      "mortgage": {
+        "title": "Calcolatore Mutuo Malta 2026",
+        "description": "Calcola le rate del mutuo, il rapporto LTV e pre-qualificati per un prestito a Malta."
+      },
+      "buyVsRent": {
+        "title": "Acquisto vs Affitto Malta 2026",
+        "description": "Confronta il costo reale dell'acquisto e dell'affitto a Malta."
+      },
+      "salesTax": {
+        "title": "Calcolatore Tasse Acquisto Malta 2026",
+        "description": "Calcola imposte di registro, spese notarili e tutti i costi di acquisto a Malta 2026."
       }
     },
     "city": {
@@ -953,7 +965,7 @@
       "description": "Scopri immobili di lusso in vendita a {location}, Malta. Ville, attici e appartamenti esclusivi."
     },
     "contact": {
-      "title": "Contattaci | Malta Luxury Real Estate",
+      "title": "Contattaci",
       "description": "Contatta Malta Luxury Real Estate per consulenza immobiliare e annunci esclusivi."
     }
   },

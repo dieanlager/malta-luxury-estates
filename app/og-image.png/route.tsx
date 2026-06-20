@@ -4,25 +4,10 @@ import type { NextRequest } from 'next/server';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-async function loadFont(): Promise<ArrayBuffer | undefined> {
-  try {
-    // Fetch Inter from Google Fonts CDN (outbound HTTP works on VPS)
-    const res = await fetch(
-      'https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2'
-    );
-    if (!res.ok) return undefined;
-    return res.arrayBuffer();
-  } catch {
-    return undefined;
-  }
-}
-
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const title = searchParams.get('title') ?? 'Malta Luxury Real Estate';
   const subtitle = searchParams.get('subtitle') ?? 'Premium Properties in Malta & Gozo';
-
-  const fontData = await loadFont();
 
   return new ImageResponse(
     (
@@ -38,10 +23,7 @@ export async function GET(req: NextRequest) {
           padding: '80px',
         }}
       >
-        {/* Gold accent line */}
         <div style={{ width: '80px', height: '3px', background: '#C5A059', marginBottom: '24px', display: 'flex' }} />
-
-        {/* Title */}
         <div
           style={{
             fontSize: title.length > 60 ? '42px' : '52px',
@@ -55,8 +37,6 @@ export async function GET(req: NextRequest) {
         >
           {title}
         </div>
-
-        {/* Subtitle */}
         <div
           style={{
             fontSize: '24px',
@@ -68,8 +48,6 @@ export async function GET(req: NextRequest) {
         >
           {subtitle}
         </div>
-
-        {/* Logo */}
         <div
           style={{
             position: 'absolute',
@@ -98,8 +76,6 @@ export async function GET(req: NextRequest) {
             <span style={{ color: '#C5A059', marginLeft: '8px', display: 'flex' }}>Luxury</span>
           </span>
         </div>
-
-        {/* Watermark */}
         <div
           style={{
             position: 'absolute',
@@ -116,21 +92,6 @@ export async function GET(req: NextRequest) {
         </div>
       </div>
     ),
-    {
-      width: 1200,
-      height: 630,
-      ...(fontData
-        ? {
-            fonts: [
-              {
-                name: 'Inter',
-                data: fontData,
-                style: 'normal',
-                weight: 400,
-              },
-            ],
-          }
-        : {}),
-    }
+    { width: 1200, height: 630 }
   );
 }
