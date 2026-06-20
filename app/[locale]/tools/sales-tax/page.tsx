@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'common' });
   const prefix = locale === 'en' ? '' : `/${locale}`;
   return {
-    title: t('seo.tools.salesTax.title', { defaultValue: 'Malta Property Tax & Buying Costs Calculator 2026 | Malta Luxury Real Estate' }),
+    title: t('seo.tools.salesTax.title', { defaultValue: 'Malta Property Tax & Buying Costs Calculator 2026' }),
     description: t('seo.tools.salesTax.description', { defaultValue: 'Calculate stamp duty, transfer tax, notary fees, and total buying costs for Malta property.' }),
     alternates: { canonical: `${BASE}${prefix}/tools/sales-tax` },
     openGraph: {

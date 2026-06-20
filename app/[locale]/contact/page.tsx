@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL',
   };
   return {
-    title: t('seo.contact.title', { defaultValue: 'Contact Us | Malta Luxury Real Estate' }),
+    title: t('seo.contact.title', { defaultValue: 'Contact Us' }),
     description: t('seo.contact.description', { defaultValue: 'Get in touch with our Malta real estate experts for property inquiries, valuations, and investment advice.' }),
     alternates: {
       canonical: `${BASE}${prefix}/contact`,

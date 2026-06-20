@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'common' });
   const prefix = locale === 'en' ? '' : `/${locale}`;
   return {
-    title: t('seo.tools.buyVsRent.title', { defaultValue: 'Buy vs Rent Calculator Malta 2026 | Malta Luxury Real Estate' }),
+    title: t('seo.tools.buyVsRent.title', { defaultValue: 'Buy vs Rent Calculator Malta 2026' }),
     description: t('seo.tools.buyVsRent.description', { defaultValue: 'Compare buying vs renting property in Malta — net worth projections over 1 to 30 years.' }),
     alternates: { canonical: `${BASE}${prefix}/tools/buy-vs-rent` },
     openGraph: {

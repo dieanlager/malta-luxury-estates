@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { CityListings } from '@/src/components/CityListings';
 import { MarketSnapshot } from '@/src/components/MarketSnapshot';
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { city } = await params;
   const cityName = city.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   return {
-    title: `Properties in ${cityName} | Malta Luxury Real Estate`,
+    title: `Properties in ${cityName}`,
     description: `Browse luxury properties for sale in ${cityName}, Malta.`,
   };
 }

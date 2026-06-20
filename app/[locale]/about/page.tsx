@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL',
   };
   return {
-    title: t('seo.about.title', { defaultValue: 'About Us | Malta Luxury Real Estate' }),
+    title: t('seo.about.title', { defaultValue: 'About Us' }),
     description: t('seo.about.description', { defaultValue: "Malta's leading luxury property portal, connecting discerning buyers with premium real estate." }),
     alternates: {
       canonical: `${BASE}${prefix}/about`,

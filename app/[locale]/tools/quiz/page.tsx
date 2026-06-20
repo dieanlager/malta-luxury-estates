@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'common' });
   const prefix = locale === 'en' ? '' : `/${locale}`;
   return {
-    title: t('seo.tools.quiz.title', { defaultValue: 'Property Finder Quiz | Malta Luxury Real Estate' }),
+    title: t('seo.tools.quiz.title', { defaultValue: 'Property Finder Quiz' }),
     description: t('seo.tools.quiz.description', { defaultValue: 'Answer 5 questions to discover the perfect Malta property type and location for your lifestyle and budget.' }),
     alternates: { canonical: `${BASE}${prefix}/tools/quiz` },
     openGraph: {

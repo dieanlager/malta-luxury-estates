@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'common' });
   const prefix = locale === 'en' ? '' : `/${locale}`;
   return {
-    title: t('seo.tools.mortgage.title', { defaultValue: 'Malta Mortgage Calculator 2026 | Malta Luxury Real Estate' }),
+    title: t('seo.tools.mortgage.title', { defaultValue: 'Malta Mortgage Calculator 2026' }),
     description: t('seo.tools.mortgage.description', { defaultValue: 'Calculate your mortgage payments, LTV ratio, and pre-qualify for a Malta property loan. Free tool.' }),
     alternates: { canonical: `${BASE}${prefix}/tools/mortgage` },
     openGraph: {

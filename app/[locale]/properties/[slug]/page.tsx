@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const property = await getPropertyBySlug(slug);
   if (!property) return {};
-  const title = `${property.title} | Malta Luxury Real Estate`;
+  const title = property.title;
   const cleanDesc = (raw: string | null | undefined): string =>
     (raw ?? '')
       .replace(/\[AFFILIATE_URL:[^\]]+\]\n?/g, '')

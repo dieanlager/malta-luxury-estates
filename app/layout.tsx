@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 import './globals.css';
 
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'Malta Luxury Real Estate',
-    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Malta Luxury Real Estate' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Malta Luxury Real Estate' }],
   },
   twitter: { card: 'summary_large_image' },
   verification: { google: '6dHOYfMYPGAfqjVSSTjmknLrEppz2TSz2PpMacUQ7CI' },
