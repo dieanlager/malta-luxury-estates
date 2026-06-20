@@ -10,6 +10,7 @@ import { MarketSnapshot } from '@/src/components/MarketSnapshot';
 import { InteractiveTools } from '@/src/components/InteractiveTools';
 import { MapSection } from '@/src/components/MapSection';
 import { ChevronRight, ArrowRight, ShieldCheck } from 'lucide-react';
+import Image from 'next/image';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -160,11 +161,12 @@ export default async function HomePage({ params }: Props) {
                 href={`/properties/${loc.slug}` as any}
                 className="group relative h-80 rounded-2xl overflow-hidden cursor-pointer border border-white/5 block"
               >
-                <img
+                <Image
                   src={loc.image}
                   alt={loc.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6">
@@ -218,12 +220,13 @@ export default async function HomePage({ params }: Props) {
               </Link>
             </div>
             <div className="flex-1 relative">
-              <div className="aspect-square rounded-3xl overflow-hidden border border-white/10">
-                <img
+              <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 relative">
+                <Image
                   src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000"
-                  className="w-full h-full object-cover opacity-60"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover opacity-60"
                   alt="Modern Office"
-                  loading="lazy"
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 glass-card p-8 rounded-2xl border border-gold/20 shadow-2xl max-w-xs">
@@ -257,11 +260,12 @@ export default async function HomePage({ params }: Props) {
           {featuredArticles.map((article) => (
             <Link key={article.slug} href={`/insights/${article.slug}` as any} className="group block">
               <div className="aspect-video overflow-hidden rounded-2xl mb-6 relative">
-                <img
+                <Image
                   src={article.image}
                   alt={article.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-gold text-luxury-black text-[10px] font-bold uppercase tracking-widest rounded-full">

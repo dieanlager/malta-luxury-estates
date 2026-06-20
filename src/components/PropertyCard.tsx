@@ -1,5 +1,5 @@
-'use client';
-import { useState } from 'react';
+﻿'use client';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { Bed, Bath, Maximize, ExternalLink, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -22,29 +22,22 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onContact,
 }) => {
   const t = useTranslations('common');
-  const [isHovered, setIsHovered] = useState(false);
 
   const propertyUrl = `/properties/${property.slug ?? property.id}` as any;
 
   return (
     <motion.div
       className="group bg-white/[0.03] border border-white/10 rounded-3xl overflow-hidden hover:border-gold/30 transition-all duration-500 shadow-xl flex flex-col h-full"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <Link href={propertyUrl} className="block h-full">
-          <motion.img
+          <Image
             src={property.images?.[0] ?? 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800'}
             alt={property.title}
-            loading="lazy"
-            decoding="async"
-            width={800}
-            height={600}
-            animate={{ scale: isHovered ? 1.08 : 1 }}
-            transition={{ duration: 0.6 }}
-            className="w-full h-full object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.08]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent opacity-60" />
         </Link>
@@ -104,7 +97,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               {[
                 { icon: Bed, label: t('common.beds_short', { defaultValue: 'Beds' }), value: property.beds },
                 { icon: Bath, label: t('common.baths_short', { defaultValue: 'Baths' }), value: property.baths },
-                { icon: Maximize, label: 'm²', value: property.sqm },
+                { icon: Maximize, label: 'mÂ˛', value: property.sqm },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
@@ -131,3 +124,4 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
     </motion.div>
   );
 };
+

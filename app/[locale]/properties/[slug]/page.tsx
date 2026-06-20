@@ -233,8 +233,25 @@ export default async function PropertyOrCityPage({ params }: Props) {
   ]);
   const propertySchema = generatePropertySchema(property, base);
 
+  const heroImg = property.images?.[0];
+  const heroSrcSet = heroImg
+    ? [360, 640, 750, 828, 1080, 1200, 1920]
+        .map(w => `/_next/image?url=${encodeURIComponent(heroImg)}&w=${w}&q=75 ${w}w`)
+        .join(', ')
+    : undefined;
+
   return (
     <>
+      {heroImg && (
+        <link
+          rel="preload"
+          as="image"
+          href={`/_next/image?url=${encodeURIComponent(heroImg)}&w=1080&q=75`}
+          imageSrcSet={heroSrcSet}
+          imageSizes="(max-width: 768px) 100vw, 65vw"
+          fetchPriority="high"
+        />
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(propertySchema) }} />
       <main className="min-h-screen bg-luxury-black pt-24 pb-24 lg:pb-24">
