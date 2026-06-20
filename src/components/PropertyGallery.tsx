@@ -77,8 +77,8 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
               src={images[0]}
               alt={t('gallery.photo_alt', { title, index: 1 })}
               fill
-              unoptimized
               priority
+              sizes="(max-width: 768px) 100vw, 65vw"
               className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -102,7 +102,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
                       src={src}
                       alt={t('gallery.photo_alt', { title, index: i + 2 })}
                       fill
-                      unoptimized
+                      sizes="35vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                     />
                     {isLast && hiddenCount > 0 && (
@@ -146,8 +146,8 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
                   src={src}
                   alt={t('gallery.photo_alt', { title, index: i + 1 })}
                   fill
-                  unoptimized
                   priority={i === 0}
+                  sizes="100vw"
                   className="object-cover"
                 />
               </div>

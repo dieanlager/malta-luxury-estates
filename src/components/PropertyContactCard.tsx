@@ -74,7 +74,7 @@ export function PropertyContactCard({ price, slug, statusLabel, agencyName, agen
         <div className="flex items-center gap-3 pt-4 border-t border-white/5">
           {agencyLogo ? (
             <div className="relative w-10 h-10 rounded-full overflow-hidden bg-white/10 shrink-0">
-              <Image src={agencyLogo} alt={agencyName} fill unoptimized className="object-cover" />
+              <Image src={agencyLogo} alt={agencyName} fill sizes="40px" className="object-cover" />
             </div>
           ) : (
             <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center shrink-0">

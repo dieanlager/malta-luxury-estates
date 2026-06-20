@@ -37,7 +37,7 @@ export function StickyPropertyBar({ title, price, image, slug, statusLabel, sent
       >
         {image && (
           <div className="relative w-10 h-10 rounded-lg overflow-hidden shrink-0">
-            <Image src={image} alt={title} fill unoptimized className="object-cover" />
+            <Image src={image} alt={title} fill sizes="40px" className="object-cover" />
           </div>
         )}
         <div className="flex-1 min-w-0">

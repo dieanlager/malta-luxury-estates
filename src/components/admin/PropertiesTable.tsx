@@ -300,7 +300,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                     <td className="py-3 pl-2 pr-0">
                       <div className="w-12 h-10 rounded-lg overflow-hidden bg-white/5 relative flex-shrink-0">
                         {thumb
-                          ? <Image src={thumb} alt="" fill sizes="48px" className="object-cover" unoptimized />
+                          ? <Image src={thumb} alt="" fill sizes="48px" className="object-cover" />
                           : <div className="w-full h-full bg-white/5" />}
                       </div>
                     </td>
