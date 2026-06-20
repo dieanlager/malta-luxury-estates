@@ -1,12 +1,28 @@
 ﻿import { ImageResponse } from 'next/og';
 import type { NextRequest } from 'next/server';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
+async function loadFont(): Promise<ArrayBuffer | undefined> {
+  try {
+    // Fetch Inter from Google Fonts CDN (outbound HTTP works on VPS)
+    const res = await fetch(
+      'https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2'
+    );
+    if (!res.ok) return undefined;
+    return res.arrayBuffer();
+  } catch {
+    return undefined;
+  }
+}
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const title = searchParams.get('title') ?? 'Malta Luxury Real Estate';
   const subtitle = searchParams.get('subtitle') ?? 'Premium Properties in Malta & Gozo';
+
+  const fontData = await loadFont();
 
   return new ImageResponse(
     (
@@ -20,7 +36,6 @@ export async function GET(req: NextRequest) {
           justifyContent: 'flex-end',
           background: 'linear-gradient(135deg, #0A0A0A 0%, #1a1208 50%, #0A0A0A 100%)',
           padding: '80px',
-          fontFamily: 'serif',
         }}
       >
         {/* Gold accent line */}
@@ -54,7 +69,7 @@ export async function GET(req: NextRequest) {
           {subtitle}
         </div>
 
-        {/* Logo area */}
+        {/* Logo */}
         <div
           style={{
             position: 'absolute',
@@ -79,11 +94,12 @@ export async function GET(req: NextRequest) {
             <span style={{ color: '#0A0A0A', fontWeight: 'bold', fontSize: '24px', display: 'flex' }}>M</span>
           </div>
           <span style={{ color: '#ffffff', fontSize: '18px', letterSpacing: '0.15em', textTransform: 'uppercase', display: 'flex' }}>
-            Malta <span style={{ color: '#C5A059', marginLeft: '8px', display: 'flex' }}>Luxury</span>
+            Malta{' '}
+            <span style={{ color: '#C5A059', marginLeft: '8px', display: 'flex' }}>Luxury</span>
           </span>
         </div>
 
-        {/* Bottom watermark */}
+        {/* Watermark */}
         <div
           style={{
             position: 'absolute',
@@ -100,6 +116,21 @@ export async function GET(req: NextRequest) {
         </div>
       </div>
     ),
-    { width: 1200, height: 630 }
+    {
+      width: 1200,
+      height: 630,
+      ...(fontData
+        ? {
+            fonts: [
+              {
+                name: 'Inter',
+                data: fontData,
+                style: 'normal',
+                weight: 400,
+              },
+            ],
+          }
+        : {}),
+    }
   );
 }
