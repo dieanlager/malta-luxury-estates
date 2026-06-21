@@ -41,7 +41,7 @@ const ga4Id = 'G-WKQN5F0HGK';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${cormorant.variable} ${inter.variable}`}>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://region1.google-analytics.com" />

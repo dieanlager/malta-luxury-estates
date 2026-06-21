@@ -74,7 +74,7 @@ export const MarketSnapshot: React.FC<Props> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {showSale && (
             <div className="space-y-4">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold/60">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold/90">
                 <Home size={14} />
                 <span>{'For Sale'}</span>
               </div>
@@ -101,7 +101,7 @@ export const MarketSnapshot: React.FC<Props> = ({
 
           {showRent && (
             <div className="space-y-4 border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0 md:pl-12">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold/60">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold/90">
                 <Calendar size={14} />
                 <span>{'For Rent'}</span>
               </div>

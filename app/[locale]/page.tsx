@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
 import { getFeaturedProperties } from '@/src/lib/data';
@@ -183,11 +183,11 @@ export default async function HomePage({ params }: Props) {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <span className="text-gold uppercase tracking-widest text-xs font-bold mb-6 block">{t('sections.partners.badge')}</span>
           <h2 className="text-3xl md:text-4xl font-serif mb-16 text-white">{t('sections.partners.title')}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center opacity-50 hover:opacity-100 transition-all duration-700">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center">
             {MALTA_AGENCIES.slice(0, 10).map((agency) => (
-              <div key={agency.name} className="flex flex-col items-center gap-2 group cursor-pointer">
+              <div key={agency.name} className="flex flex-col items-center gap-2 group cursor-pointer opacity-60 hover:opacity-100 transition-opacity duration-500">
                 <span className="text-lg md:text-xl font-serif italic group-hover:text-gold transition-colors text-white">{agency.name}</span>
-                <span className="text-[9px] uppercase tracking-widest font-bold text-white/60">{agency.website}</span>
+                <span className="text-[10px] uppercase tracking-widest font-bold text-white/80">{agency.website}</span>
               </div>
             ))}
           </div>
