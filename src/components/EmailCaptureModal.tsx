@@ -83,7 +83,7 @@ export const EmailCaptureModal: React.FC<EmailCaptureModalProps> = ({
                                         <CheckCircle className="text-green-400" size={32} />
                                     </div>
                                     <h4 className="text-xl font-serif mb-2">You're All Set!</h4>
-                                    <p className="text-white/40 text-sm">
+                                    <p className="text-white/60 text-sm">
                                         We'll notify you when similar properties become available.
                                     </p>
                                 </motion.div>
@@ -95,7 +95,7 @@ export const EmailCaptureModal: React.FC<EmailCaptureModalProps> = ({
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-serif">You've saved {favoritesCount} properties!</h3>
-                                            <p className="text-white/40 text-xs">Never miss a similar listing</p>
+                                            <p className="text-white/60 text-xs">Never miss a similar listing</p>
                                         </div>
                                     </div>
 
@@ -126,7 +126,7 @@ export const EmailCaptureModal: React.FC<EmailCaptureModalProps> = ({
 
                                     <button
                                         onClick={onClose}
-                                        className="w-full text-center text-white/30 text-xs mt-4 hover:text-white/50 transition-colors"
+                                        className="w-full text-center text-white/60 text-xs mt-4 hover:text-white/50 transition-colors"
                                     >
                                         No thanks, maybe later
                                     </button>

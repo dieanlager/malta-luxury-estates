@@ -142,7 +142,7 @@ export default async function HomePage({ params }: Props) {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-serif mb-4 uppercase tracking-widest text-white">{t('sections.market_snapshot.badge')}</h2>
-            <p className="text-white/40 text-sm">{t('sections.market_snapshot.subtitle')}</p>
+            <p className="text-white/60 text-sm">{t('sections.market_snapshot.subtitle')}</p>
           </div>
           <MarketSnapshot location={SLIEMA_LOCATION} stats={SLIEMA_STATS} />
         </div>
@@ -152,7 +152,7 @@ export default async function HomePage({ params }: Props) {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-serif mb-4 text-white">{t('sections.locations_grid.badge')}</h2>
-            <p className="text-white/40">{t('sections.locations_grid.subtitle')}</p>
+            <p className="text-white/60">{t('sections.locations_grid.subtitle')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {FEATURED_LOCATIONS.map((loc) => (
@@ -187,7 +187,7 @@ export default async function HomePage({ params }: Props) {
             {MALTA_AGENCIES.slice(0, 10).map((agency) => (
               <div key={agency.name} className="flex flex-col items-center gap-2 group cursor-pointer">
                 <span className="text-lg md:text-xl font-serif italic group-hover:text-gold transition-colors text-white">{agency.name}</span>
-                <span className="text-[9px] uppercase tracking-widest font-bold text-white/30">{agency.website}</span>
+                <span className="text-[9px] uppercase tracking-widest font-bold text-white/60">{agency.website}</span>
               </div>
             ))}
           </div>
@@ -236,7 +236,7 @@ export default async function HomePage({ params }: Props) {
                   </div>
                   <div>
                     <div className="text-2xl font-serif text-white">150k+</div>
-                    <div className="text-[9px] uppercase tracking-widest font-bold text-white/40">{t('sections.cta.reach_label')}</div>
+                    <div className="text-[9px] uppercase tracking-widest font-bold text-white/60">{t('sections.cta.reach_label')}</div>
                   </div>
                 </div>
                 <p className="text-xs text-white/50 italic">&ldquo;{t('sections.cta.testimonial')}&rdquo;</p>
@@ -251,7 +251,7 @@ export default async function HomePage({ params }: Props) {
       <section id="investment" className="py-32 max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-1 bg-white/5 border border-white/10 rounded-full mb-6">
-            <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">{t('sections.insights.badge')}</span>
+            <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest">{t('sections.insights.badge')}</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-serif mb-4 text-white">{t('sections.insights.title')}</h2>
           <p className="text-white/50 max-w-2xl mx-auto">{t('sections.insights.subtitle')}</p>
@@ -274,7 +274,7 @@ export default async function HomePage({ params }: Props) {
                 </div>
               </div>
               <h3 className="text-xl font-serif mb-3 group-hover:text-gold transition-colors leading-tight text-white">{article.title}</h3>
-              <p className="text-white/40 text-sm leading-relaxed mb-4">{article.excerpt}</p>
+              <p className="text-white/60 text-sm leading-relaxed mb-4">{article.excerpt}</p>
               <div className="flex items-center gap-2 text-gold text-xs uppercase tracking-widest font-bold">
                 {t('sections.insights.cta')} <ChevronRight size={14} />
               </div>

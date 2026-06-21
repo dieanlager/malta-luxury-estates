@@ -55,7 +55,7 @@ export const CityListings: React.FC<CityListingsProps> = ({
     return (
       <div className="text-center py-20 bg-white/5 rounded-[2rem] border border-dashed border-white/10">
         <h3 className="text-xl font-serif mb-2">No Active Listings</h3>
-        <p className="text-white/40 text-sm max-w-md mx-auto">
+        <p className="text-white/60 text-sm max-w-md mx-auto">
           We are currently curating new exclusive properties for this location. 
           Please check back soon or explore nearby areas.
         </p>

@@ -26,7 +26,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
             <script type="application/ld+json">
                 {JSON.stringify(generateBreadcrumbSchema(schemaItems))}
             </script>
-            <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-white/40 flex-wrap">
+            <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-white/60 flex-wrap">
                 <Link
                     href="/"
                     className="flex items-center gap-1 hover:text-gold transition-colors"

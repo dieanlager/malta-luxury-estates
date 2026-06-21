@@ -62,7 +62,7 @@ export default async function MarketLivePage({ params }: Props) {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
             </span>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-white/60">
               {t('market.live_data', { defaultValue: 'Live Market Data' })}
             </span>
           </div>
@@ -77,23 +77,23 @@ export default async function MarketLivePage({ params }: Props) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
           <div className="glass-card p-8 rounded-3xl border border-white/5">
             <div className="text-gold font-serif text-4xl mb-2">{properties.length}</div>
-            <div className="text-white/30 text-[10px] uppercase tracking-widest">{t('market.total_listings', { defaultValue: 'Active Listings' })}</div>
+            <div className="text-white/60 text-[10px] uppercase tracking-widest">{t('market.total_listings', { defaultValue: 'Active Listings' })}</div>
           </div>
           <div className="glass-card p-8 rounded-3xl border border-white/5">
             <div className="text-gold font-serif text-4xl mb-2">{avgPrice ? `€${(avgPrice / 1000).toFixed(0)}K` : '—'}</div>
-            <div className="text-white/30 text-[10px] uppercase tracking-widest">{t('market.avg_price', { defaultValue: 'Avg Sale Price' })}</div>
+            <div className="text-white/60 text-[10px] uppercase tracking-widest">{t('market.avg_price', { defaultValue: 'Avg Sale Price' })}</div>
           </div>
           <div className="glass-card p-8 rounded-3xl border border-white/5">
             <div className="text-gold font-serif text-4xl mb-2">{saleProps.length}</div>
-            <div className="text-white/30 text-[10px] uppercase tracking-widest">{t('market.for_sale', { defaultValue: 'For Sale' })}</div>
+            <div className="text-white/60 text-[10px] uppercase tracking-widest">{t('market.for_sale', { defaultValue: 'For Sale' })}</div>
           </div>
           <div className="glass-card p-8 rounded-3xl border border-white/5">
             <div className="text-gold font-serif text-4xl mb-2">{avgSqm ? `${avgSqm}m²` : '—'}</div>
-            <div className="text-white/30 text-[10px] uppercase tracking-widest">{t('market.avg_size', { defaultValue: 'Avg Size' })}</div>
+            <div className="text-white/60 text-[10px] uppercase tracking-widest">{t('market.avg_size', { defaultValue: 'Avg Size' })}</div>
           </div>
         </div>
 
-        <div className="text-center py-16 text-white/30">
+        <div className="text-center py-16 text-white/60">
           <p className="text-sm">{t('market.data_updated', { defaultValue: 'Data refreshed every 60 seconds' })}</p>
         </div>
       </div>

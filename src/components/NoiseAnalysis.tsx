@@ -67,7 +67,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                             </div>
                             <div>
                                 <h3 className="text-2xl font-serif text-white">Smart Sound Assessment</h3>
-                                <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Malta Environmental Noise Audit v2.0</p>
+                                <p className="text-[10px] uppercase tracking-[0.2em] text-white/60 font-bold">Malta Environmental Noise Audit v2.0</p>
                             </div>
                         </div>
 
@@ -94,28 +94,28 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
 
                         <div className="grid grid-cols-2 gap-4">
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Car size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Traffic</span>
                                 </div>
                                 <div className="text-sm text-white font-medium">{noise.traffic} Intensity</div>
                             </div>
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Music size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Nightlife</span>
                                 </div>
                                 <div className="text-sm text-white font-medium">{noise.nightlife} Surroundings</div>
                             </div>
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Hammer size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Construction</span>
                                 </div>
                                 <div className="text-sm text-white font-medium">{noise.constructionRisk} Risk</div>
                             </div>
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Plane size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Aviation</span>
                                 </div>

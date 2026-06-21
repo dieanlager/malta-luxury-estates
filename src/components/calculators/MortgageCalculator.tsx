@@ -1,4 +1,4 @@
-ï»¿'use client';
+'use client';
 import React, { useState, useEffect } from 'react';
 import { Home, Info } from 'lucide-react';
 import { useLocale } from 'next-intl';
@@ -82,10 +82,10 @@ export const MortgageCalculator = () => {
         : 'bg-gold';
 
     const banks = [
-        { name: 'BOV', rate: '3.50% â€“ 4.25%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
-        { name: 'HSBC Malta', rate: '3.80% â€“ 4.60%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
-        { name: 'APS Bank', rate: '4.10% â€“ 4.85%', note: 'Fixed 5yr available' },
-        { name: 'MFC', rate: '4.50% â€“ 5.25%', note: 'Non-res BTL' },
+        { name: 'BOV', rate: '3.50% – 4.25%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
+        { name: 'HSBC Malta', rate: '3.80% – 4.60%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
+        { name: 'APS Bank', rate: '4.10% – 4.85%', note: 'Fixed 5yr available' },
+        { name: 'MFC', rate: '4.50% – 5.25%', note: 'Non-res BTL' },
     ];
 
     return (
@@ -98,7 +98,7 @@ export const MortgageCalculator = () => {
                     </div>
                     <div>
                         <h3 className="text-2xl font-serif text-white">{'Malta Mortgage Calculator 2026'}</h3>
-                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{'2026 BANK RATES & ELIGIBILITY'}</p>
+                        <p className="text-white/60 text-xs uppercase tracking-widest font-bold">{'2026 BANK RATES & ELIGIBILITY'}</p>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ export const MortgageCalculator = () => {
                             { val: true, label: 'TAX RESIDENT', sub: 'Max LTV: 90%', color: 'border-emerald-500 bg-emerald-500/10 text-emerald-400' },
                         ].map(opt => (
                             <button key={String(opt.val)} onClick={() => setIsResident(opt.val)}
-                                className={`flex-1 p-4 rounded-2xl border text-left transition-all ${isResident === opt.val ? opt.color : 'border-white/10 bg-white/5 text-white/40'}`}>
+                                className={`flex-1 p-4 rounded-2xl border text-left transition-all ${isResident === opt.val ? opt.color : 'border-white/10 bg-white/5 text-white/60'}`}>
                                 <div className="text-[10px] font-bold uppercase tracking-widest mb-0.5">{opt.label}</div>
                                 <div className="text-xs">{opt.sub}</div>
                             </button>
@@ -124,24 +124,24 @@ export const MortgageCalculator = () => {
                     {/* Property Price */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Property Price'}</label>
-                            <span className="text-blue-400 font-serif text-xl">â‚¬{fmtItems(propertyPrice)}</span>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Property Price'}</label>
+                            <span className="text-blue-400 font-serif text-xl">€{fmtItems(propertyPrice)}</span>
                         </div>
                         <input type="range" aria-label="Adjust value" min="100000" max="5000000" step="25000" value={propertyPrice}
                             onChange={e => setPropertyPrice(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                         <div className="flex justify-between text-[10px] text-white/20 mt-1">
-                            <span>â‚¬100k</span><span>â‚¬5M</span>
+                            <span>€100k</span><span>€5M</span>
                         </div>
                     </div>
 
                     {/* Deposit */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Deposit'}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Deposit'}</label>
                             <div className="text-right">
-                                <span className="text-blue-400 font-serif text-xl">â‚¬{fmtItems(deposit)}</span>
-                                <span className="text-white/30 text-xs ml-2">({depositPct}%)</span>
+                                <span className="text-blue-400 font-serif text-xl">€{fmtItems(deposit)}</span>
+                                <span className="text-white/60 text-xs ml-2">({depositPct}%)</span>
                             </div>
                         </div>
                         <input type="range" aria-label="Adjust value" min={isResident ? 10 : 30} max={80} step="5" value={depositPct}
@@ -155,7 +155,7 @@ export const MortgageCalculator = () => {
                     {/* Interest Rate */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Interest Rate'}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Interest Rate'}</label>
                             <span className="text-blue-400 font-serif text-xl">{interestRate.toFixed(2)}%</span>
                         </div>
                         <input type="range" aria-label="Adjust value" min="2.5" max="7" step="0.05" value={interestRate}
@@ -169,13 +169,13 @@ export const MortgageCalculator = () => {
                     {/* Term */}
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Loan Term'}</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Loan Term'}</label>
                             <span className="text-blue-400 font-serif text-xl">{`${termYears} years`}</span>
                         </div>
                         <div className="flex gap-2">
                             {[10, 15, 20, 25, 30].map(y => (
                                 <button key={y} onClick={() => setTermYears(y)}
-                                    className={`flex-1 py-3 rounded-xl border text-[11px] font-bold transition-all ${termYears === y ? 'bg-blue-500 text-white border-blue-500' : 'bg-white/5 border-white/10 text-white/40'}`}>
+                                    className={`flex-1 py-3 rounded-xl border text-[11px] font-bold transition-all ${termYears === y ? 'bg-blue-500 text-white border-blue-500' : 'bg-white/5 border-white/10 text-white/60'}`}>
                                     {`${y}yr`}
                                 </button>
                             ))}
@@ -186,29 +186,29 @@ export const MortgageCalculator = () => {
                 {/* RESULTS */}
                 <div className="space-y-5">
 
-                    {/* Monthly Payment â€” Hero */}
+                    {/* Monthly Payment — Hero */}
                     <div className="p-8 rounded-3xl bg-blue-500/10 border border-blue-500/30 text-center">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-blue-400/60 mb-2">{'MONTHLY REPAYMENT'}</div>
-                        <div className="text-5xl font-serif text-blue-400 mb-1">â‚¬{fmtItems(result?.monthlyPayment ?? 0)}</div>
-                        <div className="text-xs text-white/30">{'Principal + Interest breakdown'}</div>
+                        <div className="text-5xl font-serif text-blue-400 mb-1">€{fmtItems(result?.monthlyPayment ?? 0)}</div>
+                        <div className="text-xs text-white/60">{'Principal + Interest breakdown'}</div>
                     </div>
 
                     {/* Breakdown */}
                     <div className="grid grid-cols-2 gap-4">
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'Loan Amount'}</div>
-                            <div className="text-xl font-serif">â‚¬{fmtItems(result?.loanAmount ?? 0)}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'Loan Amount'}</div>
+                            <div className="text-xl font-serif">€{fmtItems(result?.loanAmount ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'Total Interest'}</div>
-                            <div className="text-xl font-serif text-red-400/80">â‚¬{fmtItems(result?.totalInterest ?? 0)}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'Total Interest'}</div>
+                            <div className="text-xl font-serif text-red-400/80">€{fmtItems(result?.totalInterest ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'Total Repayment'}</div>
-                            <div className="text-xl font-serif">â‚¬{fmtItems(result?.totalPayment ?? 0)}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'Total Repayment'}</div>
+                            <div className="text-xl font-serif">€{fmtItems(result?.totalPayment ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{'LTV Ratio'}</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'LTV Ratio'}</div>
                             <div className={`text-xl font-serif ${(result?.ltv ?? 0) > maxLTV ? 'text-red-400' : 'text-emerald-400'}`}>
                                 {result?.ltv.toFixed(1)}%
                             </div>
@@ -217,9 +217,9 @@ export const MortgageCalculator = () => {
 
                     {/* LTV Bar */}
                     <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                        <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest text-white/30 mb-3">
+                        <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest text-white/60 mb-3">
                             <span>{'LTV Ratio'}</span>
-                            <span>{`Max ${maxLTV}% â€” ${isResident ? "Residents" : "Non-Residents"}`}</span>
+                            <span>{`Max ${maxLTV}% — ${isResident ? "Residents" : "Non-Residents"}`}</span>
                         </div>
                         <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
                             <div className={`h-full rounded-full transition-all duration-700 ${ltvColor}`}
@@ -229,7 +229,7 @@ export const MortgageCalculator = () => {
 
                     {/* 2026 Bank Rates */}
                     <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
-                        <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-4 flex items-center gap-2">
+                        <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-4 flex items-center gap-2">
                             <Info size={12} className="text-blue-400" /> {'2026 MALTA BANK RATES'}
                         </div>
                         <div className="space-y-2">

@@ -87,21 +87,21 @@ export function PropertyValuation() {
           <div className="font-serif text-6xl text-gold mb-2">
             €{(result.mid / 1000).toFixed(0)}K
           </div>
-          <p className="text-white/40 text-sm">
+          <p className="text-white/60 text-sm">
             €{result.low.toLocaleString('en-GB')} – €{result.high.toLocaleString('en-GB')}
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 mb-8">
           <div className="bg-white/5 rounded-2xl p-5">
             <div className="text-white font-semibold">€{result.pricePerSqm.toLocaleString('en-GB')}/m²</div>
-            <div className="text-white/30 text-xs mt-1">Estimated price per sqm</div>
+            <div className="text-white/60 text-xs mt-1">Estimated price per sqm</div>
           </div>
           <div className="bg-white/5 rounded-2xl p-5">
             <div className="text-white font-semibold">{form.location || '—'}</div>
-            <div className="text-white/30 text-xs mt-1">Location</div>
+            <div className="text-white/60 text-xs mt-1">Location</div>
           </div>
         </div>
-        <p className="text-white/30 text-xs text-center mb-6">
+        <p className="text-white/60 text-xs text-center mb-6">
           * Indicative estimate based on market data. For an accurate valuation, consult a licensed Malta agent.
         </p>
         <button
@@ -117,7 +117,7 @@ export function PropertyValuation() {
   return (
     <form onSubmit={handleSubmit} className="glass-card p-10 rounded-3xl border border-white/10 space-y-6">
       <div>
-        <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Location</label>
+        <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Location</label>
         <select
           value={form.location}
           onChange={e => setForm({ ...form, location: e.target.value })}
@@ -131,7 +131,7 @@ export function PropertyValuation() {
         </select>
       </div>
       <div>
-        <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Property Type</label>
+        <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Property Type</label>
         <select
           value={form.propertyType}
           onChange={e => setForm({ ...form, propertyType: e.target.value })}
@@ -144,7 +144,7 @@ export function PropertyValuation() {
       </div>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Size (m²)</label>
+          <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Size (m²)</label>
           <input
             type="number"
             value={form.sqm}
@@ -157,7 +157,7 @@ export function PropertyValuation() {
           />
         </div>
         <div>
-          <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Bedrooms</label>
+          <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Bedrooms</label>
           <select
             value={form.beds}
             onChange={e => setForm({ ...form, beds: e.target.value })}
@@ -169,7 +169,7 @@ export function PropertyValuation() {
         </div>
       </div>
       <div>
-        <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Condition</label>
+        <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Condition</label>
         <select
           value={form.condition}
           onChange={e => setForm({ ...form, condition: e.target.value })}

@@ -143,7 +143,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
         <main className="min-h-screen bg-luxury-black pt-32 pb-24">
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-20">
-              <nav className="flex items-center gap-2 text-xs text-white/30 mb-8 uppercase tracking-widest">
+              <nav className="flex items-center gap-2 text-xs text-white/60 mb-8 uppercase tracking-widest">
                 <Link href="/" className="hover:text-gold transition-colors">Home</Link>
                 <span>/</span>
                 <Link href="/properties/all" className="hover:text-gold transition-colors">
@@ -167,13 +167,13 @@ export default async function PropertyOrCityPage({ params }: Props) {
                     {stats.medianPriceSale && (
                       <div className="glass-card p-5 rounded-2xl border border-white/5">
                         <div className="text-gold font-serif text-2xl">{formatPrice(stats.medianPriceSale)}</div>
-                        <div className="text-white/30 text-[10px] uppercase tracking-widest mt-1">{t('common.median_price', { defaultValue: 'Median Price' })}</div>
+                        <div className="text-white/60 text-[10px] uppercase tracking-widest mt-1">{t('common.median_price', { defaultValue: 'Median Price' })}</div>
                       </div>
                     )}
                     {stats.listingsSaleCount > 0 && (
                       <div className="glass-card p-5 rounded-2xl border border-white/5">
                         <div className="text-gold font-serif text-2xl">{stats.listingsSaleCount}</div>
-                        <div className="text-white/30 text-[10px] uppercase tracking-widest mt-1">{t('common.listings', { defaultValue: 'Listings' })}</div>
+                        <div className="text-white/60 text-[10px] uppercase tracking-widest mt-1">{t('common.listings', { defaultValue: 'Listings' })}</div>
                       </div>
                     )}
                   </div>
@@ -197,7 +197,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
                 </div>
               </>
             ) : (
-              <div className="text-center py-24 text-white/40">
+              <div className="text-center py-24 text-white/60">
                 <p className="font-serif text-2xl mb-4">{t('common.no_listings', { defaultValue: 'No listings available yet' })}</p>
                 <Link href="/properties/all" className="text-gold hover:text-white transition-colors text-sm uppercase tracking-widest">
                   {t('common.view_all_properties', { defaultValue: 'Browse all properties' })} {'→'}
@@ -266,7 +266,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 relative z-10 pb-24 lg:pb-0">
           <div className="mb-8" id="property-title-sentinel">
-            <Link href="/properties/all" className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/40 hover:text-gold transition-colors mb-6">
+            <Link href="/properties/all" className="flex items-center gap-2 text-xs uppercase tracking-widest text-white/60 hover:text-gold transition-colors mb-6">
               <ArrowLeft size={14} />
               {t('common.back_to_listings', { defaultValue: 'Back to Listings' })}
             </Link>
@@ -285,7 +285,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
                 <div className="font-serif text-4xl text-gold">
                   {'€'}{property.price?.toLocaleString('en-GB')}
                 </div>
-                <div className="text-white/30 text-xs uppercase tracking-widest mt-1">
+                <div className="text-white/60 text-xs uppercase tracking-widest mt-1">
                   {property.type === 'rent' ? t('common.per_month', { defaultValue: 'per month' }) : t('common.for_sale', { defaultValue: 'For Sale' })}
                 </div>
               </div>

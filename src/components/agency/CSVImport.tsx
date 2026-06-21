@@ -135,7 +135,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-serif text-white">Download CSV Template</h3>
-                                    <p className="text-[11px] text-white/40 font-mono uppercase tracking-wide">Standardized format for bulk listings</p>
+                                    <p className="text-[11px] text-white/60 font-mono uppercase tracking-wide">Standardized format for bulk listings</p>
                                 </div>
                             </div>
                             <button onClick={downloadTemplate} className="flex items-center gap-3 px-8 py-4 bg-gold text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-xl shadow-gold/20">
@@ -162,7 +162,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                             {CSV_COLUMNS.filter(c => c.required).map(c => (
                                 <div key={c.key} className="p-4 rounded-2xl border border-white/5 bg-white/[0.01] flex items-center gap-3">
                                     <div className="w-2 h-2 rounded-full bg-gold/40" />
-                                    <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">{c.label}*</span>
+                                    <span className="text-[9px] font-bold uppercase tracking-widest text-white/60">{c.label}*</span>
                                 </div>
                             ))}
                         </div>
@@ -236,7 +236,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                 </div>
                                 <div className="space-y-2 max-h-40 overflow-y-auto custom-scrollbar pr-4">
                                     {result.rows.filter(r => r.errors.length > 0).map(r => (
-                                        <div key={r.rowIndex} className="text-[10px] font-mono text-white/40">
+                                        <div key={r.rowIndex} className="text-[10px] font-mono text-white/60">
                                             <span className="text-red-400/60 font-bold mr-2">Row {r.rowIndex}:</span>
                                             {r.errors.join(' • ')}
                                         </div>
@@ -270,7 +270,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                         </div>
                         <div>
                             <h3 className="text-2xl font-serif text-white italic">Synchronizing Assets</h3>
-                            <p className="text-[10px] font-mono uppercase tracking-widest text-white/30 mt-2">Uploading Batch {importStats.success} of {result?.valid}</p>
+                            <p className="text-[10px] font-mono uppercase tracking-widest text-white/60 mt-2">Uploading Batch {importStats.success} of {result?.valid}</p>
                         </div>
                     </motion.div>
                 )}
@@ -282,7 +282,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                         </div>
                         <div>
                             <h3 className="text-3xl font-serif text-white">Sync Complete</h3>
-                            <p className="max-w-md mx-auto text-white/40 text-sm mt-3">{importStats.success} premium listings have been injected into the global Malta Luxury database.</p>
+                            <p className="max-w-md mx-auto text-white/60 text-sm mt-3">{importStats.success} premium listings have been injected into the global Malta Luxury database.</p>
                         </div>
                         <div className="flex justify-center gap-4">
                             <button onClick={() => { setStep('upload'); setResult(null); }} className="px-10 py-4 rounded-xl border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white hover:bg-white/5 transition-all">

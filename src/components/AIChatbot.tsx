@@ -1,4 +1,4 @@
-ï»¿'use client';
+'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Bot, User, Loader2, Sparkles, ShieldCheck } from 'lucide-react';
@@ -91,7 +91,7 @@ export const AIChatbot = () => {
                                     <h3 className="text-white font-serif text-sm">Luxury Intelligence</h3>
                                     <div className="flex items-center gap-1.5">
                                         <Sparkles size={10} className="text-gold" />
-                                        <span className="text-[9px] uppercase tracking-widest text-white/40 font-bold">AI Concierge</span>
+                                        <span className="text-[9px] uppercase tracking-widest text-white/60 font-bold">AI Concierge</span>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ export const AIChatbot = () => {
                                 <div className="flex justify-start">
                                     <div className="bg-white/5 p-4 rounded-2xl rounded-tl-none border border-white/5 flex gap-2">
                                         <Loader2 size={16} className="text-gold animate-spin" />
-                                        <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Analyzing guides...</span>
+                                        <span className="text-[10px] uppercase tracking-widest text-white/60 font-bold">Analyzing guides...</span>
                                     </div>
                                 </div>
                             )}
@@ -155,7 +155,7 @@ export const AIChatbot = () => {
     );
 };
 
-// â”€â”€â”€ AI SIMULATION LOGIC â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ¦¦¦ AI SIMULATION LOGIC ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
 // In a real app, this logic would be on the server using an LLM (Claude)
 // We provide specific answers based on the site's expert guides.
 
@@ -165,7 +165,7 @@ async function simulateAIResponse(query: string): Promise<string> {
 
     if (q.includes('usa') || q.includes('american') || q.includes('citizen')) {
         if (q.includes('mdina') || q.includes('buy')) {
-            return "As a US citizen, you can certainly buy property in Mdina. However, since Mdina is not a Special Designated Area (SDA), you would typically need an AIP (Acquisition of Immovable Property) permit. This permit is usually granted for a single primary residence with a minimum value (approx. â‚¬167,000 for apartments). For unrestricted multiple purchases, I recommend looking at SDAs like Tigne Point or Portomaso.";
+            return "As a US citizen, you can certainly buy property in Mdina. However, since Mdina is not a Special Designated Area (SDA), you would typically need an AIP (Acquisition of Immovable Property) permit. This permit is usually granted for a single primary residence with a minimum value (approx. €167,000 for apartments). For unrestricted multiple purchases, I recommend looking at SDAs like Tigne Point or Portomaso.";
         }
     }
 
@@ -178,7 +178,7 @@ async function simulateAIResponse(query: string): Promise<string> {
     }
 
     if (q.includes('mprp') || q.includes('residency')) {
-        return "The Malta Permanent Residency Programme (MPRP) requires a property purchase of at least â‚¬350,000 (or â‚¬300,000 in the South/Gozo) or a lease of â‚¬12,000/year. It's a fantastic way for families to gain EU residency through a real estate investment.";
+        return "The Malta Permanent Residency Programme (MPRP) requires a property purchase of at least €350,000 (or €300,000 in the South/Gozo) or a lease of €12,000/year. It's a fantastic way for families to gain EU residency through a real estate investment.";
     }
 
     return "That is an excellent question. Based on our 2026 Market Intelligence, the Maltese market is particularly favorable for that type of inquiry. To give you a precise legal and financial answer, would you like to speak with one of our specialized acquisition consultants?";

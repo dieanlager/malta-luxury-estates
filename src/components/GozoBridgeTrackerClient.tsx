@@ -54,12 +54,12 @@ export function GozoBridgeTrackerClient() {
                         <h1 className="text-4xl md:text-7xl font-serif text-white mb-8 leading-[1.1]">
                             The <span className="text-gold italic">Bridge Effect</span> on Gozo Real Estate
                         </h1>
-                        <p className="text-white/40 text-lg md:text-xl leading-relaxed max-w-xl mb-10">
+                        <p className="text-white/60 text-lg md:text-xl leading-relaxed max-w-xl mb-10">
                             Analyzing the direct correlation between the Gozo-Malta permanent link developments and residential property premiums.
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <div className="px-6 py-4 bg-white/5 border border-white/10 rounded-2xl">
-                                <div className="text-[10px] uppercase tracking-widest text-white/30 font-bold mb-1">Index Growth</div>
+                                <div className="text-[10px] uppercase tracking-widest text-white/60 font-bold mb-1">Index Growth</div>
                                 <div className="text-2xl font-serif text-white">+31% <span className="text-xs text-emerald-400 font-sans ml-2">Realized</span></div>
                             </div>
                             <div className="px-6 py-4 bg-gold/10 border border-gold/30 rounded-2xl">
@@ -96,16 +96,16 @@ export function GozoBridgeTrackerClient() {
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8 text-center md:text-left">
                             <div>
                                 <h2 className="text-3xl font-serif text-white mb-2">Price Index Timeline</h2>
-                                <p className="text-white/30 text-sm">Base: January 2023 (Indexed 100)</p>
+                                <p className="text-white/60 text-sm">Base: January 2023 (Indexed 100)</p>
                             </div>
                             <div className="flex gap-4">
                                 <div className="flex items-center gap-2">
                                     <div className="w-3 h-3 rounded-full bg-gold" />
-                                    <span className="text-[10px] uppercase font-bold text-white/40 tracking-widest">Historical</span>
+                                    <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">Historical</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <div className="w-3 h-3 rounded-full border border-gold/40 border-dashed" />
-                                    <span className="text-[10px] uppercase font-bold text-white/40 tracking-widest">Projection</span>
+                                    <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">Projection</span>
                                 </div>
                             </div>
                         </div>
@@ -168,30 +168,30 @@ export function GozoBridgeTrackerClient() {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-white/5">
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/40 shrink-0">
+                                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/60 shrink-0">
                                     <Target size={24} />
                                 </div>
                                 <div>
                                     <h4 className="text-white font-serif mb-1 uppercase tracking-widest text-xs">Accurate Tracking</h4>
-                                    <p className="text-[11px] text-white/30 leading-relaxed">Data aggregated from residential deeds registered in Rabat & Victoria, Gozo.</p>
+                                    <p className="text-[11px] text-white/60 leading-relaxed">Data aggregated from residential deeds registered in Rabat & Victoria, Gozo.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/40 shrink-0">
+                                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/60 shrink-0">
                                     <Calendar size={24} />
                                 </div>
                                 <div>
                                     <h4 className="text-white font-serif mb-1 uppercase tracking-widest text-xs">Quarterly Audits</h4>
-                                    <p className="text-[11px] text-white/30 leading-relaxed">Our model is recalculated every 90 days based on active stock vs realized sales.</p>
+                                    <p className="text-[11px] text-white/60 leading-relaxed">Our model is recalculated every 90 days based on active stock vs realized sales.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/40 shrink-0">
+                                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/60 shrink-0">
                                     <Construction size={24} />
                                 </div>
                                 <div>
                                     <h4 className="text-white font-serif mb-1 uppercase tracking-widest text-xs">Project Status</h4>
-                                    <p className="text-[11px] text-white/30 leading-relaxed">Currently in Stage 03: Final Environmental & Geological viability audit.</p>
+                                    <p className="text-[11px] text-white/60 leading-relaxed">Currently in Stage 03: Final Environmental & Geological viability audit.</p>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +260,7 @@ export function GozoBridgeTrackerClient() {
                     <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-from),_transparent_70%)] from-gold/10 opacity-40" />
                     <div className="relative z-10 max-w-2xl mx-auto">
                         <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">Secure Your <span className="text-gold italic">Gozo Position</span></h2>
-                        <p className="text-white/40 mb-12 text-sm max-w-lg mx-auto leading-relaxed">
+                        <p className="text-white/60 mb-12 text-sm max-w-lg mx-auto leading-relaxed">
                             Don't wait for the inauguration. The institutional smart money is moving now. Request a curated Gozo investment portfolio today.
                         </p>
                         <div className="flex flex-col md:flex-row justify-center gap-4">

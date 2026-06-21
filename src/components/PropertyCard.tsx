@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import Image from 'next/image';
 import { Bed, Bath, Maximize, ExternalLink, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -86,10 +86,10 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               <span className="text-gold font-bold text-lg">
                 {formatPrice(property.price)}
                 {property.type === 'rent' && (
-                  <span className="text-[10px] text-white/40 ml-1">{t('common.per_month', { defaultValue: '/mo' })}</span>
+                  <span className="text-[10px] text-white/60 ml-1">{t('common.per_month', { defaultValue: '/mo' })}</span>
                 )}
               </span>
-              <span className="text-[10px] uppercase tracking-widest font-bold text-white/30">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-white/60">
                 {property.type === 'rent' ? t('market.forRent', { defaultValue: 'For Rent' }) : t('market.forSale', { defaultValue: 'For Sale' })}
               </span>
             </div>
@@ -98,14 +98,14 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               {[
                 { icon: Bed, label: t('common.beds_short', { defaultValue: 'Beds' }), value: property.beds },
                 { icon: Bath, label: t('common.baths_short', { defaultValue: 'Baths' }), value: property.baths },
-                { icon: Maximize, label: 'm²', value: property.sqm },
+                { icon: Maximize, label: 'm2', value: property.sqm },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
                     <Icon size={14} className="text-gold/80" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-[10px] text-white/40 uppercase font-bold">{label}</span>
+                    <span className="text-[10px] text-white/60 uppercase font-bold">{label}</span>
                     <span className="text-xs font-bold">{value}</span>
                   </div>
                 </div>

@@ -88,7 +88,7 @@ export default async function ContactPage({ params }: Props) {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">{t('contact.name', { defaultValue: 'Full Name' })}</label>
+                <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">{t('contact.name', { defaultValue: 'Full Name' })}</label>
                 <input
                   type="text"
                   name="name"
@@ -98,7 +98,7 @@ export default async function ContactPage({ params }: Props) {
                 />
               </div>
               <div>
-                <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">{t('contact.email', { defaultValue: 'Email Address' })}</label>
+                <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">{t('contact.email', { defaultValue: 'Email Address' })}</label>
                 <input
                   type="email"
                   name="email"
@@ -109,7 +109,7 @@ export default async function ContactPage({ params }: Props) {
               </div>
             </div>
             <div>
-              <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">{t('contact.message', { defaultValue: 'Message' })}</label>
+              <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">{t('contact.message', { defaultValue: 'Message' })}</label>
               <textarea
                 name="message"
                 required

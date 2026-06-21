@@ -1,4 +1,4 @@
-ï»¿'use client';
+'use client';
 import React, { useState, useMemo } from 'react';
 import { Calculator, TrendingUp, DollarSign, Percent, Info, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -54,12 +54,12 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                     </div>
                     <div>
                         <h3 className="text-xl font-serif text-white">Investment <span className="text-gold italic">ROI Calculator</span></h3>
-                        <p className="text-xs text-white/40 uppercase tracking-widest font-bold mt-1">Estimate your yields & returns</p>
+                        <p className="text-xs text-white/60 uppercase tracking-widest font-bold mt-1">Estimate your yields & returns</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-6">
                     <div className="hidden md:flex flex-col items-end">
-                        <span className="text-[10px] text-white/40 uppercase font-bold tracking-widest">Expected Net Yield</span>
+                        <span className="text-[10px] text-white/60 uppercase font-bold tracking-widest">Expected Net Yield</span>
                         <span className="text-2xl font-serif text-emerald-400">{calculations.netYield.toFixed(2)}%</span>
                     </div>
                     {isExpanded ? <ChevronUp size={24} className="text-white/20" /> : <ChevronDown size={24} className="text-white/20" />}
@@ -80,7 +80,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-end">
                                         <label className="text-xs font-bold text-white/60 uppercase tracking-widest">Expected Monthly Rent</label>
-                                        <span className="text-gold font-serif text-lg">â‚¬{monthlyRent.toLocaleString()}</span>
+                                        <span className="text-gold font-serif text-lg">€{monthlyRent.toLocaleString()}</span>
                                     </div>
                                     <input
                                         aria-label="Adjust value"
@@ -101,7 +101,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
 
                                 <div className="grid grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Management Fee (%)</label>
+                                        <label className="text-[10px] font-bold text-white/60 uppercase tracking-widest">Management Fee (%)</label>
                                         <div className="relative">
                                             <Percent className="absolute left-3 top-1/2 -translate-y-1/2 text-white/20" size={14} />
                                             <input
@@ -113,7 +113,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                         </div>
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Maintenance (%)</label>
+                                        <label className="text-[10px] font-bold text-white/60 uppercase tracking-widest">Maintenance (%)</label>
                                         <div className="relative">
                                             <Percent className="absolute left-3 top-1/2 -translate-y-1/2 text-white/20" size={14} />
                                             <input
@@ -141,7 +141,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-white/5 rounded-[2rem] p-6 border border-white/10">
                                     <TrendingUp className="text-gold mb-3" size={20} />
-                                    <p className="text-[10px] text-white/40 uppercase font-bold tracking-widest mb-1">Gross Yield</p>
+                                    <p className="text-[10px] text-white/60 uppercase font-bold tracking-widest mb-1">Gross Yield</p>
                                     <p className="text-3xl font-serif text-white">{calculations.grossYield.toFixed(2)}%</p>
                                 </div>
                                 <div className="bg-emerald-500/5 rounded-[2rem] p-6 border border-emerald-500/10">
@@ -152,12 +152,12 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                 <div className="bg-white/5 rounded-[2rem] p-6 border border-white/10 lg:col-span-2">
                                     <div className="flex justify-between items-center mb-6">
                                         <div>
-                                            <p className="text-[10px] text-white/40 uppercase font-bold tracking-widest mb-1">Estimated Monthly Net</p>
-                                            <p className="text-4xl font-serif text-gold-gradient italic">â‚¬{Math.round(calculations.monthlyNet).toLocaleString()}</p>
+                                            <p className="text-[10px] text-white/60 uppercase font-bold tracking-widest mb-1">Estimated Monthly Net</p>
+                                            <p className="text-4xl font-serif text-gold-gradient italic">€{Math.round(calculations.monthlyNet).toLocaleString()}</p>
                                         </div>
                                         <div className="text-right">
-                                            <p className="text-[10px] text-white/40 uppercase font-bold tracking-widest mb-1">Yearly Net Cashflow</p>
-                                            <p className="text-xl font-serif text-white">â‚¬{Math.round(calculations.netIncomeAfterTax).toLocaleString()}</p>
+                                            <p className="text-[10px] text-white/60 uppercase font-bold tracking-widest mb-1">Yearly Net Cashflow</p>
+                                            <p className="text-xl font-serif text-white">€{Math.round(calculations.netIncomeAfterTax).toLocaleString()}</p>
                                         </div>
                                     </div>
                                     <div className="pt-6 border-t border-white/5 flex items-center gap-3">

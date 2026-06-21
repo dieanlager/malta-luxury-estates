@@ -70,7 +70,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                             </div>
                             <div>
                                 <h3 className="text-2xl font-serif text-white">Green Efficiency Intelligence</h3>
-                                <p className="text-xs text-white/40 uppercase tracking-widest font-bold">2026 EU Energy Standards Audit</p>
+                                <p className="text-xs text-white/60 uppercase tracking-widest font-bold">2026 EU Energy Standards Audit</p>
                             </div>
                         </div>
 
@@ -91,7 +91,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                         <span className="text-[10px] font-bold uppercase tracking-widest">Bank Premium</span>
                                     </div>
                                     <div className="text-xl text-white font-serif">{analysis.bankPremium}</div>
-                                    <p className="text-[10px] text-white/30 leading-relaxed mt-2 uppercase tracking-tight">Available via green bank schemes</p>
+                                    <p className="text-[10px] text-white/60 leading-relaxed mt-2 uppercase tracking-tight">Available via green bank schemes</p>
                                 </div>
                             </div>
 
@@ -128,10 +128,10 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                         </div>
 
                         <div className="mt-10 pt-8 border-t border-white/5 flex gap-4">
-                            <div className="w-10 h-10 shrink-0 rounded-full bg-white/5 flex items-center justify-center text-white/30">
+                            <div className="w-10 h-10 shrink-0 rounded-full bg-white/5 flex items-center justify-center text-white/60">
                                 <Info size={16} />
                             </div>
-                            <p className="text-[10px] text-white/30 leading-relaxed uppercase tracking-wide">
+                            <p className="text-[10px] text-white/60 leading-relaxed uppercase tracking-wide">
                                 Estimates based on Malta 2026 Building Regulations. Actual costs vary by property age and construction type.
                             </p>
                         </div>

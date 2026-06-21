@@ -70,7 +70,7 @@ function WarningBanner({ status, onUpgrade }: { status: PlanStatus; onUpgrade: (
             </div>
             <div className="flex-1 min-w-0">
                 <h4 className="text-sm font-serif text-white italic">Approaching Asset Limit</h4>
-                <p className="text-xs text-white/40 mb-3">{status.currentCount} of {status.limit} slots utilized.</p>
+                <p className="text-xs text-white/60 mb-3">{status.currentCount} of {status.limit} slots utilized.</p>
                 <div className="h-1 bg-white/5 rounded-full overflow-hidden">
                     <div className="h-full bg-amber-500 rounded-full transition-all duration-1000" style={{ width: `${status.usagePercent}%` }} />
                 </div>
@@ -94,7 +94,7 @@ function LimitReachedBlock({ status, onUpgrade }: { status: PlanStatus; onUpgrad
             </div>
             <div className="max-w-md mx-auto">
                 <h3 className="text-3xl font-serif text-white mb-3 italic">Vault Capacity Reached</h3>
-                <p className="text-white/30 text-sm leading-relaxed">
+                <p className="text-white/60 text-sm leading-relaxed">
                     Your current {status.plan.name} plan includes a limit of {status.limit} premium listings.
                     To broadcast more exclusive properties to our global audience, an upgrade is required.
                 </p>

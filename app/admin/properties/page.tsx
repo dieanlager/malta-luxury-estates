@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useState, useEffect } from 'react';
 import { PropertiesTable } from '@/src/components/admin/PropertiesTable';
 import { Lock, Loader2, LayoutList, Plus, LogOut } from 'lucide-react';
@@ -55,7 +55,7 @@ export default function AdminPropertiesPage() {
             </div>
             <div>
               <h1 className="font-serif text-xl text-white">Admin Access</h1>
-              <p className="text-white/30 text-xs mt-0.5">Properties Dashboard</p>
+              <p className="text-white/60 text-xs mt-0.5">Properties Dashboard</p>
             </div>
           </div>
           <form onSubmit={handleLogin} className="space-y-4">
@@ -65,7 +65,7 @@ export default function AdminPropertiesPage() {
               onChange={e => setInputKey(e.target.value)}
               placeholder="Admin key"
               autoFocus
-              className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
+              className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/60 focus:outline-none focus:border-gold/50 transition-colors"
             />
             {loginError && <p className="text-red-400 text-xs">{loginError}</p>}
             <button
@@ -107,7 +107,7 @@ export default function AdminPropertiesPage() {
               <Plus size={13} /> New Listing
             </Link>
             <button onClick={handleLogout} title="Sign out"
-              className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/20 transition-colors">
+              className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:border-white/20 transition-colors">
               <LogOut size={14} />
             </button>
           </div>
@@ -116,7 +116,7 @@ export default function AdminPropertiesPage() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <div className="mb-6">
           <h1 className="font-serif text-3xl text-white">Properties</h1>
-          <p className="text-white/30 text-sm mt-1">Manage all property listings</p>
+          <p className="text-white/60 text-sm mt-1">Manage all property listings</p>
         </div>
         <PropertiesTable adminKey={adminKey} />
       </div>

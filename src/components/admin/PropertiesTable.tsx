@@ -1,4 +1,4 @@
-ï»¿'use client';
+'use client';
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -29,10 +29,10 @@ interface PropRow {
 }
 
 function fmtPrice(p: number | null) {
-  if (!p) return 'â€”';
-  if (p >= 1_000_000) return `â‚¬${(p / 1_000_000).toFixed(1)}M`;
-  if (p >= 1_000) return `â‚¬${Math.round(p / 1000)}k`;
-  return `â‚¬${p.toLocaleString('en-GB')}`;
+  if (!p) return '—';
+  if (p >= 1_000_000) return `€${(p / 1_000_000).toFixed(1)}M`;
+  if (p >= 1_000) return `€${Math.round(p / 1000)}k`;
+  return `€${p.toLocaleString('en-GB')}`;
 }
 
 function fmtDate(s: string) {
@@ -43,9 +43,9 @@ function StatusBadge({ status }: { status: string | null }) {
   const s = status ?? 'active';
   const map: Record<string, { label: string; cls: string }> = {
     active:  { label: 'Active',  cls: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/20' },
-    draft:   { label: 'Draft',   cls: 'bg-white/5 text-white/40 border-white/10' },
+    draft:   { label: 'Draft',   cls: 'bg-white/5 text-white/60 border-white/10' },
     paused:  { label: 'Paused',  cls: 'bg-amber-500/15 text-amber-400 border-amber-500/20' },
-    hidden:  { label: 'Hidden',  cls: 'bg-white/5 text-white/30 border-white/10' },
+    hidden:  { label: 'Hidden',  cls: 'bg-white/5 text-white/60 border-white/10' },
   };
   const { label, cls } = map[s] ?? map.active;
   return (
@@ -180,8 +180,8 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
     setSelected(s => { const n = new Set(s); n.has(id) ? n.delete(id) : n.add(id); return n; });
 
   if (loading) return (
-    <div className="flex items-center justify-center h-64 text-white/30">
-      <Loader2 size={24} className="animate-spin mr-3" /> Loading propertiesâ€¦
+    <div className="flex items-center justify-center h-64 text-white/60">
+      <Loader2 size={24} className="animate-spin mr-3" /> Loading properties…
     </div>
   );
   if (fetchError) return (
@@ -195,15 +195,15 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
       {/* Filters */}
       <div className="flex flex-wrap items-center gap-3">
         <div className="relative flex-1 min-w-[220px] max-w-sm">
-          <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 pointer-events-none" />
+          <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/60 pointer-events-none" />
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
-            placeholder="Search title, location, agencyâ€¦"
-            className="w-full pl-9 pr-8 py-2.5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold/50 transition-colors"
+            placeholder="Search title, location, agency…"
+            className="w-full pl-9 pr-8 py-2.5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder:text-white/60 focus:outline-none focus:border-gold/50 transition-colors"
           />
           {search && (
-            <button onClick={() => setSearch('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-white/30 hover:text-white transition-colors">
+            <button onClick={() => setSearch('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors">
               <X size={14} />
             </button>
           )}
@@ -227,7 +227,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
           <option value="yes">Featured only</option>
           <option value="no">Not Featured</option>
         </select>
-        <span className="text-xs text-white/30 ml-auto tabular-nums">
+        <span className="text-xs text-white/60 ml-auto tabular-nums">
           {filtered.length} propert{filtered.length === 1 ? 'y' : 'ies'}
         </span>
       </div>
@@ -238,7 +238,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
           <span className="text-sm text-gold font-bold tabular-nums">{selected.size} selected</span>
           <select value={bulkAction} onChange={e => setBulkAction(e.target.value)}
             className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white/70 focus:outline-none focus:border-gold/50">
-            <option value="">Choose actionâ€¦</option>
+            <option value="">Choose action…</option>
             <option value="activate">Set Active</option>
             <option value="pause">Set Paused</option>
             <option value="delete">Delete selected</option>
@@ -249,7 +249,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
             Apply
           </button>
           <button onClick={() => { setSelected(new Set()); setBulkAction(''); }}
-            className="ml-auto text-white/40 hover:text-white transition-colors">
+            className="ml-auto text-white/60 hover:text-white transition-colors">
             <X size={16} />
           </button>
         </div>
@@ -262,23 +262,23 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
             <thead>
               <tr className="border-b border-white/10">
                 <th className="w-10 px-4 py-3.5 text-left">
-                  <button onClick={togglePageSelect} className="text-white/40 hover:text-gold transition-colors">
+                  <button onClick={togglePageSelect} className="text-white/60 hover:text-gold transition-colors">
                     {allPageSelected
                       ? <SquareCheck size={16} className="text-gold" />
                       : someSelected
-                        ? <SquareCheck size={16} className="text-white/40" />
+                        ? <SquareCheck size={16} className="text-white/60" />
                         : <Square size={16} />}
                   </button>
                 </th>
                 <th className="w-[52px]" />
-                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/30 font-bold">Title</th>
-                <th className="px-3 py-3.5 text-right text-[10px] uppercase tracking-widest text-white/30 font-bold">Price</th>
-                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/30 font-bold hidden md:table-cell">Location</th>
-                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/30 font-bold hidden lg:table-cell">Type</th>
-                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/30 font-bold">Status</th>
-                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/30 font-bold hidden xl:table-cell">Agency</th>
-                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/30 font-bold hidden lg:table-cell">Added</th>
-                <th className="px-4 py-3.5 text-right text-[10px] uppercase tracking-widest text-white/30 font-bold">Actions</th>
+                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/60 font-bold">Title</th>
+                <th className="px-3 py-3.5 text-right text-[10px] uppercase tracking-widest text-white/60 font-bold">Price</th>
+                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/60 font-bold hidden md:table-cell">Location</th>
+                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/60 font-bold hidden lg:table-cell">Type</th>
+                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/60 font-bold">Status</th>
+                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/60 font-bold hidden xl:table-cell">Agency</th>
+                <th className="px-3 py-3.5 text-left text-[10px] uppercase tracking-widest text-white/60 font-bold hidden lg:table-cell">Added</th>
+                <th className="px-4 py-3.5 text-right text-[10px] uppercase tracking-widest text-white/60 font-bold">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -293,7 +293,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                   <tr key={row.id}
                     className={`border-b border-white/5 last:border-0 transition-colors ${isSelected ? 'bg-gold/5' : 'hover:bg-white/[0.02]'}`}>
                     <td className="px-4 py-3">
-                      <button onClick={() => toggleOne(row.id)} className="text-white/40 hover:text-gold transition-colors">
+                      <button onClick={() => toggleOne(row.id)} className="text-white/60 hover:text-gold transition-colors">
                         {isSelected ? <SquareCheck size={16} className="text-gold" /> : <Square size={16} />}
                       </button>
                     </td>
@@ -308,8 +308,8 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                       <div className="font-medium text-white text-sm line-clamp-1">{row.title}</div>
                       <div className="flex items-center gap-2 mt-0.5">
                         {row.property_type && (
-                          <span className="text-[10px] text-white/30">
-                            {row.property_type}{row.bedrooms ? ` Â· ${row.bedrooms}bd` : ''}
+                          <span className="text-[10px] text-white/60">
+                            {row.property_type}{row.bedrooms ? ` · ${row.bedrooms}bd` : ''}
                           </span>
                         )}
                         {row.featured && (
@@ -321,7 +321,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                     </td>
                     <td className="px-3 py-3 text-right font-serif text-gold whitespace-nowrap">{fmtPrice(row.price)}</td>
                     <td className="px-3 py-3 text-white/50 text-sm hidden md:table-cell whitespace-nowrap max-w-[140px] truncate">
-                      {row.location_text ?? 'â€”'}
+                      {row.location_text ?? '—'}
                     </td>
                     <td className="px-3 py-3 hidden lg:table-cell">
                       <span className={`text-[10px] uppercase tracking-wider font-bold ${row.listing_type === 'rent' ? 'text-blue-400' : 'text-emerald-400'}`}>
@@ -329,10 +329,10 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                       </span>
                     </td>
                     <td className="px-3 py-3"><StatusBadge status={effStatus} /></td>
-                    <td className="px-3 py-3 text-white/40 text-xs hidden xl:table-cell truncate max-w-[120px]">
-                      {row.agency_name ?? 'â€”'}
+                    <td className="px-3 py-3 text-white/60 text-xs hidden xl:table-cell truncate max-w-[120px]">
+                      {row.agency_name ?? '—'}
                     </td>
-                    <td className="px-3 py-3 text-white/30 text-xs hidden lg:table-cell whitespace-nowrap">
+                    <td className="px-3 py-3 text-white/60 text-xs hidden lg:table-cell whitespace-nowrap">
                       {fmtDate(row.created_at)}
                     </td>
                     <td className="px-4 py-3">
@@ -358,7 +358,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                               className="px-2 py-1 text-[10px] bg-red-500/20 text-red-400 rounded font-bold hover:bg-red-500/30 disabled:opacity-40 whitespace-nowrap transition-colors">
                               {isDActing ? <Loader2 size={11} className="animate-spin inline" /> : 'Confirm'}
                             </button>
-                            <button onClick={() => setDeleteConfirm(null)} className="px-2 py-1 text-[10px] text-white/30 hover:text-white rounded transition-colors">Cancel</button>
+                            <button onClick={() => setDeleteConfirm(null)} className="px-2 py-1 text-[10px] text-white/60 hover:text-white rounded transition-colors">Cancel</button>
                           </div>
                         ) : (
                           <button onClick={() => setDeleteConfirm(row.id)}
@@ -376,7 +376,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
           </table>
         </div>
         {paginated.length === 0 && (
-          <div className="text-center py-16 text-white/30">
+          <div className="text-center py-16 text-white/60">
             <Filter size={32} className="mx-auto mb-4 opacity-20" />
             <p className="text-sm">No properties match your filters.</p>
           </div>
@@ -386,8 +386,8 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
       {/* Pagination */}
       {totalPages > 1 && (
         <div className="flex items-center justify-between">
-          <span className="text-xs text-white/30 tabular-nums">
-            Showing {safePage * PAGE_SIZE + 1}â€“{Math.min((safePage + 1) * PAGE_SIZE, filtered.length)} of {filtered.length}
+          <span className="text-xs text-white/60 tabular-nums">
+            Showing {safePage * PAGE_SIZE + 1}–{Math.min((safePage + 1) * PAGE_SIZE, filtered.length)} of {filtered.length}
           </span>
           <div className="flex items-center gap-2">
             <button onClick={() => setPage(p => Math.max(0, p - 1))} disabled={safePage === 0}
@@ -396,7 +396,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
             </button>
             {Array.from({ length: totalPages }, (_, i) => (
               <button key={i} onClick={() => setPage(i)}
-                className={`w-9 h-9 rounded-lg border text-sm font-bold transition-colors ${i === safePage ? 'border-gold bg-gold/10 text-gold' : 'border-white/10 text-white/40 hover:border-gold/50 hover:text-white/60'}`}>
+                className={`w-9 h-9 rounded-lg border text-sm font-bold transition-colors ${i === safePage ? 'border-gold bg-gold/10 text-gold' : 'border-white/10 text-white/60 hover:border-gold/50 hover:text-white/60'}`}>
                 {i + 1}
               </button>
             ))}

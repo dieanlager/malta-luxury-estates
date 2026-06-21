@@ -88,7 +88,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                                 />
                             </div>
                             <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">{t('interactive.twin.title', 'AI Property Twin Finder')}</h2>
-                            <p className="text-white/40 max-w-xl">
+                            <p className="text-white/60 max-w-xl">
                                 {t('interactive.twin.subtitle')}
                             </p>
                         </div>
@@ -161,7 +161,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                         <div className="mt-20 pt-12 border-t border-white/5 text-center">
                             <div className="inline-flex items-center gap-4 px-6 py-3 rounded-2xl bg-white/3 border border-white/5">
                                 <Zap size={16} className="text-gold animate-pulse" />
-                                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
+                                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">
                                     {t('interactive.twin.footer_note')}
                                 </span>
                             </div>

@@ -1,7 +1,6 @@
-﻿'use client';
+'use client';
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'motion/react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { SearchFilter } from '@/src/components/SearchFilter';
@@ -17,7 +16,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/60 via-luxury-black/30 to-luxury-black" />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+        <div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/20 mb-8">
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
             <span className="text-gold uppercase tracking-[0.2em] text-[10px] font-bold">{t('hero.eyebrow')}</span>
@@ -40,11 +39,11 @@ export const HeroSection = () => {
               <span className="text-[9px] uppercase tracking-widest font-bold text-white">{t('hero.stats_locations')}</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl font-serif text-gold">â‚¬2.5M</span>
+              <span className="text-2xl font-serif text-gold">€2.5M</span>
               <span className="text-[9px] uppercase tracking-widest font-bold text-white">{t('hero.stats_price')}</span>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

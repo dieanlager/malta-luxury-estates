@@ -93,7 +93,7 @@ export default async function InsightsPage({ params }: Props) {
           {categories.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-12 justify-center">
               {categories.map(cat => (
-                <span key={cat} className="text-[10px] uppercase tracking-widest text-white/40 border border-white/10 rounded-full px-4 py-1.5">
+                <span key={cat} className="text-[10px] uppercase tracking-widest text-white/60 border border-white/10 rounded-full px-4 py-1.5">
                   {cat}
                 </span>
               ))}
@@ -115,7 +115,7 @@ export default async function InsightsPage({ params }: Props) {
                 <h2 className="font-serif text-xl text-white group-hover:text-gold transition-colors mb-4 leading-snug">
                   {article.title}
                 </h2>
-                <p className="text-white/40 text-sm leading-relaxed line-clamp-3 mb-6">
+                <p className="text-white/60 text-sm leading-relaxed line-clamp-3 mb-6">
                   {article.excerpt}
                 </p>
                 {article.date && (

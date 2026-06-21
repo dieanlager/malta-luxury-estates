@@ -113,7 +113,7 @@ export default async function InsightPage({ params }: Props) {
           {article.excerpt && (
             <p className="text-white/60 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">{article.excerpt}</p>
           )}
-          <div className="flex items-center justify-center gap-6 text-xs text-white/30 uppercase tracking-widest">
+          <div className="flex items-center justify-center gap-6 text-xs text-white/60 uppercase tracking-widest">
             {article.date && (
               <span>{new Date(article.date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
             )}
@@ -148,7 +148,7 @@ export default async function InsightPage({ params }: Props) {
             </section>
           )}
 
-          <nav className="mt-16 flex items-center gap-2 text-xs text-white/30">
+          <nav className="mt-16 flex items-center gap-2 text-xs text-white/60">
             <Link href="/" className="hover:text-gold transition-colors">Home</Link>
             <span>/</span>
             <Link href="/insights" className="hover:text-gold transition-colors">

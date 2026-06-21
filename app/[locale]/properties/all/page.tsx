@@ -91,14 +91,14 @@ export default async function PropertiesAllPage({ params }: Props) {
 
           {/* Location filters */}
           <div className="flex flex-wrap gap-3 mb-16">
-            <span className="text-[9px] uppercase tracking-widest text-white/30 border border-white/10 bg-white/5 rounded-full px-4 py-2">
+            <span className="text-[9px] uppercase tracking-widest text-white/60 border border-white/10 bg-white/5 rounded-full px-4 py-2">
               {t('common.all', { defaultValue: 'All' })} ({properties.length})
             </span>
             {popularCities.map(city => (
               <Link
                 key={city.slug}
                 href={`/properties/${city.slug}` as any}
-                className="text-[9px] uppercase tracking-widest text-white/40 border border-white/10 hover:border-gold/30 hover:text-gold rounded-full px-4 py-2 transition-all"
+                className="text-[9px] uppercase tracking-widest text-white/60 border border-white/10 hover:border-gold/30 hover:text-gold rounded-full px-4 py-2 transition-all"
               >
                 {city.nameEn}
               </Link>
@@ -112,7 +112,7 @@ export default async function PropertiesAllPage({ params }: Props) {
               ))}
             </div>
           ) : (
-            <div className="text-center py-32 text-white/40">
+            <div className="text-center py-32 text-white/60">
               <p className="font-serif text-3xl mb-6">{t('common.no_listings', { defaultValue: 'No listings available' })}</p>
               <Link href="/contact" className="text-gold text-sm uppercase tracking-widest hover:text-white transition-colors">
                 {t('common.contact_us', { defaultValue: 'Contact Us' })} →

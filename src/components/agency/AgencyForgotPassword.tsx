@@ -21,7 +21,7 @@ export function AgencyForgotPassword() {
         ) : (
           <form onSubmit={handleSubmit} className="glass-card p-10 rounded-3xl border border-white/10 space-y-6">
             <div>
-              <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Email</label>
+              <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Email</label>
               <input type="email" value={email} onChange={e => setEmail(e.target.value)} required className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-gold/40" />
             </div>
             <button type="submit" className="w-full py-4 gold-gradient text-luxury-black font-bold text-[11px] uppercase tracking-widest rounded-2xl">Send Reset Link</button>

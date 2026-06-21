@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/src/navigation';
 import { ArrowUpRight } from 'lucide-react';
@@ -45,12 +45,12 @@ export function Footer() {
                 Malta <span className="text-gold">Luxury</span>
               </span>
             </Link>
-            <p className="text-white/40 text-sm leading-relaxed">{t('footer.description', { defaultValue: 'Malta\'s premier luxury real estate portal.' })}</p>
+            <p className="text-white/60 text-sm leading-relaxed">{t('footer.description', { defaultValue: 'Malta\'s premier luxury real estate portal.' })}</p>
           </div>
 
           <div>
             <p className="font-serif text-lg mb-8 font-semibold">{t('footer.quick_links', { defaultValue: 'Quick Links' })}</p>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/60">
               <li><Link href="/market/live" className="hover:text-gold transition-colors flex items-center gap-2">{t('nav.market_pulse', { defaultValue: 'Market Pulse' })} <span className="w-1 h-1 rounded-full bg-red-500" /></Link></li>
               <li><Link href="/tools/quiz" className="hover:text-gold transition-colors font-bold text-white">{t('footer.quiz', { defaultValue: 'Property Quiz' })}</Link></li>
               <li><Link href="/tools/valuation" className="hover:text-gold transition-colors">{t('seo.tools.valuation.title', { defaultValue: 'Property Valuation' })}</Link></li>
@@ -64,7 +64,7 @@ export function Footer() {
 
           <div>
             <p className="font-serif text-lg mb-8 font-semibold">{t('footer.legal', { defaultValue: 'Legal' })}</p>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/60">
               <li><Link href="/about" className="hover:text-gold transition-colors">{t('nav.about', { defaultValue: 'About Us' })}</Link></li>
               <li><Link href="/contact" className="hover:text-gold transition-colors">{t('nav.contact', { defaultValue: 'Contact' })}</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-gold transition-colors">{t('seo.privacy.title', { defaultValue: 'Privacy Policy' })}</Link></li>
@@ -75,7 +75,7 @@ export function Footer() {
 
           <div>
             <p className="font-serif text-lg mb-8 font-semibold">{t('footer.knowledge_hub', { defaultValue: 'Knowledge Hub' })}</p>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/60">
               {articleLinks.map(a => (
                 <li key={a.slug}>
                   <Link href={`/insights/${a.slug}` as any} className="hover:text-gold transition-colors">{a.label}</Link>
@@ -86,14 +86,14 @@ export function Footer() {
 
           <div>
             <p className="font-serif text-lg mb-8 font-semibold">{t('footer.newsletter.title', { defaultValue: 'Newsletter' })}</p>
-            <p className="text-sm text-white/40 mb-6">{t('footer.newsletter.subtitle', { defaultValue: 'Get exclusive market insights.' })}</p>
+            <p className="text-sm text-white/60 mb-6">{t('footer.newsletter.subtitle', { defaultValue: 'Get exclusive market insights.' })}</p>
             <NewsletterForm />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
           <p>
-            © {new Date().getFullYear()} Malta Luxury Real Estate. All rights reserved.
+            � {new Date().getFullYear()} Malta Luxury Real Estate. All rights reserved.
             <span className="mx-2 opacity-20">|</span>
             {t('footer.design_by', { defaultValue: 'Design by' })}{' '}
             <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium normal-case">Brand House</a>

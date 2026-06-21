@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import React, { useState, useMemo, useEffect } from 'react';
 import { PROPERTIES } from '../constants';
 import { Property } from '../types';
@@ -8,19 +8,19 @@ import Link from 'next/link';
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 const TOKEN_VALID = MAPBOX_TOKEN && MAPBOX_TOKEN !== 'PASTE_YOUR_TOKEN_HERE' && MAPBOX_TOKEN.startsWith('pk.');
 
-// â”€â”€â”€ Malta island locations (for SVG fallback pins) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Malta island locations (for SVG fallback pins) ────────────────────
 const MALTA_LOCATIONS: Record<string, { x: number; y: number; label: string }> = {
     valletta: { x: 56.5, y: 48.5, label: 'Valletta' },
     sliema: { x: 53.5, y: 43.5, label: 'Sliema' },
     'st-julians': { x: 51.5, y: 41.0, label: "St. Julian's" },
-    mellieha: { x: 21.0, y: 18.0, label: 'MellieÄ§a' },
+    mellieha: { x: 21.0, y: 18.0, label: 'Mellieħa' },
     victoria: { x: 22.0, y: 53.0, label: 'Victoria (Gozo)' },
     mdina: { x: 38.0, y: 46.0, label: 'Mdina' },
     marsaskala: { x: 72.0, y: 64.0, label: 'Marsaskala' },
     'three-cities': { x: 62.0, y: 51.0, label: 'Three Cities' },
 };
 
-// â”€â”€â”€ SVG Fallback Map â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── SVG Fallback Map ────────────────────────────────────────────────────────
 const MaltaSVGFallback = ({
     selectedProperty,
     setSelectedProperty,
@@ -34,7 +34,7 @@ const MaltaSVGFallback = ({
     const locationGroups = useMemo(() => {
         const groups: Record<string, Property[]> = {};
         propertiesWithCoords.forEach(p => {
-            // Derive key from locationName: "Sliema" â†’ "sliema", "St. Julian's" â†’ "st-julians"
+            // Derive key from locationName: "Sliema" → "sliema", "St. Julian's" → "st-julians"
             const key = p.locationName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
             if (!groups[key]) groups[key] = [];
             groups[key].push(p);
@@ -79,7 +79,7 @@ const MaltaSVGFallback = ({
                         stroke="#C9A84C" strokeWidth="0.08" strokeOpacity="0.15" strokeDasharray="2,8" />
                 ))}
 
-                {/* â”€â”€ Malta Island â”€â”€ */}
+                {/* ── Malta Island ── */}
                 <path
                     d="M28 38 L32 34 L40 31 L50 30 L58 31 L65 34 L70 38 L73 44 L72 52 L68 58 L62 63 L54 66 L46 66 L38 63 L32 58 L28 50 L27 44 Z"
                     fill="#1e2d1e"
@@ -92,7 +92,7 @@ const MaltaSVGFallback = ({
                 <path d="M35 45 L45 42 L55 43 L62 48 L60 55 L50 58 L40 56 L35 50 Z"
                     fill="#162416" fillOpacity="0.5" stroke="none" />
 
-                {/* â”€â”€ Gozo Island â”€â”€ */}
+                {/* ── Gozo Island ── */}
                 <path
                     d="M10 44 L16 40 L24 39 L30 41 L32 46 L30 52 L24 55 L16 55 L10 51 Z"
                     fill="#1a271a"
@@ -102,11 +102,11 @@ const MaltaSVGFallback = ({
                     filter="url(#glow)"
                 />
 
-                {/* â”€â”€ Comino â”€â”€ */}
+                {/* ── Comino ── */}
                 <path d="M32 42 L35 41 L36 44 L33 45 Z"
                     fill="#1e2a1e" stroke="#C9A84C" strokeWidth="0.2" strokeOpacity="0.3" />
 
-                {/* â”€â”€ Location Labels â”€â”€ */}
+                {/* ── Location Labels ── */}
                 {Object.entries(MALTA_LOCATIONS).map(([slug, loc]) => (
                     <text key={slug} x={loc.x} y={loc.y + 3.5}
                         fontSize="2.2" textAnchor="middle" fill="#C9A84C" fillOpacity="0.35"
@@ -115,7 +115,7 @@ const MaltaSVGFallback = ({
                     </text>
                 ))}
 
-                {/* â”€â”€ Property Pins â”€â”€ */}
+                {/* ── Property Pins ── */}
                 {Object.entries(locationGroups).map(([slug, props]) => {
                     const loc = MALTA_LOCATIONS[slug];
                     if (!loc) return null;
@@ -141,14 +141,14 @@ const MaltaSVGFallback = ({
                                 stroke="#C9A84C" strokeWidth="0.3" />
                             <text x={loc.x} y={loc.y - 3.2} fontSize="2" textAnchor="middle"
                                 fill={isSelected ? '#0d1117' : '#C9A84C'} fontWeight="bold" fontFamily="sans-serif">
-                                â‚¬{(avgPrice / 1000000).toFixed(1)}M{count > 1 ? ` Ă—${count}` : ''}
+                                €{(avgPrice / 1000000).toFixed(1)}M{count > 1 ? ` ×${count}` : ''}
                             </text>
                         </g>
                     );
                 })}
             </svg>
 
-            {/* â”€â”€ Map Label â”€â”€ */}
+            {/* ── Map Label ── */}
             <div className="absolute top-8 left-8 pointer-events-none">
                 <div className="bg-luxury-black/80 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/10 shadow-xl">
                     <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-gold mb-1">Interactive</p>
@@ -156,7 +156,7 @@ const MaltaSVGFallback = ({
                 </div>
             </div>
 
-            {/* â”€â”€ Property Popup (overlay) â”€â”€ */}
+            {/* ── Property Popup (overlay) ── */}
             {selectedProperty && (
                 <div className="absolute top-8 right-8 w-72 bg-luxury-black border border-gold/30 rounded-2xl overflow-hidden shadow-2xl z-10">
                     <div className="relative aspect-video">
@@ -171,9 +171,9 @@ const MaltaSVGFallback = ({
                     <div className="p-4">
                         <div className="flex justify-between items-start mb-1">
                             <h3 className="font-serif text-base leading-tight text-white">{selectedProperty.title}</h3>
-                            <span className="text-gold font-bold text-sm">â‚¬{(selectedProperty.price / 1000000).toFixed(1)}M</span>
+                            <span className="text-gold font-bold text-sm">€{(selectedProperty.price / 1000000).toFixed(1)}M</span>
                         </div>
-                        <p className="text-white/40 text-[10px] uppercase tracking-wider mb-4">{selectedProperty.locationName}</p>
+                        <p className="text-white/60 text-[10px] uppercase tracking-wider mb-4">{selectedProperty.locationName}</p>
                         <div className="flex gap-4 mb-4 border-t border-white/5 pt-4">
                             <div className="flex items-center gap-1 text-xs text-white/60">
                                 <Home size={11} className="text-gold" /> {selectedProperty.beds}
@@ -182,7 +182,7 @@ const MaltaSVGFallback = ({
                                 <Bath size={11} className="text-gold" /> {selectedProperty.baths}
                             </div>
                             <div className="flex items-center gap-1 text-xs text-white/60">
-                                <Square size={11} className="text-gold" /> {selectedProperty.sqm}mÂ˛
+                                <Square size={11} className="text-gold" /> {selectedProperty.sqm}m²
                             </div>
                         </div>
                         <Link href={`/properties/${selectedProperty.id}`}
@@ -196,7 +196,7 @@ const MaltaSVGFallback = ({
     );
 };
 
-// â”€â”€â”€ Main DynamicMap (Mapbox or SVG fallback) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Main DynamicMap (Mapbox or SVG fallback) ────────────────────────────────
 interface DynamicMapProps {
     properties?: Property[];
     center?: [number, number];
@@ -258,7 +258,7 @@ export const DynamicMap: React.FC<DynamicMapProps> = ({
     );
 };
 
-// â”€â”€â”€ Mapbox View (only rendered when token is valid) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Mapbox View (only rendered when token is valid) ─────────────────────────
 const MapBoxView = ({
     MapComp,
     selectedProperty,
@@ -324,7 +324,7 @@ const MapBoxView = ({
                     >
                         <div className="group cursor-pointer">
                             <div className="bg-gold text-luxury-black px-3 py-1 rounded-full text-xs font-bold shadow-lg transform transition-transform group-hover:scale-110 border border-white/20">
-                                â‚¬{(property.price / 1000000).toFixed(1)}M
+                                €{(property.price / 1000000).toFixed(1)}M
                             </div>
                             <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-gold mx-auto" />
                         </div>
@@ -351,13 +351,13 @@ const MapBoxView = ({
                             <div className="p-4">
                                 <div className="flex justify-between items-start mb-2">
                                     <h3 className="font-serif text-lg leading-tight">{selectedProperty.title}</h3>
-                                    <span className="text-gold font-bold">â‚¬{(selectedProperty.price / 1000000).toFixed(1)}M</span>
+                                    <span className="text-gold font-bold">€{(selectedProperty.price / 1000000).toFixed(1)}M</span>
                                 </div>
                                 <p className="text-white/50 text-[10px] uppercase tracking-wider mb-4">{selectedProperty.locationName}</p>
                                 <div className="flex gap-4 mb-4 border-t border-white/5 pt-4">
                                     <div className="flex items-center gap-1.5 text-xs text-white/70"><Home size={12} className="text-gold" />{selectedProperty.beds}</div>
                                     <div className="flex items-center gap-1.5 text-xs text-white/70"><Bath size={12} className="text-gold" />{selectedProperty.baths}</div>
-                                    <div className="flex items-center gap-1.5 text-xs text-white/70"><Square size={12} className="text-gold" />{selectedProperty.sqm}mÂ˛</div>
+                                    <div className="flex items-center gap-1.5 text-xs text-white/70"><Square size={12} className="text-gold" />{selectedProperty.sqm}m²</div>
                                 </div>
                                 <Link href={`/properties/${selectedProperty.id}`}
                                     className="flex items-center justify-center gap-2 w-full py-2 bg-gold/10 hover:bg-gold/20 text-gold rounded-xl transition-all text-xs font-bold uppercase tracking-widest border border-gold/20">

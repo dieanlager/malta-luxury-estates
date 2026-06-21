@@ -37,7 +37,7 @@ export function AgencyLoginPage() {
             <span className="text-luxury-black font-serif font-bold text-2xl">M</span>
           </div>
           <h1 className="font-serif text-3xl text-white mb-2">Agency Login</h1>
-          <p className="text-white/40 text-sm">Malta Luxury Real Estate Agency Portal</p>
+          <p className="text-white/60 text-sm">Malta Luxury Real Estate Agency Portal</p>
         </div>
 
         <form onSubmit={handleSubmit} className="glass-card p-10 rounded-3xl border border-white/10 space-y-6">
@@ -47,7 +47,7 @@ export function AgencyLoginPage() {
             </div>
           )}
           <div>
-            <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Email</label>
+            <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Email</label>
             <input
               type="email"
               value={email}
@@ -58,7 +58,7 @@ export function AgencyLoginPage() {
             />
           </div>
           <div>
-            <label className="text-[10px] uppercase tracking-widest text-white/40 mb-2 block">Password</label>
+            <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Password</label>
             <input
               type="password"
               value={password}
@@ -75,7 +75,7 @@ export function AgencyLoginPage() {
           >
             {loading ? 'Signing in...' : 'Sign In'}
           </button>
-          <div className="flex justify-between text-xs text-white/30">
+          <div className="flex justify-between text-xs text-white/60">
             <Link href="/agency/forgot-password" className="hover:text-gold transition-colors">Forgot password?</Link>
             <Link href="/agency/register" className="hover:text-gold transition-colors">Register agency</Link>
           </div>

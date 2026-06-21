@@ -111,7 +111,7 @@ export function PropertyQuiz() {
           />
         ))}
       </div>
-      <p className="text-white/40 text-xs uppercase tracking-widest mb-4">
+      <p className="text-white/60 text-xs uppercase tracking-widest mb-4">
         Question {currentStep + 1} of {steps.length}
       </p>
       <h2 className="font-serif text-3xl text-white mb-10">{step.question}</h2>

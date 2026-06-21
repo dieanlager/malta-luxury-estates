@@ -1,4 +1,4 @@
-ï»¿'use client';
+'use client';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { useLocale } from 'next-intl';
@@ -36,7 +36,7 @@ export const BuyingCostsCalculator = () => {
           </div>
           <div>
             <h3 className="text-2xl font-serif text-white">{'Malta Buying Costs Calculator'}</h3>
-            <p className="text-white/40 text-xs uppercase tracking-widest font-bold">{'STAMP DUTY, NOTARY & ALL FEES'}</p>
+            <p className="text-white/60 text-xs uppercase tracking-widest font-bold">{'STAMP DUTY, NOTARY & ALL FEES'}</p>
           </div>
         </div>
       </div>
@@ -46,8 +46,8 @@ export const BuyingCostsCalculator = () => {
         <div className="space-y-10">
           <div>
             <div className="flex justify-between items-center mb-4">
-              <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Acquisition Price'}</label>
-              <span className="text-gold font-serif text-xl">â‚¬{price.toLocaleString(locale)}</span>
+              <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Acquisition Price'}</label>
+              <span className="text-gold font-serif text-xl">€{price.toLocaleString(locale)}</span>
             </div>
             <input
               type="range"
@@ -71,7 +71,7 @@ export const BuyingCostsCalculator = () => {
                   setIsGozo(false);
                 }
               }}
-              className={`p-5 rounded-2xl border transition-all text-left ${isFirstBuy ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
+              className={`p-5 rounded-2xl border transition-all text-left ${isFirstBuy ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}
             >
               <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{'First-Time Buyer'}</div>
               <div className="text-xs">{isFirstBuy ? 'Reduced 3.5% stamp duty applies' : 'Standard 5% stamp duty'}</div>
@@ -85,7 +85,7 @@ export const BuyingCostsCalculator = () => {
                   setIsGozo(false);
                 }
               }}
-              className={`p-5 rounded-2xl border transition-all text-left ${isUCA ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
+              className={`p-5 rounded-2xl border transition-all text-left ${isUCA ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}
             >
               <div className="text-[10px] font-bold uppercase tracking-widest mb-1">{'UCA / Village Core'}</div>
               <div className="text-xs">{isUCA ? 'Heritage grants may apply' : 'No heritage grant'}</div>
@@ -98,7 +98,7 @@ export const BuyingCostsCalculator = () => {
                 setIsGozo(!isGozo);
                 if (!isGozo) setIsUCA(false);
               }}
-              className={`p-4 rounded-xl border text-center transition-all ${isGozo ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
+              className={`p-4 rounded-xl border text-center transition-all ${isGozo ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}
             >
               <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">{'Gozo Scheme'}</div>
               <div className="text-lg font-serif">2%</div>
@@ -106,7 +106,7 @@ export const BuyingCostsCalculator = () => {
 
             <button
               onClick={() => setIsPrimaryResidence(!isPrimaryResidence)}
-              className={`p-4 rounded-xl border text-center transition-all ${isPrimaryResidence && !isFirstBuy ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
+              className={`p-4 rounded-xl border text-center transition-all ${isPrimaryResidence && !isFirstBuy ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}
               disabled={isFirstBuy}
             >
               <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">{'Primary Home'}</div>
@@ -115,10 +115,10 @@ export const BuyingCostsCalculator = () => {
 
             <button
               onClick={() => setNeedsAIP(!needsAIP)}
-              className={`p-4 rounded-xl border text-center transition-all ${needsAIP ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/40'}`}
+              className={`p-4 rounded-xl border text-center transition-all ${needsAIP ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}
             >
               <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">{'AIP Required'}</div>
-              <div className="text-lg font-serif">â‚¬233</div>
+              <div className="text-lg font-serif">€233</div>
             </button>
           </div>
         </div>
@@ -126,26 +126,26 @@ export const BuyingCostsCalculator = () => {
         {/* RESULTS */}
         <div className="bg-luxury-black/40 rounded-3xl p-8 border border-white/10 relative overflow-hidden flex flex-col justify-between">
           <div className="space-y-6">
-            <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-8">{'COST BREAKDOWN'}</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-8">{'COST BREAKDOWN'}</h4>
 
             <div className="flex justify-between items-center">
               <span className="text-sm text-white/60 flex items-center gap-2">
                 <Percent size={14} className="text-gold/40" /> {'Net Stamp Duty'}
               </span>
-              <span className="text-lg font-serif text-gold">â‚¬{result?.stampDuty.toLocaleString(locale)}</span>
+              <span className="text-lg font-serif text-gold">€{result?.stampDuty.toLocaleString(locale)}</span>
             </div>
 
             <div className="flex justify-between items-center">
               <span className="text-sm text-white/60 flex items-center gap-2">
                 <FileText size={14} className="text-gold/40" /> {'Notary Searches'}
               </span>
-              <span className="text-lg font-serif text-white">â‚¬{result?.notaryFees.toLocaleString(locale)}</span>
+              <span className="text-lg font-serif text-white">€{result?.notaryFees.toLocaleString(locale)}</span>
             </div>
 
             {needsAIP && (
               <div className="flex justify-between items-center">
                 <span className="text-sm text-white/60">{'AIP Permit'}</span>
-                <span className="text-lg font-serif">â‚¬233</span>
+                <span className="text-lg font-serif">€233</span>
               </div>
             )}
           </div>
@@ -156,13 +156,13 @@ export const BuyingCostsCalculator = () => {
                 <div className="text-[10px] font-bold uppercase tracking-widest text-gold">{'TOTAL EXTRA COSTS'}</div>
                 <div className="text-xs text-white/20 uppercase tracking-widest font-bold">{`~${result?.costPercentage.toFixed(2)}% of purchase price`}</div>
               </div>
-              <div className="text-4xl font-serif text-gold">â‚¬{result?.totalAcquisitionCosts.toLocaleString(locale)}</div>
+              <div className="text-4xl font-serif text-gold">€{result?.totalAcquisitionCosts.toLocaleString(locale)}</div>
             </div>
 
             <div className="p-6 bg-gold text-luxury-black rounded-3xl flex items-center justify-between">
               <div>
                 <div className="text-[10px] font-bold uppercase tracking-widest opacity-60">{'TOTAL CAPITAL INVESTMENT'}</div>
-                <div className="text-2xl font-serif font-bold">â‚¬{result?.totalInvestment.toLocaleString(locale)}</div>
+                <div className="text-2xl font-serif font-bold">€{result?.totalInvestment.toLocaleString(locale)}</div>
               </div>
               <div className="w-12 h-12 bg-luxury-black/10 rounded-full flex items-center justify-center">
                 <Euro size={24} />

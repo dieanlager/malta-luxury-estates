@@ -38,7 +38,7 @@ export const ROICalculator = () => {
                     </div>
                     <div>
                         <h3 className="text-2xl font-serif text-white">Malta ROI Calculator</h3>
-                        <p className="text-white/40 text-xs uppercase tracking-widest font-bold">NET YIELD & PAYBACK ANALYSIS</p>
+                        <p className="text-white/60 text-xs uppercase tracking-widest font-bold">NET YIELD & PAYBACK ANALYSIS</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ export const ROICalculator = () => {
                 <div className="space-y-10">
                     <div>
                         <div className="flex justify-between items-center mb-4">
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Total Investment</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">Total Investment</label>
                             <span className="text-emerald-400 font-serif text-xl">€{fmtItems(purchasePrice)}</span>
                         </div>
                         <input
@@ -60,7 +60,7 @@ export const ROICalculator = () => {
 
                     <div className="grid grid-cols-2 gap-8">
                         <div>
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">Monthly Rent</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60 block mb-4">Monthly Rent</label>
                             <div className="relative">
                                 <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
                                 <input type="number" value={monthlyRent} onChange={(e) => setMonthlyRent(Number(e.target.value))}
@@ -68,7 +68,7 @@ export const ROICalculator = () => {
                             </div>
                         </div>
                         <div>
-                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">Monthly Expenses</label>
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60 block mb-4">Monthly Expenses</label>
                             <div className="relative">
                                 <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
                                 <input type="number" value={monthlyExp} onChange={(e) => setMonthlyExp(Number(e.target.value))}
@@ -78,11 +78,11 @@ export const ROICalculator = () => {
                     </div>
 
                     <div>
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/40 block mb-4">Management Fee</label>
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/60 block mb-4">Management Fee</label>
                         <div className="flex gap-4">
                             {[0, 5, 8, 10, 15].map(v => (
                                 <button key={v} onClick={() => setManagementFee(v)}
-                                    className={`flex-1 py-3 rounded-xl border text-[10px] font-bold transition-all ${managementFee === v ? 'bg-emerald-500 text-luxury-black border-emerald-500' : 'bg-white/5 border-white/10 text-white/40'}`}>
+                                    className={`flex-1 py-3 rounded-xl border text-[10px] font-bold transition-all ${managementFee === v ? 'bg-emerald-500 text-luxury-black border-emerald-500' : 'bg-white/5 border-white/10 text-white/60'}`}>
                                     {v}%
                                 </button>
                             ))}
@@ -94,11 +94,11 @@ export const ROICalculator = () => {
                 <div className="relative">
                     <div className="grid grid-cols-2 gap-4 mb-8">
                         <div className="bg-white/5 p-6 rounded-3xl border border-white/10 border-b-emerald-500/50">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">Net Yearly Profit</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">Net Yearly Profit</div>
                             <div className="text-3xl font-serif text-emerald-400">€{fmtItems(result?.netYearlyRent ?? 0)}</div>
                         </div>
                         <div className="bg-white/5 p-6 rounded-3xl border border-white/10 border-b-blue-500/50">
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">Rental Tax (15%)</div>
+                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">Rental Tax (15%)</div>
                             <div className="text-3xl font-serif text-blue-400 text-right">€{fmtItems(result?.rentalTax ?? 0)}</div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@ export const ROICalculator = () => {
                             <div className="flex items-center gap-3">
                                 <Activity className="text-emerald-400" size={24} />
                                 <div>
-                                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/30">Net Yield</div>
+                                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/60">Net Yield</div>
                                     <div className="text-sm text-emerald-400/60 font-serif">After tax & expenses</div>
                                 </div>
                             </div>
@@ -116,12 +116,12 @@ export const ROICalculator = () => {
                         </div>
 
                         <div className="flex justify-between items-center p-4 px-6 border border-white/5 rounded-2xl">
-                            <span className="text-xs text-white/40">Gross Yield</span>
+                            <span className="text-xs text-white/60">Gross Yield</span>
                             <span className="text-lg font-serif">{result?.grossYield.toFixed(2)}%</span>
                         </div>
 
                         <div className="flex justify-between items-center p-4 px-6 border border-white/5 rounded-2xl">
-                            <span className="text-xs text-white/40">Payback Period</span>
+                            <span className="text-xs text-white/60">Payback Period</span>
                             <span className="text-lg font-serif">{result?.paybackPeriodYears.toFixed(1)} yrs</span>
                         </div>
                     </div>

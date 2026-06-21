@@ -76,7 +76,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                                         <CheckCircle className="text-green-400" size={32} />
                                     </div>
                                     <h4 className="text-xl font-serif mb-2">Inquiry Sent Successfully</h4>
-                                    <p className="text-white/40 text-sm mb-8">
+                                    <p className="text-white/60 text-sm mb-8">
                                         We'll forward your inquiry to the agent. You should receive a response within 24 hours.
                                     </p>
                                     <button
