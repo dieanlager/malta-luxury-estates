@@ -11,7 +11,7 @@ export const ImgWithPlaceholder: React.FC<ImgWithPlaceholderProps> = ({ src, alt
     const [isLoaded, setIsLoaded] = useState(false);
 
     return (
-        <div className={elative overflow-hidden }>
+        <div className={`relative overflow-hidden ${className}`}>
             <div
                 className="absolute inset-0 bg-[#0a0a0a] flex items-center justify-center overflow-hidden transition-opacity duration-500"
                 style={{ opacity: isLoaded ? 0 : 1, pointerEvents: isLoaded ? 'none' : 'auto' }}
@@ -25,7 +25,7 @@ export const ImgWithPlaceholder: React.FC<ImgWithPlaceholderProps> = ({ src, alt
                 src={src}
                 alt={alt}
                 onLoad={() => setIsLoaded(true)}
-                className={w-full h-full object-cover transition-all duration-1000 }
+                className={`w-full h-full object-cover transition-all duration-1000 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
                 loading={priority ? "eager" : "lazy"}
                 referrerPolicy="no-referrer"
             />

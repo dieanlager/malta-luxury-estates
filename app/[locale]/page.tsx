@@ -7,11 +7,7 @@ import { PropertyCard } from '@/src/components/PropertyCard';
 import { Link } from '@/src/navigation';
 import { HeroSection } from '@/src/components/HeroSection';
 import { MarketSnapshot } from '@/src/components/MarketSnapshot';
-import dynamic from 'next/dynamic';
-const InteractiveTools = dynamic(
-  () => import('@/src/components/InteractiveTools').then(m => ({ default: m.InteractiveTools })),
-  { ssr: false, loading: () => <div className="h-64 py-20" /> }
-);
+import { InteractiveToolsLazy as InteractiveTools } from '@/src/components/InteractiveToolsLazy';
 import { MapSection } from '@/src/components/MapSection';
 import { ChevronRight, ArrowRight, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
