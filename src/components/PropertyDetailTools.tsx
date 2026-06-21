@@ -1,5 +1,5 @@
 ﻿'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { Property } from '@/src/types';
 import { ROICalculator } from '@/src/components/ROICalculator';
@@ -28,6 +28,40 @@ const TABS: { id: ActiveTool; label: string }[] = [
   { id: 'noise', label: 'Noise Analysis' },
 ];
 
+
+function LocationSection({ property }: { property: Property }) {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setIsVisible(true); observer.disconnect(); } },
+      { rootMargin: '200px' }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-white/10">
+      <div className="flex items-center gap-3 mb-8">
+        <div className="w-8 h-8 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center">
+          <MapPin size={14} className="text-gold" aria-hidden="true" />
+        </div>
+        <h2 className="font-serif text-2xl text-white">Location</h2>
+      </div>
+      <div className="glass-card border border-white/10 rounded-2xl overflow-hidden h-[400px]">
+        {isVisible ? (
+          <DynamicMap properties={[property]} />
+        ) : (
+          <div className="w-full h-full bg-white/5 animate-pulse rounded-2xl" />
+        )}
+      </div>
+    </section>
+  );
+}
 export default function PropertyDetailTools({ property }: Props) {
   const [active, setActive] = useState<ActiveTool>('roi');
 
@@ -95,17 +129,7 @@ export default function PropertyDetailTools({ property }: Props) {
       </section>
 
       {/* ── Location ─────────────────────────────────────────────── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-white/10">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-8 h-8 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center">
-            <MapPin size={14} className="text-gold" aria-hidden="true" />
-          </div>
-          <h2 className="font-serif text-2xl text-white">Location</h2>
-        </div>
-        <div className="glass-card border border-white/10 rounded-2xl overflow-hidden h-[400px]">
-          <DynamicMap properties={[property]} />
-        </div>
-      </section>
+      <LocationSection property={property} />
     </>
   );
 }
