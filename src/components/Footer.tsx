@@ -49,7 +49,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-8">{t('footer.quick_links', { defaultValue: 'Quick Links' })}</h4>
+            <p className="font-serif text-lg mb-8 font-semibold">{t('footer.quick_links', { defaultValue: 'Quick Links' })}</p>
             <ul className="space-y-4 text-sm text-white/40">
               <li><Link href="/market/live" className="hover:text-gold transition-colors flex items-center gap-2">{t('nav.market_pulse', { defaultValue: 'Market Pulse' })} <span className="w-1 h-1 rounded-full bg-red-500" /></Link></li>
               <li><Link href="/tools/quiz" className="hover:text-gold transition-colors font-bold text-white">{t('footer.quiz', { defaultValue: 'Property Quiz' })}</Link></li>
@@ -63,7 +63,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-8">{t('footer.legal', { defaultValue: 'Legal' })}</h4>
+            <p className="font-serif text-lg mb-8 font-semibold">{t('footer.legal', { defaultValue: 'Legal' })}</p>
             <ul className="space-y-4 text-sm text-white/40">
               <li><Link href="/about" className="hover:text-gold transition-colors">{t('nav.about', { defaultValue: 'About Us' })}</Link></li>
               <li><Link href="/contact" className="hover:text-gold transition-colors">{t('nav.contact', { defaultValue: 'Contact' })}</Link></li>
@@ -74,7 +74,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-8">{t('footer.knowledge_hub', { defaultValue: 'Knowledge Hub' })}</h4>
+            <p className="font-serif text-lg mb-8 font-semibold">{t('footer.knowledge_hub', { defaultValue: 'Knowledge Hub' })}</p>
             <ul className="space-y-4 text-sm text-white/40">
               {articleLinks.map(a => (
                 <li key={a.slug}>
@@ -85,7 +85,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-8">{t('footer.newsletter.title', { defaultValue: 'Newsletter' })}</h4>
+            <p className="font-serif text-lg mb-8 font-semibold">{t('footer.newsletter.title', { defaultValue: 'Newsletter' })}</p>
             <p className="text-sm text-white/40 mb-6">{t('footer.newsletter.subtitle', { defaultValue: 'Get exclusive market insights.' })}</p>
             <NewsletterForm />
           </div>
@@ -108,4 +108,5 @@ export function Footer() {
     </footer>
   );
 }
+
 
