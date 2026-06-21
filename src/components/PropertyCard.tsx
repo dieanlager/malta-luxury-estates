@@ -10,6 +10,7 @@ import { FavoriteButton } from '@/src/components/FavoriteButton';
 
 interface PropertyCardProps {
   property: Property;
+  priority?: boolean;
   isFavorite?: boolean;
   onToggleFavorite?: (id: string) => void;
   onContact?: (id: string, title: string) => void;
@@ -17,6 +18,7 @@ interface PropertyCardProps {
 
 export const PropertyCard: React.FC<PropertyCardProps> = ({
   property,
+  priority: imagePriority = false,
   isFavorite = false,
   onToggleFavorite,
   onContact,
@@ -38,6 +40,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover transition-transform duration-500 group-hover:scale-[1.08]"
+            priority={imagePriority}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-transparent opacity-60" />
         </Link>
@@ -97,7 +100,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
               {[
                 { icon: Bed, label: t('common.beds_short', { defaultValue: 'Beds' }), value: property.beds },
                 { icon: Bath, label: t('common.baths_short', { defaultValue: 'Baths' }), value: property.baths },
-                { icon: Maximize, label: 'mÂ˛', value: property.sqm },
+                { icon: Maximize, label: 'm²', value: property.sqm },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
@@ -124,4 +127,3 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
     </motion.div>
   );
 };
-

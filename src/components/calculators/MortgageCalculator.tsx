@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useState, useEffect } from 'react';
 import { Home, Info } from 'lucide-react';
 import { useLocale } from 'next-intl';
@@ -127,7 +127,7 @@ export const MortgageCalculator = () => {
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Property Price'}</label>
                             <span className="text-blue-400 font-serif text-xl">€{fmtItems(propertyPrice)}</span>
                         </div>
-                        <input type="range" min="100000" max="5000000" step="25000" value={propertyPrice}
+                        <input type="range" aria-label="Adjust value" min="100000" max="5000000" step="25000" value={propertyPrice}
                             onChange={e => setPropertyPrice(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                         <div className="flex justify-between text-[10px] text-white/20 mt-1">
@@ -144,7 +144,7 @@ export const MortgageCalculator = () => {
                                 <span className="text-white/30 text-xs ml-2">({depositPct}%)</span>
                             </div>
                         </div>
-                        <input type="range" min={isResident ? 10 : 30} max={80} step="5" value={depositPct}
+                        <input type="range" aria-label="Adjust value" min={isResident ? 10 : 30} max={80} step="5" value={depositPct}
                             onChange={e => setDepositPct(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                         <div className="flex justify-between text-[10px] text-white/20 mt-1">
@@ -158,7 +158,7 @@ export const MortgageCalculator = () => {
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">{'Interest Rate'}</label>
                             <span className="text-blue-400 font-serif text-xl">{interestRate.toFixed(2)}%</span>
                         </div>
-                        <input type="range" min="2.5" max="7" step="0.05" value={interestRate}
+                        <input type="range" aria-label="Adjust value" min="2.5" max="7" step="0.05" value={interestRate}
                             onChange={e => setInterestRate(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                         <div className="flex justify-between text-[10px] text-white/20 mt-1">
@@ -256,3 +256,4 @@ export const MortgageCalculator = () => {
         </div>
     );
 };
+

@@ -83,6 +83,8 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                         <span className="text-gold font-serif text-lg">€{monthlyRent.toLocaleString()}</span>
                                     </div>
                                     <input
+                                        aria-label="Adjust value"
+
                                         type="range"
                                         min={Math.round(property.price * 0.001)}
                                         max={Math.round(property.price * 0.01)}
@@ -173,3 +175,4 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
         </div>
     );
 };
+

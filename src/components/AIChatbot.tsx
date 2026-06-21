@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Bot, User, Loader2, Sparkles, ShieldCheck } from 'lucide-react';
@@ -52,6 +52,7 @@ export const AIChatbot = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Close AI assistant" : "Open AI assistant"}
                 className="fixed bottom-8 left-8 z-[60] w-14 h-14 gold-gradient rounded-full shadow-2xl flex items-center justify-center text-luxury-black group"
             >
                 <AnimatePresence mode="wait">
@@ -182,3 +183,4 @@ async function simulateAIResponse(query: string): Promise<string> {
 
     return "That is an excellent question. Based on our 2026 Market Intelligence, the Maltese market is particularly favorable for that type of inquiry. To give you a precise legal and financial answer, would you like to speak with one of our specialized acquisition consultants?";
 }
+

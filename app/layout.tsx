@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 import './globals.css';
 
@@ -42,12 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html suppressHydrationWarning className={`${cormorant.variable} ${inter.variable}`}>
       <head>
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`} />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');`,
-          }}
-        />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://region1.google-analytics.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -80,7 +77,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">{`
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','${ga4Id}');
+        `}</Script>
+      </body>
     </html>
   );
 }

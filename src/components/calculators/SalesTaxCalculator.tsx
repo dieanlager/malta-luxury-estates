@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { useLocale } from 'next-intl';
@@ -45,6 +45,8 @@ export const SalesTaxCalculator = () => {
                             <span className="text-amber-400 font-serif text-xl">€{sellingPrice.toLocaleString(locale)}</span>
                         </div>
                         <input
+                            aria-label="Adjust value"
+
                             type="range"
                             min="100000"
                             max="10000000"
@@ -132,3 +134,4 @@ export const SalesTaxCalculator = () => {
         </div>
     );
 };
+

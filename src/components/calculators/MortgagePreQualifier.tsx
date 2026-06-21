@@ -266,6 +266,8 @@ export const MortgagePreQualifier: React.FC = () => {
                                             <span className="text-lg font-serif text-white">{`${data.age} years old`}</span>
                                         </div>
                                         <input
+                                            aria-label="Adjust value"
+
                                             type="range"
                                             min="18"
                                             max="64"
@@ -295,6 +297,8 @@ export const MortgagePreQualifier: React.FC = () => {
                                                 <span className="text-xl font-serif text-white">€{data.monthlyIncome.toLocaleString(locale)}</span>
                                             </div>
                                             <input
+                                                aria-label="Adjust value"
+
                                                 type="range"
                                                 min="1000"
                                                 max="15000"
@@ -310,6 +314,8 @@ export const MortgagePreQualifier: React.FC = () => {
                                                 <span className="text-xl font-serif text-white">€{data.savings.toLocaleString(locale)}</span>
                                             </div>
                                             <input
+                                                aria-label="Adjust value"
+
                                                 type="range"
                                                 min="5000"
                                                 max="500000"
@@ -382,6 +388,8 @@ export const MortgagePreQualifier: React.FC = () => {
                                             <span className="text-xl font-serif text-white">€{data.monthlyDebts.toLocaleString(locale)}</span>
                                         </div>
                                         <input
+                                            aria-label="Adjust value"
+
                                             type="range"
                                             min="0"
                                             max="5000"
@@ -429,3 +437,4 @@ export const MortgagePreQualifier: React.FC = () => {
         </div>
     );
 };
+

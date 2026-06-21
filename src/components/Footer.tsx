@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/src/navigation';
 import { ArrowUpRight } from 'lucide-react';
@@ -27,7 +27,7 @@ export function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-12 gap-x-8">
             {LOCATIONS.filter(l => l.isPopular).slice(0, 10).map(city => (
               <Link key={city.slug} href={`/properties/${city.slug}` as any} className="group block">
-                <h4 className="text-white group-hover:text-gold transition-colors font-serif text-lg mb-1">{city.nameEn}</h4>
+                <p className="text-white group-hover:text-gold transition-colors font-serif text-lg mb-1">{city.nameEn}</p>
                 <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold block">{t('common.estate_in', { location: city.nameEn, defaultValue: `Estate in ${city.nameEn}` })}</span>
                 <div className="h-0.5 w-0 group-hover:w-12 bg-gold mt-4 transition-all duration-300" />
               </Link>
@@ -108,3 +108,4 @@ export function Footer() {
     </footer>
   );
 }
+

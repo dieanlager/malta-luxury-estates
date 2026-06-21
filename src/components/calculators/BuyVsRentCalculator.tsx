@@ -331,7 +331,7 @@ export const BuyVsRentCalculator = () => {
                                     <span className="text-white/30 text-xs ml-2">({depositPct}%)</span>
                                 </div>
                             </div>
-                            <input type="range" min="20" max="80" step="5" value={depositPct}
+                            <input type="range" aria-label="Adjust value" min="20" max="80" step="5" value={depositPct}
                                 onChange={e => setDepositPct(+e.target.value)}
                                 className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-yellow-500" />
                         </div>
@@ -566,3 +566,4 @@ export const BuyVsRentCalculator = () => {
         </div>
     );
 };
+

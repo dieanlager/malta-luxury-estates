@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { useLocale } from 'next-intl';
@@ -51,6 +51,7 @@ export const BuyingCostsCalculator = () => {
             </div>
             <input
               type="range"
+              aria-label="Acquisition price"
               min="100000"
               max="10000000"
               step="50000"
@@ -173,3 +174,4 @@ export const BuyingCostsCalculator = () => {
     </div>
   );
 };
+
