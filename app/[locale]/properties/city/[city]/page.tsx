@@ -1,19 +1,37 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { CityListings } from '@/src/components/CityListings';
 import { MarketSnapshot } from '@/src/components/MarketSnapshot';
 import { getLocationBySlug, getLocationStats } from '@/src/lib/data';
 
+export const revalidate = 3600;
+
 interface Props {
   params: Promise<{ locale: string; city: string }>;
 }
 
+const base = 'https://www.maltaluxuryrealestate.com';
+const locales = ['en', 'de', 'fr', 'it', 'pl'];
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { city } = await params;
+  const { locale, city } = await params;
   const cityName = city.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const prefix = locale === 'en' ? '' : `/${locale}`;
+  const path = `/properties/city/${city}`;
+
   return {
     title: `Properties in ${cityName}`,
     description: `Browse luxury properties for sale in ${cityName}, Malta.`,
+    robots: { index: true, follow: true },
+    alternates: {
+      canonical: `${base}${prefix}${path}`,
+      languages: {
+        'x-default': `${base}${path}`,
+        ...Object.fromEntries(
+          locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}${path}`])
+        ),
+      },
+    },
   };
 }
 

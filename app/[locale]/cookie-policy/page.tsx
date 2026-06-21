@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { LegalLayout, CookieIcon } from '@/src/components/LegalLayout';
 import { routing } from '@/src/i18n/routing';
@@ -6,9 +7,28 @@ export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export const metadata = {
-  robots: { index: false, follow: true },
-};
+const base = 'https://www.maltaluxuryrealestate.com';
+const path = '/cookie-policy';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const prefix = locale === 'en' ? '' : `/${locale}`;
+
+  return {
+    title: 'Cookie Policy | Malta Luxury Real Estate',
+    description: 'Our cookie policy explains how we use cookies on maltaluxuryrealestate.com.',
+    robots: { index: false, follow: true },
+    alternates: {
+      canonical: `${base}${prefix}${path}`,
+      languages: {
+        'x-default': `${base}${path}`,
+        ...Object.fromEntries(
+          routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}${path}`])
+        ),
+      },
+    },
+  };
+}
 
 export default async function CookiePolicyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
