@@ -61,7 +61,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
 
   return (
     <>
-      {/* ¦¦ Desktop mosaic ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦ */}
+      {/* Â¦Â¦ Desktop mosaic Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦ */}
       <div className="relative hidden md:block h-[70vh]">
         <div className={`grid h-full gap-0.5 ${hasRightGrid ? 'grid-cols-[65%_35%]' : 'grid-cols-1'}`}>
 
@@ -132,7 +132,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
         </button>
       </div>
 
-      {/* ¦¦ Mobile Embla slider ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦ */}
+      {/* Â¦Â¦ Mobile Embla slider Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦ */}
       <div className="relative md:hidden">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
@@ -177,7 +177,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
         </div>
       </div>
 
-      {/* ¦¦ Lightbox ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦ */}
+      {/* Â¦Â¦ Lightbox Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦ */}
       <Lightbox
         open={lightboxOpen}
         close={() => setLightboxOpen(false)}

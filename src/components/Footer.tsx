@@ -93,7 +93,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
           <p>
-            © {new Date().getFullYear()} Malta Luxury Real Estate. All rights reserved.
+            Â© {new Date().getFullYear()} Malta Luxury Real Estate. All rights reserved.
             <span className="mx-2 opacity-20">|</span>
             {t('footer.design_by', { defaultValue: 'Design by' })}{' '}
             <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium normal-case">Brand House</a>
