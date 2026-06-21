@@ -1,6 +1,5 @@
 ﻿'use client';
 import Image from 'next/image';
-import { motion } from 'motion/react';
 import { Bed, Bath, Maximize, ExternalLink, MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/src/navigation';
@@ -28,8 +27,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   const propertyUrl = `/properties/${property.slug ?? property.id}` as any;
 
   return (
-    <motion.div
-      className="group bg-white/[0.03] border border-white/10 rounded-3xl overflow-hidden hover:border-gold/30 transition-all duration-500 shadow-xl flex flex-col h-full"
+    <div className="group bg-white/[0.03] border border-white/10 rounded-3xl overflow-hidden hover:border-gold/30 transition-all duration-500 shadow-xl flex flex-col h-full"
     >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -124,7 +122,6 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           <ExternalLink size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
-
