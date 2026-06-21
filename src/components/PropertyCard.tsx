@@ -78,9 +78,9 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           </div>
 
           <Link href={propertyUrl}>
-            <h3 className="text-xl font-serif text-white mb-4 group-hover:text-gold transition-colors line-clamp-2 min-h-[3.5rem]">
+            <p className="text-xl font-serif text-white mb-4 group-hover:text-gold transition-colors line-clamp-2 min-h-[3.5rem]">
               {property.title}
-            </h3>
+            </p>
           </Link>
 
           <div className="mt-auto">
@@ -127,3 +127,4 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
     </motion.div>
   );
 };
+
