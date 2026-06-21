@@ -62,7 +62,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                         <span className="text-[10px] text-white/60 uppercase font-bold tracking-widest">Expected Net Yield</span>
                         <span className="text-2xl font-serif text-emerald-400">{calculations.netYield.toFixed(2)}%</span>
                     </div>
-                    {isExpanded ? <ChevronUp size={24} className="text-white/20" /> : <ChevronDown size={24} className="text-white/20" />}
+                    {isExpanded ? <ChevronUp size={24} className="text-white/70" /> : <ChevronDown size={24} className="text-white/70" />}
                 </div>
             </button>
 
@@ -93,7 +93,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                         onChange={(e) => setMonthlyRent(parseInt(e.target.value))}
                                         className="w-full h-1.5 bg-white/10 rounded-full appearance-none cursor-pointer accent-gold"
                                     />
-                                    <div className="flex justify-between text-[10px] text-white/20">
+                                    <div className="flex justify-between text-[10px] text-white/70">
                                         <span>Conservative</span>
                                         <span>Aggressive (Short-let)</span>
                                     </div>
@@ -103,7 +103,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                     <div className="space-y-2">
                                         <label className="text-[10px] font-bold text-white/60 uppercase tracking-widest">Management Fee (%)</label>
                                         <div className="relative">
-                                            <Percent className="absolute left-3 top-1/2 -translate-y-1/2 text-white/20" size={14} />
+                                            <Percent className="absolute left-3 top-1/2 -translate-y-1/2 text-white/70" size={14} />
                                             <input
                                                 type="number"
                                                 value={managementFeePercent}
@@ -115,7 +115,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                     <div className="space-y-2">
                                         <label className="text-[10px] font-bold text-white/60 uppercase tracking-widest">Maintenance (%)</label>
                                         <div className="relative">
-                                            <Percent className="absolute left-3 top-1/2 -translate-y-1/2 text-white/20" size={14} />
+                                            <Percent className="absolute left-3 top-1/2 -translate-y-1/2 text-white/70" size={14} />
                                             <input
                                                 type="number"
                                                 value={maintenancePercent}
@@ -161,8 +161,8 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                         </div>
                                     </div>
                                     <div className="pt-6 border-t border-white/5 flex items-center gap-3">
-                                        <Info className="text-white/20" size={14} />
-                                        <p className="text-[10px] text-white/20 italic font-medium leading-relaxed">
+                                        <Info className="text-white/70" size={14} />
+                                        <p className="text-[10px] text-white/70 italic font-medium leading-relaxed">
                                             Estimates based on current 2026 market data. Includes 15% TA24 rental tax and operating reservations.
                                         </p>
                                     </div>

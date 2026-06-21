@@ -137,30 +137,30 @@ export const PropertyPriceOracle: React.FC = () => {
                                 <div className="lg:col-span-4 bg-black/40 border-r border-white/5 p-10 flex flex-col justify-between">
                                     <div className="space-y-12">
                                         <div className="flex items-center gap-4 group">
-                                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${step >= 1 ? 'bg-gold border-gold text-luxury-black' : 'border-white/10 text-white/20'}`}>
+                                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${step >= 1 ? 'bg-gold border-gold text-luxury-black' : 'border-white/10 text-white/70'}`}>
                                                 <MapPin size={18} />
                                             </div>
                                             <div>
-                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 1 ? 'text-gold' : 'text-white/20'}`}>{t('oracle.step')} 01</div>
-                                                <div className={`text-sm font-serif ${step >= 1 ? 'text-white' : 'text-white/20'}`}>{t('common.location')} & {t('common.type')}</div>
+                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 1 ? 'text-gold' : 'text-white/70'}`}>{t('oracle.step')} 01</div>
+                                                <div className={`text-sm font-serif ${step >= 1 ? 'text-white' : 'text-white/70'}`}>{t('common.location')} & {t('common.type')}</div>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-4 group">
-                                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${step >= 2 ? 'bg-gold border-gold text-luxury-black' : 'border-white/10 text-white/20'}`}>
+                                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${step >= 2 ? 'bg-gold border-gold text-luxury-black' : 'border-white/10 text-white/70'}`}>
                                                 <Maximize size={18} />
                                             </div>
                                             <div>
-                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 2 ? 'text-gold' : 'text-white/20'}`}>{t('oracle.step')} 02</div>
-                                                <div className={`text-sm font-serif ${step >= 2 ? 'text-white' : 'text-white/20'}`}>{t('oracle.attributes_title')}</div>
+                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 2 ? 'text-gold' : 'text-white/70'}`}>{t('oracle.step')} 02</div>
+                                                <div className={`text-sm font-serif ${step >= 2 ? 'text-white' : 'text-white/70'}`}>{t('oracle.attributes_title')}</div>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-4 group">
-                                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${step >= 3 ? 'bg-gold border-gold text-luxury-black' : 'border-white/10 text-white/20'}`}>
+                                            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${step >= 3 ? 'bg-gold border-gold text-luxury-black' : 'border-white/10 text-white/70'}`}>
                                                 <Sparkles size={18} />
                                             </div>
                                             <div>
-                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 3 ? 'text-gold' : 'text-white/20'}`}>{t('oracle.step')} 03</div>
-                                                <div className={`text-sm font-serif ${step >= 3 ? 'text-white' : 'text-white/20'}`}>{t('oracle.analysis_complete')}</div>
+                                                <div className={`text-[10px] font-bold uppercase tracking-widest ${step >= 3 ? 'text-gold' : 'text-white/70'}`}>{t('oracle.step')} 03</div>
+                                                <div className={`text-sm font-serif ${step >= 3 ? 'text-white' : 'text-white/70'}`}>{t('oracle.analysis_complete')}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -207,7 +207,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     >
                                                         {t('oracle.loading_title')}
                                                     </motion.h3>
-                                                    <div className="text-white/20 text-sm">{t('oracle.loading_subtitle')}</div>
+                                                    <div className="text-white/70 text-sm">{t('oracle.loading_subtitle')}</div>
                                                 </div>
                                             </motion.div>
                                         ) : null}
@@ -321,10 +321,10 @@ export const PropertyPriceOracle: React.FC = () => {
                                                                     onChange={(e) => setSpecs({ ...specs, isSeafront: e.target.checked })}
                                                                     className="hidden"
                                                                 />
-                                                                <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${specs.isSeafront ? 'bg-blue-500/20 border-blue-500 text-blue-400' : 'border-white/10 text-white/20'}`}>
+                                                                <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${specs.isSeafront ? 'bg-blue-500/20 border-blue-500 text-blue-400' : 'border-white/10 text-white/70'}`}>
                                                                     <Waves size={18} />
                                                                 </div>
-                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.isSeafront ? 'text-white' : 'text-white/20'}`}>{t('badges.seafront')}</span>
+                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.isSeafront ? 'text-white' : 'text-white/70'}`}>{t('badges.seafront')}</span>
                                                             </label>
                                                             <label className="flex items-center gap-3 cursor-pointer group">
                                                                 <input
@@ -333,10 +333,10 @@ export const PropertyPriceOracle: React.FC = () => {
                                                                     onChange={(e) => setSpecs({ ...specs, hasPool: e.target.checked })}
                                                                     className="hidden"
                                                                 />
-                                                                <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${specs.hasPool ? 'bg-gold/20 border-gold text-gold' : 'border-white/10 text-white/20'}`}>
+                                                                <div className={`w-10 h-10 rounded-xl flex items-center justify-center border transition-all ${specs.hasPool ? 'bg-gold/20 border-gold text-gold' : 'border-white/10 text-white/70'}`}>
                                                                     <Sun size={18} />
                                                                 </div>
-                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.hasPool ? 'text-white' : 'text-white/20'}`}>{t('badges.pool')}</span>
+                                                                <span className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${specs.hasPool ? 'text-white' : 'text-white/70'}`}>{t('badges.pool')}</span>
                                                             </label>
                                                         </div>
                                                     </div>
@@ -347,7 +347,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                                 <button
                                                                     key={v}
                                                                     onClick={() => setSpecs({ ...specs, view: v })}
-                                                                    className={`h-10 rounded-lg border flex items-center justify-center transition-all ${specs.view === v ? 'bg-white/10 border-gold text-gold' : 'border-white/5 text-white/20'}`}
+                                                                    className={`h-10 rounded-lg border flex items-center justify-center transition-all ${specs.view === v ? 'bg-white/10 border-gold text-gold' : 'border-white/5 text-white/70'}`}
                                                                 >
                                                                     <Waves size={14} className={v === 0 ? 'opacity-20' : ''} />
                                                                     <Waves size={14} className={v < 2 ? 'opacity-20' : ''} />
@@ -402,7 +402,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                             <span className="text-[9px] font-bold uppercase tracking-widest text-white/60">{t('oracle.rental_potential')}</span>
                                                         </div>
                                                         <div className="text-3xl font-serif text-white mb-2">â‚¬{Math.round(valuation.possibleRent).toLocaleString()}<span className="text-sm text-white/60 ml-2">/ {t('common.month_short')}</span></div>
-                                                        <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">{t('oracle.projected_yield')}</p>
+                                                        <p className="text-[10px] text-white/70 uppercase tracking-widest font-bold">{t('oracle.projected_yield')}</p>
                                                     </div>
 
                                                     <div className="md:col-span-6 p-8 bg-black/40 border border-white/5 rounded-3xl">
@@ -411,7 +411,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                             <span className="text-[9px] font-bold uppercase tracking-widest text-white/60">{t('oracle.market_heat_title')}</span>
                                                         </div>
                                                         <div className="text-3xl font-serif text-white mb-2">â‚¬{Math.round(valuation.basePricePerSqm).toLocaleString()}<span className="text-sm text-white/60 ml-2">{t('oracle.per_sqm')}</span></div>
-                                                        <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">{t('oracle.growth_forecast')} {specs.type}s</p>
+                                                        <p className="text-[10px] text-white/70 uppercase tracking-widest font-bold">{t('oracle.growth_forecast')} {specs.type}s</p>
                                                     </div>
                                                 </div>
 
@@ -435,7 +435,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 </div>
 
                                                 <div className="mt-12 flex justify-center">
-                                                    <button onClick={() => setStep(1)} className="text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-gold transition-colors">{t('oracle.start_new')}</button>
+                                                    <button onClick={() => setStep(1)} className="text-[10px] font-bold uppercase tracking-widest text-white/70 hover:text-gold transition-colors">{t('oracle.start_new')}</button>
                                                 </div>
                                             </motion.div>
                                         )}

@@ -128,7 +128,7 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                                         }`}>
                                                         {item.event}
                                                     </span>
-                                                    <span className="text-[10px] text-white/20 mx-1">/</span>
+                                                    <span className="text-[10px] text-white/70 mx-1">/</span>
                                                     <span className="text-[10px] text-white/60 font-medium font-mono">{item.date}</span>
                                                 </div>
                                                 <div className="text-xl font-serif text-white">

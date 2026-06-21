@@ -110,7 +110,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                                     >
                                         {t('interactive.twin.analyzing', 'Analyzing Layout DNA...')}
                                     </motion.div>
-                                    <div className="text-sm text-white/20">{t('interactive.twin.analyzing_subtitle')}</div>
+                                    <div className="text-sm text-white/70">{t('interactive.twin.analyzing_subtitle')}</div>
                                 </div>
                             </div>
                         ) : (

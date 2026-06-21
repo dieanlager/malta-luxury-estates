@@ -163,11 +163,11 @@ export const MortgagePreQualifier: React.FC = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <div className="flex items-center gap-2 text-[10px] text-white/20 uppercase tracking-widest">
+                        <div className="flex items-center gap-2 text-[10px] text-white/70 uppercase tracking-widest">
                             <ShieldCheck size={12} className="text-emerald-500" />
                             {'Meets standard Malta bank criteria'}
                         </div>
-                        <div className="flex items-center gap-2 text-[10px] text-white/20 uppercase tracking-widest">
+                        <div className="flex items-center gap-2 text-[10px] text-white/70 uppercase tracking-widest">
                             <ShieldCheck size={12} className="text-emerald-500" />
                             {'Stress-tested at +2% rate'}
                         </div>

@@ -673,7 +673,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
+      <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/70">
         <p>Â© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> Design by <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
         <div className="flex gap-8 mt-4 md:mt-0">
           <Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>

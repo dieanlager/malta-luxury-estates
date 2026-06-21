@@ -53,7 +53,7 @@ export const NewsletterForm = () => {
             className="space-y-3"
           >
             <div className="relative group">
-              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-gold transition-colors" size={16} />
+              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 group-focus-within:text-gold transition-colors" size={16} />
               <input
                 type="email"
                 required
@@ -77,7 +77,7 @@ export const NewsletterForm = () => {
                 </>
               )}
             </button>
-            <div className="flex items-center justify-center gap-2 text-[9px] uppercase tracking-widest text-white/20">
+            <div className="flex items-center justify-center gap-2 text-[9px] uppercase tracking-widest text-white/70">
               <Shield size={10} />
               {t('common.privacy_guaranteed', { defaultValue: 'No spam, unsubscribe anytime' })}
             </div>

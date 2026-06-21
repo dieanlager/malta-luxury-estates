@@ -265,7 +265,7 @@ const GozoBridgeTracker: React.FC = () => {
                     </div>
                     <div className="text-right">
                         <div className="text-xs text-amber-400 font-bold font-mono">+{totalGain}%</div>
-                        <div className="text-[9px] text-white/20">{t('market.since_date', { date: translateDate('Jan 2023', t) })}</div>
+                        <div className="text-[9px] text-white/70">{t('market.since_date', { date: translateDate('Jan 2023', t) })}</div>
                     </div>
                 </div>
             </div>
@@ -303,7 +303,7 @@ const GozoBridgeTracker: React.FC = () => {
                 {/* X labels */}
                 <div className="flex gap-1.5 mb-4">
                     {GOZO_INDEX.map((d, i) => (
-                        <div key={i} className="flex-1 text-center text-[8px] text-white/20 truncate">
+                        <div key={i} className="flex-1 text-center text-[8px] text-white/70 truncate">
                             {t(`months.${d.period.split(' ')[0].toLowerCase()}`)}
                         </div>
                     ))}
@@ -323,7 +323,7 @@ const GozoBridgeTracker: React.FC = () => {
                     ))}
                 </div>
 
-                <p className="text-[10px] text-white/20 mt-4 leading-relaxed italic">
+                <p className="text-[10px] text-white/70 mt-4 leading-relaxed italic">
                     {t('market.bridge_prediction')}
                 </p>
             </div>

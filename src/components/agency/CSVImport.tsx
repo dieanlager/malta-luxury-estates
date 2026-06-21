@@ -109,11 +109,11 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                         <React.Fragment key={s.id}>
                             <div className={`flex items-center gap-3 px-5 py-2.5 rounded-2xl border transition-all ${state === 'active' ? 'bg-gold/10 border-gold text-gold' :
                                 isPast ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' :
-                                    'bg-white/5 border-white/5 text-white/20'
+                                    'bg-white/5 border-white/5 text-white/70'
                                 }`}>
                                 <div className={`w-6 h-6 rounded-lg flex items-center justify-center text-[10px] font-bold ${state === 'active' ? 'bg-gold text-luxury-black' :
                                     isPast ? 'bg-emerald-400 text-luxury-black' :
-                                        'bg-white/5 text-white/20'
+                                        'bg-white/5 text-white/70'
                                     }`}>
                                     {isPast ? 'âœ“' : i + 1}
                                 </div>
@@ -149,7 +149,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                 <Upload size={32} />
                             </div>
                             <h4 className="text-xl font-serif text-white/80 mb-2">Drag & Drop Listing Data</h4>
-                            <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-white/20">Maximum 500 records per file â€¢ .CSV format only</p>
+                            <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-white/70">Maximum 500 records per file â€¢ .CSV format only</p>
 
                             {isDragActive && (
                                 <div className="absolute inset-0 bg-luxury-black/80 backdrop-blur-sm rounded-[3rem] flex items-center justify-center">
@@ -179,7 +179,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                 { label: 'Critical Errors', value: result.invalid, icon: XCircle, color: 'text-red-400' },
                             ].map(stat => (
                                 <div key={stat.label} className="p-6 rounded-[2rem] border border-white/5 bg-white/1">
-                                    <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/20 mb-4 flex justify-between">
+                                    <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/70 mb-4 flex justify-between">
                                         {stat.label}
                                         <stat.icon size={12} className={stat.color} />
                                     </div>
@@ -191,12 +191,12 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                         <div className="glass-card rounded-[2.5rem] border border-white/5 bg-white/1 overflow-hidden">
                             <div className="px-8 py-5 border-b border-white/5 bg-white/[0.01] flex justify-between items-center">
                                 <span className="text-[10px] font-bold uppercase tracking-widest text-gold">Ready for Intel Injection</span>
-                                <span className="text-[9px] text-white/20 uppercase font-mono italic">Showing top 5 valid entries</span>
+                                <span className="text-[9px] text-white/70 uppercase font-mono italic">Showing top 5 valid entries</span>
                             </div>
                             <div className="overflow-x-auto">
                                 <table className="w-full text-left">
                                     <thead>
-                                        <tr className="border-b border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] text-white/20">
+                                        <tr className="border-b border-white/5 text-[9px] font-bold uppercase tracking-[0.2em] text-white/70">
                                             <th className="px-8 py-4">Title & Context</th>
                                             <th className="px-8 py-4">Financials</th>
                                             <th className="px-8 py-4">Asset Type</th>
@@ -208,7 +208,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                             <tr key={row.rowIndex} className="text-white/60">
                                                 <td className="px-8 py-4">
                                                     <div className="text-xs font-medium text-white mb-1">{row.mapped.title}</div>
-                                                    <div className="text-[9px] font-mono text-white/20 uppercase flex items-center gap-1">
+                                                    <div className="text-[9px] font-mono text-white/70 uppercase flex items-center gap-1">
                                                         <MapPin size={8} /> {row.mapped.location_text}
                                                     </div>
                                                 </td>

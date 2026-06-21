@@ -107,7 +107,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                                     >
                                         Analyzing Layout DNA...
                                     </motion.div>
-                                    <div className="text-sm text-white/20">Deconstructing features and neighborhood indices</div>
+                                    <div className="text-sm text-white/70">Deconstructing features and neighborhood indices</div>
                                 </div>
                             </div>
                         ) : (

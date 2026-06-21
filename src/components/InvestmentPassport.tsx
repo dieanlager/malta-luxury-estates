@@ -178,7 +178,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                     </div>
                                                     <div>
                                                         <div className={`text-xs font-bold transition-colors ${activePage === i ? 'text-white' : 'text-white/50'}`}>
-                                                            <span className="text-white/20 mr-1.5 font-mono">0{i + 1}</span>
+                                                            <span className="text-white/70 mr-1.5 font-mono">0{i + 1}</span>
                                                             {pg.label}
                                                         </div>
                                                         <div className="text-[10px] text-white/25 mt-0.5">{pg.desc}</div>
@@ -249,7 +249,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                                         onChange={e => setEmail(e.target.value)}
                                                                         onKeyDown={e => e.key === 'Enter' && handleGenerate()}
                                                                         className="w-full pl-9 pr-4 py-3 bg-white/5 border border-white/10
-                                               rounded-xl text-sm text-white placeholder:text-white/20
+                                               rounded-xl text-sm text-white placeholder:text-white/70
                                                focus:outline-none focus:border-gold/40 transition-colors"
                                                                     />
                                                                 </div>
@@ -291,7 +291,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                             { icon: TrendingUp, text: 'Malta PPR data + 2026 tax calculations' },
                                                         ].map(({ icon: Icon, text }) => (
                                                             <div key={text} className="flex items-center gap-2.5">
-                                                                <Icon size={12} className="text-white/20 shrink-0" />
+                                                                <Icon size={12} className="text-white/70 shrink-0" />
                                                                 <span className="text-[11px] text-white/60">{text}</span>
                                                             </div>
                                                         ))}

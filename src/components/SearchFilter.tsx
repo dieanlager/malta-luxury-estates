@@ -90,11 +90,11 @@ export const SearchFilter: React.FC = () => {
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                 placeholder={'Search area, district or location...'}
                 aria-label="Search by location in Malta"
-                className="bg-transparent border-none outline-none text-white placeholder:text-white/20 w-full text-sm font-medium"
+                className="bg-transparent border-none outline-none text-white placeholder:text-white/70 w-full text-sm font-medium"
               />
             </div>
             {query && (
-              <button onClick={() => setQuery('')} className="text-white/20 hover:text-white">
+              <button onClick={() => setQuery('')} className="text-white/70 hover:text-white">
                 <X size={16} />
               </button>
             )}
@@ -208,7 +208,7 @@ export const SearchFilter: React.FC = () => {
             </button>
           ))}
         </div>
-        <p className="text-[10px] text-white/20 uppercase tracking-[0.2em] font-medium">
+        <p className="text-[10px] text-white/70 uppercase tracking-[0.2em] font-medium">
           {'Try:'} <span className="text-white/60">"Sliema"</span>, <span className="text-white/60">"St. Julian's"</span>, or <span className="text-white/60">"Valletta"</span>
         </p>
       </div>

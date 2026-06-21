@@ -207,7 +207,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                     />
                                 </div>
                                 <h3 className="text-2xl font-serif text-white mb-2 tracking-widest uppercase">{t('quiz.analyzing')}</h3>
-                                <p className="text-white/20 text-sm">{t('quiz.analyzing_subtitle')}</p>
+                                <p className="text-white/70 text-sm">{t('quiz.analyzing_subtitle')}</p>
                             </motion.div>
                         ) : isFinished && resultKey && resultContent ? (
                             <motion.div
@@ -242,7 +242,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                             <Link to={resultContent.slug} className="w-full py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-105 transition-all text-center">
                                                 {t('quiz.explore')}
                                             </Link>
-                                            <button onClick={resetQuiz} className="flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-white transition-colors py-4">
+                                            <button onClick={resetQuiz} className="flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/70 hover:text-white transition-colors py-4">
                                                 <RefreshCcw size={12} /> {t('quiz.take_again')}
                                             </button>
                                         </div>
@@ -269,7 +269,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                 className="space-y-12"
                             >
                                 <div className="text-center">
-                                    <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em] mb-4 block">{t('quiz.question_counter', { current: currentQuestion + 1, total: QUESTIONS.length })}</span>
+                                    <span className="text-[10px] font-bold text-white/70 uppercase tracking-[0.3em] mb-4 block">{t('quiz.question_counter', { current: currentQuestion + 1, total: QUESTIONS.length })}</span>
                                     <h3 className="text-3xl md:text-5xl font-serif text-white">{t(`quiz_content.questions.${currentQuestion}.text`)}</h3>
                                 </div>
 

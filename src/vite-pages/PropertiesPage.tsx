@@ -261,7 +261,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
         ) : (
           <div className="py-32 text-center bg-white/5 rounded-[3rem] border border-dashed border-white/10">
             <div className="w-20 h-20 rounded-full bg-white/5 flex items-center justify-center mx-auto mb-8">
-              <Search size={32} className="text-white/20" />
+              <Search size={32} className="text-white/70" />
             </div>
             <h2 className="text-2xl font-serif mb-4">{t('properties.no_results.title')}</h2>
             <p className="text-white/60 max-w-md mx-auto mb-12">

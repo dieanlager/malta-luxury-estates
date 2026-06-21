@@ -428,7 +428,7 @@ const AdminPage: React.FC = () => {
                     <div className="w-20 h-16 flex-shrink-0 bg-white/5">
                       {thumb
                         ? <img src={proxyImg(thumb)} alt="" className="w-full h-full object-cover" onError={e => { (e.target as HTMLImageElement).style.opacity = '0.2'; }} />
-                        : <div className="w-full h-full flex items-center justify-center text-white/20 text-xs">â€”</div>}
+                        : <div className="w-full h-full flex items-center justify-center text-white/70 text-xs">â€”</div>}
                     </div>
                     <div className="flex-1 px-4 py-3 min-w-0">
                       <div className="flex items-center justify-between gap-2">
@@ -512,9 +512,9 @@ const AdminPage: React.FC = () => {
 
                 {/* Slug */}
                 <div className="col-span-2">
-                  <label className={lbl}>URL slug <span className="text-white/20 font-normal normal-case tracking-normal">(auto-generowany)</span></label>
+                  <label className={lbl}>URL slug <span className="text-white/70 font-normal normal-case tracking-normal">(auto-generowany)</span></label>
                   <div className="flex items-center gap-2">
-                    <span className="text-white/20 text-xs whitespace-nowrap font-mono">/properties/</span>
+                    <span className="text-white/70 text-xs whitespace-nowrap font-mono">/properties/</span>
                     <input className={inp + ' font-mono'}
                       value={form.slug || ''}
                       onChange={e => setForm(f => ({ ...f, slug: e.target.value.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '') }))}
@@ -525,7 +525,7 @@ const AdminPage: React.FC = () => {
 
                 {/* Affiliate URL â€” hidden label, internal use */}
                 <div className="col-span-2">
-                  <label className={lbl}>Affiliate URL <span className="text-white/20 font-normal normal-case tracking-normal">(link partnera â€” widoczny tylko w panelu)</span></label>
+                  <label className={lbl}>Affiliate URL <span className="text-white/70 font-normal normal-case tracking-normal">(link partnera â€” widoczny tylko w panelu)</span></label>
                   <input type="url" value={form.affiliate_url} onChange={e => set('affiliate_url', e.target.value)} className={inp} placeholder="https://alliance.mt/property/â€¦" />
                 </div>
 
@@ -666,7 +666,7 @@ const AdminPage: React.FC = () => {
               >
                 <Upload size={22} className="text-white/60" />
                 <span className="text-white/50 text-sm">PrzeciÄ…gnij zdjÄ™cia lub kliknij</span>
-                <span className="text-white/20 text-xs">JPG, PNG, HEIC â€” resize do 1920px WebP</span>
+                <span className="text-white/70 text-xs">JPG, PNG, HEIC â€” resize do 1920px WebP</span>
                 <input type="file" multiple accept="image/*" onChange={e => { if (e.target.files) processFiles(e.target.files); }} disabled={uploading} className="hidden" />
               </label>
 

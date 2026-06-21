@@ -62,7 +62,7 @@ export const ROICalculator = () => {
                         <div>
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/60 block mb-4">Monthly Rent</label>
                             <div className="relative">
-                                <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
+                                <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" size={16} />
                                 <input type="number" value={monthlyRent} onChange={(e) => setMonthlyRent(Number(e.target.value))}
                                     className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white font-serif focus:border-emerald-500 outline-none transition-colors" />
                             </div>
@@ -70,7 +70,7 @@ export const ROICalculator = () => {
                         <div>
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/60 block mb-4">Monthly Expenses</label>
                             <div className="relative">
-                                <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
+                                <Euro className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" size={16} />
                                 <input type="number" value={monthlyExp} onChange={(e) => setMonthlyExp(Number(e.target.value))}
                                     className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white font-serif focus:border-emerald-500 outline-none transition-colors" />
                             </div>

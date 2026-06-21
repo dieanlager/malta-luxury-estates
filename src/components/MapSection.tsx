@@ -44,7 +44,7 @@ export const MapSection = () => {
             <DynamicMap />
           ) : (
             <div className="w-full h-full bg-white/5 flex items-center justify-center">
-              <span className="text-white/20 text-sm">Loading map…</span>
+              <span className="text-white/70 text-sm">Loading map…</span>
             </div>
           )}
         </div>

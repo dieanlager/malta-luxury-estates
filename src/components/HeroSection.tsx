@@ -29,18 +29,18 @@ export const HeroSection = () => {
             {t('hero.subtitle')}
           </p>
           <div className="flex justify-center"><SearchFilter /></div>
-          <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 opacity-60">
+          <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16">
             <div className="flex flex-col items-center">
-              <span className="text-2xl font-serif text-gold">500+</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold text-white">{t('hero.stats_properties')}</span>
+              <span className="text-2xl font-serif text-gold/70">500+</span>
+              <span className="text-xs uppercase tracking-widest font-bold text-white/70">{t('hero.stats_properties')}</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl font-serif text-gold">{LOCATIONS.length}+</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold text-white">{t('hero.stats_locations')}</span>
+              <span className="text-2xl font-serif text-gold/70">{LOCATIONS.length}+</span>
+              <span className="text-xs uppercase tracking-widest font-bold text-white/70">{t('hero.stats_locations')}</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl font-serif text-gold">â‚¬2.5M</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold text-white">{t('hero.stats_price')}</span>
+              <span className="text-2xl font-serif text-gold/70">â‚¬2.5M</span>
+              <span className="text-xs uppercase tracking-widest font-bold text-white/70">{t('hero.stats_price')}</span>
             </div>
           </div>
         </div>

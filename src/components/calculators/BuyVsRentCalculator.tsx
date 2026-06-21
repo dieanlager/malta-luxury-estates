@@ -148,7 +148,7 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
             <div className="flex gap-3 items-end">
                 <div className="flex flex-col justify-between h-48 text-right pr-1" style={{ minWidth: 64 }}>
                     {[maxVal, maxVal / 2, 0, minVal < 0 ? minVal : null].filter(Boolean).map((v, i) => (
-                        <span key={i} className="text-[9px] text-white/20 font-mono">
+                        <span key={i} className="text-[9px] text-white/70 font-mono">
                             {v! >= 1000000 ? `€${(v! / 1000000).toFixed(1)}M` : `€${Math.round(v! / 1000)}k`}
                         </span>
                     ))}
@@ -220,7 +220,7 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
                     <div className="flex mt-2">
                         <div style={{ minWidth: 0 }} />
                         {snapshots.map(snap => (
-                            <div key={snap.year} className="flex-1 text-center text-[9px] text-white/20">
+                            <div key={snap.year} className="flex-1 text-center text-[9px] text-white/70">
                                 {snap.year % milestone === 0 || snap.year === 1 ? snap.year : ''}
                             </div>
                         ))}
@@ -557,7 +557,7 @@ export const BuyVsRentCalculator = () => {
                                 </div>
                             ))}
                         </div>
-                        <p className="text-[10px] text-white/20 mt-4 leading-relaxed">
+                        <p className="text-[10px] text-white/70 mt-4 leading-relaxed">
                             {'Projections are indicative. Based on Malta 2026 tax rates. Consult a financial advisor before making investment decisions.'}
                         </p>
                     </div>

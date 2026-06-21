@@ -99,7 +99,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                                 </svg>
                                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                                     <span className={`text-5xl font-serif font-bold ${getScoreColor(noise.score)}`}>{noise.score}</span>
-                                    <span className="text-[10px] uppercase tracking-widest text-white/20 font-bold">Quiet Score</span>
+                                    <span className="text-[10px] uppercase tracking-widest text-white/70 font-bold">Quiet Score</span>
                                 </div>
                             </div>
                             <p className="mt-6 text-sm text-white/60 text-center max-w-xs">
@@ -156,7 +156,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                             </p>
                         </div>
 
-                        <div className="mt-8 flex gap-3 text-white/20">
+                        <div className="mt-8 flex gap-3 text-white/70">
                             <Info size={14} className="shrink-0 mt-0.5" />
                             <p className="text-[9px] uppercase tracking-wider leading-relaxed">
                                 Quiet scores are normalized across the Maltese islands. A score of 80 in Sliema is equivalent to 80 in Gozo in terms of decibel variance.

@@ -119,7 +119,7 @@ export default async function InsightsPage({ params }: Props) {
                   {article.excerpt}
                 </p>
                 {article.date && (
-                  <div className="text-[10px] uppercase tracking-widest text-white/20">
+                  <div className="text-[10px] uppercase tracking-widest text-white/70">
                     {new Date(article.date).toLocaleDateString(locale, { year: 'numeric', month: 'short' })}
                   </div>
                 )}

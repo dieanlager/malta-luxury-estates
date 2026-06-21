@@ -77,7 +77,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                             <div className="space-y-6">
                                 <div className="p-8 bg-black/40 border border-white/5 rounded-3xl flex flex-col items-center">
-                                    <div className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em] mb-4">Current Rating</div>
+                                    <div className="text-[10px] font-bold text-white/70 uppercase tracking-[0.3em] mb-4">Current Rating</div>
                                     <div className={`w-20 h-20 rounded-2xl ${EPC_COLORS[currentRating]} flex items-center justify-center shadow-2xl shadow-black/40`}>
                                         <span className="text-4xl font-serif font-bold text-luxury-black">{currentRating}</span>
                                     </div>
@@ -120,7 +120,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                 <div className="flex justify-between items-center p-8 bg-gold/5 rounded-2xl border border-gold/20">
                                     <div className="space-y-1">
                                         <span className="text-[10px] uppercase font-bold text-gold tracking-widest">Resale Premium</span>
-                                        <p className="text-[9px] text-white/20 leading-relaxed">Energy-efficient properties command higher resale values</p>
+                                        <p className="text-[9px] text-white/70 leading-relaxed">Energy-efficient properties command higher resale values</p>
                                     </div>
                                     <span className="text-2xl font-serif text-white">+{analysis.resaleValuePremium}</span>
                                 </div>

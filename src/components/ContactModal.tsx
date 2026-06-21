@@ -98,37 +98,37 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                                     <div className="space-y-4">
                                         {/* Name */}
                                         <div className="relative">
-                                            <User className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
+                                            <User className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" size={16} />
                                             <input
                                                 type="text"
                                                 placeholder="Full Name *"
                                                 value={formData.name}
                                                 onChange={(e) => onUpdateField('name', e.target.value)}
-                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/20"
+                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/70"
                                             />
                                         </div>
 
                                         {/* Email */}
                                         <div className="relative">
-                                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
+                                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" size={16} />
                                             <input
                                                 type="email"
                                                 placeholder="Email Address *"
                                                 value={formData.email}
                                                 onChange={(e) => onUpdateField('email', e.target.value)}
-                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/20"
+                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/70"
                                             />
                                         </div>
 
                                         {/* Phone */}
                                         <div className="relative">
-                                            <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
+                                            <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" size={16} />
                                             <input
                                                 type="tel"
                                                 placeholder="Phone Number (optional)"
                                                 value={formData.phone}
                                                 onChange={(e) => onUpdateField('phone', e.target.value)}
-                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/20"
+                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/70"
                                             />
                                         </div>
 
@@ -138,7 +138,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                                             value={formData.message}
                                             onChange={(e) => onUpdateField('message', e.target.value)}
                                             rows={4}
-                                            className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/20 resize-none"
+                                            className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/70 resize-none"
                                         />
 
                                         {/* Submit */}
@@ -157,7 +157,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                                             )}
                                         </button>
 
-                                        <p className="text-[10px] text-white/20 text-center leading-relaxed">
+                                        <p className="text-[10px] text-white/70 text-center leading-relaxed">
                                             By submitting this form, you agree to our Privacy Policy. Your details will be shared with the listing agent.
                                         </p>
                                     </div>

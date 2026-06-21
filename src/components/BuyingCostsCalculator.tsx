@@ -154,14 +154,14 @@ export const BuyingCostsCalculator = () => {
             <div className="flex justify-between items-end mb-8">
               <div>
                 <div className="text-[10px] font-bold uppercase tracking-widest text-gold">{'TOTAL EXTRA COSTS'}</div>
-                <div className="text-xs text-white/20 uppercase tracking-widest font-bold">{`~${result?.costPercentage.toFixed(2)}% of purchase price`}</div>
+                <div className="text-xs text-white/70 uppercase tracking-widest font-bold">{`~${result?.costPercentage.toFixed(2)}% of purchase price`}</div>
               </div>
               <div className="text-4xl font-serif text-gold">€{result?.totalAcquisitionCosts.toLocaleString(locale)}</div>
             </div>
 
             <div className="p-6 bg-gold text-luxury-black rounded-3xl flex items-center justify-between">
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest opacity-60">{'TOTAL CAPITAL INVESTMENT'}</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest opacity-90">{'TOTAL CAPITAL INVESTMENT'}</div>
                 <div className="text-2xl font-serif font-bold">€{result?.totalInvestment.toLocaleString(locale)}</div>
               </div>
               <div className="w-12 h-12 bg-luxury-black/10 rounded-full flex items-center justify-center">

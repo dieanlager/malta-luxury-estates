@@ -104,7 +104,7 @@ function LimitReachedBlock({ status, onUpgrade }: { status: PlanStatus; onUpgrad
                 <div className="flex-1 p-6 rounded-3xl border border-gold/40 bg-gold/5 text-left transition-all hover:scale-105">
                     <div className="flex justify-between items-start mb-4">
                         <span className="text-[10px] font-bold uppercase tracking-widest text-gold">{nextPlan.name} Plan</span>
-                        <span className="text-[9px] font-mono text-white/20">Ã¢â€šÂ¬{nextPlan.price}/mo</span>
+                        <span className="text-[9px] font-mono text-white/70">Ã¢â€šÂ¬{nextPlan.price}/mo</span>
                     </div>
                     <ul className="space-y-2 mb-6">
                         {[

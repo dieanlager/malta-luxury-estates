@@ -130,7 +130,7 @@ export const MortgageCalculator = () => {
                         <input type="range" aria-label="Adjust value" min="100000" max="5000000" step="25000" value={propertyPrice}
                             onChange={e => setPropertyPrice(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
-                        <div className="flex justify-between text-[10px] text-white/20 mt-1">
+                        <div className="flex justify-between text-[10px] text-white/70 mt-1">
                             <span>€100k</span><span>€5M</span>
                         </div>
                     </div>
@@ -147,7 +147,7 @@ export const MortgageCalculator = () => {
                         <input type="range" aria-label="Adjust value" min={isResident ? 10 : 30} max={80} step="5" value={depositPct}
                             onChange={e => setDepositPct(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
-                        <div className="flex justify-between text-[10px] text-white/20 mt-1">
+                        <div className="flex justify-between text-[10px] text-white/70 mt-1">
                             <span>{isResident ? '10%' : '30%'} min</span><span>80%</span>
                         </div>
                     </div>
@@ -161,7 +161,7 @@ export const MortgageCalculator = () => {
                         <input type="range" aria-label="Adjust value" min="2.5" max="7" step="0.05" value={interestRate}
                             onChange={e => setInterestRate(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
-                        <div className="flex justify-between text-[10px] text-white/20 mt-1">
+                        <div className="flex justify-between text-[10px] text-white/70 mt-1">
                             <span>2.5%</span><span>7.0%</span>
                         </div>
                     </div>

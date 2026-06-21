@@ -95,7 +95,7 @@ export const AIChatbot = () => {
                                     </div>
                                 </div>
                             </div>
-                            <ShieldCheck className="text-white/20" size={18} />
+                            <ShieldCheck className="text-white/70" size={18} />
                         </div>
 
                         {/* Messages */}
@@ -144,7 +144,7 @@ export const AIChatbot = () => {
                                     <Send size={16} className="text-gold" />
                                 </button>
                             </div>
-                            <p className="text-[9px] text-center text-white/20 mt-4 uppercase tracking-widest">
+                            <p className="text-[9px] text-center text-white/70 mt-4 uppercase tracking-widest">
                                 Powered by Malta Intelligence Hub
                             </p>
                         </div>

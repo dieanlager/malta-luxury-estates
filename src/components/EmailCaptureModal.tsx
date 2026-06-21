@@ -105,13 +105,13 @@ export const EmailCaptureModal: React.FC<EmailCaptureModalProps> = ({
 
                                     <form onSubmit={handleSubmit} className="space-y-4">
                                         <div className="relative">
-                                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={16} />
+                                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" size={16} />
                                             <input
                                                 type="email"
                                                 placeholder="Enter your email"
                                                 value={email}
                                                 onChange={(e) => setEmail(e.target.value)}
-                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/20"
+                                                className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-sm outline-none focus:border-gold transition-colors placeholder:text-white/70"
                                                 required
                                             />
                                         </div>

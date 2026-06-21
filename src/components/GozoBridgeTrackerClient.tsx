@@ -156,7 +156,7 @@ export function GozoBridgeTrackerClient() {
 
                                         {/* X Label */}
                                         <div className="h-10 flex flex-col items-center gap-1">
-                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${d.current ? 'text-gold' : 'text-white/20'}`}>
+                                            <span className={`text-[10px] font-bold uppercase tracking-widest ${d.current ? 'text-gold' : 'text-white/70'}`}>
                                                 {d.period.split(' ')[d.period.split(' ').length - 1]}
                                             </span>
                                             <span className="text-[8px] text-white/10">{d.period.split(' ')[0]}</span>
@@ -244,7 +244,7 @@ export function GozoBridgeTrackerClient() {
                                 ].map(a => (
                                     <div key={a.area} className="flex items-center justify-between group">
                                         <div className="flex items-center gap-4">
-                                            <span className="text-[10px] font-bold text-white/20">0{a.rank}</span>
+                                            <span className="text-[10px] font-bold text-white/70">0{a.rank}</span>
                                             <span className="text-xs font-bold text-white group-hover:text-gold transition-colors">{a.area}</span>
                                         </div>
                                         <span className="text-[10px] font-mono font-bold text-emerald-400">{a.growth}</span>

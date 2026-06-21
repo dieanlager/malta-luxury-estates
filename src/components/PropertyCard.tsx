@@ -70,7 +70,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
         <div className="flex-1">
-          <div className="flex items-center gap-2 text-gold/60 mb-2">
+          <div className="flex items-center gap-2 text-gold/90 mb-2">
             <MapPin size={12} />
             <span className="text-[10px] uppercase font-bold tracking-widest">{property.locationName}</span>
           </div>

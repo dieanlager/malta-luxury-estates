@@ -192,7 +192,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                     />
                                 </div>
                                 <h3 className="text-2xl font-serif text-white mb-2 tracking-widest uppercase">Matching your DNA...</h3>
-                                <p className="text-white/20 text-sm">Our AI is scanning the island for your perfect match.</p>
+                                <p className="text-white/70 text-sm">Our AI is scanning the island for your perfect match.</p>
                             </motion.div>
                         ) : isFinished && result ? (
                             <motion.div
@@ -227,7 +227,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                             <Link to={result.slug} className="w-full py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-105 transition-all text-center">
                                                 Explore My Neighborhood
                                             </Link>
-                                            <button onClick={resetQuiz} className="flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/20 hover:text-white transition-colors py-4">
+                                            <button onClick={resetQuiz} className="flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/70 hover:text-white transition-colors py-4">
                                                 <RefreshCcw size={12} /> Take Quiz Again
                                             </button>
                                         </div>
@@ -254,7 +254,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                 className="space-y-12"
                             >
                                 <div className="text-center">
-                                    <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em] mb-4 block">Question 0{currentQuestion + 1} / 05</span>
+                                    <span className="text-[10px] font-bold text-white/70 uppercase tracking-[0.3em] mb-4 block">Question 0{currentQuestion + 1} / 05</span>
                                     <h3 className="text-3xl md:text-5xl font-serif text-white">{QUESTIONS[currentQuestion].text}</h3>
                                 </div>
 

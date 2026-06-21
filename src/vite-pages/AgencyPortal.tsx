@@ -119,7 +119,7 @@ function StatCard({ label, value, sub, trend, icon: Icon }: any) {
                         {Math.abs(trend)}%
                     </span>
                 )}
-                <span className="text-[10px] text-white/20 uppercase tracking-wider">{sub}</span>
+                <span className="text-[10px] text-white/70 uppercase tracking-wider">{sub}</span>
             </div>
         </div>
     );
@@ -162,18 +162,18 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
             <div className="hidden lg:flex items-center gap-12 text-center flex-shrink-0">
                 <div>
                     <div className="text-sm font-mono text-white">{listing.views_count || 0}</div>
-                    <div className="text-[8px] uppercase tracking-widest text-white/20">Views</div>
+                    <div className="text-[8px] uppercase tracking-widest text-white/70">Views</div>
                 </div>
                 <div>
                     <div className="text-sm font-mono text-white">{listing.leads_count || 0}</div>
-                    <div className="text-[8px] uppercase tracking-widest text-white/20">Leads</div>
+                    <div className="text-[8px] uppercase tracking-widest text-white/70">Leads</div>
                 </div>
             </div>
 
             {/* Price */}
             <div className="text-right min-w-[100px] flex-shrink-0">
                 <div className="text-sm font-mono text-gold font-bold">â‚¬{listing.price.toLocaleString()}</div>
-                <div className="text-[9px] text-white/20 uppercase tracking-widest">{isRent ? "/month" : "sale"}</div>
+                <div className="text-[9px] text-white/70 uppercase tracking-widest">{isRent ? "/month" : "sale"}</div>
             </div>
 
             {/* Actions */}
@@ -281,7 +281,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                 {/* Step tabs */}
                 <div className="flex border-b border-white/5 bg-white/[0.01]">
                     {steps.map((s, i) => (
-                        <button key={s} onClick={() => setStep(i)} className={`flex-1 py-4 text-[9px] font-bold uppercase tracking-widest transition-all border-b-2 ${i === step ? 'text-gold border-gold' : 'text-white/20 border-transparent hover:text-white/60'}`}>
+                        <button key={s} onClick={() => setStep(i)} className={`flex-1 py-4 text-[9px] font-bold uppercase tracking-widest transition-all border-b-2 ${i === step ? 'text-gold border-gold' : 'text-white/70 border-transparent hover:text-white/60'}`}>
                             {i + 1}. {s}
                         </button>
                     ))}
@@ -347,7 +347,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                 <div className="p-8 rounded-[2rem] border border-white/5 bg-white/1 text-center">
                                     <MapPin size={24} className="text-gold/40 mx-auto mb-4" />
                                     <div className="text-xs text-white/60 mb-1">Geocoding is active for: <span className="text-white">{form.location || '...'}</span></div>
-                                    <div className="text-[10px] text-white/20 uppercase tracking-widest italic">Latitude & Longitude will be auto-calculated on publish.</div>
+                                    <div className="text-[10px] text-white/70 uppercase tracking-widest italic">Latitude & Longitude will be auto-calculated on publish.</div>
                                 </div>
                             </motion.div>
                         )}
@@ -404,7 +404,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                         <label className={labelClass}>Listing Purpose</label>
                                         <div className="flex gap-2">
                                             {["sale", "rent"].map(t => (
-                                                <button key={t} onClick={() => set("listingType", t)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${form.listingType === t ? 'bg-gold/10 border-gold text-gold' : 'border-white/10 text-white/20'}`}>
+                                                <button key={t} onClick={() => set("listingType", t)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${form.listingType === t ? 'bg-gold/10 border-gold text-gold' : 'border-white/10 text-white/70'}`}>
                                                     {t}
                                                 </button>
                                             ))}
@@ -424,7 +424,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                             <Camera size={20} />
                                         </button>
                                     </div>
-                                    <div className="p-4 rounded-xl border border-dashed border-white/10 text-[9px] text-white/20 uppercase tracking-widest text-center">
+                                    <div className="p-4 rounded-xl border border-dashed border-white/10 text-[9px] text-white/70 uppercase tracking-widest text-center">
                                         Drag & drop for bulk upload (up to 20 images) implemented in Pro Plan.
                                     </div>
                                 </div>
@@ -433,7 +433,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                     <label className={labelClass}>Visibility Status</label>
                                     <div className="flex gap-2">
                                         {[["active", "Publish Live", "text-emerald-400"], ["draft", "Save as Draft", "text-white/60"], ["paused", "Paused", "text-gold"]].map(([val, lbl, color]) => (
-                                            <button key={val} onClick={() => set("status", val)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${form.status === val ? `bg-white/5 border-white/20 ${color}` : 'border-white/5 text-white/20'}`}>
+                                            <button key={val} onClick={() => set("status", val)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${form.status === val ? `bg-white/5 border-white/20 ${color}` : 'border-white/5 text-white/70'}`}>
                                                 {lbl}
                                             </button>
                                         ))}
@@ -472,7 +472,7 @@ function LeadRow({ lead, onUpdateStatus }: any) {
         new: { color: "text-blue-400", bg: "bg-blue-400/10", border: "border-blue-400/20", label: "New" },
         contacted: { color: "text-gold", bg: "bg-gold/10", border: "border-gold/20", label: "Contacted" },
         qualified: { color: "text-emerald-400", bg: "bg-emerald-400/10", border: "border-emerald-400/20", label: "Qualified" },
-        closed: { color: "text-white/20", bg: "bg-white/5", border: "border-white/10", label: "Closed" },
+        closed: { color: "text-white/70", bg: "bg-white/5", border: "border-white/10", label: "Closed" },
     };
     const sc = statusConfig[lead.status] || statusConfig.new;
     const nextStatus: any = { new: "contacted", contacted: "qualified", qualified: "closed" };
@@ -492,10 +492,10 @@ function LeadRow({ lead, onUpdateStatus }: any) {
                     <span className={`px-2 py-0.5 rounded text-[8px] font-bold uppercase tracking-widest border ${lead.intent === 'Buy' ? 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20' : 'bg-blue-400/10 text-blue-400 border-blue-400/20'}`}>
                         {lead.intent}
                     </span>
-                    <span className="text-[10px] font-mono text-white/20">â‚¬{lead.budget_max?.toLocaleString() || "Ã¢â‚¬â€œ"}</span>
+                    <span className="text-[10px] font-mono text-white/70">â‚¬{lead.budget_max?.toLocaleString() || "Ã¢â‚¬â€œ"}</span>
                 </div>
             </div>
-            <div className="text-[10px] font-mono text-white/20 uppercase tracking-widest flex-shrink-0">
+            <div className="text-[10px] font-mono text-white/70 uppercase tracking-widest flex-shrink-0">
                 <Clock size={10} className="inline mr-1" /> {lead.created_at ? new Date(lead.created_at).toLocaleDateString() : "Today"}
             </div>
             <div className="flex items-center gap-3 flex-shrink-0">
@@ -503,7 +503,7 @@ function LeadRow({ lead, onUpdateStatus }: any) {
                     {sc.label}
                 </span>
                 {nextStatus[lead.status] && (
-                    <button onClick={() => onUpdateStatus(lead.id, nextStatus[lead.status])} className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-white/20 hover:text-gold hover:bg-gold/10 transition-all">
+                    <button onClick={() => onUpdateStatus(lead.id, nextStatus[lead.status])} className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-white/70 hover:text-gold hover:bg-gold/10 transition-all">
                         <ArrowUpRight size={14} />
                     </button>
                 )}
@@ -788,7 +788,7 @@ export const AgencyPortal: React.FC = () => {
                             const isActive = view === item.id;
                             return (
                                 <button key={item.id} onClick={() => setView(item.id)} className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all group ${isActive ? 'bg-gold/10 text-gold shadow-sm' : 'text-white/60 hover:text-white hover:bg-white/5'}`}>
-                                    <item.icon size={16} className={`${isActive ? 'text-gold' : 'text-white/20 group-hover:text-white/60'}`} />
+                                    <item.icon size={16} className={`${isActive ? 'text-gold' : 'text-white/70 group-hover:text-white/60'}`} />
                                     <span className="text-xs font-medium flex-1 text-left">{item.label}</span>
                                     {item.badge !== undefined && (
                                         <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold border ${isActive ? 'bg-gold/10 border-gold/20 text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}>
@@ -801,7 +801,7 @@ export const AgencyPortal: React.FC = () => {
                     </nav>
 
                     <div className="p-6 border-t border-white/5">
-                        <button onClick={handleSignOut} className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-white/20 hover:text-red-400 hover:bg-red-400/5 transition-all text-xs font-medium">
+                        <button onClick={handleSignOut} className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-white/70 hover:text-red-400 hover:bg-red-400/5 transition-all text-xs font-medium">
                             <X size={16} /> Sign Out Partner
                         </button>
                     </div>
@@ -816,7 +816,7 @@ export const AgencyPortal: React.FC = () => {
                             <h1 className="text-3xl font-serif text-white tracking-wide">
                                 {navItems.find(n => n.id === view)?.label}
                             </h1>
-                            <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mt-1">Malta Real Estate Intelligence Â· {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                            <p className="text-[10px] uppercase tracking-[0.3em] text-white/70 mt-1">Malta Real Estate Intelligence Â· {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
                         </div>
 
                         <div className="flex items-center gap-6">
@@ -859,7 +859,7 @@ export const AgencyPortal: React.FC = () => {
                                             {listings.slice(0, 4).map(l => (
                                                 <ListingRow key={l.id} listing={l} onEdit={setModal} onToggle={toggleListing} onDelete={deleteListing} />
                                             ))}
-                                            {listings.length === 0 && <div className="p-8 text-center text-white/20 text-xs font-mono">No listings yet</div>}
+                                            {listings.length === 0 && <div className="p-8 text-center text-white/70 text-xs font-mono">No listings yet</div>}
                                         </div>
                                     </div>
 
@@ -874,7 +874,7 @@ export const AgencyPortal: React.FC = () => {
                                             {leads.slice(0, 4).map(l => (
                                                 <LeadRow key={l.id} lead={l} onUpdateStatus={updateLeadStatus} />
                                             ))}
-                                            {leads.length === 0 && <div className="p-8 text-center text-white/20 text-xs font-mono">No leads received</div>}
+                                            {leads.length === 0 && <div className="p-8 text-center text-white/70 text-xs font-mono">No leads received</div>}
                                         </div>
                                     </div>
                                 </div>
@@ -887,13 +887,13 @@ export const AgencyPortal: React.FC = () => {
                                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 p-6 rounded-[2rem] bg-white/2 border border-white/5">
                                     <div className="flex gap-2">
                                         {[["all", "All"], ["active", "Active"], ["paused", "Paused"], ["draft", "Drafts"]].map(([val, lbl]) => (
-                                            <button key={val} onClick={() => setListingFilter(val)} className={`px-5 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${listingFilter === val ? 'bg-gold/10 border-gold/50 text-gold' : 'border-white/5 text-white/20 hover:text-white/60'}`}>
+                                            <button key={val} onClick={() => setListingFilter(val)} className={`px-5 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${listingFilter === val ? 'bg-gold/10 border-gold/50 text-gold' : 'border-white/5 text-white/70 hover:text-white/60'}`}>
                                                 {lbl} <span className="text-[8px] opacity-40 ml-1">({val === 'all' ? listings.length : listings.filter(l => l.status === val).length})</span>
                                             </button>
                                         ))}
                                     </div>
                                     <div className="relative w-full md:w-64">
-                                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20" size={14} />
+                                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70" size={14} />
                                         <input className="w-full bg-white/5 border border-white/10 rounded-xl pl-10 pr-4 py-2 text-[11px] font-mono text-white/60 placeholder:text-white/10" placeholder="Search Listings..." />
                                     </div>
                                 </div>
@@ -926,11 +926,11 @@ export const AgencyPortal: React.FC = () => {
                                         { label: "Inbox", count: leads.filter(l => l.status === 'new').length, color: "text-blue-400" },
                                         { label: "In Contact", count: leads.filter(l => l.status === 'contacted').length, color: "text-gold" },
                                         { label: "Qualified", count: leads.filter(l => l.status === 'qualified').length, color: "text-emerald-400" },
-                                        { label: "Closed", count: leads.filter(l => l.status === 'closed').length, color: "text-white/20" }
+                                        { label: "Closed", count: leads.filter(l => l.status === 'closed').length, color: "text-white/70" }
                                     ].map(s => (
                                         <div key={s.label} className="p-6 rounded-3xl bg-white/2 border border-white/5">
                                             <div className={`text-2xl font-mono ${s.color} mb-1`}>{s.count}</div>
-                                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/20">{s.label}</div>
+                                            <div className="text-[10px] font-bold uppercase tracking-widest text-white/70">{s.label}</div>
                                         </div>
                                     ))}
                                 </div>

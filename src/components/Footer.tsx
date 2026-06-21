@@ -28,7 +28,7 @@ export function Footer() {
             {LOCATIONS.filter(l => l.isPopular).slice(0, 10).map(city => (
               <Link key={city.slug} href={`/properties/${city.slug}` as any} className="group block">
                 <p className="text-white group-hover:text-gold transition-colors font-serif text-lg mb-1">{city.nameEn}</p>
-                <span className="text-[9px] uppercase tracking-widest text-white/20 font-bold block">{t('common.estate_in', { location: city.nameEn, defaultValue: `Estate in ${city.nameEn}` })}</span>
+                <span className="text-[9px] uppercase tracking-widest text-white/70 font-bold block">{t('common.estate_in', { location: city.nameEn, defaultValue: `Estate in ${city.nameEn}` })}</span>
                 <div className="h-0.5 w-0 group-hover:w-12 bg-gold mt-4 transition-all duration-300" />
               </Link>
             ))}
@@ -91,7 +91,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/70">
           <p>
             © {new Date().getFullYear()} Malta Luxury Real Estate. All rights reserved.
             <span className="mx-2 opacity-20">|</span>
