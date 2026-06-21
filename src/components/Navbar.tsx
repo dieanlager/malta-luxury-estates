@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter, Link } from '@/src/navigation';
 import { Menu, X, Globe, Heart } from 'lucide-react';
@@ -16,7 +15,7 @@ const LanguageSelector = () => {
     { code: 'en', label: 'English', flag: 'EN' },
     { code: 'it', label: 'Italiano', flag: 'IT' },
     { code: 'de', label: 'Deutsch', flag: 'DE' },
-    { code: 'fr', label: 'Français', flag: 'FR' },
+    { code: 'fr', label: 'Francais', flag: 'FR' },
     { code: 'pl', label: 'Polski', flag: 'PL' },
   ] as const;
 
@@ -34,33 +33,28 @@ const LanguageSelector = () => {
         <Globe size={13} />
         <span>{locale.toUpperCase().slice(0, 2)}</span>
       </button>
-      <AnimatePresence>
-        {isOpen && (
-          <>
-            <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
-            <motion.div
-              initial={{ opacity: 0, y: 10, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="absolute right-0 mt-2 w-40 bg-luxury-black/95 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl z-50 overflow-hidden"
+
+      {/* Language dropdown — CSS transition, stays in DOM */}
+      <>
+        {isOpen && <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />}
+        <div
+          className={`absolute right-0 mt-2 w-40 bg-luxury-black/95 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl z-50 overflow-hidden transition-all duration-200 ${isOpen ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-95 -translate-y-1 pointer-events-none'}`}
+        >
+          <div className="text-[8px] uppercase tracking-widest text-white/60 px-3 py-2 border-b border-white/5 mb-1">
+            Select Language
+          </div>
+          {languages.map(lang => (
+            <button
+              key={lang.code}
+              onClick={() => handleLocaleChange(lang.code)}
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs transition-all ${locale === lang.code ? 'bg-gold/10 text-gold' : 'hover:bg-white/5 text-white/60 hover:text-white'}`}
             >
-              <div className="text-[8px] uppercase tracking-widest text-white/60 px-3 py-2 border-b border-white/5 mb-1">
-                Select Language
-              </div>
-              {languages.map(lang => (
-                <button
-                  key={lang.code}
-                  onClick={() => handleLocaleChange(lang.code)}
-                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs transition-all ${locale === lang.code ? 'bg-gold/10 text-gold' : 'hover:bg-white/5 text-white/60 hover:text-white'}`}
-                >
-                  <span className="text-[10px] font-bold">{lang.flag}</span>
-                  <span className="font-medium">{lang.label}</span>
-                </button>
-              ))}
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+              <span className="text-[10px] font-bold">{lang.flag}</span>
+              <span className="font-medium">{lang.label}</span>
+            </button>
+          ))}
+        </div>
+      </>
     </div>
   );
 };
@@ -140,39 +134,34 @@ export function Navbar() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {isMobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            className="fixed inset-0 bg-luxury-black z-[60] flex flex-col p-8"
-          >
-            <div className="flex justify-end">
-              <button onClick={() => setIsMobileOpen(false)} aria-label="Close menu" className="w-12 h-12 flex items-center justify-center text-white">
-                <X size={32} />
-              </button>
-            </div>
-            <div className="flex flex-col gap-8 mt-12">
-              {[...navLinks, { href: '/market/live' as const, label: t('nav.market') }].map(link => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMobileOpen(false)}
-                  className="text-3xl font-serif hover:text-gold transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <div className="mt-8 pt-8 border-t border-white/10">
-                <Link href={"/agency/login" as any} onClick={() => setIsMobileOpen(false)} className="text-sm uppercase tracking-widest text-gold hover:text-white transition-colors">
-                  {t('nav.agency_login', { defaultValue: 'Agency Login' })}
-                </Link>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Mobile menu — CSS slide-in from right, stays in DOM */}
+      <div
+        className={`fixed inset-0 bg-luxury-black z-[60] flex flex-col p-8 transition-transform duration-300 ${isMobileOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        aria-hidden={!isMobileOpen}
+      >
+        <div className="flex justify-end">
+          <button onClick={() => setIsMobileOpen(false)} aria-label="Close menu" className="w-12 h-12 flex items-center justify-center text-white">
+            <X size={32} />
+          </button>
+        </div>
+        <div className="flex flex-col gap-8 mt-12">
+          {[...navLinks, { href: '/market/live' as const, label: t('nav.market') }].map(link => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMobileOpen(false)}
+              className="text-3xl font-serif hover:text-gold transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="mt-8 pt-8 border-t border-white/10">
+            <Link href={"/agency/login" as any} onClick={() => setIsMobileOpen(false)} className="text-sm uppercase tracking-widest text-gold hover:text-white transition-colors">
+              {t('nav.agency_login', { defaultValue: 'Agency Login' })}
+            </Link>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 }

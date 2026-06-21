@@ -3,7 +3,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'motion/react';
 import { Search, MapPin, Home, ChevronDown, X } from 'lucide-react';
 
 import { LOCATIONS } from '../lib/data';
@@ -70,12 +69,7 @@ export const SearchFilter: React.FC = () => {
 
   return (
     <div className="w-full max-w-5xl relative z-50">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.8 }}
-        className="bg-white/10 backdrop-blur-2xl p-2 rounded-3xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col lg:flex-row gap-2"
-      >
+      <div className="bg-white/10 backdrop-blur-2xl p-2 rounded-3xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col lg:flex-row gap-2">
         {/* LOCATION INPUT */}
         <div className="flex-1 relative">
           <div className="flex items-center px-6 py-4 gap-4 border-b lg:border-b-0 lg:border-r border-white/10 group">
@@ -100,38 +94,31 @@ export const SearchFilter: React.FC = () => {
             )}
           </div>
 
-          {/* Suggestions Dropdown */}
-          <AnimatePresence>
-            {isLocationOpen && suggestions.length > 0 && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                className="absolute top-full left-0 right-0 mt-3 bg-luxury-black/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl z-[60]"
+          {/* Suggestions Dropdown — CSS opacity transition, no motion */}
+          <div
+            className={`absolute top-full left-0 right-0 mt-3 bg-luxury-black/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl z-[60] transition-all duration-200 ${isLocationOpen && suggestions.length > 0 ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+          >
+            {suggestions.map((loc) => (
+              <button
+                key={loc.id}
+                onClick={() => {
+                  logEvent('autocomplete_select', { slug: loc.slug });
+                  setQuery(loc.nameEn);
+                  setIsLocationOpen(false);
+                  router.push(`/properties/${loc.slug}${selectedType !== 'all_types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : ''}`);
+                }}
+                className="w-full flex items-center gap-4 px-6 py-4 hover:bg-white/5 text-left transition-colors border-b border-white/5 last:border-0"
               >
-                {suggestions.map((loc) => (
-                  <button
-                    key={loc.id}
-                    onClick={() => {
-                      logEvent('autocomplete_select', { slug: loc.slug });
-                      setQuery(loc.nameEn);
-                      setIsLocationOpen(false);
-                      router.push(`/properties/${loc.slug}${selectedType !== 'all_types' ? `?type=${selectedType.toLowerCase().replace(/ /g, '-')}` : ''}`);
-                    }}
-                    className="w-full flex items-center gap-4 px-6 py-4 hover:bg-white/5 text-left transition-colors border-b border-white/5 last:border-0"
-                  >
-                    <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold">
-                      <MapPin size={14} />
-                    </div>
-                    <div>
-                      <div className="text-sm font-bold text-white">{loc.nameEn}</div>
-                      <div className="text-[10px] uppercase tracking-wider text-white/60">{loc.island} â€¢ {loc.locationType}</div>
-                    </div>
-                  </button>
-                ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
+                <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold">
+                  <MapPin size={14} />
+                </div>
+                <div>
+                  <div className="text-sm font-bold text-white">{loc.nameEn}</div>
+                  <div className="text-[10px] uppercase tracking-wider text-white/60">{loc.island} &bull; {loc.locationType}</div>
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* PROPERTY TYPE SELECT */}
@@ -144,36 +131,29 @@ export const SearchFilter: React.FC = () => {
             <div className="flex-1">
               <label className="block text-[10px] uppercase tracking-widest text-white/60 font-bold mb-1">{'Property Type'}</label>
               <div className="text-sm font-medium text-white flex items-center justify-between">
-                {selectedType === 'all_types' ? 'All Types' : t(`search.types.${selectedType}`)}
+                {selectedType === 'all_types' ? 'All Types' : selectedType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
                 <ChevronDown size={16} className={`transition-transform duration-300 ${isTypeOpen ? 'rotate-180' : ''}`} />
               </div>
             </div>
           </button>
 
-          <AnimatePresence>
-            {isTypeOpen && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                className="absolute top-full left-0 right-0 mt-3 bg-luxury-black/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl z-[60] grid grid-cols-1 p-2"
+          {/* Type Dropdown — CSS opacity transition */}
+          <div
+            className={`absolute top-full left-0 right-0 mt-3 bg-luxury-black/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl z-[60] grid grid-cols-1 p-2 transition-all duration-200 ${isTypeOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+          >
+            {propertyTypes.map((type) => (
+              <button
+                key={type}
+                onClick={() => {
+                  setSelectedType(type);
+                  setIsTypeOpen(false);
+                }}
+                className={`w-full px-4 py-3 rounded-xl text-left text-sm transition-all ${selectedType === type ? 'bg-gold text-luxury-black font-bold' : 'text-white/60 hover:bg-white/5 hover:text-white'}`}
               >
-                {propertyTypes.map((type) => (
-                  <button
-                    key={type}
-                    onClick={() => {
-                      setSelectedType(type);
-                      setIsTypeOpen(false);
-                    }}
-                    className={`w-full px-4 py-3 rounded-xl text-left text-sm transition-all ${selectedType === type ? 'bg-gold text-luxury-black font-bold' : 'text-white/60 hover:bg-white/5 hover:text-white'
-                      }`}
-                  >
-                    {type === 'all_types' ? 'All Types' : t(`search.types.${type}`)}
-                  </button>
-                ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
+                {type === 'all_types' ? 'All Types' : type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* SEARCH BUTTON */}
@@ -187,7 +167,7 @@ export const SearchFilter: React.FC = () => {
             <span>{'Search'}</span>
           </button>
         </div>
-      </motion.div>
+      </div>
 
       {/* Quick Filters / Tags */}
       <div className="mt-6 flex flex-col items-center gap-4">
@@ -209,7 +189,7 @@ export const SearchFilter: React.FC = () => {
           ))}
         </div>
         <p className="text-[10px] text-white/70 uppercase tracking-[0.2em] font-medium">
-          {'Try:'} <span className="text-white/60">"Sliema"</span>, <span className="text-white/60">"St. Julian's"</span>, or <span className="text-white/60">"Valletta"</span>
+          {'Try:'} <span className="text-white/60">&quot;Sliema&quot;</span>, <span className="text-white/60">&quot;St. Julian&apos;s&quot;</span>, or <span className="text-white/60">&quot;Valletta&quot;</span>
         </p>
       </div>
     </div>
