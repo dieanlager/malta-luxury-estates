@@ -23,8 +23,8 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onContact,
 }) => {
   const formatPrice = (value: number) => {
-    if (value >= 1000000) return `€${(value / 1000000).toFixed(1)}M`;
-    return `€${value.toLocaleString()}`;
+    if (value >= 1000000) return `â‚¬${(value / 1000000).toFixed(1)}M`;
+    return `â‚¬${value.toLocaleString()}`;
   };
 
   const schemaData = {
@@ -131,9 +131,9 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             <div className="flex justify-between items-center mb-6">
               <span className="text-gold font-bold text-lg">
                 {formatPrice(property.price)}
-                {property.type === 'rent' && <span className="text-[10px] text-white/40 ml-1">/ month</span>}
+                {property.type === 'rent' && <span className="text-[10px] text-white/60 ml-1">/ month</span>}
               </span>
-              <span className="text-[10px] uppercase tracking-widest font-bold text-white/30">
+              <span className="text-[10px] uppercase tracking-widest font-bold text-white/60">
                 For {property.type}
               </span>
             </div>
@@ -150,7 +150,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Bed size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">Beds</span>
+                  <span className="text-[10px] text-white/60 uppercase font-bold">Beds</span>
                   <span className="text-xs font-bold">{property.beds}</span>
                 </div>
               </div>
@@ -159,7 +159,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Bath size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">Baths</span>
+                  <span className="text-[10px] text-white/60 uppercase font-bold">Baths</span>
                   <span className="text-xs font-bold">{property.baths}</span>
                 </div>
               </div>
@@ -168,8 +168,8 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
                   <Maximize size={14} className="text-gold/80" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-white/40 uppercase font-bold">Area</span>
-                  <span className="text-xs font-bold">{property.sqm}m²</span>
+                  <span className="text-[10px] text-white/60 uppercase font-bold">Area</span>
+                  <span className="text-xs font-bold">{property.sqm}mÂ²</span>
                 </div>
               </div>
             </div>

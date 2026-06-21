@@ -65,7 +65,7 @@ export function AgencyLoginPage() {
               onChange={e => setPassword(e.target.value)}
               required
               className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-gold/40"
-              placeholder="••••••••"
+              placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
             />
           </div>
           <button

@@ -14,9 +14,9 @@ import { resolveArticleLang, getLocalizedArticleLink, extractFAQs } from '../lib
 import { SchemaScript } from '../components/SchemaScript';
 import { MortgageCalculator } from '../components/calculators/MortgageCalculator';
 
-// ─── FIX #3: Reading Progress ──────────────────────────────────────────────────
-// Używamy bezpośredniego ref.style.width zamiast CSS custom property
-// (CSS var w inline style wymaga @property registration aby działać)
+// â”€â”€â”€ FIX #3: Reading Progress â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// UÅ¼ywamy bezpoÅ›redniego ref.style.width zamiast CSS custom property
+// (CSS var w inline style wymaga @property registration aby dziaÅ‚aÄ‡)
 const ReadingProgress = () => {
   const barRef = useRef<HTMLDivElement>(null);
 
@@ -38,31 +38,31 @@ const ReadingProgress = () => {
   );
 };
 
-// ─── FIX #2: ReactMarkdown components ─────────────────────────────────────────
+// â”€â”€â”€ FIX #2: ReactMarkdown components â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const getMarkdownComponents = (t: any): React.ComponentProps<typeof ReactMarkdown>['components'] => ({
-  // ── Paragraphs
+  // â”€â”€ Paragraphs
   p: ({ children }) => <p>{children}</p>,
 
-  // ── Headings
+  // â”€â”€ Headings
   h1: ({ children }) => <h1>{children}</h1>,
   h2: ({ children }) => <h2>{children}</h2>,
   h3: ({ children }) => <h3>{children}</h3>,
   h4: ({ children }) => <h4>{children}</h4>,
 
-  // ── Lists
+  // â”€â”€ Lists
   ul: ({ children }) => <ul>{children}</ul>,
   ol: ({ children }) => <ol>{children}</ol>,
   li: ({ children }) => <li>{children}</li>,
 
-  // ── Inline
+  // â”€â”€ Inline
   a: ({ href, children }) => <a href={href}>{children}</a>,
   strong: ({ children }) => <strong>{children}</strong>,
   em: ({ children }) => <em>{children}</em>,
 
-  // ── HR
+  // â”€â”€ HR
   hr: () => <hr />,
 
-  // ── Tables
+  // â”€â”€ Tables
   table: ({ children }) => (
     <div className="table-wrapper">
       <table>{children}</table>
@@ -74,7 +74,7 @@ const getMarkdownComponents = (t: any): React.ComponentProps<typeof ReactMarkdow
   th: ({ children }) => <th>{children}</th>,
   td: ({ children }) => <td>{children}</td>,
 
-  // ── Blockquote → Callout lub Pull Quote
+  // â”€â”€ Blockquote â†’ Callout lub Pull Quote
   blockquote: ({ children }) => {
     const firstChild = React.Children.toArray(children)[0] as any;
     let rawText = '';
@@ -121,7 +121,7 @@ const getMarkdownComponents = (t: any): React.ComponentProps<typeof ReactMarkdow
     return <blockquote className="pull-quote">{children}</blockquote>;
   },
 
-  // ── Code Blocks
+  // â”€â”€ Code Blocks
   code: ({ node, inline, className, children, ...props }: any) => {
     const match = /language-(\w+)/.exec(className || '');
     if (!inline && match && match[1] === 'calculator') {
@@ -139,7 +139,7 @@ const getMarkdownComponents = (t: any): React.ComponentProps<typeof ReactMarkdow
   },
 });
 
-// ─── FAQ Item ─────────────────────────────────────────────────────────────────
+// â”€â”€â”€ FAQ Item â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => (
   <details className="faq-item">
     <summary className="faq-item__question">
@@ -154,7 +154,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
   </details>
 );
 
-// ─── Main Component ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export const ArticlePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
@@ -198,7 +198,7 @@ export const ArticlePage = () => {
   const faqSchema = articleFAQs.length > 0 ? generateArticleFAQSchema(articleFAQs) : null;
   const linkedContent = article ? injectInternalLinks(article.content, i18n.language) : '';
 
-  // ── Loading
+  // â”€â”€ Loading
   if (loading) {
     return (
       <div className="min-h-screen bg-luxury-black flex items-center justify-center">
@@ -207,7 +207,7 @@ export const ArticlePage = () => {
     );
   }
 
-  // ── 404
+  // â”€â”€ 404
   if (!article) {
     return (
       <div className="min-h-screen bg-luxury-black flex flex-col items-center justify-center p-6 text-center">
@@ -229,7 +229,7 @@ export const ArticlePage = () => {
 
       <div className="min-h-screen bg-luxury-black">
 
-        {/* ──────────────────────── HERO ──────────────────────── */}
+        {/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <header className="relative h-[65vh] min-h-[560px] overflow-hidden">
           {article.image && (
             <img src={article.image} alt={article.title}
@@ -250,10 +250,10 @@ export const ArticlePage = () => {
 
               <div className="flex flex-wrap items-center gap-5 mb-6">
                 <span className="article-category-badge">{article.category}</span>
-                <span className="flex items-center gap-2 text-white/40 text-[10px] uppercase tracking-[0.15em] font-medium">
+                <span className="flex items-center gap-2 text-white/60 text-[10px] uppercase tracking-[0.15em] font-medium">
                   <Calendar size={13} className="text-gold/60" /> {article.date}
                 </span>
-                <span className="flex items-center gap-2 text-white/40 text-[10px] uppercase tracking-[0.15em] font-medium">
+                <span className="flex items-center gap-2 text-white/60 text-[10px] uppercase tracking-[0.15em] font-medium">
                   <Clock size={13} className="text-gold/60" /> {article.readTime}
                 </span>
               </div>
@@ -266,7 +266,7 @@ export const ArticlePage = () => {
           </div>
         </header>
 
-        {/* ─────────────────────── BODY ───────────────────────── */}
+        {/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ BODY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <div className="article-layout py-16 md:py-24">
 
           {/* Main column */}
@@ -281,13 +281,13 @@ export const ArticlePage = () => {
             )}
 
             {/*
-              ═══════════════════════════════════════════════════
-              FIX GŁÓWNY (#1 + #2):
+              â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+              FIX GÅÃ“WNY (#1 + #2):
               - Klasa .article-prose zamiast .prose
-              - .prose było przejmowane przez Tailwind Typography
+              - .prose byÅ‚o przejmowane przez Tailwind Typography
               - .article-prose ma tylko nasze custom CSS
-              - MarkdownComponents mapuje każdy element jawnie
-              ═══════════════════════════════════════════════════
+              - MarkdownComponents mapuje kaÅ¼dy element jawnie
+              â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
             */}
             <div className="article-prose">
               <ReactMarkdown
@@ -298,7 +298,7 @@ export const ArticlePage = () => {
               </ReactMarkdown>
             </div>
 
-            {/* FAQ z danych artykułu (jeśli istnieją) */}
+            {/* FAQ z danych artykuÅ‚u (jeÅ›li istniejÄ…) */}
             {(article as any).faqs && (article as any).faqs.length > 0 && (
               <section className="faq-section">
                 <div className="faq-section__label">{t('article.faq_title')}</div>
@@ -312,11 +312,11 @@ export const ArticlePage = () => {
             <div className="mt-16 pt-8 border-t border-white/5 flex items-center gap-8">
               <button
                 onClick={() => (navigator as any).share?.({ title: article.title, url: window.location.href })}
-                className="flex items-center gap-2 text-white/30 hover:text-gold transition-colors
+                className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors
                            text-[10px] uppercase tracking-[0.15em] font-semibold">
                 <Share2 size={15} /> {t('article.share')}
               </button>
-              <button className="flex items-center gap-2 text-white/30 hover:text-gold transition-colors
+              <button className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors
                                  text-[10px] uppercase tracking-[0.15em] font-semibold">
                 <Bookmark size={15} /> {t('article.save')}
               </button>
@@ -328,7 +328,7 @@ export const ArticlePage = () => {
             </p>
           </article>
 
-          {/* ─── Sidebar ─── */}
+          {/* â”€â”€â”€ Sidebar â”€â”€â”€ */}
           <aside className="hidden lg:block">
             <div className="sticky top-28 space-y-12">
 
@@ -363,7 +363,7 @@ export const ArticlePage = () => {
 
               <div className="bg-white/[0.025] border border-white/[0.07] p-8 rounded-2xl">
                 <h3 className="font-serif text-lg mb-2 text-white">{t('article.sidebar_newsletter_title')}</h3>
-                <p className="text-[11px] text-white/30 mb-6 leading-relaxed">
+                <p className="text-[11px] text-white/60 mb-6 leading-relaxed">
                   {t('article.sidebar_newsletter_desc')}
                 </p>
                 <div className="space-y-3">

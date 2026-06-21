@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTranslations } from 'next-intl';
@@ -48,7 +48,7 @@ export const InteractiveTools = () => {
                                 onClick={() => setActiveTab(tab.id as any)}
                                 className={`flex items-center gap-3 px-5 py-3.5 rounded-2xl transition-all ${activeTab === tab.id
                                     ? `${tab.bg} ${tab.color} border ${tab.border} shadow-lg shadow-black/20`
-                                    : 'text-white/40 hover:text-white hover:bg-white/5'
+                                    : 'text-white/60 hover:text-white hover:bg-white/5'
                                     }`}
                             >
                                 <tab.icon size={18} />
@@ -80,7 +80,7 @@ export const InteractiveTools = () => {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="glass-card p-8 rounded-3xl border border-white/5 group hover:border-gold/30 transition-all">
                         <h4 className="font-serif text-xl mb-3 text-gold">{t('interactive_tools.info.tax_update_title')}</h4>
-                        <p className="text-xs text-white/40 leading-relaxed mb-6">
+                        <p className="text-xs text-white/60 leading-relaxed mb-6">
                             {t('interactive_tools.info.tax_update_desc')}
                         </p>
                         <Link href="/insights/property-taxes-malta-2026" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold transition-colors">
@@ -89,7 +89,7 @@ export const InteractiveTools = () => {
                     </div>
                     <div className="glass-card p-8 rounded-3xl border border-white/5 group hover:border-emerald-500/30 transition-all">
                         <h4 className="font-serif text-xl mb-3 text-emerald-400">{t('interactive_tools.info.roi_benchmarks_title')}</h4>
-                        <p className="text-xs text-white/40 leading-relaxed mb-6">
+                        <p className="text-xs text-white/60 leading-relaxed mb-6">
                             {t('interactive_tools.info.roi_benchmarks_desc')}
                         </p>
                         <Link href="/insights/rental-yields-malta-2026" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 group-hover:text-gold transition-colors">
@@ -102,7 +102,7 @@ export const InteractiveTools = () => {
                                 <Landmark size={24} />
                             </div>
                             <h4 className="font-serif text-2xl mb-3 text-white">{t('interactive_tools.info.oracle_title')}</h4>
-                            <p className="text-sm text-white/40 leading-relaxed mb-8">
+                            <p className="text-sm text-white/60 leading-relaxed mb-8">
                                 {t('interactive_tools.info.oracle_desc')}
                             </p>
                         </div>

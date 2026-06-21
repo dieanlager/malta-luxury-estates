@@ -70,7 +70,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                     >
                         <button
                             onClick={onClose}
-                            className="absolute top-8 right-8 w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all"
+                            className="absolute top-8 right-8 w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all"
                         >
                             <X size={24} />
                         </button>
@@ -85,7 +85,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                                 />
                             </div>
                             <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">AI Property <span className="text-gold italic">Twin Finder</span></h2>
-                            <p className="text-white/40 max-w-xl">
+                            <p className="text-white/60 max-w-xl">
                                 Our neural engine analyzes lifestyle patterns, architectural DNA, and neighborhood vibes to find properties that perfectly match the soul of your current choice.
                             </p>
                         </div>
@@ -154,7 +154,7 @@ export const PropertyTwinFinder: React.FC<PropertyTwinFinderProps> = ({ currentP
                         <div className="mt-20 pt-12 border-t border-white/5 text-center">
                             <div className="inline-flex items-center gap-4 px-6 py-3 rounded-2xl bg-white/3 border border-white/5">
                                 <Zap size={16} className="text-gold animate-pulse" />
-                                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
+                                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">
                                     Neural Engine calibrated to Malta Market Index 2026
                                 </span>
                             </div>

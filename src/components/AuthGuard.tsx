@@ -75,7 +75,7 @@ export function AuthGuard({ children, requirePlan }: Props) {
                         letterSpacing: '0.1em', textTransform: 'uppercase',
                         color: '#080808', textDecoration: 'none',
                     }}>
-                        Upgrade to Pro →
+                        Upgrade to Pro â†’
                     </a>
                 </div>
             )

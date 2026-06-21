@@ -84,7 +84,7 @@ export const InsightsHub = () => {
             >
               <cat.icon className={`${cat.color} mb-4 group-hover:scale-110 transition-transform`} size={24} />
               <h3 className="font-serif text-lg">{cat.name}</h3>
-              <p className="text-[10px] text-white/40 uppercase tracking-widest mt-1">{t('insights.categories.explore_guide')}</p>
+              <p className="text-[10px] text-white/60 uppercase tracking-widest mt-1">{t('insights.categories.explore_guide')}</p>
             </button>
           ))}
         </div>
@@ -110,7 +110,7 @@ export const InsightsHub = () => {
                   <span className="px-3 py-1 bg-gold text-luxury-black text-[10px] font-bold uppercase tracking-widest rounded-full">
                     {article.category}
                   </span>
-                  <span className="text-white/40 text-xs">{article.readTime}</span>
+                  <span className="text-white/60 text-xs">{article.readTime}</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-serif mb-4 group-hover:text-gold transition-colors">
                   {article.title}

@@ -47,7 +47,7 @@ export const BuyingCostsCalculator = () => {
           <div>
             <div className="flex justify-between items-center mb-4">
               <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Acquisition Price'}</label>
-              <span className="text-gold font-serif text-xl">€{price.toLocaleString(locale)}</span>
+              <span className="text-gold font-serif text-xl">â‚¬{price.toLocaleString(locale)}</span>
             </div>
             <input
               type="range"
@@ -118,7 +118,7 @@ export const BuyingCostsCalculator = () => {
               className={`p-4 rounded-xl border text-center transition-all ${needsAIP ? 'bg-gold/10 border-gold text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}
             >
               <div className="text-[10px] font-bold uppercase tracking-widest mb-1 text-left">{'AIP Required'}</div>
-              <div className="text-lg font-serif">€233</div>
+              <div className="text-lg font-serif">â‚¬233</div>
             </button>
           </div>
         </div>
@@ -132,20 +132,20 @@ export const BuyingCostsCalculator = () => {
               <span className="text-sm text-white/60 flex items-center gap-2">
                 <Percent size={14} className="text-gold/40" /> {'Net Stamp Duty'}
               </span>
-              <span className="text-lg font-serif text-gold">€{result?.stampDuty.toLocaleString(locale)}</span>
+              <span className="text-lg font-serif text-gold">â‚¬{result?.stampDuty.toLocaleString(locale)}</span>
             </div>
 
             <div className="flex justify-between items-center">
               <span className="text-sm text-white/60 flex items-center gap-2">
                 <FileText size={14} className="text-gold/40" /> {'Notary Searches'}
               </span>
-              <span className="text-lg font-serif text-white">€{result?.notaryFees.toLocaleString(locale)}</span>
+              <span className="text-lg font-serif text-white">â‚¬{result?.notaryFees.toLocaleString(locale)}</span>
             </div>
 
             {needsAIP && (
               <div className="flex justify-between items-center">
                 <span className="text-sm text-white/60">{'AIP Permit'}</span>
-                <span className="text-lg font-serif">€233</span>
+                <span className="text-lg font-serif">â‚¬233</span>
               </div>
             )}
           </div>
@@ -156,13 +156,13 @@ export const BuyingCostsCalculator = () => {
                 <div className="text-[10px] font-bold uppercase tracking-widest text-gold">{'TOTAL EXTRA COSTS'}</div>
                 <div className="text-xs text-white/20 uppercase tracking-widest font-bold">{`~${result?.costPercentage.toFixed(2)}% of purchase price`}</div>
               </div>
-              <div className="text-4xl font-serif text-gold">€{result?.totalAcquisitionCosts.toLocaleString(locale)}</div>
+              <div className="text-4xl font-serif text-gold">â‚¬{result?.totalAcquisitionCosts.toLocaleString(locale)}</div>
             </div>
 
             <div className="p-6 bg-gold text-luxury-black rounded-3xl flex items-center justify-between">
               <div>
                 <div className="text-[10px] font-bold uppercase tracking-widest opacity-60">{'TOTAL CAPITAL INVESTMENT'}</div>
-                <div className="text-2xl font-serif font-bold">€{result?.totalInvestment.toLocaleString(locale)}</div>
+                <div className="text-2xl font-serif font-bold">â‚¬{result?.totalInvestment.toLocaleString(locale)}</div>
               </div>
               <div className="w-12 h-12 bg-luxury-black/10 rounded-full flex items-center justify-center">
                 <Euro size={24} />

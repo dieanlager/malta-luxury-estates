@@ -10,7 +10,7 @@ import {
     ArrowRight, Info, Building2, Globe, Home, TrendingUp
 } from 'lucide-react';
 
-// ¦¦¦ Types ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+// Â¦Â¦Â¦ Types Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
 type Step = 'status' | 'employment' | 'income' | 'debts' | 'result';
 
 interface FunnelData {
@@ -23,7 +23,7 @@ interface FunnelData {
     age: number;
 }
 
-// ¦¦¦ Constants (Malta Specific) ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+// Â¦Â¦Â¦ Constants (Malta Specific) Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
 const RETIREMENT_AGE = 65;
 const MAX_LOAN_RATIO = 0.90; // Resident LTV
 const NON_RESIDENT_LTV = 0.75;
@@ -44,7 +44,7 @@ export const MortgagePreQualifier: React.FC = () => {
         age: 30,
     });
 
-    // ¦¦¦ Calculations ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+    // Â¦Â¦Â¦ Calculations Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
     const results = useMemo(() => {
         const loanDuration = Math.min(40, RETIREMENT_AGE - data.age);
         const monthlyCapacity = (data.monthlyIncome * DSR_LIMIT) - data.monthlyDebts;
@@ -74,7 +74,7 @@ export const MortgagePreQualifier: React.FC = () => {
         return { maxLoan, maxPropertyPrice, minDeposit, loanDuration, score };
     }, [data]);
 
-    // ¦¦¦ Handlers ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+    // Â¦Â¦Â¦ Handlers Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
     const updateData = (fields: Partial<FunnelData>) => setData(prev => ({ ...prev, ...fields }));
 
     const nextStep = () => {
@@ -91,7 +91,7 @@ export const MortgagePreQualifier: React.FC = () => {
         else if (step === 'result') setStep('debts');
     };
 
-    // ¦¦¦ UI Parts ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+    // Â¦Â¦Â¦ UI Parts Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
     const ProgressBar = () => {
         const steps: Step[] = ['status', 'employment', 'income', 'debts', 'result'];
         const idx = steps.indexOf(step);
@@ -132,7 +132,7 @@ export const MortgagePreQualifier: React.FC = () => {
         <div className="glass-card rounded-[2.5rem] border border-white/5 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[600px]">
 
-                {/* ¦¦ Left Sidebar: Progress / Real-time Estimate ¦¦ */}
+                {/* Â¦Â¦ Left Sidebar: Progress / Real-time Estimate Â¦Â¦ */}
                 <div className="lg:col-span-4 bg-black/40 border-r border-white/5 p-10 flex flex-col justify-between">
                     <div>
                         <div className="flex items-center gap-2 text-gold mb-6">
@@ -154,9 +154,9 @@ export const MortgagePreQualifier: React.FC = () => {
                                 className="p-6 bg-gold/5 border border-gold/20 rounded-2xl"
                             >
                                 <div className="text-[9px] font-bold uppercase tracking-widest text-gold mb-2">{'ESTIMATED CAPACITY'}</div>
-                                <div className="text-3xl font-serif text-white mb-2">€{results.maxLoan.toLocaleString(locale)}</div>
+                                <div className="text-3xl font-serif text-white mb-2">â‚¬{results.maxLoan.toLocaleString(locale)}</div>
                                 <div className="text-[10px] text-white/60 leading-relaxed">
-                                    {`Up to €${results.maxLoan.toLocaleString()} over ${results.loanDuration} years`}
+                                    {`Up to â‚¬${results.maxLoan.toLocaleString()} over ${results.loanDuration} years`}
                                 </div>
                             </motion.div>
                         </AnimatePresence>
@@ -174,7 +174,7 @@ export const MortgagePreQualifier: React.FC = () => {
                     </div>
                 </div>
 
-                {/* ¦¦ Right Content: Questions ¦¦ */}
+                {/* Â¦Â¦ Right Content: Questions Â¦Â¦ */}
                 <div className="lg:col-span-8 p-10 md:p-16 flex flex-col justify-between bg-black/20">
                     <div>
                         <ProgressBar />
@@ -188,7 +188,7 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 1 — RESIDENCY STATUS'}</label>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 1 â€” RESIDENCY STATUS'}</label>
                                     <h3 className="text-2xl font-serif text-white mb-10">{'What is your residency status?'}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                                         <OptionCard
@@ -238,7 +238,7 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 2 — EMPLOYMENT'}</label>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 2 â€” EMPLOYMENT'}</label>
                                     <h3 className="text-2xl font-serif text-white mb-10">{'What is your employment status?'}</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
                                         <OptionCard
@@ -287,14 +287,14 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 3 — INCOME'}</label>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 3 â€” INCOME'}</label>
                                     <h3 className="text-2xl font-serif text-white mb-10">{'What is your gross annual income?'}</h3>
 
                                     <div className="space-y-12 max-w-md">
                                         <div>
                                             <div className="flex justify-between items-center mb-4">
-                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Gross Monthly Income (€)'}</label>
-                                                <span className="text-xl font-serif text-white">€{data.monthlyIncome.toLocaleString(locale)}</span>
+                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Gross Monthly Income (â‚¬)'}</label>
+                                                <span className="text-xl font-serif text-white">â‚¬{data.monthlyIncome.toLocaleString(locale)}</span>
                                             </div>
                                             <input
                                                 aria-label="Adjust value"
@@ -310,8 +310,8 @@ export const MortgagePreQualifier: React.FC = () => {
                                         </div>
                                         <div>
                                             <div className="flex justify-between items-center mb-4">
-                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Available Savings / Deposit (€)'}</label>
-                                                <span className="text-xl font-serif text-white">€{data.savings.toLocaleString(locale)}</span>
+                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Available Savings / Deposit (â‚¬)'}</label>
+                                                <span className="text-xl font-serif text-white">â‚¬{data.savings.toLocaleString(locale)}</span>
                                             </div>
                                             <input
                                                 aria-label="Adjust value"
@@ -345,12 +345,12 @@ export const MortgagePreQualifier: React.FC = () => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                                         <div className="p-8 bg-white/3 border border-white/5 rounded-3xl">
                                             <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/60 mb-4">{'MAX PROPERTY VALUE'}</div>
-                                            <div className="text-4xl font-serif text-white mb-2">€{results.maxPropertyPrice.toLocaleString(locale)}</div>
-                                            <div className="text-[10px] text-white/60">{`Includes your deposit of €${data.savings.toLocaleString()}`}</div>
+                                            <div className="text-4xl font-serif text-white mb-2">â‚¬{results.maxPropertyPrice.toLocaleString(locale)}</div>
+                                            <div className="text-[10px] text-white/60">{`Includes your deposit of â‚¬${data.savings.toLocaleString()}`}</div>
                                         </div>
                                         <div className="p-8 bg-gold/5 border border-gold/20 rounded-3xl">
                                             <div className="text-[9px] font-bold uppercase tracking-[0.2em] text-gold mb-4">{'RECOMMENDED LOAN'}</div>
-                                            <div className="text-4xl font-serif text-gold mb-2">€{results.maxLoan.toLocaleString(locale)}</div>
+                                            <div className="text-4xl font-serif text-gold mb-2">â‚¬{results.maxLoan.toLocaleString(locale)}</div>
                                             <div className="text-[10px] text-gold/40">{`Over ${results.loanDuration} years`}</div>
                                         </div>
                                     </div>
@@ -378,14 +378,14 @@ export const MortgagePreQualifier: React.FC = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -20 }}
                                 >
-                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 3 — EXISTING DEBTS'}</label>
+                                    <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold mb-4 block">{'STEP 3 â€” EXISTING DEBTS'}</label>
                                     <h3 className="text-2xl font-serif text-white mb-10">{'Any existing monthly debt commitments?'}</h3>
                                     <p className="text-white/60 text-sm mb-12">{'Include loans, car finance, credit cards etc.'}</p>
 
                                     <div className="max-w-md">
                                         <div className="flex justify-between items-center mb-4">
-                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Total Monthly Debt Payments (€)'}</label>
-                                            <span className="text-xl font-serif text-white">€{data.monthlyDebts.toLocaleString(locale)}</span>
+                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Total Monthly Debt Payments (â‚¬)'}</label>
+                                            <span className="text-xl font-serif text-white">â‚¬{data.monthlyDebts.toLocaleString(locale)}</span>
                                         </div>
                                         <input
                                             aria-label="Adjust value"
@@ -426,7 +426,7 @@ export const MortgagePreQualifier: React.FC = () => {
                                 className="flex-1 py-4 bg-gold text-luxury-black rounded-xl text-xs font-bold uppercase tracking-widest
                            flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-gold/20 transition-all"
                             >
-                                {'NEXT STEP ›'}
+                                {'NEXT STEP â€º'}
                                 <ChevronRight size={16} />
                             </button>
                         </div>

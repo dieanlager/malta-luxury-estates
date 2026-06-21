@@ -41,12 +41,12 @@ function genSlug(text: string) {
 }
 
 function fmtPrice(p: number) {
-  if (p >= 1_000_000) return '€' + (p / 1_000_000).toFixed(1) + 'M';
-  if (p >= 1_000) return '€' + Math.round(p / 1_000) + 'k';
-  return '€' + p.toLocaleString('en-GB');
+  if (p >= 1_000_000) return 'â‚¬' + (p / 1_000_000).toFixed(1) + 'M';
+  if (p >= 1_000) return 'â‚¬' + Math.round(p / 1_000) + 'k';
+  return 'â‚¬' + p.toLocaleString('en-GB');
 }
 
-// Supabase storage URLs are public — load directly. Only proxy scraped external images.
+// Supabase storage URLs are public â€” load directly. Only proxy scraped external images.
 function proxyImg(url: string): string {
   if (!url) return '';
   if (
@@ -58,7 +58,7 @@ function proxyImg(url: string): string {
   return `/api/proxy-image?url=${encodeURIComponent(url)}`;
 }
 
-// Strip [AFFILIATE_URL:…] and [FEATURES:…] annotations stored inside description column
+// Strip [AFFILIATE_URL:â€¦] and [FEATURES:â€¦] annotations stored inside description column
 function parseDescription(raw: string, affiliateFallback: string): { desc: string; affiliateUrl: string; features: string } {
   let s = raw || '';
   let affiliateUrl = affiliateFallback || '';
@@ -73,7 +73,7 @@ function parseDescription(raw: string, affiliateFallback: string): { desc: strin
   return { desc: s.trim(), affiliateUrl, features };
 }
 
-// ─── Styles ────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const inp = 'w-full px-3 py-2.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/25 focus:border-gold/50 focus:outline-none text-sm transition-colors';
 const lbl = 'block text-white/50 text-[10px] font-bold uppercase tracking-widest mb-1.5';
 const card = 'glass-card border border-white/10 rounded-2xl p-6 mb-4';
@@ -111,13 +111,13 @@ const AdminPage: React.FC = () => {
       const r = await fetch('/api/admin/properties', { headers: { 'x-admin-key': adminKey } });
       if (!r.ok) throw new Error(await r.text());
       setProps(await r.json());
-    } catch (e: any) { toast('Błąd ładowania: ' + e.message, false); }
+    } catch (e: any) { toast('BÅ‚Ä…d Å‚adowania: ' + e.message, false); }
     finally { setLoadingList(false); }
   }, [adminKey]);
 
   useEffect(() => { if (adminKey) fetchProps(); }, [fetchProps, adminKey]);
 
-  // Handle ?edit=ID URL param — open edit form directly
+  // Handle ?edit=ID URL param â€” open edit form directly
   useEffect(() => {
     if (!adminKey || props.length === 0) return;
     const params = new URLSearchParams(window.location.search);
@@ -140,7 +140,7 @@ const AdminPage: React.FC = () => {
     setUploadSlug(editSlug);
     setBlobPreviews([]);
 
-    // Strip [AFFILIATE_URL:…] and [FEATURES:…] from raw description
+    // Strip [AFFILIATE_URL:â€¦] and [FEATURES:â€¦] from raw description
     const { desc, affiliateUrl, features: parsedFeatures } = parseDescription(p.description || '', p.affiliate_url || '');
 
     // Features may also come from the DB features column
@@ -174,7 +174,7 @@ const AdminPage: React.FC = () => {
   };
 
   const handleScrape = async () => {
-    if (!url.trim()) { toast('Wklej URL nieruchomości', false); return; }
+    if (!url.trim()) { toast('Wklej URL nieruchomoÅ›ci', false); return; }
     setScraping(true);
     try {
       const r = await fetch('/api/admin/scrape', {
@@ -202,8 +202,8 @@ const AdminPage: React.FC = () => {
         slug: scrapedSlug,
       });
       setBlobPreviews([]);
-      toast('Dane pobrane. Wgraj własne zdjęcia poniżej.');
-    } catch (e: any) { toast('Błąd: ' + e.message, false); }
+      toast('Dane pobrane. Wgraj wÅ‚asne zdjÄ™cia poniÅ¼ej.');
+    } catch (e: any) { toast('BÅ‚Ä…d: ' + e.message, false); }
     finally { setScraping(false); }
   };
 
@@ -256,8 +256,8 @@ const AdminPage: React.FC = () => {
     setBlobPreviews(prev => prev.slice(0, prev.length - blobs.length));
     setForm(f => ({ ...f, images: [...f.images, ...serverUrls] }));
     setUploading(false);
-    if (errors > 0) toast('Wgrano ' + serverUrls.length + ', błąd ' + errors, serverUrls.length > 0);
-    else toast('Wgrano ' + serverUrls.length + ' zdjęć');
+    if (errors > 0) toast('Wgrano ' + serverUrls.length + ', bÅ‚Ä…d ' + errors, serverUrls.length > 0);
+    else toast('Wgrano ' + serverUrls.length + ' zdjÄ™Ä‡');
   };
 
   const moveImage = (from: number, to: number) => {
@@ -270,7 +270,7 @@ const AdminPage: React.FC = () => {
   };
 
   const handlePublish = async () => {
-    if (!form.title) { toast('Wpisz tytuł', false); return; }
+    if (!form.title) { toast('Wpisz tytuÅ‚', false); return; }
     if (Number(form.price) <= 0) { toast('Cena > 0', false); return; }
     if (!form.location_text) { toast('Lokalizacja wymagana', false); return; }
     setPublishing(true);
@@ -301,7 +301,7 @@ const AdminPage: React.FC = () => {
       setForm(empty); setUrl(''); setUploadSlug(''); setEditId(null); setBlobPreviews([]);
       await fetchProps();
       setView('list');
-    } catch (e: any) { toast('Błąd: ' + e.message, false); }
+    } catch (e: any) { toast('BÅ‚Ä…d: ' + e.message, false); }
     finally { setPublishing(false); }
   };
 
@@ -310,10 +310,10 @@ const AdminPage: React.FC = () => {
     try {
       const r = await fetch('/api/admin/delete?id=' + p.id, { method: 'DELETE', headers: { 'x-admin-key': adminKey } });
       if (!r.ok) throw new Error(await r.text());
-      toast('Usunięto: ' + p.title);
+      toast('UsuniÄ™to: ' + p.title);
       setConfirmDel(null);
       await fetchProps();
-    } catch (e: any) { toast('Błąd: ' + e.message, false); }
+    } catch (e: any) { toast('BÅ‚Ä…d: ' + e.message, false); }
     finally { setDeleting(false); }
   };
 
@@ -329,10 +329,10 @@ const AdminPage: React.FC = () => {
       if (!r.ok) throw new Error(await r.text());
       toast(newStatus === 'active' ? 'Aktywowano' : 'Wstrzymano');
       await fetchProps();
-    } catch (e: any) { toast('Błąd: ' + e.message, false); }
+    } catch (e: any) { toast('BÅ‚Ä…d: ' + e.message, false); }
   };
 
-  // ── Auth screen ────────────────────────────────────────────────────────────
+  // â”€â”€ Auth screen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if (!adminKey) {
     return (
       <main className="min-h-screen bg-luxury-black flex items-center justify-center px-6">
@@ -356,7 +356,7 @@ const AdminPage: React.FC = () => {
     );
   }
 
-  // ── Main ───────────────────────────────────────────────────────────────────
+  // â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   return (
     <div className="min-h-screen bg-luxury-black pt-24 pb-16 px-4">
       {/* Toast */}
@@ -396,25 +396,25 @@ const AdminPage: React.FC = () => {
           </div>
         </div>
 
-        {/* ── LIST VIEW ───────────────────────────────────────────────────────── */}
+        {/* â”€â”€ LIST VIEW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         {view === 'list' && (
           <div>
             <div className="flex items-center justify-between mb-4">
               <p className="text-white/60 text-sm tabular-nums">{props.length} ofert w bazie</p>
               <button onClick={fetchProps} disabled={loadingList} className="flex items-center gap-1.5 text-white/60 hover:text-white text-xs transition">
-                <RefreshCw size={12} className={loadingList ? 'animate-spin' : ''} /> Odśwież
+                <RefreshCw size={12} className={loadingList ? 'animate-spin' : ''} /> OdÅ›wieÅ¼
               </button>
             </div>
 
             {loadingList && (
               <div className="flex items-center justify-center h-32 text-white/60">
-                <Loader2 size={20} className="animate-spin mr-2" /> Ładowanie…
+                <Loader2 size={20} className="animate-spin mr-2" /> Åadowanieâ€¦
               </div>
             )}
 
             {!loadingList && props.length === 0 && (
               <div className="glass-card border border-white/10 rounded-2xl p-12 text-center">
-                <p className="text-white/60 text-sm mb-4">Brak ofert. Dodaj pierwszą nieruchomość!</p>
+                <p className="text-white/60 text-sm mb-4">Brak ofert. Dodaj pierwszÄ… nieruchomoÅ›Ä‡!</p>
                 <button onClick={startNew} className={goldBtn}>+ Nowa oferta</button>
               </div>
             )}
@@ -428,13 +428,13 @@ const AdminPage: React.FC = () => {
                     <div className="w-20 h-16 flex-shrink-0 bg-white/5">
                       {thumb
                         ? <img src={proxyImg(thumb)} alt="" className="w-full h-full object-cover" onError={e => { (e.target as HTMLImageElement).style.opacity = '0.2'; }} />
-                        : <div className="w-full h-full flex items-center justify-center text-white/20 text-xs">—</div>}
+                        : <div className="w-full h-full flex items-center justify-center text-white/20 text-xs">â€”</div>}
                     </div>
                     <div className="flex-1 px-4 py-3 min-w-0">
                       <div className="flex items-center justify-between gap-2">
                         <div className="min-w-0">
                           <p className="text-white text-sm font-medium truncate">{p.title}</p>
-                          <p className="text-white/60 text-xs mt-0.5">{p.location_text} · {fmtPrice(p.price)} · {p.listing_type === 'rent' ? 'Wynajem' : 'Sprzedaż'}</p>
+                          <p className="text-white/60 text-xs mt-0.5">{p.location_text} Â· {fmtPrice(p.price)} Â· {p.listing_type === 'rent' ? 'Wynajem' : 'SprzedaÅ¼'}</p>
                         </div>
                         <div className="flex items-center gap-1 flex-shrink-0">
                           <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider border ${isActive ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/20' : 'bg-white/5 text-white/60 border-white/10'}`}>
@@ -447,7 +447,7 @@ const AdminPage: React.FC = () => {
                           <button onClick={() => startEdit(p)} title="Edytuj" className="w-8 h-8 rounded-lg flex items-center justify-center text-white/60 hover:text-white hover:bg-white/5 transition-colors">
                             <Edit2 size={14} />
                           </button>
-                          <button onClick={() => setConfirmDel(p)} title="Usuń" className="w-8 h-8 rounded-lg flex items-center justify-center text-white/60 hover:text-red-400 hover:bg-red-500/10 transition-colors">
+                          <button onClick={() => setConfirmDel(p)} title="UsuÅ„" className="w-8 h-8 rounded-lg flex items-center justify-center text-white/60 hover:text-red-400 hover:bg-red-500/10 transition-colors">
                             <Trash2 size={14} />
                           </button>
                         </div>
@@ -460,7 +460,7 @@ const AdminPage: React.FC = () => {
           </div>
         )}
 
-        {/* ── FORM VIEW ───────────────────────────────────────────────────────── */}
+        {/* â”€â”€ FORM VIEW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         {view === 'form' && (
           <div>
             {/* Edit mode banner */}
@@ -473,10 +473,10 @@ const AdminPage: React.FC = () => {
               </div>
             )}
 
-            {/* Step 1 — URL Scrape (new listings only) */}
+            {/* Step 1 â€” URL Scrape (new listings only) */}
             {!editId && (
               <div className={card}>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-1">Krok 1 — URL oferty</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-1">Krok 1 â€” URL oferty</p>
                 <p className="text-white/60 text-xs mb-4">Automatycznie pobiera dane z Alliance.mt lub innej strony partnera.</p>
                 <div className="flex gap-2">
                   <input type="url" placeholder="https://alliance.mt/property/..." value={url}
@@ -484,22 +484,22 @@ const AdminPage: React.FC = () => {
                     className={inp + ' flex-1'} />
                   <button onClick={handleScrape} disabled={scraping} className={goldBtn}>
                     {scraping ? <Loader2 size={14} className="animate-spin" /> : <Link2 size={14} />}
-                    {scraping ? 'Pobieranie…' : 'Pobierz'}
+                    {scraping ? 'Pobieranieâ€¦' : 'Pobierz'}
                   </button>
                 </div>
               </div>
             )}
 
-            {/* Step 2 — Details */}
+            {/* Step 2 â€” Details */}
             <div className={card}>
               <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-5">
-                {editId ? 'Edytuj dane' : 'Krok 2 — Szczegóły'}
+                {editId ? 'Edytuj dane' : 'Krok 2 â€” SzczegÃ³Å‚y'}
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-4">
                 {/* Title */}
                 <div className="col-span-2">
-                  <label className={lbl}>Tytuł</label>
+                  <label className={lbl}>TytuÅ‚</label>
                   <input type="text" value={form.title} onChange={e => {
                     const t = e.target.value;
                     setForm(f => ({
@@ -507,7 +507,7 @@ const AdminPage: React.FC = () => {
                       seo_title: f.seo_title === f.title.slice(0, 60) || !f.seo_title ? t.slice(0, 60) : f.seo_title,
                       slug: genSlug((f.location_text ? f.location_text + ' ' : '') + t),
                     }));
-                  }} placeholder="2-bedroom apartment in Sliema…" className={inp} />
+                  }} placeholder="2-bedroom apartment in Sliemaâ€¦" className={inp} />
                 </div>
 
                 {/* Slug */}
@@ -523,10 +523,10 @@ const AdminPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Affiliate URL — hidden label, internal use */}
+                {/* Affiliate URL â€” hidden label, internal use */}
                 <div className="col-span-2">
-                  <label className={lbl}>Affiliate URL <span className="text-white/20 font-normal normal-case tracking-normal">(link partnera — widoczny tylko w panelu)</span></label>
-                  <input type="url" value={form.affiliate_url} onChange={e => set('affiliate_url', e.target.value)} className={inp} placeholder="https://alliance.mt/property/…" />
+                  <label className={lbl}>Affiliate URL <span className="text-white/20 font-normal normal-case tracking-normal">(link partnera â€” widoczny tylko w panelu)</span></label>
+                  <input type="url" value={form.affiliate_url} onChange={e => set('affiliate_url', e.target.value)} className={inp} placeholder="https://alliance.mt/property/â€¦" />
                 </div>
 
                 {/* Price */}
@@ -549,21 +549,21 @@ const AdminPage: React.FC = () => {
 
                 {/* Baths */}
                 <div>
-                  <label className={lbl}>Łazienki</label>
+                  <label className={lbl}>Åazienki</label>
                   <input type="number" value={form.baths} onChange={e => set('baths', e.target.value)} className={inp} />
                 </div>
 
                 {/* Sqm */}
                 <div>
-                  <label className={lbl}>Powierzchnia m²</label>
+                  <label className={lbl}>Powierzchnia mÂ²</label>
                   <input type="number" value={form.sqm} onChange={e => set('sqm', e.target.value)} className={inp} />
                 </div>
 
-                {/* Type — default sale */}
+                {/* Type â€” default sale */}
                 <div>
                   <label className={lbl}>Typ</label>
                   <select value={form.listing_type} onChange={e => set('listing_type', e.target.value)} className={inp}>
-                    <option value="sale">Na sprzedaż</option>
+                    <option value="sale">Na sprzedaÅ¼</option>
                     <option value="rent">Wynajem</option>
                   </select>
                 </div>
@@ -571,7 +571,7 @@ const AdminPage: React.FC = () => {
 
               {/* Feature checkboxes */}
               <div className="flex flex-wrap gap-4 mb-5">
-                {([['is_seafront', 'Sea View / Seafront'], ['has_pool', 'Basen'], ['has_garage', 'Garaż / Parking']] as [keyof Form, string][]).map(([k, label]) => (
+                {([['is_seafront', 'Sea View / Seafront'], ['has_pool', 'Basen'], ['has_garage', 'GaraÅ¼ / Parking']] as [keyof Form, string][]).map(([k, label]) => (
                   <label key={k} className="flex items-center gap-2 text-white/50 text-sm cursor-pointer hover:text-white transition-colors">
                     <input type="checkbox" checked={form[k] as boolean} onChange={e => set(k, e.target.checked)} className="accent-gold w-3.5 h-3.5" />
                     {label}
@@ -625,7 +625,7 @@ const AdminPage: React.FC = () => {
                   <input type="checkbox" checked={form.featured} onChange={e => set('featured', e.target.checked)} className="accent-gold w-4 h-4" />
                   <span className="text-white text-sm font-medium flex items-center gap-2">
                     <Star size={14} className="text-gold" fill={form.featured ? 'currentColor' : 'none'} />
-                    Wyróżniona oferta (Featured)
+                    WyrÃ³Å¼niona oferta (Featured)
                   </span>
                 </label>
                 {form.featured && (
@@ -648,14 +648,14 @@ const AdminPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Step 3 — Images */}
+            {/* Step 3 â€” Images */}
             <div className={card}>
               <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-1">
-                {editId ? 'Zdjęcia' : 'Krok 3 — Zdjęcia'}
+                {editId ? 'ZdjÄ™cia' : 'Krok 3 â€” ZdjÄ™cia'}
               </p>
               <p className="text-white/60 text-xs mb-4">
-                Konwertowane automatycznie do WebP 1920px. Przeciągnij kafelki żeby zmienić kolejność. Pierwsze = okładka.
-                {uploading && <span className="text-gold ml-2">Wgrywanie…</span>}
+                Konwertowane automatycznie do WebP 1920px. PrzeciÄ…gnij kafelki Å¼eby zmieniÄ‡ kolejnoÅ›Ä‡. Pierwsze = okÅ‚adka.
+                {uploading && <span className="text-gold ml-2">Wgrywanieâ€¦</span>}
               </p>
 
               {/* Drop zone */}
@@ -665,8 +665,8 @@ const AdminPage: React.FC = () => {
                 onDrop={e => { e.preventDefault(); e.stopPropagation(); if (e.dataTransfer.files.length > 0) processFiles(e.dataTransfer.files); }}
               >
                 <Upload size={22} className="text-white/60" />
-                <span className="text-white/50 text-sm">Przeciągnij zdjęcia lub kliknij</span>
-                <span className="text-white/20 text-xs">JPG, PNG, HEIC — resize do 1920px WebP</span>
+                <span className="text-white/50 text-sm">PrzeciÄ…gnij zdjÄ™cia lub kliknij</span>
+                <span className="text-white/20 text-xs">JPG, PNG, HEIC â€” resize do 1920px WebP</span>
                 <input type="file" multiple accept="image/*" onChange={e => { if (e.target.files) processFiles(e.target.files); }} disabled={uploading} className="hidden" />
               </label>
 
@@ -702,7 +702,7 @@ const AdminPage: React.FC = () => {
                       {/* Labels */}
                       {i === 0 && (
                         <span className="absolute bottom-1.5 left-1.5 bg-gold text-luxury-black text-[9px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider">
-                          Okładka
+                          OkÅ‚adka
                         </span>
                       )}
                       <span className="absolute top-1.5 left-1.5 bg-black/60 text-white text-[9px] px-1.5 py-0.5 rounded tabular-nums">
@@ -723,13 +723,13 @@ const AdminPage: React.FC = () => {
               )}
             </div>
 
-            {/* Step 4 — Publish */}
+            {/* Step 4 â€” Publish */}
             <div className={card}>
               <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-4">
-                {editId ? 'Zapisz zmiany' : 'Krok 4 — Publikuj'}
+                {editId ? 'Zapisz zmiany' : 'Krok 4 â€” Publikuj'}
               </p>
               {form.images.length === 0 && !uploading && (
-                <p className="text-amber-400/70 text-xs mb-4">Uwaga: brak zdjęć dla tej oferty.</p>
+                <p className="text-amber-400/70 text-xs mb-4">Uwaga: brak zdjÄ™Ä‡ dla tej oferty.</p>
               )}
               <div className="flex gap-3">
                 <button onClick={() => { setView('list'); setEditId(null); }} className={ghostBtn}>
@@ -737,7 +737,7 @@ const AdminPage: React.FC = () => {
                 </button>
                 <button onClick={handlePublish} disabled={publishing || uploading} className={goldBtn + ' flex-1 py-3'}>
                   {publishing && <Loader2 size={14} className="animate-spin" />}
-                  {publishing ? 'Zapisywanie…' : editId ? 'Zapisz zmiany' : 'Opublikuj ofertę'}
+                  {publishing ? 'Zapisywanieâ€¦' : editId ? 'Zapisz zmiany' : 'Opublikuj ofertÄ™'}
                 </button>
               </div>
             </div>
@@ -749,15 +749,15 @@ const AdminPage: React.FC = () => {
       {confirmDel && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
           <div className="glass-card border border-white/10 rounded-2xl p-6 max-w-sm w-full">
-            <h3 className="font-serif text-xl text-white mb-2">Usunąć ofertę?</h3>
+            <h3 className="font-serif text-xl text-white mb-2">UsunÄ…Ä‡ ofertÄ™?</h3>
             <p className="text-white/50 text-sm mb-1"><strong className="text-white">{confirmDel.title}</strong></p>
-            <p className="text-white/60 text-xs mb-6">Tej operacji nie można cofnąć.</p>
+            <p className="text-white/60 text-xs mb-6">Tej operacji nie moÅ¼na cofnÄ…Ä‡.</p>
             <div className="flex gap-3">
               <button onClick={() => setConfirmDel(null)} className={ghostBtn + ' flex-1'}>Anuluj</button>
               <button onClick={() => handleDelete(confirmDel)} disabled={deleting}
                 className="flex-1 py-2.5 bg-red-600 hover:bg-red-500 disabled:opacity-40 text-white rounded-xl font-bold text-sm transition-colors flex items-center justify-center gap-2">
                 {deleting ? <Loader2 size={14} className="animate-spin" /> : <Trash2 size={14} />}
-                {deleting ? 'Usuwanie…' : 'Usuń'}
+                {deleting ? 'Usuwanieâ€¦' : 'UsuÅ„'}
               </button>
             </div>
           </div>

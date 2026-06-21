@@ -13,12 +13,12 @@ interface Props {
 const formatPrice = (value: number | null) => {
   if (value == null) return 'N/A';
   if (value >= 1000000) {
-    return `€${(value / 1000000).toFixed(1)}M`;
+    return `â‚¬${(value / 1000000).toFixed(1)}M`;
   }
   if (value >= 1000) {
-    return `€${(value / 1000).toFixed(1)}K`;
+    return `â‚¬${(value / 1000).toFixed(1)}K`;
   }
-  return `€${value.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+  return `â‚¬${value.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
 };
 
 export const MarketSnapshot: React.FC<Props> = ({
@@ -41,7 +41,7 @@ export const MarketSnapshot: React.FC<Props> = ({
     return (
       <section className="glass-card rounded-[2rem] p-8 border border-white/10">
         <h2 className="text-2xl font-serif mb-2">
-          {'Market Snapshot'} – {locationName}
+          {'Market Snapshot'} â€“ {locationName}
         </h2>
         <p className="text-sm text-white/60">
           {'No results found'}
@@ -63,12 +63,12 @@ export const MarketSnapshot: React.FC<Props> = ({
         <div className="flex items-center gap-3 mb-1">
           <TrendingUp className="text-gold" size={20} />
           <h2 className="text-2xl font-serif">
-            {'Market Snapshot'} – {locationName}
+            {'Market Snapshot'} â€“ {locationName}
           </h2>
         </div>
         <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-white/60 mb-8 font-bold">
           <Calendar size={12} />
-          <span>{t('common.live_feed')} · {new Date(stats.lastCalculatedAt).toLocaleDateString(locale, { month: 'long', year: 'numeric' })}</span>
+          <span>{t('common.live_feed')} Â· {new Date(stats.lastCalculatedAt).toLocaleDateString(locale, { month: 'long', year: 'numeric' })}</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

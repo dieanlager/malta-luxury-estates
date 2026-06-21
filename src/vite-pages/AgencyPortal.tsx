@@ -77,20 +77,20 @@ interface DBProperty {
 }
 
 const MALTA_LOCATIONS = [
-    "Sliema", "St. Julian's", "Valletta", "Mdina", "MellieÄ§a", "Senglea", "Cospicua", "Vittoriosa",
-    "GĹĽira", "Msida", "Swieqi", "Pembroke", "San Ä wann", "St. Paul's Bay", "Qawra", "BuÄˇibba",
-    "Naxxar", "GÄ§argÄ§ur", "Madliena", "Iklin", "Lija", "Balzan", "Attard", "Mosta", "Rabat",
-    "Attard", "Marsaxlokk", "Marsascala", "BirĹĽebbuÄˇa", "Ĺ»ejtun", "Qormi", "Ĺ»ebbuÄˇ", "SiÄˇÄˇiewi",
-    "Dingli", "MÄˇarr", "BaÄ§rija", "Ĺ»urrieq", "Qrendi", "Mqabba", "Kirkop", "Safi", "Luqa", "Gudja",
-    "GÄ§axaq", "Tarxien", "Paola", "Fgura", "Santa LuÄ‹ija", "Kalkara", "XgÄ§ajra", "Floriana",
-    "Gozo â€“ Victoria", "Gozo â€“ Xlendi", "Gozo â€“ Marsalforn", "Gozo â€“ Nadur", "Gozo â€“ XagÄ§ra",
-    "Gozo â€“ GÄ§ajnsielem", "Gozo â€“ Qala", "Gozo â€“ Sannat", "Gozo â€“ Munxar", "Gozo â€“ Ĺ»ebbuÄˇ",
-    "Gozo â€“ GÄ§arb", "Gozo â€“ GÄ§asri", "Gozo â€“ San Lawrenz"
+    "Sliema", "St. Julian's", "Valletta", "Mdina", "MellieÃ„Â§a", "Senglea", "Cospicua", "Vittoriosa",
+    "GÄ¹Ä½ira", "Msida", "Swieqi", "Pembroke", "San Ã„Â wann", "St. Paul's Bay", "Qawra", "BuÃ„Ë‡ibba",
+    "Naxxar", "GÃ„Â§argÃ„Â§ur", "Madliena", "Iklin", "Lija", "Balzan", "Attard", "Mosta", "Rabat",
+    "Attard", "Marsaxlokk", "Marsascala", "BirÄ¹Ä½ebbuÃ„Ë‡a", "Ä¹Â»ejtun", "Qormi", "Ä¹Â»ebbuÃ„Ë‡", "SiÃ„Ë‡Ã„Ë‡iewi",
+    "Dingli", "MÃ„Ë‡arr", "BaÃ„Â§rija", "Ä¹Â»urrieq", "Qrendi", "Mqabba", "Kirkop", "Safi", "Luqa", "Gudja",
+    "GÃ„Â§axaq", "Tarxien", "Paola", "Fgura", "Santa LuÃ„â€¹ija", "Kalkara", "XgÃ„Â§ajra", "Floriana",
+    "Gozo Ã¢â‚¬â€œ Victoria", "Gozo Ã¢â‚¬â€œ Xlendi", "Gozo Ã¢â‚¬â€œ Marsalforn", "Gozo Ã¢â‚¬â€œ Nadur", "Gozo Ã¢â‚¬â€œ XagÃ„Â§ra",
+    "Gozo Ã¢â‚¬â€œ GÃ„Â§ajnsielem", "Gozo Ã¢â‚¬â€œ Qala", "Gozo Ã¢â‚¬â€œ Sannat", "Gozo Ã¢â‚¬â€œ Munxar", "Gozo Ã¢â‚¬â€œ Ä¹Â»ebbuÃ„Ë‡",
+    "Gozo Ã¢â‚¬â€œ GÃ„Â§arb", "Gozo Ã¢â‚¬â€œ GÃ„Â§asri", "Gozo Ã¢â‚¬â€œ San Lawrenz"
 ];
 
 const PROPERTY_TYPES = ["Apartment", "Penthouse", "Villa", "Townhouse", "House of Character", "Palazzo", "Maisonette", "Farmhouse", "Duplex", "Studio", "Ground Floor"];
 
-// â”€â”€â”€ Primitives â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Primitives Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 const G = {
     bg: "#080808", surface: "rgba(255,255,255,0.025)", border: "rgba(255,255,255,0.07)",
     gold: "#C5A059", goldDim: "#9A7A35", goldPale: "rgba(197,160,89,0.08)",
@@ -100,13 +100,13 @@ const G = {
     mono: "'DM Mono', monospace", serif: "'Cormorant Garamond', serif", sans: "'DM Sans', sans-serif",
 };
 
-// â”€â”€â”€ Stat Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Stat Card Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function StatCard({ label, value, sub, trend, icon: Icon }: any) {
     const trendColor = trend > 0 ? G.green : trend < 0 ? G.red : G.muted;
     return (
         <div className="glass-card p-6 rounded-3xl border border-white/5 bg-white/2">
             <div className="flex justify-between items-start mb-4">
-                <div className="text-[10px] font-bold uppercase tracking-widest text-white/40">{label}</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-white/60">{label}</div>
                 <div className="text-gold/40">
                     <Icon size={18} />
                 </div>
@@ -115,7 +115,7 @@ function StatCard({ label, value, sub, trend, icon: Icon }: any) {
             <div className="flex items-center gap-2">
                 {trend !== undefined && trend !== 0 && (
                     <span className={`flex items-center gap-1 text-[10px] font-mono ${trendColor}`}>
-                        {trend > 0 ? <TrendingUp size={10} /> : trend < 0 ? <TrendingDown size={10} /> : 'â†’'}
+                        {trend > 0 ? <TrendingUp size={10} /> : trend < 0 ? <TrendingDown size={10} /> : 'Ã¢â€ â€™'}
                         {Math.abs(trend)}%
                     </span>
                 )}
@@ -125,12 +125,12 @@ function StatCard({ label, value, sub, trend, icon: Icon }: any) {
     );
 }
 
-// â”€â”€â”€ Listing Row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Listing Row Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
     const statusConfig: any = {
         active: { label: "Active", color: "text-emerald-400", bg: "bg-emerald-400/10", border: "border-emerald-400/20" },
         paused: { label: "Paused", color: "text-gold", bg: "bg-gold/10", border: "border-gold/20" },
-        draft: { label: "Draft", color: "text-white/40", bg: "bg-white/5", border: "border-white/10" },
+        draft: { label: "Draft", color: "text-white/60", bg: "bg-white/5", border: "border-white/10" },
     };
     const sc = statusConfig[listing.status] || statusConfig.draft;
     const isRent = listing.listing_type === "rent";
@@ -150,11 +150,11 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
                         {sc.label}
                     </span>
                 </div>
-                <div className="flex items-center gap-4 text-[10px] text-white/30 font-mono">
+                <div className="flex items-center gap-4 text-[10px] text-white/60 font-mono">
                     <span className="flex items-center gap-1"><MapPin size={10} /> {listing.location_text}</span>
                     <span>{listing.property_type}</span>
                     <span>{listing.bedrooms === 0 ? "Studio" : listing.bedrooms + " bed"}</span>
-                    <span>{listing.area_sqm} mÂ˛</span>
+                    <span>{listing.area_sqm} mÃ‚Ë›</span>
                 </div>
             </div>
 
@@ -172,19 +172,19 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
 
             {/* Price */}
             <div className="text-right min-w-[100px] flex-shrink-0">
-                <div className="text-sm font-mono text-gold font-bold">€{listing.price.toLocaleString()}</div>
+                <div className="text-sm font-mono text-gold font-bold">â‚¬{listing.price.toLocaleString()}</div>
                 <div className="text-[9px] text-white/20 uppercase tracking-widest">{isRent ? "/month" : "sale"}</div>
             </div>
 
             {/* Actions */}
             <div className="flex items-center gap-2 opacity-20 group-hover:opacity-100 transition-opacity">
-                <button onClick={() => onEdit(listing)} className="p-2 rounded-lg bg-white/5 text-white/40 hover:text-gold hover:bg-gold/10 transition-all">
+                <button onClick={() => onEdit(listing)} className="p-2 rounded-lg bg-white/5 text-white/60 hover:text-gold hover:bg-gold/10 transition-all">
                     <Pencil size={14} />
                 </button>
-                <button onClick={() => onToggle(listing.id, listing.status)} className="p-2 rounded-lg bg-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all">
+                <button onClick={() => onToggle(listing.id, listing.status)} className="p-2 rounded-lg bg-white/5 text-white/60 hover:text-white hover:bg-white/10 transition-all">
                     {listing.status === "active" ? <Pause size={14} /> : <Play size={14} />}
                 </button>
-                <button onClick={() => onDelete(listing.id)} className="p-2 rounded-lg bg-white/5 text-white/40 hover:text-red-400 hover:bg-red-400/10 transition-all">
+                <button onClick={() => onDelete(listing.id)} className="p-2 rounded-lg bg-white/5 text-white/60 hover:text-red-400 hover:bg-red-400/10 transition-all">
                     <Trash2 size={14} />
                 </button>
             </div>
@@ -192,7 +192,7 @@ function ListingRow({ listing, onEdit, onToggle, onDelete }: any) {
     );
 }
 
-// â”€â”€â”€ Add / Edit Listing Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Add / Edit Listing Modal Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function ListingModal({ listing, onSave, onClose, agencyName, planStatus, requestUpgrade }: any) {
     const isEdit = Boolean(listing?.id && !listing.id.startsWith('new_'));
     const empty = {
@@ -251,7 +251,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
     const isValid = form.title && form.location && form.type && form.price;
 
     const inputClass = "w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-gold/50 transition-all placeholder:text-white/10 font-mono";
-    const labelClass = "block text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2";
+    const labelClass = "block text-[10px] font-bold uppercase tracking-widest text-white/60 mb-2";
 
     const handleAiAssist = () => {
         setIsAiGenerating(true);
@@ -273,7 +273,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                         <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold mb-1">{isEdit ? "Edit Premium Listing" : "New Premium Listing"}</div>
                         <h3 className="text-xl font-serif text-white">{form.title || (isEdit ? "Edit Property" : "Add Property")}</h3>
                     </div>
-                    <button onClick={onClose} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white transition-all">
+                    <button onClick={onClose} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white transition-all">
                         <X size={20} />
                     </button>
                 </div>
@@ -281,7 +281,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                 {/* Step tabs */}
                 <div className="flex border-b border-white/5 bg-white/[0.01]">
                     {steps.map((s, i) => (
-                        <button key={s} onClick={() => setStep(i)} className={`flex-1 py-4 text-[9px] font-bold uppercase tracking-widest transition-all border-b-2 ${i === step ? 'text-gold border-gold' : 'text-white/20 border-transparent hover:text-white/40'}`}>
+                        <button key={s} onClick={() => setStep(i)} className={`flex-1 py-4 text-[9px] font-bold uppercase tracking-widest transition-all border-b-2 ${i === step ? 'text-gold border-gold' : 'text-white/20 border-transparent hover:text-white/60'}`}>
                             {i + 1}. {s}
                         </button>
                     ))}
@@ -387,7 +387,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                             { id: "hasBoatMooring", label: "Boat Mooring", icon: Wind },
                                             { id: "hasGarden", label: "Garden / Deck", icon: Trees },
                                         ].map(({ id, label, icon: Icon }) => (
-                                            <button key={id} onClick={() => set(id, !form[id as keyof typeof form])} className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-[9px] font-bold uppercase tracking-widest border transition-all ${(form as any)[id] ? 'bg-gold/10 border-gold/40 text-gold shadow-[0_0_15px_rgba(197,160,89,0.1)]' : 'border-white/5 text-white/30 hover:border-white/10'}`}>
+                                            <button key={id} onClick={() => set(id, !form[id as keyof typeof form])} className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-[9px] font-bold uppercase tracking-widest border transition-all ${(form as any)[id] ? 'bg-gold/10 border-gold/40 text-gold shadow-[0_0_15px_rgba(197,160,89,0.1)]' : 'border-white/5 text-white/60 hover:border-white/10'}`}>
                                                 <Icon size={12} />
                                                 {label}
                                             </button>
@@ -411,7 +411,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                         </div>
                                     </div>
                                     <div>
-                                        <label className={labelClass}>Asking Price (€) *</label>
+                                        <label className={labelClass}>Asking Price (â‚¬) *</label>
                                         <input type="number" className={inputClass} placeholder="895000" value={form.price} onChange={e => set("price", e.target.value)} />
                                     </div>
                                 </div>
@@ -420,7 +420,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                     <label className={labelClass}>Cover Property Image (URL)</label>
                                     <div className="flex gap-3">
                                         <input className={inputClass} placeholder="https://images.unsplash.com/..." value={form.image} onChange={e => set("image", e.target.value)} />
-                                        <button className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/40 hover:text-white border border-white/5">
+                                        <button className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/60 hover:text-white border border-white/5">
                                             <Camera size={20} />
                                         </button>
                                     </div>
@@ -432,7 +432,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
                                 <div>
                                     <label className={labelClass}>Visibility Status</label>
                                     <div className="flex gap-2">
-                                        {[["active", "Publish Live", "text-emerald-400"], ["draft", "Save as Draft", "text-white/40"], ["paused", "Paused", "text-gold"]].map(([val, lbl, color]) => (
+                                        {[["active", "Publish Live", "text-emerald-400"], ["draft", "Save as Draft", "text-white/60"], ["paused", "Paused", "text-gold"]].map(([val, lbl, color]) => (
                                             <button key={val} onClick={() => set("status", val)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${form.status === val ? `bg-white/5 border-white/20 ${color}` : 'border-white/5 text-white/20'}`}>
                                                 {lbl}
                                             </button>
@@ -446,7 +446,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
 
                 {/* Footer */}
                 <div className="px-8 py-6 border-t border-white/5 flex gap-4 justify-between bg-white/[0.01]">
-                    <button onClick={onClose} className="px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-white transition-all">Cancel</button>
+                    <button onClick={onClose} className="px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-white/60 hover:text-white transition-all">Cancel</button>
                     <div className="flex gap-2">
                         {step > 0 && <button onClick={() => setStep(s => s - 1)} className="px-8 py-3 rounded-xl border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white hover:bg-white/5 transition-all">Back</button>}
                         <button
@@ -466,7 +466,7 @@ function ListingModal({ listing, onSave, onClose, agencyName, planStatus, reques
     );
 }
 
-// â”€â”€â”€ Lead Row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Lead Row Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function LeadRow({ lead, onUpdateStatus }: any) {
     const statusConfig: any = {
         new: { color: "text-blue-400", bg: "bg-blue-400/10", border: "border-blue-400/20", label: "New" },
@@ -480,11 +480,11 @@ function LeadRow({ lead, onUpdateStatus }: any) {
     return (
         <div className="group flex items-center gap-6 p-4 border-b border-white/5 hover:bg-white/2 transition-all">
             <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-lg flex-shrink-0">
-                {lead.flag || "đź‡˛đź‡ą"}
+                {lead.flag || "Ä‘Åºâ€¡Ë›Ä‘Åºâ€¡Ä…"}
             </div>
             <div className="flex-1">
                 <div className="text-sm font-medium text-white">{lead.name}</div>
-                <div className="text-[10px] font-mono text-white/30">{lead.email}</div>
+                <div className="text-[10px] font-mono text-white/60">{lead.email}</div>
             </div>
             <div className="flex-1 hidden md:block">
                 <div className="text-[11px] text-white/60 mb-1 truncate">{lead.property_title || "General Inquiry"}</div>
@@ -492,7 +492,7 @@ function LeadRow({ lead, onUpdateStatus }: any) {
                     <span className={`px-2 py-0.5 rounded text-[8px] font-bold uppercase tracking-widest border ${lead.intent === 'Buy' ? 'bg-emerald-400/10 text-emerald-400 border-emerald-400/20' : 'bg-blue-400/10 text-blue-400 border-blue-400/20'}`}>
                         {lead.intent}
                     </span>
-                    <span className="text-[10px] font-mono text-white/20">€{lead.budget_max?.toLocaleString() || "â€“"}</span>
+                    <span className="text-[10px] font-mono text-white/20">â‚¬{lead.budget_max?.toLocaleString() || "Ã¢â‚¬â€œ"}</span>
                 </div>
             </div>
             <div className="text-[10px] font-mono text-white/20 uppercase tracking-widest flex-shrink-0">
@@ -512,7 +512,7 @@ function LeadRow({ lead, onUpdateStatus }: any) {
     );
 }
 
-// â”€â”€â”€ MAIN PORTAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ MAIN PORTAL Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 export const AgencyPortal: React.FC = () => {
     usePageMeta({
         title: 'Agency Portal | Malta Luxury Real Estate Control Center',
@@ -632,7 +632,7 @@ export const AgencyPortal: React.FC = () => {
 
             await fetchData(); // Refresh
             setModal(null);
-            notify(dbData.id ? "Listing updated" : "Property published! đźš€");
+            notify(dbData.id ? "Listing updated" : "Property published! Ä‘ÅºÅ¡â‚¬");
         } catch (err: any) {
             notify(err.message, "error");
         }
@@ -760,7 +760,7 @@ export const AgencyPortal: React.FC = () => {
 
             <div className="flex min-h-screen">
 
-                {/* â”€â”€ Sidebar â”€â”€ */}
+                {/* Ã¢â€â‚¬Ã¢â€â‚¬ Sidebar Ã¢â€â‚¬Ã¢â€â‚¬ */}
                 <aside className="w-64 border-r border-white/5 bg-white/[0.01] flex flex-col sticky top-0 h-screen">
                     <div className="p-8 border-b border-white/5 mb-4">
                         <Link to="/" className="group block">
@@ -787,11 +787,11 @@ export const AgencyPortal: React.FC = () => {
                         {navItems.map(item => {
                             const isActive = view === item.id;
                             return (
-                                <button key={item.id} onClick={() => setView(item.id)} className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all group ${isActive ? 'bg-gold/10 text-gold shadow-sm' : 'text-white/30 hover:text-white hover:bg-white/5'}`}>
+                                <button key={item.id} onClick={() => setView(item.id)} className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all group ${isActive ? 'bg-gold/10 text-gold shadow-sm' : 'text-white/60 hover:text-white hover:bg-white/5'}`}>
                                     <item.icon size={16} className={`${isActive ? 'text-gold' : 'text-white/20 group-hover:text-white/60'}`} />
                                     <span className="text-xs font-medium flex-1 text-left">{item.label}</span>
                                     {item.badge !== undefined && (
-                                        <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold border ${isActive ? 'bg-gold/10 border-gold/20 text-gold' : 'bg-white/5 border-white/10 text-white/30'}`}>
+                                        <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold border ${isActive ? 'bg-gold/10 border-gold/20 text-gold' : 'bg-white/5 border-white/10 text-white/60'}`}>
                                             {item.badge}
                                         </span>
                                     )}
@@ -807,7 +807,7 @@ export const AgencyPortal: React.FC = () => {
                     </div>
                 </aside>
 
-                {/* â”€â”€ Main Dashboard â”€â”€ */}
+                {/* Ã¢â€â‚¬Ã¢â€â‚¬ Main Dashboard Ã¢â€â‚¬Ã¢â€â‚¬ */}
                 <main className="flex-1 min-w-0 overflow-y-auto bg-[#080808]">
 
                     {/* Header */}
@@ -816,7 +816,7 @@ export const AgencyPortal: React.FC = () => {
                             <h1 className="text-3xl font-serif text-white tracking-wide">
                                 {navItems.find(n => n.id === view)?.label}
                             </h1>
-                            <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mt-1">Malta Real Estate Intelligence · {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                            <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 mt-1">Malta Real Estate Intelligence Â· {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
                         </div>
 
                         <div className="flex items-center gap-6">
@@ -835,7 +835,7 @@ export const AgencyPortal: React.FC = () => {
 
                     <div className="p-10 space-y-10">
 
-                        {/* â”€â”€ VIEW: DASHBOARD â”€â”€ */}
+                        {/* Ã¢â€â‚¬Ã¢â€â‚¬ VIEW: DASHBOARD Ã¢â€â‚¬Ã¢â€â‚¬ */}
                         {view === "dashboard" && (
                             <div className="space-y-12">
                                 {/* Metrics Grid */}
@@ -843,7 +843,7 @@ export const AgencyPortal: React.FC = () => {
                                     <StatCard label="Portfolio Strength" value={active.length} sub="Live Listings" trend={0} icon={Home} />
                                     <StatCard label="Pipeline Interest" value={leads.length} sub="Active Leads" trend={0} icon={Users} />
                                     <StatCard label="Inbound Today" value={newLeadsCount} sub="New Enquiries" trend={0} icon={Zap} />
-                                    <StatCard label="Asset Value" value={`€${(active.reduce((s, l) => s + l.price, 0) / 1000000).toFixed(1)}M`} sub="Active Equity" trend={0} icon={Euro} />
+                                    <StatCard label="Asset Value" value={`â‚¬${(active.reduce((s, l) => s + l.price, 0) / 1000000).toFixed(1)}M`} sub="Active Equity" trend={0} icon={Euro} />
                                 </div>
 
                                 {/* Rows Grid */}
@@ -851,7 +851,7 @@ export const AgencyPortal: React.FC = () => {
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-end">
                                             <h3 className="text-xl font-serif text-white italic">Recent Portfolio Updates</h3>
-                                            <button onClick={() => setView('listings')} className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/30 hover:text-gold transition-all">
+                                            <button onClick={() => setView('listings')} className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 hover:text-gold transition-all">
                                                 Manage All <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform" />
                                             </button>
                                         </div>
@@ -866,7 +866,7 @@ export const AgencyPortal: React.FC = () => {
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-end">
                                             <h3 className="text-xl font-serif text-white italic">Latest Enquiries</h3>
-                                            <button onClick={() => setView('leads')} className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/30 hover:text-gold transition-all">
+                                            <button onClick={() => setView('leads')} className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/60 hover:text-gold transition-all">
                                                 Full Pipeline <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform" />
                                             </button>
                                         </div>
@@ -881,13 +881,13 @@ export const AgencyPortal: React.FC = () => {
                             </div>
                         )}
 
-                        {/* â”€â”€ VIEW: LISTINGS â”€â”€ */}
+                        {/* Ã¢â€â‚¬Ã¢â€â‚¬ VIEW: LISTINGS Ã¢â€â‚¬Ã¢â€â‚¬ */}
                         {view === "listings" && (
                             <div className="space-y-8">
                                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 p-6 rounded-[2rem] bg-white/2 border border-white/5">
                                     <div className="flex gap-2">
                                         {[["all", "All"], ["active", "Active"], ["paused", "Paused"], ["draft", "Drafts"]].map(([val, lbl]) => (
-                                            <button key={val} onClick={() => setListingFilter(val)} className={`px-5 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${listingFilter === val ? 'bg-gold/10 border-gold/50 text-gold' : 'border-white/5 text-white/20 hover:text-white/40'}`}>
+                                            <button key={val} onClick={() => setListingFilter(val)} className={`px-5 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${listingFilter === val ? 'bg-gold/10 border-gold/50 text-gold' : 'border-white/5 text-white/20 hover:text-white/60'}`}>
                                                 {lbl} <span className="text-[8px] opacity-40 ml-1">({val === 'all' ? listings.length : listings.filter(l => l.status === val).length})</span>
                                             </button>
                                         ))}
@@ -909,7 +909,7 @@ export const AgencyPortal: React.FC = () => {
                                                 <Home size={32} />
                                             </div>
                                             <div>
-                                                <p className="text-white/40 font-serif text-xl">No properties found.</p>
+                                                <p className="text-white/60 font-serif text-xl">No properties found.</p>
                                                 <button onClick={() => setListingFilter('all')} className="text-gold text-[10px] font-bold uppercase tracking-widest hover:underline mt-2">Show all listings</button>
                                             </div>
                                         </div>
@@ -918,7 +918,7 @@ export const AgencyPortal: React.FC = () => {
                             </div>
                         )}
 
-                        {/* â”€â”€ VIEW: LEADS â”€â”€ */}
+                        {/* Ã¢â€â‚¬Ã¢â€â‚¬ VIEW: LEADS Ã¢â€â‚¬Ã¢â€â‚¬ */}
                         {view === "leads" && (
                             <div className="space-y-10">
                                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -949,14 +949,14 @@ export const AgencyPortal: React.FC = () => {
                                                                 <div className="space-y-2">
                                                                     <input
                                                                         type="number"
-                                                                        placeholder="Transaction value (€)"
+                                                                        placeholder="Transaction value (â‚¬)"
                                                                         value={txValue}
                                                                         onChange={e => setTxValue(e.target.value)}
                                                                         className="w-full bg-black/40 border border-white/10 rounded-lg px-3 py-2 text-white text-sm placeholder-white/30 focus:border-gold/40 focus:outline-none"
                                                                     />
                                                                     {parseFloat(txValue) > 0 && (
                                                                         <p className="text-gold text-xs">
-                                                                            Your commission (25%): €
+                                                                            Your commission (25%): â‚¬
                                                                             {(parseFloat(txValue) * 0.03 * 0.25).toLocaleString('en-MT', { maximumFractionDigits: 0 })}
                                                                         </p>
                                                                     )}
@@ -965,11 +965,11 @@ export const AgencyPortal: React.FC = () => {
                                                                             onClick={() => closeLead(l.id)}
                                                                             className="flex-1 py-1.5 bg-gold/20 text-gold text-xs rounded-lg border border-gold/30 hover:bg-gold/30 transition-colors"
                                                                         >
-                                                                            Confirm &amp; Close â†’
+                                                                            Confirm &amp; Close Ã¢â€ â€™
                                                                         </button>
                                                                         <button
                                                                             onClick={() => { setClosingLeadId(null); setTxValue(''); }}
-                                                                            className="px-3 py-1.5 text-white/30 text-xs hover:text-white/60"
+                                                                            className="px-3 py-1.5 text-white/60 text-xs hover:text-white/60"
                                                                         >
                                                                             Cancel
                                                                         </button>
@@ -978,7 +978,7 @@ export const AgencyPortal: React.FC = () => {
                                                             ) : (
                                                                 <button
                                                                     onClick={() => setClosingLeadId(l.id)}
-                                                                    className="w-full py-1.5 text-xs text-white/30 hover:text-gold border border-white/5 hover:border-gold/20 rounded-lg transition-colors"
+                                                                    className="w-full py-1.5 text-xs text-white/60 hover:text-gold border border-white/5 hover:border-gold/20 rounded-lg transition-colors"
                                                                 >
                                                                     Mark as closed
                                                                 </button>
@@ -988,15 +988,15 @@ export const AgencyPortal: React.FC = () => {
                                                     {l.closed_at && l.closed_transaction_value && (
                                                         <div className="mx-4 mb-4 mt-1 pt-3 border-t border-gold/10 text-xs">
                                                             <div className="flex justify-between">
-                                                                <span className="text-white/30">Transaction</span>
+                                                                <span className="text-white/60">Transaction</span>
                                                                 <span className="text-white/60">
-                                                                    €{Number(l.closed_transaction_value).toLocaleString('en-MT')}
+                                                                    â‚¬{Number(l.closed_transaction_value).toLocaleString('en-MT')}
                                                                 </span>
                                                             </div>
                                                             <div className="flex justify-between mt-1">
                                                                 <span className="text-gold/60">Your commission</span>
                                                                 <span className="text-gold font-mono">
-                                                                    €{Number(l.portal_commission || 0).toLocaleString('en-MT')}
+                                                                    â‚¬{Number(l.portal_commission || 0).toLocaleString('en-MT')}
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -1008,12 +1008,12 @@ export const AgencyPortal: React.FC = () => {
                             </div>
                         )}
 
-                        {/* â”€â”€ VIEW: IMPORT â”€â”€ */}
+                        {/* Ã¢â€â‚¬Ã¢â€â‚¬ VIEW: IMPORT Ã¢â€â‚¬Ã¢â€â‚¬ */}
                         {view === "import" && (
                             <div className="space-y-10">
                                 <section className="max-w-3xl">
                                     <h2 className="text-3xl font-serif text-white mb-2">Bulk Asset Injection</h2>
-                                    <p className="text-white/40 text-sm leading-relaxed">
+                                    <p className="text-white/60 text-sm leading-relaxed">
                                         Synchronize your entire portfolio with one action. Our intelligent parser validates
                                         every record against the Malta Luxury standard before injection.
                                     </p>
@@ -1029,8 +1029,8 @@ export const AgencyPortal: React.FC = () => {
                                 <BarChart3 size={40} />
                             </div>
                             <h2 className="text-4xl font-serif text-white mb-4 italic">Deep Market Intelligence</h2>
-                            <p className="max-w-xl mx-auto text-white/30 text-lg leading-relaxed mb-10">Comparative market analysis, price heatmaps, and demand forecasting are reserved for Pro Partners.</p>
-                            <button onClick={() => setView('settings')} className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest text-white">Unlock Insights â†’</button>
+                            <p className="max-w-xl mx-auto text-white/60 text-lg leading-relaxed mb-10">Comparative market analysis, price heatmaps, and demand forecasting are reserved for Pro Partners.</p>
+                            <button onClick={() => setView('settings')} className="px-8 py-3 bg-white/5 border border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest text-white">Unlock Insights Ã¢â€ â€™</button>
                         </div>}
 
                         {view === "settings" && <div className="max-w-2xl space-y-10">
@@ -1041,12 +1041,12 @@ export const AgencyPortal: React.FC = () => {
                                     </div>
                                     <div>
                                         <h3 className="text-2xl font-serif text-white">{agency?.name || 'Agency Partner'}</h3>
-                                        <p className="text-[10px] uppercase tracking-widest text-white/30 font-bold italic">Exclusive Partner</p>
+                                        <p className="text-[10px] uppercase tracking-widest text-white/60 font-bold italic">Exclusive Partner</p>
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="col-span-full space-y-2">
-                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30 ml-4">Primary Contact Email</label>
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/60 ml-4">Primary Contact Email</label>
                                         <div className="relative">
                                             <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-white/10" size={16} />
                                             <input className="w-full bg-white/5 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm text-white font-mono" defaultValue={agency?.email || ""} readOnly />
@@ -1054,7 +1054,7 @@ export const AgencyPortal: React.FC = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-gold/20 bg-gold/5">
-                                    <span className="text-gold text-xs">â…</span>
+                                    <span className="text-gold text-xs">Ã¢Â˜â€¦</span>
                                     <span className="text-gold text-xs font-mono tracking-wider uppercase">
                                         Exclusive Partner
                                     </span>

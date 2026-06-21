@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
@@ -18,7 +18,7 @@ interface InvestmentPassportModalProps {
 
 // â”€â”€â”€ What's Inside Preview â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const pages = [
-    { icon: Home, label: 'Property Summary', desc: 'Full specs, overview, price/mÂ˛' },
+    { icon: Home, label: 'Property Summary', desc: 'Full specs, overview, price/mÂ²' },
     { icon: TrendingUp, label: 'Rental Yield Analysis', desc: 'Long-let & short-let projections' },
     { icon: Star, label: '5-Year Return Projection', desc: 'Bear / Base / Bull scenarios' },
     { icon: FileText, label: 'Buying Costs Breakdown', desc: 'Stamp duty, notary, AIP fees' },
@@ -127,7 +127,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                             Your personal investment<br />
                                             <span className="text-gold italic">dossier in 6 pages</span>
                                         </h2>
-                                        <p className="text-white/40 text-sm mt-1.5">
+                                        <p className="text-white/60 text-sm mt-1.5">
                                             Built from Malta PPR data, current market comps, and 2026 tax regulations.
                                         </p>
                                     </div>
@@ -143,12 +143,12 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                     <div className="flex-1 min-w-0">
                                         <div className="text-[9px] font-bold uppercase tracking-widest text-gold mb-0.5">{property.propertyType}</div>
                                         <div className="font-serif text-base text-white truncate">{property.title}</div>
-                                        <div className="text-xs text-white/40">{property.locationName}</div>
+                                        <div className="text-xs text-white/60">{property.locationName}</div>
                                     </div>
                                     <div className="text-right shrink-0">
-                                        <div className="text-[9px] text-white/30 uppercase tracking-widest">Asking</div>
+                                        <div className="text-[9px] text-white/60 uppercase tracking-widest">Asking</div>
                                         <div className="text-gold font-bold text-lg">{formatPrice(property.price)}</div>
-                                        <div className="text-[9px] text-white/30">{property.beds}bd Â· {property.baths}ba Â· {property.sqm}mÂ˛</div>
+                                        <div className="text-[9px] text-white/60">{property.beds}bd Â· {property.baths}ba Â· {property.sqm}mÂ²</div>
                                     </div>
                                 </div>
 
@@ -156,7 +156,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
 
                                     {/* â”€â”€ Left: What's Inside â”€â”€ */}
                                     <div>
-                                        <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-4">
+                                        <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-4">
                                             What's inside your passport
                                         </div>
                                         <div className="space-y-2">
@@ -174,7 +174,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                     onClick={() => setActivePage(i)}
                                                 >
                                                     <div className={`w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-colors ${activePage === i ? 'bg-gold/20' : 'bg-white/5'}`}>
-                                                        <pg.icon size={13} className={activePage === i ? 'text-gold' : 'text-white/30'} />
+                                                        <pg.icon size={13} className={activePage === i ? 'text-gold' : 'text-white/60'} />
                                                     </div>
                                                     <div>
                                                         <div className={`text-xs font-bold transition-colors ${activePage === i ? 'text-white' : 'text-white/50'}`}>
@@ -214,14 +214,14 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                         <CheckCircle className="text-emerald-400" size={36} />
                                                     </motion.div>
                                                     <h3 className="text-xl font-serif text-white mb-2">Passport Downloaded!</h3>
-                                                    <p className="text-white/40 text-sm leading-relaxed mb-6">
+                                                    <p className="text-white/60 text-sm leading-relaxed mb-6">
                                                         Your 6-page Investment Passport for<br />
                                                         <strong className="text-white/70">{property.title}</strong><br />
                                                         has been downloaded to your device.
                                                     </p>
                                                     <button
                                                         onClick={() => { setStatus('idle'); setEmail(''); }}
-                                                        className="text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-gold transition-colors"
+                                                        className="text-[10px] font-bold uppercase tracking-widest text-white/60 hover:text-gold transition-colors"
                                                     >
                                                         Generate another â†’
                                                     </button>
@@ -232,16 +232,16 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                 <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                                                     <div className="p-6 bg-gold/5 border border-gold/20 rounded-2xl mb-6">
                                                         <div className="text-[10px] font-bold uppercase tracking-widest text-gold mb-4">
-                                                            âś¦  Generate Your Free PDF
+                                                            âœ¦  Generate Your Free PDF
                                                         </div>
 
                                                         <div className="space-y-3">
                                                             <div>
-                                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/30 block mb-2">
+                                                                <label className="text-[10px] font-bold uppercase tracking-widest text-white/60 block mb-2">
                                                                     Your Email Address
                                                                 </label>
                                                                 <div className="relative">
-                                                                    <Mail size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/30" />
+                                                                    <Mail size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/60" />
                                                                     <input
                                                                         type="email"
                                                                         placeholder="name@example.com"
@@ -292,7 +292,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                         ].map(({ icon: Icon, text }) => (
                                                             <div key={text} className="flex items-center gap-2.5">
                                                                 <Icon size={12} className="text-white/20 shrink-0" />
-                                                                <span className="text-[11px] text-white/30">{text}</span>
+                                                                <span className="text-[11px] text-white/60">{text}</span>
                                                             </div>
                                                         ))}
                                                     </div>
@@ -351,7 +351,7 @@ export const InvestmentPassportButton: React.FC<{
                 </div>
                 <div className="flex-1 text-left">
                     <div className="text-xs font-bold uppercase tracking-widest text-gold">Free PDF Report</div>
-                    <div className="text-[11px] text-white/40 mt-0.5">6-page Investment Passport Â· Instant Download</div>
+                    <div className="text-[11px] text-white/60 mt-0.5">6-page Investment Passport Â· Instant Download</div>
                 </div>
                 <Download size={16} className="text-gold/50 group-hover:text-gold transition-colors" />
             </button>

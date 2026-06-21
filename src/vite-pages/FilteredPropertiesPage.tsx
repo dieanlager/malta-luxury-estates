@@ -53,7 +53,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
     }
   }, [location]);
 
-  // SEO – must be called before any conditional returns (React hook rules)
+  // SEO â€“ must be called before any conditional returns (React hook rules)
   const filterLabel = getFilterLabel(filterSlug || '');
   const islandLabel = location?.island === 'malta' ? 'Malta' : 'Gozo';
   const pageTitle = location
@@ -139,7 +139,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
                 const fLabel = filterLabel.toLowerCase();
 
                 if (filterSlug === 'apartments') {
-                  return `Discover the most exclusive ${fLabel} in ${cityName}. From high-end seafront units with panoramic Mediterranean views to modern designer pieds-à-terre, our curated selection represents the pinnacle of residential living in the heart of the Maltese islands.`;
+                  return `Discover the most exclusive ${fLabel} in ${cityName}. From high-end seafront units with panoramic Mediterranean views to modern designer pieds-Ã -terre, our curated selection represents the pinnacle of residential living in the heart of the Maltese islands.`;
                 }
                 if (filterSlug === 'villas') {
                   return `Explore premium ${fLabel} in ${cityName}, offering total privacy, expansive grounds, and private pools. This area is renowned for its detached properties that blend traditional architectural charm with contemporary luxury finishes suitable for discerning international buyers.`;
@@ -151,7 +151,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
                   return `Wake up to the horizon with our hand-picked properties ${fLabel} in ${cityName}. These residences are chosen specifically for their unobstructed vistas and proximity to the water, ensuring your investment retains its value through the lure of the Mediterranean.`;
                 }
                 if (filterSlug === 'over-1m' || filterSlug === 'over-3m') {
-                  return `Enter the high-net-worth market with these elite ${cityName} properties. These ${fLabel.replace('over ', 'above ')} listings represent the absolute crème de la crème of Malta's real estate, featuring architectural masterpieces and legacy estates.`;
+                  return `Enter the high-net-worth market with these elite ${cityName} properties. These ${fLabel.replace('over ', 'above ')} listings represent the absolute crÃ¨me de la crÃ¨me of Malta's real estate, featuring architectural masterpieces and legacy estates.`;
                 }
 
                 return `Explore our curated selection of ${fLabel} properties in the prestigious ${cityName} area. Each property has been hand-selected for its quality, location, and long-term investment potential in the competitive Malta real estate market.`;
@@ -161,7 +161,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
 
           <div className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl px-6 py-4">
             <div className="text-right">
-              <div className="text-[10px] font-bold uppercase tracking-widest text-white/30">Results</div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-white/60">Results</div>
               <div className="text-xl font-serif">{properties.length} Properties</div>
             </div>
             <div className="w-px h-8 bg-white/10" />
@@ -171,7 +171,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
 
         {/* Related Filters */}
         <div className="flex flex-wrap gap-2 mb-12">
-          <span className="text-[10px] uppercase tracking-widest text-white/30 font-bold self-center mr-2">Also explore:</span>
+          <span className="text-[10px] uppercase tracking-widest text-white/60 font-bold self-center mr-2">Also explore:</span>
           {relatedFilters.map((f) => (
             <Link
               key={f.slug}
@@ -208,7 +208,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
           <div className="text-center py-32 glass-card rounded-[3rem] border border-white/10">
             <Home className="text-white/10 mx-auto mb-6" size={64} />
             <h3 className="text-2xl font-serif mb-4">No matching properties</h3>
-            <p className="text-white/40 mb-8 max-w-md mx-auto">We couldn't find any {filterLabel.toLowerCase()} properties in {location.nameEn} at the moment. New listings are added daily.</p>
+            <p className="text-white/60 mb-8 max-w-md mx-auto">We couldn't find any {filterLabel.toLowerCase()} properties in {location.nameEn} at the moment. New listings are added daily.</p>
             <Link
               to={`/properties/${citySlug}`}
               className="px-8 py-4 gold-gradient text-luxury-black rounded-full text-[10px] font-bold uppercase tracking-widest hover:scale-105 transition-transform inline-block"
@@ -222,7 +222,7 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
         <section className="mt-32 pt-32 border-t border-white/10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
-              <h2 className="text-3xl font-serif mb-8">{filterLabel} in {location.nameEn} – Market Overview</h2>
+              <h2 className="text-3xl font-serif mb-8">{filterLabel} in {location.nameEn} â€“ Market Overview</h2>
               <div className="prose prose-invert max-w-none text-white/60 space-y-6">
                 <p>
                   {location.nameEn} remains one of Malta's most sought-after locations for both local and international investors.
@@ -238,12 +238,12 @@ export const FilteredPropertiesPage: React.FC<FilteredPropertiesPageProps> = ({
               <div className="p-8 glass-card rounded-3xl border border-white/5">
                 <TrendingUp className="text-gold mb-4" size={24} />
                 <h4 className="font-serif text-lg mb-2">Market Growth</h4>
-                <p className="text-xs text-white/40 leading-relaxed">Average property values in {location.nameEn} have increased by 6.2% over the last 12 months.</p>
+                <p className="text-xs text-white/60 leading-relaxed">Average property values in {location.nameEn} have increased by 6.2% over the last 12 months.</p>
               </div>
               <div className="p-8 glass-card rounded-3xl border border-white/5">
                 <Home className="text-gold mb-4" size={24} />
                 <h4 className="font-serif text-lg mb-2">Rental Demand</h4>
-                <p className="text-xs text-white/40 leading-relaxed">High demand for luxury rentals ensures consistent yields for property owners in this region.</p>
+                <p className="text-xs text-white/60 leading-relaxed">High demand for luxury rentals ensures consistent yields for property owners in this region.</p>
               </div>
             </div>
           </div>

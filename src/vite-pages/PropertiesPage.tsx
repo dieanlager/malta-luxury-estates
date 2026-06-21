@@ -156,7 +156,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
             <h1 className="text-4xl font-serif mb-2">
               {query ? t('properties.search_results', { query }) : t('properties.exclusive_title')}
             </h1>
-            <p className="text-white/40 text-sm">
+            <p className="text-white/60 text-sm">
               {t('properties.showing_count', { count: filteredProperties.length })}
             </p>
           </div>
@@ -184,7 +184,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
             >
               <div className="p-8 bg-white/5 rounded-3xl border border-white/10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.property_type')}</label>
+                  <label className="block text-[10px] uppercase tracking-widest text-white/60 font-bold mb-4">{t('properties.filter_panel.property_type')}</label>
                   <div className="flex flex-wrap gap-2">
                     {propertyTypes.map(pt => (
                       <button
@@ -201,7 +201,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.features')}</label>
+                  <label className="block text-[10px] uppercase tracking-widest text-white/60 font-bold mb-4">{t('properties.filter_panel.features')}</label>
                   <div className="flex flex-wrap gap-2">
                     {features.map(f => (
                       <button
@@ -218,7 +218,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-4">{t('properties.filter_panel.energy_rating')}</label>
+                  <label className="block text-[10px] uppercase tracking-widest text-white/60 font-bold mb-4">{t('properties.filter_panel.energy_rating')}</label>
                   <div className="flex flex-wrap gap-2">
                     {['A', 'B', 'C', 'D'].map(e => (
                       <button
@@ -264,7 +264,7 @@ export const PropertiesPage: React.FC<PropertiesPageProps> = ({
               <Search size={32} className="text-white/20" />
             </div>
             <h2 className="text-2xl font-serif mb-4">{t('properties.no_results.title')}</h2>
-            <p className="text-white/40 max-w-md mx-auto mb-12">
+            <p className="text-white/60 max-w-md mx-auto mb-12">
               {t('properties.no_results.desc')}
             </p>
             <div className="flex justify-center gap-4 flex-wrap">

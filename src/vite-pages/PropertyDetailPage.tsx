@@ -68,7 +68,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
         return (
             <div className="min-h-screen bg-luxury-black pt-40 px-6 text-center">
                 <h2 className="text-3xl font-serif mb-4">{t('not_found_title')}</h2>
-                <p className="text-white/40 mb-8">{t('not_found_text')}</p>
+                <p className="text-white/60 mb-8">{t('not_found_text')}</p>
                 <Link to="/properties/all" className="gold-gradient text-luxury-black px-8 py-3 rounded-full font-bold">
                     {t('view_all_listings')}
                 </Link>
@@ -81,9 +81,9 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
     // Format price with proper notation
     const formatPrice = (price: number) => {
-        if (price >= 1000000) return `€${(price / 1000000).toFixed(1)}M`;
-        if (price >= 1000) return `€${(price / 1000).toFixed(0)}k`;
-        return `€${price}`;
+        if (price >= 1000000) return `â‚¬${(price / 1000000).toFixed(1)}M`;
+        if (price >= 1000) return `â‚¬${(price / 1000).toFixed(0)}k`;
+        return `â‚¬${price}`;
     };
 
     return (
@@ -199,30 +199,30 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                             <span className="text-4xl md:text-5xl font-serif text-gold italic">
                                 {formatPrice(property.price)}
                             </span>
-                            <span className="text-white/40 text-sm italic">{t('estimated_mortgage', { amount: Math.round(property.price * 0.005).toLocaleString() })}</span>
+                            <span className="text-white/60 text-sm italic">{t('estimated_mortgage', { amount: Math.round(property.price * 0.005).toLocaleString() })}</span>
                         </div>
 
                         {/* Quick Stats */}
                         <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/10">
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-xs uppercase font-bold tracking-widest">{t('common:beds_label')}</span>
+                                <span className="text-white/60 text-xs uppercase font-bold tracking-widest">{t('common:beds_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bed className="text-gold" size={20} />
                                     <span className="text-xl font-bold text-white">{property.beds}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1 border-x border-white/5 px-6">
-                                <span className="text-white/40 text-xs uppercase font-bold tracking-widest">{t('common:baths_label')}</span>
+                                <span className="text-white/60 text-xs uppercase font-bold tracking-widest">{t('common:baths_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Bath className="text-gold" size={20} />
                                     <span className="text-xl font-bold text-white">{property.baths}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <span className="text-white/40 text-xs uppercase font-bold tracking-widest">{t('common:area_label')}</span>
+                                <span className="text-white/60 text-xs uppercase font-bold tracking-widest">{t('common:area_label')}</span>
                                 <div className="flex items-center gap-2">
                                     <Maximize className="text-gold" size={20} />
-                                    <span className="text-xl font-bold text-white">{property.sqm} <span className="text-sm font-normal text-white/40">{t('sqm')}</span></span>
+                                    <span className="text-xl font-bold text-white">{property.sqm} <span className="text-sm font-normal text-white/60">{t('sqm')}</span></span>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +273,7 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                             zoom={13}
                         />
                         <div className="absolute bottom-6 left-6 bg-luxury-black/80 backdrop-blur-md px-6 py-3 rounded-xl border border-white/10">
-                            <p className="text-xs text-white/40 uppercase tracking-widest font-bold mb-1">{t('exact_location')}</p>
+                            <p className="text-xs text-white/60 uppercase tracking-widest font-bold mb-1">{t('exact_location')}</p>
                             <p className="text-sm font-serif text-white">{t('available_on_request')}</p>
                         </div>
                     </div>
@@ -283,17 +283,17 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <Award className="text-blue-400 mb-4" size={24} />
                             <h4 className="font-serif mb-2 text-white">{t('exclusive_area_title')}</h4>
-                            <p className="text-xs text-white/40 leading-relaxed">{t('exclusive_area_text')}</p>
+                            <p className="text-xs text-white/60 leading-relaxed">{t('exclusive_area_text')}</p>
                         </div>
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <TrendingUp className="text-emerald-400 mb-4" size={24} />
                             <h4 className="font-serif mb-2 text-white">{t('growth_title')}</h4>
-                            <p className="text-xs text-white/40 leading-relaxed">{t('growth_text')}</p>
+                            <p className="text-xs text-white/60 leading-relaxed">{t('growth_text')}</p>
                         </div>
                         <div className="glass-card p-6 rounded-2xl border border-white/5">
                             <Waves className="text-cyan-400 mb-4" size={24} />
                             <h4 className="font-serif mb-2 text-white">{t('lifestyle_hub_title')}</h4>
-                            <p className="text-xs text-white/40 leading-relaxed">{t('lifestyle_hub_text')}</p>
+                            <p className="text-xs text-white/60 leading-relaxed">{t('lifestyle_hub_text')}</p>
                         </div>
                     </div>
                 </div>
@@ -326,15 +326,15 @@ export const PropertyDetailPage = ({ onContact }: { onContact: (id: string, titl
 
                         <div className="mt-8 flex flex-col gap-3">
                             <div className="flex justify-between text-xs py-2 border-b border-white/5">
-                                <span className="text-white/40">{t('property_id')}</span>
+                                <span className="text-white/60">{t('property_id')}</span>
                                 <span className="font-mono text-gold tracking-tighter">MLE-{property.id.substring(0, 8).toUpperCase()}</span>
                             </div>
                             <div className="flex justify-between text-xs py-2 border-b border-white/5">
-                                <span className="text-white/40">{t('status')}</span>
+                                <span className="text-white/60">{t('status')}</span>
                                 <span className="text-emerald-400">{t('available')}</span>
                             </div>
                             <div className="flex justify-between text-xs py-2">
-                                <span className="text-white/40">{t('property_type')}</span>
+                                <span className="text-white/60">{t('property_type')}</span>
                                 <span className="text-white">{property.propertyType}</span>
                             </div>
                         </div>

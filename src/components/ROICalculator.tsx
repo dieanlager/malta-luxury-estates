@@ -80,7 +80,7 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-end">
                                         <label className="text-xs font-bold text-white/60 uppercase tracking-widest">Expected Monthly Rent</label>
-                                        <span className="text-gold font-serif text-lg">€{monthlyRent.toLocaleString()}</span>
+                                        <span className="text-gold font-serif text-lg">â‚¬{monthlyRent.toLocaleString()}</span>
                                     </div>
                                     <input
                                         aria-label="Adjust value"
@@ -153,11 +153,11 @@ export const ROICalculator: React.FC<ROICalculatorProps> = ({ property }) => {
                                     <div className="flex justify-between items-center mb-6">
                                         <div>
                                             <p className="text-[10px] text-white/60 uppercase font-bold tracking-widest mb-1">Estimated Monthly Net</p>
-                                            <p className="text-4xl font-serif text-gold-gradient italic">€{Math.round(calculations.monthlyNet).toLocaleString()}</p>
+                                            <p className="text-4xl font-serif text-gold-gradient italic">â‚¬{Math.round(calculations.monthlyNet).toLocaleString()}</p>
                                         </div>
                                         <div className="text-right">
                                             <p className="text-[10px] text-white/60 uppercase font-bold tracking-widest mb-1">Yearly Net Cashflow</p>
-                                            <p className="text-xl font-serif text-white">€{Math.round(calculations.netIncomeAfterTax).toLocaleString()}</p>
+                                            <p className="text-xl font-serif text-white">â‚¬{Math.round(calculations.netIncomeAfterTax).toLocaleString()}</p>
                                         </div>
                                     </div>
                                     <div className="pt-6 border-t border-white/5 flex items-center gap-3">

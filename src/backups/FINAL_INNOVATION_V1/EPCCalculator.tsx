@@ -32,7 +32,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
             currentRating === 'B' ? property.sqm * 40 :
                 property.sqm * baseRetrofitCostPerSqm;
 
-        const annualSavings = (property.sqm * 15); // Avg savings €15/m2 for A/B rated
+        const annualSavings = (property.sqm * 15); // Avg savings â‚¬15/m2 for A/B rated
         const paybackPeriod = upgradeCost > 0 ? (upgradeCost / annualSavings).toFixed(1) : '0';
 
         const bankPremium = isHighEfficiency ? '-0.30%' : (currentRating === 'C' ? '-0.15%' : 'Standard Rate');
@@ -72,7 +72,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
 
                         <button
                             onClick={onClose}
-                            className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all"
+                            className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all"
                         >
                             <X size={20} />
                         </button>
@@ -83,7 +83,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                             </div>
                             <div>
                                 <h3 className="text-2xl font-serif text-white">Green Efficiency <span className="text-gold italic">Intelligence</span></h3>
-                                <p className="text-xs text-white/40 uppercase tracking-widest font-bold">2026 EU Energy Standards Audit</p>
+                                <p className="text-xs text-white/60 uppercase tracking-widest font-bold">2026 EU Energy Standards Audit</p>
                             </div>
                         </div>
 
@@ -106,7 +106,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                         <span className="text-[10px] font-bold uppercase tracking-widest">Bank Premium</span>
                                     </div>
                                     <div className="text-xl text-white font-serif">{analysis.bankPremium}</div>
-                                    <p className="text-[10px] text-white/30 leading-relaxed mt-2 uppercase tracking-tight">Available via green bank schemes (BOV/HSBC Green Loans)</p>
+                                    <p className="text-[10px] text-white/60 leading-relaxed mt-2 uppercase tracking-tight">Available via green bank schemes (BOV/HSBC Green Loans)</p>
                                 </div>
                             </div>
 
@@ -117,7 +117,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                         <Zap size={14} className="text-gold" />
                                         <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">Upgrade Cost</span>
                                     </div>
-                                    <span className="text-sm font-serif text-white">~€{analysis.upgradeCost.toLocaleString()}</span>
+                                    <span className="text-sm font-serif text-white">~â‚¬{analysis.upgradeCost.toLocaleString()}</span>
                                 </div>
 
                                 <div className="flex justify-between items-center p-4 bg-white/3 rounded-xl border border-white/5">
@@ -125,7 +125,7 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                         <TrendingUp size={14} className="text-emerald-400" />
                                         <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">Annual Savings</span>
                                     </div>
-                                    <span className="text-sm font-serif text-emerald-400">~€{analysis.annualSavings.toLocaleString()}</span>
+                                    <span className="text-sm font-serif text-emerald-400">~â‚¬{analysis.annualSavings.toLocaleString()}</span>
                                 </div>
 
                                 <div className="flex justify-between items-center p-4 bg-white/3 rounded-xl border border-white/5">
@@ -147,10 +147,10 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                         </div>
 
                         <div className="mt-10 pt-8 border-t border-white/5 flex gap-4">
-                            <div className="w-10 h-10 shrink-0 rounded-full bg-white/5 flex items-center justify-center text-white/30">
+                            <div className="w-10 h-10 shrink-0 rounded-full bg-white/5 flex items-center justify-center text-white/60">
                                 <Info size={16} />
                             </div>
-                            <p className="text-[10px] text-white/30 leading-relaxed uppercase tracking-wide">
+                            <p className="text-[10px] text-white/60 leading-relaxed uppercase tracking-wide">
                                 Calculations based on 2026 energy prices and standard solar/thermal insulation retrofit costs in the Maltese islands. EU Directives 2026/08 comply.
                             </p>
                         </div>

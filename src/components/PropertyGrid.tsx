@@ -21,7 +21,7 @@ export const PropertyGrid: React.FC<PropertyGridProps> = ({ properties, location
       <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
         <div>
           <h2 className="text-3xl font-serif mb-2">Available Listings</h2>
-          <p className="text-white/40 text-sm">Discover {filteredProperties.length} curated properties in {locationName}</p>
+          <p className="text-white/60 text-sm">Discover {filteredProperties.length} curated properties in {locationName}</p>
         </div>
         
         <div className="flex p-1 bg-white/5 rounded-full border border-white/10">
@@ -32,7 +32,7 @@ export const PropertyGrid: React.FC<PropertyGridProps> = ({ properties, location
               className={`px-8 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all ${
                 filter === type 
                   ? 'gold-gradient text-luxury-black shadow-lg' 
-                  : 'text-white/40 hover:text-white'
+                  : 'text-white/60 hover:text-white'
               }`}
             >
               {type === 'all' ? 'All' : type === 'sale' ? 'For Sale' : 'To Rent'}
@@ -76,7 +76,7 @@ export const PropertyGrid: React.FC<PropertyGridProps> = ({ properties, location
                   </button>
                   <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-luxury-black to-transparent">
                     <div className="text-2xl font-serif text-white">
-                      €{property.price.toLocaleString()}
+                      â‚¬{property.price.toLocaleString()}
                       {property.type === 'rent' && <span className="text-sm font-sans text-white/60 ml-1">/mo</span>}
                     </div>
                   </div>
@@ -90,16 +90,16 @@ export const PropertyGrid: React.FC<PropertyGridProps> = ({ properties, location
                   
                   <div className="flex items-center justify-between py-4 border-y border-white/5 mb-6">
                     <div className="flex items-center gap-2">
-                      <Bed size={16} className="text-white/40" />
+                      <Bed size={16} className="text-white/60" />
                       <span className="text-xs font-medium">{property.beds} Beds</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Bath size={16} className="text-white/40" />
+                      <Bath size={16} className="text-white/60" />
                       <span className="text-xs font-medium">{property.baths} Baths</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Maximize size={16} className="text-white/40" />
-                      <span className="text-xs font-medium">{property.sqm} m²</span>
+                      <Maximize size={16} className="text-white/60" />
+                      <span className="text-xs font-medium">{property.sqm} mÂ²</span>
                     </div>
                   </div>
 
@@ -113,7 +113,7 @@ export const PropertyGrid: React.FC<PropertyGridProps> = ({ properties, location
         </div>
       ) : (
         <div className="py-20 text-center glass-card rounded-3xl border border-white/5">
-          <p className="text-white/40 italic">No properties currently matching this criteria in {locationName}.</p>
+          <p className="text-white/60 italic">No properties currently matching this criteria in {locationName}.</p>
         </div>
       )}
     </div>

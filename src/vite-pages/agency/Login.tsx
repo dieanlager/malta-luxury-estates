@@ -46,21 +46,21 @@ export default function AgencyLogin() {
                     <input
                         type="password" required autoComplete="current-password"
                         value={password} onChange={e => setPassword(e.target.value)}
-                        style={inputStyle} placeholder="••••••••"
+                        style={inputStyle} placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                     />
                 </Field>
 
                 {error && <ErrorBox>{error}</ErrorBox>}
 
                 <button type="submit" disabled={loading} style={primaryBtn(loading)}>
-                    {loading ? 'Signing in…' : 'Sign In →'}
+                    {loading ? 'Signing inâ€¦' : 'Sign In â†’'}
                 </button>
 
                 <div style={linkRow}>
                     <Link to="/agency/forgot-password" style={linkStyle}>
                         Forgot password?
                     </Link>
-                    <span style={{ color: 'rgba(255,255,255,0.15)' }}>·</span>
+                    <span style={{ color: 'rgba(255,255,255,0.15)' }}>Â·</span>
                     <Link to="/agency/register" style={linkStyle}>
                         Create account
                     </Link>

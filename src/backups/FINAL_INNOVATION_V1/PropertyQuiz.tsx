@@ -9,7 +9,7 @@ import {
 import { usePageMeta } from '../lib/seo/meta';
 import { Link } from 'react-router-dom';
 
-// ─── Quiz Configuration ─────────────────────────────────────────────────────
+// â”€â”€â”€ Quiz Configuration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface Question {
     id: number;
@@ -165,7 +165,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                             <Sparkles size={14} /> Interactive Experience
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">What <span className="text-gold italic">Malta Property</span> Are You?</h1>
-                        <p className="text-white/40">Find your perfect match in 60 seconds.</p>
+                        <p className="text-white/60">Find your perfect match in 60 seconds.</p>
                         <div className="mt-12 max-w-xs mx-auto h-1 bg-white/5 rounded-full overflow-hidden">
                             <motion.div
                                 className="h-full bg-gold"
@@ -220,7 +220,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                                 <span className="text-sm font-medium">{result.type}</span>
                                             </div>
                                         </div>
-                                        <p className="text-white/40 leading-relaxed mb-10 text-sm italic">
+                                        <p className="text-white/60 leading-relaxed mb-10 text-sm italic">
                                             "{result.description}"
                                         </p>
                                         <div className="flex flex-col gap-4">
@@ -235,7 +235,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                 </div>
                                 <div className="bg-white/5 border-t border-white/10 p-8 flex flex-col md:flex-row items-center justify-between gap-6">
                                     <div className="flex items-center gap-4">
-                                        <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/40">
+                                        <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/60">
                                             <Share2 size={18} />
                                         </div>
                                         <p className="text-xs text-white/50">Share your 'Property DNA' with your partner or friends.</p>
@@ -265,7 +265,7 @@ export const MaltaPropertyQuiz: React.FC = () => {
                                             onClick={() => handleOptionClick(option.scores)}
                                             className="group p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:border-gold/50 hover:bg-gold/5 transition-all text-left flex items-start gap-6 hover:scale-[1.02]"
                                         >
-                                            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 group-hover:bg-gold group-hover:text-luxury-black transition-all shrink-0">
+                                            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/60 group-hover:bg-gold group-hover:text-luxury-black transition-all shrink-0">
                                                 <option.icon size={20} />
                                             </div>
                                             <span className="text-lg text-white/70 group-hover:text-white transition-colors pt-2 leading-relaxed">
@@ -284,17 +284,17 @@ export const MaltaPropertyQuiz: React.FC = () => {
                         <div className="p-8 rounded-[2rem] border border-white/5 bg-white/2">
                             <div className="text-gold mb-4"><CheckCircle2 size={24} /></div>
                             <h4 className="text-white font-serif mb-2">Private & Fun</h4>
-                            <p className="text-xs text-white/30 leading-relaxed">No registration needed. Just lifestyle questions to help you visualize your life in Malta.</p>
+                            <p className="text-xs text-white/60 leading-relaxed">No registration needed. Just lifestyle questions to help you visualize your life in Malta.</p>
                         </div>
                         <div className="p-8 rounded-[2rem] border border-white/5 bg-white/2">
                             <div className="text-gold mb-4"><TrendingUp size={24} /></div>
                             <h4 className="text-white font-serif mb-2">Market Driven</h4>
-                            <p className="text-xs text-white/30 leading-relaxed">Results are synced with real market inventory and area statistics for 2026.</p>
+                            <p className="text-xs text-white/60 leading-relaxed">Results are synced with real market inventory and area statistics for 2026.</p>
                         </div>
                         <div className="p-8 rounded-[2rem] border border-white/5 bg-white/2">
                             <div className="text-gold mb-4"><MapPin size={24} /></div>
                             <h4 className="text-white font-serif mb-2">Area Insights</h4>
-                            <p className="text-xs text-white/30 leading-relaxed">Get deep-dive recommendations for specific neighborhoods based on your vibe.</p>
+                            <p className="text-xs text-white/60 leading-relaxed">Get deep-dive recommendations for specific neighborhoods based on your vibe.</p>
                         </div>
                     </div>
                 )}

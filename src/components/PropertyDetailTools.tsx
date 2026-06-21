@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useState, useRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { Property } from '@/src/types';

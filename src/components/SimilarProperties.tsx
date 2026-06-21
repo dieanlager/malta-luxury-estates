@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';

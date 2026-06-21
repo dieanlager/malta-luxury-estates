@@ -92,14 +92,14 @@ export const FeaturedPropertiesSection: React.FC = () => {
 
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-2xl font-bold text-amber-300">
-                        €{(prop.price / 1000000).toFixed(1)}M+
+                        â‚¬{(prop.price / 1000000).toFixed(1)}M+
                       </span>
                     </div>
 
                     <div className="flex gap-4 text-sm text-slate-400 mb-4">
-                      {prop.bedrooms && <span>🛏️ {prop.bedrooms} beds</span>}
-                      {prop.bathrooms && <span>🚿 {prop.bathrooms} baths</span>}
-                      {prop.area_sqm && <span>📐 {prop.area_sqm}m²</span>}
+                      {prop.bedrooms && <span>ðŸ›ï¸ {prop.bedrooms} beds</span>}
+                      {prop.bathrooms && <span>ðŸš¿ {prop.bathrooms} baths</span>}
+                      {prop.area_sqm && <span>ðŸ“ {prop.area_sqm}mÂ²</span>}
                     </div>
 
                     <div className="flex items-center gap-2 text-amber-300 font-semibold group-hover:gap-3 transition-all">

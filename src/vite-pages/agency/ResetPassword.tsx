@@ -38,7 +38,7 @@ export default function ResetPassword() {
                 </Field>
                 {error && <ErrorBox>{error}</ErrorBox>}
                 <button type="submit" disabled={loading} style={primaryBtn(loading)}>
-                    {loading ? 'Updating…' : 'Update Password →'}
+                    {loading ? 'Updatingâ€¦' : 'Update Password â†’'}
                 </button>
             </form>
         </AuthShell>

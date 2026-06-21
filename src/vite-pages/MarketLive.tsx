@@ -13,7 +13,7 @@ import { PROPERTIES } from '../constants';
 import { LOCATION_STATS } from '../lib/data';
 import { PriceHistoryButton } from '../components/PriceHistory';
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface PriceDrop {
     location: string;
     type: string;
@@ -30,13 +30,13 @@ interface Ticker {
     positive: boolean;
 }
 
-// ─── Mock live data (realistic Malta market data 2026) ──────────────────────
+// â”€â”€â”€ Mock live data (realistic Malta market data 2026) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PRICE_DROPS: PriceDrop[] = [
     { location: 'Sliema', type: '2-bed Apartment', oldPrice: 495000, newPrice: 465000, pctChange: -6.1, daysAgo: 3 },
     { location: 'Valletta', type: '1-bed Apartment', oldPrice: 380000, newPrice: 355000, pctChange: -6.6, daysAgo: 5 },
     { location: 'St. Julian\'s', type: 'Penthouse', oldPrice: 1250000, newPrice: 1180000, pctChange: -5.6, daysAgo: 2 },
-    { location: 'Mellieħa', type: '3-bed Villa', oldPrice: 920000, newPrice: 875000, pctChange: -4.9, daysAgo: 6 },
-    { location: 'Gżira', type: 'Studio Apartment', oldPrice: 189000, newPrice: 179000, pctChange: -5.3, daysAgo: 1 },
+    { location: 'MellieÄ§a', type: '3-bed Villa', oldPrice: 920000, newPrice: 875000, pctChange: -4.9, daysAgo: 6 },
+    { location: 'GÅ¼ira', type: 'Studio Apartment', oldPrice: 189000, newPrice: 179000, pctChange: -5.3, daysAgo: 1 },
     { location: 'Swieqi', type: '2-bed Maisonette', oldPrice: 445000, newPrice: 420000, pctChange: -5.6, daysAgo: 4 },
 ];
 
@@ -51,14 +51,14 @@ const GOZO_INDEX = [
     { period: 'Jan 2026', value: 131, bridge: false },  // current
 ];
 
-// ─── Formatters ───────────────────────────────────────────────────────────────
+// â”€â”€â”€ Formatters â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const fmt = (n: number) => n >= 1_000_000
-    ? `€${(n / 1_000_000).toFixed(2)}M`
-    : `€${n.toLocaleString()}`;
+    ? `â‚¬${(n / 1_000_000).toFixed(2)}M`
+    : `â‚¬${n.toLocaleString()}`;
 
 const fmtShort = (n: number) => n >= 1_000_000
-    ? `€${(n / 1_000_000).toFixed(1)}M`
-    : `€${Math.round(n / 1000)}k`;
+    ? `â‚¬${(n / 1_000_000).toFixed(1)}M`
+    : `â‚¬${Math.round(n / 1000)}k`;
 
 function timeAgo(ms: number, t: any) {
     if (ms < 60_000) return `${Math.floor(ms / 1000)}s ${t('common:ago', 'ago')}`;
@@ -71,14 +71,14 @@ const translateDate = (dateStr: string, t: any) => {
     return `${t(`months.${month.toLowerCase()}`)} ${year}`;
 };
 
-// ─── Ticker Tape ─────────────────────────────────────────────────────────────
+// â”€â”€â”€ Ticker Tape â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const TickerTape: React.FC = () => {
     const { t } = useTranslation();
     const tickers: Ticker[] = [
-        { label: t('market.ticker.malta_avg'), value: '€3,842', change: '+4.1% YTD', positive: true },
-        { label: t('market.ticker.gozo_avg'), value: '€2,390', change: '+8.3% YTD', positive: true },
-        { label: t('market.ticker.sliema_median'), value: '€1.85M', change: '+2.8% YTD', positive: true },
-        { label: t('market.ticker.valletta_median'), value: '€1.6M', change: '+5.1% YTD', positive: true },
+        { label: t('market.ticker.malta_avg'), value: 'â‚¬3,842', change: '+4.1% YTD', positive: true },
+        { label: t('market.ticker.gozo_avg'), value: 'â‚¬2,390', change: '+8.3% YTD', positive: true },
+        { label: t('market.ticker.sliema_median'), value: 'â‚¬1.85M', change: '+2.8% YTD', positive: true },
+        { label: t('market.ticker.valletta_median'), value: 'â‚¬1.6M', change: '+5.1% YTD', positive: true },
         { label: t('market.ticker.sda_premium'), value: '+28%', change: t('market.ticker.vs_non_sda'), positive: true },
         { label: t('market.ticker.days_on_market'), value: t('market.ticker.days_count', { count: 47 }), change: '-3 YOY', positive: true },
         { label: t('market.ticker.new_listings_7d'), value: '312', change: '+15%', positive: true },
@@ -98,12 +98,12 @@ const TickerTape: React.FC = () => {
             >
                 {items.map((t, i) => (
                     <span key={i} className="inline-flex items-center gap-2 text-[10px] uppercase tracking-widest shrink-0">
-                        <span className="text-white/30">{t.label}</span>
+                        <span className="text-white/60">{t.label}</span>
                         <span className="text-white font-bold font-mono">{t.value}</span>
                         <span className={`${t.positive ? 'text-emerald-400' : 'text-red-400'} font-mono`}>
                             {t.change}
                         </span>
-                        <span className="text-white/10 ml-4">｜</span>
+                        <span className="text-white/10 ml-4">ï½œ</span>
                     </span>
                 ))}
             </motion.div>
@@ -111,7 +111,7 @@ const TickerTape: React.FC = () => {
     );
 };
 
-// ─── Live Counter ─────────────────────────────────────────────────────────────
+// â”€â”€â”€ Live Counter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const LiveCounter: React.FC<{
     label: string;
     count: number;
@@ -151,7 +151,7 @@ const LiveCounter: React.FC<{
                     {display.toLocaleString()}
                 </motion.div>
                 <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30">{label}</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">{label}</span>
                     <span className="text-[11px] font-bold text-emerald-400 flex items-center gap-1">
                         <TrendingUp size={10} /> +{delta} {t('common.today')}
                     </span>
@@ -161,7 +161,7 @@ const LiveCounter: React.FC<{
     );
 };
 
-// ─── Mini Property Card ───────────────────────────────────────────────────────
+// â”€â”€â”€ Mini Property Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const MiniPropertyCard: React.FC<{ property: typeof PROPERTIES[0]; badge?: string }> = ({ property, badge }) => {
     const { t } = useTranslation();
     return (
@@ -193,13 +193,13 @@ const MiniPropertyCard: React.FC<{ property: typeof PROPERTIES[0]; badge?: strin
                     <div className="text-xs font-serif text-white/80 truncate mb-1 group-hover:text-gold transition-colors">
                         {property.title}
                     </div>
-                    <div className="flex items-center gap-1 text-[10px] text-white/40 mb-2">
+                    <div className="flex items-center gap-1 text-[10px] text-white/60 mb-2">
                         <MapPin size={9} className="text-gold/60" />
                         {property.locationName.split(',').map(part => t(`locations.${part.trim().replace("'", "").replace(" ", "_")}`, { defaultValue: part.trim() })).join(', ')}
                     </div>
                     <div className="flex items-center justify-between">
                         <span className="text-gold font-bold text-sm">{fmtShort(property.price)}</span>
-                        <span className="text-[9px] text-white/30">{property.beds}{t('common.beds_short')} · {property.sqm}m²</span>
+                        <span className="text-[9px] text-white/60">{property.beds}{t('common.beds_short')} Â· {property.sqm}mÂ²</span>
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@ const MiniPropertyCard: React.FC<{ property: typeof PROPERTIES[0]; badge?: strin
     );
 };
 
-// ─── Price Drop Row ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Price Drop Row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PriceDropRow: React.FC<{ drop: PriceDrop; index: number }> = ({ drop, index }) => {
     const { t } = useTranslation();
     return (
@@ -223,9 +223,9 @@ const PriceDropRow: React.FC<{ drop: PriceDrop; index: number }> = ({ drop, inde
                 </div>
                 <div className="min-w-0">
                     <div className="text-xs font-bold text-white/80 truncate">
-                        {t(`locations.${drop.location.replace(" ", "_").replace("'", "")}`)} · {t(`market_types.${drop.type.replace("-", "_").replace(" ", "_").toLowerCase()}`)}
+                        {t(`locations.${drop.location.replace(" ", "_").replace("'", "")}`)} Â· {t(`market_types.${drop.type.replace("-", "_").replace(" ", "_").toLowerCase()}`)}
                     </div>
-                    <div className="text-[9px] text-white/30 mt-0.5">{drop.daysAgo} {t('common.ago')}</div>
+                    <div className="text-[9px] text-white/60 mt-0.5">{drop.daysAgo} {t('common.ago')}</div>
                 </div>
             </div>
 
@@ -242,7 +242,7 @@ const PriceDropRow: React.FC<{ drop: PriceDrop; index: number }> = ({ drop, inde
     );
 };
 
-// ─── Gozo Bridge Tracker ──────────────────────────────────────────────────────
+// â”€â”€â”€ Gozo Bridge Tracker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const GozoBridgeTracker: React.FC = () => {
     const { t } = useTranslation();
     const maxVal = Math.max(...GOZO_INDEX.map(d => d.value));
@@ -260,7 +260,7 @@ const GozoBridgeTracker: React.FC = () => {
                         </div>
                         <div>
                             <h3 className="text-sm font-bold text-white">{t('market.gozo_bridge_tracker')}</h3>
-                            <p className="text-[10px] text-white/30">{t('market.gozo_bridge_subtitle')}</p>
+                            <p className="text-[10px] text-white/60">{t('market.gozo_bridge_subtitle')}</p>
                         </div>
                     </div>
                     <div className="text-right">
@@ -280,7 +280,7 @@ const GozoBridgeTracker: React.FC = () => {
                             <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
                                 {d.bridge && (
                                     <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-[7px] font-bold text-emerald-400 whitespace-nowrap z-10 bg-black/80 px-1 py-0.5 rounded">
-                                        📣 {t('market.announced')}
+                                        ðŸ“£ {t('market.announced')}
                                     </div>
                                 )}
                                 <motion.div
@@ -292,7 +292,7 @@ const GozoBridgeTracker: React.FC = () => {
                                 />
                                 {/* Tooltip */}
                                 <div className="absolute bottom-full mb-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-black/90 border border-white/10 rounded-lg p-2 text-[9px] whitespace-nowrap z-20">
-                                    <div className="text-white/40">{translateDate(d.period, t)}</div>
+                                    <div className="text-white/60">{translateDate(d.period, t)}</div>
                                     <div className="text-amber-400 font-bold">{t('market.index_label', { value: d.value })}</div>
                                 </div>
                             </div>
@@ -312,12 +312,12 @@ const GozoBridgeTracker: React.FC = () => {
                 {/* Stats row */}
                 <div className="grid grid-cols-3 gap-3">
                     {[
-                        { label: t('market.current_avg'), value: '€2,390', up: true },
+                        { label: t('market.current_avg'), value: 'â‚¬2,390', up: true },
                         { label: t('market.index_label', { value: 131 }), value: '131', up: true },
-                        { label: t('market.projection_2031'), value: '€3,290', up: true },
+                        { label: t('market.projection_2031'), value: 'â‚¬3,290', up: true },
                     ].map(({ label, value, up }) => (
                         <div key={label} className="p-3 bg-white/3 rounded-xl border border-white/5 text-center">
-                            <div className="text-[9px] text-white/30 mb-1 leading-tight">{label}</div>
+                            <div className="text-[9px] text-white/60 mb-1 leading-tight">{label}</div>
                             <div className="text-sm font-bold text-amber-400 font-mono">{value}</div>
                         </div>
                     ))}
@@ -331,12 +331,12 @@ const GozoBridgeTracker: React.FC = () => {
     );
 };
 
-// ─── Area Heat Map ────────────────────────────────────────────────────────────
+// â”€â”€â”€ Area Heat Map â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const AREA_HEAT = [
     { area: 'Sliema', priceSqm: 4850, change: +4.1, listings: 245, hotness: 92 },
     { area: 'St. Julian\'s', priceSqm: 5200, change: +5.8, listings: 180, hotness: 88 },
     { area: 'Valletta', priceSqm: 4400, change: +6.2, listings: 95, hotness: 82 },
-    { area: 'Mellieħa', priceSqm: 3800, change: +3.5, listings: 110, hotness: 70 },
+    { area: 'MellieÄ§a', priceSqm: 3800, change: +3.5, listings: 110, hotness: 70 },
     { area: 'Gozo', priceSqm: 2390, change: +8.3, listings: 185, hotness: 95 },
     { area: 'Mdina', priceSqm: 6100, change: +2.1, listings: 12, hotness: 60 },
     { area: 'Swieqi', priceSqm: 3400, change: +3.8, listings: 140, hotness: 66 },
@@ -367,12 +367,12 @@ const AreaHeat: React.FC = () => {
                             transition={{ duration: 1, delay: i * 0.06 }}
                         />
                         <div className="absolute inset-0 flex items-center px-2 justify-between">
-                            <span className="text-[9px] font-bold text-white/70">€{area.priceSqm.toLocaleString()}/m²</span>
-                            <span className="text-[9px] font-bold text-white/40">{t('common.listings_count', { count: area.listings })}</span>
+                            <span className="text-[9px] font-bold text-white/70">â‚¬{area.priceSqm.toLocaleString()}/mÂ²</span>
+                            <span className="text-[9px] font-bold text-white/60">{t('common.listings_count', { count: area.listings })}</span>
                         </div>
                     </div>
-                    <div className={`w-14 text-right text-[10px] font-bold font-mono shrink-0 ${area.change > 5 ? 'text-emerald-400' : area.change > 3 ? 'text-gold' : 'text-white/40'}`}>
-                        +{area.change}% ↑
+                    <div className={`w-14 text-right text-[10px] font-bold font-mono shrink-0 ${area.change > 5 ? 'text-emerald-400' : area.change > 3 ? 'text-gold' : 'text-white/60'}`}>
+                        +{area.change}% â†‘
                     </div>
                 </motion.div>
             ))}
@@ -380,7 +380,7 @@ const AreaHeat: React.FC = () => {
     );
 };
 
-// ─── Main Component ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export const MarketLive: React.FC = () => {
     const { t, i18n } = useTranslation();
     const [lastUpdated, setLastUpdated] = useState(new Date());
@@ -423,11 +423,11 @@ export const MarketLive: React.FC = () => {
         return { forSale, forRent, totalListings, totalSale, totalRent };
     }, []);
 
-    // "Just Listed" — take first 3 sale properties as demo
+    // "Just Listed" â€” take first 3 sale properties as demo
     const justListed = useMemo(() =>
         PROPERTIES.filter(p => p.type === 'sale').slice(0, 3), []);
 
-    // "Hot / Most Viewed" — seafront or penthouse
+    // "Hot / Most Viewed" â€” seafront or penthouse
     const hotProperties = useMemo(() =>
         PROPERTIES.filter(p => p.isSeafront || p.propertyType === 'Penthouse').slice(0, 3), []);
 
@@ -436,10 +436,10 @@ export const MarketLive: React.FC = () => {
     return (
         <div className="min-h-screen bg-luxury-black text-white">
 
-            {/* ── Ticker Tape ── */}
+            {/* â”€â”€ Ticker Tape â”€â”€ */}
             <TickerTape />
 
-            {/* ── Hero Bar ── */}
+            {/* â”€â”€ Hero Bar â”€â”€ */}
             <div className="border-b border-white/5 bg-black/20">
                 <div className="max-w-7xl mx-auto px-6 py-6">
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -451,14 +451,14 @@ export const MarketLive: React.FC = () => {
                                 </div>
                                 <div className="flex items-center gap-1.5 text-[10px] text-white/25">
                                     <Clock size={10} />
-                                    {t('market.lastUpdated')}: {now} · {timeAgo(elapsed, t)}
+                                    {t('market.lastUpdated')}: {now} Â· {timeAgo(elapsed, t)}
                                 </div>
                             </div>
                             <h1 className="text-3xl md:text-4xl font-serif text-white">
                                 {t('market.title')}
                             </h1>
-                            <p className="text-white/40 text-sm mt-1">
-                                {t('sections.map.badge')} · 2026
+                            <p className="text-white/60 text-sm mt-1">
+                                {t('sections.map.badge')} Â· 2026
                             </p>
                         </div>
                         <button
@@ -475,7 +475,7 @@ export const MarketLive: React.FC = () => {
 
             <div className="max-w-7xl mx-auto px-6 py-10 space-y-12">
 
-                {/* ── LIVE COUNTERS ── */}
+                {/* â”€â”€ LIVE COUNTERS â”€â”€ */}
                 <section>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <LiveCounter label={t('market.forSale')} count={stats.totalSale} delta={12} color="#C5A059" icon={Home} />
@@ -494,7 +494,7 @@ export const MarketLive: React.FC = () => {
                                 </div>
                                 <div className="text-4xl font-serif font-bold text-emerald-400 mb-1">89</div>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('market.price_drops')}</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('market.price_drops')}</span>
                                     <span className="text-[11px] font-bold text-emerald-400 flex items-center gap-1">
                                         <AlertTriangle size={10} /> +6% {t('common.wow')}
                                     </span>
@@ -504,7 +504,7 @@ export const MarketLive: React.FC = () => {
                     </div>
                 </section>
 
-                {/* ── JUST LISTED + PRICE DROPS ── */}
+                {/* â”€â”€ JUST LISTED + PRICE DROPS â”€â”€ */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                     {/* Just Listed */}
@@ -516,11 +516,11 @@ export const MarketLive: React.FC = () => {
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-bold text-white">{t('market.just_listed')}</h2>
-                                    <p className="text-[10px] text-white/30">{t('market.last_48h')}</p>
+                                    <p className="text-[10px] text-white/60">{t('market.last_48h')}</p>
                                 </div>
                             </div>
                             <Link to="/properties/all"
-                                className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-white/30 hover:text-gold transition-colors">
+                                className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-white/60 hover:text-gold transition-colors">
                                 {t('sections.featured.view_all')} <ChevronRight size={12} />
                             </Link>
                         </div>
@@ -540,7 +540,7 @@ export const MarketLive: React.FC = () => {
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-bold text-white">{t('market.price_drops')}</h2>
-                                    <p className="text-[10px] text-white/30">{t('market.last_7d_5pct')}</p>
+                                    <p className="text-[10px] text-white/60">{t('market.last_7d_5pct')}</p>
                                 </div>
                             </div>
                             <div className="px-2 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-[9px] font-bold text-red-400">
@@ -555,7 +555,7 @@ export const MarketLive: React.FC = () => {
                     </section>
                 </div>
 
-                {/* ── HOT + AREA HEAT ── */}
+                {/* â”€â”€ HOT + AREA HEAT â”€â”€ */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                     {/* Most Viewed */}
@@ -567,7 +567,7 @@ export const MarketLive: React.FC = () => {
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-bold text-white">{t('market.hot_this_week')}</h2>
-                                    <p className="text-[10px] text-white/30">{t('market.most_enquired')}</p>
+                                    <p className="text-[10px] text-white/60">{t('market.most_enquired')}</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-1 text-[10px] text-white/25">
@@ -576,7 +576,7 @@ export const MarketLive: React.FC = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                             {hotProperties.map((p, i) => (
-                                <MiniPropertyCard key={p.id} property={p} badge={i === 0 ? `🔥 ${t('badges.hot')}` : undefined} />
+                                <MiniPropertyCard key={p.id} property={p} badge={i === 0 ? `ðŸ”¥ ${t('badges.hot')}` : undefined} />
                             ))}
                         </div>
                     </section>
@@ -590,7 +590,7 @@ export const MarketLive: React.FC = () => {
                                 </div>
                                 <div>
                                     <h2 className="text-sm font-bold text-white">{t('market.areaPriceHeat')}</h2>
-                                    <p className="text-[10px] text-white/30">{t('market.areaPriceHeatSubtitle')}</p>
+                                    <p className="text-[10px] text-white/60">{t('market.areaPriceHeatSubtitle')}</p>
                                 </div>
                             </div>
                         </div>
@@ -600,12 +600,12 @@ export const MarketLive: React.FC = () => {
                     </section>
                 </div>
 
-                {/* ── GOZO BRIDGE TRACKER ── */}
+                {/* â”€â”€ GOZO BRIDGE TRACKER â”€â”€ */}
                 <section>
                     <GozoBridgeTracker />
                 </section>
 
-                {/* ── MARKET COMMENTARY ── */}
+                {/* â”€â”€ MARKET COMMENTARY â”€â”€ */}
                 <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {[
                         {
@@ -637,7 +637,7 @@ export const MarketLive: React.FC = () => {
                     ))}
                 </section>
 
-                {/* ── Disclaimer ── */}
+                {/* â”€â”€ Disclaimer â”€â”€ */}
                 <div className="border-t border-white/5 pt-8 text-center">
                     <p className="text-[10px] text-white/15 leading-relaxed max-w-2xl mx-auto">
                         {t('market.disclaimer')}

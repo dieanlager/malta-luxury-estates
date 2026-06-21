@@ -39,9 +39,9 @@ function genSlug(text: string) {
 }
 
 function fmtPrice(p: number) {
-  if (p >= 1000000) return 'â‚¬' + (p / 1000000).toFixed(1) + 'M';
-  if (p >= 1000) return 'â‚¬' + (p / 1000).toFixed(0) + 'k';
-  return 'â‚¬' + p.toLocaleString();
+  if (p >= 1000000) return 'Ã¢â€šÂ¬' + (p / 1000000).toFixed(1) + 'M';
+  if (p >= 1000) return 'Ã¢â€šÂ¬' + (p / 1000).toFixed(0) + 'k';
+  return 'Ã¢â€šÂ¬' + p.toLocaleString();
 }
 
 // Proxy external images through server to bypass hotlink protection
@@ -531,7 +531,7 @@ const AdminPage: React.FC = () => {
               >
                 <Upload size={24} className="text-slate-400" />
                 <span className="text-slate-300 text-sm">Przeciagnij zdjecia lub kliknij</span>
-                <span className="text-slate-500 text-xs">JPG, PNG, HEIC â€” resize do 1920px WebP</span>
+                <span className="text-slate-500 text-xs">JPG, PNG, HEIC Ã¢â‚¬â€ resize do 1920px WebP</span>
                 <input type="file" multiple accept="image/*" onChange={e => { if (e.target.files) processFiles(e.target.files); }} disabled={uploading} className="hidden" />
               </label>
 

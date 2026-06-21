@@ -77,7 +77,7 @@ export const AboutPage = () => {
                             {stats.map((stat, i) => (
                                 <div key={i}>
                                     <p className="text-3xl font-serif text-white mb-1">{stat.value}</p>
-                                    <p className="text-[10px] uppercase tracking-widest text-white/40 font-bold">{stat.label}</p>
+                                    <p className="text-[10px] uppercase tracking-widest text-white/60 font-bold">{stat.label}</p>
                                 </div>
                             ))}
                         </div>
@@ -110,7 +110,7 @@ export const AboutPage = () => {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-20">
                         <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">{t('about.values.title')}</h2>
-                        <p className="text-white/40 leading-relaxed">{t('about.values.subtitle')}</p>
+                        <p className="text-white/60 leading-relaxed">{t('about.values.subtitle')}</p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
                         {values.map((v, i) => (

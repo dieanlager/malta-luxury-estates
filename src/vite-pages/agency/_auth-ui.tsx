@@ -61,7 +61,7 @@ export function AuthShell({ title, sub, children }: {
                         fontFamily: 'DM Mono, monospace',
                         fontSize: '0.625rem', letterSpacing: '0.1em',
                         color: 'rgba(255,255,255,0.2)', textDecoration: 'none',
-                    }}>← Back to Malta Luxury Real Estate</Link>
+                    }}>â† Back to Malta Luxury Real Estate</Link>
                 </div>
             </div>
         </div>

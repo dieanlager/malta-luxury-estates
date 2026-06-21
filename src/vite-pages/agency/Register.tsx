@@ -1,8 +1,8 @@
 import { AuthShell } from './_auth-ui'
 
 export default function AgencyRegister() {
-    // Public self‑registration is disabled under the exclusive partnership model.
-    // This screen is intentionally static and invite‑only.
+    // Public selfâ€‘registration is disabled under the exclusive partnership model.
+    // This screen is intentionally static and inviteâ€‘only.
     return (
         <AuthShell
             title="Partner Applications"
@@ -24,7 +24,7 @@ export default function AgencyRegister() {
                         opacity: 0.9,
                     }}
                 >
-                    🏛️
+                    ðŸ›ï¸
                 </div>
                 <h1
                     style={{
@@ -46,7 +46,7 @@ export default function AgencyRegister() {
                 >
                     Malta Luxury Real Estate currently operates through a single, exclusive
                     agency partnership. New partner applications are reviewed on a strictly
-                    invite‑only basis.
+                    inviteâ€‘only basis.
                 </p>
                 <p
                     style={{

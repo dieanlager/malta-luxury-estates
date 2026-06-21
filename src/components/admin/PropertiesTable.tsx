@@ -29,10 +29,10 @@ interface PropRow {
 }
 
 function fmtPrice(p: number | null) {
-  if (!p) return '—';
-  if (p >= 1_000_000) return `€${(p / 1_000_000).toFixed(1)}M`;
-  if (p >= 1_000) return `€${Math.round(p / 1000)}k`;
-  return `€${p.toLocaleString('en-GB')}`;
+  if (!p) return 'â€”';
+  if (p >= 1_000_000) return `â‚¬${(p / 1_000_000).toFixed(1)}M`;
+  if (p >= 1_000) return `â‚¬${Math.round(p / 1000)}k`;
+  return `â‚¬${p.toLocaleString('en-GB')}`;
 }
 
 function fmtDate(s: string) {
@@ -181,7 +181,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
 
   if (loading) return (
     <div className="flex items-center justify-center h-64 text-white/60">
-      <Loader2 size={24} className="animate-spin mr-3" /> Loading properties…
+      <Loader2 size={24} className="animate-spin mr-3" /> Loading propertiesâ€¦
     </div>
   );
   if (fetchError) return (
@@ -199,7 +199,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
-            placeholder="Search title, location, agency…"
+            placeholder="Search title, location, agencyâ€¦"
             className="w-full pl-9 pr-8 py-2.5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder:text-white/60 focus:outline-none focus:border-gold/50 transition-colors"
           />
           {search && (
@@ -238,7 +238,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
           <span className="text-sm text-gold font-bold tabular-nums">{selected.size} selected</span>
           <select value={bulkAction} onChange={e => setBulkAction(e.target.value)}
             className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-sm text-white/70 focus:outline-none focus:border-gold/50">
-            <option value="">Choose action…</option>
+            <option value="">Choose actionâ€¦</option>
             <option value="activate">Set Active</option>
             <option value="pause">Set Paused</option>
             <option value="delete">Delete selected</option>
@@ -309,7 +309,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                       <div className="flex items-center gap-2 mt-0.5">
                         {row.property_type && (
                           <span className="text-[10px] text-white/60">
-                            {row.property_type}{row.bedrooms ? ` · ${row.bedrooms}bd` : ''}
+                            {row.property_type}{row.bedrooms ? ` Â· ${row.bedrooms}bd` : ''}
                           </span>
                         )}
                         {row.featured && (
@@ -321,7 +321,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                     </td>
                     <td className="px-3 py-3 text-right font-serif text-gold whitespace-nowrap">{fmtPrice(row.price)}</td>
                     <td className="px-3 py-3 text-white/50 text-sm hidden md:table-cell whitespace-nowrap max-w-[140px] truncate">
-                      {row.location_text ?? '—'}
+                      {row.location_text ?? 'â€”'}
                     </td>
                     <td className="px-3 py-3 hidden lg:table-cell">
                       <span className={`text-[10px] uppercase tracking-wider font-bold ${row.listing_type === 'rent' ? 'text-blue-400' : 'text-emerald-400'}`}>
@@ -330,7 +330,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
                     </td>
                     <td className="px-3 py-3"><StatusBadge status={effStatus} /></td>
                     <td className="px-3 py-3 text-white/60 text-xs hidden xl:table-cell truncate max-w-[120px]">
-                      {row.agency_name ?? '—'}
+                      {row.agency_name ?? 'â€”'}
                     </td>
                     <td className="px-3 py-3 text-white/60 text-xs hidden lg:table-cell whitespace-nowrap">
                       {fmtDate(row.created_at)}
@@ -387,7 +387,7 @@ export function PropertiesTable({ adminKey }: { adminKey: string }) {
       {totalPages > 1 && (
         <div className="flex items-center justify-between">
           <span className="text-xs text-white/60 tabular-nums">
-            Showing {safePage * PAGE_SIZE + 1}–{Math.min((safePage + 1) * PAGE_SIZE, filtered.length)} of {filtered.length}
+            Showing {safePage * PAGE_SIZE + 1}â€“{Math.min((safePage + 1) * PAGE_SIZE, filtered.length)} of {filtered.length}
           </span>
           <div className="flex items-center gap-2">
             <button onClick={() => setPage(p => Math.max(0, p - 1))} disabled={safePage === 0}

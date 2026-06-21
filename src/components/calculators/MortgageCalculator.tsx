@@ -82,10 +82,10 @@ export const MortgageCalculator = () => {
         : 'bg-gold';
 
     const banks = [
-        { name: 'BOV', rate: '3.50% – 4.25%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
-        { name: 'HSBC Malta', rate: '3.80% – 4.60%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
-        { name: 'APS Bank', rate: '4.10% – 4.85%', note: 'Fixed 5yr available' },
-        { name: 'MFC', rate: '4.50% – 5.25%', note: 'Non-res BTL' },
+        { name: 'BOV', rate: '3.50% â€“ 4.25%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
+        { name: 'HSBC Malta', rate: '3.80% â€“ 4.60%', note: isResident ? 'Variable, resident' : 'Variable, non-resident' },
+        { name: 'APS Bank', rate: '4.10% â€“ 4.85%', note: 'Fixed 5yr available' },
+        { name: 'MFC', rate: '4.50% â€“ 5.25%', note: 'Non-res BTL' },
     ];
 
     return (
@@ -125,13 +125,13 @@ export const MortgageCalculator = () => {
                     <div>
                         <div className="flex justify-between items-center mb-4">
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Property Price'}</label>
-                            <span className="text-blue-400 font-serif text-xl">€{fmtItems(propertyPrice)}</span>
+                            <span className="text-blue-400 font-serif text-xl">â‚¬{fmtItems(propertyPrice)}</span>
                         </div>
                         <input type="range" aria-label="Adjust value" min="100000" max="5000000" step="25000" value={propertyPrice}
                             onChange={e => setPropertyPrice(+e.target.value)}
                             className="w-full h-1.5 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-500" />
                         <div className="flex justify-between text-[10px] text-white/20 mt-1">
-                            <span>€100k</span><span>€5M</span>
+                            <span>â‚¬100k</span><span>â‚¬5M</span>
                         </div>
                     </div>
 
@@ -140,7 +140,7 @@ export const MortgageCalculator = () => {
                         <div className="flex justify-between items-center mb-4">
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Deposit'}</label>
                             <div className="text-right">
-                                <span className="text-blue-400 font-serif text-xl">€{fmtItems(deposit)}</span>
+                                <span className="text-blue-400 font-serif text-xl">â‚¬{fmtItems(deposit)}</span>
                                 <span className="text-white/60 text-xs ml-2">({depositPct}%)</span>
                             </div>
                         </div>
@@ -186,10 +186,10 @@ export const MortgageCalculator = () => {
                 {/* RESULTS */}
                 <div className="space-y-5">
 
-                    {/* Monthly Payment — Hero */}
+                    {/* Monthly Payment â€” Hero */}
                     <div className="p-8 rounded-3xl bg-blue-500/10 border border-blue-500/30 text-center">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-blue-400/60 mb-2">{'MONTHLY REPAYMENT'}</div>
-                        <div className="text-5xl font-serif text-blue-400 mb-1">€{fmtItems(result?.monthlyPayment ?? 0)}</div>
+                        <div className="text-5xl font-serif text-blue-400 mb-1">â‚¬{fmtItems(result?.monthlyPayment ?? 0)}</div>
                         <div className="text-xs text-white/60">{'Principal + Interest breakdown'}</div>
                     </div>
 
@@ -197,15 +197,15 @@ export const MortgageCalculator = () => {
                     <div className="grid grid-cols-2 gap-4">
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
                             <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'Loan Amount'}</div>
-                            <div className="text-xl font-serif">€{fmtItems(result?.loanAmount ?? 0)}</div>
+                            <div className="text-xl font-serif">â‚¬{fmtItems(result?.loanAmount ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
                             <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'Total Interest'}</div>
-                            <div className="text-xl font-serif text-red-400/80">€{fmtItems(result?.totalInterest ?? 0)}</div>
+                            <div className="text-xl font-serif text-red-400/80">â‚¬{fmtItems(result?.totalInterest ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
                             <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'Total Repayment'}</div>
-                            <div className="text-xl font-serif">€{fmtItems(result?.totalPayment ?? 0)}</div>
+                            <div className="text-xl font-serif">â‚¬{fmtItems(result?.totalPayment ?? 0)}</div>
                         </div>
                         <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
                             <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">{'LTV Ratio'}</div>
@@ -219,7 +219,7 @@ export const MortgageCalculator = () => {
                     <div className="p-5 bg-white/5 rounded-2xl border border-white/10">
                         <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest text-white/60 mb-3">
                             <span>{'LTV Ratio'}</span>
-                            <span>{`Max ${maxLTV}% — ${isResident ? "Residents" : "Non-Residents"}`}</span>
+                            <span>{`Max ${maxLTV}% â€” ${isResident ? "Residents" : "Non-Residents"}`}</span>
                         </div>
                         <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
                             <div className={`h-full rounded-full transition-all duration-700 ${ltvColor}`}

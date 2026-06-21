@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -61,7 +61,7 @@ export function StickyPropertyBar({ title, price, image, slug, statusLabel, sent
       >
         <div>
           <p className="font-serif text-xl text-gold font-bold">{price ? formatPrice(price) : '—'}</p>
-          <p className="text-white/30 text-[9px] uppercase tracking-widest">{statusLabel}</p>
+          <p className="text-white/60 text-[9px] uppercase tracking-widest">{statusLabel}</p>
         </div>
         <Link
           href={`/contact?property=${slug}` as any}

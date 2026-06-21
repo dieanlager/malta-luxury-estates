@@ -26,7 +26,7 @@ const CITIES: City[] = [
     x: 635,
     y: 415,
     count: 95,
-    avgPrice: '€1.2M',
+    avgPrice: 'â‚¬1.2M',
     description: 'The historic capital city, a UNESCO World Heritage site known for its grand palazzos and baroque architecture.',
     image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&q=80&w=400'
   },
@@ -37,7 +37,7 @@ const CITIES: City[] = [
     x: 620,
     y: 390,
     count: 245,
-    avgPrice: '€1.8M',
+    avgPrice: 'â‚¬1.8M',
     description: 'The commercial hub of Malta, offering luxury seafront apartments and high-end shopping.',
     image: 'https://images.unsplash.com/photo-1529280600423-6231993a00cc?auto=format&fit=crop&q=80&w=400'
   },
@@ -48,7 +48,7 @@ const CITIES: City[] = [
     x: 600,
     y: 375,
     count: 180,
-    avgPrice: '€2.4M',
+    avgPrice: 'â‚¬2.4M',
     description: 'Home to the prestigious Portomaso and Pendergardens developments, offering the ultimate in modern luxury.',
     image: 'https://images.unsplash.com/photo-1543731068-7e0f5beff43a?auto=format&fit=crop&q=80&w=400'
   },
@@ -59,7 +59,7 @@ const CITIES: City[] = [
     x: 480,
     y: 430,
     count: 12,
-    avgPrice: '€4.5M',
+    avgPrice: 'â‚¬4.5M',
     description: 'The "Silent City", offering exclusive historic noble residences and unparalleled privacy.',
     image: 'https://images.unsplash.com/photo-1590059002624-6677c8e527b1?auto=format&fit=crop&q=80&w=400'
   },
@@ -70,7 +70,7 @@ const CITIES: City[] = [
     x: 410,
     y: 280,
     count: 110,
-    avgPrice: '€2.1M',
+    avgPrice: 'â‚¬2.1M',
     description: 'Famous for its stunning villas perched on the cliffs overlooking the northern bays.',
     image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=400'
   },
@@ -81,7 +81,7 @@ const CITIES: City[] = [
     x: 180,
     y: 130,
     count: 120,
-    avgPrice: '€850k',
+    avgPrice: 'â‚¬850k',
     description: 'The heart of Gozo, offering charming farmhouses and luxury retreats in a serene environment.',
     image: 'https://images.unsplash.com/photo-1506929197327-2e4b4d388279?auto=format&fit=crop&q=80&w=400'
   }
@@ -197,13 +197,13 @@ export const MaltaMap = () => {
 
             <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mb-4">
               <div className="flex flex-col">
-                <span className="text-[9px] uppercase tracking-widest font-bold text-white/30 mb-1 flex items-center gap-1">
+                <span className="text-[9px] uppercase tracking-widest font-bold text-white/60 mb-1 flex items-center gap-1">
                   <Home size={10} /> Listings
                 </span>
                 <span className="text-lg font-serif">{activeCity.count}</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-[9px] uppercase tracking-widest font-bold text-white/30 mb-1 flex items-center gap-1">
+                <span className="text-[9px] uppercase tracking-widest font-bold text-white/60 mb-1 flex items-center gap-1">
                   <TrendingUp size={10} /> Avg. Price
                 </span>
                 <span className="text-lg font-serif text-gold">{activeCity.avgPrice}</span>
@@ -215,7 +215,7 @@ export const MaltaMap = () => {
               </span>
               <Link
                 href="/insights/malta-real-estate-investment-guide-2026"
-                className="text-[9px] font-bold uppercase tracking-widest text-white/40 hover:text-white transition-colors"
+                className="text-[9px] font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors"
                 onClick={(e) => e.stopPropagation()}
               >
                 Investment Guide
@@ -231,7 +231,7 @@ export const MaltaMap = () => {
           <Navigation className="text-gold" size={18} />
           <h2 className="text-3xl font-serif">Island Hubs</h2>
         </div>
-        <p className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold">Click a marker to view local listings</p>
+        <p className="text-white/60 text-[10px] uppercase tracking-[0.2em] font-bold">Click a marker to view local listings</p>
       </div>
 
       {/* Decorative Grid */}

@@ -88,7 +88,7 @@ export const ContactPage = () => {
                   <Mail className="text-gold" size={18} />
                 </div>
                 <div>
-                  <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Email</p>
+                  <p className="text-white/60 text-xs uppercase tracking-widest mb-1">Email</p>
                   <a href="mailto:info@maltaluxuryrealestate.com" className="text-white hover:text-gold transition-colors">
                     info@maltaluxuryrealestate.com
                   </a>
@@ -100,7 +100,7 @@ export const ContactPage = () => {
                   <MessageSquare className="text-gold" size={18} />
                 </div>
                 <div>
-                  <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Response Time</p>
+                  <p className="text-white/60 text-xs uppercase tracking-widest mb-1">Response Time</p>
                   <p className="text-white">Within 24 hours</p>
                 </div>
               </div>
@@ -110,16 +110,16 @@ export const ContactPage = () => {
                   <Phone className="text-gold" size={18} />
                 </div>
                 <div>
-                  <p className="text-white/40 text-xs uppercase tracking-widest mb-1">Specialists Available</p>
-                  <p className="text-white">Mon – Fri, 9:00 – 18:00 CET</p>
+                  <p className="text-white/60 text-xs uppercase tracking-widest mb-1">Specialists Available</p>
+                  <p className="text-white">Mon â€“ Fri, 9:00 â€“ 18:00 CET</p>
                 </div>
               </div>
             </div>
 
             <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/5">
-              <p className="text-white/40 text-xs uppercase tracking-widest mb-2">Our Promise</p>
+              <p className="text-white/60 text-xs uppercase tracking-widest mb-2">Our Promise</p>
               <p className="text-white/70 text-sm leading-relaxed">
-                Every inquiry is handled by a verified Malta luxury real estate specialist — not a generic support team. Your inquiry deserves expert attention.
+                Every inquiry is handled by a verified Malta luxury real estate specialist â€” not a generic support team. Your inquiry deserves expert attention.
               </p>
             </div>
           </div>
@@ -142,7 +142,7 @@ export const ContactPage = () => {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="text-white/40 text-xs uppercase tracking-widest block mb-2">Name *</label>
+                    <label className="text-white/60 text-xs uppercase tracking-widest block mb-2">Name *</label>
                     <input
                       name="name"
                       required
@@ -153,7 +153,7 @@ export const ContactPage = () => {
                     />
                   </div>
                   <div>
-                    <label className="text-white/40 text-xs uppercase tracking-widest block mb-2">Email *</label>
+                    <label className="text-white/60 text-xs uppercase tracking-widest block mb-2">Email *</label>
                     <input
                       name="email"
                       type="email"
@@ -167,7 +167,7 @@ export const ContactPage = () => {
                 </div>
 
                 <div>
-                  <label className="text-white/40 text-xs uppercase tracking-widest block mb-2">Phone (optional)</label>
+                  <label className="text-white/60 text-xs uppercase tracking-widest block mb-2">Phone (optional)</label>
                   <input
                     name="phone"
                     type="tel"
@@ -179,7 +179,7 @@ export const ContactPage = () => {
                 </div>
 
                 <div>
-                  <label className="text-white/40 text-xs uppercase tracking-widest block mb-2">Subject</label>
+                  <label className="text-white/60 text-xs uppercase tracking-widest block mb-2">Subject</label>
                   <select
                     name="subject"
                     value={form.subject}
@@ -195,7 +195,7 @@ export const ContactPage = () => {
                 </div>
 
                 <div>
-                  <label className="text-white/40 text-xs uppercase tracking-widest block mb-2">Message *</label>
+                  <label className="text-white/60 text-xs uppercase tracking-widest block mb-2">Message *</label>
                   <textarea
                     name="message"
                     required

@@ -4,7 +4,7 @@ import { TrendingUp, Home, Key, Scale, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLocale } from 'next-intl';
 
-// ¦¦¦ Types ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+// Â¦Â¦Â¦ Types Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
 interface YearlySnapshot {
     year: number;
     buyNetWorth: number;
@@ -16,7 +16,7 @@ interface YearlySnapshot {
     investmentPortfolio: number;
 }
 
-// ¦¦¦ Core Math ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+// Â¦Â¦Â¦ Core Math Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
 function runScenarios(
     propertyPrice: number,
     deposit: number,
@@ -54,7 +54,7 @@ function runScenarios(
     let cumulativeMortgage = 0;
 
     for (let y = 1; y <= horizonYears; y++) {
-        // ¦¦ BUY SCENARIO ¦¦
+        // Â¦Â¦ BUY SCENARIO Â¦Â¦
         let newLoan = currentLoan;
         let yearMortgage = 0;
         for (let m = 0; m < 12; m++) {
@@ -74,7 +74,7 @@ function runScenarios(
         const equity = propertyValue - currentLoan;
         const buyNetWorth = equity - (maintenanceCost * y);
 
-        // ¦¦ RENT SCENARIO ¦¦
+        // Â¦Â¦ RENT SCENARIO Â¦Â¦
         cumulativeRent += monthlyRent * 12;
         // Rent savings vs mortgage: invest the difference if mortgage > rent
         const annualMortgageVsRent = Math.max(0, (monthlyMortgage - monthlyRent) * 12);
@@ -100,7 +100,7 @@ function runScenarios(
     return snapshots;
 }
 
-// ¦¦¦ Sliders ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+// Â¦Â¦Â¦ Sliders Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
 const Slider = ({
     label, value, min, max, step, onChange, format, color = 'gold',
 }: {
@@ -129,7 +129,7 @@ const Slider = ({
     );
 };
 
-// ¦¦¦ Timeline Bar Chart ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+// Â¦Â¦Â¦ Timeline Bar Chart Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
 const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[]; horizonYears: number }) => {
     const locale = useLocale();
     const allValues = snapshots.flatMap(s => [s.buyNetWorth, s.rentNetWorth]);
@@ -149,7 +149,7 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
                 <div className="flex flex-col justify-between h-48 text-right pr-1" style={{ minWidth: 64 }}>
                     {[maxVal, maxVal / 2, 0, minVal < 0 ? minVal : null].filter(Boolean).map((v, i) => (
                         <span key={i} className="text-[9px] text-white/20 font-mono">
-                            {v! >= 1000000 ? `€${(v! / 1000000).toFixed(1)}M` : `€${Math.round(v! / 1000)}k`}
+                            {v! >= 1000000 ? `â‚¬${(v! / 1000000).toFixed(1)}M` : `â‚¬${Math.round(v! / 1000)}k`}
                         </span>
                     ))}
                 </div>
@@ -182,14 +182,14 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
                                                 <div className="w-2 h-2 rounded-full bg-gold" />
                                                 <span className="text-white/70">{'Buy Path'}:</span>
                                                 <span className="text-gold font-bold">
-                                                    {snap.buyNetWorth >= 0 ? '+' : ''}€{Math.round(snap.buyNetWorth / 1000)}k
+                                                    {snap.buyNetWorth >= 0 ? '+' : ''}â‚¬{Math.round(snap.buyNetWorth / 1000)}k
                                                 </span>
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <div className="w-2 h-2 rounded-full bg-violet-400" />
                                                 <span className="text-white/70">{'Rent Path'}:</span>
                                                 <span className="text-violet-400 font-bold">
-                                                    {snap.rentNetWorth >= 0 ? '+' : ''}€{Math.round(snap.rentNetWorth / 1000)}k
+                                                    {snap.rentNetWorth >= 0 ? '+' : ''}â‚¬{Math.round(snap.rentNetWorth / 1000)}k
                                                 </span>
                                             </div>
                                         </div>
@@ -243,14 +243,14 @@ const TimelineChart = ({ snapshots, horizonYears }: { snapshots: YearlySnapshot[
     );
 };
 
-// ¦¦¦ Main Component ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦
+// Â¦Â¦Â¦ Main Component Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦
 export const BuyVsRentCalculator = () => {
     const locale = useLocale();
     const fmtLocale = locale === 'en' ? 'en-EU' : locale;
     const fmt = (n: number) => Math.round(n).toLocaleString(fmtLocale);
-    const fmtEur = (n: number) => `€${fmt(n)}`;
+    const fmtEur = (n: number) => `â‚¬${fmt(n)}`;
 
-    // ¦¦ Inputs ¦¦
+    // Â¦Â¦ Inputs Â¦Â¦
     const [propertyPrice, setPropertyPrice] = useState(450000);
     const [depositPct, setDepositPct] = useState(25);
     const [mortgageRate, setMortgageRate] = useState(4.25);
@@ -268,7 +268,7 @@ export const BuyVsRentCalculator = () => {
     const stampDuty = Math.round(propertyPrice * 0.05);
     const notaryFees = Math.round(propertyPrice * 0.011);
 
-    // ¦¦ Calculate ¦¦
+    // Â¦Â¦ Calculate Â¦Â¦
     const snapshots = useMemo(() => runScenarios(
         propertyPrice, deposit, mortgageRate, mortgageTerm,
         monthlyRent, propertyGrowth, investReturn, horizonYears,
@@ -292,7 +292,7 @@ export const BuyVsRentCalculator = () => {
     return (
         <div className="glass-card rounded-[2.5rem] border border-violet-500/20 overflow-hidden bg-violet-500/5 backdrop-blur-3xl">
 
-            {/* ¦¦ Header ¦¦ */}
+            {/* Â¦Â¦ Header Â¦Â¦ */}
             <div className="p-8 border-b border-white/10 bg-white/5">
                 <div className="flex items-center gap-4 mb-2">
                     <div className="w-12 h-12 rounded-2xl bg-violet-500/20 flex items-center justify-center">
@@ -310,7 +310,7 @@ export const BuyVsRentCalculator = () => {
 
             <div className="p-8 grid grid-cols-1 xl:grid-cols-2 gap-12">
 
-                {/* ¦¦ LEFT: INPUTS ¦¦ */}
+                {/* Â¦Â¦ LEFT: INPUTS Â¦Â¦ */}
                 <div className="space-y-8">
 
                     {/* Property Cost */}
@@ -423,10 +423,10 @@ export const BuyVsRentCalculator = () => {
                     </div>
                 </div>
 
-                {/* ¦¦ RIGHT: RESULTS ¦¦ */}
+                {/* Â¦Â¦ RIGHT: RESULTS Â¦Â¦ */}
                 <div className="flex flex-col gap-6">
 
-                    {/* ¦¦ VERDICT ¦¦ */}
+                    {/* Â¦Â¦ VERDICT Â¦Â¦ */}
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={`${buyWins}-${horizonYears}`}
@@ -469,7 +469,7 @@ export const BuyVsRentCalculator = () => {
                         </motion.div>
                     </AnimatePresence>
 
-                    {/* ¦¦ DUAL SCENARIO NUMBERS ¦¦ */}
+                    {/* Â¦Â¦ DUAL SCENARIO NUMBERS Â¦Â¦ */}
                     <div className="grid grid-cols-2 gap-4">
                         {/* BUY */}
                         <div className="p-5 bg-gold/5 border border-gold/20 rounded-2xl">
@@ -480,11 +480,11 @@ export const BuyVsRentCalculator = () => {
                             <div className="space-y-3">
                                 <div>
                                     <div className="text-[10px] text-white/60 mb-0.5">{`Net Worth at Yr ${horizonYears}`}</div>
-                                    <div className="font-serif text-xl text-white">{final ? fmtEur(final.buyNetWorth) : '—'}</div>
+                                    <div className="font-serif text-xl text-white">{final ? fmtEur(final.buyNetWorth) : 'â€”'}</div>
                                 </div>
                                 <div>
                                     <div className="text-[10px] text-white/60 mb-0.5">{'Property Value'}</div>
-                                    <div className="font-mono text-sm text-gold/80">{final ? fmtEur(final.propertyValue) : '—'}</div>
+                                    <div className="font-mono text-sm text-gold/80">{final ? fmtEur(final.propertyValue) : 'â€”'}</div>
                                 </div>
                                 <div>
                                     <div className="text-[10px] text-white/60 mb-0.5">{'Monthly Mortgage'}</div>
@@ -506,11 +506,11 @@ export const BuyVsRentCalculator = () => {
                             <div className="space-y-3">
                                 <div>
                                     <div className="text-[10px] text-white/60 mb-0.5">{`Net Worth at Yr ${horizonYears}`}</div>
-                                    <div className="font-serif text-xl text-white">{final ? fmtEur(final.rentNetWorth) : '—'}</div>
+                                    <div className="font-serif text-xl text-white">{final ? fmtEur(final.rentNetWorth) : 'â€”'}</div>
                                 </div>
                                 <div>
                                     <div className="text-[10px] text-white/60 mb-0.5">{'Investment Portfolio'}</div>
-                                    <div className="font-mono text-sm text-violet-400/80">{final ? fmtEur(final.investmentPortfolio) : '—'}</div>
+                                    <div className="font-mono text-sm text-violet-400/80">{final ? fmtEur(final.investmentPortfolio) : 'â€”'}</div>
                                 </div>
                                 <div>
                                     <div className="text-[10px] text-white/60 mb-0.5">{'Monthly Rent'}</div>
@@ -518,13 +518,13 @@ export const BuyVsRentCalculator = () => {
                                 </div>
                                 <div>
                                     <div className="text-[10px] text-white/60 mb-0.5">{'Total Rent Paid'}</div>
-                                    <div className="font-mono text-sm text-red-400/70">{final ? fmtEur(final.cumulativeRent) : '—'}</div>
+                                    <div className="font-mono text-sm text-red-400/70">{final ? fmtEur(final.cumulativeRent) : 'â€”'}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* ¦¦ CHART ¦¦ */}
+                    {/* Â¦Â¦ CHART Â¦Â¦ */}
                     <div className="p-6 bg-white/3 border border-white/5 rounded-2xl">
                         <div className="flex items-center gap-2 mb-6">
                             <TrendingUp size={14} className="text-white/60" />
@@ -535,7 +535,7 @@ export const BuyVsRentCalculator = () => {
                         <TimelineChart snapshots={snapshots} horizonYears={horizonYears} />
                     </div>
 
-                    {/* ¦¦ KEY INPUTS RECAP ¦¦ */}
+                    {/* Â¦Â¦ KEY INPUTS RECAP Â¦Â¦ */}
                     <div className="p-5 bg-white/3 border border-white/5 rounded-2xl">
                         <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-4 flex items-center gap-2">
                             <Info size={12} /> {'Key Assumptions'}

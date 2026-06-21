@@ -23,12 +23,12 @@ export default function ForgotPassword() {
         <AuthShell title="Reset password" sub="We'll send you a secure link">
             {sent ? (
                 <div style={{ textAlign: 'center', padding: '0.5rem 0' }}>
-                    <div style={{ fontSize: '2rem', marginBottom: '0.75rem', opacity: 0.5 }}>✉</div>
+                    <div style={{ fontSize: '2rem', marginBottom: '0.75rem', opacity: 0.5 }}>âœ‰</div>
                     <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem', lineHeight: 1.7 }}>
                         Password reset link sent to <strong style={{ color: '#C5A059' }}>{email}</strong>
                     </p>
                     <Link to="/agency/login" style={{ ...linkStyle, display: 'block', textAlign: 'center', marginTop: '1.5rem' }}>
-                        ← Back to Sign In
+                        â† Back to Sign In
                     </Link>
                 </div>
             ) : (
@@ -39,10 +39,10 @@ export default function ForgotPassword() {
                     </Field>
                     {error && <ErrorBox>{error}</ErrorBox>}
                     <button type="submit" disabled={loading} style={primaryBtn(loading)}>
-                        {loading ? 'Sending…' : 'Send Reset Link →'}
+                        {loading ? 'Sendingâ€¦' : 'Send Reset Link â†’'}
                     </button>
                     <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-                        <Link to="/agency/login" style={linkStyle}>← Back to Sign In</Link>
+                        <Link to="/agency/login" style={linkStyle}>â† Back to Sign In</Link>
                     </div>
                 </form>
             )}

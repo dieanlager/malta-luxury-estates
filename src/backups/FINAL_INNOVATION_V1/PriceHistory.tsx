@@ -56,12 +56,12 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-serif text-white">Price Intelligence</h3>
-                                    <p className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">Listing ID: {property.id} · Market Benchmarking</p>
+                                    <p className="text-[10px] text-white/60 uppercase tracking-[0.2em] font-bold">Listing ID: {property.id} Â· Market Benchmarking</p>
                                 </div>
                             </div>
                             <button
                                 onClick={onClose}
-                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all"
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all"
                             >
                                 <X size={20} />
                             </button>
@@ -72,7 +72,7 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                             <div className="mb-10 flex flex-col md:flex-row gap-6 md:items-center justify-between">
                                 <div>
                                     <h4 className="text-lg font-serif mb-1 text-white">{property.title}</h4>
-                                    <div className="text-sm text-white/40">{property.locationName}</div>
+                                    <div className="text-sm text-white/60">{property.locationName}</div>
                                 </div>
                                 <div className="flex gap-4">
                                     <div className="px-4 py-2 bg-emerald-500/5 border border-emerald-500/20 rounded-xl text-center">
@@ -80,8 +80,8 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                         <div className="text-lg font-serif text-white">{totalDaysOnMarket} Days</div>
                                     </div>
                                     <div className="px-4 py-2 bg-gold/5 border border-gold/20 rounded-xl text-center">
-                                        <div className="text-[9px] uppercase tracking-widest text-gold font-bold mb-1">Current €/m²</div>
-                                        <div className="text-lg font-serif text-white">€{currentPriceSqm.toLocaleString()}</div>
+                                        <div className="text-[9px] uppercase tracking-widest text-gold font-bold mb-1">Current â‚¬/mÂ²</div>
+                                        <div className="text-lg font-serif text-white">â‚¬{currentPriceSqm.toLocaleString()}</div>
                                     </div>
                                 </div>
                             </div>
@@ -89,17 +89,17 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                             {/* Benchmark Grid */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                                 <div className={`p-6 rounded-2xl border ${isGoodDeal ? 'bg-emerald-500/5 border-emerald-500/20' : 'bg-rose-500/5 border-rose-500/20'}`}>
-                                    <div className="text-[9px] uppercase tracking-widest text-white/40 font-bold mb-2">Area Comparison</div>
+                                    <div className="text-[9px] uppercase tracking-widest text-white/60 font-bold mb-2">Area Comparison</div>
                                     <div className="flex items-center gap-2">
                                         <span className={`text-xl font-serif ${isGoodDeal ? 'text-emerald-400' : 'text-rose-400'}`}>
                                             {areaDiff > 0 ? '+' : ''}{areaDiff}%
                                         </span>
-                                        <span className="text-xs text-white/40">vs Local Median</span>
+                                        <span className="text-xs text-white/60">vs Local Median</span>
                                     </div>
                                 </div>
                                 <div className="p-6 bg-white/3 border border-white/5 rounded-2xl">
-                                    <div className="text-[9px] uppercase tracking-widest text-white/40 font-bold mb-2">Market Sentiment</div>
-                                    <div className="text-sm text-white font-medium">{isGoodDeal ? '🔥 Competitive Pricing' : '💎 Premium Property'}</div>
+                                    <div className="text-[9px] uppercase tracking-widest text-white/60 font-bold mb-2">Market Sentiment</div>
+                                    <div className="text-sm text-white font-medium">{isGoodDeal ? 'ðŸ”¥ Competitive Pricing' : 'ðŸ’Ž Premium Property'}</div>
                                 </div>
                             </div>
 
@@ -124,15 +124,15 @@ export const PriceHistoryModal: React.FC<PriceHistoryModalProps> = ({ property, 
                                             <div>
                                                 <div className="flex items-center gap-3 mb-1">
                                                     <span className={`text-[10px] uppercase tracking-widest font-bold ${item.event === 'Price drop' ? 'text-emerald-400' :
-                                                        item.event === 'Current' ? 'text-gold' : 'text-white/40'
+                                                        item.event === 'Current' ? 'text-gold' : 'text-white/60'
                                                         }`}>
                                                         {item.event}
                                                     </span>
                                                     <span className="text-[10px] text-white/20 mx-1">/</span>
-                                                    <span className="text-[10px] text-white/40 font-medium font-mono">{item.date}</span>
+                                                    <span className="text-[10px] text-white/60 font-medium font-mono">{item.date}</span>
                                                 </div>
                                                 <div className="text-xl font-serif text-white">
-                                                    €{item.price.toLocaleString()}
+                                                    â‚¬{item.price.toLocaleString()}
                                                 </div>
                                             </div>
 

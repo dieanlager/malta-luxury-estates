@@ -48,7 +48,7 @@ import { PropertyPriceOracle } from './pages/PropertyPriceOracle';
 import { GozoBridgeTrackerPage } from './pages/GozoBridgeTracker';
 import { MaltaPropertyQuiz } from './pages/PropertyQuiz';
 
-// ─── Scroll To Top Button ─────────────────────────────────────────────────────
+// â”€â”€â”€ Scroll To Top Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
@@ -197,7 +197,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
     { slug: 'st-julians', name: "St. Julian's", count: 180, image: 'https://images.unsplash.com/photo-1543731068-7e0f5beff43a?auto=format&fit=crop&q=80&w=800' },
     { slug: 'valletta', name: 'Valletta', count: 95, image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&q=80&w=800' },
     { slug: 'three-cities', name: 'Three Cities', count: 65, image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=800' },
-    { slug: 'mellieha', name: 'Mellieħa', count: 110, image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800' },
+    { slug: 'mellieha', name: 'MellieÄ§a', count: 110, image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800' },
     { slug: 'victoria', name: 'Gozo', count: 120, image: 'https://images.unsplash.com/photo-1506929197327-2e4b4d388279?auto=format&fit=crop&q=80&w=800' },
   ];
 
@@ -258,7 +258,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                 <span className="text-[9px] uppercase tracking-widest font-bold">Locations</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-serif text-gold">€2.5M</span>
+                <span className="text-2xl font-serif text-gold">â‚¬2.5M</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">Avg. Price Range</span>
               </div>
             </div>
@@ -315,7 +315,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-serif mb-4 uppercase tracking-widest">Real-Time Market Intelligence</h2>
-            <p className="text-white/40 text-sm">Our programmatic engine aggregates data from across the islands to provide you with accurate investment benchmarks.</p>
+            <p className="text-white/60 text-sm">Our programmatic engine aggregates data from across the islands to provide you with accurate investment benchmarks.</p>
           </div>
           <MarketSnapshot
             location={{
@@ -346,7 +346,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-serif mb-4">Explore by Location</h2>
-            <p className="text-white/40">Discover the unique character of Malta's most prestigious areas.</p>
+            <p className="text-white/60">Discover the unique character of Malta's most prestigious areas.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {popularLocations.map((loc, i) => (
@@ -384,20 +384,20 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                 <div className="h-16 flex items-center justify-center">
                   <span className="text-xl md:text-2xl font-serif italic group-hover:text-gold transition-colors">{agency.name}</span>
                 </div>
-                <span className="text-[9px] uppercase tracking-widest font-bold text-white/30">{agency.propertyCount} Listings</span>
+                <span className="text-[9px] uppercase tracking-widest font-bold text-white/60">{agency.propertyCount} Listings</span>
               </div>
             ))}
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
               <div className="h-16 flex items-center justify-center">
                 <span className="text-xl md:text-2xl font-serif italic group-hover:text-gold transition-colors">Sara Grech</span>
               </div>
-              <span className="text-[9px] uppercase tracking-widest font-bold text-white/30">850+ Listings</span>
+              <span className="text-[9px] uppercase tracking-widest font-bold text-white/60">850+ Listings</span>
             </div>
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
               <div className="h-16 flex items-center justify-center">
                 <span className="text-xl md:text-2xl font-serif italic group-hover:text-gold transition-colors">Belair Real Estate</span>
               </div>
-              <span className="text-[9px] uppercase tracking-widest font-bold text-white/30">620+ Listings</span>
+              <span className="text-[9px] uppercase tracking-widest font-bold text-white/60">620+ Listings</span>
             </div>
           </div>
         </div>
@@ -450,7 +450,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                   </div>
                   <div>
                     <div className="text-2xl font-serif">150k+</div>
-                    <div className="text-[9px] uppercase tracking-widest font-bold text-white/40">Monthly Reach</div>
+                    <div className="text-[9px] uppercase tracking-widest font-bold text-white/60">Monthly Reach</div>
                   </div>
                 </div>
                 <p className="text-xs text-white/50 italic">"The highest conversion rate for luxury leads we've seen on the island."</p>
@@ -466,7 +466,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
       <section id="investment" className="py-32 max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-1 bg-white/5 border border-white/10 rounded-full mb-6">
-            <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Expert Knowledge</span>
+            <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest">Expert Knowledge</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-serif mb-4">Investment Insights</h2>
           <p className="text-white/50 max-w-2xl mx-auto">Strategic advice for international investors, residency seekers, and high-net-worth individuals looking at the Maltese market.</p>
@@ -498,7 +498,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                   </div>
                 </div>
                 <h3 className="text-xl font-serif mb-3 group-hover:text-gold transition-colors leading-tight">{article.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed mb-4">{article.excerpt}</p>
+                <p className="text-white/60 text-sm leading-relaxed mb-4">{article.excerpt}</p>
                 <div className="flex items-center gap-2 text-gold text-xs uppercase tracking-widest font-bold">
                   Read Guide <ChevronRight size={14} />
                 </div>
@@ -621,17 +621,17 @@ const Footer = () => (
               Malta <span className="text-gold">Luxury Estates</span>
             </span>
           </Link>
-          <p className="text-white/40 text-sm leading-relaxed">
+          <p className="text-white/60 text-sm leading-relaxed">
             The definitive portal for high-end real estate in the Maltese islands. Curating excellence for international buyers since 2026.
           </p>
         </div>
 
         <div>
           <h4 className="font-serif text-lg mb-8">Market Intelligence</h4>
-          <ul className="space-y-4 text-sm text-white/40">
+          <ul className="space-y-4 text-sm text-white/60">
             <li><Link to="/market/live" className="hover:text-gold transition-colors flex items-center gap-2">Live Pulse <span className="w-1 h-1 rounded-full bg-red-500" /></Link></li>
             <li><Link to="/insights/gozo-bridge-effect" className="hover:text-gold transition-colors italic text-gold/80">Gozo Bridge Tracker</Link></li>
-            <li><Link to="/tools/property-quiz" className="hover:text-gold transition-colors font-bold text-white">Property Quiz 🎯</Link></li>
+            <li><Link to="/tools/property-quiz" className="hover:text-gold transition-colors font-bold text-white">Property Quiz ðŸŽ¯</Link></li>
             <li><Link to="/tools/property-valuation" className="hover:text-gold transition-colors">Price Oracle (AI)</Link></li>
             <li><Link to="/tools/neighbourhood-intelligence" className="hover:text-gold transition-colors">Neighbourhood Score</Link></li>
           </ul>
@@ -639,7 +639,7 @@ const Footer = () => (
 
         <div>
           <h4 className="font-serif text-lg mb-8">Company</h4>
-          <ul className="space-y-4 text-sm text-white/40">
+          <ul className="space-y-4 text-sm text-white/60">
             <li><a href="#about" className="hover:text-gold transition-colors">About Us</a></li>
             <li><Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link></li>
             <li><Link to="/terms-of-service" className="hover:text-gold transition-colors">Terms of Service</Link></li>
@@ -649,7 +649,7 @@ const Footer = () => (
 
         <div>
           <h4 className="font-serif text-lg mb-8">Knowledge Hub</h4>
-          <ul className="space-y-4 text-sm text-white/40">
+          <ul className="space-y-4 text-sm text-white/60">
             <li><Link to="/insights/buying-property-in-malta-as-a-foreigner-2026" className="hover:text-gold transition-colors">Buying Guide</Link></li>
             <li><Link to="/insights/special-designated-areas-malta-guide" className="hover:text-gold transition-colors">SDA Guide</Link></li>
             <li><Link to="/insights/rental-yields-malta-2026" className="hover:text-gold transition-colors">Rental Yields</Link></li>
@@ -659,7 +659,7 @@ const Footer = () => (
 
         <div>
           <h4 className="font-serif text-lg mb-8">Newsletter</h4>
-          <p className="text-sm text-white/40 mb-6">Receive exclusive off-market opportunities and market reports.</p>
+          <p className="text-sm text-white/60 mb-6">Receive exclusive off-market opportunities and market reports.</p>
           <div className="flex gap-2">
             <input
               type="email"
@@ -674,7 +674,7 @@ const Footer = () => (
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
-        <p>© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> Design by <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
+        <p>Â© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> Design by <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
         <div className="flex gap-8 mt-4 md:mt-0">
           <Link to="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
           <Link to="/terms-of-service" className="hover:text-gold transition-colors">Terms of Service</Link>

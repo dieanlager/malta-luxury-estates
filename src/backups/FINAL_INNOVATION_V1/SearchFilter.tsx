@@ -79,7 +79,7 @@ export const SearchFilter: React.FC = () => {
           <div className="flex items-center px-6 py-4 gap-4 border-b lg:border-b-0 lg:border-r border-white/10 group">
             <MapPin className="text-gold group-focus-within:scale-110 transition-transform" size={22} />
             <div className="flex-1">
-              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">Location</label>
+              <label className="block text-[10px] uppercase tracking-widest text-white/60 font-bold mb-1">Location</label>
               <input
                 type="text"
                 value={query}
@@ -123,7 +123,7 @@ export const SearchFilter: React.FC = () => {
                     </div>
                     <div>
                       <div className="text-sm font-bold text-white">{loc.nameEn}</div>
-                      <div className="text-[10px] uppercase tracking-wider text-white/40">{loc.island} • {loc.locationType}</div>
+                      <div className="text-[10px] uppercase tracking-wider text-white/60">{loc.island} â€¢ {loc.locationType}</div>
                     </div>
                   </button>
                 ))}
@@ -140,7 +140,7 @@ export const SearchFilter: React.FC = () => {
           >
             <Home className="text-gold group-hover:scale-110 transition-transform" size={22} />
             <div className="flex-1">
-              <label className="block text-[10px] uppercase tracking-widest text-white/40 font-bold mb-1">Property Type</label>
+              <label className="block text-[10px] uppercase tracking-widest text-white/60 font-bold mb-1">Property Type</label>
               <div className="text-sm font-medium text-white flex items-center justify-between">
                 {selectedType}
                 <ChevronDown size={16} className={`transition-transform duration-300 ${isTypeOpen ? 'rotate-180' : ''}`} />
@@ -193,14 +193,14 @@ export const SearchFilter: React.FC = () => {
             <button
               key={tag}
               onClick={() => handleQuickFilter(tag)}
-              className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white/40 hover:border-gold/50 hover:text-gold transition-all"
+              className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-white/60 hover:border-gold/50 hover:text-gold transition-all"
             >
               {tag}
             </button>
           ))}
         </div>
         <p className="text-[10px] text-white/20 uppercase tracking-[0.2em] font-medium">
-          Try <span className="text-white/40">"Sliema"</span>, <span className="text-white/40">"St. Julian's"</span>, or <span className="text-white/40">"Valletta"</span>
+          Try <span className="text-white/60">"Sliema"</span>, <span className="text-white/60">"St. Julian's"</span>, or <span className="text-white/60">"Valletta"</span>
         </p>
       </div>
     </div>

@@ -56,7 +56,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
 
                         <button
                             onClick={onClose}
-                            className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 transition-all"
+                            className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all"
                         >
                             <X size={20} />
                         </button>
@@ -67,7 +67,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                             </div>
                             <div>
                                 <h3 className="text-2xl font-serif text-white">Smart Sound <span className="text-gold italic">Assessment</span></h3>
-                                <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Malta Environmental Noise Audit v2.0</p>
+                                <p className="text-[10px] uppercase tracking-[0.2em] text-white/60 font-bold">Malta Environmental Noise Audit v2.0</p>
                             </div>
                         </div>
 
@@ -114,7 +114,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                         {/* Breakdown Grid */}
                         <div className="grid grid-cols-2 gap-4">
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Car size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Traffic</span>
                                 </div>
@@ -122,7 +122,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                             </div>
 
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Music size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Nightlife</span>
                                 </div>
@@ -130,7 +130,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                             </div>
 
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Hammer size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Construction</span>
                                 </div>
@@ -138,7 +138,7 @@ export const NoiseAnalysisModal: React.FC<NoiseAnalysisProps> = ({ property, isO
                             </div>
 
                             <div className="p-5 bg-white/3 rounded-2xl border border-white/5">
-                                <div className="flex items-center gap-3 text-white/40 mb-2">
+                                <div className="flex items-center gap-3 text-white/60 mb-2">
                                     <Plane size={14} />
                                     <span className="text-[10px] uppercase font-bold tracking-widest">Aviation</span>
                                 </div>

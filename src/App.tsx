@@ -64,7 +64,7 @@ import { AboutPage } from './vite-pages/AboutPage';
 import { NewsletterForm } from './components/NewsletterForm';
 import { AIChatbot } from './components/AIChatbot';
 
-// â”€â”€â”€ Scroll To Top Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Scroll To Top Button Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
@@ -155,7 +155,7 @@ const LanguageSelector = () => {
     { code: 'en', label: 'English', flag: 'EN' },
     { code: 'it', label: 'Italiano', flag: 'IT' },
     { code: 'de', label: 'Deutsch', flag: 'DE' },
-    { code: 'fr', label: 'Français', flag: 'FR' },
+    { code: 'fr', label: 'FranÃ§ais', flag: 'FR' },
     { code: 'pl', label: 'Polski', flag: 'PL' },
   ];
 
@@ -240,7 +240,7 @@ const LanguageSelector = () => {
               exit={{ opacity: 0, scale: 0.95 }}
               className="absolute right-0 mt-2 w-40 bg-luxury-black/95 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl z-50 overflow-hidden"
             >
-              <div className="text-[8px] uppercase tracking-widest text-white/30 px-3 py-2 border-b border-white/5 mb-1">Select Language</div>
+              <div className="text-[8px] uppercase tracking-widest text-white/60 px-3 py-2 border-b border-white/5 mb-1">Select Language</div>
               {languages.map((lang) => (
                 <button
                   key={lang.code}
@@ -417,7 +417,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
     { slug: 'st-julians', name: t('locations.st_julians', "St. Julian's"), count: 180, image: '/assets/images/locations/st-julians.png' },
     { slug: 'valletta', name: t('locations.valletta', 'Valletta'), count: 95, image: '/assets/images/locations/valletta.png' },
     { slug: 'three-cities', name: t('locations.three_cities', 'Three Cities'), count: 65, image: '/assets/images/locations/three-cities.png' },
-    { slug: 'mellieha', name: t('locations.mellieha', 'MellieÄ§a'), count: 110, image: '/assets/images/locations/mellieha.png' },
+    { slug: 'mellieha', name: t('locations.mellieha', 'MellieÃ„Â§a'), count: 110, image: '/assets/images/locations/mellieha.png' },
     { slug: 'victoria', name: t('locations.gozo', 'Gozo'), count: 120, image: '/assets/images/locations/gozo.png' },
   ];
 
@@ -496,7 +496,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                 <span className="text-[9px] uppercase tracking-widest font-bold">{t('hero.stats.locations')}</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-serif text-gold">€2.5M</span>
+                <span className="text-2xl font-serif text-gold">â‚¬2.5M</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">{t('hero.stats.avg_price')}</span>
               </div>
             </div>
@@ -522,9 +522,9 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {loadingProps ? (
-            <div className="col-span-3 text-center text-white/30 py-12">Ładowanie...</div>
+            <div className="col-span-3 text-center text-white/60 py-12">Åadowanie...</div>
           ) : displayProps.length === 0 ? (
-            <div className="col-span-3 text-center text-white/30 py-12">Brak nieruchomości</div>
+            <div className="col-span-3 text-center text-white/60 py-12">Brak nieruchomoÅ›ci</div>
           ) : displayProps.map((property) => (
             <PropertyCard
               key={property.id}
@@ -559,7 +559,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-serif mb-4 uppercase tracking-widest">{t('sections.market_snapshot.title')}</h2>
-            <p className="text-white/40 text-sm">{t('sections.market_snapshot.subtitle')}</p>
+            <p className="text-white/60 text-sm">{t('sections.market_snapshot.subtitle')}</p>
           </div>
           <MarketSnapshot
             location={{
@@ -590,7 +590,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-serif mb-4">{t('sections.locations_grid.title')}</h2>
-            <p className="text-white/40">{t('sections.locations_grid.subtitle')}</p>
+            <p className="text-white/60">{t('sections.locations_grid.subtitle')}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {popularLocations.map((loc, i) => (
@@ -628,7 +628,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                 <div className="h-16 flex items-center justify-center">
                   <span className="text-xl md:text-2xl font-serif italic group-hover:text-gold transition-colors">{agency.name}</span>
                 </div>
-                <span className="text-[9px] uppercase tracking-widest font-bold text-white/30">{agency.propertyCount} {t('common.listings', 'Listings')}</span>
+                <span className="text-[9px] uppercase tracking-widest font-bold text-white/60">{agency.propertyCount} {t('common.listings', 'Listings')}</span>
               </div>
             ))}
           </div>
@@ -680,7 +680,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                   </div>
                   <div>
                     <div className="text-2xl font-serif">150k+</div>
-                    <div className="text-[9px] uppercase tracking-widest font-bold text-white/40">Monthly Reach</div>
+                    <div className="text-[9px] uppercase tracking-widest font-bold text-white/60">Monthly Reach</div>
                   </div>
                 </div>
                 <p className="text-xs text-white/50 italic">"The highest conversion rate for luxury leads we've seen on the island."</p>
@@ -696,7 +696,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
       <section id="investment" className="py-32 max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <div className="inline-block px-4 py-1 bg-white/5 border border-white/10 rounded-full mb-6">
-            <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Expert Knowledge</span>
+            <span className="text-white/60 text-[10px] font-bold uppercase tracking-widest">Expert Knowledge</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-serif mb-4">{t('sections.insights.title', 'Investment Insights')}</h2>
           <p className="text-white/50 max-w-2xl mx-auto">{t('sections.insights.subtitle', 'Strategic advice for international investors, residency seekers, and high-net-worth individuals looking at the Maltese market.')}</p>
@@ -728,7 +728,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                   </div>
                 </div>
                 <h3 className="text-xl font-serif mb-3 group-hover:text-gold transition-colors leading-tight">{article.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed mb-4">{article.excerpt}</p>
+                <p className="text-white/60 text-sm leading-relaxed mb-4">{article.excerpt}</p>
                 <div className="flex items-center gap-2 text-gold text-xs uppercase tracking-widest font-bold">
                   {t('article.read_guide', 'Read Guide')} <ChevronRight size={14} />
                 </div>
@@ -785,7 +785,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
             </>
           ) : (
             <>
-              {/* Alias without language prefix â†’ redirect to canonical English URL */}
+              {/* Alias without language prefix Ã¢â€ â€™ redirect to canonical English URL */}
               <Route path={`/${p}/all`} element={<Navigate to="/properties/all" replace />} />
               <Route path={`/${p}/:citySlug`} element={<Navigate to="/properties/:citySlug" replace />} />
               <Route path={`/${p}/:slug`} element={<Navigate to="/properties/:slug" replace />} />
@@ -812,7 +812,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
             </>
           ) : (
             <>
-              {/* Alias without language prefix â†’ redirect to canonical English URL */}
+              {/* Alias without language prefix Ã¢â€ â€™ redirect to canonical English URL */}
               <Route path={`/${p}`} element={<Navigate to="/insights" replace />} />
               <Route path={`/${p}/:slug`} element={<Navigate to="/insights/:slug" replace />} />
             </>
@@ -829,7 +829,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
           {p === 'market' ? (
             <Route path={`/${p}/live`} element={<MarketLive />} />
           ) : (
-            // Alias without language prefix â†’ redirect to canonical English URL
+            // Alias without language prefix Ã¢â€ â€™ redirect to canonical English URL
             <Route path={`/${p}/live`} element={<Navigate to="/market/live" replace />} />
           )}
           <Route path={`/:lng/${p}/live`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
@@ -1039,14 +1039,14 @@ const Footer = () => {
                 Malta <span className="text-gold">Luxury Real Estate</span>
               </span>
             </Link>
-            <p className="text-white/40 text-sm leading-relaxed">
+            <p className="text-white/60 text-sm leading-relaxed">
               {t('footer.description')}
             </p>
           </div>
 
           <div>
             <h4 className="font-serif text-lg mb-8">{t('footer.quick_links')}</h4>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/60">
               <li><Link to={getLocalizedPath('/market/live')} className="hover:text-gold transition-colors flex items-center gap-2">{t('nav.market_pulse')} <span className="w-1 h-1 rounded-full bg-red-500" /></Link></li>
               <li><Link to={getLocalizedPath('/tools/quiz')} className="hover:text-gold transition-colors font-bold text-white">{t('footer.quiz')}</Link></li>
               <li><Link to={getLocalizedPath('/tools/valuation')} className="hover:text-gold transition-colors">{t('seo:tools.valuation.title')}</Link></li>
@@ -1056,7 +1056,7 @@ const Footer = () => {
 
           <div>
             <h4 className="font-serif text-lg mb-8">{t('footer.legal')}</h4>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/60">
               <li><Link to={getLocalizedPath('/about')} className="hover:text-gold transition-colors">{t('nav.about')}</Link></li>
               <li><Link to={getLocalizedPath('/contact')} className="hover:text-gold transition-colors">{t('nav.contact')}</Link></li>
               <li><Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">{t('seo:privacy.title')}</Link></li>
@@ -1067,7 +1067,7 @@ const Footer = () => {
 
           <div>
             <h4 className="font-serif text-lg mb-8">{t('footer.knowledge_hub')}</h4>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/60">
               <li><Link to={getLocalizedArticleLink('buying-property-in-malta-as-a-foreigner-2026', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_buying')}</Link></li>
               <li><Link to={getLocalizedArticleLink('special-designated-areas-malta-guide', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_sda')}</Link></li>
               <li><Link to={getLocalizedArticleLink('rental-yields-malta-2026', i18n.language)} className="hover:text-gold transition-colors">{t('seo:insights.title_yields')}</Link></li>
@@ -1079,13 +1079,13 @@ const Footer = () => {
 
           <div>
             <h4 className="font-serif text-lg mb-8">{t('footer.newsletter.title')}</h4>
-            <p className="text-sm text-white/40 mb-6">{t('footer.newsletter.subtitle')}</p>
+            <p className="text-sm text-white/60 mb-6">{t('footer.newsletter.subtitle')}</p>
             <NewsletterForm />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/20">
-          <p>© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> {t('common.design_by')} <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
+          <p>Â© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> {t('common.design_by')} <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">{t('seo:privacy.title')}</Link>
             <Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">{t('seo:terms.title')}</Link>

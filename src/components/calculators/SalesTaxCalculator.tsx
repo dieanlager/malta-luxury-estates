@@ -42,7 +42,7 @@ export const SalesTaxCalculator = () => {
                     <div>
                         <div className="flex justify-between items-center mb-4">
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'Selling Price'}</label>
-                            <span className="text-amber-400 font-serif text-xl">€{sellingPrice.toLocaleString(locale)}</span>
+                            <span className="text-amber-400 font-serif text-xl">â‚¬{sellingPrice.toLocaleString(locale)}</span>
                         </div>
                         <input
                             aria-label="Adjust value"
@@ -100,15 +100,15 @@ export const SalesTaxCalculator = () => {
                         <div className="space-y-6 mb-12">
                             <div className="flex justify-between items-center">
                                 <span className="text-sm text-white/60">{'Final Withholding Tax'}</span>
-                                <span className="text-lg font-serif text-amber-400">€{result?.fwtTax.toLocaleString(locale)}</span>
+                                <span className="text-lg font-serif text-amber-400">â‚¬{result?.fwtTax.toLocaleString(locale)}</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className="text-sm text-white/60">{'Agency Commission'}</span>
-                                <span className="text-lg font-serif">€{result?.agentFee.toLocaleString(locale)}</span>
+                                <span className="text-lg font-serif">â‚¬{result?.agentFee.toLocaleString(locale)}</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className="text-sm text-white/60">{'Notary + EPC'}</span>
-                                <span className="text-lg font-serif">€{(1500).toLocaleString(locale)}</span>
+                                <span className="text-lg font-serif">â‚¬{(1500).toLocaleString(locale)}</span>
                             </div>
                         </div>
 
@@ -118,7 +118,7 @@ export const SalesTaxCalculator = () => {
                                     <div className="text-[10px] font-bold uppercase tracking-widest text-white/60">{'NET PROCEEDS'}</div>
                                     <div className="text-xs text-white/60">{'After all taxes & fees'}</div>
                                 </div>
-                                <div className="text-4xl font-serif text-amber-400">€{result?.netProceeds.toLocaleString(locale)}</div>
+                                <div className="text-4xl font-serif text-amber-400">â‚¬{result?.netProceeds.toLocaleString(locale)}</div>
                             </div>
                         </div>
 

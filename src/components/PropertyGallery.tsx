@@ -1,4 +1,4 @@
-ï»¿'use client';
+'use client';
 import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -49,7 +49,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
           <div className="w-20 h-20 rounded-full border-2 border-gold/30 flex items-center justify-center mx-auto mb-6 text-gold">
             <Camera size={32} />
           </div>
-          <p className="text-white/40 font-serif text-xl">{t('gallery.no_images')}</p>
+          <p className="text-white/60 font-serif text-xl">{t('gallery.no_images')}</p>
         </div>
       </div>
     );
@@ -61,7 +61,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
 
   return (
     <>
-      {/* â”€â”€ Desktop mosaic â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ¦¦ Desktop mosaic ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦ */}
       <div className="relative hidden md:block h-[70vh]">
         <div className={`grid h-full gap-0.5 ${hasRightGrid ? 'grid-cols-[65%_35%]' : 'grid-cols-1'}`}>
 
@@ -132,7 +132,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
         </button>
       </div>
 
-      {/* â”€â”€ Mobile Embla slider â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ¦¦ Mobile Embla slider ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦ */}
       <div className="relative md:hidden">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
@@ -177,7 +177,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
         </div>
       </div>
 
-      {/* â”€â”€ Lightbox â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ¦¦ Lightbox ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦ */}
       <Lightbox
         open={lightboxOpen}
         close={() => setLightboxOpen(false)}

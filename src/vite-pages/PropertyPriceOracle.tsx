@@ -10,7 +10,7 @@ import { Breadcrumb } from '../components/Breadcrumb';
 import { usePageMeta } from '../lib/seo/meta';
 import { useTranslation } from 'react-i18next';
 
-// ─── Constants & Logic ───────────────────────────────────────────────────────
+// â”€â”€â”€ Constants & Logic â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PROPERTY_TYPE_MULTIPLIER: Record<string, number> = {
     'Apartment': 1.0,
     'Maisonette': 1.05,
@@ -121,7 +121,7 @@ export const PropertyPriceOracle: React.FC = () => {
                     <h1 className="text-4xl md:text-6xl font-serif mb-6 leading-tight">
                         {t('oracle.title_part1')} <span className="text-gold-gradient italic">{t('oracle.title_part2')}</span>
                     </h1>
-                    <p className="text-white/40 text-lg leading-relaxed">
+                    <p className="text-white/60 text-lg leading-relaxed">
                         {t('oracle.description')}
                     </p>
                 </div>
@@ -170,7 +170,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                             <ShieldCheck size={14} />
                                             <span className="text-[10px] font-bold uppercase tracking-widest">{t('oracle.features.registry_title')}</span>
                                         </div>
-                                        <p className="text-[11px] text-white/30 leading-relaxed">
+                                        <p className="text-[11px] text-white/60 leading-relaxed">
                                             {t('oracle.features.registry_desc')}
                                         </p>
                                     </div>
@@ -218,7 +218,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 <h3 className="text-3xl font-serif text-white mb-10">{t('oracle.where_title')}</h3>
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                                                     <div className="space-y-4">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.location')}</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('oracle.location')}</label>
                                                         <select
                                                             value={specs.locationId}
                                                             onChange={(e) => setSpecs({ ...specs, locationId: parseInt(e.target.value) })}
@@ -238,7 +238,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                         </select>
                                                     </div>
                                                     <div className="space-y-4">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.property_type')}</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('oracle.property_type')}</label>
                                                         <select
                                                             value={specs.type}
                                                             onChange={(e) => setSpecs({ ...specs, type: e.target.value })}
@@ -267,8 +267,8 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                                                     <div className="space-y-4">
                                                         <div className="flex justify-between items-center">
-                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.total_area')}</label>
-                                                            <span className="text-white font-serif">{specs.sqm} m²</span>
+                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('oracle.total_area')}</label>
+                                                            <span className="text-white font-serif">{specs.sqm} mÂ²</span>
                                                         </div>
                                                         <input
                                                             type="range" min="30" max="1500" step="10"
@@ -279,15 +279,15 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     </div>
                                                     <div className="space-y-4">
                                                         <div className="flex justify-between items-center">
-                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.beds_baths')}</label>
-                                                            <span className="text-white font-serif">{specs.beds}{t('common.beds_short')} · {specs.baths}{t('common.baths_short')}</span>
+                                                            <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('oracle.beds_baths')}</label>
+                                                            <span className="text-white font-serif">{specs.beds}{t('common.beds_short')} Â· {specs.baths}{t('common.baths_short')}</span>
                                                         </div>
                                                         <div className="flex gap-2">
                                                             {[1, 2, 3, 4, 5].map(n => (
                                                                 <button
                                                                     key={n}
                                                                     onClick={() => setSpecs({ ...specs, beds: n, baths: Math.max(1, n - 1) })}
-                                                                    className={`flex-1 h-10 rounded-lg border transition-all text-xs ${specs.beds === n ? 'bg-gold border-gold text-black' : 'border-white/10 text-white/40 hover:border-white/20'}`}
+                                                                    className={`flex-1 h-10 rounded-lg border transition-all text-xs ${specs.beds === n ? 'bg-gold border-gold text-black' : 'border-white/10 text-white/60 hover:border-white/20'}`}
                                                                 >
                                                                     {n}
                                                                 </button>
@@ -295,13 +295,13 @@ export const PropertyPriceOracle: React.FC = () => {
                                                         </div>
                                                     </div>
                                                     <div className="space-y-4">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.finish_level')}</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('oracle.finish_level')}</label>
                                                         <div className="grid grid-cols-3 gap-2 h-10">
                                                             {['Shell', 'Finished', 'Furnished'].map(f => (
                                                                 <button
                                                                     key={f}
                                                                     onClick={() => setSpecs({ ...specs, finish: f })}
-                                                                    className={`rounded-lg border text-[9px] uppercase font-bold tracking-widest transition-all ${specs.finish === f ? 'bg-white/10 border-gold text-gold' : 'border-white/10 text-white/30'}`}
+                                                                    className={`rounded-lg border text-[9px] uppercase font-bold tracking-widest transition-all ${specs.finish === f ? 'bg-white/10 border-gold text-gold' : 'border-white/10 text-white/60'}`}
                                                                 >
                                                                     {t(`oracle.fLevels.${f}`)}
                                                                 </button>
@@ -312,7 +312,7 @@ export const PropertyPriceOracle: React.FC = () => {
 
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 pt-8 border-t border-white/5">
                                                     <div className="space-y-6">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.premium_signals')}</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('oracle.premium_signals')}</label>
                                                         <div className="flex gap-4">
                                                             <label className="flex items-center gap-3 cursor-pointer group">
                                                                 <input
@@ -341,7 +341,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                         </div>
                                                     </div>
                                                     <div className="space-y-6">
-                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">{t('oracle.view_quality')}</label>
+                                                        <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">{t('oracle.view_quality')}</label>
                                                         <div className="grid grid-cols-4 gap-2">
                                                             {[0, 1, 2, 3].map(v => (
                                                                 <button
@@ -359,7 +359,7 @@ export const PropertyPriceOracle: React.FC = () => {
                                                 </div>
 
                                                 <div className="flex gap-4">
-                                                    <button onClick={() => setStep(1)} className="px-10 py-5 rounded-2xl border border-white/10 text-white/40 text-xs font-bold uppercase tracking-widest">{t('oracle.back')}</button>
+                                                    <button onClick={() => setStep(1)} className="px-10 py-5 rounded-2xl border border-white/10 text-white/60 text-xs font-bold uppercase tracking-widest">{t('oracle.back')}</button>
                                                     <button
                                                         onClick={handleValuation}
                                                         className="flex-1 py-5 bg-gold text-luxury-black rounded-2xl text-xs font-bold uppercase tracking-widest hover:scale-[1.02] transition-all flex items-center justify-center gap-3 shadow-xl shadow-gold/20"
@@ -383,11 +383,11 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     <div className="md:col-span-12 p-10 bg-white/3 border border-white/5 rounded-[2.5rem] relative overflow-hidden group">
                                                         <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 blur-[80px] -mr-32 -mt-32" />
                                                         <div className="relative z-10 text-center">
-                                                            <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/30 mb-6">{t('oracle.estimated_value_market')}</div>
+                                                            <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/60 mb-6">{t('oracle.estimated_value_market')}</div>
                                                             <div className="flex items-center justify-center gap-6 mb-8">
-                                                                <div className="text-4xl md:text-6xl font-serif text-white">€{valuation.rangeLow.toLocaleString()}</div>
+                                                                <div className="text-4xl md:text-6xl font-serif text-white">â‚¬{valuation.rangeLow.toLocaleString()}</div>
                                                                 <div className="w-12 h-px bg-white/20" />
-                                                                <div className="text-4xl md:text-6xl font-serif text-white">€{valuation.rangeHigh.toLocaleString()}</div>
+                                                                <div className="text-4xl md:text-6xl font-serif text-white">â‚¬{valuation.rangeHigh.toLocaleString()}</div>
                                                             </div>
                                                             <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-bold tracking-widest text-[10px] uppercase">
                                                                 <ShieldCheck size={14} /> {t('oracle.confidence')}: 92%
@@ -399,18 +399,18 @@ export const PropertyPriceOracle: React.FC = () => {
                                                     <div className="md:col-span-6 p-8 bg-black/40 border border-white/5 rounded-3xl">
                                                         <div className="flex items-center gap-3 mb-6">
                                                             <BarChart3 size={18} className="text-gold" />
-                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">{t('oracle.rental_potential')}</span>
+                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/60">{t('oracle.rental_potential')}</span>
                                                         </div>
-                                                        <div className="text-3xl font-serif text-white mb-2">€{Math.round(valuation.possibleRent).toLocaleString()}<span className="text-sm text-white/30 ml-2">/ {t('common.month_short')}</span></div>
+                                                        <div className="text-3xl font-serif text-white mb-2">â‚¬{Math.round(valuation.possibleRent).toLocaleString()}<span className="text-sm text-white/60 ml-2">/ {t('common.month_short')}</span></div>
                                                         <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">{t('oracle.projected_yield')}</p>
                                                     </div>
 
                                                     <div className="md:col-span-6 p-8 bg-black/40 border border-white/5 rounded-3xl">
                                                         <div className="flex items-center gap-3 mb-6">
                                                             <Layers size={18} className="text-gold" />
-                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">{t('oracle.market_heat_title')}</span>
+                                                            <span className="text-[9px] font-bold uppercase tracking-widest text-white/60">{t('oracle.market_heat_title')}</span>
                                                         </div>
-                                                        <div className="text-3xl font-serif text-white mb-2">€{Math.round(valuation.basePricePerSqm).toLocaleString()}<span className="text-sm text-white/30 ml-2">{t('oracle.per_sqm')}</span></div>
+                                                        <div className="text-3xl font-serif text-white mb-2">â‚¬{Math.round(valuation.basePricePerSqm).toLocaleString()}<span className="text-sm text-white/60 ml-2">{t('oracle.per_sqm')}</span></div>
                                                         <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">{t('oracle.growth_forecast')} {specs.type}s</p>
                                                     </div>
                                                 </div>
@@ -449,11 +449,11 @@ export const PropertyPriceOracle: React.FC = () => {
                     {/* Bottom Info Grid */}
                     <div className="lg:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                         <div className="glass-card p-10 rounded-[2.5rem] border border-white/5">
-                            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 mb-6">
+                            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/60 mb-6">
                                 <ShieldCheck size={24} />
                             </div>
                             <h4 className="text-xl font-serif text-white mb-4">{t('oracle.features.registry_title')}</h4>
-                            <p className="text-sm text-white/40 leading-relaxed">
+                            <p className="text-sm text-white/60 leading-relaxed">
                                 {t('oracle.features.registry_desc')}
                             </p>
                         </div>
@@ -462,16 +462,16 @@ export const PropertyPriceOracle: React.FC = () => {
                                 <MapPin size={24} />
                             </div>
                             <h4 className="text-xl font-serif text-white mb-4">{t('oracle.features.precision_title')}</h4>
-                            <p className="text-sm text-white/40 leading-relaxed">
+                            <p className="text-sm text-white/60 leading-relaxed">
                                 {t('oracle.features.precision_desc')}
                             </p>
                         </div>
                         <div className="glass-card p-10 rounded-[2.5rem] border border-white/5">
-                            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 mb-6">
+                            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/60 mb-6">
                                 <Scan size={24} />
                             </div>
                             <h4 className="text-xl font-serif text-white mb-4">{t('oracle.features.logic_title')}</h4>
-                            <p className="text-sm text-white/40 leading-relaxed">
+                            <p className="text-sm text-white/60 leading-relaxed">
                                 {t('oracle.features.logic_desc')}
                             </p>
                         </div>

@@ -17,7 +17,7 @@ const LegalLayout = ({ children, title, subtitle, icon: Icon }: { children: Reac
                         <Icon className="text-gold" size={32} />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">{title}</h1>
-                    <p className="text-white/40 uppercase tracking-widest text-xs font-bold">{subtitle}</p>
+                    <p className="text-white/60 uppercase tracking-widest text-xs font-bold">{subtitle}</p>
                 </div>
 
                 <div className="glass-card rounded-[2.5rem] p-8 md:p-16 border border-white/5 bg-white/5 backdrop-blur-3xl text-white/70 leading-relaxed font-light article-prose">

@@ -85,19 +85,19 @@ export function PropertyValuation() {
         <div className="text-center mb-10">
           <p className="text-[10px] uppercase tracking-widest text-gold mb-4">Estimated Value Range</p>
           <div className="font-serif text-6xl text-gold mb-2">
-            €{(result.mid / 1000).toFixed(0)}K
+            â‚¬{(result.mid / 1000).toFixed(0)}K
           </div>
           <p className="text-white/60 text-sm">
-            €{result.low.toLocaleString('en-GB')} – €{result.high.toLocaleString('en-GB')}
+            â‚¬{result.low.toLocaleString('en-GB')} â€“ â‚¬{result.high.toLocaleString('en-GB')}
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 mb-8">
           <div className="bg-white/5 rounded-2xl p-5">
-            <div className="text-white font-semibold">€{result.pricePerSqm.toLocaleString('en-GB')}/m²</div>
+            <div className="text-white font-semibold">â‚¬{result.pricePerSqm.toLocaleString('en-GB')}/mÂ²</div>
             <div className="text-white/60 text-xs mt-1">Estimated price per sqm</div>
           </div>
           <div className="bg-white/5 rounded-2xl p-5">
-            <div className="text-white font-semibold">{form.location || '—'}</div>
+            <div className="text-white font-semibold">{form.location || 'â€”'}</div>
             <div className="text-white/60 text-xs mt-1">Location</div>
           </div>
         </div>
@@ -144,7 +144,7 @@ export function PropertyValuation() {
       </div>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Size (m²)</label>
+          <label className="text-[10px] uppercase tracking-widest text-white/60 mb-2 block">Size (mÂ²)</label>
           <input
             type="number"
             value={form.sqm}

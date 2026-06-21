@@ -58,7 +58,7 @@ export default function Upgrade() {
                         fontSize: '0.625rem', letterSpacing: '0.12em',
                         color: 'rgba(255,255,255,0.25)', textDecoration: 'none',
                         marginBottom: '3rem',
-                    }}>← Back to Portal</Link>
+                    }}>â† Back to Portal</Link>
 
                     {/* Header */}
                     <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
@@ -71,7 +71,7 @@ export default function Upgrade() {
                                 fontFamily: "'DM Mono', monospace",
                                 fontSize: '0.6875rem', color: '#f87171',
                             }}>
-                                Checkout was cancelled — no charge was made
+                                Checkout was cancelled â€” no charge was made
                             </div>
                         )}
 
@@ -100,7 +100,7 @@ export default function Upgrade() {
                             fontSize: '0.9375rem', color: 'rgba(255,255,255,0.35)',
                             maxWidth: 440, margin: '0 auto', lineHeight: 1.65,
                         }}>
-                            Malta's only AI-powered property portal. Pro includes a 30-day free trial — no credit card charged until Day 31.
+                            Malta's only AI-powered property portal. Pro includes a 30-day free trial â€” no credit card charged until Day 31.
                         </p>
                     </div>
 
@@ -172,7 +172,7 @@ export default function Upgrade() {
                                             fontSize: '2rem', fontWeight: 400,
                                             color: '#fff', lineHeight: 1, marginBottom: '0.25rem',
                                         }}>
-                                            {plan.price === 0 ? 'Free' : `€${plan.price}`}
+                                            {plan.price === 0 ? 'Free' : `â‚¬${plan.price}`}
                                             {plan.price > 0 && (
                                                 <span style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.3)', marginLeft: '0.25rem' }}>
                                                     /month
@@ -186,7 +186,7 @@ export default function Upgrade() {
                                                 fontSize: '0.625rem', color: '#4ade80',
                                                 letterSpacing: '0.08em',
                                             }}>
-                                                ✓ {plan.trial}-day free trial
+                                                âœ“ {plan.trial}-day free trial
                                             </div>
                                         )}
 
@@ -220,7 +220,7 @@ export default function Upgrade() {
                                                 transition: 'all 0.2s',
                                                 outline: 'none',
                                             }}>
-                                            {loading === plan.key ? 'Redirecting…' : `Upgrade to ${plan.name} →`}
+                                            {loading === plan.key ? 'Redirectingâ€¦' : `Upgrade to ${plan.name} â†’`}
                                         </button>
                                     ) : (
                                         <div style={{
@@ -230,7 +230,7 @@ export default function Upgrade() {
                                             fontSize: '0.6875rem', letterSpacing: '0.1em',
                                             color: isCurrent ? '#4ade80' : 'rgba(255,255,255,0.2)',
                                         }}>
-                                            {isCurrent ? '✓ Active Plan' : 'Free Forever'}
+                                            {isCurrent ? 'âœ“ Active Plan' : 'Free Forever'}
                                         </div>
                                     )}
 
@@ -245,7 +245,7 @@ export default function Upgrade() {
                                                 color: 'rgba(255,255,255,0.5)',
                                                 lineHeight: 1.4,
                                             }}>
-                                                <span style={{ color: plan.color as string, flexShrink: 0, marginTop: '0.1rem' }}>✓</span>
+                                                <span style={{ color: plan.color as string, flexShrink: 0, marginTop: '0.1rem' }}>âœ“</span>
                                                 {f}
                                             </div>
                                         ))}
@@ -275,10 +275,10 @@ export default function Upgrade() {
                         borderTop: '1px solid rgba(255,255,255,0.05)',
                     }}>
                         {[
-                            '🔒  Secure payment via Stripe',
-                            '↩  Cancel anytime, no questions',
-                            '📧  Invoices sent automatically',
-                            '🇲🇹  Malta VAT compliant (18%)',
+                            'ðŸ”’  Secure payment via Stripe',
+                            'â†©  Cancel anytime, no questions',
+                            'ðŸ“§  Invoices sent automatically',
+                            'ðŸ‡²ðŸ‡¹  Malta VAT compliant (18%)',
                         ].map(item => (
                             <span key={item} style={{
                                 fontFamily: "'DM Mono', monospace",

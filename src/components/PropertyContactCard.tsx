@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -50,7 +50,7 @@ export function PropertyContactCard({ price, slug, statusLabel, agencyName, agen
       {/* Price */}
       <div>
         <div className="font-serif text-3xl text-gold">{price ? formatPrice(price) : '—'}</div>
-        <div className="text-white/30 text-[10px] uppercase tracking-widest mt-1">{statusLabel}</div>
+        <div className="text-white/60 text-[10px] uppercase tracking-widest mt-1">{statusLabel}</div>
       </div>
 
       {/* Primary CTA */}
@@ -83,7 +83,7 @@ export function PropertyContactCard({ price, slug, statusLabel, agencyName, agen
           )}
           <div className="min-w-0">
             <p className="text-white text-sm font-medium truncate">{agencyName}</p>
-            <p className="text-white/30 text-[10px] uppercase tracking-widest">{t('contact.listed_by')}</p>
+            <p className="text-white/60 text-[10px] uppercase tracking-widest">{t('contact.listed_by')}</p>
           </div>
         </div>
       )}
