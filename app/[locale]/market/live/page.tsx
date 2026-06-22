@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('seo.market.title', { defaultValue: 'Malta Property Market Pulse | Live Data 2026' }),
     description: t('seo.market.description', { defaultValue: 'Live Malta real estate market data: prices, inventory, trends, and forecasts updated daily.' }),
     alternates: {
-      canonical: `${base}${prefix}/market/live`,
+      canonical: `${base}${MARKET_PATHS[locale]}`,
       languages: Object.fromEntries(
         routing.locales.map(l => [l, `${base}${MARKET_PATHS[l]}`])
       ),

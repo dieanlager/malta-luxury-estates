@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('seo.contact.title', { defaultValue: 'Contact Us' }),
     description: t('seo.contact.description', { defaultValue: 'Get in touch with our Malta real estate experts for property inquiries, valuations, and investment advice.' }),
     alternates: {
-      canonical: `${BASE}${prefix}/contact`,
+      canonical: `${BASE}${CONTACT_PATHS[locale]}`,
       languages: Object.fromEntries(
         routing.locales.map(l => [l, `${BASE}${CONTACT_PATHS[l]}`])
       ),

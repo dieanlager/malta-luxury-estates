@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('seo.about.title', { defaultValue: 'About Us' }),
     description: t('seo.about.description', { defaultValue: "Malta's leading luxury property portal, connecting discerning buyers with premium real estate." }),
     alternates: {
-      canonical: `${BASE}${prefix}/about`,
+      canonical: `${BASE}${ABOUT_PATHS[locale]}`,
       languages: Object.fromEntries(
         routing.locales.map(l => [l, `${BASE}${ABOUT_PATHS[l]}`])
       ),

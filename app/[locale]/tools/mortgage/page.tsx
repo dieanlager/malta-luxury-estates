@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
+import { getLocalizedUrl } from '@/src/lib/canonical';
 import { MortgageCalculator } from '@/src/components/calculators/MortgageCalculator';
 import { MortgagePreQualifier } from '@/src/components/calculators/MortgagePreQualifier';
 
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('seo.tools.mortgage.title', { defaultValue: 'Malta Mortgage Calculator 2026' }),
     description: t('seo.tools.mortgage.description', { defaultValue: 'Calculate your mortgage payments, LTV ratio, and pre-qualify for a Malta property loan. Free tool.' }),
-    alternates: { canonical: `${BASE}${prefix}/tools/mortgage` },
+    alternates: { canonical: getLocalizedUrl('/tools/mortgage', locale) },
     openGraph: {
       locale: ogLocaleMap[locale] ?? 'en_US',
       images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630 }],

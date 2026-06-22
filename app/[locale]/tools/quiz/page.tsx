@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
+import { getLocalizedUrl } from '@/src/lib/canonical';
 import { PropertyQuiz } from '@/src/components/tools/PropertyQuiz';
 
 interface Props { params: Promise<{ locale: string }> }
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('seo.tools.quiz.title', { defaultValue: 'Property Finder Quiz' }),
     description: t('seo.tools.quiz.description', { defaultValue: 'Answer 5 questions to discover the perfect Malta property type and location for your lifestyle and budget.' }),
-    alternates: { canonical: `${BASE}${prefix}/tools/quiz` },
+    alternates: { canonical: getLocalizedUrl('/tools/quiz', locale) },
     openGraph: {
       locale: ogLocaleMap[locale] ?? 'en_US',
       images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630 }],

@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { routing } from '@/src/i18n/routing';
+import { getLocalizedUrl } from '@/src/lib/canonical';
 import { LOCATIONS, getLocationBySlug, getLocationStats, getAllProperties, getPropertyBySlug } from '@/src/lib/data';
 import { generateCityFAQSchema, generateBreadcrumbSchema, generatePropertySchema, formatPrice } from '@/src/lib/seo/schemas';
 import { Link } from '@/src/navigation';
@@ -58,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       alternates: {
-        canonical: `${base}${prefix}/properties/${slug}`,
+        canonical: getLocalizedUrl('/properties/[slug]', locale, { slug }),
         languages: Object.fromEntries(
           routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}/properties/${slug}`])
         ),
@@ -67,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title,
         description,
         type: 'website',
-        url: `${base}${prefix}/properties/${slug}`,
+        url: getLocalizedUrl('/properties/[slug]', locale, { slug }),
         locale: ({ en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' } as Record<string, string>)[locale] ?? 'en_US',
         images: [{ url: `${base}/og-image.png`, width: 1200, height: 630, alt: `${location.nameEn} Property Malta` }],
       },
@@ -92,7 +93,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: {
-      canonical: `${base}${prefix}/properties/${slug}`,
+      canonical: getLocalizedUrl('/properties/[slug]', locale, { slug }),
       languages: Object.fromEntries(
         routing.locales.map(l => [l, `${base}${l === 'en' ? '' : `/${l}`}/properties/${slug}`])
       ),
@@ -101,7 +102,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       type: 'website',
-      url: `${base}${prefix}/properties/${slug}`,
+      url: getLocalizedUrl('/properties/[slug]', locale, { slug }),
       locale: ({ en: 'en_US', de: 'de_DE', fr: 'fr_FR', it: 'it_IT', pl: 'pl_PL' } as Record<string, string>)[locale] ?? 'en_US',
       images: property.images?.[0] ? [{ url: property.images[0] }] : [],
     },
@@ -132,7 +133,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
     const breadcrumb = generateBreadcrumbSchema([
       { name: 'Home', url: base },
       { name: t('nav.properties', { defaultValue: 'Properties' }), url: `${base}${prefix}/properties/all` },
-      { name: location.nameEn, url: `${base}${prefix}/properties/${slug}` },
+      { name: location.nameEn, url: getLocalizedUrl('/properties/[slug]', locale, { slug }) },
     ]);
     const faqSchema = generateCityFAQSchema(location, stats);
 
@@ -229,7 +230,7 @@ export default async function PropertyOrCityPage({ params }: Props) {
   const breadcrumb = generateBreadcrumbSchema([
     { name: 'Home', url: base },
     { name: t('nav.properties', { defaultValue: 'Properties' }), url: `${base}${prefix}/properties/all` },
-    { name: property.title, url: `${base}${prefix}/properties/${slug}` },
+    { name: property.title, url: getLocalizedUrl('/properties/[slug]', locale, { slug }) },
   ]);
   const propertySchema = generatePropertySchema(property, base);
 

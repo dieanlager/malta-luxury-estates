@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
+import { getLocalizedUrl } from '@/src/lib/canonical';
 import { BuyVsRentCalculator } from '@/src/components/calculators/BuyVsRentCalculator';
 
 interface Props { params: Promise<{ locale: string }> }
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('seo.tools.buyVsRent.title', { defaultValue: 'Buy vs Rent Calculator Malta 2026' }),
     description: t('seo.tools.buyVsRent.description', { defaultValue: 'Compare buying vs renting property in Malta — net worth projections over 1 to 30 years.' }),
-    alternates: { canonical: `${BASE}${prefix}/tools/buy-vs-rent` },
+    alternates: { canonical: getLocalizedUrl('/tools/buy-vs-rent', locale) },
     openGraph: {
       locale: ogLocaleMap[locale] ?? 'en_US',
       images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630 }],

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
 import { getAllProperties, LOCATIONS } from '@/src/lib/data';
+import { getLocalizedUrl } from '@/src/lib/canonical';
 import { PropertyCard } from '@/src/components/PropertyCard';
 import { Link } from '@/src/navigation';
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('seo.properties.title', { defaultValue: 'Luxury Properties for Sale in Malta' }),
     description: t('seo.properties.description', { defaultValue: 'Browse our curated selection of luxury properties.' }),
     alternates: {
-      canonical: `${base}${prefix}/properties/all`,
+      canonical: getLocalizedUrl('/properties/all', locale),
       languages: {
         'x-default': `${base}/properties/all`,
         en: `${base}/properties/all`,

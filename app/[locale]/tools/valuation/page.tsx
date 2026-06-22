@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
+import { getLocalizedUrl } from '@/src/lib/canonical';
 import { PropertyValuation } from '@/src/components/tools/PropertyValuation';
 
 interface Props { params: Promise<{ locale: string }> }
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('seo.tools.valuation.title', { defaultValue: 'Free Property Valuation Malta | AI-Powered Estimate' }),
     description: t('seo.tools.valuation.description', { defaultValue: 'Get an AI-powered instant property valuation for Malta real estate. Free, accurate, and instant.' }),
-    alternates: { canonical: `${BASE}${prefix}/tools/valuation` },
+    alternates: { canonical: getLocalizedUrl('/tools/valuation', locale) },
     openGraph: {
       locale: ogLocaleMap[locale] ?? 'en_US',
       images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630 }],

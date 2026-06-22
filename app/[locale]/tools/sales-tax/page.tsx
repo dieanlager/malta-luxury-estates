@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/src/i18n/routing';
+import { getLocalizedUrl } from '@/src/lib/canonical';
 import { SalesTaxCalculator } from '@/src/components/calculators/SalesTaxCalculator';
 import { BuyingCostsCalculator } from '@/src/components/BuyingCostsCalculator';
 
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('seo.tools.salesTax.title', { defaultValue: 'Malta Property Tax & Buying Costs Calculator 2026' }),
     description: t('seo.tools.salesTax.description', { defaultValue: 'Calculate stamp duty, transfer tax, notary fees, and total buying costs for Malta property.' }),
-    alternates: { canonical: `${BASE}${prefix}/tools/sales-tax` },
+    alternates: { canonical: getLocalizedUrl('/tools/sales-tax', locale) },
     openGraph: {
       locale: ogLocaleMap[locale] ?? 'en_US',
       images: [{ url: `${BASE}/og-image.png`, width: 1200, height: 630 }],

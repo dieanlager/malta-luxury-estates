@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getLocalizedUrl, getHreflangAlternates } from '@/src/lib/canonical';
 import { getTranslations } from 'next-intl/server';
 import { LegalLayout, ScaleIcon } from '@/src/components/LegalLayout';
 import { routing } from '@/src/i18n/routing';
