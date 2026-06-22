@@ -30,6 +30,12 @@ const config: NextConfig = {
     return webpackConfig;
   },
 
+  async redirects() {
+    return [
+      { source: '/favicon.ico', destination: '/favicon.png', permanent: true },
+    ];
+  },
+
   async headers() {
     return [
       {

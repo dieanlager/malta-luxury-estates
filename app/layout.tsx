@@ -34,6 +34,11 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image' },
   verification: { google: '6dHOYfMYPGAfqjVSSTjmknLrEppz2TSz2PpMacUQ7CI' },
+  icons: {
+    icon: [{ url: '/favicon.png', type: 'image/png', sizes: '512x512' }],
+    apple: [{ url: '/favicon.png', type: 'image/png', sizes: '512x512' }],
+    shortcut: '/favicon.png',
+  },
   robots: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
 };
 
