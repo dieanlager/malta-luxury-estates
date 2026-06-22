@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   return {
-    title: 'Malta Property Tools | Malta Luxury Real Estate',
+    title: 'Malta Property Tools',
     description: 'Free property tools for Malta buyers: mortgage calculator, property valuation, buying costs, buy vs rent analysis, and more.',
     robots: { index: true, follow: true },
     alternates: {
