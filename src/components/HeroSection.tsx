@@ -12,7 +12,7 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 z-0">
-        <Image src="/assets/images/hero_malta.png" fill priority sizes="100vw" className="object-cover opacity-40 scale-105" alt="Malta Coast" />
+        <Image src="/assets/images/hero_malta.webp" fill priority fetchPriority="high" sizes="100vw" className="object-cover opacity-40 scale-105" alt="Malta Coast" />
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/60 via-luxury-black/30 to-luxury-black" />
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
