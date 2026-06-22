@@ -9,10 +9,10 @@ const steps = [
     id: 'budget',
     question: 'What is your budget?',
     options: [
-      { value: '<500k', label: '< â‚¬500,000' },
-      { value: '500k-1m', label: 'â‚¬500K â€“ â‚¬1M' },
-      { value: '1m-3m', label: 'â‚¬1M â€“ â‚¬3M' },
-      { value: '3m+', label: 'â‚¬3M+' },
+      { value: '<500k', label: '< €500,000' },
+      { value: '500k-1m', label: '€500K — €1M' },
+      { value: '1m-3m', label: '€1M — €3M' },
+      { value: '3m+', label: '€3M+' },
     ],
   },
   {
@@ -75,7 +75,7 @@ export function PropertyQuiz() {
     const recs = getRecommendations();
     return (
       <div className="glass-card p-10 rounded-3xl border border-gold/20 text-center">
-        <div className="text-gold font-serif text-5xl mb-4">âœ“</div>
+        <div className="text-gold font-serif text-5xl mb-4">âœ—</div>
         <h2 className="font-serif text-3xl text-white mb-4">Your Matches</h2>
         <p className="text-white/50 mb-10">Based on your preferences, we recommend these locations:</p>
         <div className="grid gap-4 mb-10">

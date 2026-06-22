@@ -64,7 +64,7 @@ import { AboutPage } from './vite-pages/AboutPage';
 import { NewsletterForm } from './components/NewsletterForm';
 import { AIChatbot } from './components/AIChatbot';
 
-// Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Scroll To Top Button Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+// â”€â”€â”€ Scroll To Top Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
@@ -155,7 +155,7 @@ const LanguageSelector = () => {
     { code: 'en', label: 'English', flag: 'EN' },
     { code: 'it', label: 'Italiano', flag: 'IT' },
     { code: 'de', label: 'Deutsch', flag: 'DE' },
-    { code: 'fr', label: 'FranÃ§ais', flag: 'FR' },
+    { code: 'fr', label: 'FranÀ§ais', flag: 'FR' },
     { code: 'pl', label: 'Polski', flag: 'PL' },
   ];
 
@@ -417,7 +417,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
     { slug: 'st-julians', name: t('locations.st_julians', "St. Julian's"), count: 180, image: '/assets/images/locations/st-julians.png' },
     { slug: 'valletta', name: t('locations.valletta', 'Valletta'), count: 95, image: '/assets/images/locations/valletta.png' },
     { slug: 'three-cities', name: t('locations.three_cities', 'Three Cities'), count: 65, image: '/assets/images/locations/three-cities.png' },
-    { slug: 'mellieha', name: t('locations.mellieha', 'MellieÃ„Â§a'), count: 110, image: '/assets/images/locations/mellieha.png' },
+    { slug: 'mellieha', name: t('locations.mellieha', 'MellieÀ„Â§a'), count: 110, image: '/assets/images/locations/mellieha.png' },
     { slug: 'victoria', name: t('locations.gozo', 'Gozo'), count: 120, image: '/assets/images/locations/gozo.png' },
   ];
 
@@ -496,7 +496,7 @@ const HomePage = ({ favorites, onToggleFavorite, onContact }: {
                 <span className="text-[9px] uppercase tracking-widest font-bold">{t('hero.stats.locations')}</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-serif text-gold">â‚¬2.5M</span>
+                <span className="text-2xl font-serif text-gold">€2.5M</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">{t('hero.stats.avg_price')}</span>
               </div>
             </div>
@@ -785,7 +785,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
             </>
           ) : (
             <>
-              {/* Alias without language prefix Ã¢â€ â€™ redirect to canonical English URL */}
+              {/* Alias without language prefix â” ’ redirect to canonical English URL */}
               <Route path={`/${p}/all`} element={<Navigate to="/properties/all" replace />} />
               <Route path={`/${p}/:citySlug`} element={<Navigate to="/properties/:citySlug" replace />} />
               <Route path={`/${p}/:slug`} element={<Navigate to="/properties/:slug" replace />} />
@@ -812,7 +812,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
             </>
           ) : (
             <>
-              {/* Alias without language prefix Ã¢â€ â€™ redirect to canonical English URL */}
+              {/* Alias without language prefix â” ’ redirect to canonical English URL */}
               <Route path={`/${p}`} element={<Navigate to="/insights" replace />} />
               <Route path={`/${p}/:slug`} element={<Navigate to="/insights/:slug" replace />} />
             </>
@@ -829,7 +829,7 @@ const AppRoutes = ({ handleContact, favCount }: { handleContact: any, favCount: 
           {p === 'market' ? (
             <Route path={`/${p}/live`} element={<MarketLive />} />
           ) : (
-            // Alias without language prefix Ã¢â€ â€™ redirect to canonical English URL
+            // Alias without language prefix â” ’ redirect to canonical English URL
             <Route path={`/${p}/live`} element={<Navigate to="/market/live" replace />} />
           )}
           <Route path={`/:lng/${p}/live`} element={<LanguageWrapper><MarketLive /></LanguageWrapper>} />
@@ -1085,7 +1085,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-[0.2em] text-white/70">
-          <p>Â© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> {t('common.design_by')} <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
+          <p>© 2026 Malta Luxury Real Estate. All rights reserved. <span className="mx-2 opacity-20">|</span> {t('common.design_by')} <a href="https://brandhouse.com.pl" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors font-medium">Brand House</a></p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link to={getLocalizedPath('/privacy-policy')} className="hover:text-gold transition-colors">{t('seo:privacy.title')}</Link>
             <Link to={getLocalizedPath('/terms-of-service')} className="hover:text-gold transition-colors">{t('seo:terms.title')}</Link>

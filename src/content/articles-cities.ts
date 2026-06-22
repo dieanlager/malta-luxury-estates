@@ -52,7 +52,7 @@ While capital appreciation is stable at ~4%, the rental market is where Sliema s
 3.  **Seafront Appreciation:** Unobstructed views are a finite resource. As long as there is blue water, there is a buyer for Tower Road.
 
 ## Summary
-Sliema is not where you look for "bargains"—it is where you look for **Safety**. It is the blue-chip asset of Malta. 
+Sliema is not where you look for "bargains—it is where you look for **Safety**. It is the blue-chip asset of Malta. 
 
 **Are you interested in a curated list of Sliema investment opportunities? [View our Sliema Portfolio](mailto:sliema@maltaluxuryrealestate.com).**`
     },
@@ -144,7 +144,7 @@ Marsaxlokk is evolving from a tourist-only day trip into a permanent residential
 *   **SmartCity Malta:** The expansion of this tech hub has created a high-income tenant class looking for luxury sea-view housing in the South.
 
 ## Summary
-The South of Malta is no longer "the alternative"—it is the **Opportunity**. If you are looking for seaside luxury with a 50% price discount compared to the North, look toward Marsaxlokk.
+The South of Malta is no longer "the alternative—it is the **Opportunity**. If you are looking for seaside luxury with a 50% price discount compared to the North, look toward Marsaxlokk.
 
 **Discover the emerging luxury world of Southern Malta. [Browse our Southern Selection](mailto:south@maltaluxuryrealestate.com).**`
     },

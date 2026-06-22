@@ -41,12 +41,12 @@ function genSlug(text: string) {
 }
 
 function fmtPrice(p: number) {
-  if (p >= 1_000_000) return 'â‚¬' + (p / 1_000_000).toFixed(1) + 'M';
-  if (p >= 1_000) return 'â‚¬' + Math.round(p / 1_000) + 'k';
-  return 'â‚¬' + p.toLocaleString('en-GB');
+  if (p >= 1_000_000) return '€' + (p / 1_000_000).toFixed(1) + 'M';
+  if (p >= 1_000) return '€' + Math.round(p / 1_000) + 'k';
+  return '€' + p.toLocaleString('en-GB');
 }
 
-// Supabase storage URLs are public â€” load directly. Only proxy scraped external images.
+// Supabase storage URLs are public ”” load directly. Only proxy scraped external images.
 function proxyImg(url: string): string {
   if (!url) return '';
   if (
@@ -58,7 +58,7 @@ function proxyImg(url: string): string {
   return `/api/proxy-image?url=${encodeURIComponent(url)}`;
 }
 
-// Strip [AFFILIATE_URL:â€¦] and [FEATURES:â€¦] annotations stored inside description column
+// Strip [AFFILIATE_URL:…] and [FEATURES:…] annotations stored inside description column
 function parseDescription(raw: string, affiliateFallback: string): { desc: string; affiliateUrl: string; features: string } {
   let s = raw || '';
   let affiliateUrl = affiliateFallback || '';
@@ -117,7 +117,7 @@ const AdminPage: React.FC = () => {
 
   useEffect(() => { if (adminKey) fetchProps(); }, [fetchProps, adminKey]);
 
-  // Handle ?edit=ID URL param â€” open edit form directly
+  // Handle ?edit=ID URL param ”” open edit form directly
   useEffect(() => {
     if (!adminKey || props.length === 0) return;
     const params = new URLSearchParams(window.location.search);
@@ -140,7 +140,7 @@ const AdminPage: React.FC = () => {
     setUploadSlug(editSlug);
     setBlobPreviews([]);
 
-    // Strip [AFFILIATE_URL:â€¦] and [FEATURES:â€¦] from raw description
+    // Strip [AFFILIATE_URL:…] and [FEATURES:…] from raw description
     const { desc, affiliateUrl, features: parsedFeatures } = parseDescription(p.description || '', p.affiliate_url || '');
 
     // Features may also come from the DB features column
@@ -408,7 +408,7 @@ const AdminPage: React.FC = () => {
 
             {loadingList && (
               <div className="flex items-center justify-center h-32 text-white/60">
-                <Loader2 size={20} className="animate-spin mr-2" /> Åadowanieâ€¦
+                <Loader2 size={20} className="animate-spin mr-2" /> Åadowanie…
               </div>
             )}
 
@@ -428,13 +428,13 @@ const AdminPage: React.FC = () => {
                     <div className="w-20 h-16 flex-shrink-0 bg-white/5">
                       {thumb
                         ? <img src={proxyImg(thumb)} alt="" className="w-full h-full object-cover" onError={e => { (e.target as HTMLImageElement).style.opacity = '0.2'; }} />
-                        : <div className="w-full h-full flex items-center justify-center text-white/70 text-xs">â€”</div>}
+                        : <div className="w-full h-full flex items-center justify-center text-white/70 text-xs">””</div>}
                     </div>
                     <div className="flex-1 px-4 py-3 min-w-0">
                       <div className="flex items-center justify-between gap-2">
                         <div className="min-w-0">
                           <p className="text-white text-sm font-medium truncate">{p.title}</p>
-                          <p className="text-white/60 text-xs mt-0.5">{p.location_text} Â· {fmtPrice(p.price)} Â· {p.listing_type === 'rent' ? 'Wynajem' : 'SprzedaÅ¼'}</p>
+                          <p className="text-white/60 text-xs mt-0.5">{p.location_text} · {fmtPrice(p.price)} · {p.listing_type === 'rent' ? 'Wynajem' : 'SprzedaÅ¼'}</p>
                         </div>
                         <div className="flex items-center gap-1 flex-shrink-0">
                           <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider border ${isActive ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/20' : 'bg-white/5 text-white/60 border-white/10'}`}>
@@ -473,10 +473,10 @@ const AdminPage: React.FC = () => {
               </div>
             )}
 
-            {/* Step 1 â€” URL Scrape (new listings only) */}
+            {/* Step 1 ”” URL Scrape (new listings only) */}
             {!editId && (
               <div className={card}>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-1">Krok 1 â€” URL oferty</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-1">Krok 1 ”” URL oferty</p>
                 <p className="text-white/60 text-xs mb-4">Automatycznie pobiera dane z Alliance.mt lub innej strony partnera.</p>
                 <div className="flex gap-2">
                   <input type="url" placeholder="https://alliance.mt/property/..." value={url}
@@ -484,16 +484,16 @@ const AdminPage: React.FC = () => {
                     className={inp + ' flex-1'} />
                   <button onClick={handleScrape} disabled={scraping} className={goldBtn}>
                     {scraping ? <Loader2 size={14} className="animate-spin" /> : <Link2 size={14} />}
-                    {scraping ? 'Pobieranieâ€¦' : 'Pobierz'}
+                    {scraping ? 'Pobieranie…' : 'Pobierz'}
                   </button>
                 </div>
               </div>
             )}
 
-            {/* Step 2 â€” Details */}
+            {/* Step 2 ”” Details */}
             <div className={card}>
               <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-5">
-                {editId ? 'Edytuj dane' : 'Krok 2 â€” SzczegÃ³Å‚y'}
+                {editId ? 'Edytuj dane' : 'Krok 2 ”” SzczegÀ³Å‚y'}
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-4">
@@ -507,7 +507,7 @@ const AdminPage: React.FC = () => {
                       seo_title: f.seo_title === f.title.slice(0, 60) || !f.seo_title ? t.slice(0, 60) : f.seo_title,
                       slug: genSlug((f.location_text ? f.location_text + ' ' : '') + t),
                     }));
-                  }} placeholder="2-bedroom apartment in Sliemaâ€¦" className={inp} />
+                  }} placeholder="2-bedroom apartment in Sliema…" className={inp} />
                 </div>
 
                 {/* Slug */}
@@ -523,10 +523,10 @@ const AdminPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Affiliate URL â€” hidden label, internal use */}
+                {/* Affiliate URL ”” hidden label, internal use */}
                 <div className="col-span-2">
-                  <label className={lbl}>Affiliate URL <span className="text-white/70 font-normal normal-case tracking-normal">(link partnera â€” widoczny tylko w panelu)</span></label>
-                  <input type="url" value={form.affiliate_url} onChange={e => set('affiliate_url', e.target.value)} className={inp} placeholder="https://alliance.mt/property/â€¦" />
+                  <label className={lbl}>Affiliate URL <span className="text-white/70 font-normal normal-case tracking-normal">(link partnera ”” widoczny tylko w panelu)</span></label>
+                  <input type="url" value={form.affiliate_url} onChange={e => set('affiliate_url', e.target.value)} className={inp} placeholder="https://alliance.mt/property/…" />
                 </div>
 
                 {/* Price */}
@@ -559,7 +559,7 @@ const AdminPage: React.FC = () => {
                   <input type="number" value={form.sqm} onChange={e => set('sqm', e.target.value)} className={inp} />
                 </div>
 
-                {/* Type â€” default sale */}
+                {/* Type ”” default sale */}
                 <div>
                   <label className={lbl}>Typ</label>
                   <select value={form.listing_type} onChange={e => set('listing_type', e.target.value)} className={inp}>
@@ -625,7 +625,7 @@ const AdminPage: React.FC = () => {
                   <input type="checkbox" checked={form.featured} onChange={e => set('featured', e.target.checked)} className="accent-gold w-4 h-4" />
                   <span className="text-white text-sm font-medium flex items-center gap-2">
                     <Star size={14} className="text-gold" fill={form.featured ? 'currentColor' : 'none'} />
-                    WyrÃ³Å¼niona oferta (Featured)
+                    WyrÀ³Å¼niona oferta (Featured)
                   </span>
                 </label>
                 {form.featured && (
@@ -648,14 +648,14 @@ const AdminPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Step 3 â€” Images */}
+            {/* Step 3 ”” Images */}
             <div className={card}>
               <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-1">
-                {editId ? 'ZdjÄ™cia' : 'Krok 3 â€” ZdjÄ™cia'}
+                {editId ? 'ZdjÄ™cia' : 'Krok 3 ”” ZdjÄ™cia'}
               </p>
               <p className="text-white/60 text-xs mb-4">
                 Konwertowane automatycznie do WebP 1920px. PrzeciÄ…gnij kafelki Å¼eby zmieniÄ‡ kolejnoÅ›Ä‡. Pierwsze = okÅ‚adka.
-                {uploading && <span className="text-gold ml-2">Wgrywanieâ€¦</span>}
+                {uploading && <span className="text-gold ml-2">Wgrywanie…</span>}
               </p>
 
               {/* Drop zone */}
@@ -666,7 +666,7 @@ const AdminPage: React.FC = () => {
               >
                 <Upload size={22} className="text-white/60" />
                 <span className="text-white/50 text-sm">PrzeciÄ…gnij zdjÄ™cia lub kliknij</span>
-                <span className="text-white/70 text-xs">JPG, PNG, HEIC â€” resize do 1920px WebP</span>
+                <span className="text-white/70 text-xs">JPG, PNG, HEIC ”” resize do 1920px WebP</span>
                 <input type="file" multiple accept="image/*" onChange={e => { if (e.target.files) processFiles(e.target.files); }} disabled={uploading} className="hidden" />
               </label>
 
@@ -723,10 +723,10 @@ const AdminPage: React.FC = () => {
               )}
             </div>
 
-            {/* Step 4 â€” Publish */}
+            {/* Step 4 ”” Publish */}
             <div className={card}>
               <p className="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-4">
-                {editId ? 'Zapisz zmiany' : 'Krok 4 â€” Publikuj'}
+                {editId ? 'Zapisz zmiany' : 'Krok 4 ”” Publikuj'}
               </p>
               {form.images.length === 0 && !uploading && (
                 <p className="text-amber-400/70 text-xs mb-4">Uwaga: brak zdjÄ™Ä‡ dla tej oferty.</p>
@@ -737,7 +737,7 @@ const AdminPage: React.FC = () => {
                 </button>
                 <button onClick={handlePublish} disabled={publishing || uploading} className={goldBtn + ' flex-1 py-3'}>
                   {publishing && <Loader2 size={14} className="animate-spin" />}
-                  {publishing ? 'Zapisywanieâ€¦' : editId ? 'Zapisz zmiany' : 'Opublikuj ofertÄ™'}
+                  {publishing ? 'Zapisywanie…' : editId ? 'Zapisz zmiany' : 'Opublikuj ofertÄ™'}
                 </button>
               </div>
             </div>
@@ -757,7 +757,7 @@ const AdminPage: React.FC = () => {
               <button onClick={() => handleDelete(confirmDel)} disabled={deleting}
                 className="flex-1 py-2.5 bg-red-600 hover:bg-red-500 disabled:opacity-40 text-white rounded-xl font-bold text-sm transition-colors flex items-center justify-center gap-2">
                 {deleting ? <Loader2 size={14} className="animate-spin" /> : <Trash2 size={14} />}
-                {deleting ? 'Usuwanieâ€¦' : 'UsuÅ„'}
+                {deleting ? 'Usuwanie…' : 'UsuÅ„'}
               </button>
             </div>
           </div>

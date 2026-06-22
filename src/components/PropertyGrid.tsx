@@ -76,7 +76,7 @@ export const PropertyGrid: React.FC<PropertyGridProps> = ({ properties, location
                   </button>
                   <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-luxury-black to-transparent">
                     <div className="text-2xl font-serif text-white">
-                      â‚¬{property.price.toLocaleString()}
+                      €{property.price.toLocaleString()}
                       {property.type === 'rent' && <span className="text-sm font-sans text-white/60 ml-1">/mo</span>}
                     </div>
                   </div>

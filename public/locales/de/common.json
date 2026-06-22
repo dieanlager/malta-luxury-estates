@@ -823,7 +823,7 @@
   "properties": {
     "all_listings": "Immobilien",
     "exclusive_title": "Exklusive Immobilien",
-    "search_results": "Suchergebnisse für „{query}“",
+    "search_results": "Suchergebnisse für „{query}—",
     "showing_count": "Zeige {count} Premium-Inserate, die Ihren Kriterien entsprechen.",
     "filters_button": "Filter",
     "hide_filters": "Filter ausblenden",
@@ -839,7 +839,7 @@
       "explore": "{location} erkunden"
     },
     "breadcrumb": {
-      "search": "Suche: „{query}“"
+      "search": "Suche: „{query}—"
     },
     "filtered": {
       "results_count": "{count} Immobilien",

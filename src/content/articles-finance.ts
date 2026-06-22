@@ -188,7 +188,7 @@ Unlike some other programs, you only need to hold the property/lease for **5 yea
 3.  Downgrade your investment while retaining the right to live and travel within the Schengen area indefinitely.
 
 ## Summary
-The MPRP is not just a "cost"—it's a leveraged investment in European access. For an investor with €500,000 in liquid capital, the Purchase Route represents a highly efficient use of funds with a potential "break-even" within 4-5 years purely through real estate appreciation.`
+The MPRP is not just a "cost—it's a leveraged investment in European access. For an investor with €500,000 in liquid capital, the Purchase Route represents a highly efficient use of funds with a potential "break-even" within 4-5 years purely through real estate appreciation.`
     },
     {
         slug: 'buying-property-malta-cryptocurrency-guide-2026',

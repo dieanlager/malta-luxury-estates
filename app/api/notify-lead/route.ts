@@ -28,13 +28,13 @@ export async function POST(req: NextRequest) {
       to: agency.email,
       subject: `New Lead: ${propertyTitle}`,
       html: `<div style="font-family:sans-serif;max-width:600px;margin:0 auto">
-<h2 style="color:#C5A059">New Lead â€” ${propertyTitle}</h2>
+<h2 style="color:#C5A059">New Lead ”” ${propertyTitle}</h2>
 <p>Hi ${agency.name},</p>
 <table style="background:#f9f9f9;padding:20px;border-radius:8px;width:100%">
 <tr><td><strong>Name</strong></td><td>${record.name}</td></tr>
 <tr><td><strong>Email</strong></td><td>${record.email}</td></tr>
 ${record.phone ? `<tr><td><strong>Phone</strong></td><td>${record.phone}</td></tr>` : ''}
-${record.budget_max ? `<tr><td><strong>Budget</strong></td><td>Up to â‚¬${Number(record.budget_max).toLocaleString()}</td></tr>` : ''}
+${record.budget_max ? `<tr><td><strong>Budget</strong></td><td>Up to €${Number(record.budget_max).toLocaleString()}</td></tr>` : ''}
 </table>
 <a href="${siteUrl}/agency/portal" style="background:#C5A059;color:#fff;padding:12px 24px;text-decoration:none;border-radius:4px;display:inline-block;margin-top:20px;font-weight:bold">View in Portal â†’</a>
 </div>`,

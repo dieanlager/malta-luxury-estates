@@ -63,7 +63,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
     };
 
     const formatPrice = (n: number) =>
-        n >= 1_000_000 ? `â‚¬${(n / 1_000_000).toFixed(1)}M` : `â‚¬${n.toLocaleString()}`;
+        n >= 1_000_000 ? `€${(n / 1_000_000).toFixed(1)}M` : `€${n.toLocaleString()}`;
 
     return (
         <AnimatePresence>
@@ -120,7 +120,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                 Investment Passport
                                             </span>
                                             <span className="text-[9px] font-bold uppercase tracking-widest text-emerald-400 border border-emerald-500/30 bg-emerald-400/10 px-3 py-1 rounded-full">
-                                                Free Â· Instant PDF
+                                                Free · Instant PDF
                                             </span>
                                         </div>
                                         <h2 className="text-2xl font-serif text-white leading-tight mt-2">
@@ -148,7 +148,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                     <div className="text-right shrink-0">
                                         <div className="text-[9px] text-white/60 uppercase tracking-widest">Asking</div>
                                         <div className="text-gold font-bold text-lg">{formatPrice(property.price)}</div>
-                                        <div className="text-[9px] text-white/60">{property.beds}bd Â· {property.baths}ba Â· {property.sqm}mÂ²</div>
+                                        <div className="text-[9px] text-white/60">{property.beds}bd · {property.baths}ba · {property.sqm}mÂ²</div>
                                     </div>
                                 </div>
 
@@ -271,7 +271,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                                 {status === 'loading' ? (
                                                                     <>
                                                                         <Loader2 size={14} className="animate-spin" />
-                                                                        Generating PDFâ€¦
+                                                                        Generating PDF…
                                                                     </>
                                                                 ) : (
                                                                     <>
@@ -286,7 +286,7 @@ export const InvestmentPassportModal: React.FC<InvestmentPassportModalProps> = (
                                                     {/* Trust signals */}
                                                     <div className="space-y-2.5">
                                                         {[
-                                                            { icon: ShieldCheck, text: 'No spam â€” your data stays private' },
+                                                            { icon: ShieldCheck, text: 'No spam ”” your data stays private' },
                                                             { icon: FileText, text: '6 pages, instant download, no login required' },
                                                             { icon: TrendingUp, text: 'Malta PPR data + 2026 tax calculations' },
                                                         ].map(({ icon: Icon, text }) => (
@@ -351,7 +351,7 @@ export const InvestmentPassportButton: React.FC<{
                 </div>
                 <div className="flex-1 text-left">
                     <div className="text-xs font-bold uppercase tracking-widest text-gold">Free PDF Report</div>
-                    <div className="text-[11px] text-white/60 mt-0.5">6-page Investment Passport Â· Instant Download</div>
+                    <div className="text-[11px] text-white/60 mt-0.5">6-page Investment Passport · Instant Download</div>
                 </div>
                 <Download size={16} className="text-gold/50 group-hover:text-gold transition-colors" />
             </button>

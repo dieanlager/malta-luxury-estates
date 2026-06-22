@@ -115,7 +115,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                     isPast ? 'bg-emerald-400 text-luxury-black' :
                                         'bg-white/5 text-white/70'
                                     }`}>
-                                    {isPast ? 'âœ“' : i + 1}
+                                    {isPast ? 'âœ—' : i + 1}
                                 </div>
                                 <span className="text-[10px] uppercase font-bold tracking-widest">{s.label}</span>
                             </div>
@@ -149,7 +149,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                 <Upload size={32} />
                             </div>
                             <h4 className="text-xl font-serif text-white/80 mb-2">Drag & Drop Listing Data</h4>
-                            <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-white/70">Maximum 500 records per file â€¢ .CSV format only</p>
+                            <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-white/70">Maximum 500 records per file • .CSV format only</p>
 
                             {isDragActive && (
                                 <div className="absolute inset-0 bg-luxury-black/80 backdrop-blur-sm rounded-[3rem] flex items-center justify-center">
@@ -212,7 +212,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                                         <MapPin size={8} /> {row.mapped.location_text}
                                                     </div>
                                                 </td>
-                                                <td className="px-8 py-4 font-mono text-xs">â‚¬{row.mapped.price?.toLocaleString()}</td>
+                                                <td className="px-8 py-4 font-mono text-xs">€{row.mapped.price?.toLocaleString()}</td>
                                                 <td className="px-8 py-4">
                                                     <span className="text-[9px] font-bold uppercase tracking-widest text-gold/60">{row.mapped.property_type}</span>
                                                 </td>
@@ -238,7 +238,7 @@ export function CSVImport({ onComplete }: { onComplete: () => void }) {
                                     {result.rows.filter(r => r.errors.length > 0).map(r => (
                                         <div key={r.rowIndex} className="text-[10px] font-mono text-white/60">
                                             <span className="text-red-400/60 font-bold mr-2">Row {r.rowIndex}:</span>
-                                            {r.errors.join(' â€¢ ')}
+                                            {r.errors.join(' • ')}
                                         </div>
                                     ))}
                                 </div>

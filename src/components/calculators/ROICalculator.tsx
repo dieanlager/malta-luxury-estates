@@ -49,7 +49,7 @@ export const ROICalculator = () => {
                     <div>
                         <div className="flex justify-between items-center mb-4">
                             <label className="text-[10px] font-bold uppercase tracking-widest text-white/60">Total Investment</label>
-                            <span className="text-emerald-400 font-serif text-xl">â‚¬{fmtItems(purchasePrice)}</span>
+                            <span className="text-emerald-400 font-serif text-xl">€{fmtItems(purchasePrice)}</span>
                         </div>
                         <input
                             type="range" min="100000" max="5000000" step="50000" value={purchasePrice}
@@ -95,11 +95,11 @@ export const ROICalculator = () => {
                     <div className="grid grid-cols-2 gap-4 mb-8">
                         <div className="bg-white/5 p-6 rounded-3xl border border-white/10 border-b-emerald-500/50">
                             <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">Net Yearly Profit</div>
-                            <div className="text-3xl font-serif text-emerald-400">â‚¬{fmtItems(result?.netYearlyRent ?? 0)}</div>
+                            <div className="text-3xl font-serif text-emerald-400">€{fmtItems(result?.netYearlyRent ?? 0)}</div>
                         </div>
                         <div className="bg-white/5 p-6 rounded-3xl border border-white/10 border-b-blue-500/50">
                             <div className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-1">Rental Tax (15%)</div>
-                            <div className="text-3xl font-serif text-blue-400 text-right">â‚¬{fmtItems(result?.rentalTax ?? 0)}</div>
+                            <div className="text-3xl font-serif text-blue-400 text-right">€{fmtItems(result?.rentalTax ?? 0)}</div>
                         </div>
                     </div>
 
@@ -132,7 +132,7 @@ export const ROICalculator = () => {
                             <div>
                                 <h4 className="text-sm font-serif mb-1">Malta Rental Market Intelligence</h4>
                                 <p className="text-[11px] text-white/50 leading-relaxed">
-                                    Malta offers 15% flat rental income tax, making it one of Europe&apos;s most tax-efficient jurisdictions. Short-let premium locations command 8â€“12% gross yields.
+                                    Malta offers 15% flat rental income tax, making it one of Europe&apos;s most tax-efficient jurisdictions. Short-let premium locations command 8—12% gross yields.
                                 </p>
                             </div>
                         </div>

@@ -1,8 +1,8 @@
 ﻿---
-title: "Malta Permanent Residency by Investment 2026 â€" The Complete MPRP Guide"
+title: "Malta Permanent Residency by Investment 2026 — The Complete MPRP Guide"
 category: "Residency"
-excerpt: "The Malta Permanent Residency Programme (MPRP) grants non-EU nationals permanent residency in exchange for a qualifying property investment (â‚¬375,000+), government contribution, and proof of â‚¬500,000 in assets. Processing takes 4â€"6 months."
-metaDescription: "Master the Malta Permanent Residency Programme (MPRP) 2026. Learn about the â‚¬375,000 property investment, government contributions, and how to get permanent EU residency."
+excerpt: "The Malta Permanent Residency Programme (MPRP) grants non-EU nationals permanent residency in exchange for a qualifying property investment (€375,000+), government contribution, and proof of €500,000 in assets. Processing takes 4—6 months."
+metaDescription: "Master the Malta Permanent Residency Programme (MPRP) 2026. Learn about the €375,000 property investment, government contributions, and how to get permanent EU residency."
 image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1600&fm=webp"
 date: "March 2026"
 readTime: "19 min read"

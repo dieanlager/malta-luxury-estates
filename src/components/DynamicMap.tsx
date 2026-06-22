@@ -141,7 +141,7 @@ const MaltaSVGFallback = ({
                                 stroke="#C9A84C" strokeWidth="0.3" />
                             <text x={loc.x} y={loc.y - 3.2} fontSize="2" textAnchor="middle"
                                 fill={isSelected ? '#0d1117' : '#C9A84C'} fontWeight="bold" fontFamily="sans-serif">
-                                â‚¬{(avgPrice / 1000000).toFixed(1)}M{count > 1 ? ` Ã—${count}` : ''}
+                                €{(avgPrice / 1000000).toFixed(1)}M{count > 1 ? ` À—${count}` : ''}
                             </text>
                         </g>
                     );
@@ -171,7 +171,7 @@ const MaltaSVGFallback = ({
                     <div className="p-4">
                         <div className="flex justify-between items-start mb-1">
                             <h3 className="font-serif text-base leading-tight text-white">{selectedProperty.title}</h3>
-                            <span className="text-gold font-bold text-sm">â‚¬{(selectedProperty.price / 1000000).toFixed(1)}M</span>
+                            <span className="text-gold font-bold text-sm">€{(selectedProperty.price / 1000000).toFixed(1)}M</span>
                         </div>
                         <p className="text-white/60 text-[10px] uppercase tracking-wider mb-4">{selectedProperty.locationName}</p>
                         <div className="flex gap-4 mb-4 border-t border-white/5 pt-4">
@@ -324,7 +324,7 @@ const MapBoxView = ({
                     >
                         <div className="group cursor-pointer">
                             <div className="bg-gold text-luxury-black px-3 py-1 rounded-full text-xs font-bold shadow-lg transform transition-transform group-hover:scale-110 border border-white/20">
-                                â‚¬{(property.price / 1000000).toFixed(1)}M
+                                €{(property.price / 1000000).toFixed(1)}M
                             </div>
                             <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-gold mx-auto" />
                         </div>
@@ -351,7 +351,7 @@ const MapBoxView = ({
                             <div className="p-4">
                                 <div className="flex justify-between items-start mb-2">
                                     <h3 className="font-serif text-lg leading-tight">{selectedProperty.title}</h3>
-                                    <span className="text-gold font-bold">â‚¬{(selectedProperty.price / 1000000).toFixed(1)}M</span>
+                                    <span className="text-gold font-bold">€{(selectedProperty.price / 1000000).toFixed(1)}M</span>
                                 </div>
                                 <p className="text-white/50 text-[10px] uppercase tracking-wider mb-4">{selectedProperty.locationName}</p>
                                 <div className="flex gap-4 mb-4 border-t border-white/5 pt-4">

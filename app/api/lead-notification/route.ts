@@ -50,21 +50,21 @@ export async function POST(req: NextRequest) {
   if (!agency || !agency.email) return NextResponse.json({ ok: true });
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.maltaluxuryrealestate.com';
-  const price = property?.price ? `â‚¬${Number(property.price).toLocaleString('en-MT')}` : 'N/A';
+  const price = property?.price ? `€${Number(property.price).toLocaleString('en-MT')}` : 'N/A';
 
   await getResend().emails.send({
     from: `Malta Luxury Estates <${process.env.RESEND_FROM_EMAIL ?? 'leads@maltaluxuryrealestate.com'}>`,
     to: agency.email,
     subject: `New Lead: ${lead.name} â†’ ${property?.title ?? 'Your Listing'}`,
     html: `<div style="font-family:sans-serif;max-width:600px;margin:0 auto">
-<h2 style="color:#C5A059">New Lead â€” Malta Luxury Real Estate</h2>
+<h2 style="color:#C5A059">New Lead ”” Malta Luxury Real Estate</h2>
 <p>Hi ${agency.name}, you have a new enquiry for <strong>${property?.title ?? 'your listing'}</strong>.</p>
 <table style="background:#f9f9f9;padding:20px;border-radius:8px;width:100%">
 <tr><td><strong>Name</strong></td><td>${lead.name}</td></tr>
 <tr><td><strong>Email</strong></td><td><a href="mailto:${lead.email}">${lead.email}</a></td></tr>
 ${lead.phone ? `<tr><td><strong>Phone</strong></td><td><a href="tel:${lead.phone}">${lead.phone}</a></td></tr>` : ''}
 ${lead.message ? `<tr><td><strong>Message</strong></td><td>${lead.message}</td></tr>` : ''}
-<tr><td><strong>Property</strong></td><td>${property?.title ?? 'â€”'} Â· ${price}</td></tr>
+<tr><td><strong>Property</strong></td><td>${property?.title ?? '””'} · ${price}</td></tr>
 </table>
 <p><a href="${siteUrl}/agency/portal" style="background:#C5A059;color:#fff;padding:12px 24px;text-decoration:none;border-radius:4px;display:inline-block;margin-top:20px;font-weight:bold">View in Agency Portal â†’</a></p>
 </div>`,

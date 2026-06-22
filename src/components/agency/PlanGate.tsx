@@ -34,7 +34,7 @@ export function FeatureGate({
                     </div>
                     <div className="text-center">
                         <p className="text-[10px] font-bold uppercase tracking-widest text-gold mb-1">{featureLabel || 'Premium Feature'}</p>
-                        <p className="text-xs text-white/60 font-medium">Upgrade to {req.name} (Ã¢â€šÂ¬{req.price}/mo)</p>
+                        <p className="text-xs text-white/60 font-medium">Upgrade to {req.name} (â”šÂ¬{req.price}/mo)</p>
                     </div>
                     <Zap size={14} className="text-gold" />
                 </button>
@@ -104,7 +104,7 @@ function LimitReachedBlock({ status, onUpgrade }: { status: PlanStatus; onUpgrad
                 <div className="flex-1 p-6 rounded-3xl border border-gold/40 bg-gold/5 text-left transition-all hover:scale-105">
                     <div className="flex justify-between items-start mb-4">
                         <span className="text-[10px] font-bold uppercase tracking-widest text-gold">{nextPlan.name} Plan</span>
-                        <span className="text-[9px] font-mono text-white/70">Ã¢â€šÂ¬{nextPlan.price}/mo</span>
+                        <span className="text-[9px] font-mono text-white/70">â”šÂ¬{nextPlan.price}/mo</span>
                     </div>
                     <ul className="space-y-2 mb-6">
                         {[
@@ -122,12 +122,12 @@ function LimitReachedBlock({ status, onUpgrade }: { status: PlanStatus; onUpgrad
                         onClick={onUpgrade}
                         className="w-full py-3 bg-gold text-luxury-black rounded-xl text-[10px] font-bold uppercase tracking-widest hover:scale-[1.02] active:scale-[0.98] transition-all"
                     >
-                        Request Upgrade Ã¢â€ â€™
+                        Request Upgrade â” ’
                     </button>
                 </div>
             </div>
 
-            <p className="text-[10px] font-mono text-white/10 uppercase tracking-widest">Instant Activation Ã¢â‚¬Ë˜ Cancel Anytime Ã¢â‚¬Ë˜ Expert Support</p>
+            <p className="text-[10px] font-mono text-white/10 uppercase tracking-widest">Instant Activation · Cancel Anytime · Expert Support</p>
         </div>
     );
 }

@@ -143,7 +143,7 @@ export function GozoBridgeTrackerClient() {
                                             >
                                                 {d.event && (
                                                     <div className="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                                                        <span className="px-2 py-1 bg-gold/20 text-gold text-[8px] font-bold uppercase rounded-md border border-gold/30">ðŸ“£ {d.label}</span>
+                                                        <span className="px-2 py-1 bg-gold/20 text-gold text-[8px] font-bold uppercase rounded-md border border-gold/30">ðŸ—£ {d.label}</span>
                                                     </div>
                                                 )}
                                                 {d.current && (
@@ -224,7 +224,7 @@ export function GozoBridgeTrackerClient() {
                                 <h4 className="text-[10px] font-bold uppercase tracking-widest text-white">Investment Alert</h4>
                             </div>
                             <p className="text-[11px] text-white/50 leading-relaxed mb-6">
-                                Buy-to-Let opportunities in Gozo are current yielding 6.2% gross â€” significantly higher than the 4.8% Malta average. Combine this with capital growth for a 10%+ annualized return potential.
+                                Buy-to-Let opportunities in Gozo are current yielding 6.2% gross ”” significantly higher than the 4.8% Malta average. Combine this with capital growth for a 10%+ annualized return potential.
                             </p>
                             <Link href="/properties/victoria--gozo-" className="w-full py-3 bg-white/5 border border-white/10 rounded-xl text-[9px] font-bold uppercase tracking-widest text-white hover:bg-gold hover:text-black hover:border-gold transition-all flex items-center justify-center gap-2">
                                 View Gozo Listings <ArrowRight size={12} />
@@ -277,7 +277,7 @@ export function GozoBridgeTrackerClient() {
                 {/* Footer Note */}
                 <div className="mt-20 pt-10 border-t border-white/5 text-center">
                     <p className="text-[9px] text-white/10 max-w-3xl mx-auto uppercase tracking-widest leading-loose">
-                        Disclaimer: Price projections are based on proprietary economic models and historical infrastructure impact data. Realized returns may vary based on political, economic, and planning stability. Â© 2026 Malta Luxury Real Estate Intelligence.
+                        Disclaimer: Price projections are based on proprietary economic models and historical infrastructure impact data. Realized returns may vary based on political, economic, and planning stability. © 2026 Malta Luxury Real Estate Intelligence.
                     </p>
                 </div>
             </div>

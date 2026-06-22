@@ -39,7 +39,7 @@ export const HeroSection = () => {
               <span className="text-xs uppercase tracking-widest font-bold text-white/70">{t('hero.stats_locations')}</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl font-serif text-gold/70">â‚¬2.5M</span>
+              <span className="text-2xl font-serif text-gold/70">€2.5M</span>
               <span className="text-xs uppercase tracking-widest font-bold text-white/70">{t('hero.stats_price')}</span>
             </div>
           </div>

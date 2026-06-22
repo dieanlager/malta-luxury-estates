@@ -155,7 +155,7 @@ Part of Naxxar, this area is known for its wide boulevards and classic villa arc
         author: 'Malta Luxury Real Estate Heritage Team',
         content: `# Restoring a Historic Palazzo in Malta: Challenges and Rewards
 
-Malta is one of the few places in the world where you can still buy a 17th or 18th-century "Palazzo"—a grand noble residence—for the price of a luxury apartment in London or New York. However, buying one is just the start. The restoration is a labor of love that requires patience, a great architect, and a deep respect for heritage.
+Malta is one of the few places in the world where you can still buy a 17th or 18th-century "Palazzo—a grand noble residence—for the price of a luxury apartment in London or New York. However, buying one is just the start. The restoration is a labor of love that requires patience, a great architect, and a deep respect for heritage.
 
 ## 1. What Defines a Palazzo?
 In Malta, a *Palazzo* isn't just a big house. Key features include:

@@ -101,14 +101,14 @@ export const EPCCalculator: React.FC<EPCCalculatorProps> = ({ property, isOpen, 
                                         <Zap size={14} className="text-gold" />
                                         <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">Upgrade Cost</span>
                                     </div>
-                                    <span className="text-sm font-serif text-white">~â‚¬{analysis.upgradeCost.toLocaleString()}</span>
+                                    <span className="text-sm font-serif text-white">~€{analysis.upgradeCost.toLocaleString()}</span>
                                 </div>
                                 <div className="flex justify-between items-center p-4 bg-white/3 rounded-xl border border-white/5">
                                     <div className="flex items-center gap-3">
                                         <TrendingUp size={14} className="text-emerald-400" />
                                         <span className="text-[10px] uppercase font-bold text-white/60 tracking-widest">Annual Savings</span>
                                     </div>
-                                    <span className="text-sm font-serif text-emerald-400">~â‚¬{analysis.annualSavings.toLocaleString()}</span>
+                                    <span className="text-sm font-serif text-emerald-400">~€{analysis.annualSavings.toLocaleString()}</span>
                                 </div>
                                 <div className="flex justify-between items-center p-4 bg-white/3 rounded-xl border border-white/5">
                                     <div className="flex items-center gap-3">
