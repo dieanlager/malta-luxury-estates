@@ -45,7 +45,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function MarketLivePage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'common' });
-  const properties = await getAllProperties();
+  let properties: Awaited<ReturnType<typeof getAllProperties>> = [];
+  try { properties = await getAllProperties(); } catch { properties = []; }
 
   const saleProps = properties.filter((p: any) => p.type === 'sale');
   const avgPrice = saleProps.length ? Math.round(saleProps.reduce((sum: number, p: any) => sum + (p.price ?? 0), 0) / saleProps.length) : null;
